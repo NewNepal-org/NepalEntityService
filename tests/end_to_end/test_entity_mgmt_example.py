@@ -7,7 +7,7 @@ from datetime import datetime
 import pytest
 
 from nes.core.models.base import Name
-from nes.core.models.entity import Person
+from nes.core.models.entity import Person, PoliticalParty
 from nes.core.models.version import Actor, Version, VersionSummary
 from nes.database.file_database import FileDatabase
 
@@ -125,3 +125,79 @@ async def test_entity_lifecycle_management(temp_db):
     remaining_version = await temp_db.get_version(version_2.id)
     assert remaining_version is not None
     assert remaining_version.entityOrRelationshipId == entity.id
+
+
+@pytest.mark.asyncio
+async def test_organization_lifecycle(temp_db):
+    """Test organization lifecycle: create, publish version, delete."""
+
+    now = datetime.now()
+
+    # 1. Create the actor who is performing modifications.
+    actor = Actor(slug="system-user", name="System Administrator")
+    await temp_db.put_actor(actor)
+
+    # 2. Create Organization Entity
+    entity = PoliticalParty(
+        slug="rastriya-swatantra-party",
+        names=[
+            Name(kind="DEFAULT", value="Rastriya Swatantra Party", lang="en"),
+            Name(kind="DEFAULT", value="राष्ट्रिय स्वतन्त्र पार्टी", lang="np"),
+        ],
+        createdAt=now,
+        short_description="Nepali political party",
+        versionSummary=VersionSummary(
+            entityOrRelationshipId="entity:organization/political_party/rastriya-swatantra-party",
+            type="ENTITY",
+            versionNumber=1,
+            actor=actor,
+            changeDescription="Initial organization creation",
+            createdAt=now,
+        ),
+    )
+
+    created_entity = await temp_db.put_entity(entity)
+    assert (
+        created_entity.id
+        == "entity:organization/political_party/rastriya-swatantra-party"
+    )
+
+    # Verify entity exists
+    retrieved_entity = await temp_db.get_entity(entity.id)
+    assert retrieved_entity is not None
+    assert retrieved_entity.slug == "rastriya-swatantra-party"
+    assert retrieved_entity.type == "organization"
+    assert retrieved_entity.subType == "political_party"
+    assert len(retrieved_entity.names) == 2
+
+    # 3. Publish the Version
+    version = Version(
+        **entity.versionSummary.model_dump(),
+        snapshot=entity.model_dump(),
+        changes={},
+    )
+
+    published_version = await temp_db.put_version(version)
+    assert published_version.id == f"version:{entity.id}:1"
+
+    # Verify version exists
+    retrieved_version = await temp_db.get_version(version.id)
+    assert retrieved_version is not None
+    assert retrieved_version.versionNumber == 1
+    assert retrieved_version.changeDescription == "Initial organization creation"
+
+    # 4. Delete Version
+    version_deleted = await temp_db.delete_version(version.id)
+    assert version_deleted is True
+
+    # Verify version is deleted
+    deleted_version = await temp_db.get_version(version.id)
+    assert deleted_version is None
+
+    # 5. Delete Entity
+    entity_deleted = await temp_db.delete_entity(entity.id)
+    assert entity_deleted is True
+
+    # Verify entity is deleted
+    deleted_entity = await temp_db.get_entity(entity.id)
+    assert deleted_entity is None

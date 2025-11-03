@@ -107,4 +107,13 @@ class Person(Entity):
 
 
 class Organization(Entity):
-    pass
+    type: Literal["organization"] = Field(
+        default="organization", description="Entity type, always organization"
+    )
+
+
+class PoliticalParty(Organization):
+    subType: Literal["political_party"] = Field(
+        default="political_party",
+        description="Organization subtype, always political_party",
+    )
