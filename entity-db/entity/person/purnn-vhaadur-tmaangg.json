@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रामेछाप गोकुलगङ्गा गाउँपालिका चुचुरे",
+    "sys:age": 57,
+    "sys:candidate_id": 338108,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रामेछाप",
+    "sys:district": "रामेछाप",
+    "sys:district_code": 18,
+    "sys:dob_bs": "2022.04.15",
+    "sys:election_year": 2079,
+    "sys:experience": "2074 सालको निर्वाचनमा ने.का बाट प्रतिनिधि सदस्य उम्मेदार ।",
+    "sys:father_name": "शेर वहादुर तमाङ्ग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 616,
+    "sys:spouse_name": "लक्ष्‍मी माया लामा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 47099
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/purnn-vhaadur-tmaangg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पुर्ण वहादुर तमाङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "purnn-vhaadur-tmaangg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/purnn-vhaadur-tmaangg",
+    "id": "version:entity:person/purnn-vhaadur-tmaangg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

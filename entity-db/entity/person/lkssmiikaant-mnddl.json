@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी शम्भुनाथ  नगरपालिका",
+    "sys:age": 54,
+    "sys:candidate_id": 338729,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2024.11.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम देव मंडल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 477,
+    "sys:spouse_name": "शोभा देवी मंडल",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 872
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lkssmiikaant-mnddl",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लक्ष्मीकान्त मंडल"
+    }
+  ],
+  "short_description": null,
+  "slug": "lkssmiikaant-mnddl",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lkssmiikaant-mnddl",
+    "id": "version:entity:person/lkssmiikaant-mnddl:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

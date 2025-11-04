@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर सूर्यविनायक नगरपालिका सुवर्णनगर",
+    "sys:age": 61,
+    "sys:candidate_id": 333262,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ओखलढुंगा",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2017.12.07",
+    "sys:election_year": 2079,
+    "sys:experience": "विभिन्न सामाजिक संस्थामा काम गरेको",
+    "sys:father_name": "डम्बर बहादुर बानियाँ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "मौलिक जरोकिलो पार्टी",
+    "sys:political_party_slug": "maulik-jrokilo-paarttii",
+    "sys:qualification": "एम ए",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1245,
+    "sys:spouse_name": "उर्मिला  बानियाँ",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2305,
+    "sys:symbol_name": "किबोर्ड सहितको कम्प्युटर",
+    "sys:votes_received": 102
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lilaa-bhaadur-baaniyaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लिला बहादुर बानियाँ"
+    }
+  ],
+  "short_description": null,
+  "slug": "lilaa-bhaadur-baaniyaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lilaa-bhaadur-baaniyaan",
+    "id": "version:entity:person/lilaa-bhaadur-baaniyaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

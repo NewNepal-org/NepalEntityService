@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर भक्तपुर नगरपालिका लिवाली",
+    "sys:age": 55,
+    "sys:candidate_id": 333404,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2023.12.23",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हर्ष बहादुर छुस्यावाग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सरस्वती विद्या गृह भक्तपुर",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 100,
+    "sys:spouse_name": "हरि थकु छुस्यावाग",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 35
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-gopaal-chusyaavaag",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण गोपाल छुस्यावाग"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-gopaal-chusyaavaag",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-gopaal-chusyaavaag",
+    "id": "version:entity:person/krssnn-gopaal-chusyaavaag:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

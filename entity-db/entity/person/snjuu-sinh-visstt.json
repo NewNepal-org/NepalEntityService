@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु शुद्धोधन गाउँपालिका उचडिहवा",
+    "sys:age": 48,
+    "sys:candidate_id": 338019,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2030.12.29",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दिलिप सिंह कार्की",
+    "sys:gender": "महिला",
+    "sys:institute": "रत्न राज्य मा.वि.",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "आई एड",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1967,
+    "sys:spouse_name": "शिव बहादुर विष्‍ट",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 3376
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/snjuu-sinh-visstt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सन्‍जू सिंह विष्‍ट"
+    }
+  ],
+  "short_description": null,
+  "slug": "snjuu-sinh-visstt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/snjuu-sinh-visstt",
+    "id": "version:entity:person/snjuu-sinh-visstt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

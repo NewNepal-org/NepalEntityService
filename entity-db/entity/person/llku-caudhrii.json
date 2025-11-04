@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर त्रियुगा नगरपालिका बहेडुवा",
+    "sys:age": 49,
+    "sys:candidate_id": 336393,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "उदयपुर",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2030.06.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "झपटु  चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रियुगा मा वि गाईघाट",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 422,
+    "sys:spouse_name": "सिता देवी चौधरी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 63
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/llku-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ललकु चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "llku-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/llku-caudhrii",
+    "id": "version:entity:person/llku-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

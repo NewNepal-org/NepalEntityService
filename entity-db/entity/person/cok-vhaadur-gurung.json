@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा वालिङ नगरपालिका झलुङ्गे",
+    "sys:age": 57,
+    "sys:candidate_id": 335147,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2021.12.07",
+    "sys:election_year": 2079,
+    "sys:experience": "व्यवसायी, कृषि, राजनीति, समाजसेवा",
+    "sys:father_name": "पदम राज गुरुङ्",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1782,
+    "sys:spouse_name": "पुर्णि माया गुरुङ्",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 654
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cok-vhaadur-gurung",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चोक वहादुर गुरुङ्"
+    }
+  ],
+  "short_description": null,
+  "slug": "cok-vhaadur-gurung",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cok-vhaadur-gurung",
+    "id": "version:entity:person/cok-vhaadur-gurung:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

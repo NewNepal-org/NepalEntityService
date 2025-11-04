@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धादिङ्ग बेनीघाट रोराङ्ग गाउँपालिका बीचबजार",
+    "sys:age": 62,
+    "sys:candidate_id": 333317,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धादिङ्ग",
+    "sys:district": "धादिङ्ग",
+    "sys:district_code": 24,
+    "sys:dob_bs": "2016.09.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "डोले श्‍वर कँडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 911,
+    "sys:spouse_name": "प्रतिमा  कँडेल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 117
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/uttm-raaj-shrmaaknddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "उत्तम राज शर्मा(कँडेल)"
+    }
+  ],
+  "short_description": null,
+  "slug": "uttm-raaj-shrmaaknddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/uttm-raaj-shrmaaknddel",
+    "id": "version:entity:person/uttm-raaj-shrmaaknddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

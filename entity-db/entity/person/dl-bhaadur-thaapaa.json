@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही ओमसतिया गाउँपालिका तरकुलाहा",
+    "sys:age": 44,
+    "sys:candidate_id": 333889,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2034.08.13",
+    "sys:election_year": 2079,
+    "sys:experience": "शैक्षिक क्षत्र -18 वर्ष\nकम्प्युटर",
+    "sys:father_name": "ऋषि राम थापा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय भैरहवा",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "स्‍नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1881,
+    "sys:spouse_name": "उमिसरा थापा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 1397
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dl-bhaadur-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दल बहादुर थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "dl-bhaadur-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dl-bhaadur-thaapaa",
+    "id": "version:entity:person/dl-bhaadur-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

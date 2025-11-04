@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर चाँगुनारायण नगरपालिका गेलाल",
+    "sys:age": 57,
+    "sys:candidate_id": 337152,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2022.03.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शिब प्रसाद गेलाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "PCL",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1220,
+    "sys:spouse_name": "जमुना  गेलाल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 11968
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nvraaj-gelaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नवराज गेलाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "nvraaj-gelaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nvraaj-gelaal",
+    "id": "version:entity:person/nvraaj-gelaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

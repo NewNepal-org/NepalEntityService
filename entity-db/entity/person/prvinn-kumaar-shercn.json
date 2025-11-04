@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मुस्तांग घरपझोङ गाउँपालिका",
+    "sys:age": 58,
+    "sys:candidate_id": 338933,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मुस्तांग",
+    "sys:district": "मुस्तांग",
+    "sys:district_code": 48,
+    "sys:dob_bs": "2021.04.21",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक सेवा\nराजनीति",
+    "sys:father_name": "लाल प्रसाद शेरचन",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "८ पास",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2015,
+    "sys:spouse_name": "माया  शेरचन",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 13
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prvinn-kumaar-shercn",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रविण कुमार शेरचन"
+    }
+  ],
+  "short_description": null,
+  "slug": "prvinn-kumaar-shercn",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prvinn-kumaar-shercn",
+    "id": "version:entity:person/prvinn-kumaar-shercn:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

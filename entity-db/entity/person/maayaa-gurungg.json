@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुपाल्चोक पाँचपोखरी थाङपाल  गाउँपालिका",
+    "sys:age": 42,
+    "sys:candidate_id": 333828,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुपाल्चोक",
+    "sys:district": "सिन्धुपाल्चोक",
+    "sys:district_code": 30,
+    "sys:dob_bs": "2036.08.18",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मान काजी गुरुङ्ग",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1372,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 2453
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/maayaa-gurungg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "माया गुरुङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "maayaa-gurungg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/maayaa-gurungg",
+    "id": "version:entity:person/maayaa-gurungg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

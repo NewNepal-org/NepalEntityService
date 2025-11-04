@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली गोदावरी नगरपालिका अत्तरीया",
+    "sys:age": 41,
+    "sys:candidate_id": 337181,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दार्चुला",
+    "sys:district": "कैलाली",
+    "sys:district_code": 71,
+    "sys:dob_bs": "2038.01.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नन्द लाल मिश्र",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनता प्रगतिशिल पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-prgtishil-paarttii-nepaal",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 2299,
+    "sys:spouse_name": "दीपा  भण्डारी",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2324,
+    "sys:symbol_name": "कोदालो बोकेको किसान",
+    "sys:votes_received": 48
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mohn-dev-mishr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मोहन देव मिश्र"
+    }
+  ],
+  "short_description": null,
+  "slug": "mohn-dev-mishr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mohn-dev-mishr",
+    "id": "version:entity:person/mohn-dev-mishr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

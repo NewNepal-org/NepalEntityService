@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर त्रियुगा नगरपालिका प्रगती टोल",
+    "sys:age": 45,
+    "sys:candidate_id": 336217,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "उदयपुर",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2033.12.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गंग बहादुर बुढाथोकी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जनता मा. वि. हडिया",
+    "sys:political_party": "सचेत नेपाली पार्टी(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "scet-nepaalii-paarttiiekl-cunaav-cinh",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 418,
+    "sys:spouse_name": "सुनिता  बुढाथोकी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 85,
+    "sys:symbol_name": "बच्चा काखमा लिएकी आमा",
+    "sys:votes_received": 182
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hrii-bhaadur-buddhaathokii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हरी बहादुर बुढाथोकी"
+    }
+  ],
+  "short_description": null,
+  "slug": "hrii-bhaadur-buddhaathokii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hrii-bhaadur-buddhaathokii",
+    "id": "version:entity:person/hrii-bhaadur-buddhaathokii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग बुढीगंगा गाउँपालिका बरमनिया",
+    "sys:age": 31,
+    "sys:candidate_id": 334365,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2048.03.16",
+    "sys:election_year": 2079,
+    "sys:experience": "च्याउको विउ उत्पादन तथा च्याउ उत्पादन\nच्यााउ उत्पादक किसान संघको केन्द्रिय सचिव १ वर्ष",
+    "sys:father_name": "सन्तोष  नेपाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "कोशी सेन्ट जेम्स कलेज इटहरी",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "6",
+    "sys:serial_no": 282,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1009,
+    "sys:symbol_name": "डोजर",
+    "sys:votes_received": 900
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sroj-nepaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सरोज नेपाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "sroj-nepaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sroj-nepaal",
+    "id": "version:entity:person/sroj-nepaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

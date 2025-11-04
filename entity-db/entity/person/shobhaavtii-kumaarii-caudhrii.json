@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी ईटहरी उपमहानगरपालिका मिलन चौक",
+    "sys:age": 46,
+    "sys:candidate_id": 338135,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2032.08.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पुसन लाल चौधरी",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-pussplaal",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 328,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2327,
+    "sys:symbol_name": "गैंती",
+    "sys:votes_received": 107
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shobhaavtii-kumaarii-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शोभावती कुमारी चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "shobhaavtii-kumaarii-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shobhaavtii-kumaarii-caudhrii",
+    "id": "version:entity:person/shobhaavtii-kumaarii-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

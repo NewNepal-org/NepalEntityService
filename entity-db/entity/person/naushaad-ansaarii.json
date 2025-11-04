@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्सा बिरगंज महानगरपालिका मूर्ली",
+    "sys:age": 27,
+    "sys:candidate_id": 335611,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्सा",
+    "sys:district": "पर्सा",
+    "sys:district_code": 34,
+    "sys:dob_bs": "2052.01.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "स्व.मनौवर  अंसारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1556,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 227
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/naushaad-ansaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नौशाद अंसारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "naushaad-ansaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/naushaad-ansaarii",
+    "id": "version:entity:person/naushaad-ansaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

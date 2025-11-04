@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा सिराहा नगरपालिका पूर्वाइटोल",
+    "sys:age": 67,
+    "sys:candidate_id": 338442,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2011.11.27",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रास लाल यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 566,
+    "sys:spouse_name": "कौशल्या देवी यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 315,
+    "sys:symbol_name": "मुढा",
+    "sys:votes_received": 66
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bauve-laal-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बौवे लाल यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "bauve-laal-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bauve-laal-yaadv",
+    "id": "version:entity:person/bauve-laal-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

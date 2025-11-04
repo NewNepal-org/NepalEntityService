@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली मोहन्याल गाउँपालिका पट्रेनी",
+    "sys:age": 50,
+    "sys:candidate_id": 334398,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कैलाली",
+    "sys:district": "कैलाली",
+    "sys:district_code": 71,
+    "sys:dob_bs": "2028.10.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हिक्मत बहादुर बम",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2285,
+    "sys:spouse_name": "असिम  बम",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 7045
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/birendr-bhaadur-bm",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बिरेन्द्र बहादुर बम"
+    }
+  ],
+  "short_description": null,
+  "slug": "birendr-bhaadur-bm",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/birendr-bhaadur-bm",
+    "id": "version:entity:person/birendr-bhaadur-bm:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

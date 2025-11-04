@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "इलाम चुलाचुली गाउँपालिका पेल्टीमारि",
+    "sys:age": 43,
+    "sys:candidate_id": 333727,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "इलाम",
+    "sys:district": "इलाम",
+    "sys:district_code": 3,
+    "sys:dob_bs": "2036.04.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सनक लाल लिम्बु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 47,
+    "sys:spouse_name": "राज कुमारी इदिङगो लिम्बु",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 69
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nir-mnnii-maangmu-limbu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "निर मणी माङमु लिम्बु"
+    }
+  ],
+  "short_description": null,
+  "slug": "nir-mnnii-maangmu-limbu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nir-mnnii-maangmu-limbu",
+    "id": "version:entity:person/nir-mnnii-maangmu-limbu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

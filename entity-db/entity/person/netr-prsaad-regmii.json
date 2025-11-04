@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "इलाम सूर्योदय नगरपालिका दामसिंह",
+    "sys:age": 51,
+    "sys:candidate_id": 335916,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "इलाम",
+    "sys:district": "इलाम",
+    "sys:district_code": 3,
+    "sys:dob_bs": "2027.10.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "ट‌क नाथ रेग्मी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 36,
+    "sys:spouse_name": "इर्षना  रेग्मी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 315,
+    "sys:symbol_name": "मुढा",
+    "sys:votes_received": 235
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/netr-prsaad-regmii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नेत्र प्रसाद रेग्मी"
+    }
+  ],
+  "short_description": null,
+  "slug": "netr-prsaad-regmii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/netr-prsaad-regmii",
+    "id": "version:entity:person/netr-prsaad-regmii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

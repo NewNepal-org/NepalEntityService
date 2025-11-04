@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा विर्तामोड नगरपालिका",
+    "sys:age": 39,
+    "sys:candidate_id": 333881,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2039.09.14",
+    "sys:election_year": 2079,
+    "sys:experience": "information technology company coordinator\nBusiness Founder Owner",
+    "sys:father_name": "देवी प्रसाद घिमिरे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "University of East London UK",
+    "sys:political_party": "नेपाल विवेकशील पार्टी",
+    "sys:political_party_slug": "nepaal-vivekshiil-paarttii",
+    "sys:qualification": "Msc Innovative Technology",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 77,
+    "sys:spouse_name": "प्रेरणा  गजुरेल घिमिरे",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2307,
+    "sys:symbol_name": "कुकुरको टाउको",
+    "sys:votes_received": 252
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sntoss-ghimire",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सन्तोष घिमिरे"
+    }
+  ],
+  "short_description": null,
+  "slug": "sntoss-ghimire",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sntoss-ghimire",
+    "id": "version:entity:person/sntoss-ghimire:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

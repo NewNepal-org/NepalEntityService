@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धादिङ्ग बेनीघाट रोराङ्ग गाउँपालिका भार्पाङ",
+    "sys:age": 31,
+    "sys:candidate_id": 336178,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धादिङ्ग",
+    "sys:district": "धादिङ्ग",
+    "sys:district_code": 24,
+    "sys:dob_bs": "2047.07.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "टाप बहादुर श्रेष्‍ठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 919,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2083,
+    "sys:symbol_name": "चेसबोर्ड",
+    "sys:votes_received": 5
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prdip-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रदिप श्रेष्‍ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "prdip-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prdip-shresstth",
+    "id": "version:entity:person/prdip-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

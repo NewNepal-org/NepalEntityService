@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु महाराजगंज नगरपालिका सोनबर्षा",
+    "sys:age": 45,
+    "sys:candidate_id": 333447,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2034.01.10",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजसेवी",
+    "sys:father_name": "छेदी प्रसाद कहाँर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जानकाी मा वि महाराजगंज",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "slc",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1989,
+    "sys:spouse_name": "उर्मीला  कहाँर",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 34
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prhlaad-prsaad-khaanr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रहलाद प्रसाद कहाँर"
+    }
+  ],
+  "short_description": null,
+  "slug": "prhlaad-prsaad-khaanr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prhlaad-prsaad-khaanr",
+    "id": "version:entity:person/prhlaad-prsaad-khaanr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

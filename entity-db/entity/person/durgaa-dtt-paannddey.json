@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कन्चनपुर भीमदत्त नगरपालिका गज्जर",
+    "sys:age": 40,
+    "sys:candidate_id": 334059,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कन्चनपुर",
+    "sys:district": "कन्चनपुर",
+    "sys:district_code": 75,
+    "sys:dob_bs": "2038.07.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नित्यानन्द  पाण्डेय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2363,
+    "sys:spouse_name": "",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 279
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/durgaa-dtt-paannddey",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दुर्गा दत्त पाण्डेय"
+    }
+  ],
+  "short_description": null,
+  "slug": "durgaa-dtt-paannddey",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/durgaa-dtt-paannddey",
+    "id": "version:entity:person/durgaa-dtt-paannddey:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही कंचन गाउँपालिका चापा",
+    "sys:age": 44,
+    "sys:candidate_id": 334277,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "गुल्मी",
+    "sys:district_code": 42,
+    "sys:dob_bs": "2035.01.11",
+    "sys:election_year": 2079,
+    "sys:experience": "सिलाई कटाई व्युटिपार्लर समाज सेवा",
+    "sys:father_name": "दल बहादुर पुन",
+    "sys:gender": "महिला",
+    "sys:institute": "लुम्बिनी ज्ञाननिकेतन मा.वि.",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1796,
+    "sys:spouse_name": "धन बहादुर थापा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 54
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cndaa-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चन्दा थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "cndaa-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cndaa-thaapaa",
+    "id": "version:entity:person/cndaa-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

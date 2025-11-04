@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट माधव नारायण नगरपालिका विसुनपुर्वा मानपुर",
+    "sys:age": 42,
+    "sys:candidate_id": 333905,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2036.08.15",
+    "sys:election_year": 2079,
+    "sys:experience": "समाज सेवक",
+    "sys:father_name": "हरे कृष्‍ण दास",
+    "sys:gender": "महिला",
+    "sys:institute": "जवाहर लाल मेमोरियल कलेज घोडासहान",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "I.A.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1412,
+    "sys:spouse_name": "रामवावु राय यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 353
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sroj-kumaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सरोज कुमारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "sroj-kumaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sroj-kumaarii",
+    "id": "version:entity:person/sroj-kumaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

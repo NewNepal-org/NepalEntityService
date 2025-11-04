@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "संखुवासभा खाँदवारी नगरपालिका गुवाबारी",
+    "sys:age": 30,
+    "sys:candidate_id": 334084,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "संखुवासभा",
+    "sys:district": "संखुवासभा",
+    "sys:district_code": 5,
+    "sys:dob_bs": "2049.06.18",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रेख बहादुर कार्की",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री हिमालय किरण पब्लिक क्याम्पस",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "I.A.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 155,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 131
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prvin-kaarkii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रविन कार्की"
+    }
+  ],
+  "short_description": null,
+  "slug": "prvin-kaarkii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prvin-kaarkii",
+    "id": "version:entity:person/prvin-kaarkii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

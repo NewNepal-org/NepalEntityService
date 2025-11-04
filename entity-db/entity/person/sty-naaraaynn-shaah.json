@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "महोत्तरी एकडारा गाउँपालिका एकडारा",
+    "sys:age": 68,
+    "sys:candidate_id": 336204,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "महोत्तरी",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2011.01.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मुनी लाल शाह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 709,
+    "sys:spouse_name": "कौशल्या  शाह",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 75,
+    "sys:symbol_name": "महिला",
+    "sys:votes_received": 187
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sty-naaraaynn-shaah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सत्य नारायण शाह"
+    }
+  ],
+  "short_description": null,
+  "slug": "sty-naaraaynn-shaah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sty-naaraaynn-shaah",
+    "id": "version:entity:person/sty-naaraaynn-shaah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

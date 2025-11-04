@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्वत पैयूं गाउँपालिका",
+    "sys:age": 36,
+    "sys:candidate_id": 336407,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्वत",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2043.02.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दुर्गा बहादुर थापा मगर",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1065,
+    "sys:spouse_name": "बाल किसान राना",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 26
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/laal-kumaarii-thaapaa-raanaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लाल कुमारी थापा राना"
+    }
+  ],
+  "short_description": null,
+  "slug": "laal-kumaarii-thaapaa-raanaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/laal-kumaarii-thaapaa-raanaa",
+    "id": "version:entity:person/laal-kumaarii-thaapaa-raanaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

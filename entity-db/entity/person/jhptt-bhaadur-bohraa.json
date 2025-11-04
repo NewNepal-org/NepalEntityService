@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली टिकापुर नगरपालिका टिकापुर",
+    "sys:age": 54,
+    "sys:candidate_id": 333900,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "अछाम",
+    "sys:district": "अछाम",
+    "sys:district_code": 68,
+    "sys:dob_bs": "2024.09.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गगन सिंह बोहरा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2239,
+    "sys:spouse_name": "दुर्गा  बोहरा",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 15045
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jhptt-bhaadur-bohraa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "झपट बहादुर बोहरा"
+    }
+  ],
+  "short_description": null,
+  "slug": "jhptt-bhaadur-bohraa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jhptt-bhaadur-bohraa",
+    "id": "version:entity:person/jhptt-bhaadur-bohraa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

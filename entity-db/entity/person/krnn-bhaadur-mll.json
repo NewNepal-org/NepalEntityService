@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "डडेलधुरा गन्यापधुरा गाउँपालिका चम्साल",
+    "sys:age": 48,
+    "sys:candidate_id": 336226,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "डडेलधुरा",
+    "sys:district": "डडेलधुरा",
+    "sys:district_code": 74,
+    "sys:dob_bs": "2030.10.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "डम्बर बहादुर मल्ल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "सामान्य लेखपढ",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2332,
+    "sys:spouse_name": "समा  शाह",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 7535
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krnn-bhaadur-mll",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कर्ण बहादुर मल्ल"
+    }
+  ],
+  "short_description": null,
+  "slug": "krnn-bhaadur-mll",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krnn-bhaadur-mll",
+    "id": "version:entity:person/krnn-bhaadur-mll:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

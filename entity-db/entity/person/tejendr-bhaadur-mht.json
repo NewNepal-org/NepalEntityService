@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गुल्मी मुसिकोट नगरपालिका कुन्दल",
+    "sys:age": 27,
+    "sys:candidate_id": 334418,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गुल्मी",
+    "sys:district": "गुल्मी",
+    "sys:district_code": 42,
+    "sys:dob_bs": "2052.02.01",
+    "sys:election_year": 2079,
+    "sys:experience": "विगतमा पशु प्रावधिककाे रुपमा काम गरेकाे\nनेपाल जुनियर रेडक्रसमा काम गरेकाे",
+    "sys:father_name": "मोती बहादुर महत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "महनेद्र मा.वि.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1811,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2169,
+    "sys:symbol_name": "खण्डेथाल",
+    "sys:votes_received": 4
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tejendr-bhaadur-mht",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तेजेन्द्र बहादुर महत"
+    }
+  ],
+  "short_description": null,
+  "slug": "tejendr-bhaadur-mht",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tejendr-bhaadur-mht",
+    "id": "version:entity:person/tejendr-bhaadur-mht:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

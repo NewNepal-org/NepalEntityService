@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ तुल्सिपुर उपमहानगरपालिका बनहरी",
+    "sys:age": 52,
+    "sys:candidate_id": 335483,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दाङ",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2026.12.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पर्साराम  चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी लेनिनवादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-leninvaadii",
+    "sys:qualification": "साक्षर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2106,
+    "sys:spouse_name": "फग्नी  चौधरी",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 9,
+    "sys:symbol_name": "हँसिया र तारा",
+    "sys:votes_received": 762
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shaalikraam-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शालिकराम चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "shaalikraam-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shaalikraam-caudhrii",
+    "id": "version:entity:person/shaalikraam-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

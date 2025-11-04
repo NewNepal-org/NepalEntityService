@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर त्रियुगा नगरपालिका श्रृजना टोल",
+    "sys:age": 53,
+    "sys:candidate_id": 335059,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "उदयपुर",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2026.01.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "वलट बहादुर राय माझी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 412,
+    "sys:spouse_name": "मिखरी कार्की",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 3915
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dhurv-kumaar-raay-maajhii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "धुर्व कुमार राय माझी"
+    }
+  ],
+  "short_description": null,
+  "slug": "dhurv-kumaar-raay-maajhii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dhurv-kumaar-raay-maajhii",
+    "id": "version:entity:person/dhurv-kumaar-raay-maajhii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

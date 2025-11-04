@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर भक्तपुर नगरपालिका कोलाछे",
+    "sys:age": 46,
+    "sys:candidate_id": 337102,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2033.05.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गोपाल दास धुख्वा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1834,
+    "sys:spouse_name": "कृष्ण लक्ष्मी धुख्वा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 36
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shiv-sundr-dhukhvaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शिव सुन्दर धुख्वा"
+    }
+  ],
+  "short_description": null,
+  "slug": "shiv-sundr-dhukhvaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shiv-sundr-dhukhvaa",
+    "id": "version:entity:person/shiv-sundr-dhukhvaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

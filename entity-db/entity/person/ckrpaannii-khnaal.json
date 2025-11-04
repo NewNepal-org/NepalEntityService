@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु बाणगंगा नगरपालिका अमौली",
+    "sys:age": 60,
+    "sys:candidate_id": 337064,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2019.01.08",
+    "sys:election_year": 2079,
+    "sys:experience": "४० वर्ष राजनिति अनुभव",
+    "sys:father_name": "भागिरथ  खनाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "B.A.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1963,
+    "sys:spouse_name": "यमा  बन्जाडे खनाल",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 18983
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ckrpaannii-khnaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चक्रपाणी खनाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "ckrpaannii-khnaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ckrpaannii-khnaal",
+    "id": "version:entity:person/ckrpaannii-khnaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

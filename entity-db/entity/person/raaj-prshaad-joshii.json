@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "डोटी शिखर नगरपालिका मुडभरा",
+    "sys:age": 68,
+    "sys:candidate_id": 338328,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "डोटी",
+    "sys:district": "डोटी",
+    "sys:district_code": 70,
+    "sys:dob_bs": "2011.03.18",
+    "sys:election_year": 2079,
+    "sys:experience": "३८ वर्षको अध्यापन",
+    "sys:father_name": "तुलसी धर जोशी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "BA, B.ed",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2261,
+    "sys:spouse_name": "जयन्ती देवी जोशी",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 104
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaj-prshaad-joshii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राज प्रशाद जोशी"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaj-prshaad-joshii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaj-prshaad-joshii",
+    "id": "version:entity:person/raaj-prshaad-joshii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

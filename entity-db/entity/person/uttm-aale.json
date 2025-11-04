@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु बाणगंगा नगरपालिका मेचकुरी",
+    "sys:age": 43,
+    "sys:candidate_id": 337782,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2035.07.29",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "श्‍याम बहादुर आले",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1975,
+    "sys:spouse_name": "मन कुमारी थापा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 458
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/uttm-aale",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "उत्तम आले"
+    }
+  ],
+  "short_description": null,
+  "slug": "uttm-aale",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/uttm-aale",
+    "id": "version:entity:person/uttm-aale:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

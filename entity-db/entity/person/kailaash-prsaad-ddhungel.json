@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रामेछाप खाँडादेवी गाउँपालिका अमलवोटे",
+    "sys:age": 62,
+    "sys:candidate_id": 334251,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रामेछाप",
+    "sys:district": "रामेछाप",
+    "sys:district_code": 18,
+    "sys:dob_bs": "2017.06.11",
+    "sys:election_year": 2079,
+    "sys:experience": "क. दुग्द बिकाश वोर्डको कार्यकारि निर्देशक २०७२-चैत्र देखि ०७४ असोज सम्म।\nख. बागमति प्रदेश सरकारको आर्थिक मामिला तथा योजना मन्त्री\nग. जिबिस समितिको सभापति रामेछाप\nघ.सुकुम्वासी समस्या समाधान आयोग दोलखा रामेछाप",
+    "sys:father_name": "इन्द्र प्रसाद ढुंगेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.बि.",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 617,
+    "sys:spouse_name": "राधा  ढुंगेल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 30730
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kailaash-prsaad-ddhungel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कैलाश प्रसाद ढुंगेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "kailaash-prsaad-ddhungel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kailaash-prsaad-ddhungel",
+    "id": "version:entity:person/kailaash-prsaad-ddhungel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

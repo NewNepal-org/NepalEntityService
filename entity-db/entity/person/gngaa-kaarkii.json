@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा गौरिशंकर  गाउँपालिका फाल्टुक",
+    "sys:age": 57,
+    "sys:candidate_id": 335510,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2022.03.04",
+    "sys:election_year": 2079,
+    "sys:experience": "शिक्षण ३ बर्ष\nपुस्तक लेखक-1",
+    "sys:father_name": "टेक बहादुर कार्की",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जिरी व्यवसायिक मा.वि",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "कक्षा १० उतिर्ण",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 595,
+    "sys:spouse_name": "कृष्ण माया कार्की",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 36820
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gngaa-kaarkii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ग‌ंगा कार्की"
+    }
+  ],
+  "short_description": null,
+  "slug": "gngaa-kaarkii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gngaa-kaarkii",
+    "id": "version:entity:person/gngaa-kaarkii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

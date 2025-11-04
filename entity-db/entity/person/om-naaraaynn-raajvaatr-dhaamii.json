@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग सुन्दरहरैंचा नगरपालिका पचाम",
+    "sys:age": 38,
+    "sys:candidate_id": 335372,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2040.09.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शिवन लाल राजवातर धामी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 227,
+    "sys:spouse_name": "सरिता देवी धामी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 46
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/om-naaraaynn-raajvaatr-dhaamii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ओम नारायण राजवातर धामी"
+    }
+  ],
+  "short_description": null,
+  "slug": "om-naaraaynn-raajvaatr-dhaamii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/om-naaraaynn-raajvaatr-dhaamii",
+    "id": "version:entity:person/om-naaraaynn-raajvaatr-dhaamii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

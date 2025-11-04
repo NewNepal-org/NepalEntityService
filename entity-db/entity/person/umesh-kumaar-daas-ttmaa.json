@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट कटहरिया नगरपालिका बलीरामपुर",
+    "sys:age": 30,
+    "sys:candidate_id": 336382,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2049.05.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सर्फलाल दास तत्मा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री जनता मा.वि. कटहरिया",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1452,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2460,
+    "sys:symbol_name": "अङ्गुरको झुप्पा",
+    "sys:votes_received": 47
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/umesh-kumaar-daas-ttmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "उमेश कुमार दास तत्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "umesh-kumaar-daas-ttmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/umesh-kumaar-daas-ttmaa",
+    "id": "version:entity:person/umesh-kumaar-daas-ttmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

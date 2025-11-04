@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग पथरी शनिश्चरे नगरपालिका त्रिवेणी चौक",
+    "sys:age": 28,
+    "sys:candidate_id": 337211,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "ताप्लेजुंग",
+    "sys:district_code": 1,
+    "sys:dob_bs": "2050.11.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "खर्क वहादुर लिम्वु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पंञ्चायत मा.वि. पथरी शनिश्चरे मोरङ",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 8,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 134
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vikrm-limvu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विक्रम लिम्वु"
+    }
+  ],
+  "short_description": null,
+  "slug": "vikrm-limvu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vikrm-limvu",
+    "id": "version:entity:person/vikrm-limvu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

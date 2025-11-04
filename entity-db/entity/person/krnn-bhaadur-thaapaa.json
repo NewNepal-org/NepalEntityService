@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाजुरा बुढीगंगा नगरपालिका डुग्रीतोला",
+    "sys:age": 54,
+    "sys:candidate_id": 337928,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाजुरा",
+    "sys:district": "बाजुरा",
+    "sys:district_code": 67,
+    "sys:dob_bs": "2025.05.29",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनिति",
+    "sys:father_name": "संग्राम सिं थापा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU Nepal",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "BK, MA",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2234,
+    "sys:spouse_name": "कमला  ओली थापा",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 26349
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krnn-bhaadur-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कर्ण बहादुर थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "krnn-bhaadur-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krnn-bhaadur-thaapaa",
+    "id": "version:entity:person/krnn-bhaadur-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

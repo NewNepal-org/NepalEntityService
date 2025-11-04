@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन भरतपुर महानगरपालिका",
+    "sys:age": 42,
+    "sys:candidate_id": 335406,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2036.11.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "एक देव अधिकारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "KU",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "स्नाकोत्तर चिकित्साशास्त्र",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1640,
+    "sys:spouse_name": "बबिता  घिमिरे",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 25824
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhoj-raaj-adhikaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भोज राज अधिकारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhoj-raaj-adhikaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhoj-raaj-adhikaarii",
+    "id": "version:entity:person/bhoj-raaj-adhikaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

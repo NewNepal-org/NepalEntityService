@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग विराटनगर महानगरपालिका हस्पिटल रोड",
+    "sys:age": 72,
+    "sys:candidate_id": 335197,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2007.05.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "केशव प्रसाद कोइराला",
+    "sys:gender": "पुरुष",
+    "sys:institute": "अखिल भारतीय आयुर्विज्ञान संस्थान नयाँ दिल्ली भारत",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "स्नातकोत्तर (एम.डि.मेडिकल)",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "6",
+    "sys:serial_no": 277,
+    "sys:spouse_name": "पुनम  कोइराला",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 35224
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ddaa-shekhr-koiraalaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "डा शेखर कोइराला"
+    }
+  ],
+  "short_description": null,
+  "slug": "ddaa-shekhr-koiraalaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ddaa-shekhr-koiraalaa",
+    "id": "version:entity:person/ddaa-shekhr-koiraalaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

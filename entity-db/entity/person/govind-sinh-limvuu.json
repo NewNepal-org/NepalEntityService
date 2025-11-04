@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "इलाम फाकफोकथुम गाउँपालिका पेलेव",
+    "sys:age": 44,
+    "sys:candidate_id": 337420,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "इलाम",
+    "sys:district": "इलाम",
+    "sys:district_code": 3,
+    "sys:dob_bs": "2035.04.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दल बहादुर लिम्वू",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 44,
+    "sys:spouse_name": "कल्पना  लिम्वू",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 684
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/govind-sinh-limvuu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गोविन्द सिंह लिम्वू"
+    }
+  ],
+  "short_description": null,
+  "slug": "govind-sinh-limvuu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/govind-sinh-limvuu",
+    "id": "version:entity:person/govind-sinh-limvuu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

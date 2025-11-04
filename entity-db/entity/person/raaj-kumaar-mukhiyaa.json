@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा सिराहा नगरपालिका सिरहा",
+    "sys:age": 44,
+    "sys:candidate_id": 336896,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2034.11.21",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "टुनटुन  मुखिया",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नमुना च.उ.मा.वि सिराहा",
+    "sys:political_party": "पिछडावर्ग निषाद दलित जनजाती पार्टी",
+    "sys:political_party_slug": "pichddaavrg-nissaad-dlit-jnjaatii-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 561,
+    "sys:spouse_name": "देव कुमारी मुखिया",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 84,
+    "sys:symbol_name": "कछुवा",
+    "sys:votes_received": 253
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaj-kumaar-mukhiyaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राज कुमार मुखिया"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaj-kumaar-mukhiyaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaj-kumaar-mukhiyaa",
+    "id": "version:entity:person/raaj-kumaar-mukhiyaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

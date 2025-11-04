@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गुल्मी मदाने गाउँपालिका श्रीनगर मार्ग",
+    "sys:age": 44,
+    "sys:candidate_id": 335436,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गुल्मी",
+    "sys:district": "गुल्मी",
+    "sys:district_code": 42,
+    "sys:dob_bs": "2035.02.10",
+    "sys:election_year": 2079,
+    "sys:experience": "प्रतिनिधि सभा सदस्य 2074\nसहरी विकास मन्त्री 2078\nसचिव नेपाल क. पार्टी (एकीकृत समाजवादी)\nकेन्द्रीय सदस्य नेकपा एमाले\nअध्यक्ष अखिल नेपाल राष्टिय स्व वि यु",
+    "sys:father_name": "रत्‍न बहादुर झाक्री",
+    "sys:gender": "महिला",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1801,
+    "sys:spouse_name": "पशुपति बाबु पुरी",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 26441
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-kumaarii-jhaakrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम कुमारी झाक्री"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-kumaarii-jhaakrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-kumaarii-jhaakrii",
+    "id": "version:entity:person/raam-kumaarii-jhaakrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

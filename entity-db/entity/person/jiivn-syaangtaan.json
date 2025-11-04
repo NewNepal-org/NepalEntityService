@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मकवानपुर थाहा नगरपालिका चिसापानी",
+    "sys:age": 40,
+    "sys:candidate_id": 336533,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मकवानपुर",
+    "sys:district": "मकवानपुर",
+    "sys:district_code": 31,
+    "sys:dob_bs": "2039.02.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम लाल स्‍याङतान",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1403,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 423
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jiivn-syaangtaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जीवन स्‍याङतान"
+    }
+  ],
+  "short_description": null,
+  "slug": "jiivn-syaangtaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jiivn-syaangtaan",
+    "id": "version:entity:person/jiivn-syaangtaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

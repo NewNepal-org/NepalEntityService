@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर ललितपुर महानगरपालिका",
+    "sys:age": 56,
+    "sys:candidate_id": 337537,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2022.10.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कुल बहादुर  के सी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1319,
+    "sys:spouse_name": "हिरा  के सी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 75,
+    "sys:symbol_name": "महिला",
+    "sys:votes_received": 29
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rghunaath-ke-sii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रघुनाथ के सी"
+    }
+  ],
+  "short_description": null,
+  "slug": "rghunaath-ke-sii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rghunaath-ke-sii",
+    "id": "version:entity:person/rghunaath-ke-sii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

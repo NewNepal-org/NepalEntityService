@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही मलंगवा नगरपालिका",
+    "sys:age": 58,
+    "sys:candidate_id": 335473,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2021.05.21",
+    "sys:election_year": 2079,
+    "sys:experience": "संबिधान सभा २०७० को चुनाव लडेको",
+    "sys:father_name": "गोखुल राम साह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेपाल ल क्याम्पस काठमाण्डौ",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 848,
+    "sys:spouse_name": "रेखा देवी साह",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 14819
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaj-naaraaynn-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राज नारायण साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaj-naaraaynn-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaj-naaraaynn-saah",
+    "id": "version:entity:person/raaj-naaraaynn-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

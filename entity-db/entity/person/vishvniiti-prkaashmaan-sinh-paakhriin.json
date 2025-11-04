@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा जिरी  नगरपालिका होसिङ्गा",
+    "sys:age": 51,
+    "sys:candidate_id": 334995,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2028.06.28",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजसेवा",
+    "sys:father_name": "भक्त बहादुर तमाङग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Jiri Uchha Ma. Vi.",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 601,
+    "sys:spouse_name": "मसली  तमाङग",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 317
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vishvniiti-prkaashmaan-sinh-paakhriin",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विश्‍वनीति प्रकाशमान सिंह पाख्रीन"
+    }
+  ],
+  "short_description": null,
+  "slug": "vishvniiti-prkaashmaan-sinh-paakhriin",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vishvniiti-prkaashmaan-sinh-paakhriin",
+    "id": "version:entity:person/vishvniiti-prkaashmaan-sinh-paakhriin:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन माडी नगरपालिका खैरहनी",
+    "sys:age": 33,
+    "sys:candidate_id": 337208,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2046.03.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कृष्‍ण प्रसाद सापकोटा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "North South University Bangalore",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्नातकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1646,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2092,
+    "sys:symbol_name": "सिरिन्ज",
+    "sys:votes_received": 88
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/baasudev-saapkottaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बासुदेव सापकोटा"
+    }
+  ],
+  "short_description": null,
+  "slug": "baasudev-saapkottaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/baasudev-saapkottaa",
+    "id": "version:entity:person/baasudev-saapkottaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

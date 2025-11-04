@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुपाल्चोक सुनकोशी गाउँपालिका स्वाँरा",
+    "sys:age": 61,
+    "sys:candidate_id": 334600,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुपाल्चोक",
+    "sys:district": "सिन्धुपाल्चोक",
+    "sys:district_code": 30,
+    "sys:dob_bs": "2017.10.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भक्त बहादुर नेपाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1356,
+    "sys:spouse_name": "कल्याणी  नेपाल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 27066
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sresh-nepaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सरेश नेपाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "sresh-nepaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sresh-nepaal",
+    "id": "version:entity:person/sresh-nepaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

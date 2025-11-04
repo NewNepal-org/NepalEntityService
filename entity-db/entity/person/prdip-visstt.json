@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं किर्तिपुर नगरपालिका दूधपोखरी",
+    "sys:age": 47,
+    "sys:candidate_id": 334858,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2031.08.29",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कृष्ण बहादुर विष्‍ट",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "10",
+    "sys:serial_no": 1203,
+    "sys:spouse_name": "पविता  विष्‍ट के.सी.",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 8739
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prdip-visstt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रदिप विष्‍ट"
+    }
+  ],
+  "short_description": null,
+  "slug": "prdip-visstt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prdip-visstt",
+    "id": "version:entity:person/prdip-visstt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

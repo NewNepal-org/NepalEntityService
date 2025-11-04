@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुपाल्चोक लिसंखु पाखर गाउँपालिका .",
+    "sys:age": 33,
+    "sys:candidate_id": 335972,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुपाल्चोक",
+    "sys:district": "सिन्धुपाल्चोक",
+    "sys:district_code": 30,
+    "sys:dob_bs": "2045.08.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कर्म सिंह लामा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1363,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 308
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ddivii-sinh-laamaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "डिवी सिंह लामा"
+    }
+  ],
+  "short_description": null,
+  "slug": "ddivii-sinh-laamaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ddivii-sinh-laamaa",
+    "id": "version:entity:person/ddivii-sinh-laamaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक बनेपा नगरपालिका मुदेटोल",
+    "sys:age": 64,
+    "sys:candidate_id": 336891,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2014.10.28",
+    "sys:election_year": 2079,
+    "sys:experience": "सहकारी, उद्योग, व्यापार",
+    "sys:father_name": "गणेश बहादुर जोशी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "विद्यार्थी निकेतन भक्तपुर",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1345,
+    "sys:spouse_name": "दुर्गा देवी जोशी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 162
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/siddhi-bhaadur-joshii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सिद्धि बहादुर जोशी"
+    }
+  ],
+  "short_description": null,
+  "slug": "siddhi-bhaadur-joshii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/siddhi-bhaadur-joshii",
+    "id": "version:entity:person/siddhi-bhaadur-joshii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली लम्की चुहा नगरपालिका खमरीया",
+    "sys:age": 47,
+    "sys:candidate_id": 334153,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "अछाम",
+    "sys:district": "कैलाली",
+    "sys:district_code": 71,
+    "sys:dob_bs": "2031.10.07",
+    "sys:election_year": 2079,
+    "sys:experience": "१ कार्यकाल प्रतिनिधिसभा सदस्य",
+    "sys:father_name": "अम्‍बर बहादुर रावल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "स्नातकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2274,
+    "sys:spouse_name": "मिरा  के.सी.",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 16128
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jhptt-bhaadur-raavl",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "झपट बहादुर रावल"
+    }
+  ],
+  "short_description": null,
+  "slug": "jhptt-bhaadur-raavl",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jhptt-bhaadur-raavl",
+    "id": "version:entity:person/jhptt-bhaadur-raavl:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

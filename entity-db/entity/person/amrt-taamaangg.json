@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन भरतपुर महानगरपालिका भोजाड",
+    "sys:age": 41,
+    "sys:candidate_id": 337735,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुपाल्चोक",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2038.01.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पुर्ण बहादुर तामाङ्ग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नयाँ किरण मा वि भोजाड",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "साधारण",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1628,
+    "sys:spouse_name": "अन्जु  तामाङ्ग",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 149
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/amrt-taamaangg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अमृत तामाङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "amrt-taamaangg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/amrt-taamaangg",
+    "id": "version:entity:person/amrt-taamaangg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

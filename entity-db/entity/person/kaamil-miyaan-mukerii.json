@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही मलंगवा नगरपालिका",
+    "sys:age": 51,
+    "sys:candidate_id": 335648,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2027.10.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "महिन्द्र मियाँ मुकेरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 859,
+    "sys:spouse_name": "हालिमा  खातुन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1009,
+    "sys:symbol_name": "डोजर",
+    "sys:votes_received": 44
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kaamil-miyaan-mukerii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कामिल मियाँ मुकेरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "kaamil-miyaan-mukerii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kaamil-miyaan-mukerii",
+    "id": "version:entity:person/kaamil-miyaan-mukerii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

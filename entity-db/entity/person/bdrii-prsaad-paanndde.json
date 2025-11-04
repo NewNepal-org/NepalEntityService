@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाजुरा हिमाली गाउँपालिका फैती",
+    "sys:age": 48,
+    "sys:candidate_id": 337956,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाजुरा",
+    "sys:district": "बाजुरा",
+    "sys:district_code": 67,
+    "sys:dob_bs": "2030.11.10",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनिति",
+    "sys:father_name": "विष्णु दत्त पाण्डे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU Nepal",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2233,
+    "sys:spouse_name": "सरिता  हुमागाई पाण्डे",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 31786
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bdrii-prsaad-paanndde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बद्री प्रसाद पाण्डे"
+    }
+  ],
+  "short_description": null,
+  "slug": "bdrii-prsaad-paanndde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bdrii-prsaad-paanndde",
+    "id": "version:entity:person/bdrii-prsaad-paanndde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

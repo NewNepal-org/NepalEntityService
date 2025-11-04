@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर ललितपुर महानगरपालिका लगनखेल",
+    "sys:age": 45,
+    "sys:candidate_id": 338856,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दाङ",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2034.05.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "उमानन्द  पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनसमाजवादी पार्टी नेपाल",
+    "sys:political_party_slug": "jnsmaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1293,
+    "sys:spouse_name": "श्रृजना  पौडेल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2292,
+    "sys:symbol_name": "पाँचकुने तारा",
+    "sys:votes_received": 68
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shiv-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शिव पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "shiv-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shiv-pauddel",
+    "id": "version:entity:person/shiv-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

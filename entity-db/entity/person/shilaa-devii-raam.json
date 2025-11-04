@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा लहान नगरपालिका लहान",
+    "sys:age": 44,
+    "sys:candidate_id": 339016,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2035.04.18",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रुददेव महरा",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "I.Ed",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 545,
+    "sys:spouse_name": "चन्देश्‍वर राम",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 46
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shilaa-devii-raam",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शिला देवी राम"
+    }
+  ],
+  "short_description": null,
+  "slug": "shilaa-devii-raam",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shilaa-devii-raam",
+    "id": "version:entity:person/shilaa-devii-raam:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही सियारी गाउँपालिका अमारी",
+    "sys:age": 45,
+    "sys:candidate_id": 337697,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2034.05.25",
+    "sys:election_year": 2079,
+    "sys:experience": "शिक्षण",
+    "sys:father_name": "झकरी  पथरकट्ट",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1921,
+    "sys:spouse_name": "मुक्ती प्रसाद पथरकट्ट",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2456,
+    "sys:symbol_name": "लोहोरो सिलौटो",
+    "sys:votes_received": 34
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/guddiyaa-pthrktttt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गुडिया पथरकट्ट"
+    }
+  ],
+  "short_description": null,
+  "slug": "guddiyaa-pthrktttt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/guddiyaa-pthrktttt",
+    "id": "version:entity:person/guddiyaa-pthrktttt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

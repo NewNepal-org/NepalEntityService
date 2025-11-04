@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा क्षिरेश्वरनाथ नगरपालिका कुचाइटोल",
+    "sys:age": 26,
+    "sys:candidate_id": 338386,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2053.01.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राजदेव  चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सरस्वती सेकेन्ड्री स्कुल महेन्द्रनगर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 742,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 36
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/anil-kumaar-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अनिल कुमार चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "anil-kumaar-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/anil-kumaar-caudhrii",
+    "id": "version:entity:person/anil-kumaar-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा कलैया उपमहानगरपालिका बिजुलपुर",
+    "sys:age": 58,
+    "sys:candidate_id": 335993,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2020.11.11",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनीतिक अनुभव",
+    "sys:father_name": "तपसी साह तेली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "स्थानीय बिजुलपुर रामपुर विद्यालय",
+    "sys:political_party": "विवेकशील साझा पार्टी",
+    "sys:political_party_slug": "vivekshiil-saajhaa-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1526,
+    "sys:spouse_name": "राधिका देवी तेली",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 42,
+    "sys:symbol_name": "तराजु",
+    "sys:votes_received": 193
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/amirii-saah-telii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अमिरी साह तेली"
+    }
+  ],
+  "short_description": null,
+  "slug": "amirii-saah-telii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/amirii-saah-telii",
+    "id": "version:entity:person/amirii-saah-telii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

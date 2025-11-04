@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक चौंरीदेउराली गाउँपालिका पचुवार घाट",
+    "sys:age": 35,
+    "sys:candidate_id": 338213,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2044.03.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मित्र  लाल  लामा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1337,
+    "sys:spouse_name": "सुशिला   लामा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 46
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prkaash-laamaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रकाश  लामा"
+    }
+  ],
+  "short_description": null,
+  "slug": "prkaash-laamaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prkaash-laamaa",
+    "id": "version:entity:person/prkaash-laamaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

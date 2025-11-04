@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मकवानपुर हेटौडा उपमहानगरपालिका कमलडाँडा",
+    "sys:age": 62,
+    "sys:candidate_id": 335781,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मकवानपुर",
+    "sys:district": "मकवानपुर",
+    "sys:district_code": 31,
+    "sys:dob_bs": "2017.03.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बद्रि प्रसाद खतिवडा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1399,
+    "sys:spouse_name": "मुनु  सिग्देल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 30432
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/virodh-khtivddaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विरोध खतिवडा"
+    }
+  ],
+  "short_description": null,
+  "slug": "virodh-khtivddaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/virodh-khtivddaa",
+    "id": "version:entity:person/virodh-khtivddaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

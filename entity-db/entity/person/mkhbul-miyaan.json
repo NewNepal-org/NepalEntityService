@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी विष्णुपुर गाउँपालिका कट्टी",
+    "sys:age": 53,
+    "sys:candidate_id": 337551,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2026.01.17",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सुलेमान  मियाँ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 483,
+    "sys:spouse_name": "अकिना  खातुन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 163
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mkhbul-miyaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मखबुल मियाँ"
+    }
+  ],
+  "short_description": null,
+  "slug": "mkhbul-miyaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mkhbul-miyaan",
+    "id": "version:entity:person/mkhbul-miyaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

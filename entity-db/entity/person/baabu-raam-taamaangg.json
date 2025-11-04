@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रामेछाप लिखु तामाकोशी गाउँपालिका सुउल्लो",
+    "sys:age": 38,
+    "sys:candidate_id": 339088,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रामेछाप",
+    "sys:district": "रामेछाप",
+    "sys:district_code": 18,
+    "sys:dob_bs": "2041.02.23",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लाल बहादुर तामाङग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली जनता दल",
+    "sys:political_party_slug": "nepaalii-jntaa-dl",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 624,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 17,
+    "sys:symbol_name": "गोरु गाडाको चक्का (पाङ्‌ग्रो)",
+    "sys:votes_received": 235
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/baabu-raam-taamaangg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बाबु राम तामाङग"
+    }
+  ],
+  "short_description": null,
+  "slug": "baabu-raam-taamaangg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/baabu-raam-taamaangg",
+    "id": "version:entity:person/baabu-raam-taamaangg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

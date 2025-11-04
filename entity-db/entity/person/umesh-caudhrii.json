@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा जनकपुरधाम उपमहानगरपालिका",
+    "sys:age": 50,
+    "sys:candidate_id": 334235,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "महोत्तरी",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2028.11.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जय नारायण चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "tu",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 717,
+    "sys:spouse_name": "वविता कुमारी चौधरी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 50
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/umesh-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "उमेश चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "umesh-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/umesh-caudhrii",
+    "id": "version:entity:person/umesh-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

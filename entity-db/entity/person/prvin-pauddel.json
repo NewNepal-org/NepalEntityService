@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तनहुँ व्यास नगरपालिका जनजागृती टोल",
+    "sys:age": 31,
+    "sys:candidate_id": 337891,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तनहुँ",
+    "sys:district": "तनहुँ",
+    "sys:district_code": 40,
+    "sys:dob_bs": "2047.10.29",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राजेश्‍वर  पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "काठमाडौ मोडल कलेज",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1749,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 284
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prvin-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रविन पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "prvin-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prvin-pauddel",
+    "id": "version:entity:person/prvin-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

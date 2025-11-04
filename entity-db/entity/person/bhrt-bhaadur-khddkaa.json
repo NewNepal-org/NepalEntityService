@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर चाँगुनारायण नगरपालिका सुडाल",
+    "sys:age": 60,
+    "sys:candidate_id": 335017,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2019.01.31",
+    "sys:election_year": 2079,
+    "sys:experience": "नेपाली सेनामा 36 वर्ष, राष्ट्रिय गौरवको काठमाणडौ-तराई मघेसदुत मार्ग काडा 3 वर्ष\nसैनिक कल्याणकारी बाट स्कुल कलेजको छाता संगठनको अध्यक्षको अनुभव\nपात्ले वन खाने पानी उपभोग समितीको अध्यक्षको अनुभव\nराष्ट्रिय मानव अधिकार मञ्च जिल्ला कार्य समितिको अध्यक्षको अनुभव",
+    "sys:father_name": "धन बहादुर खड्का",
+    "sys:gender": "पुरुष",
+    "sys:institute": "प्राईभेट",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1221,
+    "sys:spouse_name": "अनुराधा  खड्का",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 9303
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhrt-bhaadur-khddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भरत बहादुर खड्का"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhrt-bhaadur-khddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhrt-bhaadur-khddkaa",
+    "id": "version:entity:person/bhrt-bhaadur-khddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

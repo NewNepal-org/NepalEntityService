@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पश्चिम) सरावल गाउँपालिका",
+    "sys:age": 35,
+    "sys:candidate_id": 336917,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district_code": 77,
+    "sys:dob_bs": "2044.06.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रोहित  थारु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "एभरस कलेज बुटवल",
+    "sys:political_party": "जनमत पार्टी",
+    "sys:political_party_slug": "jnmt-paarttii",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2392,
+    "sys:spouse_name": "सिमा कुमारी थारु",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2289,
+    "sys:symbol_name": "लाउड स्पिकर",
+    "sys:votes_received": 4612
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/baal-govind-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बाल गोविन्द चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "baal-govind-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/baal-govind-caudhrii",
+    "id": "version:entity:person/baal-govind-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

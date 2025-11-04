@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग रतुवामाई नगरपालिका",
+    "sys:age": 52,
+    "sys:candidate_id": 334457,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2026.11.21",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनितिक जवाफ देहिता, विकास निति वकालत, अध्ययन अनुसन्धान, परियोजना डिजाइन",
+    "sys:father_name": "धनस्याम  सिवाकोटी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्नातकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 210,
+    "sys:spouse_name": "रमा  पाठक",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 118
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaj-kumaar-sivaakottii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राज कुमार सिवाकोटी"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaj-kumaar-sivaakottii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaj-kumaar-sivaakottii",
+    "id": "version:entity:person/raaj-kumaar-sivaakottii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

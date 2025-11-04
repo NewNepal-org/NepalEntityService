@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर कटारी  नगरपालिका बलाहा",
+    "sys:age": 50,
+    "sys:candidate_id": 333474,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "उदयपुर",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2028.12.02",
+    "sys:election_year": 2079,
+    "sys:experience": "क. प्रशासनको अनुभव \nख. सुभीसुधार अनुभव \nग. नापी अनुभव \nघ. स्थानीय सरकारको अनुभव",
+    "sys:father_name": "काशिाराज  राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री त्रिवेणी उच्च मावि",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 428,
+    "sys:spouse_name": "सीता कुमारी राई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 10379
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-kumaar-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम कुमार राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-kumaar-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-kumaar-raaii",
+    "id": "version:entity:person/raam-kumaar-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

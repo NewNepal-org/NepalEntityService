@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दैलेख ठाँटीकाँध गाउँपालिका वाजपानि",
+    "sys:age": 34,
+    "sys:candidate_id": 338334,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दैलेख",
+    "sys:district": "डडेलधुरा",
+    "sys:district_code": 74,
+    "sys:dob_bs": "2044.07.12",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनैतिक क्षेत्रमा काम गरेको अनुभव\nकृषि क्षेत्रमा काम गरेको अनुभव\nसामाजिक क्षेत्रमा काम गरेको अनुभव",
+    "sys:father_name": "नर बहादुर कठायत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "कालिका उमावि आठबिस दैलेख",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2337,
+    "sys:spouse_name": "",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 85
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/laal-bhaadur-ktthaayt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लाल बहादुर कठायत"
+    }
+  ],
+  "short_description": null,
+  "slug": "laal-bhaadur-ktthaayt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/laal-bhaadur-ktthaayt",
+    "id": "version:entity:person/laal-bhaadur-ktthaayt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

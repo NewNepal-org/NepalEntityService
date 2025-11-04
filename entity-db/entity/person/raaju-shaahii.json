@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही बुटवल उपमहानगरपालिका सुन्दरनगर",
+    "sys:age": 43,
+    "sys:candidate_id": 338763,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2036.01.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गणेश कुमार शाही",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल दलित पार्टी(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-dlit-paarttiiekl-cunaav-cinh",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1903,
+    "sys:spouse_name": "दिलमाया शाही",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2147,
+    "sys:symbol_name": "गितार",
+    "sys:votes_received": 123
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaju-shaahii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजु शाही"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaju-shaahii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaju-shaahii",
+    "id": "version:entity:person/raaju-shaahii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

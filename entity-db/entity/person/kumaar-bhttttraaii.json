@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा विर्तामोड नगरपालिका एकता टोल",
+    "sys:age": 50,
+    "sys:candidate_id": 334875,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2028.09.29",
+    "sys:election_year": 2079,
+    "sys:experience": "उद्योग वाणिज्य संघ बिर्तामोडको पूर्व अध्यक्ष तथा प्रदेश सदस्य\nरेडियो ब्रोडकास्टिङ्ग एसोसिएसन नेपालको केन्द्रिय अध्यक्ष",
+    "sys:father_name": "राम प्रसाद भट्टराई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "मेची बहुमुखी क्याम्पस",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 78,
+    "sys:spouse_name": "धन माया दाहाल(भट्टराई)",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2347,
+    "sys:symbol_name": "चापाकल",
+    "sys:votes_received": 244
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kumaar-bhttttraaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कुमार भट्टराई"
+    }
+  ],
+  "short_description": null,
+  "slug": "kumaar-bhttttraaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kumaar-bhttttraaii",
+    "id": "version:entity:person/kumaar-bhttttraaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रामेछाप सुनापती गाउँपालिका घिसिङ टोल",
+    "sys:age": 39,
+    "sys:candidate_id": 335371,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रामेछाप",
+    "sys:district": "रामेछाप",
+    "sys:district_code": 18,
+    "sys:dob_bs": "2039.11.20",
+    "sys:election_year": 2079,
+    "sys:experience": "NA",
+    "sys:father_name": "सन्त बहादुर तमाङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "मन्थली उ.मा बि. मन्थली",
+    "sys:political_party": "नेश्नलिष्ट पिपल्स पार्टी",
+    "sys:political_party_slug": "neshnlisstt-pipls-paarttii",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 625,
+    "sys:spouse_name": "छिरिङमा  शेर्पा घिसिङ",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1026,
+    "sys:symbol_name": "लाटोकोसेरो",
+    "sys:votes_received": 210
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/suvaas-ghising",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुवास घिसिङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "suvaas-ghising",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/suvaas-ghising",
+    "id": "version:entity:person/suvaas-ghising:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

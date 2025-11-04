@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ताप्लेजुंग फुङलिङ नगरपालिका मेदिवुङ",
+    "sys:age": 69,
+    "sys:candidate_id": 335454,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ताप्लेजुंग",
+    "sys:district": "ताप्लेजुंग",
+    "sys:district_code": 1,
+    "sys:dob_bs": "2010.01.09",
+    "sys:election_year": 2079,
+    "sys:experience": "निजामति सेवा स्थायी नियुक्ति भई विभिन्न जिल्लामा/लेखा परिक्षणको कार्य गरेको/आध्यात्मिक संस्थाहरूमा प्रवक्ता दिने गरेको",
+    "sys:father_name": "माहा रुद्र बराल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "वासु सं. मा.वि.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 11,
+    "sys:spouse_name": "दिपा  बराल",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2467,
+    "sys:symbol_name": "जुँगा सहितको अनुहार",
+    "sys:votes_received": 29
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hri-prsaad-braal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हरि प्रसाद बराल"
+    }
+  ],
+  "short_description": null,
+  "slug": "hri-prsaad-braal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hri-prsaad-braal",
+    "id": "version:entity:person/hri-prsaad-braal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

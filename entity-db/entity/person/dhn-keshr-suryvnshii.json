@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा बगनासकाली गाउँपालिका खानीछाप",
+    "sys:age": 65,
+    "sys:candidate_id": 333354,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2013.12.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "इन्द्र बहादुर सुर्यवंशी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जबलपुर बोर्ड भारत",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "10",
+    "sys:serial_no": 1218,
+    "sys:spouse_name": "शान्ती कुमारी सुर्यवंशी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 24
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dhn-keshr-suryvnshii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "धन केशर सुर्यवंशी"
+    }
+  ],
+  "short_description": null,
+  "slug": "dhn-keshr-suryvnshii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dhn-keshr-suryvnshii",
+    "id": "version:entity:person/dhn-keshr-suryvnshii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

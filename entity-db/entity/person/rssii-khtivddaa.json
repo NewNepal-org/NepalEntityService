@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धादिङ्ग गल्छी गाउँपालिका भुत्‍याहा",
+    "sys:age": 37,
+    "sys:candidate_id": 336045,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धादिङ्ग",
+    "sys:district": "धादिङ्ग",
+    "sys:district_code": 24,
+    "sys:dob_bs": "2042.05.17",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मुक्ति नाथ खतिवडा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 918,
+    "sys:spouse_name": "सन्‍जु  रेग्‍मी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2124,
+    "sys:symbol_name": "टि टेबुल",
+    "sys:votes_received": 8
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rssii-khtivddaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ऋषी खतिवडा"
+    }
+  ],
+  "short_description": null,
+  "slug": "rssii-khtivddaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rssii-khtivddaa",
+    "id": "version:entity:person/rssii-khtivddaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

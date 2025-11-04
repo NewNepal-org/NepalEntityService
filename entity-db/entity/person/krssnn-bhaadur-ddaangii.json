@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ घोराही उपमहानगरपालिका डाडागाउ",
+    "sys:age": 49,
+    "sys:candidate_id": 334119,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दाङ",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2029.11.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नर बहादुर डाँगी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2096,
+    "sys:spouse_name": "विमला  गौतम",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 158
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-bhaadur-ddaangii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण बहादुर डाँगी"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-bhaadur-ddaangii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-bhaadur-ddaangii",
+    "id": "version:entity:person/krssnn-bhaadur-ddaangii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

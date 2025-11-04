@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही ओमसतिया गाउँपालिका ठूलो बालपूर",
+    "sys:age": 35,
+    "sys:candidate_id": 338614,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2043.09.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शंकर दयाल बनियाँ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "शुसंस्कृत माध्यमिक विद्यालय",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "सामान्य",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1885,
+    "sys:spouse_name": "रक्षा  बनियाँ",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 427
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raakesh-bniyaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राकेश बनियाँ"
+    }
+  ],
+  "short_description": null,
+  "slug": "raakesh-bniyaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raakesh-bniyaan",
+    "id": "version:entity:person/raakesh-bniyaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "अछाम चौरपाटी गाउँपालिका थापडा",
+    "sys:age": 56,
+    "sys:candidate_id": 335229,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "अछाम",
+    "sys:district": "अछाम",
+    "sys:district_code": 68,
+    "sys:dob_bs": "2023.05.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कर्ण बहादुर कुँवर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2238,
+    "sys:spouse_name": "ध्रुर्वा कुमारी कुँवर",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 19534
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sher-bhaadur-kunvr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शेर बहादुर कुँवर"
+    }
+  ],
+  "short_description": null,
+  "slug": "sher-bhaadur-kunvr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sher-bhaadur-kunvr",
+    "id": "version:entity:person/sher-bhaadur-kunvr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

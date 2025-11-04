@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा विर्तामोड नगरपालिका पञ्चकन्या",
+    "sys:age": 55,
+    "sys:candidate_id": 334547,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2023.10.15",
+    "sys:election_year": 2079,
+    "sys:experience": "विभिन्न संघ संस्थामा काम गरेको",
+    "sys:father_name": "पदम बहादुर मगर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "म र मा वि झापा",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 75,
+    "sys:spouse_name": "लक्ष्मीमाया  मगर",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 288
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prshuraam-mgr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रशुराम मगर"
+    }
+  ],
+  "short_description": null,
+  "slug": "prshuraam-mgr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prshuraam-mgr",
+    "id": "version:entity:person/prshuraam-mgr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

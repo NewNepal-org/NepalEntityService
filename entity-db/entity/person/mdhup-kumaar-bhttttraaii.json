@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन रत्ननगर नगरपालिका टाडी बजार",
+    "sys:age": 58,
+    "sys:candidate_id": 336668,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2021.01.03",
+    "sys:election_year": 2079,
+    "sys:experience": "ढुवानी व्यवसायी संघको केन्द्रिय सदस्य\nरोटरी क्लब रत्ननगरको अध्यक्ष",
+    "sys:father_name": "नन्द प्रसाद भट्टराई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री कर्मस क्याम्पस",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1607,
+    "sys:spouse_name": "मिनु  भट्टराई",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 2751
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mdhup-kumaar-bhttttraaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मधुप कुमार भट्टराई"
+    }
+  ],
+  "short_description": null,
+  "slug": "mdhup-kumaar-bhttttraaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mdhup-kumaar-bhttttraaii",
+    "id": "version:entity:person/mdhup-kumaar-bhttttraaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

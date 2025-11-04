@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा कलैया उपमहानगरपालिका पतौरा",
+    "sys:age": 53,
+    "sys:candidate_id": 333886,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2026.07.05",
+    "sys:election_year": 2079,
+    "sys:experience": "कृषि\nराजनीतिक",
+    "sys:father_name": "बिगा राउत कुर्मी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1523,
+    "sys:spouse_name": "यसोदा  देवी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 604
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajendr-prsaad-jaisvaar",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजेन्द्र प्रसाद जैसवार"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajendr-prsaad-jaisvaar",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajendr-prsaad-jaisvaar",
+    "id": "version:entity:person/raajendr-prsaad-jaisvaar:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

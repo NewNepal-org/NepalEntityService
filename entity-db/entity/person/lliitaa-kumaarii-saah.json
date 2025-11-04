@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा लहान नगरपालिका",
+    "sys:age": 34,
+    "sys:candidate_id": 336479,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2045.05.23",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजिक अभिनता।",
+    "sys:father_name": "शिव जी  साह",
+    "sys:gender": "महिला",
+    "sys:institute": "सार्धा वोर्डीङ स्कुल।",
+    "sys:political_party": "जनता प्रगतिशिल पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-prgtishil-paarttii-nepaal",
+    "sys:qualification": "slc",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 518,
+    "sys:spouse_name": "अादित्य  साह",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2324,
+    "sys:symbol_name": "कोदालो बोकेको किसान",
+    "sys:votes_received": 122
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lliitaa-kumaarii-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ललीता कुमारी साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "lliitaa-kumaarii-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lliitaa-kumaarii-saah",
+    "id": "version:entity:person/lliitaa-kumaarii-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

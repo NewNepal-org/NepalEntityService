@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा भिमेश्वर  नगरपालिका",
+    "sys:age": 42,
+    "sys:candidate_id": 335997,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2037.03.27",
+    "sys:election_year": 2079,
+    "sys:experience": "पत्रकारिता 2 दशक\nअन्तराष्ट्रिय भ्रमण ८१ देश\nकलाकारिता 15 बर्ष\nसामाजिक कार्य 15 बर्ष",
+    "sys:father_name": "नर प्रसाद सुवेदी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पदमोदय हाईस्कुल पुतलीसडक काठमाण्डौँ",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "प्लस टु",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 615,
+    "sys:spouse_name": "आरती  बलामी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1021,
+    "sys:symbol_name": "टेलिभिजन",
+    "sys:votes_received": 9
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-bhaadur-suvedii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम बहादुर सुवेदी"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-bhaadur-suvedii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-bhaadur-suvedii",
+    "id": "version:entity:person/raam-bhaadur-suvedii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

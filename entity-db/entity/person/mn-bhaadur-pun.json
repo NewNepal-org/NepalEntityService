@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ घोराही उपमहानगरपालिका",
+    "sys:age": 46,
+    "sys:candidate_id": 337216,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "प्यूठान",
+    "sys:district": "प्यूठान",
+    "sys:district_code": 54,
+    "sys:dob_bs": "2033.01.08",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दोर बहादुर पुन",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2066,
+    "sys:spouse_name": "रेसमी कुमारी पुन",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 263
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mn-bhaadur-pun",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मन बहादुर पुन"
+    }
+  ],
+  "short_description": null,
+  "slug": "mn-bhaadur-pun",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mn-bhaadur-pun",
+    "id": "version:entity:person/mn-bhaadur-pun:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

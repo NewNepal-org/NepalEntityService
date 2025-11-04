@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन इच्छाकामना गाउँपालिका त्रिविणी",
+    "sys:age": 47,
+    "sys:candidate_id": 336828,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2032.06.27",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कम्बर बहादुर बस्नेत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "साधारण लेखपढ",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1658,
+    "sys:spouse_name": "अन्जना  थापामगर",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2124,
+    "sys:symbol_name": "टि टेबुल",
+    "sys:votes_received": 1
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhimsiin-bsnet",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भिम्सीन बस्नेत"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhimsiin-bsnet",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhimsiin-bsnet",
+    "id": "version:entity:person/bhimsiin-bsnet:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

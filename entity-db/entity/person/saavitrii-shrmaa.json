@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्वत कुश्मा नगरपालिका",
+    "sys:age": 31,
+    "sys:candidate_id": 335813,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्वत",
+    "sys:district": "पर्वत",
+    "sys:district_code": 51,
+    "sys:dob_bs": "2048.02.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मोतिलाल  घिमिरे",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2049,
+    "sys:spouse_name": "प्रदिप  तिमिल्सीना",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1009,
+    "sys:symbol_name": "डोजर",
+    "sys:votes_received": 4
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/saavitrii-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सावित्री शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "saavitrii-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/saavitrii-shrmaa",
+    "id": "version:entity:person/saavitrii-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

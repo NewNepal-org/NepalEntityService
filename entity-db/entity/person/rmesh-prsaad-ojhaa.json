@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भोजपुर भोजपुर नगरपालिका भुकुटी",
+    "sys:age": 48,
+    "sys:candidate_id": 335082,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भोजपुर",
+    "sys:district": "भोजपुर",
+    "sys:district_code": 7,
+    "sys:dob_bs": "2031.01.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चन्द्र प्रसाद ओझा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 175,
+    "sys:spouse_name": "पर्मिला कुमारी बराल (ओझा)",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 252
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rmesh-prsaad-ojhaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रमेश प्रसाद ओझा"
+    }
+  ],
+  "short_description": null,
+  "slug": "rmesh-prsaad-ojhaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rmesh-prsaad-ojhaa",
+    "id": "version:entity:person/rmesh-prsaad-ojhaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

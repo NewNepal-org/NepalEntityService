@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा भिमसेनथापा गाउँपालिका खागीथोक",
+    "sys:age": 28,
+    "sys:candidate_id": 338381,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गोरखा",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "2050.09.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चित्र प्रसाद पुडासैनी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1667,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2221,
+    "sys:symbol_name": "टायर",
+    "sys:votes_received": 52
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bissnnu-puddaasainii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बिष्णु पुडासैनी"
+    }
+  ],
+  "short_description": null,
+  "slug": "bissnnu-puddaasainii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bissnnu-puddaasainii",
+    "id": "version:entity:person/bissnnu-puddaasainii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

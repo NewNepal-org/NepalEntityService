@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ घोराही उपमहानगरपालिका पनौरा",
+    "sys:age": 64,
+    "sys:candidate_id": 333326,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दाङ",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2014.10.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "श्रीधर  यपाध्याय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2097,
+    "sys:spouse_name": "शान्ता  शर्मा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 91
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/govind-prsaad-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गोविन्द प्रसाद शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "govind-prsaad-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/govind-prsaad-shrmaa",
+    "id": "version:entity:person/govind-prsaad-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

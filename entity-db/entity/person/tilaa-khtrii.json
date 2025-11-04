@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बागलुङ गल्कोट नगरपालिका पचुवा",
+    "sys:age": 41,
+    "sys:candidate_id": 336750,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गुल्मी",
+    "sys:district": "बागलुङ",
+    "sys:district_code": 50,
+    "sys:dob_bs": "2037.07.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "यम बहादुर खत्री",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2033,
+    "sys:spouse_name": "कर्ण बहादुर खत्री",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 2327
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tilaa-khtrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तिला खत्री"
+    }
+  ],
+  "short_description": null,
+  "slug": "tilaa-khtrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tilaa-khtrii",
+    "id": "version:entity:person/tilaa-khtrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

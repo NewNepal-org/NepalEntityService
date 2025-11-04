@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर मध्यपुर थिमी नगरपालिका पुखुसी",
+    "sys:age": 35,
+    "sys:candidate_id": 333310,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2044.05.06",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजसेवी",
+    "sys:father_name": "गणेश मान बाडे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "भक्तपुर बहुमुखी क्याम्पस",
+    "sys:political_party": "नेपालका लागि नेपाली पार्टी",
+    "sys:political_party_slug": "nepaalkaa-laagi-nepaalii-paarttii",
+    "sys:qualification": "स्नातकोत्तर तह",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1246,
+    "sys:spouse_name": "रीता  मानन्धर (वाडे)",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2329,
+    "sys:symbol_name": "गोलाकार भित्र शंख",
+    "sys:votes_received": 99
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajesh-baadde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजेश बाडे"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajesh-baadde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajesh-baadde",
+    "id": "version:entity:person/raajesh-baadde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

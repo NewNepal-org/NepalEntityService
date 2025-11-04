@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी महादेवा गाउँपालिका अकबर पुर",
+    "sys:age": 43,
+    "sys:candidate_id": 335537,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2035.10.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बल देव मंडल",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "पिछडावर्ग निषाद दलित जनजाती पार्टी",
+    "sys:political_party_slug": "pichddaavrg-nissaad-dlit-jnjaatii-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 468,
+    "sys:spouse_name": "ओम नारायण मंडल",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 84,
+    "sys:symbol_name": "कछुवा",
+    "sys:votes_received": 72
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sumitraa-mnddl",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सु्मित्रा मंडल"
+    }
+  ],
+  "short_description": null,
+  "slug": "sumitraa-mnddl",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sumitraa-mnddl",
+    "id": "version:entity:person/sumitraa-mnddl:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

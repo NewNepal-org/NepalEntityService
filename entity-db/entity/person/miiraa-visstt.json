@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका आलोक मध्य मार्ग",
+    "sys:age": 39,
+    "sys:candidate_id": 333609,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2039.08.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लोक बहादुर कार्की",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 988,
+    "sys:spouse_name": "विकास  विष्‍ट",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 3
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/miiraa-visstt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मीरा विष्‍ट"
+    }
+  ],
+  "short_description": null,
+  "slug": "miiraa-visstt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/miiraa-visstt",
+    "id": "version:entity:person/miiraa-visstt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

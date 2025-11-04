@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी छिन्नमस्ता गाउँपालिका वरहि",
+    "sys:age": 55,
+    "sys:candidate_id": 334276,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2024.04.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "खटर  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 464,
+    "sys:spouse_name": "कोशिला/सुमित्रा  गुरुङ्ग/यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 192
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dev-naaraaynn-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देव नारायण यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "dev-naaraaynn-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dev-naaraaynn-yaadv",
+    "id": "version:entity:person/dev-naaraaynn-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

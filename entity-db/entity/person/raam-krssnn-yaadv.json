@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा क्षिरेश्वरनाथ नगरपालिका दुर्गाटोल",
+    "sys:age": 46,
+    "sys:candidate_id": 336712,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2033.01.13",
+    "sys:election_year": 2079,
+    "sys:experience": "बिगत २० वर्ष देखि राजनितिक क्षेत्रमा क्रियाशिल भई जनताको सेवामा समर्पित रहेको ।",
+    "sys:father_name": "राम प्रसाद यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "गंगोत्री बोर्डिङ स्कुल",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 754,
+    "sys:spouse_name": "रिना देवि यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 3
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-krssnn-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम कृष्ण यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-krssnn-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-krssnn-yaadv",
+    "id": "version:entity:person/raam-krssnn-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

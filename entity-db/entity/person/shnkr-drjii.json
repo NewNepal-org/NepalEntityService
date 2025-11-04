@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धादिङ्ग निलकण्ठ नगरपालिका बीच बजार",
+    "sys:age": 60,
+    "sys:candidate_id": 338241,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धादिङ्ग",
+    "sys:district": "धादिङ्ग",
+    "sys:district_code": 24,
+    "sys:dob_bs": "2018.12.17",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हर्के वहादुर दर्जी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 925,
+    "sys:spouse_name": "कमला  परियार",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 214
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shnkr-drjii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शंकर दर्जी"
+    }
+  ],
+  "short_description": null,
+  "slug": "shnkr-drjii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shnkr-drjii",
+    "id": "version:entity:person/shnkr-drjii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

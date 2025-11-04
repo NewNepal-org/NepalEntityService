@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा सिम्रौनगढ नगरपालिका सिम्रौन गढ",
+    "sys:age": 51,
+    "sys:candidate_id": 338163,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2028.03.21",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रफिक मिया अंसारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1484,
+    "sys:spouse_name": "नाजमा खातुन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 90
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/anvr-ansaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अनवर अंसारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "anvr-ansaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/anvr-ansaarii",
+    "id": "version:entity:person/anvr-ansaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा कलैया उपमहानगरपालिका महेशपुर",
+    "sys:age": 47,
+    "sys:candidate_id": 333278,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2032.02.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हरिनारायण राउत अहिर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "बि.एड.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1514,
+    "sys:spouse_name": "गिता  यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 17279
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raamvaavu-kumaar-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रामवावु कुमार यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "raamvaavu-kumaar-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raamvaavu-kumaar-yaadv",
+    "id": "version:entity:person/raamvaavu-kumaar-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

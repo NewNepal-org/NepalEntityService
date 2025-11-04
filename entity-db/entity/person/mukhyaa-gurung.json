@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मनाङ्ग मनाङ ङिस्याङ गाउँपालिका पिसाङ",
+    "sys:age": 38,
+    "sys:candidate_id": 333246,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मनाङ्ग",
+    "sys:district": "मनाङ्ग",
+    "sys:district_code": 37,
+    "sys:dob_bs": "2041.01.15",
+    "sys:election_year": 2079,
+    "sys:experience": "0",
+    "sys:father_name": "हिरा प्रसाद गुरुङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "0",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "साधारण",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1683,
+    "sys:spouse_name": "पास माया गुरुङ",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 5
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mukhyaa-gurung",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मुख्या गुरुङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "mukhyaa-gurung",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mukhyaa-gurung",
+    "id": "version:entity:person/mukhyaa-gurung:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

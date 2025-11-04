@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा हरीनास गाउँपालिका",
+    "sys:age": 65,
+    "sys:candidate_id": 333761,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2014.05.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लाल बहादुर थापा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पिताम्वर मावि क्याक्मी",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "कक्षा ८ पास",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1776,
+    "sys:spouse_name": "विन्देश्वरी  थापा",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 26
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/om-bhaadur-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ओम बहादुर थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "om-bhaadur-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/om-bhaadur-thaapaa",
+    "id": "version:entity:person/om-bhaadur-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

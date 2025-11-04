@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा कचनकवल गाउँपालिका देवरमण वस्ती",
+    "sys:age": 68,
+    "sys:candidate_id": 334856,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2010.09.04",
+    "sys:election_year": 2079,
+    "sys:experience": "दुई पटक अगाडी प्रतिनिधि सभा सदस्य उम्मेद्वार भएको",
+    "sys:father_name": "मात्रीका प्रसाद भट्टराई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "वनारस हिन्दु विश्‍व विद्यालय",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 102,
+    "sys:spouse_name": "डिल्ली माया भट्टराई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 26
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/devii-rmnn-bhttttraaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देवी  रमण भट्टराई"
+    }
+  ],
+  "short_description": null,
+  "slug": "devii-rmnn-bhttttraaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/devii-rmnn-bhttttraaii",
+    "id": "version:entity:person/devii-rmnn-bhttttraaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

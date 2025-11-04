@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा हंसपुर नगरपालिका वेल्‍ही",
+    "sys:age": 53,
+    "sys:candidate_id": 333506,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2026.04.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भुषण  यादब",
+    "sys:gender": "पुरुष",
+    "sys:institute": "रा रा ब क्याम्पस जनकपुर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 674,
+    "sys:spouse_name": "किरण कुमारी यादब",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2321,
+    "sys:symbol_name": "घण्टाघर",
+    "sys:votes_received": 22
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vijy-kumaar-yaadb",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विजय कुमार यादब"
+    }
+  ],
+  "short_description": null,
+  "slug": "vijy-kumaar-yaadb",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vijy-kumaar-yaadb",
+    "id": "version:entity:person/vijy-kumaar-yaadb:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

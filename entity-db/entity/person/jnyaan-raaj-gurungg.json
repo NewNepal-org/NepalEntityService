@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा वालिङ नगरपालिका तल्‍लोच्‍यारे",
+    "sys:age": 53,
+    "sys:candidate_id": 335566,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "कास्की",
+    "sys:district_code": 39,
+    "sys:dob_bs": "2025.09.01",
+    "sys:election_year": 2079,
+    "sys:experience": "समाज सेवी सैनिक सेवा",
+    "sys:father_name": "कृष्‍ण बहादुर गुरुङ्ग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1717,
+    "sys:spouse_name": "खगीसरा  गुरुङ्ग",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 259
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jnyaan-raaj-gurungg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ज्ञान राज गुरुङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "jnyaan-raaj-gurungg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jnyaan-raaj-gurungg",
+    "id": "version:entity:person/jnyaan-raaj-gurungg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

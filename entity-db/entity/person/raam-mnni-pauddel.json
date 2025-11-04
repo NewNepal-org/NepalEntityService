@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर कटारी  नगरपालिका जौवारी",
+    "sys:age": 53,
+    "sys:candidate_id": 333612,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "उदयपुर",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2026.05.31",
+    "sys:election_year": 2079,
+    "sys:experience": "क. बालि विज्ञान \nख. पशु पालन \nग. पत्स्य पालन \nघ. हाल अदृश्य शक्ति सम्बन्धि स्व अनुसन्धानरत",
+    "sys:father_name": "ठाकुर प्रसाद पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "प्रविधिक शिक्षालय लाहान",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 435,
+    "sys:spouse_name": "यसोदा  पौडेल (काफ्ले)",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 96
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-mnni-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम मणि पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-mnni-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-mnni-pauddel",
+    "id": "version:entity:person/raam-mnni-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

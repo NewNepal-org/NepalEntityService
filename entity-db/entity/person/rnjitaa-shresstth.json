@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली टिकापुर नगरपालिका फुलबारी",
+    "sys:age": 39,
+    "sys:candidate_id": 338342,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "कैलाली",
+    "sys:district_code": 71,
+    "sys:dob_bs": "2039.11.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रत्न बहादुर श्रेष्ठ",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नागरिक उन्मुक्ति पार्टी",
+    "sys:political_party_slug": "naagrik-unmukti-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2262,
+    "sys:spouse_name": "रेशम  चौधरी",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2306,
+    "sys:symbol_name": "पिधँ भएको सादा ढकिया",
+    "sys:votes_received": 30404
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rnjitaa-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रन्जिता श्रेष्ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "rnjitaa-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rnjitaa-shresstth",
+    "id": "version:entity:person/rnjitaa-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

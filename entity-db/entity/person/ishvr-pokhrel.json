@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं टोखा नगरपालिका कुवँर कोलनी",
+    "sys:age": 68,
+    "sys:candidate_id": 335292,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2010.10.20",
+    "sys:election_year": 2079,
+    "sys:experience": "उपप्रधानमन्त्री तथा रक्षा मन्त्री २०७४ फागुण २०७७ जेठ\nप्रतिनिधिसभा सदस्य, २०५६ र २०७४",
+    "sys:father_name": "शिव राज पोखरेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1079,
+    "sys:spouse_name": "मिरा  पोखरेल (ध्वजु)",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 10190
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ishvr-pokhrel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "इश्वर पोखरेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "ishvr-pokhrel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ishvr-pokhrel",
+    "id": "version:entity:person/ishvr-pokhrel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

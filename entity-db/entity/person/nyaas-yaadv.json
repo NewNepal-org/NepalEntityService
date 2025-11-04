@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा हंसपुर नगरपालिका",
+    "sys:age": 33,
+    "sys:candidate_id": 336958,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2046.06.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "आन्नद  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Oxford Univeristy",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "CA",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 692,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2151,
+    "sys:symbol_name": "खाम",
+    "sys:votes_received": 57
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nyaas-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "न्यास यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "nyaas-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nyaas-yaadv",
+    "id": "version:entity:person/nyaas-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

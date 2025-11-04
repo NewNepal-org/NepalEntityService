@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कास्की पोखरा महानगरपालिका मौला",
+    "sys:age": 67,
+    "sys:candidate_id": 336484,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कास्की",
+    "sys:district": "कास्की",
+    "sys:district_code": 39,
+    "sys:dob_bs": "2011.08.24",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनीति र समाजसेवा",
+    "sys:father_name": "नन्दलाल  चुवाई सुवेदी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1729,
+    "sys:spouse_name": "लुरी माया सुवेदी",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 2442
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jgt-prsaad-suvedii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जगत प्रसाद सुवेदी"
+    }
+  ],
+  "short_description": null,
+  "slug": "jgt-prsaad-suvedii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jgt-prsaad-suvedii",
+    "id": "version:entity:person/jgt-prsaad-suvedii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

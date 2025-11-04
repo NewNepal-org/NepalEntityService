@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही कौडेना गाउँपालिका सुखचैना",
+    "sys:age": 48,
+    "sys:candidate_id": 337460,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2030.11.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बाल किशोर मिश्र",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय काठमाण्डौं",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 879,
+    "sys:spouse_name": "नीतु  पाठक",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 5813
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raakesh-kumaar-mishr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राकेश कुमार मिश्र"
+    }
+  ],
+  "short_description": null,
+  "slug": "raakesh-kumaar-mishr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raakesh-kumaar-mishr",
+    "id": "version:entity:person/raakesh-kumaar-mishr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

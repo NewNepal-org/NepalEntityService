@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "लमजुंग दूधपोखरी गाउँपालिका भूम्लिचोक",
+    "sys:age": 56,
+    "sys:candidate_id": 334278,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "लमजुंग",
+    "sys:district": "लमजुंग",
+    "sys:district_code": 38,
+    "sys:dob_bs": "2023.07.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "तकार ध्वोज गुरुङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1692,
+    "sys:spouse_name": "आइत कुमारी गुरुङ",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 33
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ttk-bhaadur-gurung",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "टक बहादुर गुरुङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "ttk-bhaadur-gurung",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ttk-bhaadur-gurung",
+    "id": "version:entity:person/ttk-bhaadur-gurung:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

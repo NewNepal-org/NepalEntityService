@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "प्यूठान नौवहिनी गाउँपालिका छम",
+    "sys:age": 52,
+    "sys:candidate_id": 336270,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "प्यूठान",
+    "sys:district": "प्यूठान",
+    "sys:district_code": 54,
+    "sys:dob_bs": "2027.02.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नर बहादुर के.सी.",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी लेनिनवादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-leninvaadii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2065,
+    "sys:spouse_name": "कमला  घिमीरे के.सी.",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 9,
+    "sys:symbol_name": "हँसिया र तारा",
+    "sys:votes_received": 1121
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/maadhv-sin-kesii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "माधव सिं के.सी."
+    }
+  ],
+  "short_description": null,
+  "slug": "maadhv-sin-kesii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/maadhv-sin-kesii",
+    "id": "version:entity:person/maadhv-sin-kesii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

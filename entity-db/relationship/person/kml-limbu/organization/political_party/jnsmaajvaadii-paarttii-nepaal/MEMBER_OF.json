@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/kml-limbu:organization/political_party/jnsmaajvaadii-paarttii-nepaal:MEMBER_OF",
+  "sourceEntityId": "entity:person/kml-limbu",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/jnsmaajvaadii-paarttii-nepaal",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/kml-limbu-to-jnsmaajvaadii-paarttii-nepaal-member_of",
+    "id": "version:relationship/kml-limbu-to-jnsmaajvaadii-paarttii-nepaal-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर सूर्यविनायक नगरपालिका प्वांर गाँउ",
+    "sys:age": 41,
+    "sys:candidate_id": 333613,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2038.01.03",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक सेवा",
+    "sys:father_name": "भेष बहादुर कार्की",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जोरपाटी मा विद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1254,
+    "sys:spouse_name": "बेली  कार्की",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2453,
+    "sys:symbol_name": "त्रिभुज",
+    "sys:votes_received": 9
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sumn-kaarkii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुमन कार्की"
+    }
+  ],
+  "short_description": null,
+  "slug": "sumn-kaarkii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sumn-kaarkii",
+    "id": "version:entity:person/sumn-kaarkii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

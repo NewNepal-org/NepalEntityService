@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक खानीखोला गाउँपालिका खजुलीबेसी",
+    "sys:age": 43,
+    "sys:candidate_id": 334775,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2036.02.31",
+    "sys:election_year": 2079,
+    "sys:experience": "पार्टी जिल्ला सचिव, जिल्ला अध्यक्ष देखि स्थायी समिति सदस्य सम्मको अनुभव",
+    "sys:father_name": "गगन सिं घिसिङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी माओवादी समाजवादी",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-smaajvaadii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1349,
+    "sys:spouse_name": "संगिता+कमला  गोले घिसिङ+ ठाडामगर",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2314,
+    "sys:symbol_name": "महिला पुरुष",
+    "sys:votes_received": 99
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/yok-bhaadur-ghising",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "योक बहादुर घिसिङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "yok-bhaadur-ghising",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/yok-bhaadur-ghising",
+    "id": "version:entity:person/yok-bhaadur-ghising:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

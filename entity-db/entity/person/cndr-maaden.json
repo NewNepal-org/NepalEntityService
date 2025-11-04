@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ताप्लेजुंग फुङलिङ नगरपालिका हुलाक टोल",
+    "sys:age": 49,
+    "sys:candidate_id": 336924,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ताप्लेजुंग",
+    "sys:district": "ताप्लेजुंग",
+    "sys:district_code": 1,
+    "sys:dob_bs": "2030.01.19",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "विष्णु  मादेन",
+    "sys:gender": "पुरुष",
+    "sys:institute": "मिनेसोटा युनिभरसिटी अमेरिका",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 4,
+    "sys:spouse_name": "प्रिया  नेम्वाङ",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 628
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cndr-maaden",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चन्द्र मादेन"
+    }
+  ],
+  "short_description": null,
+  "slug": "cndr-maaden",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cndr-maaden",
+    "id": "version:entity:person/cndr-maaden:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

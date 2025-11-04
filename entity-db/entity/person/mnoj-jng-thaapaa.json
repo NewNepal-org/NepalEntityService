@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुली कमलामाई नगरपालिका मधुटार",
+    "sys:age": 54,
+    "sys:candidate_id": 334293,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुली",
+    "sys:district": "सिन्धुली",
+    "sys:district_code": 19,
+    "sys:dob_bs": "2025.06.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दिलिप जंग थापा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Science",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 651,
+    "sys:spouse_name": "सोनालिसा  के.सी. (थापा)",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 21687
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mnoj-jng-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मनोज जंग थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "mnoj-jng-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mnoj-jng-thaapaa",
+    "id": "version:entity:person/mnoj-jng-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही चन्द्रनगर गाउँपालिका गेरुकाटोल",
+    "sys:age": 42,
+    "sys:candidate_id": 339110,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2036.07.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम चलितर महतो",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री दुर्गा जनता मा.वि., चन्द्र नगर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "एस.एल.सि",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 839,
+    "sys:spouse_name": "किरण कुमारी महतो",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2347,
+    "sys:symbol_name": "चापाकल",
+    "sys:votes_received": 189
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jy-naaraaynn-mhto",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जय नारायण महतो"
+    }
+  ],
+  "short_description": null,
+  "slug": "jy-naaraaynn-mhto",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jy-naaraaynn-mhto",
+    "id": "version:entity:person/jy-naaraaynn-mhto:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

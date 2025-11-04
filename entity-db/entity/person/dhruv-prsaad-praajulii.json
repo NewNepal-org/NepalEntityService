@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुपाल्चोक चौतारा साँगाचोकगढी नगरपालिका फलाटे",
+    "sys:age": 56,
+    "sys:candidate_id": 333269,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुपाल्चोक",
+    "sys:district": "सिन्धुपाल्चोक",
+    "sys:district_code": 30,
+    "sys:dob_bs": "2022.12.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गोपी प्रसाद पराजुली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1374,
+    "sys:spouse_name": "सावित्री  पराजुली",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 378
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dhruv-prsaad-praajulii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ध्रुव प्रसाद पराजुली"
+    }
+  ],
+  "short_description": null,
+  "slug": "dhruv-prsaad-praajulii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dhruv-prsaad-praajulii",
+    "id": "version:entity:person/dhruv-prsaad-praajulii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

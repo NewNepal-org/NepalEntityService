@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा पालुङटार नगरपालिका बार्हपिर्के",
+    "sys:age": 52,
+    "sys:candidate_id": 337691,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गोरखा",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "2026.10.16",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक कार्य समेत",
+    "sys:father_name": "गंगादत्त  देवकोटा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि बि वि",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "एम ए",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1674,
+    "sys:spouse_name": "शोभा  देवकोटा",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2317,
+    "sys:symbol_name": "खरायो",
+    "sys:votes_received": 648
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gnnesh-devkottaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गणेश देवकोटा"
+    }
+  ],
+  "short_description": null,
+  "slug": "gnnesh-devkottaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gnnesh-devkottaa",
+    "id": "version:entity:person/gnnesh-devkottaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

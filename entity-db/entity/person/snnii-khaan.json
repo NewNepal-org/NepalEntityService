@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही लुम्बिनी सांस्कृतिक नगरपालिका",
+    "sys:age": 29,
+    "sys:candidate_id": 333744,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2050.02.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सब्बीर अहमद खाँ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "India",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "MSC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1952,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2092,
+    "sys:symbol_name": "सिरिन्ज",
+    "sys:votes_received": 337
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/snnii-khaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सन्नी खान"
+    }
+  ],
+  "short_description": null,
+  "slug": "snnii-khaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/snnii-khaan",
+    "id": "version:entity:person/snnii-khaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

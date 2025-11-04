@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर सूर्यविनायक नगरपालिका काँक्राबारी",
+    "sys:age": 44,
+    "sys:candidate_id": 334788,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2035.01.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बिर बहादुर लाकाजु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सरस्वती मा.वि",
+    "sys:political_party": "आमूल परिवर्तन मसिहा पार्टी नेपाल",
+    "sys:political_party_slug": "aamuul-privrtn-msihaa-paarttii-nepaal",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1248,
+    "sys:spouse_name": "उर्मिला  लाकाजु",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 66,
+    "sys:symbol_name": "हृदय",
+    "sys:votes_received": 57
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shnt-bhaadur-laakaaju",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शन्त बहादुर लाकाजु"
+    }
+  ],
+  "short_description": null,
+  "slug": "shnt-bhaadur-laakaaju",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shnt-bhaadur-laakaaju",
+    "id": "version:entity:person/shnt-bhaadur-laakaaju:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

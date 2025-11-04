@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा बटेश्वर गाउँपालिका विजयपुर",
+    "sys:age": 36,
+    "sys:candidate_id": 335851,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2042.10.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राज देव महतो",
+    "sys:gender": "पुरुष",
+    "sys:institute": "क्षिरेश्वरनाथ क्याम्पस",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 750,
+    "sys:spouse_name": "सविता कुमारि देवी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1021,
+    "sys:symbol_name": "टेलिभिजन",
+    "sys:votes_received": 9
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vrhmdev-mhto",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "व्रहमदेव महतो"
+    }
+  ],
+  "short_description": null,
+  "slug": "vrhmdev-mhto",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vrhmdev-mhto",
+    "id": "version:entity:person/vrhmdev-mhto:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

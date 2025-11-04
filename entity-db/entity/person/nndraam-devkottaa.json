@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुकुम पश्चिम बाँफिकोट गाउँपालिका काँडा",
+    "sys:age": 50,
+    "sys:candidate_id": 336753,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "",
+    "sys:district": "रुकुम पश्चिम",
+    "sys:district_code": 78,
+    "sys:dob_bs": "2028.11.01",
+    "sys:election_year": 2079,
+    "sys:experience": "2054 सालमा साविक बाँफिकोट गा.वि.स. को अध्यक्ष",
+    "sys:father_name": "प्रजु  जैसी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "T.U.",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2407,
+    "sys:spouse_name": "रमा कुमारी देवकोटा",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 12961
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nndraam-devkottaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नन्दराम देवकोटा"
+    }
+  ],
+  "short_description": null,
+  "slug": "nndraam-devkottaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nndraam-devkottaa",
+    "id": "version:entity:person/nndraam-devkottaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा पुतलीबजार नगरपालिका बेलघारी",
+    "sys:age": 43,
+    "sys:candidate_id": 335176,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2035.07.09",
+    "sys:election_year": 2079,
+    "sys:experience": "संविधान सभा सदस्य 2070\nप्रतिनिधि सभा सदस्य उम्मेदवार 2074",
+    "sys:father_name": "फत्त बहादुर थापा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "स्नातक तह",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1766,
+    "sys:spouse_name": "हेमा  थापा",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 31999
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaju-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजु थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaju-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaju-thaapaa",
+    "id": "version:entity:person/raaju-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

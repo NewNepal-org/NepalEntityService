@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दैलेख ठाँटीकाँध गाउँपालिका छडाथान",
+    "sys:age": 46,
+    "sys:candidate_id": 334794,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दैलेख",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2032.12.08",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गंगा  शाही",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2186,
+    "sys:spouse_name": "सपना  शाही",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 257
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nviin-kumaar-shaahii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नवीन कुमार शाही"
+    }
+  ],
+  "short_description": null,
+  "slug": "nviin-kumaar-shaahii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nviin-kumaar-shaahii",
+    "id": "version:entity:person/nviin-kumaar-shaahii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

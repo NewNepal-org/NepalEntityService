@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुर्खेत गुर्भाकोट नगरपालिका मेहेलकुना",
+    "sys:age": 66,
+    "sys:candidate_id": 335527,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुर्खेत",
+    "sys:district": "सुर्खेत",
+    "sys:district_code": 64,
+    "sys:dob_bs": "2012.11.17",
+    "sys:election_year": 2079,
+    "sys:experience": "राज्य व्यवस्था समितिको सभापति भइ कार्य गरेको ।\nगृह र सूचना सञ्चार मन्त्री भई कार्य गरेको ।\nसंविधान सभा सदस्य भई कार्य गरेको ।\nपार्टी राजनीतिमा लामो समय काम गरी नेपाली कांग्रेसको उपसभापति भइ कार्य गरेको ।",
+    "sys:father_name": "प्रेम बहादुर खड्का",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2162,
+    "sys:spouse_name": "रत्‍ना  खड्का",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 42607
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/puurnn-bhaadur-khddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पूर्ण बहादुर खड्का"
+    }
+  ],
+  "short_description": null,
+  "slug": "puurnn-bhaadur-khddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/puurnn-bhaadur-khddkaa",
+    "id": "version:entity:person/puurnn-bhaadur-khddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

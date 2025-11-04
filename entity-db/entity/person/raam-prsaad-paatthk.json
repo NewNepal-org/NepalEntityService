@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा गौरादह नगरपालिका",
+    "sys:age": 40,
+    "sys:candidate_id": 336324,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2038.09.11",
+    "sys:election_year": 2079,
+    "sys:experience": "स्वास्थ्य क्षेत्रमा लामो समय सेवा गरेको",
+    "sys:father_name": "बोधनाथ  पाठक",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि वि वि",
+    "sys:political_party": "सचेत नेपाली पार्टी(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "scet-nepaalii-paarttiiekl-cunaav-cinh",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 141,
+    "sys:spouse_name": "टिका  पाठक",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 85,
+    "sys:symbol_name": "बच्चा काखमा लिएकी आमा",
+    "sys:votes_received": 49
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-prsaad-paatthk",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम प्रसाद पाठक"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-prsaad-paatthk",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-prsaad-paatthk",
+    "id": "version:entity:person/raam-prsaad-paatthk:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

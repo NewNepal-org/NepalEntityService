@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "इलाम देउमाई नगरपालिका कयाबुङ",
+    "sys:age": 61,
+    "sys:candidate_id": 333786,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाँचथर",
+    "sys:district": "इलाम",
+    "sys:district_code": 3,
+    "sys:dob_bs": "2018.04.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पदम लाल दुलाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "I. A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 45,
+    "sys:spouse_name": "गंगा  दुलाल",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 510
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gnnesh-prsaad-dulaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गणेश प्रसाद दुलाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "gnnesh-prsaad-dulaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gnnesh-prsaad-dulaal",
+    "id": "version:entity:person/gnnesh-prsaad-dulaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

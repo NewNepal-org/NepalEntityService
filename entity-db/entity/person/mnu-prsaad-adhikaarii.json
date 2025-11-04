@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "महोत्तरी गौशाला नगरपालिका भरतपुर",
+    "sys:age": 66,
+    "sys:candidate_id": 334254,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "महोत्तरी",
+    "sys:district": "महोत्तरी",
+    "sys:district_code": 21,
+    "sys:dob_bs": "2013.07.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जानकी प्रसाद उपाध्‍याय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 766,
+    "sys:spouse_name": "अमृता कुमारी ज्ञवाली",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 637
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mnu-prsaad-adhikaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मनु प्रसाद अधिकारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "mnu-prsaad-adhikaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mnu-prsaad-adhikaarii",
+    "id": "version:entity:person/mnu-prsaad-adhikaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

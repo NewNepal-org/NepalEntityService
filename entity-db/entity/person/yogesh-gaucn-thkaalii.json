@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मुस्तांग थासाङ गाउँपालिका कालोपानी",
+    "sys:age": 29,
+    "sys:candidate_id": 338697,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मुस्तांग",
+    "sys:district": "मुस्तांग",
+    "sys:district_code": 48,
+    "sys:dob_bs": "2050.01.27",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक सेवा/कृषि\nहोटल व्यवसाय/पर्यटन\nटुर्स एण्ड ट्राभल",
+    "sys:father_name": "रोमी  गौचन  थकाली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "एलाईन्स पुनमर सिटी बैङ्गलौर भारत",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "स्‍नातक",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2012,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 3992
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/yogesh-gaucn-thkaalii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "योगेश गौचन  थकाली"
+    }
+  ],
+  "short_description": null,
+  "slug": "yogesh-gaucn-thkaalii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/yogesh-gaucn-thkaalii",
+    "id": "version:entity:person/yogesh-gaucn-thkaalii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

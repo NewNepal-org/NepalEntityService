@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कास्की पोखरा महानगरपालिका गुठीवारी पथ",
+    "sys:age": 43,
+    "sys:candidate_id": 337477,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2036.03.07",
+    "sys:election_year": 2079,
+    "sys:experience": "Nursing",
+    "sys:father_name": "नन्दलाल  वराल",
+    "sys:gender": "महिला",
+    "sys:institute": "TU IOM",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1641,
+    "sys:spouse_name": "विदुर प्रसाद कोइराला",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 14843
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jiitaa-vraal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जीता वराल"
+    }
+  ],
+  "short_description": null,
+  "slug": "jiitaa-vraal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jiitaa-vraal",
+    "id": "version:entity:person/jiitaa-vraal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

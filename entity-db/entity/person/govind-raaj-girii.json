@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक चौंरीदेउराली गाउँपालिका गिरीटोल",
+    "sys:age": 70,
+    "sys:candidate_id": 336248,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2009.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चुडा राज गिरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1335,
+    "sys:spouse_name": "मच्छे  गिरी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 85
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/govind-raaj-girii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गोविन्द राज गिरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "govind-raaj-girii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/govind-raaj-girii",
+    "id": "version:entity:person/govind-raaj-girii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

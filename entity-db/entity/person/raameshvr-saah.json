@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा कल्याणपुर नगरपालिका बंगठीया",
+    "sys:age": 62,
+    "sys:candidate_id": 334154,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2016.10.20",
+    "sys:election_year": 2079,
+    "sys:experience": "10 years",
+    "sys:father_name": "राम भवन साह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 589,
+    "sys:spouse_name": "दलितिया देवी साह",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 151
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raameshvr-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रामेश्वर साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "raameshvr-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raameshvr-saah",
+    "id": "version:entity:person/raameshvr-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

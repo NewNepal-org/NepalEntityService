@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा कल्याणपुर नगरपालिका भेडिया",
+    "sys:age": 50,
+    "sys:candidate_id": 336215,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2028.11.27",
+    "sys:election_year": 2079,
+    "sys:experience": "समाज सेवी",
+    "sys:father_name": "राम नारायण चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Nepal board",
+    "sys:political_party": "नेपालका लागि नेपाली पार्टी",
+    "sys:political_party_slug": "nepaalkaa-laagi-nepaalii-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 588,
+    "sys:spouse_name": "रामतोला देवी चौधरी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2329,
+    "sys:symbol_name": "गोलाकार भित्र शंख",
+    "sys:votes_received": 158
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prmod-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रमोद चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "prmod-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prmod-caudhrii",
+    "id": "version:entity:person/prmod-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

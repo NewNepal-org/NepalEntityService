@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर त्रियुगा नगरपालिका वहेडुवा",
+    "sys:age": 42,
+    "sys:candidate_id": 336323,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "उदयपुर",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2036.07.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दिप नारायण माझी (चौधरी)",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नागरिक उन्मुक्ति पार्टी",
+    "sys:political_party_slug": "naagrik-unmukti-paarttii",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 417,
+    "sys:spouse_name": "सीता देवी चौधरी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2306,
+    "sys:symbol_name": "पिधँ भएको सादा ढकिया",
+    "sys:votes_received": 206
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krt-naaraaynn-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृत नारायण चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "krt-naaraaynn-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krt-naaraaynn-caudhrii",
+    "id": "version:entity:person/krt-naaraaynn-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

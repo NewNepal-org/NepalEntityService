@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/dhvj-maan-muktaan:organization/political_party/independent:MEMBER_OF",
+  "sourceEntityId": "entity:person/dhvj-maan-muktaan",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/independent",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/dhvj-maan-muktaan-to-independent-member_of",
+    "id": "version:relationship/dhvj-maan-muktaan-to-independent-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

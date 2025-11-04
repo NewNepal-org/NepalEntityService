@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर भक्तपुर नगरपालिका खौमा",
+    "sys:age": 50,
+    "sys:candidate_id": 333961,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2028.07.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हर्ष वीर धुख्वा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेपाल ल. क्याम्पस",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "प्रमाण पत्र तह",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1891,
+    "sys:spouse_name": "आस लक्ष्मी बोयजु",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 80
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tulsii-raam-dhukhvaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तुल्सी राम धुख्वा"
+    }
+  ],
+  "short_description": null,
+  "slug": "tulsii-raam-dhukhvaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tulsii-raam-dhukhvaa",
+    "id": "version:entity:person/tulsii-raam-dhukhvaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

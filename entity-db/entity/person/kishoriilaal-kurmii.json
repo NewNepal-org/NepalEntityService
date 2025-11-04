@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा फेटा गाउँपालिका भरवलिया",
+    "sys:age": 52,
+    "sys:candidate_id": 337948,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2027.02.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गाया राउत कुर्मी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1545,
+    "sys:spouse_name": "अनिता देवी कुर्मी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1004,
+    "sys:symbol_name": "हेलमेट",
+    "sys:votes_received": 27
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kishoriilaal-kurmii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "किशोरीलाल कुर्मी"
+    }
+  ],
+  "short_description": null,
+  "slug": "kishoriilaal-kurmii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kishoriilaal-kurmii",
+    "id": "version:entity:person/kishoriilaal-kurmii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

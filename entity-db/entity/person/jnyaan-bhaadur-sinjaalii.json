@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा रामपुर नगरपालिका तल्लोगाउँ शिद्बुछाप",
+    "sys:age": 63,
+    "sys:candidate_id": 333927,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2015.10.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "ढक  बहादुर  सिंजाली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "भानुभक्त मा.वि.",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "High School",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1817,
+    "sys:spouse_name": "याम  माया  सिंजाली",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 258
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jnyaan-bhaadur-sinjaalii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ज्ञान  बहादुर  सिंजाली"
+    }
+  ],
+  "short_description": null,
+  "slug": "jnyaan-bhaadur-sinjaalii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jnyaan-bhaadur-sinjaalii",
+    "id": "version:entity:person/jnyaan-bhaadur-sinjaalii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

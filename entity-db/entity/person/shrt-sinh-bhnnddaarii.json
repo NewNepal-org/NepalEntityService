@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "महोत्तरी औरही नगरपालिका औरही",
+    "sys:age": 68,
+    "sys:candidate_id": 333411,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "महोत्तरी",
+    "sys:district_code": 21,
+    "sys:dob_bs": "2011.06.22",
+    "sys:election_year": 2079,
+    "sys:experience": "नेपाल सरकारको विभिन्न मन्त्रालयको मन्त्रि भइ कार्यभार सम्हाली कार्य गरेको अनुभव।",
+    "sys:father_name": "पृथ्वीमान सिंह भण्डारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय नेपाल",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 775,
+    "sys:spouse_name": "रश्मि सिंह भण्डारी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 25190
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shrt-sinh-bhnnddaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शरत सिंह भण्डारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "shrt-sinh-bhnnddaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shrt-sinh-bhnnddaarii",
+    "id": "version:entity:person/shrt-sinh-bhnnddaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

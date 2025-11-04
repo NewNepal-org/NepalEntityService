@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही सिद्धार्थनगर नगरपालिका कठौतिया",
+    "sys:age": 38,
+    "sys:candidate_id": 336539,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2040.07.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सिपारस अली मुसलमान",
+    "sys:gender": "पुरुष",
+    "sys:institute": "रुपन्देही क्याम्पस",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1917,
+    "sys:spouse_name": "छबि प्रभा अर्याल",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 551
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mojiib-ali-muslmaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मोजीब अलि मुसलमान"
+    }
+  ],
+  "short_description": null,
+  "slug": "mojiib-ali-muslmaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mojiib-ali-muslmaan",
+    "id": "version:entity:person/mojiib-ali-muslmaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

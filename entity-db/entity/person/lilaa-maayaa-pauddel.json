@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं टोखा नगरपालिका धापासी",
+    "sys:age": 51,
+    "sys:candidate_id": 336284,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ओखलढुंगा",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2027.08.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जय प्रसाद पौडेल",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी लेनिनवादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-leninvaadii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1060,
+    "sys:spouse_name": "भोज राज भुर्तेल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 9,
+    "sys:symbol_name": "हँसिया र तारा",
+    "sys:votes_received": 41
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lilaa-maayaa-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लिला माया पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "lilaa-maayaa-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lilaa-maayaa-pauddel",
+    "id": "version:entity:person/lilaa-maayaa-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

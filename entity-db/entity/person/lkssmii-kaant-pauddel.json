@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "लमजुंग सुन्दरबजार नगरपालिका अर्चल्यानी",
+    "sys:age": 52,
+    "sys:candidate_id": 336403,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "लमजुंग",
+    "sys:district": "लमजुंग",
+    "sys:district_code": 38,
+    "sys:dob_bs": "2026.08.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कमल कान्त पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "PHD",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1691,
+    "sys:spouse_name": "रमा  अधिकारी (पौडेल)",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 49
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lkssmii-kaant-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लक्ष्मी कान्त पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "lkssmii-kaant-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lkssmii-kaant-pauddel",
+    "id": "version:entity:person/lkssmii-kaant-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

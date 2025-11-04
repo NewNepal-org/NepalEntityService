@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही सिद्धार्थनगर नगरपालिका बैक कलोनी",
+    "sys:age": 47,
+    "sys:candidate_id": 335577,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2031.10.16",
+    "sys:election_year": 2079,
+    "sys:experience": "क) कालापानी सिमा विवाद सम्बन्धी UNO को Petional\nख) टिप्पर आतङ्क तथा दुर्घटना न्युनीकरण सम्बन्धी कार्य देशभर\nग) सामाजिक अभियन्ता देशव्यापी रुपमा साकार्य गरेको",
+    "sys:father_name": "पशुमति  वन्जाडे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्षविद्ञालय, लुम्बिनी विश्षविद्यालय",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "MA Sociology, MA Buddhism",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1915,
+    "sys:spouse_name": "मैया  पाण्डे",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 1384
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prkhyaat-vnjaadde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रख्यात वन्जाडे"
+    }
+  ],
+  "short_description": null,
+  "slug": "prkhyaat-vnjaadde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prkhyaat-vnjaadde",
+    "id": "version:entity:person/prkhyaat-vnjaadde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा सिरानचोक गाउँपालिका वयापानी",
+    "sys:age": 29,
+    "sys:candidate_id": 333913,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गोरखा",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "2050.06.26",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक अभियन्ता",
+    "sys:father_name": "रम्जान दिन मिया",
+    "sys:gender": "पुरुष",
+    "sys:institute": "PU",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1671,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 7395
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/abdus-slaam-miyaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अब्दुस सलाम मिया"
+    }
+  ],
+  "short_description": null,
+  "slug": "abdus-slaam-miyaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/abdus-slaam-miyaa",
+    "id": "version:entity:person/abdus-slaam-miyaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

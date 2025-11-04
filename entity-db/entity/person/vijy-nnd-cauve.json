@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु यसोधरा गाउँपालिका भडेहर",
+    "sys:age": 59,
+    "sys:candidate_id": 333414,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2019.12.10",
+    "sys:election_year": 2079,
+    "sys:experience": "२० वर्ष देखि राजनितिक सेवामा आवद्ध",
+    "sys:father_name": "त्रिलोकी नाथ चौवे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "रत्नसेन इन्टर कलेज बाँसी",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "प्रमाणपत्र तह",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1991,
+    "sys:spouse_name": "माधुरी  चौवे",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 1037,
+    "sys:symbol_name": "स्टूल",
+    "sys:votes_received": 11
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vijy-nnd-cauve",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विजय नन्द चौवे"
+    }
+  ],
+  "short_description": null,
+  "slug": "vijy-nnd-cauve",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vijy-nnd-cauve",
+    "id": "version:entity:person/vijy-nnd-cauve:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

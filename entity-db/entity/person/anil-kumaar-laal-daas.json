@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट गौर नगरपालिका गौर",
+    "sys:age": 50,
+    "sys:candidate_id": 338965,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2028.10.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सुरेन्द्र  लाल दास",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जु.मा.वि.गौर/विहार इन्टरमेडिएट कोन्सिल भारत",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "एस.एल.सी., +2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1421,
+    "sys:spouse_name": "सुनिता  देवी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2221,
+    "sys:symbol_name": "टायर",
+    "sys:votes_received": 28
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/anil-kumaar-laal-daas",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अनिल कुमार लाल दास"
+    }
+  ],
+  "short_description": null,
+  "slug": "anil-kumaar-laal-daas",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/anil-kumaar-laal-daas",
+    "id": "version:entity:person/anil-kumaar-laal-daas:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

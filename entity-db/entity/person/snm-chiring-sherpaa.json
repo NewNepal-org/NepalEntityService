@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भोजपुर भोजपुर नगरपालिका",
+    "sys:age": 40,
+    "sys:candidate_id": 336743,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भोजपुर",
+    "sys:district": "भोजपुर",
+    "sys:district_code": 7,
+    "sys:dob_bs": "2039.03.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "निम दोर्जे शेर्पा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 172,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 500
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/snm-chiring-sherpaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सनम छिरिङ शेर्पा"
+    }
+  ],
+  "short_description": null,
+  "slug": "snm-chiring-sherpaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/snm-chiring-sherpaa",
+    "id": "version:entity:person/snm-chiring-sherpaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तेर्हथुम फेदाप  गाउँपालिका",
+    "sys:age": 36,
+    "sys:candidate_id": 337717,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तेर्हथुम",
+    "sys:district": "तेर्हथुम",
+    "sys:district_code": 6,
+    "sys:dob_bs": "2043.03.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जित वहादुर चोङवाङ् लिम्बु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 164,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 82
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gngaa-vhaadur-congvaang-limbu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गंगा वहादुर चोङवाङ् लिम्बु"
+    }
+  ],
+  "short_description": null,
+  "slug": "gngaa-vhaadur-congvaang-limbu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gngaa-vhaadur-congvaang-limbu",
+    "id": "version:entity:person/gngaa-vhaadur-congvaang-limbu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

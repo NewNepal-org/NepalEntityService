@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुर्खेत बीरेन्द्रनगर नगरपालिका घुस्रा",
+    "sys:age": 63,
+    "sys:candidate_id": 334020,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दैलेख",
+    "sys:district": "सुर्खेत",
+    "sys:district_code": 64,
+    "sys:dob_bs": "2016.04.21",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "झुप बहादुर बुढा क्षेत्री",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2171,
+    "sys:spouse_name": "हिमा देवी बि.सी.",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 29558
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/amrt-bhaadur-buddhaa-kssetrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अमृत बहादुर बुढा क्षेत्री"
+    }
+  ],
+  "short_description": null,
+  "slug": "amrt-bhaadur-buddhaa-kssetrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/amrt-bhaadur-buddhaa-kssetrii",
+    "id": "version:entity:person/amrt-bhaadur-buddhaa-kssetrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

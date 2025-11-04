@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा सिराहा नगरपालिका सिका ज्‍योति",
+    "sys:age": 69,
+    "sys:candidate_id": 335769,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2009.12.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रामजी  दास",
+    "sys:gender": "पुरुष",
+    "sys:institute": "डि.बि. कलेज सेलीबेली बिहार",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "B.SC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 558,
+    "sys:spouse_name": "कमला  दास",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 1259
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/govrdhn-daas-ttmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गोवर्धन दास तत्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "govrdhn-daas-ttmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/govrdhn-daas-ttmaa",
+    "id": "version:entity:person/govrdhn-daas-ttmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

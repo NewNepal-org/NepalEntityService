@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी राजविराज नगरपालिका गोर्खाली",
+    "sys:age": 58,
+    "sys:candidate_id": 333191,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2020.11.24",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "छोटकन  मिया",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 469,
+    "sys:spouse_name": "सकिला  खातुन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 61
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hjrt-ali",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हजरत अलि"
+    }
+  ],
+  "short_description": null,
+  "slug": "hjrt-ali",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hjrt-ali",
+    "id": "version:entity:person/hjrt-ali:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

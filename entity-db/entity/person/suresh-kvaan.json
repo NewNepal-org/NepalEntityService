@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर भक्तपुर नगरपालिका गोल्मढी",
+    "sys:age": 33,
+    "sys:candidate_id": 333208,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2045.07.06",
+    "sys:election_year": 2079,
+    "sys:experience": "SOCIAL WORK",
+    "sys:father_name": "विश्‍वराम  कवाँ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "KATHMANDU UNIVERSITY",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "MASTERS DEGREE",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 211,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 38
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/suresh-kvaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुरेश कवाँ"
+    }
+  ],
+  "short_description": null,
+  "slug": "suresh-kvaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/suresh-kvaan",
+    "id": "version:entity:person/suresh-kvaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

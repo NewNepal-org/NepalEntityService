@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/shunil-kumaar-shrmaa:organization/political_party/nepaalii-kaangres:MEMBER_OF",
+  "sourceEntityId": "entity:person/shunil-kumaar-shrmaa",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/nepaalii-kaangres",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/shunil-kumaar-shrmaa-to-nepaalii-kaangres-member_of",
+    "id": "version:relationship/shunil-kumaar-shrmaa-to-nepaalii-kaangres-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

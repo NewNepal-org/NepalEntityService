@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा भद्रपुर नगरपालिका सोमवार",
+    "sys:age": 70,
+    "sys:candidate_id": 335601,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2008.12.01",
+    "sys:election_year": 2079,
+    "sys:experience": "कि.रा.य. झापा जिल्ला सदस्य\nभद्रपुर नगर कि.रा.य. अध्यक्ष",
+    "sys:father_name": "दले  राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "८ कक्षा पास",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 90,
+    "sys:spouse_name": "मिसरा  राई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 464
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/viir-bhaadur-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "वीर बहादुर राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "viir-bhaadur-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/viir-bhaadur-raaii",
+    "id": "version:entity:person/viir-bhaadur-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

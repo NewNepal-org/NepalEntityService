@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग पथरी शनिश्चरे नगरपालिका किर्तीपूर",
+    "sys:age": 70,
+    "sys:candidate_id": 333204,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2009.01.21",
+    "sys:election_year": 2079,
+    "sys:experience": "032-1-14 देखि 2069-1-21 सम्म विभिन्न पदमा रहि सेवा प्रदान गरेको",
+    "sys:father_name": "बम भोला झा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "T.U.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1529,
+    "sys:spouse_name": "अलख नन्दा झा",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 22
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dineshvr-jhaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दिनेश्‍वर झा"
+    }
+  ],
+  "short_description": null,
+  "slug": "dineshvr-jhaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dineshvr-jhaa",
+    "id": "version:entity:person/dineshvr-jhaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं चन्द्रागिरी नगरपालिका तीनथाना",
+    "sys:age": 51,
+    "sys:candidate_id": 333972,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2028.05.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "अविन्द्र  प्रधान",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "9",
+    "sys:serial_no": 1182,
+    "sys:spouse_name": "कान्छी मैया जोशी (प्रधान)",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 4785
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/devendr-prdhaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देवेन्द्र प्रधान"
+    }
+  ],
+  "short_description": null,
+  "slug": "devendr-prdhaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/devendr-prdhaan",
+    "id": "version:entity:person/devendr-prdhaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

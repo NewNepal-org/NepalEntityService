@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं कागेश्वरी मनोहरा नगरपालिका फुयालटोल",
+    "sys:age": 56,
+    "sys:candidate_id": 334404,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2022.10.29",
+    "sys:election_year": 2079,
+    "sys:experience": "१. शिक्षण मा.वि. तहको शिक्षक भएर\n२. प्र.अ. को जिम्मेवारी वहन\n३. शिक्षक प्रशिक्षको भुमिका \n४. संगठन निर्माण र परिचालन सामाजिक भुमिका निर्वाह\n५. प्रदेश सभा सदस्य पुरै अवधि",
+    "sys:father_name": "गुण प्रसाद फुयाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्‍वविद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "एम.एड/ वि.कम",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 995,
+    "sys:spouse_name": "कमला  फुयाल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 11566
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mnniraam-phuyaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मणिराम फुयाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "mnniraam-phuyaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mnniraam-phuyaal",
+    "id": "version:entity:person/mnniraam-phuyaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

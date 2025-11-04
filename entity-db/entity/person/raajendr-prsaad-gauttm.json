@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "संखुवासभा चैनपुर नगरपालिका फलाटे गाउँ",
+    "sys:age": 59,
+    "sys:candidate_id": 335908,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "संखुवासभा",
+    "sys:district": "संखुवासभा",
+    "sys:district_code": 5,
+    "sys:dob_bs": "2019.09.05",
+    "sys:election_year": 2079,
+    "sys:experience": "निवर्तमान प्रतिनिधि सभा सदस्य भई काम गरेको\nप्रतिनिधि सभाको सार्वजनिक लेखा समितिको सदस्य",
+    "sys:father_name": "नेत्र प्रसाद गौत्तम",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पव्लिक युथ क्याम्पस",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "एम.वि.ए.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 147,
+    "sys:spouse_name": "बुद्धिमता  गौत्तम",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 26721
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajendr-prsaad-gauttm",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजेन्द्र प्रसाद गौत्तम"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajendr-prsaad-gauttm",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajendr-prsaad-gauttm",
+    "id": "version:entity:person/raajendr-prsaad-gauttm:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

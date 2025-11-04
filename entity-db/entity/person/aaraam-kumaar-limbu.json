@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनकुटा चौविसे गाउँपालिका देउराली",
+    "sys:age": 35,
+    "sys:candidate_id": 338606,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनकुटा",
+    "sys:district": "धनकुटा",
+    "sys:district_code": 8,
+    "sys:dob_bs": "2043.11.23",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शुकर ध्वज लिम्बु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 184,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 625
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/aaraam-kumaar-limbu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "आराम कुमार लिम्बु"
+    }
+  ],
+  "short_description": null,
+  "slug": "aaraam-kumaar-limbu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/aaraam-kumaar-limbu",
+    "id": "version:entity:person/aaraam-kumaar-limbu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

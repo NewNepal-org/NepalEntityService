@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बझाङ्ग जयपृथ्वी नगरपालिका छयाला",
+    "sys:age": 68,
+    "sys:candidate_id": 337859,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बझाङ्ग",
+    "sys:district": "बझाङ्ग",
+    "sys:district_code": 69,
+    "sys:dob_bs": "2010.10.21",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गन्धरे  राना क्षत्री",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2252,
+    "sys:spouse_name": "राधालक्ष्मी देवी राना",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2092,
+    "sys:symbol_name": "सिरिन्ज",
+    "sys:votes_received": 637
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raamcndr-raanaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रामचन्द्र राना"
+    }
+  ],
+  "short_description": null,
+  "slug": "raamcndr-raanaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raamcndr-raanaa",
+    "id": "version:entity:person/raamcndr-raanaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

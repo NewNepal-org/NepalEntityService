@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा लहान नगरपालिका मटियर्वा",
+    "sys:age": 43,
+    "sys:candidate_id": 337755,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2036.05.14",
+    "sys:election_year": 2079,
+    "sys:experience": "समाज सेवा गर्दै आएको।",
+    "sys:father_name": "लक्ष्मी  चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पशुपति मा.वि. लहान।",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "slc",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 526,
+    "sys:spouse_name": "कल्पना कुमारी चौधरी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2347,
+    "sys:symbol_name": "चापाकल",
+    "sys:votes_received": 23
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/govind-kumaar-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गोविन्द कुमार चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "govind-kumaar-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/govind-kumaar-caudhrii",
+    "id": "version:entity:person/govind-kumaar-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

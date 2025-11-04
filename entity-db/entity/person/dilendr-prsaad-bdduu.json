@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दार्चुला महाकाली नगरपालिका नमस्कार",
+    "sys:age": 68,
+    "sys:candidate_id": 334465,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दार्चुला",
+    "sys:district": "दार्चुला",
+    "sys:district_code": 72,
+    "sys:dob_bs": "2010.09.26",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नन्दी  बडू",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2310,
+    "sys:spouse_name": "माधवी  बडू",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 28515
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dilendr-prsaad-bdduu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दिलेन्द्र प्रसाद बडू"
+    }
+  ],
+  "short_description": null,
+  "slug": "dilendr-prsaad-bdduu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dilendr-prsaad-bdduu",
+    "id": "version:entity:person/dilendr-prsaad-bdduu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

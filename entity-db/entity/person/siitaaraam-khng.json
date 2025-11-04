@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी शम्भुनाथ  नगरपालिका राजपुर",
+    "sys:age": 66,
+    "sys:candidate_id": 339026,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2013.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गर्भु  खंग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल संघीय समाजवादी पार्टी",
+    "sys:political_party_slug": "nepaal-snghiiy-smaajvaadii-paarttii",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 484,
+    "sys:spouse_name": "दुखनी देवी खंग",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 29,
+    "sys:symbol_name": "बस",
+    "sys:votes_received": 124
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/siitaaraam-khng",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सीताराम खंग"
+    }
+  ],
+  "short_description": null,
+  "slug": "siitaaraam-khng",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/siitaaraam-khng",
+    "id": "version:entity:person/siitaaraam-khng:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

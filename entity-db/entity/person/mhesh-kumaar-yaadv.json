@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा लक्ष्मीनिया गाउँपालिका",
+    "sys:age": 27,
+    "sys:candidate_id": 336301,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2052.03.17",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रघुनाथ  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "CTEVT",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "H.A.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 752,
+    "sys:spouse_name": "पुजा  यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2340,
+    "sys:symbol_name": "बिरालो",
+    "sys:votes_received": 5
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mhesh-kumaar-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "महेश कुमार यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "mhesh-kumaar-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mhesh-kumaar-yaadv",
+    "id": "version:entity:person/mhesh-kumaar-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

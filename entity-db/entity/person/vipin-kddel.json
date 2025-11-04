@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा रामपुर नगरपालिका सुन्दरटोल",
+    "sys:age": 29,
+    "sys:candidate_id": 333347,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2049.07.18",
+    "sys:election_year": 2079,
+    "sys:experience": "आर्कसिउ इन्जिनियरिङ्ग प्रा.लि.मा 2073 देखि हाल सम्म इन्जिनियरको रुपमा।\n2072-2073 हिमालय कलेज अफ ईन्जिनियरिङ्गमा असिस्टेन्ट लेक्चररको रुफमा\nटि.ए.सी. हाइड्रो इन्जिनियर्स प्रा.लि.मा जल विद्युत इन्जिनियरको रुपमा, 2070-2072",
+    "sys:father_name": "खगनाथ  कडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय पूल्चोक क्याम्पस",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्नातकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1815,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2092,
+    "sys:symbol_name": "सिरिन्ज",
+    "sys:votes_received": 2863
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vipin-kddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विपिन कडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "vipin-kddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vipin-kddel",
+    "id": "version:entity:person/vipin-kddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कन्चनपुर दोधारा चाँदनी नगरपालिका स्याउली बजार",
+    "sys:age": 55,
+    "sys:candidate_id": 337490,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कन्चनपुर",
+    "sys:district": "कन्चनपुर",
+    "sys:district_code": 75,
+    "sys:dob_bs": "2024.01.17",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "टिका राम गिरी",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2367,
+    "sys:spouse_name": "मिनु  गिरी",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 106
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jaankii-devii-girii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जानकी देवी गिरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "jaankii-devii-girii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jaankii-devii-girii",
+    "id": "version:entity:person/jaankii-devii-girii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

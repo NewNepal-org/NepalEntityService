@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका",
+    "sys:age": 27,
+    "sys:candidate_id": 336528,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2052.01.20",
+    "sys:election_year": 2079,
+    "sys:experience": "विषय विज्ञ सामाजिक शिक्षा My Second Teacher Innovatetech Pvt.Ltd.\nBrand Development Consultant (Green Solution Pvt.Ltd.)\nCentral Committee Memeber (Bibeksheel Sajha Party)\nMedia Department Head Bibeksheel Nepal Dal",
+    "sys:father_name": "बलि  न्‍यौपाने",
+    "sys:gender": "महिला",
+    "sys:institute": "काठमाडौं विश्वविद्यालय (नेशनल कलेज)",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1086,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2301,
+    "sys:symbol_name": "सेलरोटीको चाङ",
+    "sys:votes_received": 600
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rnju-nyaupaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रन्‍जु न्‍यौपाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "rnju-nyaupaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rnju-nyaupaane",
+    "id": "version:entity:person/rnju-nyaupaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

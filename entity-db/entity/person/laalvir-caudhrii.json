@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली टिकापुर नगरपालिका बल्क नं उन्तिस",
+    "sys:age": 67,
+    "sys:candidate_id": 337615,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कैलाली",
+    "sys:district": "बर्दिया",
+    "sys:district_code": 66,
+    "sys:dob_bs": "2011.10.22",
+    "sys:election_year": 2079,
+    "sys:experience": "रानी जमरा कुलरिया कुलोको २०३२ साल देखि २०४७ सम्मको सचिव\nरानी जमरा कुलरिया कुलोको 2047 साल देखि 2079 सम्मको अध्यक्ष",
+    "sys:father_name": "हस्तराम  चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "किसान मा वि जयपुर बर्दिया",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2225,
+    "sys:spouse_name": "सुल्पफी/तुलसी  चौधरी/थापा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2347,
+    "sys:symbol_name": "चापाकल",
+    "sys:votes_received": 26520
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/laalvir-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लालविर चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "laalvir-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/laalvir-caudhrii",
+    "id": "version:entity:person/laalvir-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

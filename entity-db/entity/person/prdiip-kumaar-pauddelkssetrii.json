@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा आँधीखोला गाउँपालिका लाकुरी",
+    "sys:age": 67,
+    "sys:candidate_id": 335692,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2012.03.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "व.चित्र बहादुर पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Tribhuwan University",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1777,
+    "sys:spouse_name": "राधिका  पौडेल",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 17
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prdiip-kumaar-pauddelkssetrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रदीप कुमार पौडेल(क्षेत्री)"
+    }
+  ],
+  "short_description": null,
+  "slug": "prdiip-kumaar-pauddelkssetrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prdiip-kumaar-pauddelkssetrii",
+    "id": "version:entity:person/prdiip-kumaar-pauddelkssetrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

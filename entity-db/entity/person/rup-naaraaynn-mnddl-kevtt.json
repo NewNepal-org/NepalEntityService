@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा हंसपुर नगरपालिका सोनीगामा",
+    "sys:age": 65,
+    "sys:candidate_id": 338322,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2014.02.21",
+    "sys:election_year": 2079,
+    "sys:experience": "2029 देखि राजनीतिमा सक्रिय",
+    "sys:father_name": "जिबछ  मंडल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "RRM Campus",
+    "sys:political_party": "जनता प्रगतिशिल पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-prgtishil-paarttii-nepaal",
+    "sys:qualification": "I A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 690,
+    "sys:spouse_name": "बिन्दु  देवी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2324,
+    "sys:symbol_name": "कोदालो बोकेको किसान",
+    "sys:votes_received": 256
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rup-naaraaynn-mnddl-kevtt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रुप नारायण मंडल, केवट"
+    }
+  ],
+  "short_description": null,
+  "slug": "rup-naaraaynn-mnddl-kevtt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rup-naaraaynn-mnddl-kevtt",
+    "id": "version:entity:person/rup-naaraaynn-mnddl-kevtt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

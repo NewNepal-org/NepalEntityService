@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बर्दिया ठाकुरबाबा नगरपालिका सतघरवा",
+    "sys:age": 45,
+    "sys:candidate_id": 333385,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "बर्दिया",
+    "sys:district_code": 66,
+    "sys:dob_bs": "2033.10.16",
+    "sys:election_year": 2079,
+    "sys:experience": "बर्दियाको हरेक सामाजिक, राजनितिक उत्तरदायित्व बहन गरेको। बर्दियाको कला संस्कृतिको क्षेत्रमा सुधार तथा संरक्षणका लागी पहल गरेको । बर्दियाको विकास निर्माण शिक्षा स्वास्थ्य क्षेत्रमा सुधारका लागी प्रयास गरेको । बर्दियाको कृषि र पर्यटनलाई सुधारका लागी दशकौ देखि प्रयास गरेको ।",
+    "sys:father_name": "तिलक  रावल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "किलिरेण्डेन बिजनेश स्कुल सिड्नी अस्ट्रेलिया । स्वइस स्कुल अफ म्यानेजमेन्ट स्विट्जरल्या्ण्ड",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2228,
+    "sys:spouse_name": "सृष्‍टि  राणा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 13292
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/viny-raavl",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विनय रावल"
+    }
+  ],
+  "short_description": null,
+  "slug": "viny-raavl",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/viny-raavl",
+    "id": "version:entity:person/viny-raavl:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

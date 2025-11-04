@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट चन्द्रपुर नगरपालिका सदस्य टोल",
+    "sys:age": 34,
+    "sys:candidate_id": 335705,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2044.09.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चन्द्र प्रसाद गौतम",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्‍नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1473,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 25
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cirnjiivii-gautm",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चिरन्जीवी गौतम"
+    }
+  ],
+  "short_description": null,
+  "slug": "cirnjiivii-gautm",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cirnjiivii-gautm",
+    "id": "version:entity:person/cirnjiivii-gautm:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

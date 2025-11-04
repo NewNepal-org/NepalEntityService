@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके कोहलपुर नगरपालिका धम्वोजी",
+    "sys:age": 51,
+    "sys:candidate_id": 337218,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाँके",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2028.05.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सुकी राम विश्‍वकर्मा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2180,
+    "sys:spouse_name": "पार्वती  पुन गहतराज (उषा)",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 19632
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mheshvr-jng-ghtraaj-athk",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "महेश्‍वर जंग गहतराज (अथक)"
+    }
+  ],
+  "short_description": null,
+  "slug": "mheshvr-jng-ghtraaj-athk",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mheshvr-jng-ghtraaj-athk",
+    "id": "version:entity:person/mheshvr-jng-ghtraaj-athk:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

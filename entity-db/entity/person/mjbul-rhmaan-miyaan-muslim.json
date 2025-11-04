@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग जहदा गाउँपालिका",
+    "sys:age": 41,
+    "sys:candidate_id": 336740,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2038.06.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "छुतहरु  मियाँ मुस्लिम",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल लोकतान्त्रिक पार्टी",
+    "sys:political_party_slug": "nepaal-loktaantrik-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 273,
+    "sys:spouse_name": "फतमा  खातुन मुस्लिम",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 6,
+    "sys:symbol_name": "दुई हात जोडेको नमस्कार",
+    "sys:votes_received": 88
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mjbul-rhmaan-miyaan-muslim",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मजबुल रहमान मियाँ मुस्लिम"
+    }
+  ],
+  "short_description": null,
+  "slug": "mjbul-rhmaan-miyaan-muslim",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mjbul-rhmaan-miyaan-muslim",
+    "id": "version:entity:person/mjbul-rhmaan-miyaan-muslim:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

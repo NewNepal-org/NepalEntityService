@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं टोखा नगरपालिका",
+    "sys:age": 66,
+    "sys:candidate_id": 334489,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बागलुङ",
+    "sys:district": "पर्वत",
+    "sys:district_code": 51,
+    "sys:dob_bs": "2013.03.15",
+    "sys:election_year": 2079,
+    "sys:experience": "अध्यक्ष - चाइल्ड एजुकेशन डेभलपमेन्ट क्रेडिट एण्ड को. ओपरेटिक (भु.पू.), लेखक - आमा मलाई जुन छुन देउ आदि ।",
+    "sys:father_name": "जीव नाथ घिमिरे",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल सुशासन पार्टी(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-sushaasn-paarttiiekl-cunaav-cinh",
+    "sys:qualification": "८ कक्षा पास",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2044,
+    "sys:spouse_name": "हरि नारायण उपाध्याय",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 85,
+    "sys:symbol_name": "बच्चा काखमा लिएकी आमा",
+    "sys:votes_received": 175
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhgvtii-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भगवती पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhgvtii-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhgvtii-pauddel",
+    "id": "version:entity:person/bhgvtii-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

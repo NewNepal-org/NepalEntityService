@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाँचथर फिदिम नगरपालिका हुलाकलाइन",
+    "sys:age": 60,
+    "sys:candidate_id": 335488,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाँचथर",
+    "sys:district": "पाँचथर",
+    "sys:district_code": 2,
+    "sys:dob_bs": "2018.12.08",
+    "sys:election_year": 2079,
+    "sys:experience": "प्रतिनिधि सभा सदस्य, भौतिक पुर्वाधार तथा यातायात मन्त्ती, अन्य ५ मन्त्रालय समेतको जिम्मेवारी, ने.क.पा. एमालेको केन्द्रिय सदस्य",
+    "sys:father_name": "देवी प्रसाद नेम्वाङ्ग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेपाल ल क्याम्पस,  काठमाण्डौ",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 12,
+    "sys:spouse_name": "भुमिका  लिम्बू",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 32135
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vsnt-kumaar-nemvaangg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "वसन्त कुमार नेम्वाङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "vsnt-kumaar-nemvaangg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vsnt-kumaar-nemvaangg",
+    "id": "version:entity:person/vsnt-kumaar-nemvaangg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

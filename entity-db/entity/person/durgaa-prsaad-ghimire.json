@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा कन्काई नगरपालिका",
+    "sys:age": 58,
+    "sys:candidate_id": 338691,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2021.05.02",
+    "sys:election_year": 2079,
+    "sys:experience": "ट्रेड युनयन महासंघको केन्द्रीय सदस्य भई काम गरेको \nआई एल ओ कार्यक्रम संयोजक",
+    "sys:father_name": "उदय नारायण घिमिरे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "कन्काई मा वि",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "कक्षा १०",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 117,
+    "sys:spouse_name": "दमन्ता  घिमिरे",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 26
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/durgaa-prsaad-ghimire",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दुर्गा प्रसाद घिमिरे"
+    }
+  ],
+  "short_description": null,
+  "slug": "durgaa-prsaad-ghimire",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/durgaa-prsaad-ghimire",
+    "id": "version:entity:person/durgaa-prsaad-ghimire:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

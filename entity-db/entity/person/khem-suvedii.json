@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कन्चनपुर बेलौरी नगरपालिका पचुई",
+    "sys:age": 66,
+    "sys:candidate_id": 336042,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "लमजुंग",
+    "sys:district": "कन्चनपुर",
+    "sys:district_code": 75,
+    "sys:dob_bs": "2013.01.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "अग्नी धर सुवेदी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2344,
+    "sys:spouse_name": "निर्मला  सुवेदी",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 530
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/khem-suvedii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "खेम सुवेदी"
+    }
+  ],
+  "short_description": null,
+  "slug": "khem-suvedii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/khem-suvedii",
+    "id": "version:entity:person/khem-suvedii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

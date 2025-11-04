@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाँचथर फाल्गुनन्द गाउँपालिका",
+    "sys:age": 57,
+    "sys:candidate_id": 336306,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाँचथर",
+    "sys:district": "पाँचथर",
+    "sys:district_code": 2,
+    "sys:dob_bs": "2021.09.18",
+    "sys:election_year": 2079,
+    "sys:experience": "पार्टीको केन्द्रिय सदस्य, अनुशासन समिति केन्द्रिय संयोजक, केन्द्रिय पदाधिकारी (सहमाहामन्धी), संविधान सभा सदस्य, २०७०, सभापती उद्योगवाणिज्य आपुर्ति, उपभोक्ता हित संसदिय समिति",
+    "sys:father_name": "धनेन्द्र राज आङदेम्वे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेपाल ल क्याम्पस काठमाण्डौ",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "आई, एल.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 13,
+    "sys:spouse_name": "ललिता देबी राई लिम्बु",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 32089
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhiissm-raaj-aangdemve",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भीष्म राज आङदेम्वे"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhiissm-raaj-aangdemve",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhiissm-raaj-aangdemve",
+    "id": "version:entity:person/bhiissm-raaj-aangdemve:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "खोटाङ्ग दिप्रुङ चुइचुम्मा गाउँपालिका",
+    "sys:age": 67,
+    "sys:candidate_id": 336285,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "खोटाङ्ग",
+    "sys:district": "खोटाङ्ग",
+    "sys:district_code": 12,
+    "sys:dob_bs": "2011.11.27",
+    "sys:election_year": 2079,
+    "sys:experience": "2074 सालमा खोटाङको प्रतिनिधि सभा सदस्य उम्मेदवार\nपोलिटब्युरो सदस्य राजनितिक समिति सदस्य ज.स.पा. नेपाल\nभु.पु. केन्द्रिय अध्यक्ष प्रजातान्त्रिक चिकित्सक संघ (ने.का.)\nचिकित्सकको रुपमा सरकारी तथा नीजि क्षेत्रमा सेवा",
+    "sys:father_name": "बम बहादुर राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 396,
+    "sys:spouse_name": "रुपा   बस्नेत (राई)",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 1914
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-kumaar-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण कुमार राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-kumaar-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-kumaar-raaii",
+    "id": "version:entity:person/krssnn-kumaar-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बैतडी सुर्नया गाउँपालिका लिस्किटा",
+    "sys:age": 49,
+    "sys:candidate_id": 335064,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बैतडी",
+    "sys:district": "बैतडी",
+    "sys:district_code": 73,
+    "sys:dob_bs": "2029.08.10",
+    "sys:election_year": 2079,
+    "sys:experience": "उमावि शिक्षक १७ बर्ष",
+    "sys:father_name": "पृती बहादुर चन्द",
+    "sys:gender": "पुरुष",
+    "sys:institute": "tu",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2322,
+    "sys:spouse_name": "रतना  चन्द",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 1759
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dev-bhaadur-cnd",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देव बहादुर चन्द"
+    }
+  ],
+  "short_description": null,
+  "slug": "dev-bhaadur-cnd",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dev-bhaadur-cnd",
+    "id": "version:entity:person/dev-bhaadur-cnd:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका पासाङल्हामु मार्ग",
+    "sys:age": 39,
+    "sys:candidate_id": 333502,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2040.01.08",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रामजी  बसेल",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 986,
+    "sys:spouse_name": "बिनोद  अछामी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2473,
+    "sys:symbol_name": "नरिवल",
+    "sys:votes_received": 5
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sunitaa-bsel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुनिता बसेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "sunitaa-bsel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sunitaa-bsel",
+    "id": "version:entity:person/sunitaa-bsel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

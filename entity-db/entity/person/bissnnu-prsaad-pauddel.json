@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुपाल्चोक वाह्रविसे नगरपालिका",
+    "sys:age": 43,
+    "sys:candidate_id": 336053,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुपाल्चोक",
+    "sys:district": "सिन्धुपाल्चोक",
+    "sys:district_code": 30,
+    "sys:dob_bs": "2036.05.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बाला नाथ पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1368,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1029,
+    "sys:symbol_name": "कैँची",
+    "sys:votes_received": 88
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bissnnu-prsaad-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बिष्णु प्रसाद पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "bissnnu-prsaad-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bissnnu-prsaad-pauddel",
+    "id": "version:entity:person/bissnnu-prsaad-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

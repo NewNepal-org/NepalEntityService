@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग ग्रामथान गाउँपालिका रविहाट",
+    "sys:age": 45,
+    "sys:candidate_id": 334861,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2034.05.26",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नारायण प्रसाद विश्‍वास",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 249,
+    "sys:spouse_name": "सर्मिला  खवास",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 885
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nvin-kumaar-vishvaas-khvaas",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नविन कुमार विश्‍वास खवास"
+    }
+  ],
+  "short_description": null,
+  "slug": "nvin-kumaar-vishvaas-khvaas",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nvin-kumaar-vishvaas-khvaas",
+    "id": "version:entity:person/nvin-kumaar-vishvaas-khvaas:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

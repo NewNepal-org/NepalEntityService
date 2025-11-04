@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "महोत्तरी साम्सी गाउँपालिका भटेपुर",
+    "sys:age": 51,
+    "sys:candidate_id": 334679,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "महोत्तरी",
+    "sys:district": "महोत्तरी",
+    "sys:district_code": 21,
+    "sys:dob_bs": "2027.12.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम दयाल यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 814,
+    "sys:spouse_name": "रेणु  यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 21331
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/surendr-kumaar-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुरेन्‍द्र कुमार यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "surendr-kumaar-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/surendr-kumaar-yaadv",
+    "id": "version:entity:person/surendr-kumaar-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

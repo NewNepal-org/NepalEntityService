@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तनहुँ शुक्लागण्डकी नगरपालिका गणपते",
+    "sys:age": 47,
+    "sys:candidate_id": 337564,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तनहुँ",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2031.12.14",
+    "sys:election_year": 2079,
+    "sys:experience": "विभिन्‍न गोष्ठी, प्रशिक्षण",
+    "sys:father_name": "डिल्ली रमण पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1078,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 15269
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prdiip-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रदीप पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "prdiip-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prdiip-pauddel",
+    "id": "version:entity:person/prdiip-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

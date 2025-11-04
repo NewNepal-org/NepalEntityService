@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तेर्हथुम आठराई  गाउँपालिका केलिङ",
+    "sys:age": 46,
+    "sys:candidate_id": 336149,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तेर्हथुम",
+    "sys:district": "तेर्हथुम",
+    "sys:district_code": 6,
+    "sys:dob_bs": "2032.08.27",
+    "sys:election_year": 2079,
+    "sys:experience": "संविधान सभा सदस्य २०६४; संविधान सभा सदस्य २०७० र राज्य मन्त्री, भौतिक पूर्वाधार तथा यातायात, २०७४",
+    "sys:father_name": "पदम बहादुर गुरुङ्ग",
+    "sys:gender": "महिला",
+    "sys:institute": "त्रिभुवन विश्‍वविद्यालय",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 158,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 19707
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sitaa-gurungg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सिता गुरुङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "sitaa-gurungg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sitaa-gurungg",
+    "id": "version:entity:person/sitaa-gurungg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

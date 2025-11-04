@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी ईनरुवा नगरपालिका सिकारी टोल",
+    "sys:age": 63,
+    "sys:candidate_id": 334710,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2016.01.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बाला प्रसाद आचार्य",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 312,
+    "sys:spouse_name": "निरा देवी आचार्य",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 32024
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhiim-prsaad-aacaary",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भीम प्रसाद आचार्य"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhiim-prsaad-aacaary",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhiim-prsaad-aacaary",
+    "id": "version:entity:person/bhiim-prsaad-aacaary:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

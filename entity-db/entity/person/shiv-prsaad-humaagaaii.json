@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक पनौती नगरपालिका पलाङग्वाट",
+    "sys:age": 61,
+    "sys:candidate_id": 334533,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2018.03.25",
+    "sys:election_year": 2079,
+    "sys:experience": "प्रतिनिधि सभा सदस्य २०५६",
+    "sys:father_name": "लक्ष्मी प्रसाद हुमागाई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1340,
+    "sys:spouse_name": "गायत्री जंगम",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 39482
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shiv-prsaad-humaagaaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शिव प्रसाद हुमागाई"
+    }
+  ],
+  "short_description": null,
+  "slug": "shiv-prsaad-humaagaaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shiv-prsaad-humaagaaii",
+    "id": "version:entity:person/shiv-prsaad-humaagaaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

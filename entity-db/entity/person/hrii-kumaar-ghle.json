@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा अजिरकोट गाउँपालिका केप्रुङ",
+    "sys:age": 51,
+    "sys:candidate_id": 336260,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गोरखा",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2028.05.27",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गंगा बहादुर घले",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "आमूल परिवर्तन मसिहा पार्टी नेपाल",
+    "sys:political_party_slug": "aamuul-privrtn-msihaa-paarttii-nepaal",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 984,
+    "sys:spouse_name": "तिल कुमारी गोले घले",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 66,
+    "sys:symbol_name": "हृदय",
+    "sys:votes_received": 7
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hrii-kumaar-ghle",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हरी कुमार घले"
+    }
+  ],
+  "short_description": null,
+  "slug": "hrii-kumaar-ghle",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hrii-kumaar-ghle",
+    "id": "version:entity:person/hrii-kumaar-ghle:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

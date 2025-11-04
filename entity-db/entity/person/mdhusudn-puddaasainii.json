@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं कागेश्वरी मनोहरा नगरपालिका सत्‍याटार",
+    "sys:age": 46,
+    "sys:candidate_id": 333937,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2033.02.12",
+    "sys:election_year": 2079,
+    "sys:experience": "१. कृषि तथा पर्यटन व्यवसायी\n२. बैकिङ्ग तथा सहकारी क्षेत्रको सहभागिता\n३. रंगमञ्‍च तथा फिल्मी क्षेत्रको सहभागिता\n४. समाज सेवा",
+    "sys:father_name": "भिम प्रसाद पुडासैनी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री आदर्श उच्च मा.वि.",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1014,
+    "sys:spouse_name": "जानकी  मुडभरी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 43
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mdhusudn-puddaasainii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मधुसुदन पुडासैनी"
+    }
+  ],
+  "short_description": null,
+  "slug": "mdhusudn-puddaasainii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mdhusudn-puddaasainii",
+    "id": "version:entity:person/mdhusudn-puddaasainii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

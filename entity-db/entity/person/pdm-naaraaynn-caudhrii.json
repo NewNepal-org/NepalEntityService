@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा लहान नगरपालिका मटियर्वा",
+    "sys:age": 74,
+    "sys:candidate_id": 337229,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2004.08.06",
+    "sys:election_year": 2079,
+    "sys:experience": "नेपाल नेत्र ज्योति संघ।\nविराटनगर आखा अस्पतालको अध्यक्ष।",
+    "sys:father_name": "छविलाल  चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "tu",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "M Phil",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 509,
+    "sys:spouse_name": "हरि देवी चौधरी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 27379
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/pdm-naaraaynn-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पदम नारायण चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "pdm-naaraaynn-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/pdm-naaraaynn-caudhrii",
+    "id": "version:entity:person/pdm-naaraaynn-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

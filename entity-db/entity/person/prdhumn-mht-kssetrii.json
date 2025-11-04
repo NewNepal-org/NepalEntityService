@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नुवाकोट पञ्चकन्या गाउँपालिका पाचोक",
+    "sys:age": 41,
+    "sys:candidate_id": 337259,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नुवाकोट",
+    "sys:district": "नुवाकोट",
+    "sys:district_code": 25,
+    "sys:dob_bs": "2037.09.12",
+    "sys:election_year": 2079,
+    "sys:experience": "अध्ययन,अनुसन्धान विज्ञान र प्रविधिको क्षेत्रमा \nप्राधयापन शैक्षिक गतिविधि",
+    "sys:father_name": "छत्र वहादुर महत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "चुंगयान युनिभर्सीटि ,ताइवान",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "विद्यावारिधि",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 936,
+    "sys:spouse_name": "सरुना  पाठक महत",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 6113
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prdhumn-mht-kssetrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रधुम्न महत क्षेत्री"
+    }
+  ],
+  "short_description": null,
+  "slug": "prdhumn-mht-kssetrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prdhumn-mht-kssetrii",
+    "id": "version:entity:person/prdhumn-mht-kssetrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

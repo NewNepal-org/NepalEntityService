@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका",
+    "sys:age": 35,
+    "sys:candidate_id": 334093,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बर्दिया",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2043.12.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कृष्ण प्रसाद उपाध्याय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2104,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 15326
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kml-subedii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कमल सुबेदी"
+    }
+  ],
+  "short_description": null,
+  "slug": "kml-subedii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kml-subedii",
+    "id": "version:entity:person/kml-subedii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

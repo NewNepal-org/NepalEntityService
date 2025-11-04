@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्वत जलजला गाउँपालिका",
+    "sys:age": 33,
+    "sys:candidate_id": 333694,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्वत",
+    "sys:district": "पर्वत",
+    "sys:district_code": 51,
+    "sys:dob_bs": "2045.11.28",
+    "sys:election_year": 2079,
+    "sys:experience": "शिक्षक, कृषि बजार व्यवस्थापक",
+    "sys:father_name": "मन बहादुर पुर्जा पुन",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2040,
+    "sys:spouse_name": "किरन  पुर्जा पुन",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 4173
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jaal-bhaadur-purjaa-pun",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जाल बहादुर पुर्जा पुन"
+    }
+  ],
+  "short_description": null,
+  "slug": "jaal-bhaadur-purjaa-pun",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jaal-bhaadur-purjaa-pun",
+    "id": "version:entity:person/jaal-bhaadur-purjaa-pun:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

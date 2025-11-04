@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा कलैया उपमहानगरपालिका बसतपुर",
+    "sys:age": 68,
+    "sys:candidate_id": 338140,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2010.08.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "खलिल मियाँ ठकुराई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल लोकतान्त्रिक पार्टी",
+    "sys:political_party_slug": "nepaal-loktaantrik-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1520,
+    "sys:spouse_name": "बसरा बेगम ठकुराईन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 6,
+    "sys:symbol_name": "दुई हात जोडेको नमस्कार",
+    "sys:votes_received": 1044
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mhmmd-shaanii-tthkuraaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "महम्मद शानी ठकुराई"
+    }
+  ],
+  "short_description": null,
+  "slug": "mhmmd-shaanii-tthkuraaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mhmmd-shaanii-tthkuraaii",
+    "id": "version:entity:person/mhmmd-shaanii-tthkuraaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

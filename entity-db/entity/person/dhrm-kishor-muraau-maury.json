@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु महाराजगंज नगरपालिका पंडितडिहवा",
+    "sys:age": 45,
+    "sys:candidate_id": 334730,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2033.12.29",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पल्टन  मुराउ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2010,
+    "sys:spouse_name": "सन्जु  मुराउ",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2124,
+    "sys:symbol_name": "टि टेबुल",
+    "sys:votes_received": 9
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dhrm-kishor-muraau-maury",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "धर्म किशोर मुराउ मौर्य"
+    }
+  ],
+  "short_description": null,
+  "slug": "dhrm-kishor-muraau-maury",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dhrm-kishor-muraau-maury",
+    "id": "version:entity:person/dhrm-kishor-muraau-maury:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर गोदावरी नगरपालिका लेले",
+    "sys:age": 47,
+    "sys:candidate_id": 333766,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2032.01.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम शरण सिल्वाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1270,
+    "sys:spouse_name": "मन्जु  सिलवाल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2321,
+    "sys:symbol_name": "घण्टाघर",
+    "sys:votes_received": 12
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhupendr-silvaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भुपेन्द्र सिल्वाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhupendr-silvaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhupendr-silvaal",
+    "id": "version:entity:person/bhupendr-silvaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

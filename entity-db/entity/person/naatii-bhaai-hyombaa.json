@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर भक्तपुर नगरपालिका तचपाल,जेलाँ",
+    "sys:age": 56,
+    "sys:candidate_id": 338067,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "रोल्पा",
+    "sys:district_code": 53,
+    "sys:dob_bs": "2022.11.05",
+    "sys:election_year": 2079,
+    "sys:experience": "२०५४ सालमा भ.न.पा. ०९ बाट मनोनित वडा सदस्य",
+    "sys:father_name": "मंगल लाल ह्‍योम्बा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "शारदा मावि",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "I.Com.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2060,
+    "sys:spouse_name": "न्हुछे माया ह्‍योम्बा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 152
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/naatii-bhaai-hyombaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नाती भाइ ह्‍योम्बा"
+    }
+  ],
+  "short_description": null,
+  "slug": "naatii-bhaai-hyombaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/naatii-bhaai-hyombaa",
+    "id": "version:entity:person/naatii-bhaai-hyombaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

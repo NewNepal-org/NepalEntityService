@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी दुहवी नगरपालिका मुसहरी",
+    "sys:age": 44,
+    "sys:candidate_id": 336647,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2034.12.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बुध लाल ऋषिदेव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 351,
+    "sys:spouse_name": "सिता देवी ऋषिदेव",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 65
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sjjn-rssidev",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सज्जन ऋषिदेव"
+    }
+  ],
+  "short_description": null,
+  "slug": "sjjn-rssidev",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sjjn-rssidev",
+    "id": "version:entity:person/sjjn-rssidev:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

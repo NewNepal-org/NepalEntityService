@@ -1,0 +1,13 @@
+{
+  "actor": {
+    "id": "actor:election-importer",
+    "name": "Election Results Importer",
+    "slug": "election-importer"
+  },
+  "changeDescription": "Candidate → Party membership",
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "entityOrRelationshipId": "relationship/pdm-thaapaa-mgr-to-nepaal-mjdur-kisaan-paarttii-member_of",
+  "id": "version:relationship/pdm-thaapaa-mgr-to-nepaal-mjdur-kisaan-paarttii-member_of:1",
+  "type": "RELATIONSHIP",
+  "versionNumber": 1
+}

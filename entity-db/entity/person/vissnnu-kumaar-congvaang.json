@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तेर्हथुम फेदाप  गाउँपालिका गैरीटोल",
+    "sys:age": 31,
+    "sys:candidate_id": 333767,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तेर्हथुम",
+    "sys:district": "तेर्हथुम",
+    "sys:district_code": 6,
+    "sys:dob_bs": "2047.09.12",
+    "sys:election_year": 2079,
+    "sys:experience": "कि.या.चु. तेह्रथुमको अध्यक्ष, पोक्लाबाङ यक माङेना लङुघुङ थामङको अध्यक्ष",
+    "sys:father_name": "पदम बहादुर लिम्बू",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्‍वविद्यालय",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "स्नातकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 160,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 725
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vissnnu-kumaar-congvaang",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विष्णु कुमार चोङवाङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "vissnnu-kumaar-congvaang",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vissnnu-kumaar-congvaang",
+    "id": "version:entity:person/vissnnu-kumaar-congvaang:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

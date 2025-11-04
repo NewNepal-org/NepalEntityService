@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा पालुङटार नगरपालिका",
+    "sys:age": 56,
+    "sys:candidate_id": 338463,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गोरखा",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "2023.06.10",
+    "sys:election_year": 2079,
+    "sys:experience": "शिक्षण अध्यन २५ बर्ष",
+    "sys:father_name": "दीप बहादुर थापा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि बि बि",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "एम ए",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1676,
+    "sys:spouse_name": "सावित्री  थापा",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 246
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prkaash-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रकाश थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "prkaash-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prkaash-thaapaa",
+    "id": "version:entity:person/prkaash-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

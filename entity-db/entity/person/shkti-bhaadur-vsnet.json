@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "जाजरकोट भेरी नगरपालिका काले गाउँ",
+    "sys:age": 53,
+    "sys:candidate_id": 337500,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "जाजरकोट",
+    "sys:district": "जाजरकोट",
+    "sys:district_code": 62,
+    "sys:dob_bs": "2026.01.29",
+    "sys:election_year": 2079,
+    "sys:experience": "मन्त्री स्वास्थ्य तथा जनसंख्या गृह वन तथा वातावरण\nसंविधान सभा सदस्य\nप्रतिनिधि सभा सदस्य\nराज्य वयवस्था समिति अर्थ समिति कृषि सहकारी तथा प्राकृति श्रोत व्यवस्थापन लगायतका संसदिय समिति सदस्य भई काम गरगेको",
+    "sys:father_name": "डण्डवीर  वस्नेत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "स्नातकोत्तर राजनीति शास्त्र",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2143,
+    "sys:spouse_name": "सत्य  पहाडी",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 34151
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shkti-bhaadur-vsnet",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शक्ति बहादुर वस्नेत"
+    }
+  ],
+  "short_description": null,
+  "slug": "shkti-bhaadur-vsnet",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shkti-bhaadur-vsnet",
+    "id": "version:entity:person/shkti-bhaadur-vsnet:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

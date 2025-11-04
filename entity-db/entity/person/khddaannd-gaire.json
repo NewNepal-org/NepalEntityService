@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा रिब्दिकोट गाउँपालिका गैरागाँउ",
+    "sys:age": 45,
+    "sys:candidate_id": 337923,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2034.02.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "तारापति  गैरे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1829,
+    "sys:spouse_name": "मञ्जु  गैरे",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 215
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/khddaannd-gaire",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "खडानन्द गैरे"
+    }
+  ],
+  "short_description": null,
+  "slug": "khddaannd-gaire",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/khddaannd-gaire",
+    "id": "version:entity:person/khddaannd-gaire:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

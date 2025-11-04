@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन भरतपुर महानगरपालिका जुनहलरोड",
+    "sys:age": 64,
+    "sys:candidate_id": 336627,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2014.08.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "महवत  मिया",
+    "sys:gender": "पुरुष",
+    "sys:institute": "प्रधुम्मन पनेरु मा वि",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "S.L.C. अनुत्रिर्ण",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1631,
+    "sys:spouse_name": "मिसिरन  अली",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 62
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mustphaa-alii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मुस्तफा अली"
+    }
+  ],
+  "short_description": null,
+  "slug": "mustphaa-alii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mustphaa-alii",
+    "id": "version:entity:person/mustphaa-alii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

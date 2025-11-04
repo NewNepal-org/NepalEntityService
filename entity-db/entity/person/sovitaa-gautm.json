@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा तामाकोशी  गाउँपालिका जामुने",
+    "sys:age": 27,
+    "sys:candidate_id": 338267,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2052.03.03",
+    "sys:election_year": 2079,
+    "sys:experience": "१. अधिवक्ता भई काम गरेको\n२. पत्रकारिता भई काम गरेको \n३. सामाजिक संघसंस्थामा मुख्य भुमिकामा रही बोर्ड संचालन गरेको \n४. पर्यटन व्यवसाय संचालन गरेको",
+    "sys:father_name": "कृष्ण प्रसाद गौतम",
+    "sys:gender": "महिला",
+    "sys:institute": "नेशनल ल कलेज, त्रि.वि.",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "स्‍नातक (कानून)",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 994,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 15238
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sovitaa-gautm",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सोविता गौतम"
+    }
+  ],
+  "short_description": null,
+  "slug": "sovitaa-gautm",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sovitaa-gautm",
+    "id": "version:entity:person/sovitaa-gautm:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

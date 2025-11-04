@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा कमला नगरपालिका लगमा",
+    "sys:age": 68,
+    "sys:candidate_id": 335711,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2011.01.31",
+    "sys:election_year": 2079,
+    "sys:experience": "प्रतिनिध सभा सदस्य २०५१\nसंविधान सभा सदस्य २०६४\nकन्द्रिय मन्त्री",
+    "sys:father_name": "पुलकित  झा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "भागलपुर विश्व विद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 686,
+    "sys:spouse_name": "शुषमा देवी झा",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 13605
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-cndr-jhaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम चन्द्र झा"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-cndr-jhaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-cndr-jhaa",
+    "id": "version:entity:person/raam-cndr-jhaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

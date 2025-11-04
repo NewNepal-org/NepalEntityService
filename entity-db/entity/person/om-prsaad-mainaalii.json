@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही हरिवन नगरपालिका",
+    "sys:age": 42,
+    "sys:candidate_id": 335740,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2037.02.15",
+    "sys:election_year": 2079,
+    "sys:experience": "व्यापारी/समाजिक/बैदेशिक/सहकारी संस्था",
+    "sys:father_name": "मोदनाथ  मैनाली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "च.ज.उ.मा.वि. सर्लाही",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "‌‌+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 872,
+    "sys:spouse_name": "जमुना उप्रेती मैनाली",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 118
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/om-prsaad-mainaalii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ओम प्रसाद मैनाली"
+    }
+  ],
+  "short_description": null,
+  "slug": "om-prsaad-mainaalii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/om-prsaad-mainaalii",
+    "id": "version:entity:person/om-prsaad-mainaalii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

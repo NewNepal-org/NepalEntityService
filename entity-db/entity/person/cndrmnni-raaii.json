@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "खोटाङ्ग केपिलासगढी गाउँपालिका",
+    "sys:age": 36,
+    "sys:candidate_id": 335053,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "खोटाङ्ग",
+    "sys:district": "खोटाङ्ग",
+    "sys:district_code": 12,
+    "sys:dob_bs": "2042.10.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लाल बहादुर राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "आमूल परिवर्तन मसिहा पार्टी नेपाल",
+    "sys:political_party_slug": "aamuul-privrtn-msihaa-paarttii-nepaal",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 399,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 66,
+    "sys:symbol_name": "हृदय",
+    "sys:votes_received": 204
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cndrmnni-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चन्द्रमणि राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "cndrmnni-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cndrmnni-raaii",
+    "id": "version:entity:person/cndrmnni-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

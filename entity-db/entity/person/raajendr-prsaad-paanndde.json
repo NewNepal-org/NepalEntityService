@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धादिङ्ग गजुरी गाउँपालिका छेपाङ्ग",
+    "sys:age": 66,
+    "sys:candidate_id": 335240,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "धादिङ्ग",
+    "sys:district_code": 24,
+    "sys:dob_bs": "2013.02.29",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नेत्रराज  पाण्डे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 906,
+    "sys:spouse_name": "सीता  पाण्डे",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 36018
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajendr-prsaad-paanndde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजेन्द्र प्रसाद पाण्डे"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajendr-prsaad-paanndde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajendr-prsaad-paanndde",
+    "id": "version:entity:person/raajendr-prsaad-paanndde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

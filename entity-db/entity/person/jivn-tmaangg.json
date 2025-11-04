@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन रत्ननगर नगरपालिका",
+    "sys:age": 49,
+    "sys:candidate_id": 333521,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2030.01.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "तिलक बहादुर तमाङ्ग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1613,
+    "sys:spouse_name": "गिता  तमाङ्ग",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2321,
+    "sys:symbol_name": "घण्टाघर",
+    "sys:votes_received": 116
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jivn-tmaangg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जिवन तमाङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "jivn-tmaangg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jivn-tmaangg",
+    "id": "version:entity:person/jivn-tmaangg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

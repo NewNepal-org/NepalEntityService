@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा नवराजपुर गाउँपालिका झाँझपट्टी",
+    "sys:age": 49,
+    "sys:candidate_id": 338313,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2030.04.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "तारणी प्रसाद यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 543,
+    "sys:spouse_name": "भुटनी (ईन्दु) देवी यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2062,
+    "sys:symbol_name": "पानीको फिल्टर",
+    "sys:votes_received": 57
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/aannd-kumaar-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "आनन्द कुमार यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "aannd-kumaar-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/aannd-kumaar-yaadv",
+    "id": "version:entity:person/aannd-kumaar-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

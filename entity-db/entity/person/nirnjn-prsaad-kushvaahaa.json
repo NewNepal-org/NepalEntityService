@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी कञ्चनरुप नगरपालिका",
+    "sys:age": 25,
+    "sys:candidate_id": 333836,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2054.03.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भोला प्रसाद महतो",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पूर्वाञ्चल विश्वविद्यालय",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "स्‍नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 446,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 1054
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nirnjn-prsaad-kushvaahaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "निरंजन प्रसाद कुशवाहा"
+    }
+  ],
+  "short_description": null,
+  "slug": "nirnjn-prsaad-kushvaahaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nirnjn-prsaad-kushvaahaa",
+    "id": "version:entity:person/nirnjn-prsaad-kushvaahaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सल्यान बनगाड कुपिण्डे नगरपालिका खहरेखोला",
+    "sys:age": 55,
+    "sys:candidate_id": 335079,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "सल्यान",
+    "sys:district_code": 55,
+    "sys:dob_bs": "2023.08.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चन्द्र बहादुर साहु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2068,
+    "sys:spouse_name": "",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 35707
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prkaash-jvaalaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रकाश ज्वाला"
+    }
+  ],
+  "short_description": null,
+  "slug": "prkaash-jvaalaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prkaash-jvaalaa",
+    "id": "version:entity:person/prkaash-jvaalaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

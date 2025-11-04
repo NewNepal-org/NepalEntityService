@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुपाल्चोक मेलम्ची नगरपालिका झाक्री गाउँ",
+    "sys:age": 39,
+    "sys:candidate_id": 335811,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुपाल्चोक",
+    "sys:district": "सिन्धुपाल्चोक",
+    "sys:district_code": 30,
+    "sys:dob_bs": "2039.10.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गोपे  तामाङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनमत पार्टी",
+    "sys:political_party_slug": "jnmt-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1376,
+    "sys:spouse_name": "खड्ग कुमारी तामाङ",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2289,
+    "sys:symbol_name": "लाउड स्पिकर",
+    "sys:votes_received": 109
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mngl-sin-taamaang",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मंगल सिं तामाङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "mngl-sin-taamaang",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mngl-sin-taamaang",
+    "id": "version:entity:person/mngl-sin-taamaang:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

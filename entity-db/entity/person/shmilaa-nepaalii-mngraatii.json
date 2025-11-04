@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनकुटा सहिदभूमि गाउँपालिका डाडागाउँ",
+    "sys:age": 34,
+    "sys:candidate_id": 338227,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनकुटा",
+    "sys:district": "कास्की",
+    "sys:district_code": 39,
+    "sys:dob_bs": "2044.08.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सानो कले सार्की",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1702,
+    "sys:spouse_name": "भिम बहादुर मंग्राती",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 265
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shmilaa-nepaalii-mngraatii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शमिला नेपाली मंग्राती"
+    }
+  ],
+  "short_description": null,
+  "slug": "shmilaa-nepaalii-mngraatii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shmilaa-nepaalii-mngraatii",
+    "id": "version:entity:person/shmilaa-nepaalii-mngraatii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

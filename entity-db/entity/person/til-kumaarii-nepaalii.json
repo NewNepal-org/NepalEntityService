@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा पुतलीबजार नगरपालिका रिठ्ठेखोला",
+    "sys:age": 30,
+    "sys:candidate_id": 336854,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2048.09.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दल बहादुर सार्की",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "जनसमाजवादी पार्टी नेपाल",
+    "sys:political_party_slug": "jnsmaajvaadii-paarttii-nepaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1774,
+    "sys:spouse_name": "महेन्द्र  सार्की",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2292,
+    "sys:symbol_name": "पाँचकुने तारा",
+    "sys:votes_received": 50
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/til-kumaarii-nepaalii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तिल कुमारी नेपाली"
+    }
+  ],
+  "short_description": null,
+  "slug": "til-kumaarii-nepaalii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/til-kumaarii-nepaalii",
+    "id": "version:entity:person/til-kumaarii-nepaalii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

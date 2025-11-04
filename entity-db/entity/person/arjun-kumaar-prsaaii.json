@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका कल्याकारी मार्ग",
+    "sys:age": 58,
+    "sys:candidate_id": 333375,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2020.07.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "देवेन्द्र  प्रसाई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1050,
+    "sys:spouse_name": "मीन  प्रसाई",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 2308
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/arjun-kumaar-prsaaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अर्जुन कुमार प्रसाई"
+    }
+  ],
+  "short_description": null,
+  "slug": "arjun-kumaar-prsaaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/arjun-kumaar-prsaaii",
+    "id": "version:entity:person/arjun-kumaar-prsaaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

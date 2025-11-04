@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु कपिलवस्तु नगरपालिका नरैनापुर",
+    "sys:age": 35,
+    "sys:candidate_id": 335072,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2044.04.13",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक सेवा",
+    "sys:father_name": "अमेरिका  अहिर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "९ कक्षा पास",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1976,
+    "sys:spouse_name": "सुमित्रा  अहिर",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 251
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sher-bhaadur-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शेर बहादुर यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "sher-bhaadur-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sher-bhaadur-yaadv",
+    "id": "version:entity:person/sher-bhaadur-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

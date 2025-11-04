@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट गौर नगरपालिका",
+    "sys:age": 69,
+    "sys:candidate_id": 333559,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2009.11.23",
+    "sys:election_year": 2079,
+    "sys:experience": "क) पुर्व प्रधानमन्त्री\nख) नेपाल अधिराज्यको संविधान 2047 को मस्यौहाकार\nग) संविधान सभा सदस्य भई काम गरेको \nघ) विभिन्न देशको भ्रमण र अन्तराष्ट्रिय संविधानको अध्ययन",
+    "sys:father_name": "मंगल कुमार उपाध्याय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि‍.वि.",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "B.Com",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1408,
+    "sys:spouse_name": "गायत्री  आचार्य (नेपाल)",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 33522
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/maadhv-kumaar-nepaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "माधव कुमार नेपाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "maadhv-kumaar-nepaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/maadhv-kumaar-nepaal",
+    "id": "version:entity:person/maadhv-kumaar-nepaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

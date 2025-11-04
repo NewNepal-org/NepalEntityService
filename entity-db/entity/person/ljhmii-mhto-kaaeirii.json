@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "महोत्तरी गौशाला नगरपालिका निगौल",
+    "sys:age": 58,
+    "sys:candidate_id": 333762,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "महोत्तरी",
+    "sys:district": "महोत्तरी",
+    "sys:district_code": 21,
+    "sys:dob_bs": "2021.02.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम सुन्दर महतो",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 760,
+    "sys:spouse_name": "रामकुमारी  देबी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 23402
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ljhmii-mhto-kaaeirii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लझ्मी महतो काेइरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "ljhmii-mhto-kaaeirii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ljhmii-mhto-kaaeirii",
+    "id": "version:entity:person/ljhmii-mhto-kaaeirii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

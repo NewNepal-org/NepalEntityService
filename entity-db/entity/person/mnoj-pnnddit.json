@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक धुलिखेल नगरपालिका भ्याण्डोल",
+    "sys:age": 43,
+    "sys:candidate_id": 333294,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2035.09.15",
+    "sys:election_year": 2079,
+    "sys:experience": "चलचित्र निर्माण(ग्रेटर नेपाल, दासढुंगा, वधशाला, नेपलामा गणतन्त्र)",
+    "sys:father_name": "युधिस्ठीर पण्डित",
+    "sys:gender": "पुरुष",
+    "sys:institute": "आभास एकेडेमी अफ अडियो भिडियो आर्टस् एण्ड साइन्स",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Diploma in Film Studies",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1344,
+    "sys:spouse_name": "सुशिला थापा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1009,
+    "sys:symbol_name": "डोजर",
+    "sys:votes_received": 173
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mnoj-pnnddit",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मनोज पण्डित"
+    }
+  ],
+  "short_description": null,
+  "slug": "mnoj-pnnddit",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mnoj-pnnddit",
+    "id": "version:entity:person/mnoj-pnnddit:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/hri-nepaal:organization/political_party/maulik-jrokilo-paarttii:MEMBER_OF",
+  "sourceEntityId": "entity:person/hri-nepaal",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/maulik-jrokilo-paarttii",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/hri-nepaal-to-maulik-jrokilo-paarttii-member_of",
+    "id": "version:relationship/hri-nepaal-to-maulik-jrokilo-paarttii-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

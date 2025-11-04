@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दार्चुला महाकाली नगरपालिका जोशीटोल",
+    "sys:age": 69,
+    "sys:candidate_id": 337321,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दार्चुला",
+    "sys:district": "दार्चुला",
+    "sys:district_code": 72,
+    "sys:dob_bs": "2009.10.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गौरी दत्त जोशी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नागरिक उन्मुक्ति पार्टी",
+    "sys:political_party_slug": "naagrik-unmukti-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2315,
+    "sys:spouse_name": "दुर्गा देवी जोशी",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2306,
+    "sys:symbol_name": "पिधँ भएको सादा ढकिया",
+    "sys:votes_received": 65
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/taaraa-dtt-joshii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तारा दत्त जोशी"
+    }
+  ],
+  "short_description": null,
+  "slug": "taaraa-dtt-joshii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/taaraa-dtt-joshii",
+    "id": "version:entity:person/taaraa-dtt-joshii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

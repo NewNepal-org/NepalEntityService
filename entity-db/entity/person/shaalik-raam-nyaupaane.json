@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा कोल्हवी नगरपालिका कोल्हवी",
+    "sys:age": 36,
+    "sys:candidate_id": 335169,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district_code": 45,
+    "sys:dob_bs": "2042.10.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चुडा मणी न्यौपाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "ठाकुराम मल्टीपल क्याम्पस",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1864,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 6449
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shaalik-raam-nyaupaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शालिक राम न्यौपाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "shaalik-raam-nyaupaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shaalik-raam-nyaupaane",
+    "id": "version:entity:person/shaalik-raam-nyaupaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

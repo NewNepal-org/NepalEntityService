@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कालिकोट पचालझरना गाउँपालिका कोटिला",
+    "sys:age": 45,
+    "sys:candidate_id": 336140,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कालिकोट",
+    "sys:district": "कालिकोट",
+    "sys:district_code": 60,
+    "sys:dob_bs": "2033.10.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लाल बहादुर शाही",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2133,
+    "sys:spouse_name": "चन्दा कुमारी शाही",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 23727
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mhendr-bhaadur-shaahii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "महेन्द्र बहादुर शाही"
+    }
+  ],
+  "short_description": null,
+  "slug": "mhendr-bhaadur-shaahii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mhendr-bhaadur-shaahii",
+    "id": "version:entity:person/mhendr-bhaadur-shaahii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

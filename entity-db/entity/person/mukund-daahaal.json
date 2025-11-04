@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा मेची नगर नगरपालिका पाथिभरा",
+    "sys:age": 50,
+    "sys:candidate_id": 334811,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2029.02.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "खडानन्द  दाहाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Mahendra Bahumukhi Campus",
+    "sys:political_party": "नेपालका लागि नेपाली पार्टी",
+    "sys:political_party_slug": "nepaalkaa-laagi-nepaalii-paarttii",
+    "sys:qualification": "BL",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 60,
+    "sys:spouse_name": "विष्णु  दाहाल",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2329,
+    "sys:symbol_name": "गोलाकार भित्र शंख",
+    "sys:votes_received": 209
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mukund-daahaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मुकुन्द दाहाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "mukund-daahaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mukund-daahaal",
+    "id": "version:entity:person/mukund-daahaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

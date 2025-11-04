@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तेर्हथुम आठराई  गाउँपालिका",
+    "sys:age": 38,
+    "sys:candidate_id": 336856,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तेर्हथुम",
+    "sys:district": "तेर्हथुम",
+    "sys:district_code": 6,
+    "sys:dob_bs": "2041.04.24",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भक्त बहादुर चोङवाङ लिम्बु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री महेन्द्र उच्च मा.वि.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 165,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 57
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shusn-congvaang-limbu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शुसन चोङवाङ लिम्बु"
+    }
+  ],
+  "short_description": null,
+  "slug": "shusn-congvaang-limbu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shusn-congvaang-limbu",
+    "id": "version:entity:person/shusn-congvaang-limbu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

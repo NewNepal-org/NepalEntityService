@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक चौंरीदेउराली गाउँपालिका",
+    "sys:age": 40,
+    "sys:candidate_id": 334203,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2039.01.07",
+    "sys:election_year": 2079,
+    "sys:experience": "व्यवसाय",
+    "sys:father_name": "देवी प्रसाद चौलागाई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "ग्लोबल एकेडेमी",
+    "sys:political_party": "एकीकृत शक्ति नेपाल",
+    "sys:political_party_slug": "ekiikrt-shkti-nepaal",
+    "sys:qualification": "‍‌+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1519,
+    "sys:spouse_name": "जया कुमारी कार्की",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2281,
+    "sys:symbol_name": "त्रिशुल",
+    "sys:votes_received": 1075
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nresh-kumaar-caulaagaaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नरेश कुमार चौलागाई"
+    }
+  ],
+  "short_description": null,
+  "slug": "nresh-kumaar-caulaagaaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nresh-kumaar-caulaagaaii",
+    "id": "version:entity:person/nresh-kumaar-caulaagaaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

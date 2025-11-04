@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही लुम्बिनी सांस्कृतिक नगरपालिका पर्सा",
+    "sys:age": 59,
+    "sys:candidate_id": 333779,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2020.03.27",
+    "sys:election_year": 2079,
+    "sys:experience": "लुम्बिनी विकास कोषमा ३६ वर्ष जागिर",
+    "sys:father_name": "अब्दुल हमीद खाँ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "DR Ram Mahohar Lohia avadh university aizabad UP",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "MA",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1949,
+    "sys:spouse_name": "सफिया बेगम खाँ",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 536
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shbbiir-ahmd-khaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शब्बीर अहमद खाँ"
+    }
+  ],
+  "short_description": null,
+  "slug": "shbbiir-ahmd-khaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shbbiir-ahmd-khaan",
+    "id": "version:entity:person/shbbiir-ahmd-khaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

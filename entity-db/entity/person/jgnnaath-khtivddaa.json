@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर कटारी  नगरपालिका सुगारे",
+    "sys:age": 60,
+    "sys:candidate_id": 335852,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "उदयपुर",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2019.03.19",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "वासुदेव  खतिवडा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 427,
+    "sys:spouse_name": "निर्मला  कँडेल",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 12893
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jgnnaath-khtivddaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जगन्नाथ खतिवडा"
+    }
+  ],
+  "short_description": null,
+  "slug": "jgnnaath-khtivddaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jgnnaath-khtivddaa",
+    "id": "version:entity:person/jgnnaath-khtivddaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका",
+    "sys:age": 47,
+    "sys:candidate_id": 335208,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2032.02.28",
+    "sys:election_year": 2079,
+    "sys:experience": "संसारको सबभन्दा लामो अन्तरवार्ता कार्यक्रम गरी विश्व किर्तिमान \nदर्जनौ लोकप्रिय टेलिभिजन कार्यक्रम निर्माण\nसिधाकुरा जनतासँग जस्तो एतिहासिक टेलिभिजन कार्यक्रम सञ्चालन\nसप्तरीमा मुसहर बस्ती र दुर्गम कालिकोटमा अस्पताल निर्माण",
+    "sys:father_name": "लाल चन्द्र लामिछाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "रत्नराज्य लक्ष्मी क्याम्पस",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "प्रमाणपत्र तह",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1623,
+    "sys:spouse_name": "निकिता  पेाडेल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 49300
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rbi-laamichaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रबि लामिछाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "rbi-laamichaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rbi-laamichaane",
+    "id": "version:entity:person/rbi-laamichaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

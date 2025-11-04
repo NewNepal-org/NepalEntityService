@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके बैजनाथ गाउँपालिका सुतैया",
+    "sys:age": 34,
+    "sys:candidate_id": 334974,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाँके",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2045.03.23",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "फकल  थारु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "M. Ed",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2114,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 28
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/viir-bhaadur-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "वीर बहादुर चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "viir-bhaadur-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/viir-bhaadur-caudhrii",
+    "id": "version:entity:person/viir-bhaadur-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

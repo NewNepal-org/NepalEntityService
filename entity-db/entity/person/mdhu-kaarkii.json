@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही लालबन्दी नगरपालिका",
+    "sys:age": 36,
+    "sys:candidate_id": 334787,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2043.05.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "महेन्र्द विक्रम कार्की",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "9",
+    "sys:serial_no": 1200,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1021,
+    "sys:symbol_name": "टेलिभिजन",
+    "sys:votes_received": 22
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mdhu-kaarkii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मधु कार्की"
+    }
+  ],
+  "short_description": null,
+  "slug": "mdhu-kaarkii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mdhu-kaarkii",
+    "id": "version:entity:person/mdhu-kaarkii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी कञ्चनरुप नगरपालिका वैरवा",
+    "sys:age": 50,
+    "sys:candidate_id": 337053,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2028.09.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मुनि् लाल मंसुरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 455,
+    "sys:spouse_name": "हारुन  खातुन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2472,
+    "sys:symbol_name": "ट्राफिक प्रहरी",
+    "sys:votes_received": 37
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/phjil-mnsurii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "फजिल मंसुरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "phjil-mnsurii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/phjil-mnsurii",
+    "id": "version:entity:person/phjil-mnsurii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

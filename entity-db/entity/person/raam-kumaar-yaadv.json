@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके कोहलपुर नगरपालिका बिधुत",
+    "sys:age": 56,
+    "sys:candidate_id": 335179,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2022.12.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बद्री  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2183,
+    "sys:spouse_name": "बुध्दकला देवी यादव",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 2693
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-kumaar-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम कुमार यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-kumaar-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-kumaar-yaadv",
+    "id": "version:entity:person/raam-kumaar-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

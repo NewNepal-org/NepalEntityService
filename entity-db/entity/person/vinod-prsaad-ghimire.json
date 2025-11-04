@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं कागेश्वरी मनोहरा नगरपालिका डुमाखाल",
+    "sys:age": 40,
+    "sys:candidate_id": 336933,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2039.02.15",
+    "sys:election_year": 2079,
+    "sys:experience": "१. राजनीतिक \n२. पर्यटकिय क्षेत्र\n३. धर्मशास्त्र\n४. नैतिक क्षेत्र",
+    "sys:father_name": "आत्माराम  घिमिरे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "कान्ति भैरव मा.वि.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1018,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 28
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vinod-prsaad-ghimire",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विनोद प्रसाद घिमिरे"
+    }
+  ],
+  "short_description": null,
+  "slug": "vinod-prsaad-ghimire",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vinod-prsaad-ghimire",
+    "id": "version:entity:person/vinod-prsaad-ghimire:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

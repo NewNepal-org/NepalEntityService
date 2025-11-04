@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "म्याग्दी अन्नपूर्ण गाउँपालिका",
+    "sys:age": 58,
+    "sys:candidate_id": 336666,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "म्याग्दी",
+    "sys:district": "म्याग्दी",
+    "sys:district_code": 49,
+    "sys:dob_bs": "2020.10.17",
+    "sys:election_year": 2079,
+    "sys:experience": "१५ वर्ष जापानमा रोजगार\nहाइड्रोपावर व्यवसाय र रेष्टुरेण्ट व्यवसाय",
+    "sys:father_name": "मन प्रसाद भट्टचन",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2021,
+    "sys:spouse_name": "लक्ष्मी  शेरचन (भट्टचन)",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 112
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vinod-bhttttcn",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विनोद भट्टचन"
+    }
+  ],
+  "short_description": null,
+  "slug": "vinod-bhttttcn",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vinod-bhttttcn",
+    "id": "version:entity:person/vinod-bhttttcn:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

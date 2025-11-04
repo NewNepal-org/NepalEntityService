@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर त्रियुगा नगरपालिका",
+    "sys:age": 66,
+    "sys:candidate_id": 333989,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2012.10.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मुंगा लाल ठाकुर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 419,
+    "sys:spouse_name": "चन्द्र कला ठाकुर",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 146
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/khusii-laal-tthaakur",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "खुसी लाल ठाकुर"
+    }
+  ],
+  "short_description": null,
+  "slug": "khusii-laal-tthaakur",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/khusii-laal-tthaakur",
+    "id": "version:entity:person/khusii-laal-tthaakur:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

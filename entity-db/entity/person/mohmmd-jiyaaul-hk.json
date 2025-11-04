@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट गौर नगरपालिका सिर्सिया",
+    "sys:age": 30,
+    "sys:candidate_id": 334890,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2048.10.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शेख  हफिज",
+    "sys:gender": "पुरुष",
+    "sys:institute": "महरशि बाल्मिकि क्याम्पस गौर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+12",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1423,
+    "sys:spouse_name": "साहनी  बेगम",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1004,
+    "sys:symbol_name": "हेलमेट",
+    "sys:votes_received": 18
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mohmmd-jiyaaul-hk",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मोहम्मद जियाउल हक"
+    }
+  ],
+  "short_description": null,
+  "slug": "mohmmd-jiyaaul-hk",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mohmmd-jiyaaul-hk",
+    "id": "version:entity:person/mohmmd-jiyaaul-hk:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

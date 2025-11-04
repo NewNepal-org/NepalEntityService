@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाजुरा हिमाली गाउँपालिका फैती",
+    "sys:age": 45,
+    "sys:candidate_id": 337873,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाजुरा",
+    "sys:district": "बाजुरा",
+    "sys:district_code": 67,
+    "sys:dob_bs": "2033.12.07",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनिति",
+    "sys:father_name": "जग्गी बहादुर शाही",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सामुदायिक विद्यालय",
+    "sys:political_party": "जनसमाजवादी पार्टी नेपाल",
+    "sys:political_party_slug": "jnsmaajvaadii-paarttii-nepaal",
+    "sys:qualification": "साधारण लेखपढ",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2237,
+    "sys:spouse_name": "सितन/सुनकेशा  शाही",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2292,
+    "sys:symbol_name": "पाँचकुने तारा",
+    "sys:votes_received": 73
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-bhaadur-shaahii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम बहादुर शाही"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-bhaadur-shaahii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-bhaadur-shaahii",
+    "id": "version:entity:person/raam-bhaadur-shaahii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

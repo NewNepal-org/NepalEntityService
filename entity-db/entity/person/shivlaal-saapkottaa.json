@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बागलुङ जैमुनी नगरपालिका जाडी",
+    "sys:age": 61,
+    "sys:candidate_id": 335280,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बागलुङ",
+    "sys:district": "बागलुङ",
+    "sys:district_code": 50,
+    "sys:dob_bs": "2018.06.27",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नन्‍दलाल  सापकोटा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2030,
+    "sys:spouse_name": "टीकावती  सापकोटा",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 125
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shivlaal-saapkottaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शिवलाल सापकोटा"
+    }
+  ],
+  "short_description": null,
+  "slug": "shivlaal-saapkottaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shivlaal-saapkottaa",
+    "id": "version:entity:person/shivlaal-saapkottaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रसुवा उत्तरगया गाउँपालिका",
+    "sys:age": 34,
+    "sys:candidate_id": 336974,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रसुवा",
+    "sys:district": "रसुवा",
+    "sys:district_code": 23,
+    "sys:dob_bs": "2044.09.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "श्याम  बहादुर  तामाङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 898,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 210
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vikaash-glaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विकाश  गलान"
+    }
+  ],
+  "short_description": null,
+  "slug": "vikaash-glaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vikaash-glaan",
+    "id": "version:entity:person/vikaash-glaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

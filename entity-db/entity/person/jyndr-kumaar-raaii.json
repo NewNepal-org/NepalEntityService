@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "खोटाङ्ग हलेसी तुवाचुङ नगरपालिका दुर्छिम",
+    "sys:age": 51,
+    "sys:candidate_id": 333969,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "खोटाङ्ग",
+    "sys:district": "खोटाङ्ग",
+    "sys:district_code": 12,
+    "sys:dob_bs": "2028.02.02",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजसेवा",
+    "sys:father_name": "काशी राज राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "SLC Board",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 398,
+    "sys:spouse_name": "इन्द्र कुमारी राई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 239
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jyndr-kumaar-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जयन्द्र कुमार राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "jyndr-kumaar-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jyndr-kumaar-raaii",
+    "id": "version:entity:person/jyndr-kumaar-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

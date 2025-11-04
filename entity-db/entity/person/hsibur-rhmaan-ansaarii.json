@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्सा बिरगंज महानगरपालिका बहुअरी",
+    "sys:age": 55,
+    "sys:candidate_id": 338275,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्सा",
+    "sys:district": "पर्सा",
+    "sys:district_code": 34,
+    "sys:dob_bs": "2024.02.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "डा. कफिलुर रहमान अंसारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1565,
+    "sys:spouse_name": "रौशनक खातुन अंसारी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 44
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hsibur-rhmaan-ansaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हसिबुर रहमान अंसारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "hsibur-rhmaan-ansaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hsibur-rhmaan-ansaarii",
+    "id": "version:entity:person/hsibur-rhmaan-ansaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका चण्डोल, अर्धचक्र मार्ग",
+    "sys:age": 54,
+    "sys:candidate_id": 336582,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2024.07.22",
+    "sys:election_year": 2079,
+    "sys:experience": "समाज सेवा",
+    "sys:father_name": "चक्र बहादुर विष्ट",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "जनसमाजवादी पार्टी नेपाल",
+    "sys:political_party_slug": "jnsmaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1096,
+    "sys:spouse_name": "राधा  पण्डित विष्ट",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2292,
+    "sys:symbol_name": "पाँचकुने तारा",
+    "sys:votes_received": 48
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaju-visstt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजु विष्ट"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaju-visstt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaju-visstt",
+    "id": "version:entity:person/raaju-visstt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

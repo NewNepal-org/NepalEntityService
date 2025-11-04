@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर मध्यपुर थिमी नगरपालिका मगरगाउँ",
+    "sys:age": 40,
+    "sys:candidate_id": 336775,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2038.08.23",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मिठा राम थापा मगर",
+    "sys:gender": "महिला",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1235,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 7127
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/anuraadhaa-thaapaa-mgr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अनुराधा थापा मगर"
+    }
+  ],
+  "short_description": null,
+  "slug": "anuraadhaa-thaapaa-mgr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/anuraadhaa-thaapaa-mgr",
+    "id": "version:entity:person/anuraadhaa-thaapaa-mgr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

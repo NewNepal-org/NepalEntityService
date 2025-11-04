@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी रामधुनी नगरपालिका हसनपुर",
+    "sys:age": 50,
+    "sys:candidate_id": 337552,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2029.02.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "केदार बहादुर बस्‍नेत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 315,
+    "sys:spouse_name": "लिला कुमारी बस्‍नेत",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 4269
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dinesh-kumaar-bsnet",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दिने‍श कुमार बस्‍नेत"
+    }
+  ],
+  "short_description": null,
+  "slug": "dinesh-kumaar-bsnet",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dinesh-kumaar-bsnet",
+    "id": "version:entity:person/dinesh-kumaar-bsnet:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

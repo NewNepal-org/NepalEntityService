@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुली तिनपाटन गाउँपालिका भारागाउ",
+    "sys:age": 64,
+    "sys:candidate_id": 337268,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुली",
+    "sys:district": "सिन्धुली",
+    "sys:district_code": 19,
+    "sys:dob_bs": "2014.10.21",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "प्रेम लाल श्रेष्ठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री भवानी उ.मा.नि. भिमस्थान सिन्धुली",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-pussplaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 647,
+    "sys:spouse_name": "चन्द्र कुमारी श्रेष्ठ",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2327,
+    "sys:symbol_name": "गैंती",
+    "sys:votes_received": 77
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hirnny-laal-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हिरण्य लाल श्रेष्ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "hirnny-laal-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hirnny-laal-shresstth",
+    "id": "version:entity:person/hirnny-laal-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा विष्णुपुर गाउँपालिका बिष्णुपुर",
+    "sys:age": 35,
+    "sys:candidate_id": 337343,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2043.10.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गौरी   यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "ज.मा.वि. गौरीपुर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 564,
+    "sys:spouse_name": "मन्‍जु  देवी  यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1011,
+    "sys:symbol_name": "ग्यास सिलिन्डर",
+    "sys:votes_received": 148
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-pukaar-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम  पुकार  यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-pukaar-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-pukaar-yaadv",
+    "id": "version:entity:person/raam-pukaar-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

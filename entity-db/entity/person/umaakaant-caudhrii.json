@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा कोल्हवी नगरपालिका बेलवा",
+    "sys:age": 56,
+    "sys:candidate_id": 337285,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2023.04.24",
+    "sys:election_year": 2079,
+    "sys:experience": "ने.वि.स.केन्द्रीय सदस्य ,सह महामन्त्री नेपाली काँग्रेस र कृषी",
+    "sys:father_name": "चन्द्रिका  चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "बनारस",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1476,
+    "sys:spouse_name": "ज्ञायत्री देवी चौधरी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 30056
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/umaakaant-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "उमाकान्त चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "umaakaant-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/umaakaant-caudhrii",
+    "id": "version:entity:person/umaakaant-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

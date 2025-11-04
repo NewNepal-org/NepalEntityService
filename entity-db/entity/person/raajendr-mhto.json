@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही चन्द्रनगर गाउँपालिका",
+    "sys:age": 63,
+    "sys:candidate_id": 336274,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2015.08.04",
+    "sys:election_year": 2079,
+    "sys:experience": "पूर्व उपप्रधानमन्त्री",
+    "sys:father_name": "खोभारी  महतो",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 847,
+    "sys:spouse_name": "शैल कुमारी देवी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 21518
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajendr-mhto",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजेन्द्र महतो"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajendr-mhto",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajendr-mhto",
+    "id": "version:entity:person/raajendr-mhto:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

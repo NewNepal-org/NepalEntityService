@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु महाराजगंज नगरपालिका शिवभारी",
+    "sys:age": 38,
+    "sys:candidate_id": 333480,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2040.07.03",
+    "sys:election_year": 2079,
+    "sys:experience": "समाज सेवी",
+    "sys:father_name": "नबी  फकिर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "शिवाभारी मा वि",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "slc",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1992,
+    "sys:spouse_name": "हजारा खातनु -",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2317,
+    "sys:symbol_name": "खरायो",
+    "sys:votes_received": 9
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/skil-mohmmd-phkir",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सकिल मोहम‍्मद फकिर"
+    }
+  ],
+  "short_description": null,
+  "slug": "skil-mohmmd-phkir",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/skil-mohmmd-phkir",
+    "id": "version:entity:person/skil-mohmmd-phkir:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

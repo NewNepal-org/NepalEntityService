@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर भक्तपुर नगरपालिका इनाचो",
+    "sys:age": 45,
+    "sys:candidate_id": 334554,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "पर्सा",
+    "sys:district_code": 34,
+    "sys:dob_bs": "2033.12.03",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनितिक \nव्यापार\nअन्य",
+    "sys:father_name": "आशा लाल वनमाला",
+    "sys:gender": "पुरुष",
+    "sys:institute": "बागेश्वरी मा.वि.भ.पु.",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1590,
+    "sys:spouse_name": "भवानीश्‍वरी  वनमाला",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 66
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/aashaa-kaajii-vnmaalaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "आशा काजी वनमाला"
+    }
+  ],
+  "short_description": null,
+  "slug": "aashaa-kaajii-vnmaalaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/aashaa-kaajii-vnmaalaa",
+    "id": "version:entity:person/aashaa-kaajii-vnmaalaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

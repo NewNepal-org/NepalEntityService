@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु बाणगंगा नगरपालिका हथौसा",
+    "sys:age": 75,
+    "sys:candidate_id": 333929,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "अर्घाखांची",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2003.11.04",
+    "sys:election_year": 2079,
+    "sys:experience": "करिव ३५ वर्ष अध्यपन",
+    "sys:father_name": "होमकान्त  उपाध्याय आचार्य",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.वि.",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी लेनिनवादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-leninvaadii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1971,
+    "sys:spouse_name": "शारदा  आचार्य",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 9,
+    "sys:symbol_name": "हँसिया र तारा",
+    "sys:votes_received": 1093
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/yuvraaj-shrmaa-aacaary",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "युवराज शर्मा आचार्य"
+    }
+  ],
+  "short_description": null,
+  "slug": "yuvraaj-shrmaa-aacaary",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/yuvraaj-shrmaa-aacaary",
+    "id": "version:entity:person/yuvraaj-shrmaa-aacaary:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

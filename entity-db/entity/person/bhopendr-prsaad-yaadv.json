@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही रोहिणी गाउँपालिका श्रीनगर",
+    "sys:age": 37,
+    "sys:candidate_id": 333396,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2042.05.19",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "अनिल कुमार यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "जनमत पार्टी",
+    "sys:political_party_slug": "jnmt-paarttii",
+    "sys:qualification": "M.A.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1934,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2289,
+    "sys:symbol_name": "लाउड स्पिकर",
+    "sys:votes_received": 15526
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhopendr-prsaad-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भोपेन्द्र प्रसाद यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhopendr-prsaad-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhopendr-prsaad-yaadv",
+    "id": "version:entity:person/bhopendr-prsaad-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

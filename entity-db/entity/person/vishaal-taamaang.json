@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर गोदावरी नगरपालिका झ्यालुन्टार",
+    "sys:age": 42,
+    "sys:candidate_id": 333635,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2036.08.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सानु  तामाङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1276,
+    "sys:spouse_name": "शान्ती  तामाङ",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 6
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vishaal-taamaang",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विशाल तामाङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "vishaal-taamaang",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vishaal-taamaang",
+    "id": "version:entity:person/vishaal-taamaang:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

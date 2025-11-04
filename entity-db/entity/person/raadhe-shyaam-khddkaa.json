@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर ललितपुर महानगरपालिका वागडोल",
+    "sys:age": 46,
+    "sys:candidate_id": 333322,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2033.03.07",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजसेवी",
+    "sys:father_name": "गहेन्द्र वहादुर खड्का",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1313,
+    "sys:spouse_name": "रुपा  खड्का",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2466,
+    "sys:symbol_name": "छत्रे टोपी",
+    "sys:votes_received": 63
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raadhe-shyaam-khddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राधे श्याम खड्का"
+    }
+  ],
+  "short_description": null,
+  "slug": "raadhe-shyaam-khddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raadhe-shyaam-khddkaa",
+    "id": "version:entity:person/raadhe-shyaam-khddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

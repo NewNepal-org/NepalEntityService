@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुपाल्चोक हेलम्बु  गाउँपालिका ढुंगाखानी",
+    "sys:age": 53,
+    "sys:candidate_id": 338354,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुपाल्चोक",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2025.11.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चन्द्र  वाहादुर सुनार",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली जनता दल",
+    "sys:political_party_slug": "nepaalii-jntaa-dl",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "8",
+    "sys:serial_no": 1174,
+    "sys:spouse_name": "सुक माया सुनार",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 17,
+    "sys:symbol_name": "गोरु गाडाको चक्का (पाङ्‌ग्रो)",
+    "sys:votes_received": 29
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/reshm-vhaadur-sunaar",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रेशम  वहादुर सुनार"
+    }
+  ],
+  "short_description": null,
+  "slug": "reshm-vhaadur-sunaar",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/reshm-vhaadur-sunaar",
+    "id": "version:entity:person/reshm-vhaadur-sunaar:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

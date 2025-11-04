@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा वालिङ नगरपालिका सुनारगाउँ",
+    "sys:age": 65,
+    "sys:candidate_id": 337371,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2014.03.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लोक बहादुर बि.क.",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री रणबिर जनहित मा वि",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-pussplaal",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1787,
+    "sys:spouse_name": "मीना कुमारी बि.क.",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2327,
+    "sys:symbol_name": "गैंती",
+    "sys:votes_received": 20
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ddolraaj-bik",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "डोलराज बि.क."
+    }
+  ],
+  "short_description": null,
+  "slug": "ddolraaj-bik",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ddolraaj-bik",
+    "id": "version:entity:person/ddolraaj-bik:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

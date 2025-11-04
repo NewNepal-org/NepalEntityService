@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रोल्पा रोल्पा नगरपालिका माडीचौर",
+    "sys:age": 44,
+    "sys:candidate_id": 337132,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रोल्पा",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2034.07.28",
+    "sys:election_year": 2079,
+    "sys:experience": "१. मन्त्री युवा तथा खेलकुद 2067\n२. उपाध्यक्ष (संविधान सभा) 2070\n३. सभामुख (व्यवस्थापिका संसद) 2072\n४. प्रतिनिधि सभा सदस्य 2074",
+    "sys:father_name": "प्रसाद  घर्तिमगर",
+    "sys:gender": "महिला",
+    "sys:institute": "पिनाकन एकेडेमी",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "प्रविणता प्रमाणपत्र तह (+2)",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 997,
+    "sys:spouse_name": "वर्षमान  पुन",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 9459
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/onsrii-ghrti",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ओनसरी घर्ति"
+    }
+  ],
+  "short_description": null,
+  "slug": "onsrii-ghrti",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/onsrii-ghrti",
+    "id": "version:entity:person/onsrii-ghrti:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

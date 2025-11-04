@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी महादेवा गाउँपालिका",
+    "sys:age": 52,
+    "sys:candidate_id": 338624,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "कास्की",
+    "sys:district_code": 39,
+    "sys:dob_bs": "2026.12.22",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजसेवा",
+    "sys:father_name": "कुशेश्वर  शर्मा बरही",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनमत पार्टी",
+    "sys:political_party_slug": "jnmt-paarttii",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1718,
+    "sys:spouse_name": "पल्टी  शर्मा",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2289,
+    "sys:symbol_name": "लाउड स्पिकर",
+    "sys:votes_received": 139
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mhendr-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "महेन्द्र शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "mhendr-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mhendr-shrmaa",
+    "id": "version:entity:person/mhendr-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

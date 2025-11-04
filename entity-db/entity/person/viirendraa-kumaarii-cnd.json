@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुर्खेत बीरेन्द्रनगर नगरपालिका चिसापानी",
+    "sys:age": 45,
+    "sys:candidate_id": 338208,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दैलेख",
+    "sys:district": "सुर्खेत",
+    "sys:district_code": 64,
+    "sys:dob_bs": "2034.03.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "केशर वहादुर चन्द",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2176,
+    "sys:spouse_name": "वीरेन्द्र वहादुर शाही",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 264
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/viirendraa-kumaarii-cnd",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "वीरेन्द्रा कुमारी चन्द"
+    }
+  ],
+  "short_description": null,
+  "slug": "viirendraa-kumaarii-cnd",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/viirendraa-kumaarii-cnd",
+    "id": "version:entity:person/viirendraa-kumaarii-cnd:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

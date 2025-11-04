@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पश्चिम) रामग्राम नगरपालिका पिपरहिया",
+    "sys:age": 28,
+    "sys:candidate_id": 337787,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district_code": 77,
+    "sys:dob_bs": "2051.02.03",
+    "sys:election_year": 2079,
+    "sys:experience": "समाज सेवा",
+    "sys:father_name": "इद्रिश  मिया",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पाल्ही बहुमुखी क्याम्पस",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2394,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2347,
+    "sys:symbol_name": "चापाकल",
+    "sys:votes_received": 674
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mohmmd-rjjaak-miyaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मोहम्मद रज्जाक मिया"
+    }
+  ],
+  "short_description": null,
+  "slug": "mohmmd-rjjaak-miyaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mohmmd-rjjaak-miyaa",
+    "id": "version:entity:person/mohmmd-rjjaak-miyaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

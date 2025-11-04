@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी ईटहरी उपमहानगरपालिका एकता टोल",
+    "sys:age": 42,
+    "sys:candidate_id": 333640,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2036.09.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लाल बहादुर लिम्बु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 993,
+    "sys:spouse_name": "शारदा  बराल (लिम्बु)",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2466,
+    "sys:symbol_name": "छत्रे टोपी",
+    "sys:votes_received": 1
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/durgaa-prsaad-limbu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दुर्गा प्रसाद लिम्बु"
+    }
+  ],
+  "short_description": null,
+  "slug": "durgaa-prsaad-limbu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/durgaa-prsaad-limbu",
+    "id": "version:entity:person/durgaa-prsaad-limbu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

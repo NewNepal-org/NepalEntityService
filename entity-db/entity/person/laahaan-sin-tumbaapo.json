@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा शिवसताक्षि नगरपालिका",
+    "sys:age": 64,
+    "sys:candidate_id": 336797,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2015.01.18",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "अकल बहादुर तुम्बापो",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 109,
+    "sys:spouse_name": "बुधमती  तुम्बापो",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 706
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/laahaan-sin-tumbaapo",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लाहान सिं तुम्बापो"
+    }
+  ],
+  "short_description": null,
+  "slug": "laahaan-sin-tumbaapo",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/laahaan-sin-tumbaapo",
+    "id": "version:entity:person/laahaan-sin-tumbaapo:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

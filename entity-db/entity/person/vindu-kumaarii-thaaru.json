@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु बाणगंगा नगरपालिका गजेहडा",
+    "sys:age": 29,
+    "sys:candidate_id": 337028,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district_code": 77,
+    "sys:dob_bs": "2049.11.29",
+    "sys:election_year": 2079,
+    "sys:experience": "छैन",
+    "sys:father_name": "हरजु  थारु",
+    "sys:gender": "महिला",
+    "sys:institute": "श्री वाणगंगा उच्च मा.वि",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2401,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 49
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vindu-kumaarii-thaaru",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विन्दु कुमारी थारु"
+    }
+  ],
+  "short_description": null,
+  "slug": "vindu-kumaarii-thaaru",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vindu-kumaarii-thaaru",
+    "id": "version:entity:person/vindu-kumaarii-thaaru:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

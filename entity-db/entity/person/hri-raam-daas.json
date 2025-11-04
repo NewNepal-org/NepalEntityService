@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा लहान नगरपालिका सिंगराही",
+    "sys:age": 75,
+    "sys:candidate_id": 338705,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2003.07.13",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजलाई सेवा गर्दै आएको।",
+    "sys:father_name": "बच्चा  दास",
+    "sys:gender": "पुरुष",
+    "sys:institute": "छैन।",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 516,
+    "sys:spouse_name": "लक्ष्मी देवी दास",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 142
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hri-raam-daas",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हरि राम दास"
+    }
+  ],
+  "short_description": null,
+  "slug": "hri-raam-daas",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hri-raam-daas",
+    "id": "version:entity:person/hri-raam-daas:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

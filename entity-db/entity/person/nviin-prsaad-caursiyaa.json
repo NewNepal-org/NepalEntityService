@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट देवाही गोनाही   नगरपालिका",
+    "sys:age": 32,
+    "sys:candidate_id": 338574,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2047.05.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शंकर राउत बरै",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्‍वविद्यालय",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1442,
+    "sys:spouse_name": "शान्ति  सुवेदी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 1006
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nviin-prsaad-caursiyaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नवीन प्रसाद चौरसिया"
+    }
+  ],
+  "short_description": null,
+  "slug": "nviin-prsaad-caursiyaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nviin-prsaad-caursiyaa",
+    "id": "version:entity:person/nviin-prsaad-caursiyaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा हल्दीवारी गाउँपालिका नमुना टोल",
+    "sys:age": 57,
+    "sys:candidate_id": 333330,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2022.05.22",
+    "sys:election_year": 2079,
+    "sys:experience": "२ पटक वडा अध्यक्ष तत्कालिन गोलधाप गा.वि.स\nजि.वि.स. सभापति\nप्रतिनिधि सभा सदस्य क्षेत्र नं. ३ मा २०७४ देखि २०७९",
+    "sys:father_name": "मान प्रसाद लिङ्देन",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्‍व विद्यालय",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "स्तनातक",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 85,
+    "sys:spouse_name": "सिता  थापा",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 40662
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajendr-prsaad-lingden",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजेन्द्र प्रसाद लिङ्देन"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajendr-prsaad-lingden",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajendr-prsaad-lingden",
+    "id": "version:entity:person/raajendr-prsaad-lingden:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

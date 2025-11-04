@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ घोराही उपमहानगरपालिका बयर बटुवा",
+    "sys:age": 43,
+    "sys:candidate_id": 334816,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दाङ",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2036.06.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नम बहादुर घर्ती क्षेत्री",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2098,
+    "sys:spouse_name": "बालीका  जि.सी.",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2347,
+    "sys:symbol_name": "चापाकल",
+    "sys:votes_received": 88
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ymlaal-jisii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "यमलाल जि.सी."
+    }
+  ],
+  "short_description": null,
+  "slug": "ymlaal-jisii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ymlaal-jisii",
+    "id": "version:entity:person/ymlaal-jisii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

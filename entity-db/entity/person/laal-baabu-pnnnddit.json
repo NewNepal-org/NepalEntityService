@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग विराटनगर महानगरपालिका बखरी",
+    "sys:age": 63,
+    "sys:candidate_id": 333597,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2015.08.19",
+    "sys:election_year": 2079,
+    "sys:experience": "प्रतिनिधि सभा-२०४८\nप्रतिनिधि सभा-२०५६\nप्रतिनिधि सभा-२०७४\nसंविधान सभा-२०६५",
+    "sys:father_name": "लक्ष्मी  पंण्डित",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्‍वविद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "6",
+    "sys:serial_no": 278,
+    "sys:spouse_name": "विमला  महत",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 22946
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/laal-baabu-pnnnddit",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लाल बाबु पंण्डित"
+    }
+  ],
+  "short_description": null,
+  "slug": "laal-baabu-pnnnddit",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/laal-baabu-pnnnddit",
+    "id": "version:entity:person/laal-baabu-pnnnddit:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

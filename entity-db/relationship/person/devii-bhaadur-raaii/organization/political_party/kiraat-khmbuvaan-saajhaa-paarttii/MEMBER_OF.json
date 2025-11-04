@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/devii-bhaadur-raaii:organization/political_party/kiraat-khmbuvaan-saajhaa-paarttii:MEMBER_OF",
+  "sourceEntityId": "entity:person/devii-bhaadur-raaii",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/kiraat-khmbuvaan-saajhaa-paarttii",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/devii-bhaadur-raaii-to-kiraat-khmbuvaan-saajhaa-paarttii-member_of",
+    "id": "version:relationship/devii-bhaadur-raaii-to-kiraat-khmbuvaan-saajhaa-paarttii-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

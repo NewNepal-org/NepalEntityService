@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा विदेह नगरपालिका कर्माही",
+    "sys:age": 37,
+    "sys:candidate_id": 337510,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2041.12.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रामचन्द्र  अमात",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 699,
+    "sys:spouse_name": "अनिता देवी अमात",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 11
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajesh-kumaar-amaat",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजेश कुमार अमात"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajesh-kumaar-amaat",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajesh-kumaar-amaat",
+    "id": "version:entity:person/raajesh-kumaar-amaat:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

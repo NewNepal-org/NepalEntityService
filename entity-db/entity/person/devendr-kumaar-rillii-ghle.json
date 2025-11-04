@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "संखुवासभा चिचिला गाउँपालिका बागसिदा",
+    "sys:age": 55,
+    "sys:candidate_id": 335500,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "संखुवासभा",
+    "sys:district": "संखुवासभा",
+    "sys:district_code": 5,
+    "sys:dob_bs": "2023.09.26",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शन्त वीर घले",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 151,
+    "sys:spouse_name": "दिल माया गुरुङ",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 422
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/devendr-kumaar-rillii-ghle",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देवेन्द्र कुमार (रिल्ली) घले"
+    }
+  ],
+  "short_description": null,
+  "slug": "devendr-kumaar-rillii-ghle",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/devendr-kumaar-rillii-ghle",
+    "id": "version:entity:person/devendr-kumaar-rillii-ghle:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

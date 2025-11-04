@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "डोटी पूर्वीचौकी गाउँपालिका डुग्री",
+    "sys:age": 50,
+    "sys:candidate_id": 335373,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "डोटी",
+    "sys:district": "डोटी",
+    "sys:district_code": 70,
+    "sys:dob_bs": "2029.02.03",
+    "sys:election_year": 2079,
+    "sys:experience": "Teaching experience 9 years",
+    "sys:father_name": "प्रेम सिं खडका",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Ram Manohar lohya Junior College",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "प्रमाणपत्र तह",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2258,
+    "sys:spouse_name": "सारदा  खडका",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 6689
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nrendr-bhaadur-khddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नरेन्द्र बहादुर खडका"
+    }
+  ],
+  "short_description": null,
+  "slug": "nrendr-bhaadur-khddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nrendr-bhaadur-khddkaa",
+    "id": "version:entity:person/nrendr-bhaadur-khddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

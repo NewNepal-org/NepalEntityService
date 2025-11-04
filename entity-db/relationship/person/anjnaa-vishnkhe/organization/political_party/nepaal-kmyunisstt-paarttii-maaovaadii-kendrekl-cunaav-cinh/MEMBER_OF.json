@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/anjnaa-vishnkhe:organization/political_party/nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh:MEMBER_OF",
+  "sourceEntityId": "entity:person/anjnaa-vishnkhe",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/anjnaa-vishnkhe-to-nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh-member_of",
+    "id": "version:relationship/anjnaa-vishnkhe-to-nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा निजगढ नगरपालिका",
+    "sys:age": 31,
+    "sys:candidate_id": 333577,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2047.12.05",
+    "sys:election_year": 2079,
+    "sys:experience": "नेपाल कोरिया मैत्री अस्पतालमा काम गरेको",
+    "sys:father_name": "सुदर्शन  खत्री",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेशनल मेडिकल कलेज बीरगंज",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1481,
+    "sys:spouse_name": "सपना  पाख्रीन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 732
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raakesh-nyaupaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राकेश न्यौपाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "raakesh-nyaupaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raakesh-nyaupaane",
+    "id": "version:entity:person/raakesh-nyaupaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका बौद्ध टुसाल",
+    "sys:age": 43,
+    "sys:candidate_id": 334579,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2035.12.11",
+    "sys:election_year": 2079,
+    "sys:experience": "उद्योग वाणिज्य महासंघ निर्यात कमिटी सदस्य\nनेपाल गलैँचा उत्पादक तथा निर्यात संघ महासचिव\nनेपाल शेर्पा संघ उपाध्यक्ष\nनेपाल गुडविभ फाउन्डेसन कोषाध्यक्ष",
+    "sys:father_name": "निमा पासाङ शेर्पा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि त्रिचन्द्र कलेज",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "स्नातकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 600,
+    "sys:spouse_name": "छोटी  शेर्पा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 361
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/daavaa-sherpaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दावा शेर्पा"
+    }
+  ],
+  "short_description": null,
+  "slug": "daavaa-sherpaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/daavaa-sherpaa",
+    "id": "version:entity:person/daavaa-sherpaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

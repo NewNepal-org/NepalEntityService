@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली टिकापुर नगरपालिका राजीपुर",
+    "sys:age": 40,
+    "sys:candidate_id": 338652,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कैलाली",
+    "sys:district": "कैलाली",
+    "sys:district_code": 71,
+    "sys:dob_bs": "2039.04.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कंश राम डगौरा थारु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपालका लागि नेपाली पार्टी",
+    "sys:political_party_slug": "nepaalkaa-laagi-nepaalii-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2271,
+    "sys:spouse_name": "चिजमानी चौधरी",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2329,
+    "sys:symbol_name": "गोलाकार भित्र शंख",
+    "sys:votes_received": 90
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/maan-bhaadur-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मान बहादुर चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "maan-bhaadur-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/maan-bhaadur-caudhrii",
+    "id": "version:entity:person/maan-bhaadur-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

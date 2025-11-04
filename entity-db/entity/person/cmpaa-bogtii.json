@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर सूर्यविनायक नगरपालिका सुवर्णेश्‍वर",
+    "sys:age": 39,
+    "sys:candidate_id": 335098,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2039.10.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम शरण बोगती",
+    "sys:gender": "महिला",
+    "sys:institute": "श्री मनोहर मा . वि",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1255,
+    "sys:spouse_name": "पुर्ण नेपाली बिसुंके",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2475,
+    "sys:symbol_name": "पानीको जार",
+    "sys:votes_received": 6
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cmpaa-bogtii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चम्पा बोगती"
+    }
+  ],
+  "short_description": null,
+  "slug": "cmpaa-bogtii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cmpaa-bogtii",
+    "id": "version:entity:person/cmpaa-bogtii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

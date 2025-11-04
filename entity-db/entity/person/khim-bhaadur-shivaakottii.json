@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा कालिन्चोक  गाउँपालिका",
+    "sys:age": 32,
+    "sys:candidate_id": 336813,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2047.01.14",
+    "sys:election_year": 2079,
+    "sys:experience": "निर्माण व्यवसाय तथा व्यपार\nजनसंख्या व्यवस्थापन\nअखण्ड परोपकार मा काम गरेको",
+    "sys:father_name": "ठाकुर सिहं शिवाकोटी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "मोर्गन ईन्टरनेशनल कलेज काठमाण्डौँ",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी लेनिनवादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-leninvaadii",
+    "sys:qualification": "वि.वि.एस",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 599,
+    "sys:spouse_name": "सुस्मा  शिवाकोटी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 9,
+    "sys:symbol_name": "हँसिया र तारा",
+    "sys:votes_received": 634
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/khim-bhaadur-shivaakottii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "खिम बहादुर शिवाकोटी"
+    }
+  ],
+  "short_description": null,
+  "slug": "khim-bhaadur-shivaakottii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/khim-bhaadur-shivaakottii",
+    "id": "version:entity:person/khim-bhaadur-shivaakottii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

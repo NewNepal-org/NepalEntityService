@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुर्खेत बीरेन्द्रनगर नगरपालिका बाङ्गेसिमल",
+    "sys:age": 62,
+    "sys:candidate_id": 334618,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुर्खेत",
+    "sys:district": "सुर्खेत",
+    "sys:district_code": 64,
+    "sys:dob_bs": "2017.02.26",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पद्मलाल  थानी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2170,
+    "sys:spouse_name": "तुलसी  पनेरु",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 34625
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hrdyraam-thaanii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हृदयराम थानी"
+    }
+  ],
+  "short_description": null,
+  "slug": "hrdyraam-thaanii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hrdyraam-thaanii",
+    "id": "version:entity:person/hrdyraam-thaanii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

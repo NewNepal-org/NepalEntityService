@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके जानकी गाउँपालिका साइगाउँ",
+    "sys:age": 42,
+    "sys:candidate_id": 333749,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाँके",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2036.09.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मो मुस्तकिम राई कवडिया",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "M.A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2201,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2347,
+    "sys:symbol_name": "चापाकल",
+    "sys:votes_received": 133
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/smsul-hk-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "समसुल हक राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "smsul-hk-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/smsul-hk-raaii",
+    "id": "version:entity:person/smsul-hk-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

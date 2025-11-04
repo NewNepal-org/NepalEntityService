@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर कटारी  नगरपालिका सुन्दरपुर",
+    "sys:age": 37,
+    "sys:candidate_id": 333230,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "उदयपुर",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2041.11.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दल बहादुर बुढाथोकी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री धुवाजन मावि",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 433,
+    "sys:spouse_name": "धन कुमारी बुढाथोकी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 117
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/purnn-bhaadur-buddhaathokii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पुर्ण बहादुर बुढाथोकी"
+    }
+  ],
+  "short_description": null,
+  "slug": "purnn-bhaadur-buddhaathokii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/purnn-bhaadur-buddhaathokii",
+    "id": "version:entity:person/purnn-bhaadur-buddhaathokii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

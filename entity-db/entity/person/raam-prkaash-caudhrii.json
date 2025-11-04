@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही ईश्वरपुर नगरपालिका रामनगर",
+    "sys:age": 58,
+    "sys:candidate_id": 338294,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2021.02.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राजवीर  चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पटका काउन्सिल, विहार, भारत",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "I.Sc.",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 827,
+    "sys:spouse_name": "रामवत्ती देवी चौधरी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 24838
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-prkaash-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम प्रकाश चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-prkaash-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-prkaash-caudhrii",
+    "id": "version:entity:person/raam-prkaash-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही बरहथवा नगरपालिका मुसैलीटोल",
+    "sys:age": 43,
+    "sys:candidate_id": 338014,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2036.02.10",
+    "sys:election_year": 2079,
+    "sys:experience": "खेलकुद/राजनीतिक",
+    "sys:father_name": "अनुप  पासवान",
+    "sys:gender": "पुरुष",
+    "sys:institute": "साक्षर",
+    "sys:political_party": "बहुजन एकता पार्टी नेपाल",
+    "sys:political_party_slug": "bhujn-ektaa-paarttii-nepaal",
+    "sys:qualification": "साक्षर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 867,
+    "sys:spouse_name": "लिलाबति देवी पासवान",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2028,
+    "sys:symbol_name": "सातवटा खुडकिला भएको भर्‍याङ",
+    "sys:votes_received": 1115
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaj-kumaar-paasvaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राज कुमार पासवान"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaj-kumaar-paasvaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaj-kumaar-paasvaan",
+    "id": "version:entity:person/raaj-kumaar-paasvaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

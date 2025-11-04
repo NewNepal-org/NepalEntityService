@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सोलुखुम्बु नेचासल्यान गाउँपालिका वास्तोला",
+    "sys:age": 69,
+    "sys:candidate_id": 333818,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सोलुखुम्बु",
+    "sys:district": "सोलुखुम्बु",
+    "sys:district_code": 11,
+    "sys:dob_bs": "2009.12.07",
+    "sys:election_year": 2079,
+    "sys:experience": "कानून व्यवसायी",
+    "sys:father_name": "खडानन्द  वास्तोला",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेपाल ल क्याम्पस",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी लेनिनवादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-leninvaadii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 389,
+    "sys:spouse_name": "श्याम कुमारी वास्तोला",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 9,
+    "sys:symbol_name": "हँसिया र तारा",
+    "sys:votes_received": 490
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vissnnu-prsaad-vaastolaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विष्‍णु प्रसाद वास्तोला"
+    }
+  ],
+  "short_description": null,
+  "slug": "vissnnu-prsaad-vaastolaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vissnnu-prsaad-vaastolaa",
+    "id": "version:entity:person/vissnnu-prsaad-vaastolaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

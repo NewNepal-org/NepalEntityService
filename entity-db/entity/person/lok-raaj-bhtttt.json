@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कन्चनपुर भीमदत्त नगरपालिका महुलिया/शहस्त्रलिङ्ग",
+    "sys:age": 36,
+    "sys:candidate_id": 334561,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कन्चनपुर",
+    "sys:district": "कन्चनपुर",
+    "sys:district_code": 75,
+    "sys:dob_bs": "2043.01.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कृष्ण दत्त भट्ट",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2354,
+    "sys:spouse_name": "",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 254
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lok-raaj-bhtttt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लोक राज भट्ट"
+    }
+  ],
+  "short_description": null,
+  "slug": "lok-raaj-bhtttt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lok-raaj-bhtttt",
+    "id": "version:entity:person/lok-raaj-bhtttt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

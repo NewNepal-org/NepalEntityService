@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा लक्ष्मीनिया गाउँपालिका सोहनी",
+    "sys:age": 66,
+    "sys:candidate_id": 335413,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2013.03.05",
+    "sys:election_year": 2079,
+    "sys:experience": "सिचाई विभाग ।\nजलश्रोत मन्त्रालय (इन्जिनियर) ।",
+    "sys:father_name": "रामे  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "भारत",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 733,
+    "sys:spouse_name": "तेतरी  यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 5212
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mhaajn-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "महाजन यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "mhaajn-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mhaajn-yaadv",
+    "id": "version:entity:person/mhaajn-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

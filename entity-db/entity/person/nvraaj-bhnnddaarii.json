@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं बुढानिलकण्ठ नगरपालिका बँदेली",
+    "sys:age": 42,
+    "sys:candidate_id": 338055,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2037.04.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रुप बहादुर भण्डारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "एकीकृत शक्ति नेपाल",
+    "sys:political_party_slug": "ekiikrt-shkti-nepaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1061,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2281,
+    "sys:symbol_name": "त्रिशुल",
+    "sys:votes_received": 40
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nvraaj-bhnnddaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नवराज भण्डारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "nvraaj-bhnnddaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nvraaj-bhnnddaarii",
+    "id": "version:entity:person/nvraaj-bhnnddaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

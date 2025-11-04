@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा विष्णुपुर गाउँपालिका",
+    "sys:age": 36,
+    "sys:candidate_id": 335685,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2043.04.05",
+    "sys:election_year": 2079,
+    "sys:experience": "पत्रकारिता प्रमाण र समाजिक कार्यकर्ता तथा राजनीति",
+    "sys:father_name": "ननु  झा",
+    "sys:gender": "महिला",
+    "sys:institute": "TU",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "BA",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 580,
+    "sys:spouse_name": "डा. मनोज कुमार झा",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 1073
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ngiinaa-kumaar-jhaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नगीना कुमार झा"
+    }
+  ],
+  "short_description": null,
+  "slug": "ngiinaa-kumaar-jhaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ngiinaa-kumaar-jhaa",
+    "id": "version:entity:person/ngiinaa-kumaar-jhaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

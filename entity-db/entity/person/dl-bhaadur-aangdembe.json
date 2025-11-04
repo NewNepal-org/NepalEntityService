@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाँचथर मिक्लाजुङ गाउँपालिका",
+    "sys:age": 40,
+    "sys:candidate_id": 333550,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाँचथर",
+    "sys:district": "पाँचथर",
+    "sys:district_code": 2,
+    "sys:dob_bs": "2039.01.08",
+    "sys:election_year": 2079,
+    "sys:experience": "नेट्वर्क स्पेसिलिष्ट, डाटा बेस म्यानेजमेन्ट (ओर्याकल) स्पेसिलिष्ट, आई.टि. कन्सल्टेन्ट, स्टक एनलाईसिष्ट",
+    "sys:father_name": "लाल बहादुर आङदेम्बे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "दुर्गा मा.वि. सराङडाडा",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 22,
+    "sys:spouse_name": "सावित्रा  इङनाम",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 108
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dl-bhaadur-aangdembe",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दल बहादुर आङदेम्बे"
+    }
+  ],
+  "short_description": null,
+  "slug": "dl-bhaadur-aangdembe",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dl-bhaadur-aangdembe",
+    "id": "version:entity:person/dl-bhaadur-aangdembe:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

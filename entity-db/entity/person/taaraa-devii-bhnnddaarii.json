@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा कर्जन्हा नगरपालिका बन्दीपुर",
+    "sys:age": 41,
+    "sys:candidate_id": 334815,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2037.11.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भक्ति विलास प्‍याकुरेल",
+    "sys:gender": "महिला",
+    "sys:institute": "Nepal board",
+    "sys:political_party": "नेपाल आमा पार्टी(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-aamaa-paarttiiekl-cunaav-cinh",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 591,
+    "sys:spouse_name": "धुब्र  भण्डारी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 85,
+    "sys:symbol_name": "बच्चा काखमा लिएकी आमा",
+    "sys:votes_received": 113
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/taaraa-devii-bhnnddaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तारा देवी भण्डारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "taaraa-devii-bhnnddaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/taaraa-devii-bhnnddaarii",
+    "id": "version:entity:person/taaraa-devii-bhnnddaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

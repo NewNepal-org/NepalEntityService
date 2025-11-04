@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही सिद्धार्थनगर नगरपालिका प्रतिटोल",
+    "sys:age": 56,
+    "sys:candidate_id": 335040,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2022.08.03",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजसेवी",
+    "sys:father_name": "टेक बहादुर गुरुङ्ग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनमत पार्टी",
+    "sys:political_party_slug": "jnmt-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1878,
+    "sys:spouse_name": "गिता  गुरुङ्ग",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2289,
+    "sys:symbol_name": "लाउड स्पिकर",
+    "sys:votes_received": 5169
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kailaash-gurungg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कैलाश गुरुङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "kailaash-gurungg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kailaash-gurungg",
+    "id": "version:entity:person/kailaash-gurungg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

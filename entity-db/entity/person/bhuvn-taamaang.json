@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नुवाकोट तादी गाउँपालिका हसिनचौर",
+    "sys:age": 26,
+    "sys:candidate_id": 338922,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नुवाकोट",
+    "sys:district": "नुवाकोट",
+    "sys:district_code": 25,
+    "sys:dob_bs": "2053.06.27",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सानु कान्छा तामाङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जनमैत्रि बहुमुखी क्याम्पस",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 946,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 71
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhuvn-taamaang",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भुवन तामाङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhuvn-taamaang",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhuvn-taamaang",
+    "id": "version:entity:person/bhuvn-taamaang:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

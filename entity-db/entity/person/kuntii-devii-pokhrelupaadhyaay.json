@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका वावुराम आचार्य सडक",
+    "sys:age": 35,
+    "sys:candidate_id": 336125,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2043.12.20",
+    "sys:election_year": 2079,
+    "sys:experience": "१. समाजसेवी \n२. उद्यमी",
+    "sys:father_name": "वालकृष्ण  पोखरेल",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "स्‍नाकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 996,
+    "sys:spouse_name": "राजेन्द्र प्रसाद पण्डित(उपाध्याय)",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 11024
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kuntii-devii-pokhrelupaadhyaay",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कुन्ती देवी पोखरेल(उपाध्याय)"
+    }
+  ],
+  "short_description": null,
+  "slug": "kuntii-devii-pokhrelupaadhyaay",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kuntii-devii-pokhrelupaadhyaay",
+    "id": "version:entity:person/kuntii-devii-pokhrelupaadhyaay:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

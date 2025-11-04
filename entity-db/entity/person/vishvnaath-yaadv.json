@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु कपिलवस्तु नगरपालिका वरन्डिहवा",
+    "sys:age": 51,
+    "sys:candidate_id": 338032,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2028.02.10",
+    "sys:election_year": 2079,
+    "sys:experience": "समाज सेवी",
+    "sys:father_name": "केशरी  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपालका लागि नेपाली पार्टी",
+    "sys:political_party_slug": "nepaalkaa-laagi-nepaalii-paarttii",
+    "sys:qualification": "१०",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1987,
+    "sys:spouse_name": "सन्जु  यादव",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2329,
+    "sys:symbol_name": "गोलाकार भित्र शंख",
+    "sys:votes_received": 128
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vishvnaath-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विश्वनाथ यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "vishvnaath-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vishvnaath-yaadv",
+    "id": "version:entity:person/vishvnaath-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

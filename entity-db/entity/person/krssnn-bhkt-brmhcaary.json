@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर ललितपुर महानगरपालिका ढोलाहिटी",
+    "sys:age": 53,
+    "sys:candidate_id": 335142,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2026.01.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हेरा रत्न ब्रम्हचार्य",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1309,
+    "sys:spouse_name": "नेत्र कुमारी राणा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 144
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-bhkt-brmhcaary",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण भक्त ब्रम्हचार्य"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-bhkt-brmhcaary",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-bhkt-brmhcaary",
+    "id": "version:entity:person/krssnn-bhkt-brmhcaary:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

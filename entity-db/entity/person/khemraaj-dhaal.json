@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा अर्जुनधारा नगरपालिका जुकेखाडी",
+    "sys:age": 60,
+    "sys:candidate_id": 338099,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "इलाम",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2019.01.19",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "श्रीप्रसाद  दहाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 83,
+    "sys:spouse_name": "देवीमाया  दहाल",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 20
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/khemraaj-dhaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "खेमराज दहाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "khemraaj-dhaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/khemraaj-dhaal",
+    "id": "version:entity:person/khemraaj-dhaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

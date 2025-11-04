@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गुल्मी रुरुक्षेत्र गाउँपालिका देउराली",
+    "sys:age": 52,
+    "sys:candidate_id": 333504,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गुल्मी",
+    "sys:district": "गुल्मी",
+    "sys:district_code": 42,
+    "sys:dob_bs": "2026.10.27",
+    "sys:election_year": 2079,
+    "sys:experience": "शिक्षण  सहकारीकर्मी उद्यमी किसान",
+    "sys:father_name": "छविलाल शर्मा अर्याल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "BSC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1795,
+    "sys:spouse_name": "कल्‍पना अर्याल",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 174
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhuvneshvr-aryaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भुवनेश्‍वर अर्याल"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhuvneshvr-aryaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhuvneshvr-aryaal",
+    "id": "version:entity:person/bhuvneshvr-aryaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

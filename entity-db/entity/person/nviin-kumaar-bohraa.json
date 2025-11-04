@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली कैलारी गाउँपालिका",
+    "sys:age": 34,
+    "sys:candidate_id": 334687,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कैलाली",
+    "sys:district": "कैलाली",
+    "sys:district_code": 71,
+    "sys:dob_bs": "2045.05.29",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भिम बहादुर बोहरा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2287,
+    "sys:spouse_name": "अनिता कुमारी चौधरी",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 484
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nviin-kumaar-bohraa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नवीन कुमार बोहरा"
+    }
+  ],
+  "short_description": null,
+  "slug": "nviin-kumaar-bohraa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nviin-kumaar-bohraa",
+    "id": "version:entity:person/nviin-kumaar-bohraa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

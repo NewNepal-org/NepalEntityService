@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुकुम पश्चिम चौरजहारी नगरपालिका कोटगाउ",
+    "sys:age": 55,
+    "sys:candidate_id": 339061,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "",
+    "sys:district": "रुकुम पश्चिम",
+    "sys:district_code": 78,
+    "sys:dob_bs": "2023.10.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नर बहादुर मल्ल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सामुदायक विद्यालय",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2409,
+    "sys:spouse_name": "दिप कुमारी मल्ल",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 796
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dipk-kumaar-mll",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दिपक कुमार मल्ल"
+    }
+  ],
+  "short_description": null,
+  "slug": "dipk-kumaar-mll",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dipk-kumaar-mll",
+    "id": "version:entity:person/dipk-kumaar-mll:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/pdmaa-kumaarii-aryaal:organization/political_party/nepaal-kmyunisstt-paarttii-emaale:MEMBER_OF",
+  "sourceEntityId": "entity:person/pdmaa-kumaarii-aryaal",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/nepaal-kmyunisstt-paarttii-emaale",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/pdmaa-kumaarii-aryaal-to-nepaal-kmyunisstt-paarttii-emaale-member_of",
+    "id": "version:relationship/pdmaa-kumaarii-aryaal-to-nepaal-kmyunisstt-paarttii-emaale-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

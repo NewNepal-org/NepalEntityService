@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "sys:election_year": 2079
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:organization/political_party/nepaal-aamaa-paarttiiekl-cunaav-cinh",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नेपाल आमा पार्टी(एकल चुनाव चिन्ह)"
+    }
+  ],
+  "short_description": null,
+  "slug": "nepaal-aamaa-paarttiiekl-cunaav-cinh",
+  "subType": "political_party",
+  "tags": null,
+  "type": "organization",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported from election results २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:organization/political_party/nepaal-aamaa-paarttiiekl-cunaav-cinh",
+    "id": "version:entity:organization/political_party/nepaal-aamaa-paarttiiekl-cunaav-cinh:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

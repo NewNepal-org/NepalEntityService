@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही विष्णु गाउँपालिका",
+    "sys:age": 33,
+    "sys:candidate_id": 336655,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2045.11.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम  लखन  राय",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 858,
+    "sys:spouse_name": "नबल  किशोर  यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2221,
+    "sys:symbol_name": "टायर",
+    "sys:votes_received": 45
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shusilaa-kumaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शुसिला  कुमारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "shusilaa-kumaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shusilaa-kumaarii",
+    "id": "version:entity:person/shusilaa-kumaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

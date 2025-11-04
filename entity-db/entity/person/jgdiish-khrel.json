@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा कालिन्चोक  गाउँपालिका",
+    "sys:age": 33,
+    "sys:candidate_id": 334160,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2045.12.27",
+    "sys:election_year": 2079,
+    "sys:experience": "हाईड्रोपावर\nखानेपानी \nईन्डस्ट्रियल कन्स्ट्रक्सन",
+    "sys:father_name": "लोक नाथ खरेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पुर्वान्चल विश्वविद्यालय",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 597,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 3801
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jgdiish-khrel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जगदीश खरेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "jgdiish-khrel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jgdiish-khrel",
+    "id": "version:entity:person/jgdiish-khrel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

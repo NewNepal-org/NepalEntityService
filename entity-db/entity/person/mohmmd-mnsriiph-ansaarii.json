@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही मलंगवा नगरपालिका मलंगवा",
+    "sys:age": 51,
+    "sys:candidate_id": 338998,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2027.11.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मोहमद जान मिया",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "बहुजन एकता पार्टी नेपाल",
+    "sys:political_party_slug": "bhujn-ektaa-paarttii-nepaal",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 854,
+    "sys:spouse_name": "गुलसन  खातुन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2028,
+    "sys:symbol_name": "सातवटा खुडकिला भएको भर्‍याङ",
+    "sys:votes_received": 412
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mohmmd-mnsriiph-ansaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मोहम्मद मनसरीफ अंसारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "mohmmd-mnsriiph-ansaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mohmmd-mnsriiph-ansaarii",
+    "id": "version:entity:person/mohmmd-mnsriiph-ansaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

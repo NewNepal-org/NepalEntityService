@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नुवाकोट बेलकोटगढी नगरपालिका सेरा",
+    "sys:age": 40,
+    "sys:candidate_id": 334432,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नुवाकोट",
+    "sys:district": "नुवाकोट",
+    "sys:district_code": 25,
+    "sys:dob_bs": "2039.03.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "केदार प्रसाद दाहाल",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 959,
+    "sys:spouse_name": "धन प्रसाद सापाकोटा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1034,
+    "sys:symbol_name": "जोडी चप्पल",
+    "sys:votes_received": 89
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gaaytrii-daahaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गायत्री दाहाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "gaaytrii-daahaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gaaytrii-daahaal",
+    "id": "version:entity:person/gaaytrii-daahaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

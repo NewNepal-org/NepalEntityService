@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग रतुवामाई नगरपालिका दिपज्योति",
+    "sys:age": 34,
+    "sys:candidate_id": 334107,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2044.09.10",
+    "sys:election_year": 2079,
+    "sys:experience": "युवा उद्यम सो रोजगार कृषि",
+    "sys:father_name": "खेम प्रसाद न्यौपाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "रत्नराज्य लक्ष्मी क्यामपस",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "प्रवीणता प्रमाण पत्र",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 203,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 4987
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tthgendr-prsaad-nyaupaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ठगेन्द्र प्रसाद न्यौपाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "tthgendr-prsaad-nyaupaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tthgendr-prsaad-nyaupaane",
+    "id": "version:entity:person/tthgendr-prsaad-nyaupaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

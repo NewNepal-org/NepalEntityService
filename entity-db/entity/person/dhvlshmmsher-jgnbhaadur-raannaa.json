@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके नेपालगंज उपमहानगरपालिका शितलनगर",
+    "sys:age": 61,
+    "sys:candidate_id": 335999,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाँके",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2018.04.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कैलाशाशम्मशेर जंगबहादुर राणा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2190,
+    "sys:spouse_name": "प्रतिभा  राणा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 29577
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dhvlshmmsher-jgnbhaadur-raannaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "धवलशम्मशेर जगंबहादुर राणा"
+    }
+  ],
+  "short_description": null,
+  "slug": "dhvlshmmsher-jgnbhaadur-raannaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dhvlshmmsher-jgnbhaadur-raannaa",
+    "id": "version:entity:person/dhvlshmmsher-jgnbhaadur-raannaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

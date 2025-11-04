@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर ललितपुर महानगरपालिका कोपुण्डोल",
+    "sys:age": 52,
+    "sys:candidate_id": 334051,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2026.11.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सागर शम्शेर राणा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1259,
+    "sys:spouse_name": "उर्वशी सिंह राणा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 23892
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/udy-shnsher-jbraannaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "उदय शंशेर ज.ब.राणा"
+    }
+  ],
+  "short_description": null,
+  "slug": "udy-shnsher-jbraannaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/udy-shnsher-jbraannaa",
+    "id": "version:entity:person/udy-shnsher-jbraannaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

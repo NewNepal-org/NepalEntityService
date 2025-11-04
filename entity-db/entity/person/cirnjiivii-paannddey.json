@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा कालीगण्डकी गाउँपालिका",
+    "sys:age": 71,
+    "sys:candidate_id": 337639,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2008.06.20",
+    "sys:election_year": 2079,
+    "sys:experience": "१२ वर्ष शिक्षण, २५/२६ वर्ष राजनीति",
+    "sys:father_name": "यज्ञ प्रसाद पाण्डेय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "BA",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1789,
+    "sys:spouse_name": "चन्द्र कला पाण्डेय",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2124,
+    "sys:symbol_name": "टि टेबुल",
+    "sys:votes_received": 18
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cirnjiivii-paannddey",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चिरन्जीवी पाण्डेय"
+    }
+  ],
+  "short_description": null,
+  "slug": "cirnjiivii-paannddey",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cirnjiivii-paannddey",
+    "id": "version:entity:person/cirnjiivii-paannddey:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

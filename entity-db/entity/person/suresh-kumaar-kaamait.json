@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा लहान नगरपालिका लहान",
+    "sys:age": 28,
+    "sys:candidate_id": 336807,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2051.02.27",
+    "sys:election_year": 2079,
+    "sys:experience": "टेकनिसियन",
+    "sys:father_name": "राजेश्वर  कामैत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेशनल ल कलेज।",
+    "sys:political_party": "मौलिक जरोकिलो पार्टी",
+    "sys:political_party_slug": "maulik-jrokilo-paarttii",
+    "sys:qualification": "ballb",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 515,
+    "sys:spouse_name": "- - -",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2305,
+    "sys:symbol_name": "किबोर्ड सहितको कम्प्युटर",
+    "sys:votes_received": 168
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/suresh-kumaar-kaamait",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुरेश कुमार कामैत"
+    }
+  ],
+  "short_description": null,
+  "slug": "suresh-kumaar-kaamait",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/suresh-kumaar-kaamait",
+    "id": "version:entity:person/suresh-kumaar-kaamait:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

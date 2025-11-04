@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग केरावारी गाउँपालिका",
+    "sys:age": 29,
+    "sys:candidate_id": 338493,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2049.11.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कलेश्वर  पंडित",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 200,
+    "sys:spouse_name": "बल बहादुर राई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2344,
+    "sys:symbol_name": "अर्ना",
+    "sys:votes_received": 6
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/phuul-kumaarii-pnddit-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "फूल कुमारी पंडित राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "phuul-kumaarii-pnddit-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/phuul-kumaarii-pnddit-raaii",
+    "id": "version:entity:person/phuul-kumaarii-pnddit-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

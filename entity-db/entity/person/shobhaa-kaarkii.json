@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ओखलढुंगा चम्पादेवी  गाउँपालिका फुलवारी",
+    "sys:age": 39,
+    "sys:candidate_id": 338735,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ओखलढुंगा",
+    "sys:district": "ओखलढुंगा",
+    "sys:district_code": 13,
+    "sys:dob_bs": "2040.05.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भक्त बहादुर कार्की",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "slc",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 405,
+    "sys:spouse_name": "कृष्ण बहादुर थापा",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 714
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shobhaa-kaarkii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शोभा कार्की"
+    }
+  ],
+  "short_description": null,
+  "slug": "shobhaa-kaarkii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shobhaa-kaarkii",
+    "id": "version:entity:person/shobhaa-kaarkii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु कपिलवस्तु नगरपालिका तेनुवा",
+    "sys:age": 26,
+    "sys:candidate_id": 334669,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2053.04.30",
+    "sys:election_year": 2079,
+    "sys:experience": "ईन्जिनियरिङ, निर्माण, शिक्षण",
+    "sys:father_name": "मोहन लाल शर्मा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "हिमालयन कलेज अफ ईन्जिनियरिङ",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "B.E.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1968,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 2508
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/devendr-kumaar-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देवेन्द्र कुमार शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "devendr-kumaar-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/devendr-kumaar-shrmaa",
+    "id": "version:entity:person/devendr-kumaar-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

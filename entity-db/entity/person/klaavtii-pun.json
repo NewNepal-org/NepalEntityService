@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पश्चिम) सुनवल नगरपालिका",
+    "sys:age": 53,
+    "sys:candidate_id": 335376,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district_code": 77,
+    "sys:dob_bs": "2025.12.07",
+    "sys:election_year": 2079,
+    "sys:experience": "१) टाइपिङ्ग\n२) सिलाई कटाई\n३) सब ओभर सियर\n४) समाज सेवा",
+    "sys:father_name": "नर बहादुर पुन",
+    "sys:gender": "महिला",
+    "sys:institute": "पनव मा.वि. परासी",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2397,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 219
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/klaavtii-pun",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कलावती पुन"
+    }
+  ],
+  "short_description": null,
+  "slug": "klaavtii-pun",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/klaavtii-pun",
+    "id": "version:entity:person/klaavtii-pun:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

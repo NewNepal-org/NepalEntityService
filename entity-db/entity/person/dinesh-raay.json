@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही बरहथवा नगरपालिका",
+    "sys:age": 27,
+    "sys:candidate_id": 338878,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2051.11.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लालवावु   राय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "गान्धीवादी पार्टी नेपाल",
+    "sys:political_party_slug": "gaandhiivaadii-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 892,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 30,
+    "sys:symbol_name": "भेडा",
+    "sys:votes_received": 16
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dinesh-raay",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दिनेश  राय"
+    }
+  ],
+  "short_description": null,
+  "slug": "dinesh-raay",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dinesh-raay",
+    "id": "version:entity:person/dinesh-raay:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही सिद्धार्थनगर नगरपालिका बेलहिया",
+    "sys:age": 49,
+    "sys:candidate_id": 333481,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2030.05.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भिमलाल  न्‍यौपाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1926,
+    "sys:spouse_name": "देवी  न्‍यौपाने",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2020,
+    "sys:symbol_name": "नेल कटर",
+    "sys:votes_received": 14
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dev-raaj-nyaupaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देव राज न्‍यौपाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "dev-raaj-nyaupaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dev-raaj-nyaupaane",
+    "id": "version:entity:person/dev-raaj-nyaupaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

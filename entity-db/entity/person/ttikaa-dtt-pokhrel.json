@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा सिरानचोक गाउँपालिका माझगाउँ",
+    "sys:age": 99,
+    "sys:candidate_id": 337619,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गोरखा",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "1980.07.14",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनितिक अनुभव",
+    "sys:father_name": "निदु  पाध्य",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "साक्षर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1677,
+    "sys:spouse_name": "गोमा देवी पोखरेल",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 130
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ttikaa-dtt-pokhrel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "टिका दत्त पोखरेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "ttikaa-dtt-pokhrel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ttikaa-dtt-pokhrel",
+    "id": "version:entity:person/ttikaa-dtt-pokhrel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

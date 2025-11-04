@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ घोराही उपमहानगरपालिका दक्षिण अम्राई",
+    "sys:age": 46,
+    "sys:candidate_id": 337925,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रोल्पा",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2032.11.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "देवेन्द्र बहादुर लामीछाने",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल आमा पार्टी(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-aamaa-paarttiiekl-cunaav-cinh",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2095,
+    "sys:spouse_name": "महेन्द्र  रावत",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 85,
+    "sys:symbol_name": "बच्चा काखमा लिएकी आमा",
+    "sys:votes_received": 197
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/giitaa-raavt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गीता रावत"
+    }
+  ],
+  "short_description": null,
+  "slug": "giitaa-raavt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/giitaa-raavt",
+    "id": "version:entity:person/giitaa-raavt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

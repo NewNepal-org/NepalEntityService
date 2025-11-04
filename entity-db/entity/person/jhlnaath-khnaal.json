@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "इलाम सूर्योदय नगरपालिका",
+    "sys:age": 72,
+    "sys:candidate_id": 335202,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "इलाम",
+    "sys:district": "इलाम",
+    "sys:district_code": 3,
+    "sys:dob_bs": "2006.12.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पुंग नाथ खनाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 28,
+    "sys:spouse_name": "रवी लक्ष्मी चित्रकार",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 23089
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jhlnaath-khnaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "झलनाथ खनाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "jhlnaath-khnaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jhlnaath-khnaal",
+    "id": "version:entity:person/jhlnaath-khnaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

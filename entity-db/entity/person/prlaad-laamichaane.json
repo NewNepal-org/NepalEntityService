@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मकवानपुर थाहा नगरपालिका",
+    "sys:age": 46,
+    "sys:candidate_id": 333684,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मकवानपुर",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "2033.03.27",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक अभियन्ता तथा राजनीतिक",
+    "sys:father_name": "तुलसी प्रसाद लामिछाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1680,
+    "sys:spouse_name": "संगिता  लामिछाने",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 31
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prlaad-laamichaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रलाद लामिछाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "prlaad-laamichaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prlaad-laamichaane",
+    "id": "version:entity:person/prlaad-laamichaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

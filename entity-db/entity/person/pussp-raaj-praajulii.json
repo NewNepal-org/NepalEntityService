@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तनहुँ भिमाद नगरपालिका पटनेरी",
+    "sys:age": 57,
+    "sys:candidate_id": 334732,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तनहुँ",
+    "sys:district": "तनहुँ",
+    "sys:district_code": 40,
+    "sys:dob_bs": "2021.11.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "ठग नाथ पराजुली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1764,
+    "sys:spouse_name": "यमुना  पराजुली",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 34
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/pussp-raaj-praajulii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पुष्प राज पराजुली"
+    }
+  ],
+  "short_description": null,
+  "slug": "pussp-raaj-praajulii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/pussp-raaj-praajulii",
+    "id": "version:entity:person/pussp-raaj-praajulii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा औरही गाउँपालिका",
+    "sys:age": 67,
+    "sys:candidate_id": 336834,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2012.02.04",
+    "sys:election_year": 2079,
+    "sys:experience": "सांस्कृतिक \nसामाजिक \nराजनितिक",
+    "sys:father_name": "नथुनि  मिझार",
+    "sys:gender": "पुरुष",
+    "sys:institute": "गान्धर्व संगीत महा विद्यालय, महाराष्ट्र, भारत",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "B.Music संगीत विशारद",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 534,
+    "sys:spouse_name": "विष्णु माया मिझार",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 782
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/murli-mijhaar",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मुरलि मिझार"
+    }
+  ],
+  "short_description": null,
+  "slug": "murli-mijhaar",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/murli-mijhaar",
+    "id": "version:entity:person/murli-mijhaar:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

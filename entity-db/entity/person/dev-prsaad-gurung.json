@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "लमजुंग सुन्दरबजार नगरपालिका ओडारगाउँ",
+    "sys:age": 64,
+    "sys:candidate_id": 338355,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मनाङ्ग",
+    "sys:district": "लमजुंग",
+    "sys:district_code": 38,
+    "sys:dob_bs": "2015.06.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "धनक्रे (बहादुर) गुरुङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1685,
+    "sys:spouse_name": "यशोदा  गुरुङ/सुवेदी",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 31791
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dev-prsaad-gurung",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देव प्रसाद गुरुङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "dev-prsaad-gurung",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dev-prsaad-gurung",
+    "id": "version:entity:person/dev-prsaad-gurung:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

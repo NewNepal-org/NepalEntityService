@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही तिलोत्तमा नगरपालिका",
+    "sys:age": 61,
+    "sys:candidate_id": 337200,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2018.05.26",
+    "sys:election_year": 2079,
+    "sys:experience": "क) सदस्य, प्रतिनिधि सभा 2053\nख) मन्त्री, प्रधानमन्त्री तथा मन्त्रीपरिषद कार्यालय 2067\nग) सदस्य, प्रतिनिधि सभा 2074\nघ) मन्त्री, कृषि तथा पशुपन्छी विकास 2076",
+    "sys:father_name": "जयनाथ  भुसाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.वि.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्‍नाकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1875,
+    "sys:spouse_name": "माया  भुसाल",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2453,
+    "sys:symbol_name": "त्रिभुज",
+    "sys:votes_received": 21318
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ghnshyaam-bhusaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "घनश्याम भुसाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "ghnshyaam-bhusaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ghnshyaam-bhusaal",
+    "id": "version:entity:person/ghnshyaam-bhusaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

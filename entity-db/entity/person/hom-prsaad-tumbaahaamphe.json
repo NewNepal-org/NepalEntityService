@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ताप्लेजुंग फुङलिङ नगरपालिका बोझे",
+    "sys:age": 56,
+    "sys:candidate_id": 334167,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ताप्लेजुंग",
+    "sys:district": "ताप्लेजुंग",
+    "sys:district_code": 1,
+    "sys:dob_bs": "2022.10.15",
+    "sys:election_year": 2079,
+    "sys:experience": "0",
+    "sys:father_name": "दल बहादुर तुम्बाहाम्फे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "भानुजन मा.वि. फुङलिङ-४",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 3,
+    "sys:spouse_name": "विना  तुम्बाहाम्फे",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 941
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hom-prsaad-tumbaahaamphe",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "होम प्रसाद तुम्बाहाम्फे"
+    }
+  ],
+  "short_description": null,
+  "slug": "hom-prsaad-tumbaahaamphe",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hom-prsaad-tumbaahaamphe",
+    "id": "version:entity:person/hom-prsaad-tumbaahaamphe:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

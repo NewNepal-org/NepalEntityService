@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट दुर्गा भगवती गाउँपालिका मत्सरी",
+    "sys:age": 55,
+    "sys:candidate_id": 334982,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2024.06.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "प्रेम नारायण झा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "LEKHAPADH SADHARAN",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 701,
+    "sys:spouse_name": "डिम्पल कुमारी झा",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 23686
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/anil-kumaar-jhaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अनिल कुमार झा"
+    }
+  ],
+  "short_description": null,
+  "slug": "anil-kumaar-jhaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/anil-kumaar-jhaa",
+    "id": "version:entity:person/anil-kumaar-jhaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

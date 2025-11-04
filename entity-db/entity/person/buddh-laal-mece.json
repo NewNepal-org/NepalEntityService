@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा मेची नगर नगरपालिका वडाखाल",
+    "sys:age": 52,
+    "sys:candidate_id": 333778,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "इलाम",
+    "sys:district_code": 3,
+    "sys:dob_bs": "2027.02.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सतालु  मेचे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 29,
+    "sys:spouse_name": "छिन्ता  मेचे",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 2442
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/buddh-laal-mece",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बुद्ध लाल मेचे"
+    }
+  ],
+  "short_description": null,
+  "slug": "buddh-laal-mece",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/buddh-laal-mece",
+    "id": "version:entity:person/buddh-laal-mece:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

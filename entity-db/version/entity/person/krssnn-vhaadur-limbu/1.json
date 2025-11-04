@@ -1,0 +1,13 @@
+{
+  "actor": {
+    "id": "actor:election-importer",
+    "name": "Election Results Importer",
+    "slug": "election-importer"
+  },
+  "changeDescription": "Imported candidate result from election २०७९",
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "entityOrRelationshipId": "entity:person/krssnn-vhaadur-limbu",
+  "id": "version:entity:person/krssnn-vhaadur-limbu:1",
+  "type": "ENTITY",
+  "versionNumber": 1
+}

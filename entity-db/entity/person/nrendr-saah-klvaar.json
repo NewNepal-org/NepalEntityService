@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही बरहथवा नगरपालिका छाउनी हाउजिङ",
+    "sys:age": 50,
+    "sys:candidate_id": 334477,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2029.05.25",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक सेवामुलक काममा समर्पित रहेको",
+    "sys:father_name": "अनन्त साह कलवार",
+    "sys:gender": "पुरुष",
+    "sys:institute": "R R campus Janakpur",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "I A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 864,
+    "sys:spouse_name": "दिपा लक्ष्मी साह",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 32168
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nrendr-saah-klvaar",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नरेन्द्र साह कलवार"
+    }
+  ],
+  "short_description": null,
+  "slug": "nrendr-saah-klvaar",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nrendr-saah-klvaar",
+    "id": "version:entity:person/nrendr-saah-klvaar:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

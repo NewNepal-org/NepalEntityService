@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक तेमाल गाउँपालिका शिवनारायण",
+    "sys:age": 38,
+    "sys:candidate_id": 333390,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2041.05.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "काजी  मान तामाङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "narayansthan ma.bi.",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "s.l.c.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1328,
+    "sys:spouse_name": "कान्छी  माया  तामाङ",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 357
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kml-bhaadur-laamaa-taamaang",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कमल बहादुर  लामा (तामाङ)"
+    }
+  ],
+  "short_description": null,
+  "slug": "kml-bhaadur-laamaa-taamaang",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kml-bhaadur-laamaa-taamaang",
+    "id": "version:entity:person/kml-bhaadur-laamaa-taamaang:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

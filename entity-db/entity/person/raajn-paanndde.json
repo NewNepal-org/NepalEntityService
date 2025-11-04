@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुकुम पश्चिम मुसिकोट नगरपालिका फेचङ",
+    "sys:age": 26,
+    "sys:candidate_id": 339048,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "",
+    "sys:district": "रुकुम पश्चिम",
+    "sys:district_code": 78,
+    "sys:dob_bs": "2052.07.05",
+    "sys:election_year": 2079,
+    "sys:experience": "३ वर्ष सिभिल इन्जिनियर ।",
+    "sys:father_name": "टोप बहादुर पाण्डे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सामुदायिक विद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2410,
+    "sys:spouse_name": "",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 214
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajn-paanndde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजन पाण्डे"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajn-paanndde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajn-paanndde",
+    "id": "version:entity:person/raajn-paanndde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा गौरादह नगरपालिका",
+    "sys:age": 42,
+    "sys:candidate_id": 333584,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2036.11.15",
+    "sys:election_year": 2079,
+    "sys:experience": "वित्तिय क्षेत्रको 20 वर्षको अनुभव",
+    "sys:father_name": "चन्द्र कान्त सुबेदी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.वि.",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 999,
+    "sys:spouse_name": "उषा  दाहाल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 633
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kossraaj-suvedii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कोषराज सुवेदी"
+    }
+  ],
+  "short_description": null,
+  "slug": "kossraaj-suvedii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kossraaj-suvedii",
+    "id": "version:entity:person/kossraaj-suvedii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

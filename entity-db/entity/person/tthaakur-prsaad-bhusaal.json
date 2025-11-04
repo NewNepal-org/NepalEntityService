@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्वत फलेवास नगरपालिका चन्दनटार",
+    "sys:age": 63,
+    "sys:candidate_id": 333798,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्वत",
+    "sys:district": "पर्वत",
+    "sys:district_code": 51,
+    "sys:dob_bs": "2016.01.09",
+    "sys:election_year": 2079,
+    "sys:experience": "बृहत फलेवास खानेपानी संस्थाको अध्यक्ष/ रा.प्र.पा. जिल्ला अध्यक्ष दुई कार्यकाल ८ वर्ष/ जिल्ला विकास उप-सभापति / पर्वत बहुमुखी क्याम्पसको संचालक समिति सदस्य एवं विभिन्न",
+    "sys:father_name": "तारा प्रसाद भुसाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "बि.बि.एल.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2047,
+    "sys:spouse_name": "रुद्र कुमारी शर्मा",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 75
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tthaakur-prsaad-bhusaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ठाकुर प्रसाद भुसाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "tthaakur-prsaad-bhusaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tthaakur-prsaad-bhusaal",
+    "id": "version:entity:person/tthaakur-prsaad-bhusaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/kedaar-khddkaa:organization/political_party/nepaalii-kaangres-biipii:MEMBER_OF",
+  "sourceEntityId": "entity:person/kedaar-khddkaa",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/nepaalii-kaangres-biipii",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/kedaar-khddkaa-to-nepaalii-kaangres-biipii-member_of",
+    "id": "version:relationship/kedaar-khddkaa-to-nepaalii-kaangres-biipii-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

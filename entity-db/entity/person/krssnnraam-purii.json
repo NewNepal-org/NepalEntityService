@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं कागेश्वरी मनोहरा नगरपालिका हरहरमहादेव",
+    "sys:age": 37,
+    "sys:candidate_id": 334986,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2041.08.17",
+    "sys:election_year": 2079,
+    "sys:experience": "१. माता इन्जिनियरिङ्ग विजनेस सर्भिस, पेप्सीकोला\n२. तोवा इन्जिनियरिङ्ग नेपाल, त्रिपुरेश्‍वर\n३. तोवा इन्जिनियरिङ्ग इडिया\n४. तोवा इन्जिनियरिङ्ग नेपाल, त्रिपुरेश्‍वर",
+    "sys:father_name": "भरत बहादुर पुरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्‍वविद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्‍नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1005,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2151,
+    "sys:symbol_name": "खाम",
+    "sys:votes_received": 119
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnnraam-purii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्णराम पुरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnnraam-purii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnnraam-purii",
+    "id": "version:entity:person/krssnnraam-purii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

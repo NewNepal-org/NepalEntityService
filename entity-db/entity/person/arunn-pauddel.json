@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्वत कुश्मा नगरपालिका साहुथर",
+    "sys:age": 46,
+    "sys:candidate_id": 336671,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्वत",
+    "sys:district": "पर्वत",
+    "sys:district_code": 51,
+    "sys:dob_bs": "2033.06.20",
+    "sys:election_year": 2079,
+    "sys:experience": "Wonkwang University, South Korea",
+    "sys:father_name": "विष्णु  शर्मा पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्नाकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2042,
+    "sys:spouse_name": "रीता  पौडेल",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 271
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/arunn-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अरुण पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "arunn-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/arunn-pauddel",
+    "id": "version:entity:person/arunn-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

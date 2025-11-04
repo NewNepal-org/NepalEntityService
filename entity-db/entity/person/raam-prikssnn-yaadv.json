@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा जनकपुरधाम उपमहानगरपालिका",
+    "sys:age": 63,
+    "sys:candidate_id": 337361,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "महोत्तरी",
+    "sys:district": "महोत्तरी",
+    "sys:district_code": 21,
+    "sys:dob_bs": "2015.08.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नथुनी  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "एम.डी.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 777,
+    "sys:spouse_name": "जानकी  दास",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 10258
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-prikssnn-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम परिक्षण यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-prikssnn-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-prikssnn-yaadv",
+    "id": "version:entity:person/raam-prikssnn-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

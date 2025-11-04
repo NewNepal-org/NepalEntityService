@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर मध्यपुर थिमी नगरपालिका शिवनगर",
+    "sys:age": 43,
+    "sys:candidate_id": 334075,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2036.05.26",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "तेज प्रसाद पोखरेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रीभुवन विश्वविद्यालय अन्तर्गत रत्न राज्य क्याम्पस",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1241,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 194
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lokendr-pokhrel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लोकेन्द्र पोखरेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "lokendr-pokhrel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lokendr-pokhrel",
+    "id": "version:entity:person/lokendr-pokhrel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

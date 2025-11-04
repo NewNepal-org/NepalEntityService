@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुकुम पूर्व सिस्ने गाउँपालिका आलापोखरा",
+    "sys:age": 47,
+    "sys:candidate_id": 335957,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुकुम पूर्व",
+    "sys:district": "रुकुम पूर्व",
+    "sys:district_code": 52,
+    "sys:dob_bs": "2032.04.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सेर बहादुर मल्ल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2051,
+    "sys:spouse_name": "रिता  श्रेष्ठ",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 5211
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kailaash-kumaar-mll",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कैलाश कुमार मल्ल"
+    }
+  ],
+  "short_description": null,
+  "slug": "kailaash-kumaar-mll",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kailaash-kumaar-mll",
+    "id": "version:entity:person/kailaash-kumaar-mll:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

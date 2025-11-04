@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कास्की पोखरा महानगरपालिका अमलाचौर",
+    "sys:age": 54,
+    "sys:candidate_id": 334742,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कास्की",
+    "sys:district": "कास्की",
+    "sys:district_code": 39,
+    "sys:dob_bs": "2025.04.06",
+    "sys:election_year": 2079,
+    "sys:experience": "पुर्व जिविस उपसभापति",
+    "sys:father_name": "प्रेम नारायण वराल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1711,
+    "sys:spouse_name": "कल्पना  पौडेल(वराल)",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 9659
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shriinaath-vraal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "श्रीनाथ वराल"
+    }
+  ],
+  "short_description": null,
+  "slug": "shriinaath-vraal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shriinaath-vraal",
+    "id": "version:entity:person/shriinaath-vraal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा कन्काई नगरपालिका दुर्गापुर",
+    "sys:age": 61,
+    "sys:candidate_id": 333810,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2018.05.15",
+    "sys:election_year": 2079,
+    "sys:experience": "कृषि",
+    "sys:father_name": "रतनलाल  राजवंशी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री आ वि म मा वि घैलाडुब्बा",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 74,
+    "sys:spouse_name": "देवीमाया  राजवंशी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 428
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/triinaaraaynn-raajvnshii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "त्रीनारायण राजवंशी"
+    }
+  ],
+  "short_description": null,
+  "slug": "triinaaraaynn-raajvnshii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/triinaaraaynn-raajvnshii",
+    "id": "version:entity:person/triinaaraaynn-raajvnshii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

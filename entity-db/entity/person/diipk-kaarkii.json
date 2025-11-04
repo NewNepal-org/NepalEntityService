@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा गणेशमान चारनाथ नगरपालिका भोटलेनी",
+    "sys:age": 58,
+    "sys:candidate_id": 335396,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2020.10.20",
+    "sys:election_year": 2079,
+    "sys:experience": "संघिय समाजवादी पार्टि नेपालबाट प्रतिनिधि सभामा चुनाव लडेको ।",
+    "sys:father_name": "खङ बहादुर भन्ने बलराम सिंह कार्की",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Budanilkanta School, Kathmandu",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 659,
+    "sys:spouse_name": "अंजना  बस्नेत [कार्की]",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 27431
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/diipk-kaarkii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दीपक कार्की"
+    }
+  ],
+  "short_description": null,
+  "slug": "diipk-kaarkii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/diipk-kaarkii",
+    "id": "version:entity:person/diipk-kaarkii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका कुमारी गाल",
+    "sys:age": 63,
+    "sys:candidate_id": 334556,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भोजपुर",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2015.10.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नैन सिंह बस्नेत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1069,
+    "sys:spouse_name": "माया  बस्नेत",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 18
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/thrk-bhaadur-bsnet",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "थर्क बहादुर बस्नेत"
+    }
+  ],
+  "short_description": null,
+  "slug": "thrk-bhaadur-bsnet",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/thrk-bhaadur-bsnet",
+    "id": "version:entity:person/thrk-bhaadur-bsnet:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

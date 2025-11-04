@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तनहुँ भानु नगरपालिका खाल्टे",
+    "sys:age": 73,
+    "sys:candidate_id": 333345,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तनहुँ",
+    "sys:district": "तनहुँ",
+    "sys:district_code": 40,
+    "sys:dob_bs": "2006.04.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पद्य राज जोशी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "MA",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1743,
+    "sys:spouse_name": "हिम कुमारी जोशी",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1029,
+    "sys:symbol_name": "कैँची",
+    "sys:votes_received": 6886
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/govind-raaj-joshii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गोविन्द राज जोशी"
+    }
+  ],
+  "short_description": null,
+  "slug": "govind-raaj-joshii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/govind-raaj-joshii",
+    "id": "version:entity:person/govind-raaj-joshii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

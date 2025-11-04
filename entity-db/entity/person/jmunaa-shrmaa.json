@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कास्की पोखरा महानगरपालिका शितलादेवी",
+    "sys:age": 32,
+    "sys:candidate_id": 335801,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कास्की",
+    "sys:district": "कास्की",
+    "sys:district_code": 39,
+    "sys:dob_bs": "2047.02.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भिमदेव  शर्मा",
+    "sys:gender": "महिला",
+    "sys:institute": "TU",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1724,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1004,
+    "sys:symbol_name": "हेलमेट",
+    "sys:votes_received": 12
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jmunaa-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जमुना शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "jmunaa-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jmunaa-shrmaa",
+    "id": "version:entity:person/jmunaa-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

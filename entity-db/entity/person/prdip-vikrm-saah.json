@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट गरुडा नगरपालिका शिशवा",
+    "sys:age": 29,
+    "sys:candidate_id": 338724,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2049.08.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "उपेन्द्र साह तेली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1464,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1006,
+    "sys:symbol_name": "क्यामेरा",
+    "sys:votes_received": 317
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prdip-vikrm-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रदिप विक्रम साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "prdip-vikrm-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prdip-vikrm-saah",
+    "id": "version:entity:person/prdip-vikrm-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

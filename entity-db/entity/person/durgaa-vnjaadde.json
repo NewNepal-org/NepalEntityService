@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "अर्घाखांची मालारानी गाउँपालिका",
+    "sys:age": 35,
+    "sys:candidate_id": 334934,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "अर्घाखांची",
+    "sys:district": "अर्घाखांची",
+    "sys:district_code": 44,
+    "sys:dob_bs": "2043.07.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम लाल वन्जाडे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1841,
+    "sys:spouse_name": "पुजा  वन्जाडे",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 116
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/durgaa-vnjaadde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दुर्गा वन्जाडे"
+    }
+  ],
+  "short_description": null,
+  "slug": "durgaa-vnjaadde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/durgaa-vnjaadde",
+    "id": "version:entity:person/durgaa-vnjaadde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

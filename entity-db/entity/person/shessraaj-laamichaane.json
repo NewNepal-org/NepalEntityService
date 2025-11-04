@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक पाँचखाल नगरपालिका जनताडिही",
+    "sys:age": 39,
+    "sys:candidate_id": 333489,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2040.06.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "ओम प्रकाश लामिछाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "HSEB",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1348,
+    "sys:spouse_name": "गौरी  लामिछाने",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2453,
+    "sys:symbol_name": "त्रिभुज",
+    "sys:votes_received": 100
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shessraaj-laamichaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शेषराज लामिछाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "shessraaj-laamichaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shessraaj-laamichaane",
+    "id": "version:entity:person/shessraaj-laamichaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

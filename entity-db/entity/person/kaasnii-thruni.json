@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी दुहवी नगरपालिका सिमरिया",
+    "sys:age": 50,
+    "sys:candidate_id": 333381,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2028.10.26",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बिरन लाल चौधरी",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 358,
+    "sys:spouse_name": "जय नारायण माझी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2459,
+    "sys:symbol_name": "हेङ्गर",
+    "sys:votes_received": 11
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kaasnii-thruni",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कासनी थरुनि"
+    }
+  ],
+  "short_description": null,
+  "slug": "kaasnii-thruni",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kaasnii-thruni",
+    "id": "version:entity:person/kaasnii-thruni:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा कर्जन्हा नगरपालिका",
+    "sys:age": 33,
+    "sys:candidate_id": 336027,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2046.01.05",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजसेवी",
+    "sys:father_name": "सिता मरिक यादब",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Nepal board",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 592,
+    "sys:spouse_name": "गिता कुमारी यादब",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1011,
+    "sys:symbol_name": "ग्यास सिलिन्डर",
+    "sys:votes_received": 56
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajesh-kumaar-yaadb",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजेश कुमार यादब"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajesh-kumaar-yaadb",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajesh-kumaar-yaadb",
+    "id": "version:entity:person/raajesh-kumaar-yaadb:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "संखुवासभा खाँदवारी नगरपालिका",
+    "sys:age": 39,
+    "sys:candidate_id": 336081,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "संखुवासभा",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2039.07.28",
+    "sys:election_year": 2079,
+    "sys:experience": "इभेन्ट म्यानेजमेन्ट\nरेष्टुरेन्ट क्याम्पस\nमिडिया मार्केटिङ्ग",
+    "sys:father_name": "लाल बहादुर गुरुङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "कान्तीपुर सीटी कलेज, पूर्वाञ्‍चल विश्वविद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1082,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1006,
+    "sys:symbol_name": "क्यामेरा",
+    "sys:votes_received": 2761
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shriiraam-gurung",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "श्रीराम गुरुङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "shriiraam-gurung",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shriiraam-gurung",
+    "id": "version:entity:person/shriiraam-gurung:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

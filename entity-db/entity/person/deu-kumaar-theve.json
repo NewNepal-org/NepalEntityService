@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा झापा गाउँपालिका सितुमारी",
+    "sys:age": 57,
+    "sys:candidate_id": 333585,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2021.08.29",
+    "sys:election_year": 2079,
+    "sys:experience": "-२०४९ साल देखि दुई कार्य काल कुमरखोद गा वि स को अध्यक्ष भई काम गरेको ।\n-डिल्लीराज मा वि संचालक  समितिको अध्यक्ष\n-हेटौडा सिमेन्ट उद्योगको २०५७ देखि २०५९ संचालक समिति सदस्य\n-राजको शाहीकालमा २ महिना ११ दिन झापा कारागारमा जेल जिवनयापन",
+    "sys:father_name": "कृतिमान  थेवे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सिनाम मा वि सिनाम ताप्लेजुङ्ग",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 104,
+    "sys:spouse_name": "डम्वर कुमारी थेवे",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 22448
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/deu-kumaar-theve",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देउ कुमार थेवे"
+    }
+  ],
+  "short_description": null,
+  "slug": "deu-kumaar-theve",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/deu-kumaar-theve",
+    "id": "version:entity:person/deu-kumaar-theve:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

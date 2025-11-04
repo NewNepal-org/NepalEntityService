@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाँचथर हिलिहाङ गाउँपालिका डाडे",
+    "sys:age": 39,
+    "sys:candidate_id": 336392,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाँचथर",
+    "sys:district": "पाँचथर",
+    "sys:district_code": 2,
+    "sys:dob_bs": "2040.03.24",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनीति, समाजसेवा, खोजअनुसन्धान, प्राध्यापन",
+    "sys:father_name": "आइन्‍द वहादुर पालूङ्वा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "एम.फिल.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 23,
+    "sys:spouse_name": "लिला कूमारी कुगेनम्‍बा",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2455,
+    "sys:symbol_name": "मौरी",
+    "sys:votes_received": 86
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/laakh-vhaadur-paaluungvaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लाख वहादुर पालूङ्वा"
+    }
+  ],
+  "short_description": null,
+  "slug": "laakh-vhaadur-paaluungvaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/laakh-vhaadur-paaluungvaa",
+    "id": "version:entity:person/laakh-vhaadur-paaluungvaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

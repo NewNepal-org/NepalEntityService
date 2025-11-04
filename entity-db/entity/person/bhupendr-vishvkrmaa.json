@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुली कमलामाई नगरपालिका सानडाँडा",
+    "sys:age": 30,
+    "sys:candidate_id": 337645,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुली",
+    "sys:district": "सिन्धुली",
+    "sys:district_code": 19,
+    "sys:dob_bs": "2049.06.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जुद्ध बहादुर विश्‍वकर्मा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Degree",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 654,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 701
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhupendr-vishvkrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भुपेन्द्र विश्‍वकर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhupendr-vishvkrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhupendr-vishvkrmaa",
+    "id": "version:entity:person/bhupendr-vishvkrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

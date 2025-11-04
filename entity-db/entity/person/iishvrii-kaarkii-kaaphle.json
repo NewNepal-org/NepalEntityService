@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट चन्द्रपुर नगरपालिका शान्ति",
+    "sys:age": 38,
+    "sys:candidate_id": 337804,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2041.04.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम काजी कार्की",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1472,
+    "sys:spouse_name": "कृष्ण प्रसाद काफ्ले",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 47
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/iishvrii-kaarkii-kaaphle",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ईश्‍वरी कार्की काफ्ले"
+    }
+  ],
+  "short_description": null,
+  "slug": "iishvrii-kaarkii-kaaphle",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/iishvrii-kaarkii-kaaphle",
+    "id": "version:entity:person/iishvrii-kaarkii-kaaphle:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

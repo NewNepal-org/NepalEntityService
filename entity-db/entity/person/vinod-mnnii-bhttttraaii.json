@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग रतुवामाई नगरपालिका सिवालय",
+    "sys:age": 48,
+    "sys:candidate_id": 333794,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2031.02.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "टंक प्रसाद भट्टराई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "स्नाकोत्तर अंग्र्जी साहित्य,स्नाकोत्तर राजनितिक शास्त्र",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 205,
+    "sys:spouse_name": "राधा  बस्नेत",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 1457
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vinod-mnnii-bhttttraaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विनोद मणी भट्टराई"
+    }
+  ],
+  "short_description": null,
+  "slug": "vinod-mnnii-bhttttraaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vinod-mnnii-bhttttraaii",
+    "id": "version:entity:person/vinod-mnnii-bhttttraaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

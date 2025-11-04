@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ तुल्सिपुर उपमहानगरपालिका",
+    "sys:age": 41,
+    "sys:candidate_id": 335880,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दाङ",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2038.02.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "अतीराम  थारु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नागरिक उन्मुक्ति पार्टी",
+    "sys:political_party_slug": "naagrik-unmukti-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2093,
+    "sys:spouse_name": "प्रभा   चौधरी",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2306,
+    "sys:symbol_name": "पिधँ भएको सादा ढकिया",
+    "sys:votes_received": 482
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/reshm-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रेशम  चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "reshm-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/reshm-caudhrii",
+    "id": "version:entity:person/reshm-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

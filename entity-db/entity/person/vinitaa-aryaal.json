@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा विर्तामोड नगरपालिका अनारमनी",
+    "sys:age": 31,
+    "sys:candidate_id": 334591,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2047.07.07",
+    "sys:election_year": 2079,
+    "sys:experience": "विगत १४ वर्षदेखि समाजसेवामा समर्पित\nजेष्ठ नागरिकको हकहितको लागि विगत १३ वर्षदेखि अभियानकर्ताको भूमिका निर्वाह गर्दै आएको\nअल नेपाल क्यारेमको संस्थापक अध्यक्ष\nमहिला तथा बालबालिकाहरुलाई सीपमूलक तालिमको व्यवस्था गर्दै आएको।",
+    "sys:father_name": "छविलाल  कार्की",
+    "sys:gender": "महिला",
+    "sys:institute": "श्री महेन्द्र रत्न उच्च माध्यमिक विद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1101,
+    "sys:spouse_name": "इन्द्र प्रसाद अर्याल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1011,
+    "sys:symbol_name": "ग्यास सिलिन्डर",
+    "sys:votes_received": 25
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vinitaa-aryaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विनिता अर्याल"
+    }
+  ],
+  "short_description": null,
+  "slug": "vinitaa-aryaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vinitaa-aryaal",
+    "id": "version:entity:person/vinitaa-aryaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक मण्डनदेउपुर नगरपालिका चैनपुर",
+    "sys:age": 52,
+    "sys:candidate_id": 335154,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2027.05.13",
+    "sys:election_year": 2079,
+    "sys:experience": "निवर्तमान प्रतिनिधि सभा सदस्य तथा पुर्व  सञ्चार तथा सूचना र शहरी विकास मन्त्री भई कार्य सम्पादबन गरेको",
+    "sys:father_name": "हरी प्रसाद वाँस्कोटा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1339,
+    "sys:spouse_name": "तारा देवी वाँस्कोटा मानन्धर",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 45345
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gokul-prsaad-vaanskottaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गोकुल प्रसाद वाँस्कोटा"
+    }
+  ],
+  "short_description": null,
+  "slug": "gokul-prsaad-vaanskottaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gokul-prsaad-vaanskottaa",
+    "id": "version:entity:person/gokul-prsaad-vaanskottaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

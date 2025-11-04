@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "उदयपुर उदयपुरगढी गाउँपालिका कुसुमवोटे",
+    "sys:age": 68,
+    "sys:candidate_id": 333424,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "उदयपुर",
+    "sys:district": "उदयपुर",
+    "sys:district_code": 14,
+    "sys:dob_bs": "2011.05.13",
+    "sys:election_year": 2079,
+    "sys:experience": "क. विभिन्न संघ संस्थामा काम गरेको \nख. भलायडाँडा उच्च मावि ९ वर्ष सम्म सदस्य \nग. गा.पा. गढी मा पूर्व अध्यक्ष",
+    "sys:father_name": "रंग ध्वज पाण्डे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री मावि उदयपुरगढी",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 437,
+    "sys:spouse_name": "मेनुका  पाण्डे",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 34
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/keshv-bhaadur-paanndde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "केशव बहादुर पाण्डे"
+    }
+  ],
+  "short_description": null,
+  "slug": "keshv-bhaadur-paanndde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/keshv-bhaadur-paanndde",
+    "id": "version:entity:person/keshv-bhaadur-paanndde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ तुल्सिपुर उपमहानगरपालिका टरीगै",
+    "sys:age": 38,
+    "sys:candidate_id": 337162,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दाङ",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2040.08.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भक्तराम  खड्का",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2113,
+    "sys:spouse_name": "सरस्वती  वली",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 31
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tilk-khddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तिलक खड्का"
+    }
+  ],
+  "short_description": null,
+  "slug": "tilk-khddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tilk-khddkaa",
+    "id": "version:entity:person/tilk-khddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

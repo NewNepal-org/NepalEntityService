@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ताप्लेजुंग आठराई त्रिवेणी गाउँपालिका",
+    "sys:age": 59,
+    "sys:candidate_id": 338182,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ताप्लेजुंग",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2019.09.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "खडक बहादुर लिम्बु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1297,
+    "sys:spouse_name": "देविका  लिम्बु",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 43
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhuvaan-sin-limbu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भुवान सिं लिम्बु"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhuvaan-sin-limbu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhuvaan-sin-limbu",
+    "id": "version:entity:person/bhuvaan-sin-limbu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

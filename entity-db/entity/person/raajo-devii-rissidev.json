@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी गढी गाउँपालिका",
+    "sys:age": 45,
+    "sys:candidate_id": 337207,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2033.10.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "झिगरु  मुसहर",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 345,
+    "sys:spouse_name": "बन्नु  मुसहर",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 214
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajo-devii-rissidev",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजो देवी रिषिदेव"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajo-devii-rissidev",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajo-devii-rissidev",
+    "id": "version:entity:person/raajo-devii-rissidev:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

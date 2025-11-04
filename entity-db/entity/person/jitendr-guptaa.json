@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पश्चिम) रामग्राम नगरपालिका मस्जितटोल",
+    "sys:age": 35,
+    "sys:candidate_id": 334225,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district_code": 77,
+    "sys:dob_bs": "2043.09.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पशुपति  तेली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "बिरेन्द्र बहुमुखी क्याम्पस",
+    "sys:political_party": "बहुजन शक्ति पार्टी",
+    "sys:political_party_slug": "bhujn-shkti-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2400,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 15,
+    "sys:symbol_name": "जग",
+    "sys:votes_received": 94
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jitendr-guptaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जितेन्द्र गुप्ता"
+    }
+  ],
+  "short_description": null,
+  "slug": "jitendr-guptaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jitendr-guptaa",
+    "id": "version:entity:person/jitendr-guptaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

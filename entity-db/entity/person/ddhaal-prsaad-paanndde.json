@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा कालीगण्डकी गाउँपालिका कइन्डाँडा",
+    "sys:age": 54,
+    "sys:candidate_id": 335257,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2025.02.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "इश्‍वरी  पाण्डे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जनता मा वि बिर्घा",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1788,
+    "sys:spouse_name": "निमा कुमारी पाण्डे",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2473,
+    "sys:symbol_name": "नरिवल",
+    "sys:votes_received": 19
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ddhaal-prsaad-paanndde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ढाल प्रसाद पाण्डे"
+    }
+  ],
+  "short_description": null,
+  "slug": "ddhaal-prsaad-paanndde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ddhaal-prsaad-paanndde",
+    "id": "version:entity:person/ddhaal-prsaad-paanndde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

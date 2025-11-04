@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु शिवराज नगरपालिका शिवपुर",
+    "sys:age": 32,
+    "sys:candidate_id": 333221,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2046.11.08",
+    "sys:election_year": 2079,
+    "sys:experience": "नीति अनुसन्धानको क्षेत्रमा २ वर्ष संस्थाको अध्यक्ष रही काम गरेको ।",
+    "sys:father_name": "बिष्णु प्रसाद उपाध्याय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्‍वविद्यालय किर्तिपुर काठमाण्डौं",
+    "sys:political_party": "मौलिक जरोकिलो पार्टी",
+    "sys:political_party_slug": "maulik-jrokilo-paarttii",
+    "sys:qualification": "स्‍नातकोत्तर राजनीतिशास्त्र",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2002,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2305,
+    "sys:symbol_name": "किबोर्ड सहितको कम्प्युटर",
+    "sys:votes_received": 169
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ym-naath-upaadhyaay",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "यम नाथ उपाध्याय"
+    }
+  ],
+  "short_description": null,
+  "slug": "ym-naath-upaadhyaay",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ym-naath-upaadhyaay",
+    "id": "version:entity:person/ym-naath-upaadhyaay:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

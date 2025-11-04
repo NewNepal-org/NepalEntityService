@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा दमक नगरपालिका नारायण गोपाल",
+    "sys:age": 41,
+    "sys:candidate_id": 334608,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ताप्लेजुंग",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2037.12.15",
+    "sys:election_year": 2079,
+    "sys:experience": "सफल व्यवसायी\nविभिन्‍न संघ संस्थामा आवद्द\nसामाजिक कार्यमा निरन्तर सकृय",
+    "sys:father_name": "निधुनारायण  भट्टराई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "महेन्द्र रत्न बहुमुखी क्याम्पस इलाम",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 142,
+    "sys:spouse_name": "सिर्जना  भट्टराई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1006,
+    "sys:symbol_name": "क्यामेरा",
+    "sys:votes_received": 41
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhessraaj-bhttttraaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भेषराज भट्टराई"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhessraaj-bhttttraaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhessraaj-bhttttraaii",
+    "id": "version:entity:person/bhessraaj-bhttttraaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

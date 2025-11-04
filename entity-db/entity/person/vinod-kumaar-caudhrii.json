@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पूर्व) देवचुली नगरपालिका दिव्यपुरी",
+    "sys:age": 67,
+    "sys:candidate_id": 335700,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district_code": 77,
+    "sys:dob_bs": "2012.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "उद्योग व्यापार क्षेत्रमा ४० वर्ष भन्दा बढी को अनुभव । राजनैतिक क्षेत्रमा ३० वर्ष भन्दा बढीको अनुभव ।",
+    "sys:father_name": "लुनकरण दास चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2370,
+    "sys:spouse_name": "सारिका  चौधरी",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 29519
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vinod-kumaar-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विनोद कुमार चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "vinod-kumaar-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vinod-kumaar-caudhrii",
+    "id": "version:entity:person/vinod-kumaar-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दैलेख नारायण नगरपालिका थापा टोल",
+    "sys:age": 63,
+    "sys:candidate_id": 336953,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दैलेख",
+    "sys:district": "दैलेख",
+    "sys:district_code": 63,
+    "sys:dob_bs": "2016.03.27",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गंग वहादुर थापा क्षेत्री",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2156,
+    "sys:spouse_name": "बाल कुमारी थापा",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 66
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhuupaal-vhaadur-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भूपाल वहादुर थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhuupaal-vhaadur-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhuupaal-vhaadur-thaapaa",
+    "id": "version:entity:person/bhuupaal-vhaadur-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

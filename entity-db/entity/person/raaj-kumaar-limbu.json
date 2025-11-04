@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "संखुवासभा चैनपुर नगरपालिका सिङजोङग",
+    "sys:age": 35,
+    "sys:candidate_id": 336925,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "संखुवासभा",
+    "sys:district": "संखुवासभा",
+    "sys:district_code": 5,
+    "sys:dob_bs": "2043.10.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मीन बहादुर लिम्बु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पशुपति बहुमुखी क्याम्पस",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 154,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 139
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaj-kumaar-limbu",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राज कुमार लिम्बु"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaj-kumaar-limbu",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaj-kumaar-limbu",
+    "id": "version:entity:person/raaj-kumaar-limbu:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

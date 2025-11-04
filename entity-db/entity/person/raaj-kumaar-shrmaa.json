@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट कटहरिया नगरपालिका पिप्रा पोखरीया",
+    "sys:age": 26,
+    "sys:candidate_id": 338815,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2053.02.29",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "विरेन्द्र ठाकुर लोहार",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1446,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2124,
+    "sys:symbol_name": "टि टेबुल",
+    "sys:votes_received": 87
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaj-kumaar-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राज कुमार शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaj-kumaar-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaj-kumaar-shrmaa",
+    "id": "version:entity:person/raaj-kumaar-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

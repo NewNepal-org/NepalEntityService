@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "जुम्ला तातोपानी गाउँपालिका सर्मी",
+    "sys:age": 39,
+    "sys:candidate_id": 339185,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "जुम्ला",
+    "sys:district": "जुम्ला",
+    "sys:district_code": 59,
+    "sys:dob_bs": "2039.10.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "धन कृष्ण जैसी",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2129,
+    "sys:spouse_name": "बीर बहादुर कु‌वर",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 11959
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gomaa-gautm-kunvr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गोमा गौतम (कुँवर)"
+    }
+  ],
+  "short_description": null,
+  "slug": "gomaa-gautm-kunvr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gomaa-gautm-kunvr",
+    "id": "version:entity:person/gomaa-gautm-kunvr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

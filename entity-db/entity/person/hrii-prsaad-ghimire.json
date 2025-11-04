@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धादिङ्ग निलकण्ठ नगरपालिका रिजालडाँडा",
+    "sys:age": 46,
+    "sys:candidate_id": 337160,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धादिङ्ग",
+    "sys:district": "धादिङ्ग",
+    "sys:district_code": 24,
+    "sys:dob_bs": "2032.12.26",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "डिल्ली प्रसाद घिमिरे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 930,
+    "sys:spouse_name": "भिम कुमारी घिमिरे",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1006,
+    "sys:symbol_name": "क्यामेरा",
+    "sys:votes_received": 20
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hrii-prsaad-ghimire",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हरी प्रसाद घिमिरे"
+    }
+  ],
+  "short_description": null,
+  "slug": "hrii-prsaad-ghimire",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hrii-prsaad-ghimire",
+    "id": "version:entity:person/hrii-prsaad-ghimire:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

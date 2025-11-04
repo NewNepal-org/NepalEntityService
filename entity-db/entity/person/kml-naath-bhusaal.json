@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही तिलोत्तमा नगरपालिका झुलेनीपुर",
+    "sys:age": 48,
+    "sys:candidate_id": 337779,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2030.11.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शशीधर भुसाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "राममणी क्याम्पस, मणिग्राम",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "आई.ए.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1889,
+    "sys:spouse_name": "सरस्‍वती गैरे",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 149
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kml-naath-bhusaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कमल नाथ भुसाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "kml-naath-bhusaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kml-naath-bhusaal",
+    "id": "version:entity:person/kml-naath-bhusaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

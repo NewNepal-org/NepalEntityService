@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धादिङ्ग निलकण्ठ नगरपालिका कुवापानी",
+    "sys:age": 41,
+    "sys:candidate_id": 337126,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धादिङ्ग",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2037.11.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चन्द्र बहादुर पन्थ",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "मौलिक जरोकिलो पार्टी",
+    "sys:political_party_slug": "maulik-jrokilo-paarttii",
+    "sys:qualification": "Ph. D",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "9",
+    "sys:serial_no": 1199,
+    "sys:spouse_name": "वेग बहादुर थापा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2305,
+    "sys:symbol_name": "किबोर्ड सहितको कम्प्युटर",
+    "sys:votes_received": 23
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ambikaa-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अम्बिका थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "ambikaa-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ambikaa-thaapaa",
+    "id": "version:entity:person/ambikaa-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

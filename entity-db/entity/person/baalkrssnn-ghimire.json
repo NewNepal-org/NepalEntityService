@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर बाग्मती गाउँपालिका मैनडाँडा",
+    "sys:age": 57,
+    "sys:candidate_id": 334123,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2022.01.17",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हुद्धराज  घिमिरे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1274,
+    "sys:spouse_name": "पवित्रा  घिमिरे",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 8
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/baalkrssnn-ghimire",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बालकृष्ण घिमिरे"
+    }
+  ],
+  "short_description": null,
+  "slug": "baalkrssnn-ghimire",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/baalkrssnn-ghimire",
+    "id": "version:entity:person/baalkrssnn-ghimire:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

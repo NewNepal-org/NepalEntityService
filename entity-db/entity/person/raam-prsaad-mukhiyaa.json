@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग विराटनगर महानगरपालिका",
+    "sys:age": 69,
+    "sys:candidate_id": 334809,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2009.12.01",
+    "sys:election_year": 2079,
+    "sys:experience": "२०२८ साल देखि २०५० सम्म नेपाली काँग्रेश कार्यकर्ता\n२०५१ देखि हाल सम्म सदभावना पार्टीमा कार्यकर्ता",
+    "sys:father_name": "मुनि लाल मुखिया",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "साधारण",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 270,
+    "sys:spouse_name": "रम्भा देवि मुखिया",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 112
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-prsaad-mukhiyaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम प्रसाद मुखिया"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-prsaad-mukhiyaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-prsaad-mukhiyaa",
+    "id": "version:entity:person/raam-prsaad-mukhiyaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

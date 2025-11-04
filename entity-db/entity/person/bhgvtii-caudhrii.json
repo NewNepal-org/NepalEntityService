@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी दुहवी नगरपालिका दुहवी",
+    "sys:age": 51,
+    "sys:candidate_id": 336066,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2028.01.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "विरन लाल चौधरी",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 339,
+    "sys:spouse_name": "दिनेश कुमार चौधरी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 40788
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhgvtii-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भगवती चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhgvtii-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhgvtii-caudhrii",
+    "id": "version:entity:person/bhgvtii-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बझाङ्ग जयपृथ्वी नगरपालिका छयाला",
+    "sys:age": 38,
+    "sys:candidate_id": 334997,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बझाङ्ग",
+    "sys:district": "बझाङ्ग",
+    "sys:district_code": 69,
+    "sys:dob_bs": "2040.12.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम  ध्‍वज",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2250,
+    "sys:spouse_name": "सनुजा  महर",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 27412
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ain-bhaadur-mhr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ऐन बहादुर महर"
+    }
+  ],
+  "short_description": null,
+  "slug": "ain-bhaadur-mhr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ain-bhaadur-mhr",
+    "id": "version:entity:person/ain-bhaadur-mhr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

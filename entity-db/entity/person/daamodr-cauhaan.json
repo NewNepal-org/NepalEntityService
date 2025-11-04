@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा धनुषाधाम नगरपालिका",
+    "sys:age": 49,
+    "sys:candidate_id": 334033,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2030.04.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "टंकध्वज  चौहान",
+    "sys:gender": "पुरुष",
+    "sys:institute": "बि पि कोइराला, जनकपुर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "I.A.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 678,
+    "sys:spouse_name": "मन ज्योति चौहान",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2463,
+    "sys:symbol_name": "खर्पन बोकेको मान्छे",
+    "sys:votes_received": 14
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/daamodr-cauhaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दामोदर चौहान"
+    }
+  ],
+  "short_description": null,
+  "slug": "daamodr-cauhaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/daamodr-cauhaan",
+    "id": "version:entity:person/daamodr-cauhaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

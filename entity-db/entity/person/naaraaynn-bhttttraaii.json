@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गुल्मी रेसुङ्गा नगरपालिका खनियापाटा",
+    "sys:age": 28,
+    "sys:candidate_id": 337886,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गुल्मी",
+    "sys:district": "गुल्मी",
+    "sys:district_code": 42,
+    "sys:dob_bs": "2051.01.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भिमलाल  भट्टराई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "महेन्द्र मा वि",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1808,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2057,
+    "sys:symbol_name": "ज्याबल",
+    "sys:votes_received": 15
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/naaraaynn-bhttttraaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नारायण भट्टराई"
+    }
+  ],
+  "short_description": null,
+  "slug": "naaraaynn-bhttttraaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/naaraaynn-bhttttraaii",
+    "id": "version:entity:person/naaraaynn-bhttttraaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

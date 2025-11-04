@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रामेछाप सुनापती गाउँपालिका काठिपिपल",
+    "sys:age": 51,
+    "sys:candidate_id": 337377,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रामेछाप",
+    "sys:district": "रामेछाप",
+    "sys:district_code": 18,
+    "sys:dob_bs": "2027.09.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रण मान तामाङ्ग (लामा)",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 621,
+    "sys:spouse_name": "उर्मिला  लामा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 425
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-kumaar-laamaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम कुमार लामा"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-kumaar-laamaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-kumaar-laamaa",
+    "id": "version:entity:person/raam-kumaar-laamaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

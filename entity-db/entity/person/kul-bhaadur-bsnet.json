@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा सिरानचोक गाउँपालिका नयाँसाँगु",
+    "sys:age": 54,
+    "sys:candidate_id": 337408,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "2024.10.21",
+    "sys:election_year": 2079,
+    "sys:experience": "नेपाल प्रहरी",
+    "sys:father_name": "रुद्र सिं बस्नेत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "युपी भारत",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "प्रविणता प्रमाणपत्र तह",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1678,
+    "sys:spouse_name": "डम्वर कुमारी वस्नेत",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 109
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kul-bhaadur-bsnet",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कुल बहादुर बस्नेत"
+    }
+  ],
+  "short_description": null,
+  "slug": "kul-bhaadur-bsnet",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kul-bhaadur-bsnet",
+    "id": "version:entity:person/kul-bhaadur-bsnet:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

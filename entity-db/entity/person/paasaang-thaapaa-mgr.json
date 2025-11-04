@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तनहुँ ऋषिङ्ग गाउँपालिका",
+    "sys:age": 35,
+    "sys:candidate_id": 335287,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तनहुँ",
+    "sys:district": "तनहुँ",
+    "sys:district_code": 40,
+    "sys:dob_bs": "2044.03.19",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "थमन सिं थापा",
+    "sys:gender": "महिला",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "स्नातोक्तर र एल एल बी",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1750,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 260
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/paasaang-thaapaa-mgr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पासाङ थापा मगर"
+    }
+  ],
+  "short_description": null,
+  "slug": "paasaang-thaapaa-mgr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/paasaang-thaapaa-mgr",
+    "id": "version:entity:person/paasaang-thaapaa-mgr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

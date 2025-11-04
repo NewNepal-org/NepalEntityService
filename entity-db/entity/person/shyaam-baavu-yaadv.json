@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही बागमती नगरपालिका",
+    "sys:age": 33,
+    "sys:candidate_id": 336308,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2046.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रामचन्‍द्र  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "मोडेल क्याम्पस जनकपुर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "I A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 873,
+    "sys:spouse_name": "शिव कुमारी यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1006,
+    "sys:symbol_name": "क्यामेरा",
+    "sys:votes_received": 52
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shyaam-baavu-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "श्‍याम बावु यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "shyaam-baavu-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shyaam-baavu-yaadv",
+    "id": "version:entity:person/shyaam-baavu-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

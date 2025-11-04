@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बागलुङ गल्कोट नगरपालिका हटिया बजार",
+    "sys:age": 48,
+    "sys:candidate_id": 337435,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्वत",
+    "sys:district": "बागलुङ",
+    "sys:district_code": 50,
+    "sys:dob_bs": "2030.08.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लोक राज शर्मा",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2032,
+    "sys:spouse_name": "डा. टंक प्रसाद चालिसे",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 20193
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mnju-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मन्जु शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "mnju-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mnju-shrmaa",
+    "id": "version:entity:person/mnju-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

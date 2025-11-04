@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा निजगढ नगरपालिका शहीद चौक",
+    "sys:age": 58,
+    "sys:candidate_id": 335621,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2020.07.13",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनितिक",
+    "sys:father_name": "चर्तुभुज  तिमल्सीना",
+    "sys:gender": "पुरुष",
+    "sys:institute": "गौरीशंकर उ.मा.वि निजगढ",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "दश पास",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1482,
+    "sys:spouse_name": "विष्णुमाया  तिमल्सीना",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 170
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shiv-prsaad-timlsiinaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शिव प्रसाद तिमल्सीना"
+    }
+  ],
+  "short_description": null,
+  "slug": "shiv-prsaad-timlsiinaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shiv-prsaad-timlsiinaa",
+    "id": "version:entity:person/shiv-prsaad-timlsiinaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

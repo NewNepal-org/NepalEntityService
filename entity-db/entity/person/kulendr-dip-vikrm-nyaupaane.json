@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मकवानपुर हेटौडा उपमहानगरपालिका",
+    "sys:age": 39,
+    "sys:candidate_id": 336428,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मकवानपुर",
+    "sys:district": "मकवानपुर",
+    "sys:district_code": 31,
+    "sys:dob_bs": "2040.04.31",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चिरंजिवि  न्यौपाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "सचेत नेपाली पार्टी(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "scet-nepaalii-paarttiiekl-cunaav-cinh",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1404,
+    "sys:spouse_name": "मिनु  खड्का न्यौपाने",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 85,
+    "sys:symbol_name": "बच्चा काखमा लिएकी आमा",
+    "sys:votes_received": 275
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kulendr-dip-vikrm-nyaupaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कुलेन्द्र दिप विक्रम न्यौपाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "kulendr-dip-vikrm-nyaupaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kulendr-dip-vikrm-nyaupaane",
+    "id": "version:entity:person/kulendr-dip-vikrm-nyaupaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

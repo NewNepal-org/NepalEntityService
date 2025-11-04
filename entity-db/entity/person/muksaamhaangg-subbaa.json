@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी धरान उपमहानगरपालिका धरान",
+    "sys:age": 40,
+    "sys:candidate_id": 335543,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ताप्लेजुंग",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2039.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रण बहादुर सुब्‍बा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "शारदा उच्च मा.वि. सप्तरी",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 294,
+    "sys:spouse_name": "ज्‍योती  लिम्‍बु(मेन्‍याङबो)",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 13087
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/muksaamhaangg-subbaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मुक्‍सामहाङ्ग सुब्‍बा"
+    }
+  ],
+  "short_description": null,
+  "slug": "muksaamhaangg-subbaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/muksaamhaangg-subbaa",
+    "id": "version:entity:person/muksaamhaangg-subbaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

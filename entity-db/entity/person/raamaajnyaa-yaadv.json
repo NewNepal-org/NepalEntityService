@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट माधव नारायण नगरपालिका दिपही",
+    "sys:age": 57,
+    "sys:candidate_id": 338627,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2022.02.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "अर्जुन  राय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल संघीय समाजवादी पार्टी",
+    "sys:political_party_slug": "nepaal-snghiiy-smaajvaadii-paarttii",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 888,
+    "sys:spouse_name": "लगंवती  देवी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 29,
+    "sys:symbol_name": "बस",
+    "sys:votes_received": 94
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raamaajnyaa-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रामाज्ञा यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "raamaajnyaa-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raamaajnyaa-yaadv",
+    "id": "version:entity:person/raamaajnyaa-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

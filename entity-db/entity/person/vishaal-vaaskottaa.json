@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही बुटवल उपमहानगरपालिका मनकामना /दिपनगर",
+    "sys:age": 29,
+    "sys:candidate_id": 333754,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2050.06.08",
+    "sys:election_year": 2079,
+    "sys:experience": "ग्रेस फार्मस्युटिकलमा गुणस्तर अधिकृत\nलाईका फार्मस्युटिकलमा गुणस्तर अधिकृत",
+    "sys:father_name": "टेक बहादुर वास्कोटा  वि.के",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पोखरा विश्वविद्यालय",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "स्‍नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1882,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 1097
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vishaal-vaaskottaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विशाल वास्कोटा"
+    }
+  ],
+  "short_description": null,
+  "slug": "vishaal-vaaskottaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vishaal-vaaskottaa",
+    "id": "version:entity:person/vishaal-vaaskottaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

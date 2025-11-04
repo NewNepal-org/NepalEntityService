@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट गौर नगरपालिका दोस्तीया",
+    "sys:age": 48,
+    "sys:candidate_id": 337542,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2031.04.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बाबुलाल प्रसाद गुप्‍ता",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Judha ma. bi.",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "SLC Pass",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1409,
+    "sys:spouse_name": "विमल  गुप्‍ता",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 26922
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ajy-kumaar-guptaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अजय कुमार गुप्‍ता"
+    }
+  ],
+  "short_description": null,
+  "slug": "ajy-kumaar-guptaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ajy-kumaar-guptaa",
+    "id": "version:entity:person/ajy-kumaar-guptaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

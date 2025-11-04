@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा बगनासकाली गाउँपालिका झिरभञ्‍जिङ",
+    "sys:age": 54,
+    "sys:candidate_id": 334647,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2024.07.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "वेनी राम राना",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1831,
+    "sys:spouse_name": "डम्‍वर वहादुर सोमै",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 112
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/durptaa-somai",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दुर्पता सोमै"
+    }
+  ],
+  "short_description": null,
+  "slug": "durptaa-somai",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/durptaa-somai",
+    "id": "version:entity:person/durptaa-somai:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

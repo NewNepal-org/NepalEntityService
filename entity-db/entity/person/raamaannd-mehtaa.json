@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी देवानगन्ज गाउँपालिका",
+    "sys:age": 40,
+    "sys:candidate_id": 335895,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2038.11.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पवन  महतो",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनमत पार्टी",
+    "sys:political_party_slug": "jnmt-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 316,
+    "sys:spouse_name": "सावित्री देवी मेहता",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2289,
+    "sys:symbol_name": "लाउड स्पिकर",
+    "sys:votes_received": 1192
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raamaannd-mehtaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रामानन्द मेहता"
+    }
+  ],
+  "short_description": null,
+  "slug": "raamaannd-mehtaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raamaannd-mehtaa",
+    "id": "version:entity:person/raamaannd-mehtaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

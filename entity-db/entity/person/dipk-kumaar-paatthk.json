@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं नागार्जुन नगरपालिका भैरवरोड",
+    "sys:age": 44,
+    "sys:candidate_id": 334089,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मकवानपुर",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2034.09.14",
+    "sys:election_year": 2079,
+    "sys:experience": "सरकारी कर्मचारी (शिक्षा कार्यालय चितवन) 3 बर्ष\nप्राध्यापक (मकवानपुर बहुमुखी क्याम्पस) 7 बर्ष\nमानब अधिकार/नागरिक अधिकारकर्मी\nलेखक",
+    "sys:father_name": "मोहन प्रसाद पाठक",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभु्वन विश्‍वविद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "एम फिल अंग्रेजी",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 128,
+    "sys:spouse_name": "कल्पना कुमारी वर्तौला",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 356
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dipk-kumaar-paatthk",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दिपक कुमार पाठक"
+    }
+  ],
+  "short_description": null,
+  "slug": "dipk-kumaar-paatthk",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dipk-kumaar-paatthk",
+    "id": "version:entity:person/dipk-kumaar-paatthk:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

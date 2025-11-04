@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु कृष्णनगर नगरपालिका झन्डे नगर",
+    "sys:age": 62,
+    "sys:candidate_id": 336416,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2016.10.17",
+    "sys:election_year": 2079,
+    "sys:experience": "सर्वोच्च अदालतमा वकालत गरेको\nदुई पटक संविधान सभा सदस्य भएको\nकृषि तथा सहकारी मन्त्री पद धारण गरेको\nपटक पटक विदेश भ्रमण गरेको",
+    "sys:father_name": "अब्दुला सलाम शाह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "लखनउ विश्व विद्यालय",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1986,
+    "sys:spouse_name": "नफिस जहाँ शाह",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 1123
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/akbaal-ahmd-shaah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अकबाल अहमद शाह"
+    }
+  ],
+  "short_description": null,
+  "slug": "akbaal-ahmd-shaah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/akbaal-ahmd-shaah",
+    "id": "version:entity:person/akbaal-ahmd-shaah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

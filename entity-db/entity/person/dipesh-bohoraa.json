@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "इलाम फाकफोकथुम गाउँपालिका",
+    "sys:age": 35,
+    "sys:candidate_id": 335886,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "इलाम",
+    "sys:district": "इलाम",
+    "sys:district_code": 3,
+    "sys:dob_bs": "2043.09.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लोक बहादुर बोहोरा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 46,
+    "sys:spouse_name": "दुर्गा कुमारी चौलागाई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 315,
+    "sys:symbol_name": "मुढा",
+    "sys:votes_received": 91
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dipesh-bohoraa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दिपेश बोहोरा"
+    }
+  ],
+  "short_description": null,
+  "slug": "dipesh-bohoraa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dipesh-bohoraa",
+    "id": "version:entity:person/dipesh-bohoraa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

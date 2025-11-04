@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा लहान नगरपालिका",
+    "sys:age": 60,
+    "sys:candidate_id": 333743,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2018.09.12",
+    "sys:election_year": 2079,
+    "sys:experience": "सविधान सभा सदस्य 2065 देखि सकृय",
+    "sys:father_name": "विजय बहादुर गिरी",
+    "sys:gender": "महिला",
+    "sys:institute": "tu",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 511,
+    "sys:spouse_name": "लक्ष्मण  गिरी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 75,
+    "sys:symbol_name": "महिला",
+    "sys:votes_received": 502
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sritaa-girii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सरिता गिरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "sritaa-girii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sritaa-girii",
+    "id": "version:entity:person/sritaa-girii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

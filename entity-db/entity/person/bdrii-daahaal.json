@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा भिमेश्वर  नगरपालिका फुलपा",
+    "sys:age": 39,
+    "sys:candidate_id": 333664,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2039.08.14",
+    "sys:election_year": 2079,
+    "sys:experience": "निर्माण व्यवसाय सम्वन्धि",
+    "sys:father_name": "पर्सुराम  दाहाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "भिम उच्च मा.वि दोलखा",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "प्लस टु",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 614,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 12
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bdrii-daahaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बद्री दाहाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "bdrii-daahaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bdrii-daahaal",
+    "id": "version:entity:person/bdrii-daahaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

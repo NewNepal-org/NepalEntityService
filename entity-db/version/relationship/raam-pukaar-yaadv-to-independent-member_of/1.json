@@ -1,0 +1,13 @@
+{
+  "actor": {
+    "id": "actor:election-importer",
+    "name": "Election Results Importer",
+    "slug": "election-importer"
+  },
+  "changeDescription": "Candidate → Party membership",
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "entityOrRelationshipId": "relationship/raam-pukaar-yaadv-to-independent-member_of",
+  "id": "version:relationship/raam-pukaar-yaadv-to-independent-member_of:1",
+  "type": "RELATIONSHIP",
+  "versionNumber": 1
+}

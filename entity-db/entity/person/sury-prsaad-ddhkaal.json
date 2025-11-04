@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके कोहलपुर नगरपालिका चपरगौडी",
+    "sys:age": 50,
+    "sys:candidate_id": 334525,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाँके",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2029.01.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "तुल्सी राम ढकाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2179,
+    "sys:spouse_name": "तुसाली  ढकाल",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 25026
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sury-prsaad-ddhkaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुर्य प्रसाद ढकाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "sury-prsaad-ddhkaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sury-prsaad-ddhkaal",
+    "id": "version:entity:person/sury-prsaad-ddhkaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली गोदावरी नगरपालिका अत्तरिया",
+    "sys:age": 46,
+    "sys:candidate_id": 333436,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कैलाली",
+    "sys:district": "कैलाली",
+    "sys:district_code": 71,
+    "sys:dob_bs": "2033.04.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दिर्घ राज जोशी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 2296,
+    "sys:spouse_name": "रेनु कुमारी पन्त",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 126
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mekh-raaj-joshii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मेख राज जोशी"
+    }
+  ],
+  "short_description": null,
+  "slug": "mekh-raaj-joshii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mekh-raaj-joshii",
+    "id": "version:entity:person/mekh-raaj-joshii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

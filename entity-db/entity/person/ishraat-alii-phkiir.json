@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही सिद्धार्थनगर नगरपालिका दोगहरा",
+    "sys:age": 32,
+    "sys:candidate_id": 333960,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2047.04.19",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "इन्सान अली फकीर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नवदुर्गा मा.बि.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "९ पास",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1922,
+    "sys:spouse_name": "फातम खातुन फकीर",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 32
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ishraat-alii-phkiir",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "इशरात अली फकीर"
+    }
+  ],
+  "short_description": null,
+  "slug": "ishraat-alii-phkiir",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ishraat-alii-phkiir",
+    "id": "version:entity:person/ishraat-alii-phkiir:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा आरूघाट गाउँपालिका",
+    "sys:age": 43,
+    "sys:candidate_id": 333540,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गोरखा",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "2036.04.19",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चेत  बहादुर रोकाहा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1661,
+    "sys:spouse_name": "प्रमिला   रिजाल",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 4892
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/suvrnn-rokaahaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुवर्ण रोकाहा"
+    }
+  ],
+  "short_description": null,
+  "slug": "suvrnn-rokaahaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/suvrnn-rokaahaa",
+    "id": "version:entity:person/suvrnn-rokaahaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

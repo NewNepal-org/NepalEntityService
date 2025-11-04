@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट मौलापुर नगरपालिका मौलापुर",
+    "sys:age": 51,
+    "sys:candidate_id": 337386,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2028.01.28",
+    "sys:election_year": 2079,
+    "sys:experience": "अन्तरिम व्यवस्थापिका सांसद\nसंविधान सभा सदस्य तथा सभापति\nप्रतिनिधि सभा सदस्य\nपटक-पटक मन्त्री",
+    "sys:father_name": "बाबुलाल  साह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "T.U. Nepal law campus",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "B.L.",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1438,
+    "sys:spouse_name": "रीना देवी साह",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2347,
+    "sys:symbol_name": "चापाकल",
+    "sys:votes_received": 32437
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prbhu-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रभु साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "prbhu-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prbhu-saah",
+    "id": "version:entity:person/prbhu-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

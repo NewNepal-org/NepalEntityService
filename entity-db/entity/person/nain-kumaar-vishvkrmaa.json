@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी ईटहरी उपमहानगरपालिका सरस्वती",
+    "sys:age": 64,
+    "sys:candidate_id": 335339,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "खोटाङ्ग",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2014.09.08",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हर्के  कामी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 320,
+    "sys:spouse_name": "जानुका  विश्वकर्मा",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 460
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nain-kumaar-vishvkrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नैन कुमार विश्वकर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "nain-kumaar-vishvkrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nain-kumaar-vishvkrmaa",
+    "id": "version:entity:person/nain-kumaar-vishvkrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

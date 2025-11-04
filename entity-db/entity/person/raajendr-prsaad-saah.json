@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट गौर नगरपालिका",
+    "sys:age": 62,
+    "sys:candidate_id": 335365,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2016.09.06",
+    "sys:election_year": 2079,
+    "sys:experience": "क) करीब 20 वर्ष सम्म प्राध्यापक\nख) स्वास्थ्य सेवामा 40 वर्षको अनुभव\nग) मधेश प्रदेशको नेपाल अर्थोपेडिक सँघको अध्यक्ष",
+    "sys:father_name": "मखन  साह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Institute of Medicine. IVan Petrorich Pavlov. Sairt. Pexoberg Russia Msxituch of",
+    "sys:political_party": "जनमत पार्टी",
+    "sys:political_party_slug": "jnmt-paarttii",
+    "sys:qualification": "MD.; Mphil; Ms.(Ortho)",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1410,
+    "sys:spouse_name": "सिमा  रानी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2289,
+    "sys:symbol_name": "लाउड स्पिकर",
+    "sys:votes_received": 1411
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raajendr-prsaad-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजेन्द्र प्रसाद साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "raajendr-prsaad-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raajendr-prsaad-saah",
+    "id": "version:entity:person/raajendr-prsaad-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

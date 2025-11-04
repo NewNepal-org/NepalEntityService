@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक खानीखोला गाउँपालिका बेसी",
+    "sys:age": 44,
+    "sys:candidate_id": 336804,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2035.02.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "तेज बहादुर  तिमल्सिना",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी माओवादी समाजवादी",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-smaajvaadii",
+    "sys:qualification": "High School",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1333,
+    "sys:spouse_name": "सम्झना   तिमल्सिना",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2314,
+    "sys:symbol_name": "महिला पुरुष",
+    "sys:votes_received": 101
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prshaant-kesii-timlsinaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रशान्त  के.सी. तिमल्सिना"
+    }
+  ],
+  "short_description": null,
+  "slug": "prshaant-kesii-timlsinaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prshaant-kesii-timlsinaa",
+    "id": "version:entity:person/prshaant-kesii-timlsinaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं कागेश्वरी मनोहरा नगरपालिका पुडासैनी टोल",
+    "sys:age": 58,
+    "sys:candidate_id": 335534,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2020.09.18",
+    "sys:election_year": 2079,
+    "sys:experience": "१. निवृत्त पशु सेवा पशु विकास अधिकृत\n२. कृषि तथा पशुपन्छी मन्त्रालय अन्तर्गत पशु सेवा सम्बन्धी कार्य",
+    "sys:father_name": "रामजी  पुडासैनी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "T.U.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "I.Sc Ag 1st year",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1002,
+    "sys:spouse_name": "मिना  पुडासैनी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2092,
+    "sys:symbol_name": "सिरिन्ज",
+    "sys:votes_received": 218
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kaashiraaj-puddaasainii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "काशिराज पुडासैनी"
+    }
+  ],
+  "short_description": null,
+  "slug": "kaashiraaj-puddaasainii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kaashiraaj-puddaasainii",
+    "id": "version:entity:person/kaashiraaj-puddaasainii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु मायादेवी गाउँपालिका बलुहवा",
+    "sys:age": 39,
+    "sys:candidate_id": 336892,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2039.11.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रामप्रसाद  उपाध्याय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.वि",
+    "sys:political_party": "जनता प्रगतिशिल पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-prgtishil-paarttii-nepaal",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1973,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2324,
+    "sys:symbol_name": "कोदालो बोकेको किसान",
+    "sys:votes_received": 522
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shrvnn-kumaar-upaadhyaay",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "श्रवण कुमार उपाध्‍याय"
+    }
+  ],
+  "short_description": null,
+  "slug": "shrvnn-kumaar-upaadhyaay",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shrvnn-kumaar-upaadhyaay",
+    "id": "version:entity:person/shrvnn-kumaar-upaadhyaay:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

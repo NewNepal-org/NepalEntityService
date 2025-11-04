@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा मेची नगर नगरपालिका गुराँसपथ",
+    "sys:age": 70,
+    "sys:candidate_id": 336956,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2009.04.11",
+    "sys:election_year": 2079,
+    "sys:experience": "प्रदेश सभा सदस्य",
+    "sys:father_name": "सन्तवीर  निरौला",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 57,
+    "sys:spouse_name": "हर्क बहादुर थापा",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 363
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raadhaa-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राधा थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "raadhaa-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raadhaa-thaapaa",
+    "id": "version:entity:person/raadhaa-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

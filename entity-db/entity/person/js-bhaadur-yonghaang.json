@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाँचथर याङवरक गाउँपालिका सालबोटे",
+    "sys:age": 74,
+    "sys:candidate_id": 333418,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाँचथर",
+    "sys:district": "पाँचथर",
+    "sys:district_code": 2,
+    "sys:dob_bs": "2005.05.05",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनीति, समाजसेवा, लेखन, कृर्षि",
+    "sys:father_name": "बहादुर सिह योङहाङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च",
+    "sys:political_party_slug": "snghiiy-loktaantrik-raassttriy-mnyc",
+    "sys:qualification": "साक्षर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 16,
+    "sys:spouse_name": "बाल कुमारि योङहाङ",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 56,
+    "sys:symbol_name": "दाप सहितको खुकुरी",
+    "sys:votes_received": 1011
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/js-bhaadur-yonghaang",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जस बहादुर योङहाङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "js-bhaadur-yonghaang",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/js-bhaadur-yonghaang",
+    "id": "version:entity:person/js-bhaadur-yonghaang:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

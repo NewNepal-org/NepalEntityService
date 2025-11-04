@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ तुल्सिपुर उपमहानगरपालिका",
+    "sys:age": 36,
+    "sys:candidate_id": 334088,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुकुम पूर्व",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2043.04.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गलविर  खड्का",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मौलिक जरोकिलो पार्टी",
+    "sys:political_party_slug": "maulik-jrokilo-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2099,
+    "sys:spouse_name": "तुलसा  खड्का",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2305,
+    "sys:symbol_name": "किबोर्ड सहितको कम्प्युटर",
+    "sys:votes_received": 52
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raamcndr-khddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रामचन्द्र खड्का"
+    }
+  ],
+  "short_description": null,
+  "slug": "raamcndr-khddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raamcndr-khddkaa",
+    "id": "version:entity:person/raamcndr-khddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

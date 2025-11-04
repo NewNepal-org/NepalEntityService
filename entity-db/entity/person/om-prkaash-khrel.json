@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा बाह्रदशी गाउँपालिका",
+    "sys:age": 43,
+    "sys:candidate_id": 333568,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2036.04.31",
+    "sys:election_year": 2079,
+    "sys:experience": "वभिन्न विद्यामा अनेकौ पुस्तक लेखक\nलामो समय देखि अध्यापनको अनुभव\nपत्रकारिता\nपुस्तकहरूको स्पादन तथा इभेन्ट म्यानेजमेन्ट",
+    "sys:father_name": "विष्णु प्रसाद खरेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्‍व विद्यालय",
+    "sys:political_party": "सचेत नेपाली पार्टी(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "scet-nepaalii-paarttiiekl-cunaav-cinh",
+    "sys:qualification": "स्तात्तकोतर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 95,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 85,
+    "sys:symbol_name": "बच्चा काखमा लिएकी आमा",
+    "sys:votes_received": 107
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/om-prkaash-khrel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ओम प्रकाश खरेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "om-prkaash-khrel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/om-prkaash-khrel",
+    "id": "version:entity:person/om-prkaash-khrel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर महालक्ष्मी नगरपालिका सिद्धिरोड",
+    "sys:age": 44,
+    "sys:candidate_id": 333644,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2035.02.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मंगल मान महर्जन",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1282,
+    "sys:spouse_name": "सुमित्रा  महर्जन",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 8666
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/buddh-rtn-mhrjn",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बुद्ध रत्न महर्जन"
+    }
+  ],
+  "short_description": null,
+  "slug": "buddh-rtn-mhrjn",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/buddh-rtn-mhrjn",
+    "id": "version:entity:person/buddh-rtn-mhrjn:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

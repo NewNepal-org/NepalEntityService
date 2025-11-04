@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुकुम पूर्व भूमे गाउँपालिका लाखरफेदी चौर",
+    "sys:age": 55,
+    "sys:candidate_id": 337157,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुकुम पूर्व",
+    "sys:district": "रुकुम पूर्व",
+    "sys:district_code": 52,
+    "sys:dob_bs": "2024.03.29",
+    "sys:election_year": 2079,
+    "sys:experience": "विगत ३५ वर्षदेखि कम्युनिष्ट पार्टीमा सम्बद्ध रहि कार्यरत\nप्रथम प्रदेश सभा सदस्य निर्वाचित लुम्बिनी प्रदेश सभामा सभामुख पदमा रहेर कार्य गरेको।",
+    "sys:father_name": "बिर बहादुर घर्ति",
+    "sys:gender": "पुरुष",
+    "sys:institute": "रा.प.बोर्ड",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "प्रविणता प्रमाण पत्र तह",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2050,
+    "sys:spouse_name": "सिता  आचार्य",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 12262
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/puurnn-bhaadur-ghrti-mgr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पूर्ण बहादुर घर्ति मगर"
+    }
+  ],
+  "short_description": null,
+  "slug": "puurnn-bhaadur-ghrti-mgr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/puurnn-bhaadur-ghrti-mgr",
+    "id": "version:entity:person/puurnn-bhaadur-ghrti-mgr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

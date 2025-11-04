@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सल्यान बागचौर नगरपालिका ब्राहमन टोल",
+    "sys:age": 42,
+    "sys:candidate_id": 336246,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सल्यान",
+    "sys:district": "सल्यान",
+    "sys:district_code": 55,
+    "sys:dob_bs": "2037.02.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नज राज देवकोटा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2071,
+    "sys:spouse_name": "शिला  अधिकारी",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 3695
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/pvn-raaj-devkottaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पवन राज देवकोटा"
+    }
+  ],
+  "short_description": null,
+  "slug": "pvn-raaj-devkottaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/pvn-raaj-devkottaa",
+    "id": "version:entity:person/pvn-raaj-devkottaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

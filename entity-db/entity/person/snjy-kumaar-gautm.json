@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बर्दिया गुलरिया नगरपालिका मङ्गा टोल",
+    "sys:age": 59,
+    "sys:candidate_id": 338269,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बर्दिया",
+    "sys:district": "बर्दिया",
+    "sys:district_code": 66,
+    "sys:dob_bs": "2020.01.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "किशोर कुमार गौतम",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2215,
+    "sys:spouse_name": "साबित्री  गौतम",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 30611
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/snjy-kumaar-gautm",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "संजय कुमार गौतम"
+    }
+  ],
+  "short_description": null,
+  "slug": "snjy-kumaar-gautm",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/snjy-kumaar-gautm",
+    "id": "version:entity:person/snjy-kumaar-gautm:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

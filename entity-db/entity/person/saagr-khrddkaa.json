@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी ईनरुवा नगरपालिका रामबहादुर टोल",
+    "sys:age": 37,
+    "sys:candidate_id": 333389,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2041.10.24",
+    "sys:election_year": 2079,
+    "sys:experience": "शिक्षण पेशाखामा १२ वर्षको अनुभव\nव्यवसायमा १५ वर्षको अनुभव\nराजनीतिमा १५ वर्षको अनुभव",
+    "sys:father_name": "शालिग्राम  ख्रडका",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रि.वि.",
+    "sys:political_party": "नेपालका लागि नेपाली पार्टी",
+    "sys:political_party_slug": "nepaalkaa-laagi-nepaalii-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1091,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2329,
+    "sys:symbol_name": "गोलाकार भित्र शंख",
+    "sys:votes_received": 110
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/saagr-khrddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सागर ख्रडका"
+    }
+  ],
+  "short_description": null,
+  "slug": "saagr-khrddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/saagr-khrddkaa",
+    "id": "version:entity:person/saagr-khrddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

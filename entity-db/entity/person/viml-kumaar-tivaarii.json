@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा मिर्चैया नगरपालिका मटियर्वा",
+    "sys:age": 45,
+    "sys:candidate_id": 334053,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2034.02.03",
+    "sys:election_year": 2079,
+    "sys:experience": "18 years",
+    "sys:father_name": "द्धारीका प्रसाद तिवारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "university of mysore india",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "PhD",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 579,
+    "sys:spouse_name": "दिपिका  मिश्र",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 1683
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/viml-kumaar-tivaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विमल कुमार तिवारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "viml-kumaar-tivaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/viml-kumaar-tivaarii",
+    "id": "version:entity:person/viml-kumaar-tivaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

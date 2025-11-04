@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा अर्जुनधारा नगरपालिका कस्तुरी मार्ग",
+    "sys:age": 54,
+    "sys:candidate_id": 333184,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2024.12.04",
+    "sys:election_year": 2079,
+    "sys:experience": "पर्यापर्यटन र कृषि विकास विस्तार",
+    "sys:father_name": "टिकाराम  गिरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "ग्रनिफोर्ड युनिभर्सिटी",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "स्नातकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 70,
+    "sys:spouse_name": "कुन्ता  कार्की (गिरी)",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 8781
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rudr-prsaad-girii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रुद्र प्रसाद गिरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "rudr-prsaad-girii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rudr-prsaad-girii",
+    "id": "version:entity:person/rudr-prsaad-girii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही ओमसतिया गाउँपालिका भेलाई",
+    "sys:age": 63,
+    "sys:candidate_id": 334795,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2015.10.13",
+    "sys:election_year": 2079,
+    "sys:experience": "क) शिक्षक  पेशा 30 वर्ष\nख) शिक्षक संगठनमा आबद्ध 20 वर्ष\nग) पेप्सन  (निजी विद्यालय संगठन) मा आबद्ध 20 वर्ष",
+    "sys:father_name": "विपत  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "रतनापुर इण्टरकालेज महराजगंज (भारत)",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "आई.ए.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1880,
+    "sys:spouse_name": "बकुली देवी यादव",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 75,
+    "sys:symbol_name": "महिला",
+    "sys:votes_received": 1713
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/maatrkaa-prsaad-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मातृका प्रसाद यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "maatrkaa-prsaad-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/maatrkaa-prsaad-yaadv",
+    "id": "version:entity:person/maatrkaa-prsaad-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं गोकर्णेश्वर नगरपालिका दक्षिणढोका",
+    "sys:age": 66,
+    "sys:candidate_id": 333805,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2012.10.17",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बृहस्पति  देवकोटा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1041,
+    "sys:spouse_name": "लक्ष्मी  देवकोटा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2317,
+    "sys:symbol_name": "खरायो",
+    "sys:votes_received": 17
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jgnnaath-devkottaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जगन्नाथ देवकोटा"
+    }
+  ],
+  "short_description": null,
+  "slug": "jgnnaath-devkottaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jgnnaath-devkottaa",
+    "id": "version:entity:person/jgnnaath-devkottaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रोल्पा रोल्पा नगरपालिका माडिचौर",
+    "sys:age": 51,
+    "sys:candidate_id": 335106,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रोल्पा",
+    "sys:district": "रोल्पा",
+    "sys:district_code": 53,
+    "sys:dob_bs": "2028.02.18",
+    "sys:election_year": 2079,
+    "sys:experience": "अर्थ मन्त्रालय, उर्जा मन्त्रालय र शान्ति तथा पुन:निर्माण मन्त्रालयको जिम्मवारी\nनेकपा माओवादी केन्द्रको उपमहासचिव",
+    "sys:father_name": "इर्ख राम पुन",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेपाल ल क्याम्पस",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2056,
+    "sys:spouse_name": "ओनसरी  घर्ती",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 41714
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/brssmaan-pun",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बर्षमान पुन"
+    }
+  ],
+  "short_description": null,
+  "slug": "brssmaan-pun",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/brssmaan-pun",
+    "id": "version:entity:person/brssmaan-pun:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

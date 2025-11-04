@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/lkssmii-prsaad-kvaan:organization/political_party/nepaal-mjdur-kisaan-paarttii:MEMBER_OF",
+  "sourceEntityId": "entity:person/lkssmii-prsaad-kvaan",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/nepaal-mjdur-kisaan-paarttii",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/lkssmii-prsaad-kvaan-to-nepaal-mjdur-kisaan-paarttii-member_of",
+    "id": "version:relationship/lkssmii-prsaad-kvaan-to-nepaal-mjdur-kisaan-paarttii-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

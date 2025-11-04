@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही हरिवन नगरपालिका पिपराभिता उप्रेती टोल",
+    "sys:age": 55,
+    "sys:candidate_id": 337508,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2024.01.15",
+    "sys:election_year": 2079,
+    "sys:experience": "विभिन्न संघ संस्थामा काम गरेको",
+    "sys:father_name": "गोविन्द प्रसाद उप्रेती",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सरस्वती बहुमुखी क्याम्पस",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 863,
+    "sys:spouse_name": "उर्मिला कुमारी मैनाली",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 32938
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hri-prsaad-upretii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हरि प्रसाद उप्रेती"
+    }
+  ],
+  "short_description": null,
+  "slug": "hri-prsaad-upretii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hri-prsaad-upretii",
+    "id": "version:entity:person/hri-prsaad-upretii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

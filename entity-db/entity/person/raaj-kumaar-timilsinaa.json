@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर बाग्मती गाउँपालिका थली भञ्ज्याङ",
+    "sys:age": 49,
+    "sys:candidate_id": 333365,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2029.07.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम प्रसाद तिमिल्सिना",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1279,
+    "sys:spouse_name": "बिमला  सञ्जेल तिमिल्सिना",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1009,
+    "sys:symbol_name": "डोजर",
+    "sys:votes_received": 3
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaj-kumaar-timilsinaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राज कुमार तिमिल्सिना"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaj-kumaar-timilsinaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaj-kumaar-timilsinaa",
+    "id": "version:entity:person/raaj-kumaar-timilsinaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

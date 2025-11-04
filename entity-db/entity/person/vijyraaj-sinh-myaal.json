@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कैलाली टिकापुर नगरपालिका ब्‍लक नं. बी",
+    "sys:age": 44,
+    "sys:candidate_id": 338636,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कैलाली",
+    "sys:district": "कैलाली",
+    "sys:district_code": 71,
+    "sys:dob_bs": "2035.01.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "खैरे  कामी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2268,
+    "sys:spouse_name": "वेदान्‍तिका  मयाल",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 315,
+    "sys:symbol_name": "मुढा",
+    "sys:votes_received": 230
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vijyraaj-sinh-myaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विजयराज सिंह मयाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "vijyraaj-sinh-myaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vijyraaj-sinh-myaal",
+    "id": "version:entity:person/vijyraaj-sinh-myaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

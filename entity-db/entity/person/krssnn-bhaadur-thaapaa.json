@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट वृन्दावन नगरपालिका धनगढी",
+    "sys:age": 54,
+    "sys:candidate_id": 338892,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2025.06.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जित बहादुर थापा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "आमूल परिवर्तन मसिहा पार्टी नेपाल",
+    "sys:political_party_slug": "aamuul-privrtn-msihaa-paarttii-nepaal",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1468,
+    "sys:spouse_name": "सुसिला  थापा",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 66,
+    "sys:symbol_name": "हृदय",
+    "sys:votes_received": 107
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-bhaadur-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्‍ण बहादुर थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-bhaadur-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-bhaadur-thaapaa",
+    "id": "version:entity:person/krssnn-bhaadur-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

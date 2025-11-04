@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कालिकोट तिलागुफा नगरपालिका राँचुली",
+    "sys:age": 35,
+    "sys:candidate_id": 337269,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कालिकोट",
+    "sys:district": "कालिकोट",
+    "sys:district_code": 60,
+    "sys:dob_bs": "2044.03.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नन्द बहादुर शाही",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2136,
+    "sys:spouse_name": "निर्मला कुमारी शाही",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 1102
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/khddg-raaj-shaahii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "खड्ग राज शाही"
+    }
+  ],
+  "short_description": null,
+  "slug": "khddg-raaj-shaahii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/khddg-raaj-shaahii",
+    "id": "version:entity:person/khddg-raaj-shaahii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

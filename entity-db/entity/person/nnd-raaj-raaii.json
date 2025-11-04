@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी ईटहरी उपमहानगरपालिका",
+    "sys:age": 67,
+    "sys:candidate_id": 333473,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भोजपुर",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2011.11.16",
+    "sys:election_year": 2079,
+    "sys:experience": "कृषि व्यवसाय पशुपालन\nसमाज सेवा राष्ट्रिय विकास सेवा\nवृक्षारोपण नर्सरी व्यवसाय\nगार्मेट ढाका व्यवसाय",
+    "sys:father_name": "लक्ष्मी प्रसाद राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 108,
+    "sys:spouse_name": "मेरीन  लोप्चन",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 810
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nnd-raaj-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नन्द राज राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "nnd-raaj-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nnd-raaj-raaii",
+    "id": "version:entity:person/nnd-raaj-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

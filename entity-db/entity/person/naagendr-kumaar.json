@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही कौडेना गाउँपालिका",
+    "sys:age": 69,
+    "sys:candidate_id": 337297,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2010.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "पूर्व कानून न्याय तथा संघिय व्यवस्थापन सहायक मन्त्री, पूर्व संघिय सांसद",
+    "sys:father_name": "दिनकर  राय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "रामेश्वर महा विद्यालय मुज्जफरपुर विहार भारत",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 877,
+    "sys:spouse_name": "निर्मला  देवी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 18253
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/naagendr-kumaar",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नागेन्द्र कुमार"
+    }
+  ],
+  "short_description": null,
+  "slug": "naagendr-kumaar",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/naagendr-kumaar",
+    "id": "version:entity:person/naagendr-kumaar:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा भगवानपुर गाउँपालिका भगवानपुर",
+    "sys:age": 61,
+    "sys:candidate_id": 334988,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2018.06.14",
+    "sys:election_year": 2079,
+    "sys:experience": "जनता सेवा गर्ने गरेको।",
+    "sys:father_name": "धनमंती  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "hseb",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 508,
+    "sys:spouse_name": "मिरा देवी यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 29462
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-shnkr-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम शंकर यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-shnkr-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-shnkr-yaadv",
+    "id": "version:entity:person/raam-shnkr-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

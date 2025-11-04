@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तनहुँ व्यास नगरपालिका गल्वुवेसी",
+    "sys:age": 52,
+    "sys:candidate_id": 334428,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तनहुँ",
+    "sys:district": "तनहुँ",
+    "sys:district_code": 40,
+    "sys:dob_bs": "2026.07.18",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "मान वहादुर कार्की",
+    "sys:gender": "पुरुष",
+    "sys:institute": "अरनिको मा.वि.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "प्राथमिक तह",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1751,
+    "sys:spouse_name": "शान्ता  कार्की",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2472,
+    "sys:symbol_name": "ट्राफिक प्रहरी",
+    "sys:votes_received": 194
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-cndr-kaarkii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम चन्द्र कार्की"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-cndr-kaarkii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-cndr-kaarkii",
+    "id": "version:entity:person/raam-cndr-kaarkii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

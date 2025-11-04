@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही लालबन्दी नगरपालिका",
+    "sys:age": 44,
+    "sys:candidate_id": 339128,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2035.06.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लाल बहादुर बस्नेत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री नारायण जनता उ.मा.वि. केशरगंज",
+    "sys:political_party": "जनसमाजवादी पार्टी नेपाल",
+    "sys:political_party_slug": "jnsmaajvaadii-paarttii-nepaal",
+    "sys:qualification": "१० कक्षा",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 836,
+    "sys:spouse_name": "गंगा देवी बस्नेत",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2292,
+    "sys:symbol_name": "पाँचकुने तारा",
+    "sys:votes_received": 314
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bl-raam-bsnet",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बल राम बस्नेत"
+    }
+  ],
+  "short_description": null,
+  "slug": "bl-raam-bsnet",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bl-raam-bsnet",
+    "id": "version:entity:person/bl-raam-bsnet:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

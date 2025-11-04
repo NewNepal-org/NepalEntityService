@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर मध्यपुर थिमी नगरपालिका चोडे",
+    "sys:age": 48,
+    "sys:candidate_id": 333496,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2031.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "श्याम कृष्ण श्रेष्ठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जन आदर्श क्याम्पस",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "आइ कम",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1249,
+    "sys:spouse_name": "मनिता ज्योति श्रेष्ठ",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 30
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaju-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राजु श्रेष्ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaju-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaju-shresstth",
+    "id": "version:entity:person/raaju-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

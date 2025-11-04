@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बारा करैयामाई गाउँपालिका मधुवन",
+    "sys:age": 57,
+    "sys:candidate_id": 338037,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बारा",
+    "sys:district": "बारा",
+    "sys:district_code": 33,
+    "sys:dob_bs": "2021.10.18",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हेतु  हजरा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल लोकतान्त्रिक पार्टी",
+    "sys:political_party_slug": "nepaal-loktaantrik-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1503,
+    "sys:spouse_name": "ललमतिया देवी दुसाधीन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 6,
+    "sys:symbol_name": "दुई हात जोडेको नमस्कार",
+    "sys:votes_received": 212
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kml-prsaad-psvaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कमल प्रसाद पसवान"
+    }
+  ],
+  "short_description": null,
+  "slug": "kml-prsaad-psvaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kml-prsaad-psvaan",
+    "id": "version:entity:person/kml-prsaad-psvaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

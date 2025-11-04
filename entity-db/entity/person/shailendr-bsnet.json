@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सोलुखुम्बु थुलुङ दुधकोशी गाउँपालिका",
+    "sys:age": 40,
+    "sys:candidate_id": 335174,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सोलुखुम्बु",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2038.10.25",
+    "sys:election_year": 2079,
+    "sys:experience": "पत्रकारीता \nविभिन्न सामाजिक कार्यमा संलग्न\nसामाजिक संघ संस्थामा आवद्ध",
+    "sys:father_name": "नर बहादुर बस्नेत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1094,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1029,
+    "sys:symbol_name": "कैँची",
+    "sys:votes_received": 82
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shailendr-bsnet",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शैलेन्द्र बस्नेत"
+    }
+  ],
+  "short_description": null,
+  "slug": "shailendr-bsnet",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shailendr-bsnet",
+    "id": "version:entity:person/shailendr-bsnet:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

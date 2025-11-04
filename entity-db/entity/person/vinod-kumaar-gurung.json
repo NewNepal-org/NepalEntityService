@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा बारपाक सुलीकोट गाउँपालिका",
+    "sys:age": 44,
+    "sys:candidate_id": 333848,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गोरखा",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "2035.02.17",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजीक तथा राजनितिक अभियन्ता ।",
+    "sys:father_name": "प्रेम बहादुर गुरुङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "साक्षर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1679,
+    "sys:spouse_name": "सुनिता  तामाङ",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 105
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vinod-kumaar-gurung",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विनोद कुमार गुरुङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "vinod-kumaar-gurung",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vinod-kumaar-gurung",
+    "id": "version:entity:person/vinod-kumaar-gurung:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

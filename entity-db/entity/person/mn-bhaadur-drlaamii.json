@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा माथागढी गाउँपालिका खानीछाप",
+    "sys:age": 48,
+    "sys:candidate_id": 334142,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2031.01.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दिल बहादुर दर्लामी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "High School",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1826,
+    "sys:spouse_name": "रेखा  दर्लामी",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 1604
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mn-bhaadur-drlaamii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मन बहादुर दर्लामी"
+    }
+  ],
+  "short_description": null,
+  "slug": "mn-bhaadur-drlaamii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mn-bhaadur-drlaamii",
+    "id": "version:entity:person/mn-bhaadur-drlaamii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

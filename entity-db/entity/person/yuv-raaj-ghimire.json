@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गुल्मी धुर्कोट गाउँपालिका अजिमिर",
+    "sys:age": 48,
+    "sys:candidate_id": 334207,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गुल्मी",
+    "sys:district": "गुल्मी",
+    "sys:district_code": 42,
+    "sys:dob_bs": "2031.03.28",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक तथा राजनीतिक कार्य\nसहकारी सम्बन्धी \nगैर सरकारी संस्था",
+    "sys:father_name": "रेश्मा राज घिमिरे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1803,
+    "sys:spouse_name": "तुलसा  घिमिरे",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 434
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/yuv-raaj-ghimire",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "युव राज घिमिरे"
+    }
+  ],
+  "short_description": null,
+  "slug": "yuv-raaj-ghimire",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/yuv-raaj-ghimire",
+    "id": "version:entity:person/yuv-raaj-ghimire:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

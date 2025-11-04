@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग सुन्दरहरैंचा नगरपालिका",
+    "sys:age": 45,
+    "sys:candidate_id": 335971,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2033.09.21",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जगत बहादुर थेवे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री पञ्‍चायत मा.वि",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "6",
+    "sys:serial_no": 285,
+    "sys:spouse_name": "आशा  लिम्बु",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 192
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lkssmii-theve",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लक्ष्मी थेवे"
+    }
+  ],
+  "short_description": null,
+  "slug": "lkssmii-theve",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lkssmii-theve",
+    "id": "version:entity:person/lkssmii-theve:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

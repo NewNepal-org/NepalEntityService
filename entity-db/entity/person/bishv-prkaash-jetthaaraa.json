@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बझाङ्ग केदारस्युँ गाउँपालिका रायल",
+    "sys:age": 51,
+    "sys:candidate_id": 336952,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बझाङ्ग",
+    "sys:district": "बझाङ्ग",
+    "sys:district_code": 69,
+    "sys:dob_bs": "2027.11.27",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दमन बहादुर जेठारा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2251,
+    "sys:spouse_name": "दिपिका  जेठारा",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 1208
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bishv-prkaash-jetthaaraa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बिश्व प्रकाश जेठारा"
+    }
+  ],
+  "short_description": null,
+  "slug": "bishv-prkaash-jetthaaraa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bishv-prkaash-jetthaaraa",
+    "id": "version:entity:person/bishv-prkaash-jetthaaraa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

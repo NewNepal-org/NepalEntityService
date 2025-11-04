@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा भगवानपुर गाउँपालिका भगवानपुर",
+    "sys:age": 30,
+    "sys:candidate_id": 337680,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2049.06.15",
+    "sys:election_year": 2079,
+    "sys:experience": "समाज सेवा गर्दै आएको।",
+    "sys:father_name": "सिता देवी यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेपाल टेकनिकल जनकपुर।",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 530,
+    "sys:spouse_name": "मिनिका  झा",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 6
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/puspendr-kumaar-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पुस्पेन्द्र कुमार यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "puspendr-kumaar-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/puspendr-kumaar-yaadv",
+    "id": "version:entity:person/puspendr-kumaar-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

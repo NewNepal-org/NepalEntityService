@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "खोटाङ्ग साकेला गाउँपालिका",
+    "sys:age": 40,
+    "sys:candidate_id": 337227,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "खोटाङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2039.01.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गडुलध्वोज  खडका",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी लेनिनवादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-leninvaadii",
+    "sys:qualification": "slc",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 222,
+    "sys:spouse_name": "डिग माया खत्री",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 9,
+    "sys:symbol_name": "हँसिया र तारा",
+    "sys:votes_received": 234
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/uddhim-bhaadur-khddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "उद्धिम बहादुर खड्का"
+    }
+  ],
+  "short_description": null,
+  "slug": "uddhim-bhaadur-khddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/uddhim-bhaadur-khddkaa",
+    "id": "version:entity:person/uddhim-bhaadur-khddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्सा सखुवा प्रसौनी गाउँपालिका कटैया",
+    "sys:age": 43,
+    "sys:candidate_id": 334038,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्सा",
+    "sys:district": "पर्सा",
+    "sys:district_code": 34,
+    "sys:dob_bs": "2036.05.17",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनीती",
+    "sys:father_name": "मैनुदिन  अंसारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेपाल राष्ट्र बिद्या पीठ",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1591,
+    "sys:spouse_name": "मिरजहान  खातुन",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2347,
+    "sys:symbol_name": "चापाकल",
+    "sys:votes_received": 35
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mhmd-alii-akbr-ansaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "महमद अली अकबर अंसारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "mhmd-alii-akbr-ansaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mhmd-alii-akbr-ansaarii",
+    "id": "version:entity:person/mhmd-alii-akbr-ansaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

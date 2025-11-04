@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट देवाही गोनाही   नगरपालिका नदिपारी",
+    "sys:age": 39,
+    "sys:candidate_id": 333405,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "पर्सा",
+    "sys:district_code": 34,
+    "sys:dob_bs": "2040.05.31",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम औतार साह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1579,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 40
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sroj-kumaar-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सरोज कुमार साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "sroj-kumaar-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sroj-kumaar-saah",
+    "id": "version:entity:person/sroj-kumaar-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

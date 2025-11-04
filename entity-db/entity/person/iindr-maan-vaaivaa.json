@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही बागमती नगरपालिका धरहरा",
+    "sys:age": 53,
+    "sys:candidate_id": 339132,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2026.02.18",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनीति/कृषि",
+    "sys:father_name": "मंगल वहादुर वाइवा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जनता कल्याण प्रा वि",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "६ कक्षाा",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 869,
+    "sys:spouse_name": "छोइसाङ्ग मायाँ स्याङ्गतान",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 486
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/iindr-maan-vaaivaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ईन्द्र मान वाइवा"
+    }
+  ],
+  "short_description": null,
+  "slug": "iindr-maan-vaaivaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/iindr-maan-vaaivaa",
+    "id": "version:entity:person/iindr-maan-vaaivaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

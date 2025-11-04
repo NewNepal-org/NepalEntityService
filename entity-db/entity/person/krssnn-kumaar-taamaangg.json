@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं बुढानिलकण्ठ नगरपालिका",
+    "sys:age": 59,
+    "sys:candidate_id": 335033,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2020.05.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जित वहादुर तामाङ्ग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Ph. D",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1059,
+    "sys:spouse_name": "राधा देवी तामाङ्ग",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2467,
+    "sys:symbol_name": "जुँगा सहितको अनुहार",
+    "sys:votes_received": 56
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-kumaar-taamaangg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण कुमार तामाङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-kumaar-taamaangg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-kumaar-taamaangg",
+    "id": "version:entity:person/krssnn-kumaar-taamaangg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

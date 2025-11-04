@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तेर्हथुम म्याङलुङ नगरपालिका माझगाउँ",
+    "sys:age": 64,
+    "sys:candidate_id": 334143,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तेर्हथुम",
+    "sys:district": "तेर्हथुम",
+    "sys:district_code": 6,
+    "sys:dob_bs": "2014.09.13",
+    "sys:election_year": 2079,
+    "sys:experience": "(क). वि.सं. २०३४ साल देखी २०४७ साल सम्म सरकारी सेवामा ओभरसियर र का.मु. ईञ्‍जिनियर भै काम गरेको। \n(ख). वि.सं. २०४८ र २०५६ सालमा तेह्रथुम जिल्लाबाट ने.क.पा. (एमाले) को तर्फबाट प्रतिनिधि सभा सदस्यमा निर्वाचित भएको।",
+    "sys:father_name": "ललित बहादुर तम्वाहाङफे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय, मानविकी तथा सामाजिक शास्त्र डीनको कार्यालय, किर्तिपुर",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "विद्यावारिधी (पिएच.डि.)",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 159,
+    "sys:spouse_name": "झुमा कुमारी सुब्बा",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 18631
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bijy-subbaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बिजय सुब्बा"
+    }
+  ],
+  "short_description": null,
+  "slug": "bijy-subbaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bijy-subbaa",
+    "id": "version:entity:person/bijy-subbaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

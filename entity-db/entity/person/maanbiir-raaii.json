@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सोलुखुम्बु माप्य दुधकोशी गाउँपालिका ठुल्ढुङ्गा",
+    "sys:age": 52,
+    "sys:candidate_id": 334649,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सोलुखुम्बु",
+    "sys:district": "सोलुखुम्बु",
+    "sys:district_code": 11,
+    "sys:dob_bs": "2027.03.28",
+    "sys:election_year": 2079,
+    "sys:experience": "इलाका सदस्य\nपार्टी अध्यक्ष(जिल्ला)\nसदस्य, दुर्गम क्षेत्र विकास समिति",
+    "sys:father_name": "आश बहादुर राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जुनबेशी मा.वि.",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 386,
+    "sys:spouse_name": "कुमारी  राई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 19324
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/maanbiir-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मानबीर राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "maanbiir-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/maanbiir-raaii",
+    "id": "version:entity:person/maanbiir-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

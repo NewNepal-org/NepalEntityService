@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुकुम पूर्व भूमे गाउँपालिका सेराबाङ",
+    "sys:age": 65,
+    "sys:candidate_id": 338847,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुकुम पूर्व",
+    "sys:district": "रुकुम पूर्व",
+    "sys:district_code": 52,
+    "sys:dob_bs": "2014.04.31",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जुद्वविर बुढा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2054,
+    "sys:spouse_name": "लक्ष्मी  बुढा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 464
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rtn-bhaadur-buddhaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रतन बहादुर बुढा"
+    }
+  ],
+  "short_description": null,
+  "slug": "rtn-bhaadur-buddhaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rtn-bhaadur-buddhaa",
+    "id": "version:entity:person/rtn-bhaadur-buddhaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

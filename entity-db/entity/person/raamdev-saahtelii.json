@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी तिरहुत गाउँपालिका विर्ताटोल",
+    "sys:age": 63,
+    "sys:candidate_id": 337973,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2016.03.25",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हितलाल  साह(तेली)",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 440,
+    "sys:spouse_name": "सुमित्रा देवी साह(तेली)",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 14312
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raamdev-saahtelii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रामदेव साह(तेली)"
+    }
+  ],
+  "short_description": null,
+  "slug": "raamdev-saahtelii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raamdev-saahtelii",
+    "id": "version:entity:person/raamdev-saahtelii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा गौरिशंकर  गाउँपालिका तिनेरु",
+    "sys:age": 46,
+    "sys:candidate_id": 333793,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2032.08.23",
+    "sys:election_year": 2079,
+    "sys:experience": "कृषिमा सामान्य ज्ञान\nराजनीतिमा सामान्य",
+    "sys:father_name": "जगत बहादुर बुढाथोकी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "सामान्य लेखपढ",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 605,
+    "sys:spouse_name": "निता  ठकुरी (बुढाथोकी)",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2456,
+    "sys:symbol_name": "लोहोरो सिलौटो",
+    "sys:votes_received": 118
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tthaakur-bhaadur-buddhaathokii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ठाकुर बहादुर बुढाथोकी"
+    }
+  ],
+  "short_description": null,
+  "slug": "tthaakur-bhaadur-buddhaathokii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tthaakur-bhaadur-buddhaathokii",
+    "id": "version:entity:person/tthaakur-bhaadur-buddhaathokii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

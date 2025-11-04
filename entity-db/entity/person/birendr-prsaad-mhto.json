@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा कर्जन्हा नगरपालिका कर्जन्हा",
+    "sys:age": 53,
+    "sys:candidate_id": 335377,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2026.03.21",
+    "sys:election_year": 2079,
+    "sys:experience": "अर्थशास्त्रमा विधापारिधी गरेको",
+    "sys:father_name": "राम अशिस साह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "वेलारुद्र स्टेट इकोनोमिक्स युनिभर्सिटी",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "Ph. D",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 576,
+    "sys:spouse_name": "कृती कुमारि महतो",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 24102
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/birendr-prsaad-mhto",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बिरेन्द्र प्रसाद महतो"
+    }
+  ],
+  "short_description": null,
+  "slug": "birendr-prsaad-mhto",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/birendr-prsaad-mhto",
+    "id": "version:entity:person/birendr-prsaad-mhto:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

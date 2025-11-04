@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "अर्घाखांची सितगंगा नगरपालिका ‌ओखलढुङ्गा",
+    "sys:age": 51,
+    "sys:candidate_id": 338038,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "अर्घाखांची",
+    "sys:district": "अर्घाखांची",
+    "sys:district_code": 44,
+    "sys:dob_bs": "2028.07.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "प्रेम नारायण थापा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1842,
+    "sys:spouse_name": "हरी कला थापा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 97
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/puurnn-bhaaduur-thaapaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पूर्ण बहादूर थापा"
+    }
+  ],
+  "short_description": null,
+  "slug": "puurnn-bhaaduur-thaapaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/puurnn-bhaaduur-thaapaa",
+    "id": "version:entity:person/puurnn-bhaaduur-thaapaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

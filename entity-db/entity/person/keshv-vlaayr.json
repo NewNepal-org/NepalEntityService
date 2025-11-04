@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "डोटी शिखर नगरपालिका वगडी",
+    "sys:age": 27,
+    "sys:candidate_id": 333838,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "डोटी",
+    "sys:district": "डोटी",
+    "sys:district_code": 70,
+    "sys:dob_bs": "2051.12.04",
+    "sys:election_year": 2079,
+    "sys:experience": "२ वर्षको शिक्षण अनुभव\n२ वर्ष वेब डेभलपर अनुभव\n१ वर्ष NEO Digital मा सपोर्ट हेड",
+    "sys:father_name": "कृष्ण  वलायर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Siddhnath Science campus, mahendranagar",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2260,
+    "sys:spouse_name": "",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 774
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/keshv-vlaayr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "केशव वलायर"
+    }
+  ],
+  "short_description": null,
+  "slug": "keshv-vlaayr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/keshv-vlaayr",
+    "id": "version:entity:person/keshv-vlaayr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

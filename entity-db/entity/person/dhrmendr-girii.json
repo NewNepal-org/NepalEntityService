@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कन्चनपुर बेलौरी नगरपालिका बजार",
+    "sys:age": 37,
+    "sys:candidate_id": 336233,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कन्चनपुर",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district_code": 77,
+    "sys:dob_bs": "2041.11.05",
+    "sys:election_year": 2079,
+    "sys:experience": "शिक्षक गणित",
+    "sys:father_name": "भोला  गिरी(गोसाई)",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2395,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2317,
+    "sys:symbol_name": "खरायो",
+    "sys:votes_received": 426
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dhrmendr-girii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "धर्मेन्‍द्र गिरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "dhrmendr-girii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dhrmendr-girii",
+    "id": "version:entity:person/dhrmendr-girii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

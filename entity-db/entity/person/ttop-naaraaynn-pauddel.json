@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही बुटवल उपमहानगरपालिका मजुवा",
+    "sys:age": 45,
+    "sys:candidate_id": 334290,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "अर्घाखांची",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2033.12.21",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "ढुण्डिराज  पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "High School",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1909,
+    "sys:spouse_name": "सीता  पौडेल",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2317,
+    "sys:symbol_name": "खरायो",
+    "sys:votes_received": 18
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ttop-naaraaynn-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "टोप नारायण पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "ttop-naaraaynn-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ttop-naaraaynn-pauddel",
+    "id": "version:entity:person/ttop-naaraaynn-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

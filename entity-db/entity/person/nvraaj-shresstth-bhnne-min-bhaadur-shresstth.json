@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा भिमेश्वर  नगरपालिका टुटेपानी बजार",
+    "sys:age": 46,
+    "sys:candidate_id": 335819,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2033.01.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "निल बहादुर श्रेष्‍ठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "गौरीशंकर बहुमुखी क्याम्पस",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी नेपाल",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii-nepaal",
+    "sys:qualification": "वि.ए पास",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 603,
+    "sys:spouse_name": "नम्रता  श्रेष्‍ठ",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2332,
+    "sys:symbol_name": "तीर",
+    "sys:votes_received": 198
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nvraaj-shresstth-bhnne-min-bhaadur-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नवराज श्रेष्‍ठ भन्ने मिन बहादुर श्रेष्‍ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "nvraaj-shresstth-bhnne-min-bhaadur-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nvraaj-shresstth-bhnne-min-bhaadur-shresstth",
+    "id": "version:entity:person/nvraaj-shresstth-bhnne-min-bhaadur-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बर्दिया बासगढी नगरपालिका",
+    "sys:age": 69,
+    "sys:candidate_id": 336361,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "बर्दिया",
+    "sys:district_code": 66,
+    "sys:dob_bs": "2009.12.08",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "पुरीचन्द्र  न्यौपाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2224,
+    "sys:spouse_name": "गौरी  न्यौपाने",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 166
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hrilaal-nyaupaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हरिलाल न्यौपाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "hrilaal-nyaupaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hrilaal-nyaupaane",
+    "id": "version:entity:person/hrilaal-nyaupaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

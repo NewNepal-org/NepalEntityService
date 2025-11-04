@@ -18,6 +18,7 @@ uvicorn = {version = "^0.24.0", optional = true}
 wikipedia = {version = "^1.4.0", optional = true}
 google-cloud-aiplatform = {version = "^1.38.0", optional = true}
 google-auth = {version = "^2.23.0", optional = true}
+indic-transliteration = "^2.3.75"
 
 [tool.poetry.extras]
 api = ["fastapi", "uvicorn"]

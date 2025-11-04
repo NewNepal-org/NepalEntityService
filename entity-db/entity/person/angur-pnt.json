@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका प्रगतिटोल मार्ग",
+    "sys:age": 43,
+    "sys:candidate_id": 333443,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2035.07.23",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजीक राजनितिक रुपमा क्रियासिल\nसूचना प्रविधि सम्वन्धी कार्य",
+    "sys:father_name": "यादव राज पन्त",
+    "sys:gender": "पुरुष",
+    "sys:institute": "दिल्ली विश्वविद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1634,
+    "sys:spouse_name": "चित्र रेखा सिलवाल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2460,
+    "sys:symbol_name": "अङ्गुरको झुप्पा",
+    "sys:votes_received": 46
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/angur-pnt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अंगुर पन्त"
+    }
+  ],
+  "short_description": null,
+  "slug": "angur-pnt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/angur-pnt",
+    "id": "version:entity:person/angur-pnt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

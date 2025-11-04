@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "जुम्ला तिला गाउँपालिका",
+    "sys:age": 34,
+    "sys:candidate_id": 333223,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "जुम्ला",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2045.01.14",
+    "sys:election_year": 2079,
+    "sys:experience": "अध्यापन",
+    "sys:father_name": "जुन प्रसाद आचार्य",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1654,
+    "sys:spouse_name": "शान्ति",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1029,
+    "sys:symbol_name": "कैँची",
+    "sys:votes_received": 12
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nnd-raaj-upaadhyaay",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नन्द राज उपाध्याय"
+    }
+  ],
+  "short_description": null,
+  "slug": "nnd-raaj-upaadhyaay",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nnd-raaj-upaadhyaay",
+    "id": "version:entity:person/nnd-raaj-upaadhyaay:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

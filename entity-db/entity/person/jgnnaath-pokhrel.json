@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पूर्व) कावासोती नगरपालिका पंचकन्या चोक",
+    "sys:age": 34,
+    "sys:candidate_id": 333821,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district_code": 45,
+    "sys:dob_bs": "2045.06.05",
+    "sys:election_year": 2079,
+    "sys:experience": "कृषि व्यवसाय ।",
+    "sys:father_name": "हरि राज पोख्रेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "कुमारवर्ती बहुमुखी क्याम्पस",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1867,
+    "sys:spouse_name": "मनिषा  पौडेल",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 366
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jgnnaath-pokhrel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जगन्नाथ पोख्रेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "jgnnaath-pokhrel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jgnnaath-pokhrel",
+    "id": "version:entity:person/jgnnaath-pokhrel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कास्की पोखरा महानगरपालिका कुद्बबिडाँडा",
+    "sys:age": 66,
+    "sys:candidate_id": 337167,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कास्की",
+    "sys:district": "कास्की",
+    "sys:district_code": 39,
+    "sys:dob_bs": "2013.01.23",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "श्रीभक्त  गुरुङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1713,
+    "sys:spouse_name": "पार्बती  गुरुङ",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 1340
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mhaadev-gurung",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "महादेव गुरुङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "mhaadev-gurung",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mhaadev-gurung",
+    "id": "version:entity:person/mhaadev-gurung:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

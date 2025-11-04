@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा गोलबजार नगरपालिका",
+    "sys:age": 34,
+    "sys:candidate_id": 334575,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2045.03.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भरत बहादुर श्रेष्ठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सुष्मा कोईरला मेमोरियल ईन्जिनियरिङ्ग कलेज",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 562,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1006,
+    "sys:symbol_name": "क्यामेरा",
+    "sys:votes_received": 158
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/om-prkaash-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ओम प्रकाश श्रेष्ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "om-prkaash-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/om-prkaash-shresstth",
+    "id": "version:entity:person/om-prkaash-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

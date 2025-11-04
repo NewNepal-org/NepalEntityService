@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा बगनासकाली गाउँपालिका खोरडाँडा",
+    "sys:age": 54,
+    "sys:candidate_id": 335027,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2025.02.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शोभाखर  गैरे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1823,
+    "sys:spouse_name": "चित्रा देवी गैरे",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 28645
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tthaakur-prsaad-gaire",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ठाकुर प्रसाद गैरे"
+    }
+  ],
+  "short_description": null,
+  "slug": "tthaakur-prsaad-gaire",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tthaakur-prsaad-gaire",
+    "id": "version:entity:person/tthaakur-prsaad-gaire:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

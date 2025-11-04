@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही बागमती नगरपालिका",
+    "sys:age": 40,
+    "sys:candidate_id": 337400,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2038.08.27",
+    "sys:election_year": 2079,
+    "sys:experience": "व्यवसाय",
+    "sys:father_name": "राम बहादुर सिङ्गतान",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सप्तगण्डकी बहुमुखी क्याम्पस",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "आइ कम",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 866,
+    "sys:spouse_name": "धन कुमारी लो",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 3566
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/pnyc-bhaadur-singgtaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पञ्च बहादुर सिङ्गतान"
+    }
+  ],
+  "short_description": null,
+  "slug": "pnyc-bhaadur-singgtaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/pnyc-bhaadur-singgtaan",
+    "id": "version:entity:person/pnyc-bhaadur-singgtaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

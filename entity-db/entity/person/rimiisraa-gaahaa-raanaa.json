@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा कालीगण्डकी गाउँपालिका लसर्घा बेंसी गाहा थर",
+    "sys:age": 38,
+    "sys:candidate_id": 337722,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2040.11.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लक्ष्मी प्रसाद गाहा राना",
+    "sys:gender": "महिला",
+    "sys:institute": "आदर्श मा वि",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1783,
+    "sys:spouse_name": "चुरामुनी  गाहा राना",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 335
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rimiisraa-gaahaa-raanaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रिमीसरा गाहा राना"
+    }
+  ],
+  "short_description": null,
+  "slug": "rimiisraa-gaahaa-raanaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rimiisraa-gaahaa-raanaa",
+    "id": "version:entity:person/rimiisraa-gaahaa-raanaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कास्की पोखरा महानगरपालिका प्रस्याङ्ग",
+    "sys:age": 36,
+    "sys:candidate_id": 334638,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कास्की",
+    "sys:district": "कास्की",
+    "sys:district_code": 39,
+    "sys:dob_bs": "2043.02.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राज विक्रम भुर्त्याल",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1734,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1011,
+    "sys:symbol_name": "ग्यास सिलिन्डर",
+    "sys:votes_received": 238
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/anitaa-bhurtyaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अनिता भुर्त्याल"
+    }
+  ],
+  "short_description": null,
+  "slug": "anitaa-bhurtyaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/anitaa-bhurtyaal",
+    "id": "version:entity:person/anitaa-bhurtyaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

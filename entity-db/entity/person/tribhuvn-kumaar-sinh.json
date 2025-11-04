@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही बरहथवा नगरपालिका बरहथवा",
+    "sys:age": 49,
+    "sys:candidate_id": 339133,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2030.05.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जुडी प्रसाद सिंह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "जनमत पार्टी",
+    "sys:political_party_slug": "jnmt-paarttii",
+    "sys:qualification": "ईन्जिनियर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 865,
+    "sys:spouse_name": "शोभा कुमारी महतो",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2289,
+    "sys:symbol_name": "लाउड स्पिकर",
+    "sys:votes_received": 5519
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tribhuvn-kumaar-sinh",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "त्रिभुवन कुमार सिंह"
+    }
+  ],
+  "short_description": null,
+  "slug": "tribhuvn-kumaar-sinh",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tribhuvn-kumaar-sinh",
+    "id": "version:entity:person/tribhuvn-kumaar-sinh:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

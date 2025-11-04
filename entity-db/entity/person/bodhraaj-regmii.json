@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा पुतलीबजार नगरपालिका नयाँबजार",
+    "sys:age": 32,
+    "sys:candidate_id": 333649,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2047.05.27",
+    "sys:election_year": 2079,
+    "sys:experience": "समाजसेवा",
+    "sys:father_name": "नरेन्द्र प्रसद रेग्मी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "P N Campus",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1768,
+    "sys:spouse_name": "संगिता  पराजुली रेग्मी",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 6065
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bodhraaj-regmii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बोधराज रेग्मी"
+    }
+  ],
+  "short_description": null,
+  "slug": "bodhraaj-regmii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bodhraaj-regmii",
+    "id": "version:entity:person/bodhraaj-regmii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

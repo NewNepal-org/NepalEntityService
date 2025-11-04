@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके नेपालगंज उपमहानगरपालिका जैसपुर",
+    "sys:age": 42,
+    "sys:candidate_id": 337344,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाँके",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2037.01.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "फकिरे  जसगढ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2197,
+    "sys:spouse_name": "अनिसा बानो जसगढ",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 512
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/avdul-hnnaan-jsgddh",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अव्दुल हन्नान जसगढ"
+    }
+  ],
+  "short_description": null,
+  "slug": "avdul-hnnaan-jsgddh",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/avdul-hnnaan-jsgddh",
+    "id": "version:entity:person/avdul-hnnaan-jsgddh:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

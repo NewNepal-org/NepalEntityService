@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "जाजरकोट भेरी नगरपालिका भगवती टोल",
+    "sys:age": 64,
+    "sys:candidate_id": 337966,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "जाजरकोट",
+    "sys:district": "जाजरकोट",
+    "sys:district_code": 62,
+    "sys:dob_bs": "2014.09.15",
+    "sys:election_year": 2079,
+    "sys:experience": "कृषि\nराजनीति\nसमाजसेवा\nप्रतिनिधि सभा सदस्य २०५१ (भूमि सुधार सहायक मन्त्री २०५५)",
+    "sys:father_name": "शालीग्राम  वाग्ले",
+    "sys:gender": "पुरुष",
+    "sys:institute": "कृषि तथा पशु विज्ञान अध्ययन संस्थान रामपुर",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2148,
+    "sys:spouse_name": "चिन्ता कुमारी वाग्ले",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 142
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jhlk-naath-vaagle",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "झलक नाथ वाग्ले"
+    }
+  ],
+  "short_description": null,
+  "slug": "jhlk-naath-vaagle",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jhlk-naath-vaagle",
+    "id": "version:entity:person/jhlk-naath-vaagle:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

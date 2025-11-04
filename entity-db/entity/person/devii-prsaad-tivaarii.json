@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बर्दिया बासगढी नगरपालिका बसन्‍तपुर",
+    "sys:age": 38,
+    "sys:candidate_id": 336023,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बर्दिया",
+    "sys:district": "बर्दिया",
+    "sys:district_code": 66,
+    "sys:dob_bs": "2040.11.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कूल प्रसाद तिवारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2222,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 224
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/devii-prsaad-tivaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देवी प्रसाद तिवारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "devii-prsaad-tivaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/devii-prsaad-tivaarii",
+    "id": "version:entity:person/devii-prsaad-tivaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "sys:election_year": 2079
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:organization/political_party/nepaal-kmyunisstt-paarttii-maaovaadii-smaajvaadii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नेपाल कम्युनिष्ट पार्टी माओवादी समाजवादी"
+    }
+  ],
+  "short_description": null,
+  "slug": "nepaal-kmyunisstt-paarttii-maaovaadii-smaajvaadii",
+  "subType": "political_party",
+  "tags": null,
+  "type": "organization",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported from election results २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:organization/political_party/nepaal-kmyunisstt-paarttii-maaovaadii-smaajvaadii",
+    "id": "version:entity:organization/political_party/nepaal-kmyunisstt-paarttii-maaovaadii-smaajvaadii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

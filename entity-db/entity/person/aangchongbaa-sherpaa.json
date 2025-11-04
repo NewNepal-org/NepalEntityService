@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रामेछाप उमाकुण्ड गाउँपालिका गचेप्‍टे",
+    "sys:age": 45,
+    "sys:candidate_id": 335293,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रामेछाप",
+    "sys:district": "रामेछाप",
+    "sys:district_code": 18,
+    "sys:dob_bs": "2034.06.11",
+    "sys:election_year": 2079,
+    "sys:experience": "सामन्य साक्षरता",
+    "sys:father_name": "पल्‍दे  शेर्पा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 636,
+    "sys:spouse_name": "छिरिङ पुटी शेर्पा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2124,
+    "sys:symbol_name": "टि टेबुल",
+    "sys:votes_received": 13
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/aangchongbaa-sherpaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "आङछोङबा शेर्पा"
+    }
+  ],
+  "short_description": null,
+  "slug": "aangchongbaa-sherpaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/aangchongbaa-sherpaa",
+    "id": "version:entity:person/aangchongbaa-sherpaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

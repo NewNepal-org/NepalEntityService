@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग रतुवामाई नगरपालिका",
+    "sys:age": 57,
+    "sys:candidate_id": 338200,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2022.03.22",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजसेवा अभियन्ता",
+    "sys:father_name": "प्रशुराम  कटुवाल",
+    "sys:gender": "महिला",
+    "sys:institute": "मोरङ कलेज",
+    "sys:political_party": "नेश्नलिष्ट पिपल्स पार्टी",
+    "sys:political_party_slug": "neshnlisstt-pipls-paarttii",
+    "sys:qualification": "स्ननातक तह",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 212,
+    "sys:spouse_name": "दिपक  बुढाथोकी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1026,
+    "sys:symbol_name": "लाटोकोसेरो",
+    "sys:votes_received": 27
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/minaa-kttuvaal-buddhaathokii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मिना कटुवाल बुढाथोकी"
+    }
+  ],
+  "short_description": null,
+  "slug": "minaa-kttuvaal-buddhaathokii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/minaa-kttuvaal-buddhaathokii",
+    "id": "version:entity:person/minaa-kttuvaal-buddhaathokii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

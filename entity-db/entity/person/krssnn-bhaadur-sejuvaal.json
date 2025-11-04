@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मुगु छायाँनाथ रारा नगरपालिका रोकायावाडा",
+    "sys:age": 55,
+    "sys:candidate_id": 339160,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मुगु",
+    "sys:district": "मुगु",
+    "sys:district_code": 58,
+    "sys:dob_bs": "2024.01.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राजमल  सेजुवाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2126,
+    "sys:spouse_name": "नन्दा देवी सेजुवाल",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 1034,
+    "sys:symbol_name": "जोडी चप्पल",
+    "sys:votes_received": 67
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-bhaadur-sejuvaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्‍ण बहादुर सेजुवाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-bhaadur-sejuvaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-bhaadur-sejuvaal",
+    "id": "version:entity:person/krssnn-bhaadur-sejuvaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

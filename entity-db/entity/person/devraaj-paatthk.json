@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दाङ गढवा गाउँपालिका प्रगतीनगर",
+    "sys:age": 56,
+    "sys:candidate_id": 333427,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दाङ",
+    "sys:district": "दाङ",
+    "sys:district_code": 56,
+    "sys:dob_bs": "2022.11.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "ठाकुर प्रसाद पाठक",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2077,
+    "sys:spouse_name": "सावित्रा कुमारी पाठक",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 13798
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/devraaj-paatthk",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "देवराज पाठक"
+    }
+  ],
+  "short_description": null,
+  "slug": "devraaj-paatthk",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/devraaj-paatthk",
+    "id": "version:entity:person/devraaj-paatthk:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

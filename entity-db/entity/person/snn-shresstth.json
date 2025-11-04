@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं चन्द्रागिरी नगरपालिका इमाखेल",
+    "sys:age": 36,
+    "sys:candidate_id": 334959,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2042.07.03",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कृष्‍ण बहादुर श्रेष्‍ठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "विवेकशील साझा पार्टी",
+    "sys:political_party_slug": "vivekshiil-saajhaa-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "10",
+    "sys:serial_no": 1208,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 42,
+    "sys:symbol_name": "तराजु",
+    "sys:votes_received": 353
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/snn-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सनन श्रेष्‍ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "snn-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/snn-shresstth",
+    "id": "version:entity:person/snn-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा जनकपुरधाम उपमहानगरपालिका पिरियामाइ टोल",
+    "sys:age": 56,
+    "sys:candidate_id": 334471,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2023.05.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "दिगम्बर  चोधरी",
+    "sys:gender": "महिला",
+    "sys:institute": "tu",
+    "sys:political_party": "नेपाल जनता पार्टी",
+    "sys:political_party_slug": "nepaal-jntaa-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 708,
+    "sys:spouse_name": "अमरेन्द्र कुमार झा",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 64,
+    "sys:symbol_name": "कमलको फूल",
+    "sys:votes_received": 201
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/punm-codhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "पुनम चोधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "punm-codhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/punm-codhrii",
+    "id": "version:entity:person/punm-codhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

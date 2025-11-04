@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा पुतलीबजार नगरपालिका अर्चलबोट",
+    "sys:age": 44,
+    "sys:candidate_id": 333697,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2035.06.10",
+    "sys:election_year": 2079,
+    "sys:experience": "क. शिक्षण\nख. पुस्तक प्रकाशन\nग. समाजसेवा",
+    "sys:father_name": "खेम नारायण दोरंगा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Tribhuwan University",
+    "sys:political_party": "मौलिक जरोकिलो पार्टी",
+    "sys:political_party_slug": "maulik-jrokilo-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1773,
+    "sys:spouse_name": "कविता  अर्याल",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2305,
+    "sys:symbol_name": "किबोर्ड सहितको कम्प्युटर",
+    "sys:votes_received": 104
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hri-nepaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हरि नेपाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "hri-nepaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hri-nepaal",
+    "id": "version:entity:person/hri-nepaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

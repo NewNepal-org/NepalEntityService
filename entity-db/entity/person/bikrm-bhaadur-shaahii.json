@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "डडेलधुरा भागेश्वर गाउँपालिका बोगटा",
+    "sys:age": 50,
+    "sys:candidate_id": 334582,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "डडेलधुरा",
+    "sys:district": "डडेलधुरा",
+    "sys:district_code": 74,
+    "sys:dob_bs": "2029.02.05",
+    "sys:election_year": 2079,
+    "sys:experience": "नभएको",
+    "sys:father_name": "गज बहादुर शाही",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2335,
+    "sys:spouse_name": "अमृता  शाही",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 433
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bikrm-bhaadur-shaahii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बिक्रम बहादुर शाही"
+    }
+  ],
+  "short_description": null,
+  "slug": "bikrm-bhaadur-shaahii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bikrm-bhaadur-shaahii",
+    "id": "version:entity:person/bikrm-bhaadur-shaahii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

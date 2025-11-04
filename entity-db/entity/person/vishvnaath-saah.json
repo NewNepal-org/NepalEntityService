@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा गोलबजार नगरपालिका निपनियाँ",
+    "sys:age": 69,
+    "sys:candidate_id": 337184,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2010.04.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सूर्य  साह",
+    "sys:gender": "पुरुष",
+    "sys:institute": "महेन्द्र मोरङ्ग क्याम्पस विराटनगर",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 556,
+    "sys:spouse_name": "सीता  पोखरेल",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 26882
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vishvnaath-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विश्‍वनाथ साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "vishvnaath-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vishvnaath-saah",
+    "id": "version:entity:person/vishvnaath-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

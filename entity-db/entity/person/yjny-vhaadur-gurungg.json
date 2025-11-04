@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "तनहुँ शुक्लागण्डकी नगरपालिका काप्रेक",
+    "sys:age": 38,
+    "sys:candidate_id": 338983,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "तनहुँ",
+    "sys:district": "कास्की",
+    "sys:district_code": 39,
+    "sys:dob_bs": "2040.12.17",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "केश वहादुर गुरुङ्ग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "मंगोल नेशनल अर्गनाइजेसन",
+    "sys:political_party_slug": "mngol-neshnl-argnaaijesn",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1700,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 35,
+    "sys:symbol_name": "कुखुराको भाले",
+    "sys:votes_received": 434
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/yjny-vhaadur-gurungg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "यज्ञ वहादुर गुरुङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "yjny-vhaadur-gurungg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/yjny-vhaadur-gurungg",
+    "id": "version:entity:person/yjny-vhaadur-gurungg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

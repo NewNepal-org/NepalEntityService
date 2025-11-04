@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी खडक नगरपालिका जानकीनगर",
+    "sys:age": 56,
+    "sys:candidate_id": 337918,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2023.04.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बिन्दु  पासवान",
+    "sys:gender": "पुरुष",
+    "sys:institute": "भ.स.रा.ज. मा.वि. कल्याणपुर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 506,
+    "sys:spouse_name": "राधा देवी पासवान ( श्रेष्ठ)",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 31
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/chedii-laal-paasvaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "छेदी लाल पासवान"
+    }
+  ],
+  "short_description": null,
+  "slug": "chedii-laal-paasvaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/chedii-laal-paasvaan",
+    "id": "version:entity:person/chedii-laal-paasvaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

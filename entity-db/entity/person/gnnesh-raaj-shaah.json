@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्सा बहुदरमाई नगरपालिका पिपरा",
+    "sys:age": 41,
+    "sys:candidate_id": 337805,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्सा",
+    "sys:district": "पर्सा",
+    "sys:district_code": 34,
+    "sys:dob_bs": "2038.06.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "अदालत प्रसाद ते‍ली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1578,
+    "sys:spouse_name": "पुनम  शाह",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 54,
+    "sys:symbol_name": "माछा",
+    "sys:votes_received": 193
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gnnesh-raaj-shaah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गणेश राज शाह"
+    }
+  ],
+  "short_description": null,
+  "slug": "gnnesh-raaj-shaah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gnnesh-raaj-shaah",
+    "id": "version:entity:person/gnnesh-raaj-shaah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

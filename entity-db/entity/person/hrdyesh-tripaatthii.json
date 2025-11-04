@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पश्चिम) प्रतापपुर गाउँपालिका कठहवा",
+    "sys:age": 63,
+    "sys:candidate_id": 335486,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पश्चिम)",
+    "sys:district_code": 77,
+    "sys:dob_bs": "2016.03.04",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हरिशंकर  त्रिपाठी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Institute of Orinetal Science Masco",
+    "sys:political_party": "जनता प्रगतिशिल पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-prgtishil-paarttii-nepaal",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2371,
+    "sys:spouse_name": "शोभा  त्रिपाठी",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2324,
+    "sys:symbol_name": "कोदालो बोकेको किसान",
+    "sys:votes_received": 22328
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hrdyesh-tripaatthii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हृदयेश त्रिपाठी"
+    }
+  ],
+  "short_description": null,
+  "slug": "hrdyesh-tripaatthii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hrdyesh-tripaatthii",
+    "id": "version:entity:person/hrdyesh-tripaatthii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

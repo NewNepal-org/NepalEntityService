@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन रत्ननगर नगरपालिका पञ्चकन्या",
+    "sys:age": 52,
+    "sys:candidate_id": 337286,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2027.03.24",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "टोक नाथ दवाडी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल आमा पार्टी(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-aamaa-paarttiiekl-cunaav-cinh",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "7",
+    "sys:serial_no": 1147,
+    "sys:spouse_name": "लक्ष्मी देवी अर्याल (दवाडी)",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 85,
+    "sys:symbol_name": "बच्चा काखमा लिएकी आमा",
+    "sys:votes_received": 77
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-prsaad-dvaaddii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण प्रसाद दवाडी"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-prsaad-dvaaddii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-prsaad-dvaaddii",
+    "id": "version:entity:person/krssnn-prsaad-dvaaddii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

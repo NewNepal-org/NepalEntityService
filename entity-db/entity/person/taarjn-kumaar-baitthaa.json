@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "महोत्तरी बलवा नगरपालिका",
+    "sys:age": 36,
+    "sys:candidate_id": 339079,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "महोत्तरी",
+    "sys:district": "महोत्तरी",
+    "sys:district_code": 21,
+    "sys:dob_bs": "2043.02.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चन्देसर  बैठा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 785,
+    "sys:spouse_name": "शान्ति  देवी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1045,
+    "sys:symbol_name": "आइरन",
+    "sys:votes_received": 116
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/taarjn-kumaar-baitthaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तारजन कुमार बैठा"
+    }
+  ],
+  "short_description": null,
+  "slug": "taarjn-kumaar-baitthaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/taarjn-kumaar-baitthaa",
+    "id": "version:entity:person/taarjn-kumaar-baitthaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

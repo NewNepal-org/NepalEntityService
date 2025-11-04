@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु बुद्धभूमी नगरपालिका रन्गाई",
+    "sys:age": 64,
+    "sys:candidate_id": 335003,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2015.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "पूर्व सिचाई राज्य मंत्री\nमहामन्त्री \nपूर्व जिल्ला सभापति",
+    "sys:father_name": "युवराज  आचार्य",
+    "sys:gender": "पुरुष",
+    "sys:institute": "शंकरदेव क्याम्पस काठमाडौँ",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1983,
+    "sys:spouse_name": "जीवन आचार्य",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 39014
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/surendr-raaj-aacaary",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुरेन्द्र राज आचार्य"
+    }
+  ],
+  "short_description": null,
+  "slug": "surendr-raaj-aacaary",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/surendr-raaj-aacaary",
+    "id": "version:entity:person/surendr-raaj-aacaary:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

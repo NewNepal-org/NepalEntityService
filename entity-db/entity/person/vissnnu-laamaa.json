@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ललितपुर गोदावरी नगरपालिका",
+    "sys:age": 32,
+    "sys:candidate_id": 337526,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ललितपुर",
+    "sys:district": "ललितपुर",
+    "sys:district_code": 28,
+    "sys:dob_bs": "2046.10.18",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सोम बहादुर थामी",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "आमूल परिवर्तन मसिहा पार्टी नेपाल",
+    "sys:political_party_slug": "aamuul-privrtn-msihaa-paarttii-nepaal",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1267,
+    "sys:spouse_name": "राज कुमार लामा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 66,
+    "sys:symbol_name": "हृदय",
+    "sys:votes_received": 32
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vissnnu-laamaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विष्णु लामा"
+    }
+  ],
+  "short_description": null,
+  "slug": "vissnnu-laamaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vissnnu-laamaa",
+    "id": "version:entity:person/vissnnu-laamaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

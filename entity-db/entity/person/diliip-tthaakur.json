@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिराहा सुखीपुर नगरपालिका कविलासी",
+    "sys:age": 34,
+    "sys:candidate_id": 335128,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिराहा",
+    "sys:district": "सिराहा",
+    "sys:district_code": 16,
+    "sys:dob_bs": "2045.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "साधारण लेखपढ",
+    "sys:father_name": "रामसिस  ठाकुर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 551,
+    "sys:spouse_name": "मन्जु देवी ठाकुर",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1029,
+    "sys:symbol_name": "कैँची",
+    "sys:votes_received": 16
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/diliip-tthaakur",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दिलीप ठाकुर"
+    }
+  ],
+  "short_description": null,
+  "slug": "diliip-tthaakur",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/diliip-tthaakur",
+    "id": "version:entity:person/diliip-tthaakur:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

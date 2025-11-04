@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पर्सा पटेर्वा सुगौली गाउँपालिका पथरैया",
+    "sys:age": 64,
+    "sys:candidate_id": 337792,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पर्सा",
+    "sys:district": "पर्सा",
+    "sys:district_code": 34,
+    "sys:dob_bs": "2014.08.25",
+    "sys:election_year": 2079,
+    "sys:experience": "चार पटक प्रतिनिधी सभा सदस्य भएको\nवाणिज्य तथा उद्योग आपुर्ति मन्त्री विज्ञान तथा प्रविधि मन्त्री पार्टी सचेतक\nसविधान सभा सदस्यमा निर्वाचित भई संविधान निर्माण प्रकृयामा भाग लिएको \nजिल्ला सभापती तथा केन्द्रिय सदस्य",
+    "sys:father_name": "रामदयाल महतो थारु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय किर्तिपुर काठमाडौं",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1584,
+    "sys:spouse_name": "गिता देवी चौधरी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 24152
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/surendr-prsaad-caudhrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुरेन्‍द्र प्रसाद चौधरी"
+    }
+  ],
+  "short_description": null,
+  "slug": "surendr-prsaad-caudhrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/surendr-prsaad-caudhrii",
+    "id": "version:entity:person/surendr-prsaad-caudhrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

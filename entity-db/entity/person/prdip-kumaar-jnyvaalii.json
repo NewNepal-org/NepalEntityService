@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गुल्मी रुरुक्षेत्र गाउँपालिका चौतारा",
+    "sys:age": 61,
+    "sys:candidate_id": 336341,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गुल्मी",
+    "sys:district": "गुल्मी",
+    "sys:district_code": 42,
+    "sys:dob_bs": "2018.05.28",
+    "sys:election_year": 2079,
+    "sys:experience": "प्रतिनिधि सभा सदस्य २०५६ संविधान सभा सदस्य २०६४ प्रतिनिधि सभा सदस्य २०७४ पुर्व प्रयटन मन्त्री २०६३ पुर्व पररास्ट्र मन्त्री २०७४ सरकारी वार्ता टोली सदस्य २०६३ संसदिय छानविन समिति सदस्य २०६७ र २०७९",
+    "sys:father_name": "नारायणदत्त  ज्ञवाली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1791,
+    "sys:spouse_name": "सरस्वती  ज्ञवाली (अर्याल)",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 32152
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/prdip-kumaar-jnyvaalii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "प्रदिप कुमार ज्ञवाली"
+    }
+  ],
+  "short_description": null,
+  "slug": "prdip-kumaar-jnyvaalii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/prdip-kumaar-jnyvaalii",
+    "id": "version:entity:person/prdip-kumaar-jnyvaalii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

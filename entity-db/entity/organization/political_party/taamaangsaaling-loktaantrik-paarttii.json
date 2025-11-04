@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "sys:election_year": 2079
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:organization/political_party/taamaangsaaling-loktaantrik-paarttii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तामाङसालिङ लोकतान्त्रिक पार्टी"
+    }
+  ],
+  "short_description": null,
+  "slug": "taamaangsaaling-loktaantrik-paarttii",
+  "subType": "political_party",
+  "tags": null,
+  "type": "organization",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported from election results २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:organization/political_party/taamaangsaaling-loktaantrik-paarttii",
+    "id": "version:entity:organization/political_party/taamaangsaaling-loktaantrik-paarttii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

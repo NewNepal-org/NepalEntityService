@@ -1,0 +1,26 @@
+{
+  "attributes": null,
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "endDate": null,
+  "id": "relationship:person/vijy-kumaar-sinh:organization/political_party/traai-mdhesh-loktaantrik-paarttii:MEMBER_OF",
+  "sourceEntityId": "entity:person/vijy-kumaar-sinh",
+  "startDate": null,
+  "targetEntityId": "entity:organization/political_party/traai-mdhesh-loktaantrik-paarttii",
+  "type": "MEMBER_OF",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Candidate → Party membership",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "relationship/vijy-kumaar-sinh-to-traai-mdhesh-loktaantrik-paarttii-member_of",
+    "id": "version:relationship/vijy-kumaar-sinh-to-traai-mdhesh-loktaantrik-paarttii-member_of:1",
+    "type": "RELATIONSHIP",
+    "versionNumber": 1
+  }
+}

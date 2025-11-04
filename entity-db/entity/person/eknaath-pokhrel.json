@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पूर्व) गैडाकोट नगरपालिका झपर्दी",
+    "sys:age": 51,
+    "sys:candidate_id": 333497,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district_code": 45,
+    "sys:dob_bs": "2027.12.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "भक्त प्रसाद पोख्रेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1861,
+    "sys:spouse_name": "चीज माया पोख्रेल",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2455,
+    "sys:symbol_name": "मौरी",
+    "sys:votes_received": 6
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/eknaath-pokhrel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "एकनाथ पोख्रेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "eknaath-pokhrel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/eknaath-pokhrel",
+    "id": "version:entity:person/eknaath-pokhrel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

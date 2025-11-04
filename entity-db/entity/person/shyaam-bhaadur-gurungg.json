@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नुवाकोट शिवपुरी गाउँपालिका खोलाखर्क",
+    "sys:age": 55,
+    "sys:candidate_id": 338062,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नुवाकोट",
+    "sys:district": "नुवाकोट",
+    "sys:district_code": 25,
+    "sys:dob_bs": "2024.03.08",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सानु सन्त बहादुर गुरुङ्ग",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री महेन्द्र माध्यामिक विद्यालय ,शिवपुरी ३",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 949,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 45
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shyaam-bhaadur-gurungg",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "श्‍याम बहादुर गुरुङ्ग"
+    }
+  ],
+  "short_description": null,
+  "slug": "shyaam-bhaadur-gurungg",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shyaam-bhaadur-gurungg",
+    "id": "version:entity:person/shyaam-bhaadur-gurungg:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "म्याग्दी रघुगंगा गाउँपालिका डाडाँगाउँ",
+    "sys:age": 57,
+    "sys:candidate_id": 336585,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "म्याग्दी",
+    "sys:district": "म्याग्दी",
+    "sys:district_code": 49,
+    "sys:dob_bs": "2022.01.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "चक्रविर  गर्बुजा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2016,
+    "sys:spouse_name": "विष्णु कुमारी गर्बुजा",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 24021
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/khm-bhaadur-grbujaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "खम बहादुर गर्बुजा"
+    }
+  ],
+  "short_description": null,
+  "slug": "khm-bhaadur-grbujaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/khm-bhaadur-grbujaa",
+    "id": "version:entity:person/khm-bhaadur-grbujaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

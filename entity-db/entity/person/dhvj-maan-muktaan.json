@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सर्लाही ईश्वरपुर नगरपालिका",
+    "sys:age": 52,
+    "sys:candidate_id": 338515,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सर्लाही",
+    "sys:district": "सर्लाही",
+    "sys:district_code": 22,
+    "sys:dob_bs": "2026.11.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जगविर  मुक्तान",
+    "sys:gender": "पुरुष",
+    "sys:institute": "रा.रा.ब. क्याम्पस, जनकपुर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "प्रविणता प्रमाणपत्र तह उतिर्ण",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 833,
+    "sys:spouse_name": "राधिका देवी वुढाथोकी",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2455,
+    "sys:symbol_name": "मौरी",
+    "sys:votes_received": 1722
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dhvj-maan-muktaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ध्वज मान मुक्तान"
+    }
+  ],
+  "short_description": null,
+  "slug": "dhvj-maan-muktaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dhvj-maan-muktaan",
+    "id": "version:entity:person/dhvj-maan-muktaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

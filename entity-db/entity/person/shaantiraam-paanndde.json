@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका",
+    "sys:age": 61,
+    "sys:candidate_id": 337084,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नुवाकोट",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2018.01.01",
+    "sys:election_year": 2079,
+    "sys:experience": "पत्रकारिता\nशिक्षक\nखेती किसान",
+    "sys:father_name": "तिर्थराम  पाण्डे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1102,
+    "sys:spouse_name": "मुना  पाण्डे",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2036,
+    "sys:symbol_name": "भङ्गेरा",
+    "sys:votes_received": 20
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shaantiraam-paanndde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शान्तिराम पाण्डे"
+    }
+  ],
+  "short_description": null,
+  "slug": "shaantiraam-paanndde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shaantiraam-paanndde",
+    "id": "version:entity:person/shaantiraam-paanndde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

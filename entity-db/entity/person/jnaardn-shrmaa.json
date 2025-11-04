@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुकुम पश्चिम मुसिकोट नगरपालिका सेरीगाउँ",
+    "sys:age": 59,
+    "sys:candidate_id": 334568,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "",
+    "sys:district": "रुकुम पश्चिम",
+    "sys:district_code": 78,
+    "sys:dob_bs": "2019.12.29",
+    "sys:election_year": 2079,
+    "sys:experience": "उर्जा मन्त्री, गृह मन्त्री, हाल अर्थ मन्त्री",
+    "sys:father_name": "इस्कन्द  शर्मा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)(एकल चुनाव चिन्ह)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maaovaadii-kendrekl-cunaav-cinh",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2406,
+    "sys:spouse_name": "लक्ष्मी  पौडेल",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 3,
+    "sys:symbol_name": "गोलाकारभित्र हँसिया हथौडा",
+    "sys:votes_received": 39549
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jnaardn-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जनार्दन शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "jnaardn-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jnaardn-shrmaa",
+    "id": "version:entity:person/jnaardn-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

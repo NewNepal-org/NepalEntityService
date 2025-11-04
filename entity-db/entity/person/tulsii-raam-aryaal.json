@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बागलुङ ढोरपाटन नगरपालिका सिनेमा रोड",
+    "sys:age": 56,
+    "sys:candidate_id": 337213,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बागलुङ",
+    "sys:district": "बागलुङ",
+    "sys:district_code": 50,
+    "sys:dob_bs": "2022.07.16",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "शिव लाल उपाध्याय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2034,
+    "sys:spouse_name": "कमला  अर्याल",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 407
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tulsii-raam-aryaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तुल्सी राम अर्याल"
+    }
+  ],
+  "short_description": null,
+  "slug": "tulsii-raam-aryaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tulsii-raam-aryaal",
+    "id": "version:entity:person/tulsii-raam-aryaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

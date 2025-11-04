@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका चण्डोल, वंशीधर मार्ग",
+    "sys:age": 55,
+    "sys:candidate_id": 337019,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2024.05.22",
+    "sys:election_year": 2079,
+    "sys:experience": "विभिन्न सामाजिक संघ संस्थाहरुमा नेतृत्वदायी भूमिकामा बसेर काम गरेको।\nयोगको प्रशिक्षक भै थुप्रै स्थान तथा व्यक्तिलाई योग ध्यान प्रशिक्षण गराएको।",
+    "sys:father_name": "ऋषि केशब शर्मा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "नेपालवाद",
+    "sys:political_party_slug": "nepaalvaad",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1095,
+    "sys:spouse_name": "मेनुका  शर्मा",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 69,
+    "sys:symbol_name": "तारापुञ्ज",
+    "sys:votes_received": 68
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/dipk-kumaar-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दिपक कुमार शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "dipk-kumaar-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/dipk-kumaar-shrmaa",
+    "id": "version:entity:person/dipk-kumaar-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

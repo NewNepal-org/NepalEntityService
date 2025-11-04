@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काभ्रेपलाञ्चोक बनेपा नगरपालिका पाकुडोल",
+    "sys:age": 42,
+    "sys:candidate_id": 336811,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काभ्रेपलाञ्चोक",
+    "sys:district": "काभ्रेपलाञ्चोक",
+    "sys:district_code": 29,
+    "sys:dob_bs": "2036.09.10",
+    "sys:election_year": 2079,
+    "sys:experience": "2060 साल देखि रा.प्र.पा. मा क्रियाशील",
+    "sys:father_name": "तिलक बहादुर आले मगर",
+    "sys:gender": "पुरुष",
+    "sys:institute": "चैतन्य मा.वि.",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1342,
+    "sys:spouse_name": "बिमला  आले मगर",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 1933
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ysu-aale-mgr",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "यसु आले मगर"
+    }
+  ],
+  "short_description": null,
+  "slug": "ysu-aale-mgr",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ysu-aale-mgr",
+    "id": "version:entity:person/ysu-aale-mgr:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

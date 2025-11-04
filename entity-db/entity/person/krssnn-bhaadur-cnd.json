@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बैतडी पाटन नगरपालिका पाटन",
+    "sys:age": 68,
+    "sys:candidate_id": 336350,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बैतडी",
+    "sys:district": "बैतडी",
+    "sys:district_code": 73,
+    "sys:dob_bs": "2010.10.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "हरि  चन्द",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेश्नलिष्ट पिपल्स पार्टी",
+    "sys:political_party_slug": "neshnlisstt-pipls-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2328,
+    "sys:spouse_name": "कृष्णा  चन्द",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 1026,
+    "sys:symbol_name": "लाटोकोसेरो",
+    "sys:votes_received": 127
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-bhaadur-cnd",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण बहादुर चन्द"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-bhaadur-cnd",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-bhaadur-cnd",
+    "id": "version:entity:person/krssnn-bhaadur-cnd:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

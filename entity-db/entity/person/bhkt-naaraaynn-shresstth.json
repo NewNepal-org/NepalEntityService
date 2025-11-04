@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "संखुवासभा खाँदवारी नगरपालिका धापासी",
+    "sys:age": 55,
+    "sys:candidate_id": 334481,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "संखुवासभा",
+    "sys:district": "संखुवासभा",
+    "sys:district_code": 5,
+    "sys:dob_bs": "2024.06.23",
+    "sys:election_year": 2079,
+    "sys:experience": "1. अवकास प्राप्‍त नेपाल आर्मी\n2. प्रवासी नेपाली समन्वय सदस्य\n3. विभिन्‍न टोल/संस्थाको अध्यक्ष/सदस्य\n4. हाल सुप्रिम ह्युमन रिसोर्सको कार्यकारी प्रमुख",
+    "sys:father_name": "मान बहादुर श्रेष्ठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "अम्बर सैनिक वोर्डिङ स्कुल छाउनी काठमाडौं",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 148,
+    "sys:spouse_name": "इन्द्र कुमारी श्रेष्ठ",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 1136
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bhkt-naaraaynn-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "भक्त नारायण श्रेष्ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "bhkt-naaraaynn-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bhkt-naaraaynn-shresstth",
+    "id": "version:entity:person/bhkt-naaraaynn-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

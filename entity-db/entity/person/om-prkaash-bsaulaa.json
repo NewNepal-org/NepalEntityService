@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बर्दिया राजापुर नगरपालिका",
+    "sys:age": 37,
+    "sys:candidate_id": 339062,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बर्दिया",
+    "sys:district": "बर्दिया",
+    "sys:district_code": 66,
+    "sys:dob_bs": "2042.03.01",
+    "sys:election_year": 2079,
+    "sys:experience": "देशमा पाका उमेरका नेताले काम गर्न नसकेको\nस्वार्थमा लिप्त भएर देशभरि नै जनताले दुख पाएको\nप्रयाप्त मात्रमा रोजगारीको अवसर सिर्जना गर्न नसकेको",
+    "sys:father_name": "माधव प्रसाद बसौला",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री अमर शहिद दशरथ चन्द उच्च मा वि राजापुर बर्दिया",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2229,
+    "sys:spouse_name": "शान्ता  कुमारी थारु",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 3891
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/om-prkaash-bsaulaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ओम  प्रकाश बसौला"
+    }
+  ],
+  "short_description": null,
+  "slug": "om-prkaash-bsaulaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/om-prkaash-bsaulaa",
+    "id": "version:entity:person/om-prkaash-bsaulaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

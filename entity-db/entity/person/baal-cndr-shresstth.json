@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "लमजुंग बेसीशहर नगरपालिका क्याम्पस रोड",
+    "sys:age": 70,
+    "sys:candidate_id": 337837,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "लमजुंग",
+    "sys:district": "लमजुंग",
+    "sys:district_code": 38,
+    "sys:dob_bs": "2008.09.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नारायण प्रसाद श्रेष्‍ठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1687,
+    "sys:spouse_name": "सरस्वती  श्रेष्‍ठ",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 1234
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/baal-cndr-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बाल चन्द्र श्रेष्‍ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "baal-cndr-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/baal-cndr-shresstth",
+    "id": "version:entity:person/baal-cndr-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

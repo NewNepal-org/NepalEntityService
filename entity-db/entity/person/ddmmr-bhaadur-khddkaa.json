@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बझाङ्ग जयपृथ्वी नगरपालिका रिठापाटा",
+    "sys:age": 64,
+    "sys:candidate_id": 337700,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बझाङ्ग",
+    "sys:district": "बझाङ्ग",
+    "sys:district_code": 69,
+    "sys:dob_bs": "2014.07.30",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गोपी  खड्का",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2254,
+    "sys:spouse_name": "मना देबी खड्का",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 212
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ddmmr-bhaadur-khddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "डम्मर बहादुर खड्का"
+    }
+  ],
+  "short_description": null,
+  "slug": "ddmmr-bhaadur-khddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ddmmr-bhaadur-khddkaa",
+    "id": "version:entity:person/ddmmr-bhaadur-khddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

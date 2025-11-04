@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर सूर्यविनायक नगरपालिका",
+    "sys:age": 47,
+    "sys:candidate_id": 335116,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सल्यान",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2031.11.08",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "महेद्र विर राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सल्यान क्याम्पस",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1251,
+    "sys:spouse_name": "निता  रानाभाट",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 18
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/klp-dip-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कल्प दिप राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "klp-dip-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/klp-dip-raaii",
+    "id": "version:entity:person/klp-dip-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

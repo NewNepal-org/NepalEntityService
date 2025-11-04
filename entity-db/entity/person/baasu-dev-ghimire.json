@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही तिलोत्तमा नगरपालिका",
+    "sys:age": 54,
+    "sys:candidate_id": 339163,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2024.10.13",
+    "sys:election_year": 2079,
+    "sys:experience": "२०७४ सालमा निर्वचित तिलोत्तमा नगरपालिकाको प्रमुख ।",
+    "sys:father_name": "छाया दत्त घिमिरे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Lumbini Banijya campus Butwal",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1945,
+    "sys:spouse_name": "शान्ति  घिमिरे",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 36822
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/baasu-dev-ghimire",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बासु देव घिमिरे"
+    }
+  ],
+  "short_description": null,
+  "slug": "baasu-dev-ghimire",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/baasu-dev-ghimire",
+    "id": "version:entity:person/baasu-dev-ghimire:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

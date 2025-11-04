@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही तिलोत्तमा नगरपालिका झलेनीपुर",
+    "sys:age": 30,
+    "sys:candidate_id": 336359,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2049.05.30",
+    "sys:election_year": 2079,
+    "sys:experience": "लियो जिल्ला  परिषद  325 पि. नेपाल, अध्यक्ष",
+    "sys:father_name": "अणदेव न्‍यौपाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री गिर्वाण सरस्वती संस्कृत विद्यालय, रुपन्देही",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1884,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 455
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lilaamnni-nyaupaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लिलामणि न्‍यौपाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "lilaamnni-nyaupaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lilaamnni-nyaupaane",
+    "id": "version:entity:person/lilaamnni-nyaupaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रौतहट मौलापुर नगरपालिका",
+    "sys:age": 50,
+    "sys:candidate_id": 334091,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रौतहट",
+    "sys:district": "रौतहट",
+    "sys:district_code": 32,
+    "sys:dob_bs": "2029.01.05",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रामविलाश साह तेली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "ठाकुर राम क्याम्पस बिरगंज",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "‌+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1454,
+    "sys:spouse_name": "शोभा देवी साह",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 22,
+    "sys:symbol_name": "उट",
+    "sys:votes_received": 36
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/naagendr-prsaad-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नागेन्द्र प्रसाद साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "naagendr-prsaad-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/naagendr-prsaad-saah",
+    "id": "version:entity:person/naagendr-prsaad-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

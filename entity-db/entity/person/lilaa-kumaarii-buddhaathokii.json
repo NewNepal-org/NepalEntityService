@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गोरखा गोरखा नगरपालिका ठिगुरेश्‍वाँरा",
+    "sys:age": 50,
+    "sys:candidate_id": 336548,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "गोरखा",
+    "sys:district_code": 36,
+    "sys:dob_bs": "2028.08.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "तारा बहादुर देवकोटा",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1668,
+    "sys:spouse_name": "राम शरण बुढाथोकी",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 51
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lilaa-kumaarii-buddhaathokii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लिला कुमारी बुढाथोकी"
+    }
+  ],
+  "short_description": null,
+  "slug": "lilaa-kumaarii-buddhaathokii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lilaa-kumaarii-buddhaathokii",
+    "id": "version:entity:person/lilaa-kumaarii-buddhaathokii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

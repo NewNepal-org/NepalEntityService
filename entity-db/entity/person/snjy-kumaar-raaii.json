@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सुनसरी धरान उपमहानगरपालिका रेल्वे लाइन",
+    "sys:age": 41,
+    "sys:candidate_id": 333556,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सुनसरी",
+    "sys:district": "सुनसरी",
+    "sys:district_code": 10,
+    "sys:dob_bs": "2037.12.22",
+    "sys:election_year": 2079,
+    "sys:experience": "क. घर नक्सा तथा निर्माण\nख. ईटिमेटिङ एण्ड केस्टीङ\nग. HACCP कोअर्डिनेटर\nघ. कन्स्टुमाइजेसन",
+    "sys:father_name": "राजेन्द्र प्रसाद राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "प‍ुर्वाञ्चल बहुप्राविधिक शिक्षालय",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 301,
+    "sys:spouse_name": "गोमा  राई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2301,
+    "sys:symbol_name": "सेलरोटीको चाङ",
+    "sys:votes_received": 367
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/snjy-kumaar-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "संजय कुमार राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "snjy-kumaar-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/snjy-kumaar-raaii",
+    "id": "version:entity:person/snjy-kumaar-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

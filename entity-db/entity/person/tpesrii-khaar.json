@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु कपिलवस्तु नगरपालिका बरगदवा",
+    "sys:age": 64,
+    "sys:candidate_id": 335678,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2015.03.11",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "राम अचल कहार",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "बहुजन शक्ति पार्टी",
+    "sys:political_party_slug": "bhujn-shkti-paarttii",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1969,
+    "sys:spouse_name": "मीरा  कहार",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 15,
+    "sys:symbol_name": "जग",
+    "sys:votes_received": 2248
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tpesrii-khaar",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तपेसरी कहार"
+    }
+  ],
+  "short_description": null,
+  "slug": "tpesrii-khaar",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tpesrii-khaar",
+    "id": "version:entity:person/tpesrii-khaar:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा दमक नगरपालिका",
+    "sys:age": 43,
+    "sys:candidate_id": 333545,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2036.06.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "फणिन्द्र कुमार राजवंशी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री बाणी मा.वि.",
+    "sys:political_party": "लोकतान्त्रिक समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "loktaantrik-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "S L C",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 133,
+    "sys:spouse_name": "मेरी  राजवंशी",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 92,
+    "sys:symbol_name": "साइकल",
+    "sys:votes_received": 105
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cndr-prsaad-raajvnshii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चन्द्र प्रसाद राजवंशी"
+    }
+  ],
+  "short_description": null,
+  "slug": "cndr-prsaad-raajvnshii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cndr-prsaad-raajvnshii",
+    "id": "version:entity:person/cndr-prsaad-raajvnshii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

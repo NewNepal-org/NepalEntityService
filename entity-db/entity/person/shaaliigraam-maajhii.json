@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुली कमलामाई नगरपालिका भिमान",
+    "sys:age": 36,
+    "sys:candidate_id": 336845,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुली",
+    "sys:district": "सिन्धुली",
+    "sys:district_code": 19,
+    "sys:dob_bs": "2042.08.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "नक‍क्ली बहादुर माझी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पाटन संयुक्त क्याम्पस",
+    "sys:political_party": "राष्ट्रिय प्रजातन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-prjaatntr-paarttii",
+    "sys:qualification": "स्नातक",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 641,
+    "sys:spouse_name": "बिन्दु कुमारी माझी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2279,
+    "sys:symbol_name": "हलो",
+    "sys:votes_received": 940
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shaaliigraam-maajhii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शालीग्राम माझी"
+    }
+  ],
+  "short_description": null,
+  "slug": "shaaliigraam-maajhii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shaaliigraam-maajhii",
+    "id": "version:entity:person/shaaliigraam-maajhii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

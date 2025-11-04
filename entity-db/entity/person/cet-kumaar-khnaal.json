@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा अर्जुनधारा नगरपालिका",
+    "sys:age": 47,
+    "sys:candidate_id": 333934,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "इलाम",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2031.11.29",
+    "sys:election_year": 2079,
+    "sys:experience": "रेडियो नेपाल कार्यक्रम सञ्चालक\nसामुदायिक वनको अध्यक्ष ३ वर्ष\nसामुदायिक वन उपभोक्ता महासंघ इलामको उपाध्यक्ष ३ वर्ष",
+    "sys:father_name": "कृष्ण लाल खनाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "आइ ए",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 82,
+    "sys:spouse_name": "सरस्वती  खनाल",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2472,
+    "sys:symbol_name": "ट्राफिक प्रहरी",
+    "sys:votes_received": 80
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cet-kumaar-khnaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चेत कुमार खनाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "cet-kumaar-khnaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cet-kumaar-khnaal",
+    "id": "version:entity:person/cet-kumaar-khnaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

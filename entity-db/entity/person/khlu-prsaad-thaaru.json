@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके खजुरा गाउँपालिका सीगाउ",
+    "sys:age": 74,
+    "sys:candidate_id": 337154,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दाङ",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2004.10.09",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गजापती  थारु",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी मार्क्सवादी (पुष्पलाल)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-maarksvaadii-pussplaal",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2195,
+    "sys:spouse_name": "राज कुमारी चौधरी",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2327,
+    "sys:symbol_name": "गैंती",
+    "sys:votes_received": 596
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/khlu-prsaad-thaaru",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "खलु प्रसाद थारु"
+    }
+  ],
+  "short_description": null,
+  "slug": "khlu-prsaad-thaaru",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/khlu-prsaad-thaaru",
+    "id": "version:entity:person/khlu-prsaad-thaaru:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

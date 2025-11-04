@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा धनुषाधाम नगरपालिका धनुषा गोविन्दपुर",
+    "sys:age": 50,
+    "sys:candidate_id": 339089,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2029.03.27",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "अनिरुध्द  यादव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 673,
+    "sys:spouse_name": "गिता देवी यादव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2196,
+    "sys:symbol_name": "बकुल्लो",
+    "sys:votes_received": 34
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jy-naaraaynn-yaadv",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जय नारायण यादव"
+    }
+  ],
+  "short_description": null,
+  "slug": "jy-naaraaynn-yaadv",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jy-naaraaynn-yaadv",
+    "id": "version:entity:person/jy-naaraaynn-yaadv:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

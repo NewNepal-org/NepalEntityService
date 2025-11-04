@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "स्याङ्जा पुतलीबजार नगरपालिका सपिङ कम्प्लेक्स",
+    "sys:age": 55,
+    "sys:candidate_id": 333546,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "स्याङ्जा",
+    "sys:district": "स्याङ्जा",
+    "sys:district_code": 41,
+    "sys:dob_bs": "2024.04.13",
+    "sys:election_year": 2079,
+    "sys:experience": "राजनीतिक क्षेत्रमा लामो अनुभव",
+    "sys:father_name": "अगने  नेपाली",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Tribhuwan University",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "M.A.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1771,
+    "sys:spouse_name": "अस्मीता  वस्याल नेपाली",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 175
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/som-bhaadur-nepaalii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सोम बहादुर नेपाली"
+    }
+  ],
+  "short_description": null,
+  "slug": "som-bhaadur-nepaalii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/som-bhaadur-nepaalii",
+    "id": "version:entity:person/som-bhaadur-nepaalii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

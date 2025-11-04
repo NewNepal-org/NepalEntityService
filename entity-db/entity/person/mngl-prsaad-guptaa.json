@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु कृष्णनगर नगरपालिका लक्ष्मी नारायण मन्दिर रोड",
+    "sys:age": 77,
+    "sys:candidate_id": 333290,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2002.04.24",
+    "sys:election_year": 2079,
+    "sys:experience": "मानव अधिकारको क्षेत्रमा लामो सम्म कार्यरत ।",
+    "sys:father_name": "लौटन राम गुप्‍ता",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय नेपाल",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1994,
+    "sys:spouse_name": "स्वतन्त्रता देवी गुप्‍ता",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 22619
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mngl-prsaad-guptaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मंगल प्रसाद गुप्‍ता"
+    }
+  ],
+  "short_description": null,
+  "slug": "mngl-prsaad-guptaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mngl-prsaad-guptaa",
+    "id": "version:entity:person/mngl-prsaad-guptaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

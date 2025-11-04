@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मोरङ्ग विराटनगर महानगरपालिका शारदामार्ग",
+    "sys:age": 69,
+    "sys:candidate_id": 334253,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "मोरङ्ग",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2009.08.11",
+    "sys:election_year": 2079,
+    "sys:experience": "नेपाल सदभावना पार्टीमा ५ वर्ष अनुभव",
+    "sys:father_name": "बुलाको  मण्डल केवरत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जनता कानून क्याम्पस विराटनगर",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "IL",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 274,
+    "sys:spouse_name": "मञ्जु देवी केवरत",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2317,
+    "sys:symbol_name": "खरायो",
+    "sys:votes_received": 46
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gyaannd-mnnddl-kevrt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गयानन्द मण्डल केवरत"
+    }
+  ],
+  "short_description": null,
+  "slug": "gyaannd-mnnddl-kevrt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gyaannd-mnnddl-kevrt",
+    "id": "version:entity:person/gyaannd-mnnddl-kevrt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गुल्मी ईस्मा गाउँपालिका वाज",
+    "sys:age": 57,
+    "sys:candidate_id": 336435,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गुल्मी",
+    "sys:district": "गुल्मी",
+    "sys:district_code": 42,
+    "sys:dob_bs": "2022.03.17",
+    "sys:election_year": 2079,
+    "sys:experience": "2056 सालमा गुल्मी क्षेत्र नं ३ बाट निर्वाचित सांसद\n2070 सालमा ऐ. ३ बाट निर्वाचित सांसद\n2074 सालमा गुल्मी क्षेत्र नं २ बाट निर्वाचित सांसद\n2068 सालमा उर्जामन्त्री",
+    "sys:father_name": "भिम बहादुर विष्‍ट",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्व विद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1800,
+    "sys:spouse_name": "प्रतिमा  श्रेष्‍ठ (विष्‍ट)",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 28476
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/gokrnn-raaj-visstt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "गोकर्ण राज विष्‍ट"
+    }
+  ],
+  "short_description": null,
+  "slug": "gokrnn-raaj-visstt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/gokrnn-raaj-visstt",
+    "id": "version:entity:person/gokrnn-raaj-visstt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

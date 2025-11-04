@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मकवानपुर भीमफेदी गाउँपालिका",
+    "sys:age": 58,
+    "sys:candidate_id": 334030,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "मकवानपुर",
+    "sys:district_code": 31,
+    "sys:dob_bs": "2021.06.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "ईश्‍वरी दत्त अर्याल",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1383,
+    "sys:spouse_name": "दिनेश  उपाध्याय",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 25464
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mhaalkssmii-upaadhyaayddinaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "महालक्ष्मी उपाध्याय(डिना)"
+    }
+  ],
+  "short_description": null,
+  "slug": "mhaalkssmii-upaadhyaayddinaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mhaalkssmii-upaadhyaayddinaa",
+    "id": "version:entity:person/mhaalkssmii-upaadhyaayddinaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

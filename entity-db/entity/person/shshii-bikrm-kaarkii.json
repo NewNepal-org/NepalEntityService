@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर सूर्यविनायक नगरपालिका नयाबस्ती",
+    "sys:age": 40,
+    "sys:candidate_id": 333576,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2039.03.11",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक अभियन्ता",
+    "sys:father_name": "रोकट बहादुर कार्की",
+    "sys:gender": "पुरुष",
+    "sys:institute": "नेपाल कमर्स क्याम्पस",
+    "sys:political_party": "नेपाल विवेकशील पार्टी",
+    "sys:political_party_slug": "nepaal-vivekshiil-paarttii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1244,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2307,
+    "sys:symbol_name": "कुकुरको टाउको",
+    "sys:votes_received": 127
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shshii-bikrm-kaarkii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शशी बिक्रम कार्की"
+    }
+  ],
+  "short_description": null,
+  "slug": "shshii-bikrm-kaarkii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shshii-bikrm-kaarkii",
+    "id": "version:entity:person/shshii-bikrm-kaarkii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

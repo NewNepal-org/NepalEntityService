@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा तानसेन नगरपालिका डाँडाडुम",
+    "sys:age": 67,
+    "sys:candidate_id": 336418,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2012.02.26",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "ईश्वरी प्रसाद पाण्डेय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-ekikrt-smaajbaadii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1824,
+    "sys:spouse_name": "रुकमिणी  पाण्डेय",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 1020,
+    "sys:symbol_name": "कलम",
+    "sys:votes_received": 24899
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/som-prsaad-paannddey",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सोम प्रसाद पाण्डेय"
+    }
+  ],
+  "short_description": null,
+  "slug": "som-prsaad-paannddey",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/som-prsaad-paannddey",
+    "id": "version:entity:person/som-prsaad-paannddey:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

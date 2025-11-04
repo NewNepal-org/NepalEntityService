@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा जनकपुरधाम उपमहानगरपालिका",
+    "sys:age": 61,
+    "sys:candidate_id": 337109,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2018.04.22",
+    "sys:election_year": 2079,
+    "sys:experience": "विगत ४५ वर्ष देखि सक्रिय राजनितिमा रही जनताको सेवा गरेको ।\n२ पटक प्रतिनिधि सभा सदस्यमा निर्वाचित भई जनताको सेवामा समर्पित ।\n३ पटक संघिय सरकारमा मन्त्री भई राष्ट्र र जनतालाई सेवा गरेको ।",
+    "sys:father_name": "मखन  महासेठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "विरला इन्सटीच्युट अफ टेक्नोलोजी, ईण्डिया",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "B.E (CIVIL)",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 731,
+    "sys:spouse_name": "जुली कुमारी महतो",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 32236
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rghubiir-mhaasetth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "रघुबीर महासेठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "rghubiir-mhaasetth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rghubiir-mhaasetth",
+    "id": "version:entity:person/rghubiir-mhaasetth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

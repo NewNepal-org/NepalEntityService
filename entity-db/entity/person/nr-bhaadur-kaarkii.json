@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "जाजरकोट छेडागाड नगरपालिका कार्कीगाऊँ",
+    "sys:age": 49,
+    "sys:candidate_id": 335367,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "जाजरकोट",
+    "sys:district": "जाजरकोट",
+    "sys:district_code": 62,
+    "sys:dob_bs": "2029.11.14",
+    "sys:election_year": 2079,
+    "sys:experience": "डि. एफ. आई.डि\nविश्व स्वास्थ्य संगठन\nयुनिसेफ\nविभिन्न प्रशिक्षण",
+    "sys:father_name": "प्रेम  कार्की",
+    "sys:gender": "पुरुष",
+    "sys:institute": "स्टेट युनिभर्सिटि बङ्गलादेश",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "एम. पि. एच.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2145,
+    "sys:spouse_name": "सिता  कार्की",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 2316,
+    "sys:symbol_name": "पुतली",
+    "sys:votes_received": 1191
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/nr-bhaadur-kaarkii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नर बहादुर कार्की"
+    }
+  ],
+  "short_description": null,
+  "slug": "nr-bhaadur-kaarkii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/nr-bhaadur-kaarkii",
+    "id": "version:entity:person/nr-bhaadur-kaarkii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

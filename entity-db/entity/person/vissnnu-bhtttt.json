@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पूर्व) गैडाकोट नगरपालिका हर्कपुर",
+    "sys:age": 39,
+    "sys:candidate_id": 334744,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district_code": 45,
+    "sys:dob_bs": "2039.11.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "खिला शर्मा भट्ट",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1859,
+    "sys:spouse_name": "शुशिला  रिजाल भट्ट",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1009,
+    "sys:symbol_name": "डोजर",
+    "sys:votes_received": 15
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/vissnnu-bhtttt",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "विष्‍णु भट्ट"
+    }
+  ],
+  "short_description": null,
+  "slug": "vissnnu-bhtttt",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/vissnnu-bhtttt",
+    "id": "version:entity:person/vissnnu-bhtttt:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

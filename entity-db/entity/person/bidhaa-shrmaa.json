@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके नेपालगंज उपमहानगरपालिका जैसपुर",
+    "sys:age": 43,
+    "sys:candidate_id": 339095,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाँके",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2035.10.29",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "स्व.भगौती प्रसाद तमोली",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2204,
+    "sys:spouse_name": "गोविन्द राज शर्मा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 22
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bidhaa-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बिधा शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "bidhaa-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bidhaa-shrmaa",
+    "id": "version:entity:person/bidhaa-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

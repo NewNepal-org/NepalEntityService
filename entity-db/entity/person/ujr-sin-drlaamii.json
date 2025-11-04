@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा माथागढी गाउँपालिका चित्रेछाप",
+    "sys:age": 45,
+    "sys:candidate_id": 336141,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2034.03.12",
+    "sys:election_year": 2079,
+    "sys:experience": "शिक्षण\nपशु, स्वास्थ्य तथा कृषि\nसामाजिक संस्था",
+    "sys:father_name": "डिल बहादुर दर्लामी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन बहुमुखी क्याम्पस तानसेन",
+    "sys:political_party": "राष्ट्रिय जनमुक्ति पार्टी",
+    "sys:political_party_slug": "raassttriy-jnmukti-paarttii",
+    "sys:qualification": "I.A.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1818,
+    "sys:spouse_name": "पदम कुमारी दर्लामी",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 13,
+    "sys:symbol_name": "घर",
+    "sys:votes_received": 121
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ujr-sin-drlaamii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "उजर सिं दर्लामी"
+    }
+  ],
+  "short_description": null,
+  "slug": "ujr-sin-drlaamii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ujr-sin-drlaamii",
+    "id": "version:entity:person/ujr-sin-drlaamii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

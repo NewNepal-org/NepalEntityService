@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "दोलखा वैतेश्वर  गाउँपालिका हिटी",
+    "sys:age": 45,
+    "sys:candidate_id": 339176,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "दोलखा",
+    "sys:district": "दोलखा",
+    "sys:district_code": 17,
+    "sys:dob_bs": "2033.08.27",
+    "sys:election_year": 2079,
+    "sys:experience": "कृषि समाजसेवा",
+    "sys:father_name": "भवानी प्रसाद न्यौपाने",
+    "sys:gender": "पुरुष",
+    "sys:institute": "हनुमन्तेश्वर मा.वि दोलखा",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "B.Ed",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 611,
+    "sys:spouse_name": "सावित्री  न्यौपाने",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2062,
+    "sys:symbol_name": "पानीको फिल्टर",
+    "sys:votes_received": 20
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/yjny-raaj-nyaupaane",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "यज्ञ राज न्यौपाने"
+    }
+  ],
+  "short_description": null,
+  "slug": "yjny-raaj-nyaupaane",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/yjny-raaj-nyaupaane",
+    "id": "version:entity:person/yjny-raaj-nyaupaane:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन राप्ती नगरपालिका चप्लेटी",
+    "sys:age": 26,
+    "sys:candidate_id": 336032,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2053.04.15",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "विजराम  प्रजा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "बालकुमारी कलेज नारायणगढ",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "12",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1615,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 71
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/arjun-prjaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अर्जुन प्रजा"
+    }
+  ],
+  "short_description": null,
+  "slug": "arjun-prjaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/arjun-prjaa",
+    "id": "version:entity:person/arjun-prjaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

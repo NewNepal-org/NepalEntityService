@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुकुम पूर्व पुथा उत्तरगंगा गाउँपालिका जाङ",
+    "sys:age": 51,
+    "sys:candidate_id": 338183,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुकुम पूर्व",
+    "sys:district": "रुकुम पूर्व",
+    "sys:district_code": 52,
+    "sys:dob_bs": "2027.08.04",
+    "sys:election_year": 2079,
+    "sys:experience": "वन डिभिजन वन रक्षक\nव्यवसाय (जडीबुटी)",
+    "sys:father_name": "ग‌ंज  बुढा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेश्नलिष्ट पिपल्स पार्टी",
+    "sys:political_party_slug": "neshnlisstt-pipls-paarttii",
+    "sys:qualification": "८ कक्षा पास",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2055,
+    "sys:spouse_name": "चिस्माली  बुढा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 1026,
+    "sys:symbol_name": "लाटोकोसेरो",
+    "sys:votes_received": 303
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bl-bhaadur-buddhaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बल बहादुर बुढा"
+    }
+  ],
+  "short_description": null,
+  "slug": "bl-bhaadur-buddhaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bl-bhaadur-buddhaa",
+    "id": "version:entity:person/bl-bhaadur-buddhaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

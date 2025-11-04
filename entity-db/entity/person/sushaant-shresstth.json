@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं टोखा नगरपालिका",
+    "sys:age": 33,
+    "sys:candidate_id": 333462,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2046.03.13",
+    "sys:election_year": 2079,
+    "sys:experience": "४.५ वर्ष बागमती प्रदेश सांसदको स्वकीय सचिव\nAcoustics Research Center मा काम गरेको",
+    "sys:father_name": "शंकर मान श्रेष्ठ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Jacobs University, Bremen, Germany",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "5",
+    "sys:serial_no": 1084,
+    "sys:spouse_name": "नेहा  श्रेष्ठ",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2321,
+    "sys:symbol_name": "घण्टाघर",
+    "sys:votes_received": 1712
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sushaant-shresstth",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुशान्त श्रेष्ठ"
+    }
+  ],
+  "short_description": null,
+  "slug": "sushaant-shresstth",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sushaant-shresstth",
+    "id": "version:entity:person/sushaant-shresstth:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा सबैला नगरपालिका",
+    "sys:age": 52,
+    "sys:candidate_id": 335644,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2026.09.26",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लक्ष्मी साहु सुडी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Pulchowk Engineering Campus",
+    "sys:political_party": "जनमत पार्टी",
+    "sys:political_party_slug": "jnmt-paarttii",
+    "sys:qualification": "Diploma in Civil Engineering",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 661,
+    "sys:spouse_name": "अंजिला  साह",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 2289,
+    "sys:symbol_name": "लाउड स्पिकर",
+    "sys:votes_received": 14467
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kishorii-saah-kml",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "किशोरी साह कमल"
+    }
+  ],
+  "short_description": null,
+  "slug": "kishorii-saah-kml",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kishorii-saah-kml",
+    "id": "version:entity:person/kishorii-saah-kml:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

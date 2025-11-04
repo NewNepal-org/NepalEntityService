@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं चन्द्रागिरी नगरपालिका ढुङ्‍गे अड्‍डा फरेश पाखा",
+    "sys:age": 73,
+    "sys:candidate_id": 338229,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2006.03.01",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "धमान सिंह खड्‍का",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "9",
+    "sys:serial_no": 1195,
+    "sys:spouse_name": "सानु नानी खड्‍का",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2462,
+    "sys:symbol_name": "क्रस खुकुरी",
+    "sys:votes_received": 64
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/lkssmnn-sinh-khddkaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "लक्ष्‍मण सिंह खड्‍का"
+    }
+  ],
+  "short_description": null,
+  "slug": "lkssmnn-sinh-khddkaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/lkssmnn-sinh-khddkaa",
+    "id": "version:entity:person/lkssmnn-sinh-khddkaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भोजपुर टेम्केमैयुङ गाउँपालिका",
+    "sys:age": 47,
+    "sys:candidate_id": 334098,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भोजपुर",
+    "sys:district": "भोजपुर",
+    "sys:district_code": 7,
+    "sys:dob_bs": "2031.10.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "गंगा बहादुर राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "खम्बुवान राष्ट्रिय मोर्चा नेपाल",
+    "sys:political_party_slug": "khmbuvaan-raassttriy-morcaa-nepaal",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 176,
+    "sys:spouse_name": "शन्त कुमारी राई",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 18,
+    "sys:symbol_name": "हथौडा",
+    "sys:votes_received": 162
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/rssi-dhn-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ऋषि धन राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "rssi-dhn-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/rssi-dhn-raaii",
+    "id": "version:entity:person/rssi-dhn-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

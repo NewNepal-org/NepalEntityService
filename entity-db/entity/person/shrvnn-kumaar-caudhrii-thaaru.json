@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी खडक नगरपालिका वजराही गुठी",
+    "sys:age": 49,
+    "sys:candidate_id": 337125,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2030.01.10",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बच्चु लाल चौधरी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल लोकतान्त्रिक पार्टी",
+    "sys:political_party_slug": "nepaal-loktaantrik-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 449,
+    "sys:spouse_name": "पुनम कुमारी चौधरी थारु",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 6,
+    "sys:symbol_name": "दुई हात जोडेको नमस्कार",
+    "sys:votes_received": 383
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shrvnn-kumaar-caudhrii-thaaru",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "श्रवण कुमार चौधरी थारु"
+    }
+  ],
+  "short_description": null,
+  "slug": "shrvnn-kumaar-caudhrii-thaaru",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shrvnn-kumaar-caudhrii-thaaru",
+    "id": "version:entity:person/shrvnn-kumaar-caudhrii-thaaru:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

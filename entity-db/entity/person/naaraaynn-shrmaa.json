@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं चन्द्रागिरी नगरपालिका नैकाप",
+    "sys:age": 54,
+    "sys:candidate_id": 333579,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "मोरङ्ग",
+    "sys:district_code": 9,
+    "sys:dob_bs": "2024.12.22",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "लोक मणि शर्मा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेश्नलिष्ट पिपल्स पार्टी",
+    "sys:political_party_slug": "neshnlisstt-pipls-paarttii",
+    "sys:qualification": "शास्त्री",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 232,
+    "sys:spouse_name": "कल्पना  शर्मा",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1026,
+    "sys:symbol_name": "लाटोकोसेरो",
+    "sys:votes_received": 21
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/naaraaynn-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "नारायण शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "naaraaynn-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/naaraaynn-shrmaa",
+    "id": "version:entity:person/naaraaynn-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

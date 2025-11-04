@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "गुल्मी मुसिकोट नगरपालिका अरेवा",
+    "sys:age": 49,
+    "sys:candidate_id": 337369,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "गुल्मी",
+    "sys:district": "गुल्मी",
+    "sys:district_code": 42,
+    "sys:dob_bs": "2030.04.25",
+    "sys:election_year": 2079,
+    "sys:experience": "प्रदेश योजना आयोग लुम्बिनी प्रदेश सदस्य\nदेश विदेशमा राजनीतिक सम्मेलन सभा गोष्ठीमा सहभागी\nनेवि संघ केन्द्रीय सदस्य विदेश विभाग प्रमुख\nस्ववियु सभापति काठमाडौ शिक्षा क्याम्पस",
+    "sys:father_name": "सुरेशचन्द्र  भुसाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "पेकिङ विश्वविद्यालय चिन",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "पि एच डी",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1812,
+    "sys:spouse_name": "विष्णु  कडेल भुसाल",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2453,
+    "sys:symbol_name": "त्रिभुज",
+    "sys:votes_received": 2
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/daamodr-bhusaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दामोदर भुसाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "daamodr-bhusaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/daamodr-bhusaal",
+    "id": "version:entity:person/daamodr-bhusaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "मनाङ्ग मनाङ ङिस्याङ गाउँपालिका टंकी",
+    "sys:age": 67,
+    "sys:candidate_id": 337335,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "मनाङ्ग",
+    "sys:district_code": 37,
+    "sys:dob_bs": "2011.08.11",
+    "sys:election_year": 2079,
+    "sys:experience": "प्रतिनिधी सभा सदस्य 2070\nश्रम राज्य मन्त्री\nनेपाली काँग्रेस केन्द्रिय सदस्य",
+    "sys:father_name": "काजी  गुरुङ",
+    "sys:gender": "पुरुष",
+    "sys:institute": "0",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1681,
+    "sys:spouse_name": "सुनड  गुरुङ घलेसेनी",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 2575
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/ttek-bhaadur-gurung",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "टेक बहादुर गुरुङ"
+    }
+  ],
+  "short_description": null,
+  "slug": "ttek-bhaadur-gurung",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/ttek-bhaadur-gurung",
+    "id": "version:entity:person/ttek-bhaadur-gurung:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

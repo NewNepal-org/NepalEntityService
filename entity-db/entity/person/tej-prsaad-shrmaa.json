@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर मध्यपुर थिमी नगरपालिका सानोठिमी",
+    "sys:age": 60,
+    "sys:candidate_id": 335772,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाँके",
+    "sys:district": "अछाम",
+    "sys:district_code": 68,
+    "sys:dob_bs": "2018.07.13",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रुपा नन्द शर्मा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "हाम्रो नेपाली पार्टी",
+    "sys:political_party_slug": "haamro-nepaalii-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2241,
+    "sys:spouse_name": "गंगा देवी शर्मा",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2319,
+    "sys:symbol_name": "लौरो",
+    "sys:votes_received": 171
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/tej-prsaad-shrmaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तेज प्रसाद शर्मा"
+    }
+  ],
+  "short_description": null,
+  "slug": "tej-prsaad-shrmaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/tej-prsaad-shrmaa",
+    "id": "version:entity:person/tej-prsaad-shrmaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

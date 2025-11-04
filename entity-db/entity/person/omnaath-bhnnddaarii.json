@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा मेची नगर नगरपालिका लवनडाँगी",
+    "sys:age": 40,
+    "sys:candidate_id": 333516,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2038.11.28",
+    "sys:election_year": 2079,
+    "sys:experience": "जीवन विकास वित्तीय संस्था लि मा १३ वर्ष\nउद्योग व्यावसायमा ४ वर्ष ।",
+    "sys:father_name": "भिम प्रसाद भण्डारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्व विध्धालय",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 54,
+    "sys:spouse_name": "",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 8564
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/omnaath-bhnnddaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "ओमनाथ भण्डारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "omnaath-bhnnddaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/omnaath-bhnnddaarii",
+    "id": "version:entity:person/omnaath-bhnnddaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

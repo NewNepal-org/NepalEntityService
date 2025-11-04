@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर चाँगुनारायण नगरपालिका थरिटोल",
+    "sys:age": 59,
+    "sys:candidate_id": 333177,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "भक्तपुर",
+    "sys:district_code": 27,
+    "sys:dob_bs": "2019.11.14",
+    "sys:election_year": 2079,
+    "sys:experience": "कृषि सम्बन्धि ज्ञान, कार्यालय सम्बन्धी ज्ञान",
+    "sys:father_name": "नन्द लाल नेपाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "सरस्वती मा.वि. थाकलमाठ भक्तपुर",
+    "sys:political_party": "नेपालका लागि नेपाली पार्टी",
+    "sys:political_party_slug": "nepaalkaa-laagi-nepaalii-paarttii",
+    "sys:qualification": "SLC PASS",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1228,
+    "sys:spouse_name": "भक्ति  नेपाल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2329,
+    "sys:symbol_name": "गोलाकार भित्र शंख",
+    "sys:votes_received": 240
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/arjun-prsaad-nepaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अर्जुन प्रसाद नेपाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "arjun-prsaad-nepaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/arjun-prsaad-nepaal",
+    "id": "version:entity:person/arjun-prsaad-nepaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

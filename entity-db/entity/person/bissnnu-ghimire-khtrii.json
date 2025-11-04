@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "म्याग्दी बेनी  नगरपालिका",
+    "sys:age": 28,
+    "sys:candidate_id": 338618,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "म्याग्दी",
+    "sys:district": "म्याग्दी",
+    "sys:district_code": 49,
+    "sys:dob_bs": "2051.05.29",
+    "sys:election_year": 2079,
+    "sys:experience": "राम्रो",
+    "sys:father_name": "चन्द्र बहादुर घिमिरे",
+    "sys:gender": "महिला",
+    "sys:institute": "",
+    "sys:political_party": "नेश्नलिष्ट पिपल्स पार्टी",
+    "sys:political_party_slug": "neshnlisstt-pipls-paarttii",
+    "sys:qualification": "10+2",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2022,
+    "sys:spouse_name": "सुरत बहादुर खत्री",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1026,
+    "sys:symbol_name": "लाटोकोसेरो",
+    "sys:votes_received": 53
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/bissnnu-ghimire-khtrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "बिष्णु घिमिरे खत्री"
+    }
+  ],
+  "short_description": null,
+  "slug": "bissnnu-ghimire-khtrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/bissnnu-ghimire-khtrii",
+    "id": "version:entity:person/bissnnu-ghimire-khtrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

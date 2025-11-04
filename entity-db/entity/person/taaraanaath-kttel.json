@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सोलुखुम्बु नेचासल्यान गाउँपालिका नेचावतासे",
+    "sys:age": 55,
+    "sys:candidate_id": 333445,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सोलुखुम्बु",
+    "sys:district": "सोलुखुम्बु",
+    "sys:district_code": 11,
+    "sys:dob_bs": "2024.05.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "प्रसाद  कटेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल मजदुर किसान पार्टी",
+    "sys:political_party_slug": "nepaal-mjdur-kisaan-paarttii",
+    "sys:qualification": "साक्षर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 391,
+    "sys:spouse_name": "शुसिला  कटेल",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 12,
+    "sys:symbol_name": "मादल",
+    "sys:votes_received": 138
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/taaraanaath-kttel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "तारानाथ कटेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "taaraanaath-kttel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/taaraanaath-kttel",
+    "id": "version:entity:person/taaraanaath-kttel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

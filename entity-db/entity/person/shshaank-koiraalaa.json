@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "काठमाडौं काठमाण्डौ महानगरपालिका मिलिजुलि टोल",
+    "sys:age": 64,
+    "sys:candidate_id": 335172,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district_code": 45,
+    "sys:dob_bs": "2015.07.08",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "विश्वेश्वर प्रसाद कोइराला",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1847,
+    "sys:spouse_name": "सुपत्रा  कोइराला",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 27067
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/shshaank-koiraalaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "शशांक कोइराला"
+    }
+  ],
+  "short_description": null,
+  "slug": "shshaank-koiraalaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/shshaank-koiraalaa",
+    "id": "version:entity:person/shshaank-koiraalaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

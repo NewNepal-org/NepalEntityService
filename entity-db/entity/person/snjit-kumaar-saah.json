@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "धनुषा गणेशमान चारनाथ नगरपालिका गोदार",
+    "sys:age": 35,
+    "sys:candidate_id": 337692,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "धनुषा",
+    "sys:district": "धनुषा",
+    "sys:district_code": 20,
+    "sys:dob_bs": "2044.04.14",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "इन्द्रदेव साह सुडी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "Singapore",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 683,
+    "sys:spouse_name": "",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 1034,
+    "sys:symbol_name": "जोडी चप्पल",
+    "sys:votes_received": 7
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/snjit-kumaar-saah",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "स‌ंजित कुमार साह"
+    }
+  ],
+  "short_description": null,
+  "slug": "snjit-kumaar-saah",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/snjit-kumaar-saah",
+    "id": "version:entity:person/snjit-kumaar-saah:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

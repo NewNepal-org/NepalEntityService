@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "पाल्पा रम्भा गाउँपालिका",
+    "sys:age": 39,
+    "sys:candidate_id": 338170,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "पाल्पा",
+    "sys:district": "पाल्पा",
+    "sys:district_code": 43,
+    "sys:dob_bs": "2039.09.05",
+    "sys:election_year": 2079,
+    "sys:experience": "विभिन्न संस्थामा कृयाशिल\nराजनीतिक",
+    "sys:father_name": "टोप बहादुर राना",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री कृष्ण मा.वि.",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1819,
+    "sys:spouse_name": "",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 87
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/mehrmaan-raanaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "मेहरमान राना"
+    }
+  ],
+  "short_description": null,
+  "slug": "mehrmaan-raanaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/mehrmaan-raanaa",
+    "id": "version:entity:person/mehrmaan-raanaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

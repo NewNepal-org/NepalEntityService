@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "म्याग्दी बेनी  नगरपालिका खत्रीथर",
+    "sys:age": 37,
+    "sys:candidate_id": 334165,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "म्याग्दी",
+    "sys:district": "म्याग्दी",
+    "sys:district_code": 49,
+    "sys:dob_bs": "2042.01.02",
+    "sys:election_year": 2079,
+    "sys:experience": "अध्यापन मानव अधिकार  सम्बन्धी काम, समाजसेवा, रेडक्रस सदस्य",
+    "sys:father_name": "टेक बहादुर खत्री क्षेत्री",
+    "sys:gender": "पुरुष",
+    "sys:institute": "prince of songala university haitai thailand",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "phd desserification",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2018,
+    "sys:spouse_name": "",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 1424
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/hrii-bhaadur-khtrii-kssetrii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "हरी बहादुर खत्री क्षेत्री"
+    }
+  ],
+  "short_description": null,
+  "slug": "hrii-bhaadur-khtrii-kssetrii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/hrii-bhaadur-khtrii-kssetrii",
+    "id": "version:entity:person/hrii-bhaadur-khtrii-kssetrii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

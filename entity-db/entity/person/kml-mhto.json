@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "नवलपरासी (बर्दघाट सुस्ता पूर्व) देवचुली नगरपालिका दलदले",
+    "sys:age": 50,
+    "sys:candidate_id": 335587,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district": "नवलपरासी (बर्दघाट सुस्ता पूर्व)",
+    "sys:district_code": 45,
+    "sys:dob_bs": "2028.12.28",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "डिल्‍ली राम महतो",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नागरिक उन्मुक्ति पार्टी",
+    "sys:political_party_slug": "naagrik-unmukti-paarttii",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1854,
+    "sys:spouse_name": "सिता कुमारि थनेत",
+    "sys:state": "गण्डकी प्रदेश",
+    "sys:state_code": 4,
+    "sys:symbol_id": 2306,
+    "sys:symbol_name": "पिधँ भएको सादा ढकिया",
+    "sys:votes_received": 315
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/kml-mhto",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कमल महतो"
+    }
+  ],
+  "short_description": null,
+  "slug": "kml-mhto",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/kml-mhto",
+    "id": "version:entity:person/kml-mhto:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

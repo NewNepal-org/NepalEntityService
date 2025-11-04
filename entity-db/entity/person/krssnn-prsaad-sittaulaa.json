@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "झापा भद्रपुर नगरपालिका चन्द्रगढी",
+    "sys:age": 72,
+    "sys:candidate_id": 333291,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "झापा",
+    "sys:district": "झापा",
+    "sys:district_code": 4,
+    "sys:dob_bs": "2006.07.24",
+    "sys:election_year": 2079,
+    "sys:experience": "कानून व्यवसाय",
+    "sys:father_name": "रंग प्रसाद सिटौला",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्‍व विद्यालय",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "Bachelor",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 86,
+    "sys:spouse_name": "कविता  सिटौला",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 37386
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-prsaad-sittaulaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण प्रसाद सिटौला"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-prsaad-sittaulaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-prsaad-sittaulaa",
+    "id": "version:entity:person/krssnn-prsaad-sittaulaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

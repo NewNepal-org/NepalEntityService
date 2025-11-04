@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सिन्धुली कमलामाई नगरपालिका गौरङटोल",
+    "sys:age": 52,
+    "sys:candidate_id": 338706,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सिन्धुली",
+    "sys:district": "सिन्धुली",
+    "sys:district_code": 19,
+    "sys:dob_bs": "2026.12.06",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "रामेश्वर  पौडेल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "जनजागृति मा.वि. भिमान",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 648,
+    "sys:spouse_name": "कल्पना  भण्डारी",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2317,
+    "sys:symbol_name": "खरायो",
+    "sys:votes_received": 28
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-hrii-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण हरी पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-hrii-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-hrii-pauddel",
+    "id": "version:entity:person/krssnn-hrii-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

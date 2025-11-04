@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बैतडी पाटन नगरपालिका डोवरा",
+    "sys:age": 48,
+    "sys:candidate_id": 334023,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बैतडी",
+    "sys:district": "बैतडी",
+    "sys:district_code": 73,
+    "sys:dob_bs": "2030.07.20",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "उदय सिंह भण्डारी",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Proficiency Certificate",
+    "sys:rank": "1",
+    "sys:remarks": "Elected",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2319,
+    "sys:spouse_name": "कविता  भण्डारी",
+    "sys:state": "सुदूरपश्चिम प्रदेश",
+    "sys:state_code": 7,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 33611
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/daamodr-bhnnddaarii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "दामोदर भण्डारी"
+    }
+  ],
+  "short_description": null,
+  "slug": "daamodr-bhnnddaarii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/daamodr-bhnnddaarii",
+    "id": "version:entity:person/daamodr-bhnnddaarii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

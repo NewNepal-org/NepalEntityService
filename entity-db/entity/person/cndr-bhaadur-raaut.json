@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रामेछाप लिखु तामाकोशी गाउँपालिका पोकु",
+    "sys:age": 61,
+    "sys:candidate_id": 335558,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रामेछाप",
+    "sys:district": "रामेछाप",
+    "sys:district_code": 18,
+    "sys:dob_bs": "2017.07.24",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "बल बहादुर राउत",
+    "sys:gender": "पुरुष",
+    "sys:institute": "हिमगंगा मा बि.",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 637,
+    "sys:spouse_name": "सावित्रा  राउत",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 1006,
+    "sys:symbol_name": "क्यामेरा",
+    "sys:votes_received": 10
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cndr-bhaadur-raaut",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चन्द्र बहादुर राउत"
+    }
+  ],
+  "short_description": null,
+  "slug": "cndr-bhaadur-raaut",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cndr-bhaadur-raaut",
+    "id": "version:entity:person/cndr-bhaadur-raaut:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "ओखलढुंगा सिद्दिचरण नगरपालिका अधेरी",
+    "sys:age": 50,
+    "sys:candidate_id": 338172,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "ओखलढुंगा",
+    "sys:district": "ओखलढुंगा",
+    "sys:district_code": 13,
+    "sys:dob_bs": "2029.03.12",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "जखट सिं राई",
+    "sys:gender": "पुरुष",
+    "sys:institute": "t.u",
+    "sys:political_party": "जनता समाजवादी पार्टी, नेपाल",
+    "sys:political_party_slug": "jntaa-smaajvaadii-paarttii-nepaal",
+    "sys:qualification": "स्नातकोत्तर",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 404,
+    "sys:spouse_name": "ल्हेमी  लामा",
+    "sys:state": "प्रदेश १",
+    "sys:state_code": 1,
+    "sys:symbol_id": 2278,
+    "sys:symbol_name": "ढल्केको छाता",
+    "sys:votes_received": 897
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/juddh-bhaadur-raaii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जुद्ध बहादुर राई"
+    }
+  ],
+  "short_description": null,
+  "slug": "juddh-bhaadur-raaii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/juddh-bhaadur-raaii",
+    "id": "version:entity:person/juddh-bhaadur-raaii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

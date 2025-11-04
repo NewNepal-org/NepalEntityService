@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "सप्तरी राजविराज नगरपालिका वोरिया",
+    "sys:age": 73,
+    "sys:candidate_id": 335374,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "सप्तरी",
+    "sys:district": "सप्तरी",
+    "sys:district_code": 15,
+    "sys:dob_bs": "2005.09.23",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "अयोधी लाल देव",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली कांग्रेस (बी.पी.)",
+    "sys:political_party_slug": "nepaalii-kaangres-biipii",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 462,
+    "sys:spouse_name": "मंजु  देव",
+    "sys:state": "मधेश प्रदेश",
+    "sys:state_code": 2,
+    "sys:symbol_id": 86,
+    "sys:symbol_name": "करुवा",
+    "sys:votes_received": 235
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/cirnjibii-laal-dev",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "चिरंजिबी लाल देव"
+    }
+  ],
+  "short_description": null,
+  "slug": "cirnjibii-laal-dev",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/cirnjibii-laal-dev",
+    "id": "version:entity:person/cirnjibii-laal-dev:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

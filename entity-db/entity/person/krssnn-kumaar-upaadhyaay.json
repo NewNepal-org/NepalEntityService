@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "कपिलवस्तु कृष्णनगर नगरपालिका बहादुरगंज",
+    "sys:age": 42,
+    "sys:candidate_id": 338022,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "कपिलवस्तु",
+    "sys:district": "कपिलवस्तु",
+    "sys:district_code": 47,
+    "sys:dob_bs": "2036.07.27",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "कृपा शंकर उपाध्याय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "under slc",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 2008,
+    "sys:spouse_name": "गिता  उपाध्याय",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 1004,
+    "sys:symbol_name": "हेलमेट",
+    "sys:votes_received": 15
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/krssnn-kumaar-upaadhyaay",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "कृष्ण कुमार उपाध्याय"
+    }
+  ],
+  "short_description": null,
+  "slug": "krssnn-kumaar-upaadhyaay",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/krssnn-kumaar-upaadhyaay",
+    "id": "version:entity:person/krssnn-kumaar-upaadhyaay:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

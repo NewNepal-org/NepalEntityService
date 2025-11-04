@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "रुपन्देही सम्मरीमाई गाउँपालिका भैसागाहन",
+    "sys:age": 69,
+    "sys:candidate_id": 335940,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "रुपन्देही",
+    "sys:district": "रुपन्देही",
+    "sys:district_code": 46,
+    "sys:dob_bs": "2009.10.02",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "समिदुल्ला  मुसलमान",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Education N/A",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "4",
+    "sys:serial_no": 1942,
+    "sys:spouse_name": "ताहेरा खातुन मुसलमान",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 2488,
+    "sys:symbol_name": "पानीको तुमलेट",
+    "sys:votes_received": 62
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/abdul-juber-muslmaan",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "अब्दुल जुबेर मुसलमान"
+    }
+  ],
+  "short_description": null,
+  "slug": "abdul-juber-muslmaan",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/abdul-juber-muslmaan",
+    "id": "version:entity:person/abdul-juber-muslmaan:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

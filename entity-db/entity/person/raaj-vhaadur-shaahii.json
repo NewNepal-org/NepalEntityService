@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "जाजरकोट भेरी नगरपालिका मलपानी",
+    "sys:age": 40,
+    "sys:candidate_id": 337821,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "जाजरकोट",
+    "sys:district": "जाजरकोट",
+    "sys:district_code": 62,
+    "sys:dob_bs": "2039.04.10",
+    "sys:election_year": 2079,
+    "sys:experience": "सामाजिक रुपमा फैलिएको राजनैतिक विकृतिलाई हटाउन \nराष्ट्रिय स्वतन्त्र पार्टीको माध्यामबाट जनताको सेवामा \nप्रतिवद्ध रहने हालसम्म कुनै पनि पार्टीको साधारण सदस्यता नलिएको",
+    "sys:father_name": "नारायण  शाही",
+    "sys:gender": "पुरुष",
+    "sys:institute": "माध्यामिक शिक्षा परिषद",
+    "sys:political_party": "राष्ट्रिय स्वतन्त्र पार्टी",
+    "sys:political_party_slug": "raassttriy-svtntr-paarttii",
+    "sys:qualification": "S.L.C.",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 2147,
+    "sys:spouse_name": "सुशिला  शाही",
+    "sys:state": "कर्णाली प्रदेश",
+    "sys:state_code": 6,
+    "sys:symbol_id": 2445,
+    "sys:symbol_name": "गोलाकार भित्र घण्टी",
+    "sys:votes_received": 295
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raaj-vhaadur-shaahii",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राज वहादुर शाही"
+    }
+  ],
+  "short_description": null,
+  "slug": "raaj-vhaadur-shaahii",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raaj-vhaadur-shaahii",
+    "id": "version:entity:person/raaj-vhaadur-shaahii:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

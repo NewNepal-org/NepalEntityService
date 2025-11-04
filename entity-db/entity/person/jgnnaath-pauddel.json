@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन भरतपुर महानगरपालिका कृष्णपुर",
+    "sys:age": 71,
+    "sys:candidate_id": 336505,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "चितवन",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2008.06.07",
+    "sys:election_year": 2079,
+    "sys:experience": "Professor",
+    "sys:father_name": "बलराम  उपाध्याय",
+    "sys:gender": "पुरुष",
+    "sys:institute": "TU",
+    "sys:political_party": "स्वतन्त्र",
+    "sys:political_party_slug": "independent",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "3",
+    "sys:serial_no": 1644,
+    "sys:spouse_name": "सरिता  पौडेल",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2482,
+    "sys:symbol_name": "सूर्यमुखी फूल",
+    "sys:votes_received": 373
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/jgnnaath-pauddel",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "जगन्नाथ पौडेल"
+    }
+  ],
+  "short_description": null,
+  "slug": "jgnnaath-pauddel",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/jgnnaath-pauddel",
+    "id": "version:entity:person/jgnnaath-pauddel:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

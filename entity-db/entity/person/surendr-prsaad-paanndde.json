@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "चितवन राप्ती नगरपालिका भण्डारा",
+    "sys:age": 64,
+    "sys:candidate_id": 335430,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "काठमाडौं",
+    "sys:district": "चितवन",
+    "sys:district_code": 35,
+    "sys:dob_bs": "2015.05.09",
+    "sys:election_year": 2079,
+    "sys:experience": "नेपाल सरकार अर्थमन्त्री\nराष्ट्रिय सभा सदस्य, सचेतक\nसंविधान सभा सदस्य\nप्रतिनिधि सभा सदस्य",
+    "sys:father_name": "नेत्र राज पाण्डे",
+    "sys:gender": "पुरुष",
+    "sys:institute": "त्रिभुवन विश्वविद्यालय",
+    "sys:political_party": "नेपाल कम्युनिष्ट पार्टी (एमाले)",
+    "sys:political_party_slug": "nepaal-kmyunisstt-paarttii-emaale",
+    "sys:qualification": "Masters",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "1",
+    "sys:serial_no": 1605,
+    "sys:spouse_name": "पूर्ण शोभा चित्रकार (पाण्डे)",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2,
+    "sys:symbol_name": "सूर्य",
+    "sys:votes_received": 26634
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/surendr-prsaad-paanndde",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुरेन्द्र प्रसाद पाण्डे"
+    }
+  ],
+  "short_description": null,
+  "slug": "surendr-prsaad-paanndde",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/surendr-prsaad-paanndde",
+    "id": "version:entity:person/surendr-prsaad-paanndde:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

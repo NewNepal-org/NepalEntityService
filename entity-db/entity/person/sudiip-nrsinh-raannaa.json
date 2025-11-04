@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "बाँके नेपालगंज उपमहानगरपालिका गगनगंज",
+    "sys:age": 58,
+    "sys:candidate_id": 338073,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "बाँके",
+    "sys:district": "बाँके",
+    "sys:district_code": 65,
+    "sys:dob_bs": "2021.01.07",
+    "sys:election_year": 2079,
+    "sys:experience": "",
+    "sys:father_name": "सुदर्शन नरसिंह राणा",
+    "sys:gender": "पुरुष",
+    "sys:institute": "",
+    "sys:political_party": "नेपाली काँग्रेस",
+    "sys:political_party_slug": "nepaalii-kaangres",
+    "sys:qualification": "High School",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 2192,
+    "sys:spouse_name": "पुनम  राणा",
+    "sys:state": "लुम्बिनी प्रदेश",
+    "sys:state_code": 5,
+    "sys:symbol_id": 1,
+    "sys:symbol_name": "रुख",
+    "sys:votes_received": 4403
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/sudiip-nrsinh-raannaa",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "सुदीप नरसिंह राणा"
+    }
+  ],
+  "short_description": null,
+  "slug": "sudiip-nrsinh-raannaa",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/sudiip-nrsinh-raannaa",
+    "id": "version:entity:person/sudiip-nrsinh-raannaa:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}

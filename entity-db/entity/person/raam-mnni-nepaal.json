@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "sys:address": "भक्तपुर चाँगुनारायण नगरपालिका गैराघर",
+    "sys:age": 46,
+    "sys:candidate_id": 336868,
+    "sys:center_constituency_id": null,
+    "sys:citizenship_district": "भक्तपुर",
+    "sys:district": "काठमाडौं",
+    "sys:district_code": 26,
+    "sys:dob_bs": "2032.07.13",
+    "sys:election_year": 2079,
+    "sys:experience": "१. सामाजिक धार्मिक अभियन्तामा संलग्‍न \n२. आध्यात्मिक जागरणका कार्यहरु\n३. सेमिनार गोष्ठी आयोजनामा संलग्न\n४. शैक्षिक धार्मि पर्यटनमा सहयोग",
+    "sys:father_name": "विष्णु प्रसाद नेपाल",
+    "sys:gender": "पुरुष",
+    "sys:institute": "श्री सरस्वती मा.वि.",
+    "sys:political_party": "नेपालका लागि नेपाली पार्टी",
+    "sys:political_party_slug": "nepaalkaa-laagi-nepaalii-paarttii",
+    "sys:qualification": "UNDER SLC",
+    "sys:rank": "1",
+    "sys:remarks": "",
+    "sys:sc_constituency_id": "2",
+    "sys:serial_no": 1008,
+    "sys:spouse_name": "",
+    "sys:state": "बागमती प्रदेश",
+    "sys:state_code": 3,
+    "sys:symbol_id": 2329,
+    "sys:symbol_name": "गोलाकार भित्र शंख",
+    "sys:votes_received": 73
+  },
+  "attributions": [
+    "Election Commission Nepal, २०७९ BS election results"
+  ],
+  "contacts": null,
+  "createdAt": "2025-11-04 11:48:36.517999+00:00",
+  "description": null,
+  "id": "entity:person/raam-mnni-nepaal",
+  "identifiers": null,
+  "misspelledNames": null,
+  "names": [
+    {
+      "kind": "DEFAULT",
+      "lang": "ne",
+      "value": "राम मणि नेपाल"
+    }
+  ],
+  "short_description": null,
+  "slug": "raam-mnni-nepaal",
+  "subType": null,
+  "tags": null,
+  "type": "person",
+  "versionSummary": {
+    "actor": {
+      "id": "actor:election-importer",
+      "name": "Election Results Importer",
+      "slug": "election-importer"
+    },
+    "changeDescription": "Imported candidate result from election २०७९",
+    "createdAt": "2025-11-04 11:48:36.517999+00:00",
+    "entityOrRelationshipId": "entity:person/raam-mnni-nepaal",
+    "id": "version:entity:person/raam-mnni-nepaal:1",
+    "type": "ENTITY",
+    "versionNumber": 1
+  }
+}
