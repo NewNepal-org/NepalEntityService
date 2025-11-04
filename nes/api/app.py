@@ -7,8 +7,14 @@ from .routes import entities, relationships, schemas, versions
 
 app = FastAPI(
     title="NepalEntityService API",
-    description="The EntityService loads the entity database (person, organizations, govt. bodies, etc.) and exposes endpoints for search, lookup, versions, and relationships. This will live in the public domain., internal microservice providing **read-only** (for now) endpoints for search, lookup, versions, and relationships.",
+    description="The Nepal Entity Service API loads the entity database (person, organizations, govt. bodies, etc.) and exposes endpoints for search, lookup, versions, and relationships. This will live in the public domain.",
     version="0.1.3",
+    contact={
+        "url": "https://newnepal.org",
+        "name": "NewNepal.org",
+        "email": "hello@newnepal.org",
+        "something": "efgh",
+    }
 )
 
 app.add_middleware(

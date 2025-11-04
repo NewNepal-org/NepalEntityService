@@ -11,15 +11,15 @@ from nes.core.models.base import Name
 from nes.core.models.entity import Organization, Person
 from nes.core.models.relationship import Relationship
 from nes.core.models.version import Actor, Version, VersionSummary
+from nes.database import get_database
 from nes.database.entity_database import EntityDatabase
-from nes.database.file_database import FileDatabase
 
 
 @pytest.fixture
 def temp_db():
-    """Create a temporary FileDatabase for testing."""
+    """Create a temporary database for testing."""
     temp_dir = tempfile.mkdtemp()
-    db = FileDatabase(temp_dir)
+    db = get_database(temp_dir)
     yield db
     shutil.rmtree(temp_dir)
 

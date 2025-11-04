@@ -8,15 +8,16 @@ import pytest
 
 from nes.core.models.base import Name
 from nes.core.models.entity import Entity, Organization, Person
+from nes.core.models.person import Education
 from nes.core.models.version import Actor, VersionSummary
-from nes.database.file_database import FileDatabase
+from nes.database import get_database
 
 
 @pytest.fixture
 def temp_db():
     """Create a temporary database for testing."""
     temp_dir = tempfile.mkdtemp()
-    db = FileDatabase(temp_dir)
+    db = get_database(temp_dir)
     yield db
     shutil.rmtree(temp_dir)
 
@@ -142,3 +143,43 @@ async def test_list_entities_with_pagination(temp_db, sample_actor):
 
     result = await temp_db.list_entities(limit=2, offset=1)
     assert len(result) == 2
+
+
+@pytest.mark.asyncio
+async def test_person_with_education_persistence(temp_db, sample_actor):
+    """Test that person education info persists after save and retrieval."""
+    education = Education(
+        institution="Tribhuvan University",
+        degree="Bachelor of Arts",
+        field="Political Science",
+        startYear=2015,
+        endYear=2019
+    )
+    
+    version_summary = VersionSummary(
+        entityOrRelationshipId="entity:person/miraj-dhungana",
+        type="ENTITY",
+        versionNumber=1,
+        actor=sample_actor,
+        changeDescription="Initial creation",
+        createdAt=datetime.now(),
+    )
+    
+    person = Person(
+        slug="miraj-dhungana",
+        names=[Name(kind="DEFAULT", value="Miraj Dhungana", lang="en")],
+        education=[education],
+        versionSummary=version_summary,
+        createdAt=datetime.now(),
+    )
+    
+    await temp_db.put_entity(person)
+    retrieved_person = await temp_db.get_entity(person.id)
+    
+    assert retrieved_person.education is not None
+    assert len(retrieved_person.education) == 1
+    assert retrieved_person.education[0].institution == "Tribhuvan University"
+    assert retrieved_person.education[0].degree == "Bachelor of Arts"
+    assert retrieved_person.education[0].field == "Political Science"
+    assert retrieved_person.education[0].startYear == 2015
+    assert retrieved_person.education[0].endYear == 2019

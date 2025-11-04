@@ -7,14 +7,14 @@ from pydantic import BaseModel
 
 from nes.core.identifiers import build_version_id
 from nes.core.models import CursorPage, Entity, EntityType
-from nes.database import FileDatabase
+from nes.database import get_database as get_db, EntityDatabase
 
 router = APIRouter(tags=["Entities"])
 
 
-def get_database() -> FileDatabase:
+def get_database() -> EntityDatabase:
     """Get database instance."""
-    return FileDatabase()
+    return get_db()
 
 
 class EntityListResponse(BaseModel):
@@ -34,9 +34,10 @@ async def entities(
     ),
     q: Optional[str] = Query(None, description="Search query - not implemented"),
     type: Optional[EntityType] = Query(None, description="Filter by entity type"),
+    subtype: Optional[str] = Query(None, description="Filter by entity subtype (e.g., 'politician', 'party')"),
     limit: int = Query(20, ge=1, le=100, description="Page size"),
     offset: int = Query(0, ge=0, description="Offset (Number of items to skip)"),
-    db: FileDatabase = Depends(get_database),
+    db: EntityDatabase = Depends(get_database),
 ):
     """Get entity by ID, specific version, or list/search entities."""
     if version is not None and id is None:
@@ -62,7 +63,7 @@ async def entities(
     if q:
         raise HTTPException(status_code=501, detail="Search query not implemented")
 
-    entities = await db.list_entities(limit=limit, offset=offset, type=type)
+    entities = await db.list_entities(limit=limit, offset=offset, type=type, subtype=subtype)
     return EntityListResponse(
         results=entities, page=CursorPage(hasMore=len(entities) == limit, offset=offset)
     )

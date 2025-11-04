@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import List, Optional
 
-from nes.core.models.entity import Entity
+from nes.core.models.entity import ENTITY_TYPE_MAP, Entity
 from nes.core.models.relationship import Relationship
 from nes.core.models.version import Actor, Version
 
@@ -45,7 +45,12 @@ class FileDatabase(EntityDatabase):
             return None
         with open(file_path, "r") as f:
             data = json.load(f)
-        return Entity.model_validate(data)
+        
+        entity_type = data.get("type")
+        entity_subtype = data.get("subType")
+        type_map = ENTITY_TYPE_MAP.get(entity_type, {})
+        entity_class = type_map.get(entity_subtype, type_map.get(None, Entity))
+        return entity_class.model_validate(data)
 
     async def delete_entity(self, entity_id: str) -> bool:
         file_path = self._id_to_path(entity_id)
@@ -75,7 +80,11 @@ class FileDatabase(EntityDatabase):
                 with open(file_path, "r") as f:
                     data = json.load(f)
                 if "type" in data:
-                    entities.append(Entity.model_validate(data))
+                    entity_type = data.get("type")
+                    entity_subtype = data.get("subType")
+                    type_map = ENTITY_TYPE_MAP.get(entity_type, {})
+                    entity_class = type_map.get(entity_subtype, type_map.get(None, Entity))
+                    entities.append(entity_class.model_validate(data))
                     if len(entities) >= limit + offset:
                         break
             except:

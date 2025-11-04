@@ -1,6 +1,7 @@
 """Entity model using Pydantic."""
 
 from datetime import datetime
+from enum import Enum
 from typing import Any, Dict, List, Literal, Optional
 
 from pydantic import BaseModel, Field, computed_field, field_validator
@@ -18,6 +19,13 @@ from .version import VersionSummary
 
 EntityType = Literal["person", "organization"]
 ENTITY_TYPES = ["person", "organization"]
+
+
+class GovernmentType(str, Enum):
+    """Types of government entities."""
+    FEDERAL = "federal"
+    STATE = "state"
+    LOCAL = "local"
 
 
 class Entity(BaseModel):
@@ -105,7 +113,6 @@ class Person(Entity):
         None, description="Professional positions and roles"
     )
 
-
 class Organization(Entity):
     type: Literal["organization"] = Field(
         default="organization", description="Entity type, always organization"
@@ -117,3 +124,28 @@ class PoliticalParty(Organization):
         default="political_party",
         description="Organization subtype, always political_party",
     )
+
+class Government(Organization):
+    subType: Literal["government"] = Field(
+        default="government",
+        description="Organization subtype, always government",
+    )
+
+    governmentType: Optional[GovernmentType] = Field(
+        None,
+        description="Type of government (federal, state, local)",
+    )
+
+
+# Entity type/subtype to class mapping
+# NOTE: When adding new subclasses of Entity, this dict must be updated for deserialization to work properly
+ENTITY_TYPE_MAP = {
+    "person": {
+        None: Person,
+    },
+    "organization": {
+        None: Organization,
+        "political_party": PoliticalParty,
+        "government": Government,
+    },
+}

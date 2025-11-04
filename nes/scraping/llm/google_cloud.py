@@ -9,6 +9,7 @@ from google.oauth2 import service_account
 from vertexai.generative_models import GenerativeModel
 
 from nes.core.models import Entity, Organization, Person
+from nes.core.models.entity import ENTITY_TYPES
 
 from .base import LLMEntityScraper
 
@@ -49,7 +50,7 @@ class GoogleCloudEntityScraper(LLMEntityScraper):
         overrides: Optional[dict] = None,
     ) -> List[Entity]:
         """Extract entities from text using Vertex AI."""
-        entity_types = entity_types or ["Person", "Organization"]
+        entity_types = entity_types or ENTITY_TYPES
 
         prompt = f"""Extract entities from the following text and return them as JSON.
         

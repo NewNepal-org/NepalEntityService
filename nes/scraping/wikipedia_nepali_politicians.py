@@ -195,10 +195,10 @@ def get_nepali_politician_page_links():
 if __name__ == "__main__":
     import asyncio
 
-    from nes.database.file_database import FileDatabase
+    from nes.database import get_database
 
     async def main():
-        db = FileDatabase()
+        db = get_database()
         links = get_nepali_politician_page_links()
         print(f"Found {len(links)} politician links")
 
