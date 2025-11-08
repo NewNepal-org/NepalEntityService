@@ -15,7 +15,7 @@ async def migrate(context):
     """
     Create the first entity in the database - BP Koirala.
 
-    This migration creates a person entity for Bishweshwar Prasad Koirala,
+    This migration creates a person entity for Bishweshwor Prasad Koirala,
     the first democratically elected Prime Minister of Nepal.
 
     Args:
@@ -28,14 +28,14 @@ async def migrate(context):
 
     # Create BP Koirala entity data
     entity_data = {
-        "slug": "bishweshwar-prasad-koirala",
+        "slug": "bishweshwor-prasad-koirala",
         "type": "person",
         "names": [
             {
                 "kind": "PRIMARY",
                 "en": {
-                    "full": "Bishweshwar Prasad Koirala",
-                    "given": "Bishweshwar Prasad",
+                    "full": "Bishweshwor Prasad Koirala",
+                    "given": "Bishweshwor Prasad",
                     "family": "Koirala",
                 },
                 "ne": {"full": "विश्वेश्वर प्रसाद कोइराला"},
