@@ -29,12 +29,30 @@ pip install nepal-entity-service[all]
 ### Scripts
 
 ```bash
-# Start API server
-poetry run nes-api
+# Start API server (nes2)
+poetry run nes2-api
 
-# Start development server with auto-reload
+# Start development server with auto-reload (nes2)
+poetry run nes2-dev
+
+# Legacy nes commands
+poetry run nes-api
 poetry run nes-dev
 ```
+
+### Docker
+
+Build and run the service using Docker:
+
+```bash
+# Build the Docker image
+docker build -t nepal-entity-service .
+
+# Run the container
+docker run -p 8195:8195 nepal-entity-service
+```
+
+The API will be available at `http://localhost:8195` (or your custom port).
 
 ## Extras
 

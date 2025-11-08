@@ -4,25 +4,6 @@ import click
 import sys
 
 
-def dev():
-    """Run the development server with auto-reload."""
-    import uvicorn
-    
-    print("Starting Nepal Entity Service v2 development server...")
-    print("Documentation will be available at: http://localhost:8195/")
-    print("API endpoints will be available at: http://localhost:8195/api/")
-    print("OpenAPI docs will be available at: http://localhost:8195/docs")
-    print("\nPress CTRL+C to stop the server\n")
-    
-    uvicorn.run(
-        "nes2.api.app:app",
-        host="127.0.0.1",
-        port=8195,
-        reload=True,
-        log_level="info"
-    )
-
-
 @click.group()
 @click.version_option(version="2.0.0", prog_name="nes2")
 def cli():

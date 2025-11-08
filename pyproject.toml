@@ -5,7 +5,6 @@ description = "A comprehensive service for managing Nepali public entities"
 authors = ["Damodar Dahal <damo94761@gmail.com>"]
 readme = "README.md"
 packages = [
-    {include = "nes"},
     {include = "nes2"}
 ]
 
@@ -30,10 +29,9 @@ scraping = ["wikipedia", "google-cloud-aiplatform", "google-auth"]
 all = ["fastapi", "uvicorn", "markdown", "wikipedia", "google-cloud-aiplatform", "google-auth"]
 
 [tool.poetry.scripts]
-nes-api = "nes.cli:main"
-nes-dev = "nes.cli:dev"
 nes2 = "nes2.cli:main"
-nes2-dev = "nes2.cli:dev"
+nes2-api = "nes2.api.server:api"
+nes2-dev = "nes2.api.server:dev"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.0"
