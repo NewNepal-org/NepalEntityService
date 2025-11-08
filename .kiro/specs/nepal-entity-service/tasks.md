@@ -442,15 +442,15 @@
     - Ensure all tests still pass after refactoring
     - _Requirements: Code quality_
 
-- [ ] 7. Implement documentation hosting
-  - [ ] 7.1 Write documentation tests FIRST
+- [x] 7. Implement documentation hosting
+  - [x] 7.1 Write documentation tests FIRST
     - Write tests for documentation rendering
     - Write tests for page navigation
     - Write tests for 404 handling
     - Write tests for markdown parsing
     - _Requirements: 1.7, TDD_
 
-  - [ ] 7.2 Create documentation structure (Green)
+  - [x] 7.2 Create documentation structure (Green)
     - Create `docs/` directory
     - Write `docs/index.md` as landing page
     - Create `docs/getting-started.md`
@@ -460,7 +460,7 @@
     - Create `docs/examples.md`
     - _Requirements: 1.7, 1.8_
 
-  - [ ] 7.3 Implement documentation rendering (Green)
+  - [x] 7.3 Implement documentation rendering (Green)
     - Add markdown rendering dependency
     - Create HTML template for documentation
     - Implement root endpoint `/` to serve documentation
@@ -469,7 +469,7 @@
     - Ensure all documentation tests pass
     - _Requirements: 1.7, 1.9_
 
-  - [ ] 7.4 Update API configuration (Green)
+  - [x] 7.4 Update API configuration (Green)
     - Keep API endpoints under `/api` prefix
     - Keep OpenAPI docs at `/docs`
     - Ensure documentation is served at root

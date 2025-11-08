@@ -40,11 +40,11 @@ async def list_entities(
     - Pagination with limit and offset
     
     Examples:
-        - /api/entities - List all entities
-        - /api/entities?query=poudel - Search for "poudel"
-        - /api/entities?entity_type=person - List all persons
-        - /api/entities?entity_type=organization&sub_type=political_party - List political parties
-        - /api/entities?attributes={"party":"nepali-congress"} - Filter by attributes
+    - /api/entities - List all entities
+    - /api/entities?query=poudel - Search for "poudel"
+    - /api/entities?entity_type=person - List all persons
+    - /api/entities?entity_type=organization&sub_type=political_party - List political parties
+    - /api/entities?attributes={"party":"nepali-congress"} - Filter by attributes
     """
     # Validate entity_type if provided
     if entity_type and entity_type not in ["person", "organization", "location"]:

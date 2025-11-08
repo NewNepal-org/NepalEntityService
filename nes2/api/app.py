@@ -150,21 +150,6 @@ async def general_exception_handler(request: Request, exc: Exception):
 
 
 # ============================================================================
-# Root Endpoint (will be used for documentation in future tasks)
-# ============================================================================
-
-@app.get("/")
-async def root():
-    """Root endpoint - will serve documentation in future tasks."""
-    return {
-        "message": "Nepal Entity Service API v2",
-        "version": "2.0.0",
-        "docs": "/docs",
-        "api": "/api"
-    }
-
-
-# ============================================================================
 # API Routes
 # ============================================================================
 
@@ -175,3 +160,25 @@ app.include_router(entities.router)
 app.include_router(relationships.router)
 app.include_router(schemas.router)
 app.include_router(health.router)
+
+
+# ============================================================================
+# Documentation Endpoints (Must be last to avoid route conflicts)
+# ============================================================================
+
+from nes2.api.documentation import serve_documentation
+from fastapi.responses import HTMLResponse
+
+@app.get("/", response_class=HTMLResponse)
+async def root():
+    """Serve the documentation landing page."""
+    return await serve_documentation("")
+
+@app.get("/{page}", response_class=HTMLResponse)
+async def documentation_page(page: str):
+    """Serve a documentation page.
+    
+    This endpoint serves documentation pages from Markdown files.
+    It should be registered after all other routes to avoid conflicts.
+    """
+    return await serve_documentation(page)
