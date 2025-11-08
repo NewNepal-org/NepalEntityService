@@ -368,8 +368,8 @@
 
 ## Phase 4: API Layer Implementation (TDD)
 
-- [ ] 6. Build API v2 with service architecture
-  - [ ] 6.1 Write API tests FIRST
+- [x] 6. Build API v2 with service architecture
+  - [x] 6.1 Write API tests FIRST
     - Write tests for all entity endpoints
     - Write tests for relationship endpoints
     - Write tests for version endpoints
@@ -381,7 +381,7 @@
     - Write tests for pagination
     - _Requirements: 1.1, 1.5, TDD_
 
-  - [ ] 6.2 Implement API foundation (Green)
+  - [x] 6.2 Implement API foundation (Green)
     - Create `nes2/api/` directory with `__init__.py`
     - Create `nes2/api/app.py` with FastAPI application
     - Create `nes2/api/routes/` for endpoint modules
@@ -391,7 +391,7 @@
     - Ensure foundation tests pass
     - _Requirements: 1.1, 1.5_
 
-  - [ ] 6.3 Implement service dependencies (Green)
+  - [x] 6.3 Implement service dependencies (Green)
     - Create `get_search_service()` dependency
     - Create `get_publication_service()` dependency (for future write endpoints)
     - Create `get_database()` dependency
@@ -399,7 +399,7 @@
     - Ensure dependency tests pass
     - _Requirements: 1.1, 9.3_
 
-  - [ ] 6.4 Implement entities endpoint (Green)
+  - [x] 6.4 Implement entities endpoint (Green)
     - Create `/api/entities` endpoint using SearchService
     - Implement search query parameter using `search_entities()`
     - Add filtering by type, subtype, and attributes
@@ -408,7 +408,7 @@
     - Ensure all entity endpoint tests pass
     - _Requirements: 1.1, 1.2, 3.2_
 
-  - [ ] 6.5 Implement relationship and version endpoints (Green)
+  - [x] 6.5 Implement relationship and version endpoints (Green)
     - Create `/api/entities/{id}/relationships` endpoint
     - Use SearchService for relationship queries
     - Add filtering by relationship type
@@ -417,7 +417,7 @@
     - Ensure all relationship/version endpoint tests pass
     - _Requirements: 4.3, 2.3_
 
-  - [ ] 6.6 Implement schema and health endpoints (Green)
+  - [x] 6.6 Implement schema and health endpoints (Green)
     - Create `/api/schemas` endpoint for entity type discovery
     - Return available entity types and subtypes
     - Implement `/api/health` endpoint
@@ -425,7 +425,7 @@
     - Ensure all schema/health endpoint tests pass
     - _Requirements: 1.1, 1.9_
 
-  - [ ] 6.7 Implement error handling (Green)
+  - [x] 6.7 Implement error handling (Green)
     - Create standardized error response models
     - Implement field-level error details
     - Add proper HTTP status code mapping
@@ -434,7 +434,7 @@
     - Ensure all error handling tests pass
     - _Requirements: 8.1, 8.2, 8.5_
 
-  - [ ] 6.8 Refactor API layer
+  - [x] 6.8 Refactor API layer
     - Refactor for code quality and maintainability
     - Optimize endpoint performance
     - Improve error messages
