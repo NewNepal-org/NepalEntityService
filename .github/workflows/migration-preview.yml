@@ -4,10 +4,6 @@ on:
   pull_request:
     paths:
       - 'migrations/**'
-  workflow_run:
-    workflows: ["CI"]
-    types:
-      - completed
 
 jobs:
   preview-migration:
@@ -16,9 +12,6 @@ jobs:
       contents: read
       pull-requests: write
       issues: write
-    if: |
-      github.event_name == 'pull_request' ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
     
     steps:
       - name: Checkout code
@@ -56,49 +49,6 @@ jobs:
             echo "has_migrations=true" >> $GITHUB_OUTPUT
           fi
       
-      - name: Verify and checkout database submodule
-        if: steps.detect.outputs.has_migrations == 'true'
-        run: |
-          echo "Checking for .gitmodules file..."
-          if [ -f ".gitmodules" ]; then
-            cat .gitmodules
-          else
-            echo "Warning: .gitmodules file not found"
-          fi
-          
-          echo "Listing current directory..."
-          ls -la
-          
-          echo "Checking if nes-db exists..."
-          if [ ! -d "nes-db" ]; then
-            echo "nes-db directory does not exist, attempting to initialize submodule..."
-            git submodule init
-            git submodule update --init --recursive
-          fi
-          
-          # Check again after initialization
-          if [ ! -d "nes-db" ]; then
-            echo "Error: nes-db directory still does not exist after initialization"
-            echo "The submodule might not be committed in this branch"
-            exit 1
-          fi
-          
-          # Check if submodule is empty
-          if [ -z "$(ls -A nes-db)" ]; then
-            echo "Submodule directory exists but is empty, attempting to update..."
-            git submodule update --init --recursive --force
-          fi
-          
-          # Verify it's not empty after initialization
-          if [ -z "$(ls -A nes-db)" ]; then
-            echo "Error: nes-db directory is still empty after initialization"
-            echo "This might be a permissions issue with the submodule repository"
-            exit 1
-          fi
-          
-          echo "✓ Database submodule is present and not empty"
-          ls -la nes-db
-      
       - name: Validate migrations
         if: steps.detect.outputs.has_migrations == 'true'
         run: |
@@ -120,6 +70,9 @@ jobs:
         if: steps.detect.outputs.has_migrations == 'true'
         id: execute
         run: |
+          # Check for non-empty nes-db folder
+          [ -d "nes-db" ] && [ "$(ls -A nes-db)" ] || { echo "Error: nes-db folder is missing or empty"; exit 1; }
+          
           # Use the database submodule
           export NES_DB_PATH=./nes-db
           
