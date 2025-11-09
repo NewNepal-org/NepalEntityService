@@ -2,9 +2,7 @@
 
 ## Overview
 
-The Nepal Entity Service is a comprehensive system designed to manage Nepali public entities with a focus on transparency, accountability, and data integrity. The system provides a robust foundation for civic technology applications by offering structured entity management, versioning, relationship tracking, and automated data collection capabilities.
-
-The architecture follows a modular design with optional components, allowing users to install only the functionality they need. The core system provides entity models and utilities, while optional modules add API services and scraping capabilities.
+The Nepal Entity Service is a comprehensive system for managing Nepali public entities with structured entity management, versioning, relationship tracking, and automated data collection. The architecture follows a service-oriented design with optional components - core models and database, optional API service, and optional scraping capabilities.
 
 ## Architecture
 
@@ -22,24 +20,28 @@ graph TB
         API[FastAPI Service]
     end
     
-    subgraph "Data Management layer"
+    subgraph "Data Management Layer"
         PUB[Publication Service]
         SRCH[Search Service]
+        MIG[Migration Service]
 
-        subgraph "Modules"
-            ENT[Entity Module]
-            REL[Relationship Module]
-            VER[Version Module]
-            ACT[Author Module]
+        subgraph "Core Models"
+            ENT[Entity Models]
+            REL[Relationship Model]
+            VER[Version Model]
+            AUTH[Author Model]
         end
 
         PUB --> ENT
         PUB --> REL
         PUB --> VER
-        PUB --> ACT
+        PUB --> AUTH
     
         SRCH --> ENT
         SRCH --> REL
+        
+        MIG --> PUB
+        MIG --> SRCH
     end
 
     SCRP[Scraping Service]
@@ -72,6 +74,7 @@ graph TB
     CLI --> SCRP
     NOTEBOOK --> PUB
     NOTEBOOK --> SRCH
+    CLI --> MIG
     
     WEB --> API
     CLI --> SRCH
@@ -99,90 +102,31 @@ graph TB
 
 ### Component Architecture
 
-The system is organized into several key components:
-
-1. **Core Models**: Pydantic-based data models for entities, relationships, and versions
-2. **Data Management Layer**: Publication and Search services with shared modules
-   - **Publication Service**: Entity lifecycle management with Entity, Relationship, Version, and Author modules
-   - **Search Service**: Entity and relationship search with filtering and pagination
-3. **Scraping Service**: External data extraction with GenAI/LLM components
-   - **Web Scraper**: Multi-source data extraction
-   - **Translation Service**: Nepali/English translation
-   - **Data Normalization Service**: LLM-powered data structuring
-4. **Database Layer**: Abstract database interface with file-based implementation  
-5. **API Layer**: FastAPI-based REST service for data retrieval with hosted documentation
-6. **Client Applications**: Web apps, CLI tools, and Jupyter notebooks with direct Publication Service access
-7. **Data Maintainer Interface**: Pythonic interface for local data maintenance
+**Core Layers:**
+1. **Core Models**: Pydantic models (Entity, Relationship, Version, Author)
+2. **Database Layer**: File-based JSON storage at `nes-db/v2` with abstract interface
+3. **Service Layer**: Publication, Search, Migration, and Scraping services
+4. **API Layer**: FastAPI REST service with hosted documentation
+5. **Client Layer**: CLI tools, notebooks, and web applications
 
 ## Components and Interfaces
 
 ### Publication Service
 
-The **Publication Service** is the central orchestration layer that manages the complete lifecycle of entities, relationships, and their versions. Rather than having separate services for each concern, the Publication Service provides a unified interface with specialized internal modules.
+Central orchestration layer for entity lifecycle management with automatic versioning and attribution tracking.
 
-#### Architecture Philosophy
+**Responsibilities:**
+- Entity CRUD operations (Person, Organization, Location)
+- Relationship management with temporal tracking
+- Automatic version snapshots on all modifications
+- Author attribution and change tracking
+- Unified validation and transaction management
 
-The Publication Service follows a modular monolith pattern:
-- **Single Entry Point**: All entity operations flow through the Publication Service
-- **Internal Modules**: Entity, Relationship, and Version modules handle specialized logic
-- **Coordinated Operations**: Cross-cutting concerns (validation, versioning, attribution) are handled consistently
-- **Transaction Boundaries**: The service manages atomic operations across multiple modules
-
-#### Core Responsibilities
-
-1. **Entity Lifecycle Management**
-   - Entity creation, updates, and retrieval through the Entity Module
-   - Automatic version creation on all modifications
-   - Validation and constraint enforcement
-   - Attribution tracking for all changes
-
-2. **Relationship Management**
-   - Relationship creation and modification through the Relationship Module
-   - Bidirectional relationship consistency
-   - Temporal relationship tracking
-   - Relationship versioning
-
-3. **Version Control**
-   - Automatic snapshot creation through the Version Module
-   - Historical state retrieval
-   - Change tracking and audit trails
-   - Author attribution
-
-4. **Cross-Cutting Concerns**
-   - Unified validation across all operations
-   - Consistent error handling
-   - Transaction management
-   - Event publishing for external integrations
-
-#### Module Structure
-
-The Publication Service uses shared modules within the Data Management Layer:
-
-**Entity Module**
-- Entity CRUD operations
-- Name and identifier management
-- Entity-specific validation
-- Used by both Publication and Search services
-
-**Relationship Module**
-- Relationship CRUD operations
-- Relationship type validation
-- Temporal relationship handling
-- Bidirectional consistency checks
-- Used by both Publication and Search services
-
-**Version Module**
-- Snapshot creation and storage
-- Version retrieval and comparison
-- Change description management
-- Attribution tracking
-- Used exclusively by Publication Service
-
-**Author Module**
-- Author management and tracking
-- Attribution metadata
-- Author validation
-- Used by Publication Service for change tracking
+**Core Models:**
+- **Entity Models**: Base Entity, Person, Organization (PoliticalParty, GovernmentBody), Location
+- **Relationship Model**: Typed connections with temporal attributes
+- **Version Model**: Change snapshots with attribution
+- **Author Model**: Change attribution metadata
 
 #### Service Interface Example
 
@@ -193,14 +137,14 @@ from nes.core.models import Entity, Relationship
 # Initialize the publication service
 pub_service = PublicationService(database=db)
 
-# Entity operations (uses Entity Module internally)
+# Entity operations (returns Entity model instance)
 entity = pub_service.create_entity(
     entity_data=entity_dict,
     author_id="author:system:csv-importer",
     change_description="Initial import"
 )
 
-# Relationship operations (uses Relationship Module internally)
+# Relationship operations (returns Relationship model instance)
 relationship = pub_service.create_relationship(
     source_id="entity:person/ram-chandra-poudel",
     target_id="entity:organization/political_party/nepali-congress",
@@ -208,746 +152,275 @@ relationship = pub_service.create_relationship(
     author_id="author:system:csv-importer"
 )
 
-# Version operations (uses Version Module internally)
+# Version operations (returns list of Version model instances)
 versions = pub_service.get_entity_versions(
     entity_id="entity:person/ram-chandra-poudel"
 )
 
-# Coordinated operations across modules
-pub_service.update_entity_with_relationships(
-    entity=updated_entity,
-    new_relationships=[rel1, rel2],
-    author_id="author:system:csv-importer"
+# Update operations with automatic versioning
+updated_entity = pub_service.update_entity(
+    entity=entity,
+    author_id="author:system:csv-importer",
+    change_description="Updated attributes"
 )
 ```
 
 ### Search Service
 
-The **Search Service** provides basic search capabilities for entities and relationships with support for filtering, attribute-based queries, and pagination.
+Read-optimized service for entity and relationship queries with filtering and pagination.
 
-#### Architecture Philosophy
+**Capabilities:**
+- Text search across entity names (Nepali and English)
+- Type/subtype filtering
+- Attribute-based filtering
+- Relationship queries by type, source, or target
+- Pagination support (limit/offset)
 
-The Search Service is designed as a simple, read-optimized service:
-- **Separate from Publication Service**: Search is a distinct concern focused on data retrieval
-- **Database-Backed**: Queries the database directly without complex indexing
-- **Simple Filtering**: Basic type, subtype, and attribute filtering
-- **Pagination Support**: Efficient result pagination for large datasets
-
-#### Core Responsibilities
-
-1. **Entity Search**
-   - Basic text search across entity names (Nepali and English)
-   - Type and subtype filtering
-   - Attribute-based filtering
-   - Pagination support
-
-2. **Relationship Search**
-   - Find relationships by type
-   - Filter by source or target entity
-   - Basic attribute filtering
-   - Pagination support
-
-#### Service Interface Example
-
+**Example Usage:**
 ```python
-from nes.services import SearchService
-from nes.database import FileDatabase
-
-# Initialize search service
-db = FileDatabase(base_path="./nes-db/v2")
-search_service = SearchService(database=db)
-
-# Basic entity search with text query
-results = search_service.search_entities(
+search_service.search_entities(
     query="poudel",
-    limit=10,
-    offset=0
-)
-
-# Entity search with filters
-results = search_service.search_entities(
-    query="ram",
     entity_type="person",
     sub_type="politician",
-    limit=20,
-    offset=0
+    limit=10
 )
-
-# Attribute-based filtering
-results = search_service.search_entities(
-    attributes={"party": "nepali-congress"},
-    entity_type="person",
-    limit=10,
-    offset=0
-)
-
-# Relationship search
-relationships = search_service.search_relationships(
-    relationship_type="MEMBER_OF",
-    target_entity_id="entity:organization/political_party/nepali-congress",
-    limit=10,
-    offset=0
-)
-
-# Paginated results
-page_1 = search_service.search_entities(query="politician", limit=20, offset=0)
-page_2 = search_service.search_entities(query="politician", limit=20, offset=20)
 ```
 
-#### Search Capabilities
+### Migration Service
 
-**Text Search**
-- Case-insensitive search across entity name fields
-- Supports both Nepali (Devanagari) and English text
-- Simple substring matching
+Orchestrates database updates through versioned Python scripts with Git-based tracking for deterministic, idempotent execution.
 
-**Filter Options**
-- Entity type filtering (person, organization, location)
-- Subtype filtering (politician, political_party, etc.)
-- Attribute key-value filtering
-- Identifier scheme filtering
+**Key Features:**
+- Sequential migration folders (000-name, 001-name, etc.)
+- Git commit tracking for applied migrations
+- Migration context with service access (Publication, Search, Scraping)
+- File reading helpers (CSV, JSON, Excel)
+- Batch commits for large migrations (1000+ files)
+- CLI commands: list, pending, run, create
 
-**Pagination**
-- Limit: Maximum number of results to return
-- Offset: Number of results to skip
-- Total count: Total matching results for pagination UI
+**Migration Script Example:**
+```python
+# migrations/005-add-ministers/migrate.py
+async def migrate(context):
+    ministers = context.read_csv("ministers.csv")
+    
+    for row in ministers:
+        entity = await context.publication.create_entity(...)
+        party = await context.search.find_entity_by_name(row["party"])
+        if party:
+            await context.publication.create_relationship(...)
+    
+    context.log(f"Imported {len(ministers)} ministers")
+```
+
+**Workflow:**
+1. Contributor creates migration → 2. Submits PR → 3. Maintainer reviews/merges → 4. GitHub Actions execute → 5. Changes committed to Database Repository → 6. Submodule updated
 
 ### Core Models
 
-#### Entity Model
-The `Entity` model serves as the foundation for all entity types:
+**Entity Model**: Slug-based IDs, hierarchical typing (type/subtype), multilingual names, versioning, flexible attributes
 
-- **Identification**: Unique slug-based IDs with computed full identifiers
-- **Typing**: Hierarchical type system (type + subtype)
-- **Naming**: Multilingual name support with primary/alias classifications
-- **Metadata**: Versioning, timestamps, attributions, and external identifiers
-- **Extensibility**: Flexible attributes system for domain-specific data
+**Relationship Model**: Typed connections (AFFILIATED_WITH, MEMBER_OF, etc.), temporal tracking (start/end dates), custom attributes
 
-#### Relationship Model
-The `Relationship` model manages connections between entities:
+**Version Model**: Complete state snapshots, author attribution, change descriptions, timestamps
 
-- **Bidirectional**: Source and target entity references
-- **Typed**: Predefined relationship types (AFFILIATED_WITH, MEMBER_OF, etc.)
-- **Temporal**: Optional start and end dates for time-bound relationships
-- **Attributed**: Custom attributes for relationship-specific metadata
+### Database Layer
 
-#### Version Model
-The `Version` model provides comprehensive audit trails:
+**EntityDatabase Interface**: Abstract CRUD operations for entities, relationships, versions, and authors
 
-- **Snapshots**: Complete entity/relationship state preservation
-- **Attribution**: Author tracking for all modifications
-- **Timestamps**: Creation and modification tracking
-- **Metadata**: Change descriptions and source information
+**File Database Implementation**: JSON storage at `nes-db/v2`, organized by type/subtype, atomic operations, caching, indexing
 
-### Database Interface
-
-#### EntityDatabase Abstract Class
-Provides standardized CRUD operations for:
-
-- **Entities**: Create, read, update, delete, and list operations
-- **Relationships**: Full relationship lifecycle management
-- **Versions**: Version creation, retrieval, and listing
-- **Authors**: Author management for attribution tracking
-
-#### File Database Implementation
-File-based storage system with:
-
-- **JSON Storage**: Human-readable entity files
-- **Directory Structure**: Organized by entity type and subtype at `nes-db/v2`
-- **Atomic Operations**: Safe concurrent access patterns
-- **Backup Support**: Version history preservation
-- **Database Location**: All entity data stored in `nes-db/v2` directory
-
-#### Data Maintainer Interface
-Pythonic interface for local data maintenance operations:
-
-- **Local Python Access**: Direct Python API for maintainers to use in local scripts and notebooks
-- **No Authentication Required**: Designed for trusted local environment use without authentication overhead
-- **Entity Updates**: Simplified entity modification with automatic versioning
-- **Relationship Management**: Easy relationship creation, modification, and deletion
-- **Schema Validation**: Real-time data validation feedback during write operations
-- **Batch Operations**: Bulk update capabilities for large-scale data maintenance
-- **Change Tracking**: Automatic attribution and change description capture
+**Data Maintainer Interface**: Local Python API for trusted maintainers, no authentication, automatic versioning, batch operations
 
 ### API Service
 
-#### REST Endpoints
+**REST Endpoints** (under `/api` prefix):
+- `/api/entities` - List/filter entities
+- `/api/entities/{id}` - Get entity details
+- `/api/entities/{id}/versions` - Version history
+- `/api/relationships` - Query relationships
+- `/api/search` - Text search
+- `/api/health` - Health check
 
-All API endpoints are served under the `/api` prefix, with documentation served at the root:
+**Documentation Hosting**:
+- `/` - Markdown-based documentation landing page
+- `/{page}` - Documentation pages rendered from `docs/*.md`
+- `/docs` - OpenAPI/Swagger schema
 
-**API Endpoints (`/api/*`)**
-- **Entity Retrieval**: `/api/entities` - Read operations with filtering and pagination
-- **Entity Details**: `/api/entities/{entity_id}` - Get specific entity by ID
-- **Version Access**: `/api/entities/{entity_id}/versions` - Historical entity state retrieval
-- **Relationship Queries**: `/api/relationships` - Entity connection exploration
-- **Search Endpoints**: `/api/search` - Basic text and filtered search via Search Service
-- **Health Check**: `/api/health` - System health and readiness status
-
-**Documentation Endpoints**
-- **Root**: `/` - Main documentation landing page
-- **Documentation Pages**: `/{page}` - Individual documentation pages from Markdown
-- **API Schema**: `/docs` - OpenAPI/Swagger schema documentation
-
-Note: Write operations are handled through the Publication Service in notebooks and scripts, not through the API.
-
-#### Documentation Hosting
-
-The API service hosts comprehensive documentation from the root endpoint, providing a unified documentation experience:
-
-**Root Documentation Portal (`/`)**
-- **Endpoint**: `/` serves the main documentation landing page
-- **Format**: Static HTML generated from Markdown files
-- **Content**: Architecture overview, usage guides, API reference, examples
-- **Navigation**: Simple navigation between documentation sections
-- **Public Access**: No authentication required, fully public documentation
-
-**API Schema Documentation (`/docs`)**
-- **Endpoint**: `/docs` provides OpenAPI/Swagger schema documentation
-- **Auto-generated**: FastAPI automatically generates OpenAPI 3.0 specification
-- **Schema Exploration**: Complete data model documentation with request/response examples
-- **Read-Only**: Documentation for read-only public API endpoints
-
-**Documentation Structure**
-```
-docs/
-├── index.md              # Landing page (served at /)
-├── getting-started.md    # Quick start guide
-├── architecture.md       # System architecture
-├── api-reference.md      # API endpoint documentation
-├── data-models.md        # Entity, Relationship, Version schemas
-├── examples.md           # Usage examples
-└── contributing.md       # Contribution guidelines
-```
-
-**Documentation Build and Serving**
-```python
-from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
-import markdown
-
-app = FastAPI()
-
-# Serve API endpoints under /api prefix
-app.include_router(api_router, prefix="/api")
-
-# Serve OpenAPI docs at /docs
-# (FastAPI default, no configuration needed)
-
-# Serve markdown documentation at root
-@app.get("/")
-async def root():
-    """Serve the main documentation landing page."""
-    with open("docs/index.md", "r") as f:
-        content = markdown.markdown(f.read())
-    return HTMLResponse(content=render_template(content))
-
-# Serve other documentation pages
-@app.get("/{page}")
-async def documentation_page(page: str):
-    """Serve documentation pages from markdown files."""
-    try:
-        with open(f"docs/{page}.md", "r") as f:
-            content = markdown.markdown(f.read())
-        return HTMLResponse(content=render_template(content))
-    except FileNotFoundError:
-        raise HTTPException(status_code=404, detail="Page not found")
-```
-
-**Documentation Features**
-- **Markdown-Based**: All documentation written in simple Markdown files
-- **Version Control**: Documentation versioned alongside code in Git
-- **Easy Updates**: Non-technical contributors can update documentation via Markdown
-- **No Build Step**: Markdown rendered on-the-fly by the API service
-- **Consistent Styling**: Simple HTML template for consistent look and feel
-
-#### Middleware Stack
-- **CORS Support**: Cross-origin request handling for web applications
-- **Error Handling**: Standardized error responses with detailed messages
-- **Request Validation**: Automatic validation of input params using Pydantic
-- **Response Formatting**: Consistent JSON response structure
+**Features**: CORS support, error handling, Pydantic validation, read-only public API
 
 ### Scraping Service
 
-The **Scraping Service** is a standalone service responsible for extracting and normalizing data from external sources using GenAI and LLM capabilities. It does not directly access the database but returns normalized data for client applications to process.
+Standalone service for extracting and normalizing data from external sources using GenAI/LLM. Returns normalized data without database access.
 
-#### Architecture Philosophy
+**Components:**
+- **Web Scraper**: Multi-source extraction (Wikipedia, government sites, news)
+- **Translation Service**: Nepali ↔ English translation and transliteration
+- **Data Normalization**: LLM-powered structuring, relationship discovery, name disambiguation
 
-The Scraping Service is designed as a data extraction and transformation layer:
-- **Source Agnostic**: Pluggable extractors for different data sources
-- **No Database Access**: Returns normalized data without persisting it
-- **GenAI/LLM Integration**: Uses language models for intelligent data extraction and normalization
-- **Reusable**: Can be used by CLI, notebooks, and import scripts
-
-**Note**: While the Scraping Service does not directly access entities in the database, it may accept structured or unstructured inputs from users or existing entities (e.g., entity IDs, names, or attributes) to guide data extraction and normalization. The service produces normalized data that can be reviewed and imported by client applications.
-
-#### Core Components
-
-**Web Scraper**
-- Multi-source data extraction (Wikipedia, government sites, news)
-- Rate limiting and respectful scraping
-- Error handling and retry logic
-- HTML parsing and content extraction
-
-**Translation Service**
-- Nepali to English translation
-- English to Nepali translation
-- Transliteration handling
-- Language detection
-
-**Data Normalization Service**
-- LLM-powered data structuring
-- Extract structured data from unstructured text
-- Relationship discovery from narrative text
-- Name disambiguation and standardization
-- Data quality assessment
-
-#### Supported Data Sources
-
-- **Wikipedia**: Politician profiles, organization pages, infoboxes
-- **Government Sites**: Election Commission data, ministry registrations
-- **News**: Public statements, event coverage, biographical information
-- **Other Sources**: Social media, official announcements
-
-#### Service Interface Example
-
+**Example:**
 ```python
-from nes.services import ScrapingService
-
-# Initialize scraping service
-scraping_service = ScrapingService()
-
-# Extract entity data from Wikipedia
-raw_data = scraping_service.extract_from_wikipedia(
-    page_title="Ram_Chandra_Poudel",
-    language="en"
-)
-
-# Normalize to entity model (doesn't save to database)
-normalized_entity = scraping_service.normalize_person_data(
-    raw_data=raw_data,
-    source="wikipedia"
-)
-
-# Extract relationships from text using LLM
-relationships = scraping_service.extract_relationships(
-    text="Ram Chandra Poudel is a member of Nepali Congress",
-    entity_id="entity:person/ram-chandra-poudel"
-)
-
-# Translate Nepali text to English
-translated = scraping_service.translate(
-    text="राम चन्द्र पौडेल",
-    source_lang="ne",
-    target_lang="en"
-)
+scraping_service.extract_from_wikipedia("Ram_Chandra_Poudel")
+scraping_service.normalize_person_data(raw_data)
+scraping_service.translate("राम चन्द्र पौडेल", "ne", "en")
 ```
 
 ### CLI Tools
 
-The CLI provides command-line access to the system, using Search Service for database queries and Scraping Service for external data discovery. The CLI is built using Python Click, a composable command-line interface toolkit that provides elegant argument parsing, help generation, and command grouping.
+Built with Python Click for command-line access to services.
 
-#### CLI Capabilities
-
-- **Entity Search**: Search and filter entities from the database
-- **Entity Display**: View detailed entity information
-- **Relationship Exploration**: Browse entity relationships
-- **External Search**: Search external sources using Scraping Service
-- **Data Export**: Export search results to various formats
-
-#### CLI Integration Example
-
-```python
-from nes.services import SearchService, ScrapingService
-from nes.database import FileDatabase
-
-# CLI command: nes search "ram poudel"
-def cli_search(query: str, entity_type: str = None):
-    db = FileDatabase(base_path="./nes-db/v2")
-    search_service = SearchService(database=db)
-    
-    results = search_service.search_entities(
-        query=query,
-        entity_type=entity_type,
-        limit=10,
-        offset=0
-    )
-    
-    for entity in results.results:
-        print(f"{entity.id}: {entity.names[0].en.full}")
-    
-    print(f"\nTotal results: {results.total}")
-
-# CLI command: nes scrape-info "ram poudel"
-def cli_scrape_info(query: str):
-    scraping_service = ScrapingService()
-    
-    # Search external sources
-    results = scraping_service.search_external_sources(
-        query=query,
-        sources=["wikipedia"]
-    )
-    
-    for result in results:
-        print(f"Source: {result.source}")
-        print(f"Title: {result.title}")
-        print(f"URL: {result.url}")
-        print(f"Summary: {result.summary}\n")
-```
+**Commands:**
+- `nes search entities` - Search and filter entities
+- `nes show <id>` - View entity details
+- `nes versions <id>` - Version history
+- `nes migrate list/pending/run/create` - Migration management
+- `nes server start/dev` - API server
+- `nes integrity check` - Relationship integrity
 
 ### Notebook Applications
 
-Jupyter notebooks serve as interactive data import and maintenance tools, orchestrating Publication, Search, and Scraping services.
+Jupyter notebooks for interactive data import and maintenance with human-in-the-loop workflows.
 
-#### Architecture Philosophy
+**Typical Workflow:**
+1. Scrape data from external source
+2. Normalize to entity model
+3. Check for duplicates using Search Service
+4. Manual review and decision
+5. Create or update entity via Publication Service
 
-- **Interactive Exploration**: Exploratory data import and analysis
-- **Service Orchestration**: Combine Scraping, Search, and Publication services
-- **Human-in-the-Loop**: Manual review and approval of scraped data
-- **Iterative Development**: Test and refine data import workflows
-
-#### Typical Notebook Workflow
-
-```python
-from nes.services import PublicationService, SearchService, ScrapingService
-from nes.database import FileDatabase
-
-# Initialize all services
-db = FileDatabase(base_path="./nes-db/v2")
-pub_service = PublicationService(database=db)
-search_service = SearchService(database=db)
-scraping_service = ScrapingService()
-
-# Notebook workflow: Import politician from Wikipedia
-def import_politician_from_wikipedia(wikipedia_page: str):
-    # 1. Scrape data from Wikipedia using Scraping Service
-    raw_data = scraping_service.extract_from_wikipedia(
-        page_title=wikipedia_page,
-        language="en"
-    )
-    
-    # 2. Normalize to entity model
-    normalized = scraping_service.normalize_person_data(
-        raw_data=raw_data,
-        source="wikipedia"
-    )
-    
-    # 3. Check for duplicates using Search Service
-    existing = search_service.search_entities(
-        query=normalized["names"][0]["en"]["full"],
-        entity_type="person",
-        sub_type="politician",
-        limit=5
-    )
-    
-    # 4. Review and decide (human-in-the-loop)
-    if existing.total > 0:
-        print(f"Found {existing.total} potential duplicates:")
-        for e in existing.results:
-            print(f"  - {e.id}: {e.names[0].en.full}")
-        
-        # Manual decision: update or create new
-        should_update = input("Update existing? (y/n): ")
-        
-        if should_update.lower() == 'y':
-            entity_id = input("Enter entity ID to update: ")
-            entity = pub_service.get_entity(entity_id)
-            # Merge and update
-            pub_service.update_entity(
-                entity=entity,
-                author_id="author:human:data-maintainer",
-                change_description=f"Updated from Wikipedia: {wikipedia_page}"
-            )
-        else:
-            # Create new entity
-            entity = pub_service.create_entity(
-                entity_data=normalized,
-                author_id="author:human:data-maintainer",
-                change_description=f"Imported from Wikipedia: {wikipedia_page}"
-            )
-    else:
-        # No duplicates, create new
-        entity = pub_service.create_entity(
-            entity_data=normalized,
-            author_id="author:human:data-maintainer",
-            change_description=f"Imported from Wikipedia: {wikipedia_page}"
-        )
-    
-    return entity
-
-# Use in notebook
-politician = import_politician_from_wikipedia("Ram_Chandra_Poudel")
-print(f"Imported: {politician.id}")
-```
-
-#### Notebook Use Cases
-
-- **Interactive Data Import**: Import entities with manual review
-- **Data Quality Analysis**: Analyze and fix data quality issues
-- **Experimental Workflows**: Test new scraping and normalization approaches
-- **Bulk Operations**: Process multiple entities with human oversight
-- **Data Exploration**: Explore relationships and entity connections
+**Use Cases**: Interactive import, data quality analysis, experimental workflows, bulk operations with oversight
 
 ## Data Models
 
-### Entity Schema
+**Entity**: slug, type/subtype, multilingual names (PRIMARY/ALIAS/etc.), identifiers, attributes, contacts, descriptions, version_summary
 
-```json
-{
-  "slug": "string (required, 3-50 chars, kebab-case)",
-  "type": "person|organization|location",
-  "sub_type": "political_party|government_body|province|district|...",
-  "names": [
-    {
-      "kind": "PRIMARY|ALIAS|ALTERNATE|BIRTH|OFFICIAL",
-      "en": {
-        "full": "string",
-        "given": "string?",
-        "middle": "string?",
-        "family": "string?",
-        "prefix": "string?",
-        "suffix": "string?"
-      },
-      "ne": { /* same structure */ }
-    }
-  ],
-  "version_summary": {
-    "version": "integer",
-    "created_at": "datetime",
-    "created_by": "string"
-  },
-  "identifiers": [
-    {
-      "scheme": "wikipedia|wikidata|twitter|...",
-      "value": "string",
-      "url": "string?"
-    }
-  ],
-  "attributes": { /* flexible key-value pairs */ },
-  "contacts": [
-    {
-      "type": "EMAIL|PHONE|URL|...",
-      "value": "string"
-    }
-  ],
-  "descriptions": {
-    "en": { "value": "string", "provenance": "human|llm|..." },
-    "ne": { "value": "string", "provenance": "human|llm|..." }
-  }
-}
-```
+**Relationship**: source/target entity IDs, type (AFFILIATED_WITH, MEMBER_OF, etc.), temporal dates, attributes, version_summary
 
-### Relationship Schema
+**Version**: entity_id, version number, complete snapshot, created_at, author, change_description
 
-```json
-{
-  "source_entity_id": "entity:type/subtype/slug",
-  "target_entity_id": "entity:type/subtype/slug",
-  "type": "AFFILIATED_WITH|EMPLOYED_BY|MEMBER_OF|...",
-  "start_date": "date?",
-  "end_date": "date?",
-  "attributes": { /* relationship-specific data */ },
-  "version_summary": { /* version metadata */ },
-  "attributions": ["source1", "source2"]
-}
-```
-
-### Version Schema
-
-```json
-{
-  "entity_id": "string",
-  "version": "integer",
-  "snapshot": { /* complete entity/relationship state */ },
-  "created_at": "datetime",
-  "created_by": "string",
-  "change_description": "string?",
-  "attribution": { /* source information */ }
-}
-```
-
-### Data Maintainer Interface
-
-The Data Maintainer Interface is a Pythonic API designed for local use by trusted maintainers. It provides a clean, intuitive interface for data maintenance operations without requiring authentication.
-
-#### Python API Example
-
+**Example Usage:**
 ```python
-from nes.services import PublicationService
-from nes.database import FileDatabase
-from nes.core.models import Entity, Relationship
-
-# Initialize database and publication service
-db = FileDatabase(base_path="./nes-db/v2")
-pub_service = PublicationService(database=db)
-
-# Update an entity (automatically creates version)
-entity = pub_service.get_entity("entity:person/ram-chandra-poudel")
-entity.names[0].en.full = "Ram Chandra Poudel"
-pub_service.update_entity(
-    entity=entity,
-    author_id="author:system:csv-importer",
-    change_description="Updated name spelling"
-)
-
-# Create a relationship (automatically creates version)
-relationship = pub_service.create_relationship(
-    source_entity_id="entity:person/ram-chandra-poudel",
-    target_entity_id="entity:organization/political_party/nepali-congress",
-    relationship_type="MEMBER_OF",
-    start_date="2000-01-01",
-    author_id="author:system:csv-importer"
-)
-
-# Batch operations through publication service
-entities = pub_service.list_entities(entity_type="person", sub_type="politician")
-for entity in entities:
-    # Process and update entities with automatic versioning
-    pub_service.update_entity(
-        entity, 
-        author_id="author:system:batch-processor",
-        change_description="Batch update"
-    )
-
-# Get version history
-versions = pub_service.get_entity_versions(
-    entity_id="entity:person/ram-chandra-poudel"
-)
+pub_service.create_entity(entity_data, author_id, change_description)
+pub_service.create_relationship(source_id, target_id, type, author_id)
+pub_service.get_entity_versions(entity_id)
 ```
-
-#### Interface Characteristics
-
-- **No Authentication**: Operates directly on local file system without authentication checks
-- **Publication Service Layer**: Uses PublicationService for coordinated operations across modules
-- **Automatic Versioning**: All updates automatically create version snapshots through Version Module
-- **Author Attribution**: Requires author_id for change tracking but no user authentication
-- **Validation**: Full Pydantic validation on all operations coordinated by Publication Service
-- **Transaction Safety**: Atomic operations managed by Publication Service
-- **Module Coordination**: Entity, Relationship, and Version modules work together seamlessly
 
 ## Error Handling
 
-### Validation Errors
-- **Schema Validation**: Pydantic model validation with field-level error details
-- **Business Rules**: Custom validation for entity-specific constraints
-- **Reference Integrity**: Entity ID validation and relationship consistency checks
-- **Data Quality**: Name requirements, identifier format validation
+**Validation**: Pydantic schema validation, business rules, reference integrity, data quality checks
 
-### API Error Responses
-- **400 Bad Request**: Invalid input data with detailed field errors
-- **404 Not Found**: Entity, relationship, or version not found
-- **409 Conflict**: Duplicate entity creation attempts
-- **422 Unprocessable Entity**: Valid JSON but invalid business logic
-- **500 Internal Server Error**: Database or system errors
+**API Errors**: 400 (bad request), 404 (not found), 409 (conflict), 422 (unprocessable), 500 (server error)
 
-### Error Response Format
-
-```json
-{
-  "error": {
-    "code": "VALIDATION_ERROR",
-    "message": "Entity validation failed",
-    "details": [
-      {
-        "field": "names",
-        "message": "At least one name with kind='PRIMARY' is required"
-      }
-    ]
-  }
-}
-```
+**Format**: Structured error responses with code, message, and field-level details
 
 ## Testing Strategy
 
-### Test-Driven Development (TDD)
-The project follows the Red-Green-Refactor cycle:
+**TDD Approach**: Red-Green-Refactor cycle with test-first development
 
-- **Red Phase**: Write failing tests first that define the expected behavior
-- **Green Phase**: Write minimal code to make tests pass, focusing on functionality over elegance
-- **Refactor Phase**: Improve code quality, performance, and maintainability while keeping tests green
+**Test Levels**:
+- **Unit**: Model validation, business logic, identifier generation, data transformation
+- **Integration**: Database operations, API endpoints, version management, relationship management
+- **End-to-End**: Complete workflows, data import, multi-entity scenarios, performance benchmarks
 
-### Unit Testing
-- **Model Validation**: Comprehensive Pydantic model testing with TDD approach
-- **Business Logic**: Core service method testing with test-first development
-- **Identifier Generation**: ID building and validation testing using Red-Green-Refactor
-- **Data Transformation**: Scraping and normalization testing with failing tests written first
-
-### Integration Testing
-- **Database Operations**: Full CRUD operation testing following TDD principles
-- **API Endpoints**: Request/response cycle testing with test-first approach
-- **Version Management**: End-to-end versioning workflow testing using Red-Green-Refactor
-- **Relationship Management**: Complex relationship scenario testing with comprehensive test coverage
-
-### End-to-End Testing
-- **Complete Workflows**: Entity creation through API consumption with behavior-driven tests
-- **Data Import**: Scraping to database to API testing following TDD methodology
-- **Multi-Entity Scenarios**: Complex entity relationship testing with test-first design
-- **Performance Testing**: Large dataset handling validation with performance benchmarks
-
-### Test Data Strategy
-- **Authentic Nepali Data**: Real Nepali names, organizations, and locations for realistic testing
-- **Cultural Context**: Proper Nepali political and administrative structures in test scenarios
-- **Multilingual Testing**: Nepali and English name variations with comprehensive coverage
-- **Edge Cases**: Boundary conditions and error scenarios designed through failing tests first
-
-### TDD Implementation Guidelines
-- **Test First**: Always write tests before implementing functionality
-- **Minimal Implementation**: Write just enough code to pass the current test
-- **Continuous Refactoring**: Regularly improve code structure while maintaining test coverage
-- **Fast Feedback**: Ensure tests run quickly to support rapid Red-Green-Refactor cycles
+**Test Data**: Authentic Nepali data with proper cultural context, multilingual coverage, edge cases
 
 ## Performance Considerations
 
-### Read-Time Optimization Priority
-The system prioritizes read-time latency reduction over write-time performance, as the read-only API serves public consumers while writes are performed by data maintainers in controlled environments.
+**Read-Time Priority**: Optimize for sub-100ms API response times; accept slower writes
 
-### Database Optimization
-- **Read-Optimized File Organization**: Directory structure designed for fast entity lookups and retrieval
-- **Aggressive Caching Strategy**: In-memory caching for frequently accessed entities with cache warming
-- **Pre-computed Indexes**: Build search indexes during write operations to accelerate read queries
-- **Denormalized Storage**: Store redundant data to minimize read-time joins and computations
-- **Write-Time Processing**: Perform expensive operations (validation, normalization, indexing) during writes
+**Optimizations**:
+- **Database**: Read-optimized file structure, aggressive caching, pre-computed indexes, denormalized storage
+- **Search**: Query optimization, result caching, efficient pagination
+- **API**: HTTP caching with ETags, connection pooling, pre-computed filters
 
-### Search Service Optimization
-- **Database Query Optimization**: Efficient filtering at the database layer
-- **Result Caching**: Cache common search queries
-- **Pagination Efficiency**: Limit result set sizes for fast response times
-
-### API Performance
-- **Fast Response Times**: Optimize for sub-100ms response times for entity retrieval
-- **Efficient Pagination**: Pre-sorted data structures for instant offset-based pagination
-- **HTTP Caching**: Aggressive caching headers with ETags for unchanged data
-- **Query Pre-processing**: Pre-compute common filter combinations during write operations
-- **Connection Pooling**: Optimize database connections for concurrent read requests
-
-### Write-Time Trade-offs
-- **Comprehensive Validation**: Accept longer write times for thorough data validation
-- **Index Rebuilding**: Rebuild search indexes during writes to maintain read performance
-- **Batch Processing**: Group write operations to amortize expensive operations
-- **Background Processing**: Defer non-critical write operations to background tasks
-
-### Scalability Design
-- **Read Replica Strategy**: Support for multiple read-only database replicas
-- **CDN Integration**: Static asset delivery through content delivery networks
-- **Horizontal Read Scaling**: Independent scaling of read-only API instances
-- **Async Write Processing**: Non-blocking write operations with eventual consistency
+**Scalability**: Read replicas, CDN integration, horizontal scaling, async write processing
 
 ## Security Considerations
 
-### Data Protection
-- **Input Validation**: Comprehensive sanitization of all inputs
-- **SQL Injection Prevention**: Parameterized queries and safe operations
-- **XSS Protection**: Proper output encoding and sanitization
-- **File System Security**: Safe file operations and path validation
+**Data Protection**: Input validation, safe file operations, path validation
 
-### API Security
-- **CORS Configuration**: Controlled cross-origin access
-- **Rate Limiting**: Protection against DoS attacks
-- **Input Size Limits**: Prevention of resource exhaustion
-- **Error Information**: Careful error message disclosure
+**API Security**: CORS configuration, rate limiting, input size limits, careful error disclosure
 
-### Data Privacy
-- **PII Handling**: Careful management of personally identifiable information
-- **Attribution Privacy**: Optional anonymous contributions
-- **Data Retention**: Clear policies for data lifecycle management
-- **Access Control**: Future authentication and authorization framework
+**Data Privacy**: PII handling, attribution privacy, data retention policies, future access control
+
+
+## Migration System
+
+Community-driven data evolution through versioned Python migration scripts with Git-based tracking.
+
+### Two-Repository Architecture
+
+**Service API Repository**: Application code, migration scripts in `migrations/`, lightweight (~10MB)
+
+**Database Repository**: Entity JSON files (100k-1M files), Git submodule at `nes-db/`, large (~1GB+), modified by migrations
+
+**Workflow**: Contributor creates migration → Submits PR → Maintainer reviews/merges → GitHub Actions execute → Changes committed to Database Repository → Submodule updated
+
+**Benefits**: Separation of concerns, lightweight service repo, scalable database repo, code review separate from data, complete audit trail
+
+### Migration Components
+
+**Migration Manager**: Discovers migrations, checks applied status via Git log, validates structure
+
+**Migration Runner**: Executes scripts, manages Git commits/pushes, handles batch commits (1000+ files), provides dry-run mode
+
+**Migration Context**: Provides service access (Publication, Search, Scraping), file readers (CSV/JSON/Excel), logging
+
+**Migration Script Usage**:
+```python
+async def migrate(context):
+    """Migration scripts use services directly."""
+    # Read data
+    ministers = context.read_csv("ministers.csv")
+    
+    # Use publication service directly
+    author_id = "author:migration:005-add-ministers"
+    
+    for row in ministers:
+        entity = Entity(...)
+        
+        # Direct service call (no wrapper)
+        await context.publication.create_entity(
+            entity=entity,
+            author_id=author_id,
+            change_description="Import minister"
+        )
+    
+    # Use search service directly
+    existing = await context.search.find_entity_by_name("Ram Sharma")
+    
+    # Use scraping service directly
+    normalized = await context.scraping.normalize_name("राम शर्मा")
+    
+    context.log(f"Imported {len(ministers)} ministers")
+```
+
+### Migration Structure
+
+**Folder Format**: `migrations/NNN-descriptive-name/` with `migrate.py` (required), `README.md` (required), data files (optional)
+
+**Models**: Migration (prefix, name, paths, metadata), MigrationResult (status, stats, logs, commit SHA), MigrationStatus enum
+
+### Determinism and Tracking
+
+**Git-Based Tracking**: Applied migrations tracked via Git commits in Database Repository (no separate tracking table)
+
+**Linear Model**: Sequential execution (000, 001, 002...), no forking/merging, forward-only (no rollback)
+
+**Idempotency**: Check Git log before execution, skip if already applied, safe to re-run `nes migrate run --all`
+
+**Batch Commits**: Automatically batch commits for 1000+ file changes to avoid performance issues
+
+### CI/CD Workflows
+
+**Migration Preview** (on PR): Execute in isolated environment, generate statistics, post PR comment
+
+**Migration Persistence** (on merge/schedule): Execute pending migrations, commit to Database Repository, update submodule
+
+### Contributor Process
+
+1. Fork Service API Repository
+2. Run `nes migrate create <name>`
+3. Add data files and implement `migrate.py`
+4. Document in `README.md`
+5. Submit PR (no database access needed)

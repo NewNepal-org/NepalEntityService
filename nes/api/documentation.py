@@ -15,7 +15,8 @@ from fastapi.responses import HTMLResponse
 # Get the project root directory (where docs/ is located)
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 DOCS_DIR = PROJECT_ROOT / "docs"
-TEMPLATE_PATH = Path(__file__).parent / "templates" / "documentation.html"
+SPECS_DIR = PROJECT_ROOT / ".kiro" / "specs"
+TEMPLATE_PATH = DOCS_DIR / "templates" / "documentation.html"
 
 
 def load_template() -> str:
@@ -49,8 +50,8 @@ def render_markdown_file(page_name: str) -> str:
     Raises:
         HTTPException: If the file is not found or cannot be read
     """
-    # Security: Prevent directory traversal
-    if ".." in page_name or "/" in page_name or "\\" in page_name:
+    # Security: Prevent directory traversal with ..
+    if ".." in page_name:
         raise HTTPException(status_code=404, detail="Page not found")
 
     # Construct file path
@@ -58,6 +59,12 @@ def render_markdown_file(page_name: str) -> str:
         # Root path serves index.md
         file_path = DOCS_DIR / "index.md"
         page_title = "Home"
+    elif page_name.startswith("specs/"):
+        # Handle specs from .kiro/specs/
+        spec_path = page_name[6:]  # Remove "specs/" prefix
+        file_path = SPECS_DIR / f"{spec_path}.md"
+        # Convert path to Title Case for page title
+        page_title = spec_path.replace("/", " - ").replace("-", " ").title()
     else:
         file_path = DOCS_DIR / f"{page_name}.md"
         # Convert kebab-case to Title Case for page title
@@ -67,10 +74,17 @@ def render_markdown_file(page_name: str) -> str:
     if not file_path.exists() or not file_path.is_file():
         raise HTTPException(status_code=404, detail="Page not found")
 
-    # Security: Ensure the file is within docs directory
+    # Security: Ensure the file is within docs or specs directory
     try:
         file_path = file_path.resolve()
-        if not str(file_path).startswith(str(DOCS_DIR.resolve())):
+        docs_resolved = str(DOCS_DIR.resolve())
+        specs_resolved = str(SPECS_DIR.resolve())
+        file_resolved = str(file_path)
+
+        if not (
+            file_resolved.startswith(docs_resolved)
+            or file_resolved.startswith(specs_resolved)
+        ):
             raise HTTPException(status_code=404, detail="Page not found")
     except Exception:
         raise HTTPException(status_code=404, detail="Page not found")
@@ -88,9 +102,20 @@ def render_markdown_file(page_name: str) -> str:
                 "tables",  # For tables
                 "nl2br",  # Convert newlines to <br>
                 "sane_lists",  # Better list handling
-                "codehilite",  # Syntax highlighting
                 "toc",  # Table of contents
+                "pymdownx.superfences",  # Enhanced fenced code blocks with mermaid support
             ],
+            extension_configs={
+                "pymdownx.superfences": {
+                    "custom_fences": [
+                        {
+                            "name": "mermaid",
+                            "class": "mermaid",
+                            "format": lambda source, language, css_class, options, md, **kwargs: f'<div class="mermaid">\n{source}\n</div>',
+                        }
+                    ]
+                }
+            },
         )
 
         # Load template and inject content
@@ -121,8 +146,9 @@ def render_404_page() -> str:
         <p>The documentation page you're looking for doesn't exist.</p>
         <div>
             <a href="/">Home</a>
-            <a href="/getting-started">Getting Started</a>
-            <a href="/api-reference">API Reference</a>
+            <a href="/consumers/getting-started">Getting Started</a>
+            <a href="/consumers/api-guide">API Guide</a>
+            <a href="/docs">OpenAPI Docs</a>
         </div>
     </div>
     """

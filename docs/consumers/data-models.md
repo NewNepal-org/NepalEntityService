@@ -524,6 +524,6 @@ All changes should include descriptions:
 
 ## Next Steps
 
-- [API Reference](/api-reference) - Learn how to query these models
-- [Examples](/examples) - See real-world usage examples
-- [Getting Started](/getting-started) - Start using the API
+- [API Reference](/docs) - Interactive OpenAPI documentation
+- [Examples](/consumers/examples) - See real-world usage examples
+- [Getting Started](/consumers/getting-started) - Start using the API

@@ -193,9 +193,9 @@ poetry run nes server start
 ```
 
 Then visit:
-- **Root Documentation:** http://localhost:8000/
-- **API Schema:** http://localhost:8000/docs
-- **Health Check:** http://localhost:8000/api/health
+- **Root Documentation:** http://localhost:8195/
+- **API Schema:** http://localhost:8195/docs
+- **Health Check:** http://localhost:8195/api/health
 
 ## Code Patterns
 

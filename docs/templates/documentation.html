@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Nepal Entity Service</title>
+    <style>
+        :root {
+            /* Primary colors */
+            --primary-color: #2c5aa0;
+            --primary-dark: #1e3d6f;
+            --primary-light: #4a7bc8;
+            
+            /* Background colors */
+            --bg-main: #f5f5f5;
+            --bg-content: white;
+            --bg-nav: #f8f9fa;
+            --bg-code: #282c34;
+            --bg-inline-code: #f4f4f4;
+            --bg-mermaid: #fafafa;
+            
+            /* Text colors */
+            --text-primary: #333;
+            --text-secondary: #666;
+            --text-heading: #2c5aa0;
+            --text-code: #abb2bf;
+            
+            /* Border colors */
+            --border-light: #e0e0e0;
+            --border-medium: #ddd;
+            --border-accent: #2c5aa0;
+            
+            /* Spacing */
+            --spacing-xs: 5px;
+            --spacing-sm: 10px;
+            --spacing-md: 15px;
+            --spacing-lg: 20px;
+            --spacing-xl: 30px;
+            --spacing-2xl: 40px;
+            
+            /* Font sizes */
+            --font-size-base: 1em;
+            --font-size-sm: 0.9em;
+            --font-size-lg: 1.1em;
+            --font-size-xl: 1.2em;
+            --font-size-2xl: 1.5em;
+            --font-size-3xl: 2em;
+            --font-size-4xl: 2.5em;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-main);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+            background-color: var(--bg-content);
+            min-height: 100vh;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            border-bottom: 3px solid var(--border-accent);
+            padding-bottom: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+            position: relative;
+        }
+        
+        header h1 {
+            color: var(--text-heading);
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        header p {
+            color: var(--text-secondary);
+            font-size: var(--font-size-lg);
+        }
+        
+        .github-link {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .github-link:hover {
+            color: var(--primary-color);
+        }
+        
+        .github-link svg {
+            width: 32px;
+            height: 32px;
+        }
+        
+        nav {
+            background-color: var(--bg-nav);
+            padding: var(--spacing-md);
+            border-radius: 5px;
+            margin-bottom: var(--spacing-xl);
+            display: flex;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: 3px;
+            transition: background-color 0.2s;
+        }
+        
+        nav a:hover {
+            background-color: rgba(44, 90, 160, 0.1);
+        }
+        
+        nav a.highlight {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        nav a.highlight:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-toggle {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .dropdown-toggle:hover {
+            background-color: rgba(44, 90, 160, 0.1);
+        }
+        
+        .dropdown-toggle::after {
+            content: '▼';
+            font-size: 0.7em;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            border-radius: 5px;
+            z-index: 1000;
+            margin-top: 5px;
+        }
+        
+        .dropdown-content a {
+            color: var(--text-primary);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-radius: 0;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 5px 5px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: var(--bg-nav);
+        }
+        
+        .dropdown.active .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown.active .dropdown-toggle::after {
+            content: '▲';
+        }
+        
+        .content {
+            padding: var(--spacing-lg) 0;
+        }
+        
+        .content h1 {
+            color: var(--text-heading);
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--spacing-lg);
+            border-bottom: 2px solid var(--border-light);
+            padding-bottom: var(--spacing-sm);
+        }
+        
+        .content h2 {
+            color: var(--text-heading);
+            font-size: var(--font-size-3xl);
+            margin-top: var(--spacing-2xl);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .content h3 {
+            color: #444;
+            font-size: var(--font-size-2xl);
+            margin-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .content h4 {
+            color: #555;
+            font-size: var(--font-size-xl);
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .content p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .content ul, .content ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .content li {
+            margin-bottom: 8px;
+        }
+        
+        .content a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .content a:hover {
+            text-decoration: underline;
+        }
+        
+        .content code {
+            background-color: var(--bg-inline-code);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: var(--font-size-sm);
+        }
+        
+        .content pre {
+            background-color: var(--bg-code);
+            padding: var(--spacing-md);
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: var(--spacing-lg);
+            border-left: 4px solid var(--border-accent);
+        }
+        
+        .content pre code {
+            background-color: transparent;
+            padding: 0;
+            color: var(--text-code);
+        }
+        
+        .content blockquote {
+            border-left: 4px solid var(--border-accent);
+            padding-left: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        .content table th,
+        .content table td {
+            border: 1px solid var(--border-medium);
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .content table th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .content table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .content strong, .content b {
+            font-weight: 600;
+            color: #222;
+        }
+        
+        .content em, .content i {
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid var(--border-light);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: var(--font-size-sm);
+        }
+        
+        .error-page {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        .error-page h1 {
+            font-size: 4em;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .error-page p {
+            font-size: var(--font-size-xl);
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .error-page a {
+            display: inline-block;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: var(--spacing-xs);
+        }
+        
+        .error-page a:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        /* Mermaid diagram styling */
+        .mermaid {
+            background-color: var(--bg-mermaid);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            border-radius: 5px;
+            border: 1px solid var(--border-light);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize syntax highlighting
+            hljs.highlightAll();
+            
+            // Initialize Mermaid
+            mermaid.initialize({ 
+                startOnLoad: true,
+                theme: 'default',
+                securityLevel: 'loose',
+                flowchart: {
+                    useMaxWidth: true,
+                    htmlLabels: true,
+                    curve: 'basis'
+                }
+            });
+            
+            // Dropdown click handler
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                toggle.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    // Close other dropdowns
+                    dropdowns.forEach(d => {
+                        if (d !== dropdown) d.classList.remove('active');
+                    });
+                    // Toggle current dropdown
+                    dropdown.classList.toggle('active');
+                });
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function() {
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://github.com/NewNepal-org/NepalEntityService" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="View on GitHub">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
+            <h1>🇳🇵 Nepal Entity Service</h1>
+            <p>Open Source, open data, and open API for Nepali public entities</p>
+        </header>
+        
+        <nav>
+            <a href="/">Index</a>
+            <a href="/consumers/getting-started">Getting Started</a>
+            <div class="dropdown">
+                <span class="dropdown-toggle">For Consumers</span>
+                <div class="dropdown-content">
+                    <a href="/consumers/api-guide">API Guide</a>
+                    <a href="/consumers/data-models">Data Models</a>
+                    <a href="/consumers/examples">Examples</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span class="dropdown-toggle">For Contributors</span>
+                <div class="dropdown-content">
+                    <a href="/contributors/contributor-guide">Contributor Guide</a>
+                    <a href="/contributors/database-setup">Database Setup</a>
+                    <a href="/contributors/workflows">Workflows</a>
+                    <a href="/specs/nepal-entity-service/design">Service Design</a>
+                </div>
+            </div>
+            <a href="/docs" class="highlight">OpenAPI Docs</a>
+        </nav>
+        
+        <div class="content">
+            {{ content }}
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 <a href="https://newnepal.org" target="_blank" rel="noopener noreferrer">NewNepal.org</a>. Open source project for civic technology.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,7 +1,5 @@
 # Implementation Plan - Complete V2 Rewrite (TDD Approach)
 
-> **IMPORTANT**: This is a complete rewrite in a new `nes` package with breaking changes. The existing `nes` package will remain untouched during development and will be deleted after v2 is complete. The new database will use `nes-db/v2` instead of `entity-db`.
-
 > **TDD METHODOLOGY**: All implementation tasks follow Red-Green-Refactor. Write failing tests first (Red), implement minimal code to pass (Green), then refactor for quality (Refactor).
 
 > Another note: We use poetry for venv-based development.
@@ -384,7 +382,7 @@
   - [x] 6.2 Implement API foundation (Green)
     - Create `nes/api/` directory with `__init__.py`
     - Create `nes/api/app.py` with FastAPI application
-    - Create `nes/api/routes/` for endpoint modules
+    - Create `nes/api/routes/` for endpoint route files
     - Create `nes/api/responses.py` for response models
     - Set up CORS, error handling, and middleware
     - Configure API to use nes services
@@ -478,7 +476,7 @@
 
 ## Phase 5: CLI and Tooling (TDD)
 
-- [-] 8. Implement comprehensive CLI
+- [x] 8. Implement comprehensive CLI
   - [x] 8.1 Write CLI tests FIRST
     - Write tests for all command groups
     - Write tests for command arguments and options
@@ -500,7 +498,7 @@
     - Ensure server command tests pass
     - _Requirements: 6.1, 15.1_
 
-  - [-] 8.4 Implement search commands (Green)
+  - [x] 8.4 Implement search commands (Green)
     - Add `nes search <query>` command
     - Implement `nes search entities` with filters
     - Add `nes search relationships` command
@@ -613,15 +611,15 @@
     - Ensure all tests still pass after refactoring
     - _Requirements: Code quality_
 
-- [ ] 11. Implement performance optimizations
-  - [ ] 11.1 Write indexing tests FIRST
+- [x] 11. Implement performance optimizations
+  - [x] 11.1 Write indexing tests FIRST
     - Write tests for entity type indexes
     - Write tests for name-based search indexes
     - Write tests for attribute indexes
     - Write tests for index rebuild command
     - _Requirements: TDD_
 
-  - [ ] 11.2 Implement pre-computed indexes (Green)
+  - [x] 11.2 Implement pre-computed indexes (Green)
     - Create index files for entity types
     - Add name-based search indexes
     - Implement attribute indexes
@@ -629,27 +627,27 @@
     - Ensure all indexing tests pass
     - _Requirements: Performance_
 
-  - [ ] 11.3 Write cache warming tests FIRST
+  - [x] 11.3 Write cache warming tests FIRST
     - Write tests for cache warming on startup
     - Write tests for popular entity detection
     - Write tests for cache preloading
     - _Requirements: TDD_
 
-  - [ ] 11.4 Implement cache warming (Green)
+  - [x] 11.4 Implement cache warming (Green)
     - Add cache warming on startup
     - Implement popular entity detection
     - Add cache preloading for common queries
     - Ensure all cache warming tests pass
     - _Requirements: Performance_
 
-  - [ ] 11.5 Write performance benchmark tests
+  - [x] 11.5 Write performance benchmark tests
     - Benchmark entity retrieval latency
     - Benchmark search performance
     - Benchmark cache effectiveness
     - Create performance regression tests
     - _Requirements: Performance validation_
 
-  - [ ] 11.6 Refactor performance optimizations
+  - [x] 11.6 Refactor performance optimizations
     - Refactor for code quality and maintainability
     - Optimize critical paths
     - Improve monitoring and metrics
@@ -661,80 +659,93 @@
 
 - [ ] 12. Comprehensive end-to-end testing
   - [ ] 12.1 Write end-to-end workflow tests
-    - Write tests for complete entity lifecycle
-    - Write tests for data import workflows
-    - Write tests for relationship management
-    - Write tests for version tracking
+    - Write tests for complete entity lifecycle (create → update → version → retrieve)
+    - Write tests for data import workflows (scrape → normalize → create entity)
+    - Write tests for relationship management (create → update → query → integrity check)
+    - Write tests for version tracking (create version → retrieve history → compare snapshots)
+    - Write tests for migration workflows (discover → validate → execute → commit)
     - Use authentic Nepali data in all tests
-    - _Requirements: Testing coverage_
+    - _Requirements: Testing coverage, 2.1, 2.4, 4.5, 11.2, 16.1_
 
   - [ ] 12.2 Write data quality tests
-    - Write tests for data validation
-    - Write tests for constraint enforcement
-    - Write tests for integrity checks
-    - Write tests for error handling
-    - _Requirements: 8.1, 8.2_
+    - Write tests for data validation (Pydantic schema validation)
+    - Write tests for constraint enforcement (required fields, format validation)
+    - Write tests for integrity checks (orphaned relationships, circular dependencies)
+    - Write tests for error handling (invalid input, missing entities, database errors)
+    - _Requirements: 8.1, 8.2, 8.5_
 
   - [ ] 12.3 Run full test suite
-    - Run all unit tests
+    - Run all unit tests with coverage reporting
     - Run all integration tests
     - Run all end-to-end tests
     - Run performance benchmarks
-    - Verify 100% test coverage for critical paths
+    - Verify 90%+ test coverage for critical paths
     - _Requirements: Quality assurance_
 
   - [ ] 12.4 Fix any failing tests
     - Debug and fix any test failures
-    - Improve test reliability
-    - Add missing test coverage
-    - Document known issues
+    - Improve test reliability and reduce flakiness
+    - Add missing test coverage for edge cases
+    - Document known issues and limitations
     - _Requirements: Quality assurance_
 
-## Phase 9: Migration and Cleanup
+## Phase 9: Documentation and Polish
 
-- [ ] 13. Data migration from v1 to v2
-  - [ ] 13.1 Write migration tests FIRST
-    - Write tests for data format conversion
-    - Write tests for data integrity validation
-    - Write tests for rollback procedures
-    - _Requirements: Migration support, TDD_
+- [ ] 13. Final documentation updates
+  - [ ] 13.1 Update API documentation
+    - Review and update all API endpoint documentation
+    - Add comprehensive examples for each endpoint
+    - Document error responses and status codes
+    - Add authentication/authorization notes for future implementation
+    - _Requirements: 1.7, 1.8, Documentation_
 
-  - [ ] 13.2 Implement migration script (Green)
-    - Write migration script to convert entity-db to nes-db/v2
-    - Handle breaking changes in data format
-    - Validate migrated data
-    - Create migration documentation
-    - Ensure all migration tests pass
-    - _Requirements: Migration support_
-
-  - [ ] 13.3 Test migration with real data
-    - Test migration with sample data
-    - Verify data integrity after migration
-    - Test rollback procedures
-    - Document migration process
-    - _Requirements: Migration validation_
-
-- [ ] 14. Final cleanup and documentation
-  - [ ] 14.1 Update project documentation
-    - Update README.md for v2
-    - Update USAGE_EXAMPLES.md for v2
-    - Create MIGRATION.md guide
-    - Update all references from nes to nes
-    - Add Nepali-specific documentation
+  - [ ] 13.2 Update contributor documentation
+    - Review and update contributor guide
+    - Add troubleshooting section
+    - Document development setup process
+    - Add code style and testing guidelines
     - _Requirements: Documentation_
 
-  - [ ] 14.2 Delete v1 package
-    - Remove `nes/` directory
-    - Remove v1-specific tests
-    - Clean up v1 dependencies
-    - Update pyproject.toml to remove v1 references
-    - _Requirements: Cleanup_
+  - [ ] 13.3 Create deployment guide
+    - Document production deployment process
+    - Add Docker deployment instructions
+    - Document environment configuration
+    - Add monitoring and logging setup
+    - _Requirements: Documentation_
 
-  - [ ] 14.3 Rename nes to nes
-    - Rename `nes/` directory to `nes/`
-    - Update all imports from nes to nes
-    - Update pyproject.toml package name
-    - Update CLI command from nes to nes
-    - Update all documentation
-    - Run full test suite to verify rename
-    - _Requirements: Final rename_
+  - [ ] 13.4 Create user guides
+    - Write getting started guide for API consumers
+    - Create data maintainer guide with examples
+    - Document migration system for contributors
+    - Add troubleshooting and FAQ section
+    - _Requirements: Documentation_
+
+
+
+
+
+---
+
+## Summary of Remaining Work
+
+### High Priority (Core Functionality)
+1. **CLI Scraping Commands (8.5)** - Enable users to scrape data from external sources via CLI
+2. **CLI Data Management Commands (8.6)** - Provide data import/export and validation tools
+3. **End-to-End Testing (12.1-12.4)** - Ensure system reliability with comprehensive workflow tests
+
+### Medium Priority (Enhanced Features)
+4. **CLI Analytics Commands (8.7)** - Generate reports and visualizations for data analysis
+5. **Documentation Updates (13.1-13.4)** - Improve user guides and deployment documentation
+
+### Implementation Notes
+- The core system (Phases 0-7) is complete and functional
+- Migration system (Phase 10) is fully implemented and operational
+- Performance optimizations including caching and indexing are in place
+- API, services, and database layers are production-ready
+- Focus remaining work on CLI tooling and comprehensive testing
+
+### Testing Strategy
+- Write tests first (TDD approach) for all new features
+- Use authentic Nepali data in all tests
+- Aim for 90%+ coverage on critical paths
+- Include integration and end-to-end tests for workflows

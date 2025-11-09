@@ -174,11 +174,12 @@ async def root():
     return await serve_documentation("")
 
 
-@app.get("/{page}", response_class=HTMLResponse)
+@app.get("/{page:path}", response_class=HTMLResponse)
 async def documentation_page(page: str):
     """Serve a documentation page.
 
     This endpoint serves documentation pages from Markdown files.
     It should be registered after all other routes to avoid conflicts.
+    The :path converter allows capturing nested paths with slashes.
     """
     return await serve_documentation(page)

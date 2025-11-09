@@ -13,6 +13,7 @@ COPY nes-db/ ./nes-db/
 RUN mkdir -p ./nes-db/v2
 
 COPY docs/ ./docs/
+COPY .kiro/ ./.kiro/
 
 # Set default NES_DB_URL for container
 ENV NES_DB_URL=file:///app/nes-db/v2
