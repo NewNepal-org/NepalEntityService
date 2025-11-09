@@ -82,6 +82,9 @@ poetry run nes server start
 # Start development server (with auto-reload)
 poetry run nes server dev
 
+# Alternative: Use the nes-dev shortcut for development
+poetry run nes-dev
+
 # Specify custom host/port
 poetry run nes server start --host 0.0.0.0 --port 8080
 ```
@@ -112,11 +115,16 @@ For detailed migration information, see:
 # Development mode with auto-reload
 poetry run nes server dev
 
+# Alternative: Use the nes-dev shortcut
+poetry run nes-dev
+
 # The API will be available at:
 # - Documentation: http://localhost:8195/
 # - API endpoints: http://localhost:8195/api/
 # - OpenAPI docs: http://localhost:8195/docs
 ```
+
+The `nes-dev` command is a convenient shortcut that starts the development server with live reload enabled. Any changes to the code will automatically restart the server, making it ideal for active development.
 
 ### Running Tests
 

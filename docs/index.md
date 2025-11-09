@@ -1,6 +1,4 @@
-# Nepal Entity Service Documentation
-
-Welcome to the **Nepal Entity Service** (NES) documentation. NES is an **open source, open data** project that provides a comprehensive platform for managing Nepali public entities including persons, organizations, and locations with full versioning and relationship tracking.
+Welcome to the **Nepal Entity Service** (NES) documentation. 🇳🇵 NES is an **Open Source, open data, and open API** project that provides a comprehensive platform for managing Nepali public entities including persons, organizations, and locations with full versioning and relationship tracking.
 
 ## Open Source • Open Data • Open API
 
@@ -76,14 +74,15 @@ Technical specifications and design documents:
 
 ## What is Nepal Entity Service?
 
-The Nepal Entity Service provides a robust foundation for civic technology applications by offering:
+The Nepal Entity Service provides a robust foundation for civic technology applications, built from the ground up with **multilingual support** and a deep commitment to **respecting Nepali culture in software**. The service offers:
 
 - **Structured Entity Management**: Manage persons, organizations, and locations with rich metadata
 - **Versioning System**: Complete audit trails for all changes with author attribution
 - **Relationship Tracking**: Model complex connections between entities
-- **Multilingual Support**: Native support for Nepali (Devanagari) and English
+- **Multilingual Support**: Native support for Nepali (Devanagari) and English, with proper handling of Nepali names, transliteration, and cultural context
 - **RESTful API**: Public read-only API for accessing entity data
 - **Data Maintainer Interface**: Pythonic interface for local data maintenance
+- **Cultural Authenticity**: Designed to preserve and respect Nepali linguistic and cultural nuances in all aspects of the software
 
 ## Key Features
 
@@ -107,12 +106,14 @@ Model complex connections between entities:
 - Bidirectional relationship queries
 - Relationship versioning
 
-### Multilingual Support
-Built for Nepal's linguistic context:
-- Nepali (Devanagari) and English name support
-- Transliteration and romanization
-- Cross-language search capabilities
-- Cultural context preservation
+### Multilingual Support & Cultural Respect
+Built from the ground up to honor Nepal's linguistic and cultural context:
+- **Native Nepali Support**: First-class support for Nepali (Devanagari) script alongside English
+- **Proper Name Handling**: Authentic representation of Nepali names without forcing Western conventions
+- **Transliteration & Romanization**: Accurate conversion between scripts while preserving meaning
+- **Cross-Language Search**: Query entities in either Nepali or English seamlessly
+- **Cultural Context Preservation**: Maintain authenticity to Nepali political, social, and organizational structures
+- **Respectful Software Design**: Every aspect of the service is designed to respect and celebrate Nepali culture, not just accommodate it
 
 ## API Overview
 
@@ -159,7 +160,27 @@ Nepal Entity Service v2 is currently in active development as an open source, op
 
 ## License and Contributing
 
-This project is **open source** under [LICENSE] and welcomes contributions from everyone:
+This project is licensed under the **Hippocratic License 3.0**, an ethical source license that grants broad permissions to use, modify, and distribute the software, with one important condition: the software must not be used in ways that violate human rights laws or principles as defined by the United Nations Universal Declaration of Human Rights.
+
+### What This Means
+
+- ✅ **You can freely**: Use, copy, modify, merge, publish, distribute, sublicense, and sell the software
+- ✅ **For any ethical purpose**: Research, civic technology, journalism, education, commercial applications
+- ❌ **Not for**: Activities that violate human rights, including surveillance that violates privacy rights, discrimination, or other uses that conflict with internationally recognized human rights principles
+
+### Why This License?
+
+The Nepal Entity Service manages data about public figures and organizations. We chose the Hippocratic License to:
+
+- **Promote ethical use**: Encourage applications that serve the public good
+- **Prevent harm**: Discourage misuse for surveillance, harassment, or discrimination
+- **Align with values**: Reflect our commitment to transparency and human rights
+
+The license is designed to be permissive for legitimate uses while establishing clear ethical boundaries.
+
+### Contributing
+
+We welcome contributions from everyone who shares our commitment to ethical technology:
 
 - **Developers**: Contribute code, fix bugs, add features
 - **Data Contributors**: Submit migrations to add or update entity data
@@ -167,6 +188,10 @@ This project is **open source** under [LICENSE] and welcomes contributions from 
 - **Civic Technologists**: Build transparency and accountability applications
 
 For more information about contributing, see our [Contributor Guide](/contributors/contributor-guide) or visit our [GitHub repository](https://github.com/NewNepal-org/NepalEntityService).
+
+### Full License Text
+
+The complete Hippocratic License 3.0 text is available in the [LICENSE](https://github.com/NewNepal-org/NepalEntityService/blob/main/LICENSE) file in the repository. For more information about the Hippocratic License, visit [firstdonoharm.dev](https://firstdonoharm.dev/).
 
 ---
 

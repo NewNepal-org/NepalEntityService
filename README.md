@@ -2,97 +2,40 @@
 
 A comprehensive Python package for managing Nepali public entities with optional API and scraping capabilities.
 
-## Installation
+## Quick Start
 
-### Core Package
 ```bash
-pip install nepal-entity-service
-```
-
-### With API Support
-```bash
-pip install nepal-entity-service[api]
-```
-
-### With Scraping Support
-```bash
-pip install nepal-entity-service[scraping]
-```
-
-### Full Installation
-```bash
+# Install the package
 pip install nepal-entity-service[all]
-```
 
-## Configuration
-
-### Database Setup
-
-The Nepal Entity Service uses a file-based database. Configure the database path using the `NES_DB_URL` environment variable:
-
-```bash
-# Create .env file from example
+# Configure database path
 cp .env.example .env
+# Edit .env and set NES_DB_URL
 
-# Edit .env and set your database path (must use file:// protocol with absolute path)
-NES_DB_URL=file:///absolute/path/to/nes-db/v2
-```
-
-**Important:** The path must be absolute (starting from filesystem root `/`).
-
-#### Git Submodule
-
-The database is managed as a Git submodule. Initialize it after cloning:
-
-```bash
-# Clone with submodules
-git clone --recurse-submodules git@github.com:NewNepal-org/NepalEntityService.git
-
-# Or initialize after cloning
-git submodule init
-git submodule update
-```
-
-For detailed database setup instructions, see [DATABASE_SETUP.md](DATABASE_SETUP.md).
-
-## Usage
-
-### Scripts
-
-```bash
-# Start API server (nes)
+# Start the API server
 poetry run nes-api
-
-# Start development server with auto-reload (nes)
-poetry run nes-dev
-
-# Check relationship integrity
-poetry run nes integrity check
-
-# Legacy nes commands
-poetry run nes-api
-poetry run nes-dev
 ```
 
-### Docker
+## Documentation
 
-Build and run the service using Docker:
+For detailed documentation including installation, database setup, and usage guides, see:
 
-```bash
-# Build the Docker image
-docker build -t nepal-entity-service .
+- **Online**: [nes.newnepal.org](https://nes.newnepal.org)
+- **Local**: Browse the `docs/` folder in this repository
 
-# Run the container
-docker run -p 8195:8195 nepal-entity-service
-```
+### Key Documentation
 
-The API will be available at `http://localhost:8195` (or your custom port).
+- [Installation & Setup](docs/contributors/database-setup.md)
+- [Contributor Guide](docs/contributors/contributor-guide.md)
+- [Usage Examples](docs/contributors/usage-examples.md)
+- [Design Patterns](docs/contributors/design-patterns.md)
 
-## Extras
+## Features
 
-- **api**: FastAPI web service with entity management endpoints
-- **scraping**: ML-powered scraping tools for building entity databases
-- **all**: Includes both api and scraping functionality
+- **Core**: Entity and relationship management with version history
+- **API**: FastAPI web service with entity management endpoints
+- **Scraping**: ML-powered scraping tools for building entity databases
+- **Migrations**: Database migration system for schema evolution
 
 ## For AI Contexts
 
@@ -105,12 +48,12 @@ When working with this Nepal Entity Service, please use Nepali local names and r
 
 This approach ensures the service remains contextually relevant to its intended use case of managing Nepali public entities.
 
-## Opinionated Design Patterns
+## Contributing
 
-This project follows specific design patterns and conventions to maintain consistency and readability:
+We welcome contributions! Please see our [Contributor Guide](docs/contributors/contributor-guide.md) and [Design Patterns](docs/contributors/design-patterns.md) for guidelines on code style, testing, and development workflow.
 
-### Import Style
+## License
 
-1. Prefer absolute imports over relative imports in Python code.
-1. Avoid local imports (imports inside functions) when possible. Place imports at the module level for better readability and performance.
-  a. Exception: Local imports are acceptable when needed to avoid circular dependencies or for optional dependencies.
+This project is licensed under the **Hippocratic License 3.0** - an ethical source license that permits use, modification, and distribution for any purpose that does not violate human rights principles as defined by the United Nations Universal Declaration of Human Rights.
+
+See the [LICENSE](LICENSE) file for the complete license text, or visit [firstdonoharm.dev](https://firstdonoharm.dev/) to learn more about the Hippocratic License.

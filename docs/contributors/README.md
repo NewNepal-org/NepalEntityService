@@ -8,21 +8,28 @@ Documentation for contributors who want to develop, maintain, or run their own i
 - **[Database Setup](database-setup.md)** - Git submodule and database configuration
 - **[Usage Examples](usage-examples.md)** - Code examples, notebooks, and learning paths
 
-## Data Maintenance & Migrations
+## Data Maintenance & Workflows
 
 - **[Workflows](workflows.md)** - Overview of different maintenance and update workflows
 - **[Data Maintainer Guide](data-maintainer-guide.md)** - Local data maintenance with Publication Service
-- **[Migration Contributor Guide](migration-contributor-guide.md)** - Creating and submitting data migrations
-- **[Migration Maintainer Guide](migration-maintainer-guide.md)** - Reviewing and executing migrations
-- **[Migration Architecture](migration-architecture.md)** - Migration system design and workflow
 
 ## Service Guides
 
 Detailed guides for using the core services:
 
+### Migration Service
+- **[Migration Contributor Guide](migration-contributor-guide.md)** - Creating and submitting data migrations
+- **[Migration Maintainer Guide](migration-maintainer-guide.md)** - Reviewing and executing migrations
+- **[Migration Architecture](migration-architecture.md)** - Migration system design and workflow
+
+### Publication Service
 - **[Publication Service Guide](publication-service-guide.md)** - Creating and updating entities and relationships
-- **[Search Service Guide](search-service-guide.md)** - Querying entities and relationships
+
+### Scraping Service
 - **[Scraping Service Guide](scraping-service-guide.md)** - Extracting and normalizing data from external sources
+
+### Search Service
+- **[Search Service Guide](search-service-guide.md)** - Querying entities and relationships
 
 ## What You'll Find Here
 

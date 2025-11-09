@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "nepal-entity-service"
 version = "2.0.0"
-description = "A comprehensive service for managing Nepali public entities"
+description = "🇳🇵 Open Source, open data, and open API for managing Nepali public entities"
 authors = ["Damodar Dahal <damo94761@gmail.com>"]
 readme = "README.md"
+license = "Hippocratic-3.0"
 packages = [
     {include = "nes"}
 ]
