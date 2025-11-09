@@ -6,18 +6,18 @@ This module provides the MigrationRunner class which handles:
 - Creating migration contexts for script execution
 - Tracking execution statistics (entities/relationships created)
 - Error handling and logging
-- Deterministic execution (checking for persisted snapshots)
+- Deterministic execution (checking for migration logs)
+- Storing migration logs for tracking applied migrations
 """
 
 import importlib.util
 import inspect
 import logging
-import subprocess
 import sys
 import time
 import traceback
 from pathlib import Path
-from typing import List, Optional
+from typing import List
 
 from nes.database.entity_database import EntityDatabase
 from nes.services.migration.context import MigrationContext
@@ -32,14 +32,15 @@ logger = logging.getLogger(__name__)
 
 class MigrationRunner:
     """
-    Executes migration scripts and manages Git operations.
+    Executes migration scripts and manages migration logs.
 
     The MigrationRunner is responsible for:
     - Loading migration scripts dynamically
     - Creating execution contexts with service access
     - Executing migration scripts with error handling
     - Tracking execution statistics
-    - Checking for persisted snapshots to ensure determinism
+    - Checking for migration logs to ensure determinism
+    - Storing migration logs for tracking applied migrations
     - Managing batch execution of multiple migrations
     """
 
@@ -67,72 +68,7 @@ class MigrationRunner:
         self.db = db
         self.manager = migration_manager
 
-        # Configure Git for large repositories
-        self._configure_git_for_large_repos()
-
         logger.info("MigrationRunner initialized")
-
-    def _configure_git_for_large_repos(self) -> None:
-        """
-        Configure Git settings optimized for large repositories.
-
-        Sets the following Git configuration options in the Database Repository:
-        - core.preloadindex: Enable parallel index preloading for faster operations
-        - core.fscache: Enable file system cache on Windows
-        - gc.auto: Disable automatic garbage collection (run manually)
-
-        These settings improve Git performance when working with repositories
-        containing 100k-1M files.
-        """
-        db_repo_path = self.manager.db_repo_path
-
-        # Check if database repository exists and is a Git repository
-        if not db_repo_path.exists():
-            logger.warning(
-                f"Database repository does not exist: {db_repo_path}. "
-                "Skipping Git configuration."
-            )
-            return
-
-        git_dir = db_repo_path / ".git"
-        if not git_dir.exists():
-            logger.warning(
-                f"Database repository is not a Git repository: {db_repo_path}. "
-                "Skipping Git configuration."
-            )
-            return
-
-        # Git configuration settings for large repositories
-        git_configs = {
-            "core.preloadindex": "true",
-            "core.fscache": "true",
-            "gc.auto": "0",  # Disable auto GC
-        }
-
-        logger.info("Configuring Git for large repository operations")
-
-        for config_key, config_value in git_configs.items():
-            try:
-                subprocess.run(
-                    ["git", "config", config_key, config_value],
-                    cwd=db_repo_path,
-                    capture_output=True,
-                    text=True,
-                    check=True,
-                    timeout=10,
-                )
-                logger.debug(f"Set Git config: {config_key}={config_value}")
-
-            except subprocess.TimeoutExpired:
-                logger.warning(f"Timeout setting Git config: {config_key}")
-
-            except subprocess.CalledProcessError as e:
-                logger.warning(f"Failed to set Git config {config_key}: {e.stderr}")
-
-            except Exception as e:
-                logger.warning(f"Unexpected error setting Git config {config_key}: {e}")
-
-        logger.info("Git configuration complete")
 
     def create_context(self, migration: Migration) -> MigrationContext:
         """
@@ -295,7 +231,7 @@ class MigrationRunner:
     async def run_migration(
         self,
         migration: Migration,
-        dry_run: bool = False,
+        dry_run: bool = True,
         auto_commit: bool = True,
         force: bool = False,
     ) -> MigrationResult:
@@ -304,16 +240,17 @@ class MigrationRunner:
 
         This method:
         - Checks if migration already applied before execution
-        - Skips execution if persisted snapshot exists (returns SKIPPED status)
+        - Skips execution if migration log exists (returns SKIPPED status)
         - Supports force flag to allow re-execution
         - Executes the migration script with proper context
         - Tracks execution time and statistics
+        - Stores migration logs when not in dry-run mode
         - Handles all exceptions gracefully
 
         Args:
             migration: Migration to execute
-            dry_run: If True, don't commit changes (default: False)
-            auto_commit: If True, commit and push changes after execution (default: True)
+            dry_run: If True, don't persist changes or logs (default: True)
+            auto_commit: If True, store migration logs after execution (default: True)
             force: If True, allow re-execution of already-applied migrations (default: False)
 
         Returns:
@@ -334,13 +271,13 @@ class MigrationRunner:
             status=MigrationStatus.RUNNING,
         )
 
-        # Check if migration already applied (determinism check)
+        # Check if migration already applied (determinism check via migration logs)
         if not force:
-            is_applied = await self.manager.is_migration_applied(migration)
+            is_applied = await self._is_migration_logged(migration)
             if is_applied:
                 logger.info(
                     f"Migration {migration.full_name} already applied "
-                    "(persisted snapshot exists), skipping"
+                    "(migration log exists), skipping"
                 )
                 result.status = MigrationStatus.SKIPPED
                 result.logs.append(
@@ -350,7 +287,7 @@ class MigrationRunner:
 
         # If force flag is set and migration was applied, log warning
         if force:
-            is_applied = await self.manager.is_migration_applied(migration)
+            is_applied = await self._is_migration_logged(migration)
             if is_applied:
                 logger.warning(
                     f"Force flag set: re-executing already-applied migration "
@@ -411,20 +348,20 @@ class MigrationRunner:
                 f"{result.relationships_created} relationships)"
             )
 
-            # Commit and push changes if auto_commit is enabled
+            # Store migration logs if auto_commit is enabled and not dry-run
             if auto_commit and not dry_run:
                 try:
-                    await self.commit_and_push(migration, result, dry_run=False)
+                    await self._store_migration_log(migration, result)
                     logger.info(
-                        f"Changes committed and pushed for {migration.full_name}"
+                        f"Migration log stored for {migration.full_name}"
                     )
-                except Exception as commit_error:
-                    logger.error(f"Failed to commit changes: {commit_error}")
-                    # Mark migration as failed if commit fails
+                except Exception as log_error:
+                    logger.error(f"Failed to store migration log: {log_error}")
+                    # Mark migration as failed if log storage fails
                     result.status = MigrationStatus.FAILED
-                    result.error = commit_error
+                    result.error = log_error
                     result.logs.append(
-                        f"ERROR: Failed to commit changes: {commit_error}"
+                        f"ERROR: Failed to store migration log: {log_error}"
                     )
 
         except Exception as e:
@@ -482,6 +419,109 @@ class MigrationRunner:
         except Exception as e:
             logger.warning(f"Failed to count relationships: {e}")
             return 0
+
+    def _get_migration_log_dir(self, migration: Migration) -> Path:
+        """
+        Get the directory path for storing migration logs.
+
+        Args:
+            migration: Migration to get log directory for
+
+        Returns:
+            Path to migration log directory
+        """
+        log_base = self.manager.db_repo_path / "v2" / "migration-logs"
+        return log_base / migration.full_name
+
+    async def _is_migration_logged(self, migration: Migration) -> bool:
+        """
+        Check if a migration has been logged (i.e., already applied).
+
+        Args:
+            migration: Migration to check
+
+        Returns:
+            True if migration log exists, False otherwise
+        """
+        log_dir = self._get_migration_log_dir(migration)
+        metadata_file = log_dir / "metadata.json"
+        return metadata_file.exists()
+
+    async def _store_migration_log(
+        self, migration: Migration, result: MigrationResult
+    ) -> None:
+        """
+        Store migration log with metadata and changes.
+
+        Creates a folder structure:
+        nes-db/v2/migration-logs/{migration-name}/
+            metadata.json - Migration metadata and statistics
+            changes.json - List of changes made during migration
+            logs.txt - Execution logs
+
+        Args:
+            migration: Migration that was executed
+            result: Result of migration execution
+
+        Raises:
+            IOError: If log storage fails
+        """
+        import json
+        from datetime import datetime
+
+        log_dir = self._get_migration_log_dir(migration)
+        
+        # Create log directory
+        log_dir.mkdir(parents=True, exist_ok=True)
+        
+        logger.info(f"Storing migration log in {log_dir}")
+
+        # Store metadata
+        metadata = {
+            "migration_name": migration.full_name,
+            "author": migration.author,
+            "date": migration.date.isoformat() if migration.date else None,
+            "description": migration.description,
+            "executed_at": datetime.now().isoformat(),
+            "duration_seconds": result.duration_seconds,
+            "entities_created": result.entities_created,
+            "relationships_created": result.relationships_created,
+            "status": result.status.value,
+        }
+
+        metadata_file = log_dir / "metadata.json"
+        with open(metadata_file, "w", encoding="utf-8") as f:
+            json.dump(metadata, f, indent=2)
+
+        logger.debug(f"Stored metadata: {metadata_file}")
+
+        # Store changes (placeholder for now - could be enhanced to track actual changes)
+        changes = {
+            "entities_created": result.entities_created,
+            "relationships_created": result.relationships_created,
+            "summary": f"Created {result.entities_created} entities and {result.relationships_created} relationships",
+        }
+
+        changes_file = log_dir / "changes.json"
+        with open(changes_file, "w", encoding="utf-8") as f:
+            json.dump(changes, f, indent=2)
+
+        logger.debug(f"Stored changes: {changes_file}")
+
+        # Store execution logs
+        logs_file = log_dir / "logs.txt"
+        with open(logs_file, "w", encoding="utf-8") as f:
+            f.write(f"Migration: {migration.full_name}\n")
+            f.write(f"Executed at: {datetime.now().isoformat()}\n")
+            f.write(f"Duration: {result.duration_seconds:.1f}s\n")
+            f.write(f"\n{'='*80}\n")
+            f.write("Execution Logs:\n")
+            f.write(f"{'='*80}\n\n")
+            for log in result.logs:
+                f.write(f"{log}\n")
+
+        logger.debug(f"Stored logs: {logs_file}")
+        logger.info(f"Migration log stored successfully for {migration.full_name}")
 
     async def run_migrations(
         self,
@@ -570,386 +610,4 @@ class MigrationRunner:
 
         return results
 
-    def _get_changed_files(self) -> List[str]:
-        """
-        Get list of changed files in the Database Repository.
 
-        Returns:
-            List of file paths relative to the database repository root
-        """
-        db_repo_path = self.manager.db_repo_path
-
-        try:
-            # Get list of changed files (staged and unstaged)
-            result = subprocess.run(
-                ["git", "status", "--porcelain"],
-                cwd=db_repo_path,
-                capture_output=True,
-                text=True,
-                check=True,
-                timeout=30,
-            )
-
-            changed_files = []
-            for line in result.stdout.strip().split("\n"):
-                if not line:
-                    continue
-
-                # Parse git status output
-                # Format: "XY filename" where X is staged status, Y is unstaged status
-                # We want all modified, added, or deleted files
-                status = line[:2]
-                filename = line[3:].strip()
-
-                # Skip if no changes
-                if status.strip() == "":
-                    continue
-
-                changed_files.append(filename)
-
-            logger.debug(
-                f"Found {len(changed_files)} changed files in database repository"
-            )
-            return changed_files
-
-        except subprocess.TimeoutExpired:
-            logger.error("Git status query timed out after 30 seconds")
-            return []
-
-        except subprocess.CalledProcessError as e:
-            logger.error(f"Git status query failed: {e.stderr}")
-            return []
-
-        except Exception as e:
-            logger.error(f"Unexpected error getting changed files: {e}")
-            return []
-
-    def _format_commit_message(
-        self,
-        migration: Migration,
-        result: MigrationResult,
-        batch_info: Optional[tuple] = None,
-    ) -> str:
-        """
-        Format Git commit message with migration metadata.
-
-        Args:
-            migration: Migration that was executed
-            result: Result of migration execution
-            batch_info: Optional tuple of (batch_number, total_batches) for batch commits
-
-        Returns:
-            Formatted commit message
-        """
-        # Get metadata from migration
-        author = migration.author or "unknown"
-        date = migration.date.strftime("%Y-%m-%d") if migration.date else "unknown"
-        description = migration.description or "No description provided"
-
-        # Build commit message
-        title = f"Migration: {migration.full_name}"
-        if batch_info:
-            batch_num, total_batches = batch_info
-            title += f" (Batch {batch_num}/{total_batches})"
-
-        message_parts = [
-            title,
-            "",
-            description,
-            "",
-            f"Author: {author}",
-            f"Date: {date}",
-            f"Entities created: {result.entities_created}",
-            f"Relationships created: {result.relationships_created}",
-            f"Duration: {result.duration_seconds:.1f}s",
-        ]
-
-        return "\n".join(message_parts)
-
-    async def commit_and_push(
-        self, migration: Migration, result: MigrationResult, dry_run: bool = False
-    ) -> None:
-        """
-        Commit database changes and push to remote.
-
-        This persists the data snapshot in the Database Repository,
-        making the migration deterministic on subsequent runs.
-
-        This method:
-        - Gets list of changed files in the Database Repository
-        - Determines if batch commits are needed (>1000 files)
-        - Stages and commits changes with formatted commit message
-        - Pushes commits to remote Database Repository
-        - Handles errors gracefully
-
-        Args:
-            migration: Migration that was executed
-            result: Result of migration execution
-            dry_run: If True, don't actually commit or push (default: False)
-
-        Raises:
-            RuntimeError: If commit or push fails
-        """
-        if dry_run:
-            logger.info("Dry run mode: skipping commit and push")
-            return
-
-        db_repo_path = self.manager.db_repo_path
-
-        logger.info(f"Committing changes for migration {migration.full_name}")
-
-        # Get list of changed files
-        changed_files = self._get_changed_files()
-
-        if len(changed_files) == 0:
-            logger.info("No changes to commit")
-            return
-
-        logger.info(f"Found {len(changed_files)} changed files")
-
-        # Determine if we need batch commits
-        BATCH_COMMIT_THRESHOLD = 1000
-
-        if len(changed_files) < BATCH_COMMIT_THRESHOLD:
-            # Single commit for all files
-            logger.info("Creating single commit for all changes")
-            self._commit_all(migration, result, changed_files)
-        else:
-            # Batch commits
-            logger.info(
-                f"Creating batch commits ({len(changed_files)} files, "
-                f"threshold: {BATCH_COMMIT_THRESHOLD})"
-            )
-            self._commit_in_batches(migration, result, changed_files)
-
-        # Push to remote
-        logger.info("Pushing commits to remote Database Repository")
-        self._push_to_remote()
-
-        # Clear the applied migrations cache so next check will see the new commit
-        self.manager.clear_cache()
-
-        logger.info(
-            f"Successfully committed and pushed migration {migration.full_name}"
-        )
-
-    def _commit_all(
-        self, migration: Migration, result: MigrationResult, changed_files: List[str]
-    ) -> None:
-        """
-        Commit all changed files in a single commit.
-
-        Args:
-            migration: Migration that was executed
-            result: Result of migration execution
-            changed_files: List of changed file paths
-
-        Raises:
-            RuntimeError: If commit fails
-        """
-        db_repo_path = self.manager.db_repo_path
-
-        try:
-            # Stage all changed files
-            logger.debug(f"Staging {len(changed_files)} files")
-            subprocess.run(
-                ["git", "add", "-A"],
-                cwd=db_repo_path,
-                capture_output=True,
-                text=True,
-                check=True,
-                timeout=300,  # 5 minutes for staging
-            )
-
-            # Format commit message
-            commit_message = self._format_commit_message(migration, result)
-
-            # Create commit
-            logger.debug("Creating Git commit")
-            subprocess.run(
-                ["git", "commit", "-m", commit_message],
-                cwd=db_repo_path,
-                capture_output=True,
-                text=True,
-                check=True,
-                timeout=300,  # 5 minutes for commit
-            )
-
-            logger.info(f"Created commit for {len(changed_files)} files")
-
-        except subprocess.TimeoutExpired as e:
-            error_msg = f"Git operation timed out: {e}"
-            logger.error(error_msg)
-            raise RuntimeError(error_msg)
-
-        except subprocess.CalledProcessError as e:
-            error_msg = f"Git commit failed: {e.stderr}"
-            logger.error(error_msg)
-            raise RuntimeError(error_msg)
-
-        except Exception as e:
-            error_msg = f"Unexpected error during commit: {e}"
-            logger.error(error_msg)
-            raise RuntimeError(error_msg)
-
-    def _commit_in_batches(
-        self, migration: Migration, result: MigrationResult, changed_files: List[str]
-    ) -> None:
-        """
-        Commit changed files in batches to avoid huge commits.
-
-        Args:
-            migration: Migration that was executed
-            result: Result of migration execution
-            changed_files: List of changed file paths
-
-        Raises:
-            RuntimeError: If any commit fails
-        """
-        db_repo_path = self.manager.db_repo_path
-        BATCH_SIZE = 1000
-
-        # Calculate number of batches
-        total_batches = (len(changed_files) + BATCH_SIZE - 1) // BATCH_SIZE
-
-        logger.info(
-            f"Committing {len(changed_files)} files in {total_batches} batches "
-            f"of {BATCH_SIZE} files each"
-        )
-
-        for batch_num in range(1, total_batches + 1):
-            start_idx = (batch_num - 1) * BATCH_SIZE
-            end_idx = min(start_idx + BATCH_SIZE, len(changed_files))
-            batch_files = changed_files[start_idx:end_idx]
-
-            logger.info(
-                f"Processing batch {batch_num}/{total_batches} "
-                f"({len(batch_files)} files)"
-            )
-
-            try:
-                # Stage files in this batch
-                logger.debug(f"Staging {len(batch_files)} files for batch {batch_num}")
-
-                # Stage files one by one to avoid command line length limits
-                for file_path in batch_files:
-                    subprocess.run(
-                        ["git", "add", file_path],
-                        cwd=db_repo_path,
-                        capture_output=True,
-                        text=True,
-                        check=True,
-                        timeout=10,
-                    )
-
-                # Format commit message with batch info
-                commit_message = self._format_commit_message(
-                    migration, result, batch_info=(batch_num, total_batches)
-                )
-
-                # Create commit for this batch
-                logger.debug(f"Creating Git commit for batch {batch_num}")
-                subprocess.run(
-                    ["git", "commit", "-m", commit_message],
-                    cwd=db_repo_path,
-                    capture_output=True,
-                    text=True,
-                    check=True,
-                    timeout=300,  # 5 minutes for commit
-                )
-
-                logger.info(
-                    f"Created commit for batch {batch_num}/{total_batches} "
-                    f"({len(batch_files)} files)"
-                )
-
-            except subprocess.TimeoutExpired as e:
-                error_msg = f"Git operation timed out on batch {batch_num}: {e}"
-                logger.error(error_msg)
-                raise RuntimeError(error_msg)
-
-            except subprocess.CalledProcessError as e:
-                error_msg = f"Git commit failed on batch {batch_num}: {e.stderr}"
-                logger.error(error_msg)
-                raise RuntimeError(error_msg)
-
-            except Exception as e:
-                error_msg = f"Unexpected error on batch {batch_num}: {e}"
-                logger.error(error_msg)
-                raise RuntimeError(error_msg)
-
-        logger.info(f"Successfully created {total_batches} batch commits")
-
-    def _push_to_remote(self) -> None:
-        """
-        Push commits to remote Database Repository.
-
-        If no remote is configured, logs a warning and skips the push.
-        This is common in test environments or local-only repositories.
-
-        Raises:
-            RuntimeError: If push fails (but not if no remote is configured)
-        """
-        db_repo_path = self.manager.db_repo_path
-
-        try:
-            # Check if a remote is configured
-            remote_check = subprocess.run(
-                ["git", "remote"],
-                cwd=db_repo_path,
-                capture_output=True,
-                text=True,
-                check=True,
-                timeout=10,
-            )
-
-            if not remote_check.stdout.strip():
-                logger.warning(
-                    "No Git remote configured in Database Repository. "
-                    "Skipping push. Changes are committed locally."
-                )
-                return
-
-            logger.debug("Pushing commits to remote")
-
-            # Push with a generous timeout for large pushes
-            result = subprocess.run(
-                ["git", "push"],
-                cwd=db_repo_path,
-                capture_output=True,
-                text=True,
-                check=True,
-                timeout=1800,  # 30 minutes for push
-            )
-
-            logger.info("Successfully pushed commits to remote")
-
-            # Log push output if any
-            if result.stdout:
-                logger.debug(f"Push output: {result.stdout}")
-
-        except subprocess.TimeoutExpired as e:
-            error_msg = f"Git push timed out after 30 minutes: {e}"
-            logger.error(error_msg)
-            raise RuntimeError(error_msg)
-
-        except subprocess.CalledProcessError as e:
-            # Check if error is about no remote configured
-            if (
-                "No configured push destination" in e.stderr
-                or "no upstream branch" in e.stderr
-            ):
-                logger.warning(
-                    "No Git remote configured or no upstream branch set. "
-                    "Skipping push. Changes are committed locally."
-                )
-                return
-
-            error_msg = f"Git push failed: {e.stderr}"
-            logger.error(error_msg)
-            raise RuntimeError(error_msg)
-
-        except Exception as e:
-            error_msg = f"Unexpected error during push: {e}"
-            logger.error(error_msg)
-            raise RuntimeError(error_msg)

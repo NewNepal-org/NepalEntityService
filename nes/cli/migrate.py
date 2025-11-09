@@ -2,10 +2,9 @@
 CLI commands for managing database migrations.
 
 This module provides commands for:
-- Listing all migrations with their status
-- Showing pending migrations
-- Running migrations
 - Creating new migration folders from templates
+- Listing all migrations with their status (including pending)
+- Running migrations (defaults to dry-run mode)
 """
 
 import asyncio
@@ -22,17 +21,28 @@ logger = logging.getLogger(__name__)
 
 
 @click.group()
-def migrate():
+def migration():
     """Manage database migrations.
 
     Migrations are versioned folders containing Python scripts that apply
     data changes to the entity database. This command group provides tools
-    for listing, running, and creating migrations.
+    for creating, listing, and running migrations.
     """
     pass
 
 
-@migrate.command()
+@migration.command()
+@click.option(
+    "--pending",
+    is_flag=True,
+    help="Show only pending migrations",
+)
+@click.option(
+    "--json",
+    "output_json",
+    is_flag=True,
+    help="Output in JSON format",
+)
 @click.option(
     "--migrations-dir",
     default="migrations",
@@ -45,35 +55,89 @@ def migrate():
     type=click.Path(exists=True, file_okay=False, dir_okay=True),
     help="Path to database repository",
 )
-def list(migrations_dir: str, db_repo: str):
-    """List all migrations with their status.
+def list(pending: bool, output_json: bool, migrations_dir: str, db_repo: str):
+    """List migrations with their status.
 
     Shows all discovered migrations in the migrations/ directory along with
     their metadata (author, date, description) and whether they have been
     applied or are still pending.
 
+    Use --pending flag to show only migrations that haven't been applied yet.
+    Use --json flag to output in JSON format.
+
     Examples:
-        nes migrate list
-        nes migrate list --migrations-dir ./migrations
+        nes migration list
+        nes migration list --pending
+        nes migration list --json
+        nes migration list --pending --json
     """
 
     async def do_list():
+        import json
+        
         # Initialize migration manager
         manager = MigrationManager(
             migrations_dir=Path(migrations_dir), db_repo_path=Path(db_repo)
         )
 
-        # Discover all migrations
-        migrations = await manager.discover_migrations()
+        # Get migrations based on filter
+        if pending:
+            migrations = await manager.get_pending_migrations()
+            
+            if not migrations:
+                if output_json:
+                    click.echo(json.dumps({"migrations": [], "summary": {"pending": 0}}))
+                else:
+                    click.echo("\n✓ No pending migrations. All migrations have been applied.\n")
+                return
+        else:
+            # Discover all migrations
+            migrations = await manager.discover_migrations()
 
-        if not migrations:
-            click.echo("No migrations found.")
-            return
+            if not migrations:
+                if output_json:
+                    click.echo(json.dumps({"migrations": [], "summary": {"total": 0, "applied": 0, "pending": 0}}))
+                else:
+                    click.echo("No migrations found.")
+                return
 
-        # Get applied migrations
+        # Get applied migrations for status
         applied = await manager.get_applied_migrations()
 
-        # Display migrations
+        # Output in JSON format
+        if output_json:
+            migrations_data = []
+            for migration in migrations:
+                is_applied = migration.full_name in applied
+                migrations_data.append({
+                    "name": migration.full_name,
+                    "prefix": migration.prefix,
+                    "status": "applied" if is_applied else "pending",
+                    "author": migration.author,
+                    "date": migration.date.strftime("%Y-%m-%d") if migration.date else None,
+                    "description": migration.description,
+                })
+            
+            # Build summary
+            if pending:
+                summary = {"pending": len(migrations)}
+            else:
+                applied_count = len([m for m in migrations if m.full_name in applied])
+                summary = {
+                    "total": len(migrations),
+                    "applied": applied_count,
+                    "pending": len(migrations) - applied_count,
+                }
+            
+            output = {
+                "migrations": migrations_data,
+                "summary": summary,
+            }
+            
+            click.echo(json.dumps(output, indent=2))
+            return
+
+        # Display migrations in table format
         click.echo(f"\n{'='*80}")
         click.echo(f"{'Migration':<30} {'Status':<12} {'Author':<20} {'Date':<12}")
         click.echo(f"{'='*80}")
@@ -106,89 +170,30 @@ def list(migrations_dir: str, db_repo: str):
         click.echo(f"{'='*80}")
 
         # Summary
-        total = len(migrations)
-        applied_count = len([m for m in migrations if m.full_name in applied])
-        pending_count = total - applied_count
-
-        click.echo(
-            f"\nTotal: {total} migrations ({applied_count} applied, {pending_count} pending)"
-        )
+        if pending:
+            click.echo(f"\nPending: {len(migrations)} migration(s)")
+            click.echo(f"\nRun 'nes migration run --all --apply' to execute all pending migrations.")
+        else:
+            total = len(migrations)
+            applied_count = len([m for m in migrations if m.full_name in applied])
+            pending_count = total - applied_count
+            click.echo(
+                f"\nTotal: {total} migrations ({applied_count} applied, {pending_count} pending)"
+            )
+        
         click.echo()
 
     # Run async function
     asyncio.run(do_list())
 
 
-@migrate.command()
-@click.option(
-    "--migrations-dir",
-    default="migrations",
-    type=click.Path(exists=True, file_okay=False, dir_okay=True),
-    help="Path to migrations directory",
-)
-@click.option(
-    "--db-repo",
-    default="nes-db",
-    type=click.Path(exists=True, file_okay=False, dir_okay=True),
-    help="Path to database repository",
-)
-def pending(migrations_dir: str, db_repo: str):
-    """Show only pending migrations.
-
-    Lists migrations that have not yet been applied to the database.
-    These are migrations that exist in the migrations/ directory but
-    do not have corresponding persisted snapshots in the database repository.
-
-    Examples:
-        nes migrate pending
-        nes migrate pending --migrations-dir ./migrations
-    """
-
-    async def do_pending():
-        # Initialize migration manager
-        manager = MigrationManager(
-            migrations_dir=Path(migrations_dir), db_repo_path=Path(db_repo)
-        )
-
-        # Get pending migrations
-        migrations = await manager.get_pending_migrations()
-
-        if not migrations:
-            click.echo("\n✓ No pending migrations. All migrations have been applied.\n")
-            return
-
-        # Display pending migrations
-        click.echo(f"\n{'='*80}")
-        click.echo(f"Pending Migrations ({len(migrations)})")
-        click.echo(f"{'='*80}\n")
-
-        for i, migration in enumerate(migrations, 1):
-            click.echo(f"{i}. {migration.full_name}")
-
-            if migration.author:
-                click.echo(f"   Author: {migration.author}")
-
-            if migration.date:
-                click.echo(f"   Date: {migration.date.strftime('%Y-%m-%d')}")
-
-            if migration.description:
-                click.echo(f"   Description: {migration.description}")
-
-            click.echo()
-
-        click.echo(f"{'='*80}")
-        click.echo(f"\nRun 'nes migrate run --all' to execute all pending migrations.")
-        click.echo()
-
-    # Run async function
-    asyncio.run(do_pending())
-
-
-@migrate.command()
+@migration.command()
 @click.argument("migration_name", required=False)
 @click.option("--all", "run_all", is_flag=True, help="Run all pending migrations")
 @click.option(
-    "--dry-run", is_flag=True, help="Execute migration without committing changes"
+    "--apply",
+    is_flag=True,
+    help="Apply changes (default is dry-run mode)",
 )
 @click.option(
     "--force", is_flag=True, help="Force re-execution of already-applied migrations"
@@ -214,31 +219,32 @@ def pending(migrations_dir: str, db_repo: str):
 def run(
     migration_name: Optional[str],
     run_all: bool,
-    dry_run: bool,
+    apply: bool,
     force: bool,
     migrations_dir: str,
     db_repo: str,
     db_path: str,
 ):
-    """Run one or more migrations.
+    """Run one or more migrations (defaults to dry-run mode).
 
     Execute a specific migration by name, or run all pending migrations
-    with the --all flag. Migrations modify the entity database and commit
-    changes to the database repository.
+    with the --all flag. By default, runs in dry-run mode. Use --apply
+    to actually apply changes and store migration logs.
 
     Examples:
-        nes migrate run 000-initial-locations
-        nes migrate run --all
-        nes migrate run 001-update-names --dry-run
-        nes migrate run 000-initial-locations --force
+        nes migration run 000-initial-locations
+        nes migration run 000-initial-locations --apply
+        nes migration run --all
+        nes migration run --all --apply
+        nes migration run 000-initial-locations --force --apply
     """
     # Validate arguments
     if not migration_name and not run_all:
         click.echo(
             "Error: Must specify either a migration name or use --all flag.\n"
             "Examples:\n"
-            "  nes migrate run 000-initial-locations\n"
-            "  nes migrate run --all",
+            "  nes migration run 000-initial-locations\n"
+            "  nes migration run --all",
             err=True,
         )
         raise click.Abort()
@@ -248,6 +254,9 @@ def run(
             "Error: Cannot specify both a migration name and --all flag.", err=True
         )
         raise click.Abort()
+    
+    # Determine dry-run mode (default is True unless --apply is specified)
+    dry_run = not apply
 
     async def do_run():
         # Initialize database and services
@@ -297,10 +306,10 @@ def run(
             click.echo()
 
             if dry_run:
-                click.echo("Running in DRY RUN mode (changes will not be committed)\n")
-
-            # Confirm before running
-            if not dry_run:
+                click.echo("Running in DRY RUN mode (changes will not be applied)\n")
+            else:
+                click.echo("Running in APPLY mode (changes will be persisted)\n")
+                # Confirm before running
                 click.confirm(
                     "Do you want to proceed with running these migrations?", abort=True
                 )
@@ -377,9 +386,9 @@ def run(
                 )
 
             if dry_run:
-                click.echo(f"\nRunning migration '{migration_name}' in DRY RUN mode\n")
+                click.echo(f"\nRunning migration '{migration_name}' in DRY RUN mode (use --apply to persist changes)\n")
             else:
-                click.echo(f"\nRunning migration '{migration_name}'...\n")
+                click.echo(f"\nRunning migration '{migration_name}' in APPLY mode...\n")
 
             # Run migration
             result = await runner.run_migration(
@@ -424,7 +433,7 @@ def run(
     asyncio.run(do_run())
 
 
-@migrate.command()
+@migration.command()
 @click.argument("name")
 @click.option(
     "--migrations-dir",
@@ -441,8 +450,8 @@ def create(name: str, migrations_dir: str, author: str):
     files for the migration script and README.
 
     Examples:
-        nes migrate create add-ministers
-        nes migrate create update-locations --author user@example.com
+        nes migration create add-ministers
+        nes migration create update-locations --author user@example.com
     """
 
     async def do_create():
@@ -618,9 +627,9 @@ async def migrate(context):
             f"  3. Add any data files (CSV, JSON, Excel) to the migration folder"
         )
         click.echo(
-            f"  4. Test your migration with: nes migrate run {migration_name} --dry-run"
+            f"  4. Test your migration with: nes migration run {migration_name}"
         )
-        click.echo(f"  5. Run your migration with: nes migrate run {migration_name}")
+        click.echo(f"  5. Apply your migration with: nes migration run {migration_name} --apply")
         click.echo()
 
     # Run async function
