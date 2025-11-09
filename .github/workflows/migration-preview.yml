@@ -11,13 +11,12 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-      issues: write
     
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Need full history to detect new migrations
+          fetch-depth: 0
           submodules: recursive
           token: ${{ secrets.GITHUB_TOKEN }}
       
@@ -32,105 +31,45 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .
       
-      - name: Detect new migrations
-        id: detect
+      - name: Show pending migrations
         run: |
-          # Find migration folders added or modified in this PR
-          git fetch origin main
-          NEW_MIGRATIONS=$(git diff --name-only origin/main...HEAD | grep "^migrations/" | cut -d'/' -f2 | sort -u | tr '\n' ' ')
-          
-          if [ -z "$NEW_MIGRATIONS" ]; then
-            echo "No new migrations detected"
-            echo "migrations=" >> $GITHUB_OUTPUT
-            echo "has_migrations=false" >> $GITHUB_OUTPUT
-          else
-            echo "Detected migrations: $NEW_MIGRATIONS"
-            echo "migrations=$NEW_MIGRATIONS" >> $GITHUB_OUTPUT
-            echo "has_migrations=true" >> $GITHUB_OUTPUT
-          fi
-      
-      - name: Validate migrations
-        if: steps.detect.outputs.has_migrations == 'true'
-        run: |
-          for migration in ${{ steps.detect.outputs.migrations }}; do
-            echo "Validating migration: $migration"
-            # Check migration folder structure
-            if [ ! -f "migrations/$migration/migrate.py" ]; then
-              echo "Error: migrate.py not found in migrations/$migration/"
-              exit 1
-            fi
-            if [ ! -f "migrations/$migration/README.md" ]; then
-              echo "Error: README.md not found in migrations/$migration/"
-              exit 1
-            fi
-            echo "✓ Migration $migration structure is valid"
-          done
-      
-      - name: Execute migrations in dry-run mode
-        if: steps.detect.outputs.has_migrations == 'true'
-        id: execute
-        run: |
-          # Check for non-empty nes-db folder
-          [ -d "nes-db" ] && [ "$(ls -A nes-db)" ] || { echo "Error: nes-db folder is missing or empty"; exit 1; }
-          
-          # Use the database submodule
           export NES_DB_PATH=./nes-db
-          
-          # Create output file for statistics
-          echo "# Migration Preview Results" > migration_stats.md
-          echo "" >> migration_stats.md
-          
-          # Execute each migration
-          for migration in ${{ steps.detect.outputs.migrations }}; do
-            echo "Executing migration: $migration"
-            echo "## Migration: $migration" >> migration_stats.md
-            
-            # Run migration and capture output
-            if nes migrate run $migration --dry-run 2>&1 | tee migration_output.txt; then
-              echo "✓ Migration executed successfully" >> migration_stats.md
-              
-              # Extract statistics from output (if available)
-              if grep -q "Entities created:" migration_output.txt; then
-                grep "Entities created:" migration_output.txt >> migration_stats.md
-              fi
-              if grep -q "Entities updated:" migration_output.txt; then
-                grep "Entities updated:" migration_output.txt >> migration_stats.md
-              fi
-              if grep -q "Relationships created:" migration_output.txt; then
-                grep "Relationships created:" migration_output.txt >> migration_stats.md
-              fi
-              if grep -q "Duration:" migration_output.txt; then
-                grep "Duration:" migration_output.txt >> migration_stats.md
-              fi
-            else
-              echo "✗ Migration failed" >> migration_stats.md
-              echo "See workflow logs for details" >> migration_stats.md
-              exit 1
-            fi
-            
-            echo "" >> migration_stats.md
-          done
-          
-          # Save stats for comment
-          echo "stats<<EOF" >> $GITHUB_OUTPUT
-          cat migration_stats.md >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          nes migration list --pending
       
-      - name: Post comment on PR
-        if: steps.detect.outputs.has_migrations == 'true'
+      - name: Run migrations
+        id: run
+        continue-on-error: true
+        run: |
+          export NES_DB_PATH=./nes-db
+          nes migration run --all 2>&1 | tee migration_output.txt
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
+      
+      - name: Post results
+        if: always()
         uses: actions/github-script@v7
         with:
           script: |
+            const fs = require('fs');
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const stats = `${{ steps.execute.outputs.stats }}`;
             
-            const body = `## 🔍 Migration Preview
+            let output = '';
+            try {
+              output = fs.readFileSync('migration_output.txt', 'utf8');
+            } catch (error) {
+              output = 'No migration output found';
+            }
             
-            ${stats}
+            const exitCode = '${{ steps.run.outputs.exit_code }}';
+            const success = exitCode === '0';
+            const status = success ? '✅ Migration Preview' : '⚠️ Migration Preview';
             
-            **Note**: This is a dry-run preview. The migration will be executed and persisted to the Database Repository after this PR is merged.
+            const body = `## ${status}
             
-            📊 [View detailed logs](${runUrl})`;
+            \`\`\`
+            ${output}
+            \`\`\`
+            
+            📊 [View full logs](${runUrl})`;
             
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -138,8 +77,3 @@ jobs:
               repo: context.repo.repo,
               body: body
             });
-      
-      - name: No migrations detected
-        if: steps.detect.outputs.has_migrations == 'false'
-        run: |
-          echo "No migrations detected in this PR"

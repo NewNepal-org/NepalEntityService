@@ -98,7 +98,7 @@ git submodule update
 Use the CLI command to generate a migration from the template:
 
 ```bash
-nes migrate create "add-new-ministers"
+nes migration create "add-new-ministers"
 ```
 
 This creates:
@@ -546,20 +546,20 @@ async def migrate(context):
 
 ```bash
 # See all migrations
-nes migrate list
+nes migration list
 
 # See pending migrations
-nes migrate pending
+nes migration list --pending
 ```
 
 ### Step 2: Run Your Migration
 
 ```bash
-# Run specific migration (dry run - no commit)
-nes migrate run 005-add-new-ministers --dry-run
+# Run specific migration
+nes migration run 005-add-new-ministers
 
-# Run with commit to database
-nes migrate run 005-add-new-ministers
+# Note: Migration will create logs and modify database
+# You'll need to commit changes manually afterward
 ```
 
 ### Step 3: Verify Results
@@ -598,7 +598,7 @@ git log -1
 
 ```bash
 # Run migration again - should skip (already applied)
-nes migrate run 005-add-new-ministers
+nes migration run 005-add-new-ministers
 
 # Output should show: "Migration already applied, skipping"
 ```
@@ -646,7 +646,7 @@ Import current cabinet ministers from the 2024 government formation.
 - Updates existing entities if ministers were already in database
 
 ### Testing
-- [x] Tested locally with `nes migrate run --dry-run`
+- [x] Tested locally with `nes migration run`
 - [x] Verified entities created correctly
 - [x] Tested idempotency (re-running skips execution)
 - [x] Checked data quality

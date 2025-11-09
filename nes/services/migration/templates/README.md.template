@@ -32,15 +32,6 @@ Example:
 - Includes official administrative codes from 2023 census
 - Creates hierarchical relationships (district -> province, municipality -> district)
 
-## Dependencies
-
-[TODO: List any dependencies on other migrations or external requirements.]
-
-Example:
-- None (this is an initial migration)
-- Requires migration 000-initial-locations to be run first
-- Requires openpyxl package for Excel file reading (pip install openpyxl)
-
 ## Notes
 
 [TODO: Add any additional notes, warnings, or considerations for reviewers and maintainers.]

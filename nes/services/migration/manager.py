@@ -3,14 +3,13 @@ Migration Manager for discovering and tracking migrations.
 
 This module provides the MigrationManager class which handles:
 - Discovery of migrations from the migrations/ directory
-- Checking for persisted snapshots in the Database Repository
+- Checking for migration logs to determine applied migrations
 - Determining which migrations are pending (not yet applied)
 """
 
 import ast
 import logging
 import re
-import subprocess
 from datetime import datetime
 from pathlib import Path
 from typing import List, Optional
@@ -27,27 +26,27 @@ class MigrationManager:
 
     The MigrationManager is responsible for:
     - Discovering migrations in the migrations/ directory
-    - Querying Git history in the Database Repository to find applied migrations
+    - Checking migration logs to find applied migrations
     - Determining which migrations are pending (not yet applied)
     - Providing migration metadata for display and execution
     """
 
-    def __init__(self, migrations_dir: Path, db_repo_path: Path):
+    def __init__(self, migrations_dir: Path, db_path: Path):
         """
         Initialize the Migration Manager.
 
         Args:
             migrations_dir: Path to the migrations directory (e.g., ./migrations/)
-            db_repo_path: Path to the Database Repository (e.g., ./nes-db/)
+            db_path: Path to the database directory (e.g., ./nes-db/v2/)
         """
         self.migrations_dir = Path(migrations_dir)
-        self.db_repo_path = Path(db_repo_path)
+        self.db_path = Path(db_path)
         self._applied_cache: Optional[List[str]] = None
 
         logger.info(
             f"MigrationManager initialized: "
             f"migrations_dir={self.migrations_dir}, "
-            f"db_repo_path={self.db_repo_path}"
+            f"db_path={self.db_path}"
         )
 
     async def discover_migrations(self) -> List[Migration]:
@@ -210,13 +209,13 @@ class MigrationManager:
 
     async def get_applied_migrations(self) -> List[str]:
         """
-        Get list of applied migration names by checking persisted snapshots.
+        Get list of applied migration names by checking migration logs.
 
-        This queries the Database Repository's Git log to find all commits
-        that represent persisted data snapshots from applied migrations.
-        Each commit serves as proof that the migration was executed.
+        This checks the nes-db/v2/migration-logs directory for migration
+        log folders. Each folder with a metadata.json file indicates that
+        the migration has been applied.
 
-        The results are cached to avoid repeated Git queries. Call
+        The results are cached to avoid repeated filesystem queries. Call
         clear_cache() to force a refresh.
 
         Returns:
@@ -235,74 +234,46 @@ class MigrationManager:
             )
             return self._applied_cache
 
-        logger.info(f"Querying Git log in {self.db_repo_path} for applied migrations")
+        logger.info(f"Checking migration logs in {self.db_path}/migration-logs")
 
-        # Check if database repository exists
-        if not self.db_repo_path.exists():
-            logger.warning(f"Database repository does not exist: {self.db_repo_path}")
+        # Check if database path exists
+        if not self.db_path.exists():
+            logger.warning(f"Database path does not exist: {self.db_path}")
             self._applied_cache = []
             return self._applied_cache
 
-        # Check if it's a Git repository
-        git_dir = self.db_repo_path / ".git"
-        if not git_dir.exists():
-            logger.warning(
-                f"Database repository is not a Git repository: {self.db_repo_path}"
+        # Check migration logs directory
+        migration_logs_dir = self.db_path / "migration-logs"
+        if not migration_logs_dir.exists():
+            logger.info(
+                f"Migration logs directory does not exist: {migration_logs_dir}"
             )
             self._applied_cache = []
             return self._applied_cache
 
         try:
-            # Query git log for migration commits (persisted snapshots)
-            # Format: only show commit subject lines that start with "Migration:"
-            result = subprocess.run(
-                ["git", "log", "--grep=^Migration:", "--format=%s"],
-                cwd=self.db_repo_path,
-                capture_output=True,
-                text=True,
-                check=True,
-                timeout=30,
-            )
-
-            # Parse migration names from commit messages
             applied = []
-            for line in result.stdout.strip().split("\n"):
-                if not line:
+
+            # Scan migration logs directory for migration folders
+            for log_folder in migration_logs_dir.iterdir():
+                if not log_folder.is_dir():
                     continue
 
-                if line.startswith("Migration: "):
-                    # Extract migration name from commit message
-                    # Format: "Migration: 000-initial-locations"
-                    # or "Migration: 000-initial-locations (Batch 1/3)"
-                    migration_name = line.replace("Migration: ", "").strip()
-
-                    # Remove batch suffix if present
-                    if " (Batch " in migration_name:
-                        migration_name = migration_name.split(" (Batch ")[0]
-
-                    # Avoid duplicates (batch commits create multiple entries)
-                    if migration_name not in applied:
-                        applied.append(migration_name)
-                        logger.debug(f"Found applied migration: {migration_name}")
+                # Check if metadata.json exists (indicates completed migration)
+                metadata_file = log_folder / "metadata.json"
+                if metadata_file.exists():
+                    migration_name = log_folder.name
+                    applied.append(migration_name)
+                    logger.debug(f"Found applied migration: {migration_name}")
 
             # Cache the results
             self._applied_cache = applied
-            logger.info(f"Found {len(applied)} applied migrations in Git history")
+            logger.info(f"Found {len(applied)} applied migrations in logs")
 
             return applied
 
-        except subprocess.TimeoutExpired:
-            logger.error("Git log query timed out after 30 seconds")
-            self._applied_cache = []
-            return self._applied_cache
-
-        except subprocess.CalledProcessError as e:
-            logger.error(f"Git log query failed: {e.stderr}")
-            self._applied_cache = []
-            return self._applied_cache
-
         except Exception as e:
-            logger.error(f"Unexpected error querying Git log: {e}")
+            logger.error(f"Unexpected error checking migration logs: {e}")
             self._applied_cache = []
             return self._applied_cache
 
@@ -311,7 +282,7 @@ class MigrationManager:
         Clear the cached list of applied migrations.
 
         Call this method to force a refresh of the applied migrations list
-        from Git history on the next call to get_applied_migrations().
+        from migration logs on the next call to get_applied_migrations().
         """
         logger.debug("Clearing applied migrations cache")
         self._applied_cache = None
@@ -320,8 +291,8 @@ class MigrationManager:
         """
         Get migrations that haven't been applied yet.
 
-        Returns only migrations whose data snapshots have not been
-        persisted in the Database Repository.
+        Returns only migrations that don't have migration logs in the
+        nes-db/v2/migration-logs directory.
 
         Returns:
             List of Migration objects that are pending (not yet applied)
@@ -362,7 +333,7 @@ class MigrationManager:
             migration: Migration to check
 
         Returns:
-            True if the migration has been applied (snapshot persisted), False otherwise
+            True if the migration has been applied (log exists), False otherwise
 
         Example:
             >>> manager = MigrationManager(Path("migrations"), Path("nes-db"))

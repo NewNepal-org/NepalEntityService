@@ -107,6 +107,9 @@ class MigrationResult:
     relationships_updated: int = 0
     """Number of relationships updated during migration."""
 
+    versions_created: int = 0
+    """Number of version files created during migration."""
+
     error: Optional[Exception] = None
     """Exception that caused the migration to fail, if any."""
 

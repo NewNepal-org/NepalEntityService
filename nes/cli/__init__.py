@@ -16,10 +16,10 @@ def cli():
     pass
 
 
-# Import and register migrate command group
-from nes.cli.migrate import migrate  # noqa: E402
+# Import and register migration command group
+from nes.cli.migrate import migration  # noqa: E402
 
-cli.add_command(migrate)
+cli.add_command(migration)
 
 
 # Server command group

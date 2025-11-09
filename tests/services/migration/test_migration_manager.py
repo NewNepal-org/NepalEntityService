@@ -101,7 +101,7 @@ def temp_db_repo():
 @pytest.mark.asyncio
 async def test_discover_migrations(temp_migrations_dir, temp_db_repo):
     """Test that migrations are discovered and sorted correctly."""
-    manager = MigrationManager(temp_migrations_dir, temp_db_repo)
+    manager = MigrationManager(temp_migrations_dir, temp_db_repo / "v2")
 
     migrations = await manager.discover_migrations()
 
@@ -120,7 +120,7 @@ async def test_discover_migrations(temp_migrations_dir, temp_db_repo):
 @pytest.mark.asyncio
 async def test_get_applied_migrations_empty(temp_migrations_dir, temp_db_repo):
     """Test getting applied migrations when none have been applied."""
-    manager = MigrationManager(temp_migrations_dir, temp_db_repo)
+    manager = MigrationManager(temp_migrations_dir, temp_db_repo / "v2")
 
     applied = await manager.get_applied_migrations()
 
@@ -129,25 +129,21 @@ async def test_get_applied_migrations_empty(temp_migrations_dir, temp_db_repo):
 
 @pytest.mark.asyncio
 async def test_get_applied_migrations_with_commits(temp_migrations_dir, temp_db_repo):
-    """Test getting applied migrations from Git history."""
-    # Create a migration commit in the database repository
-    (temp_db_repo / "test.json").write_text('{"test": true}')
-    subprocess.run(
-        ["git", "add", "."], cwd=temp_db_repo, check=True, capture_output=True
-    )
-    subprocess.run(
-        [
-            "git",
-            "commit",
-            "-m",
-            "Migration: 000-test-migration\n\nTest migration applied",
-        ],
-        cwd=temp_db_repo,
-        check=True,
-        capture_output=True,
-    )
+    """Test getting applied migrations from migration logs."""
+    # Create a migration log to simulate an applied migration
+    log_dir = temp_db_repo / "v2" / "migration-logs" / "000-test-migration"
+    log_dir.mkdir(parents=True, exist_ok=True)
 
-    manager = MigrationManager(temp_migrations_dir, temp_db_repo)
+    import json
+
+    metadata = {
+        "migration_name": "000-test-migration",
+        "status": "completed",
+        "executed_at": "2024-11-09T10:00:00",
+    }
+    (log_dir / "metadata.json").write_text(json.dumps(metadata))
+
+    manager = MigrationManager(temp_migrations_dir, temp_db_repo / "v2")
 
     applied = await manager.get_applied_migrations()
 
@@ -159,30 +155,25 @@ async def test_get_applied_migrations_with_commits(temp_migrations_dir, temp_db_
 async def test_get_applied_migrations_with_batch_commits(
     temp_migrations_dir, temp_db_repo
 ):
-    """Test that batch commits are handled correctly (no duplicates)."""
-    # Create multiple batch commits for the same migration
-    for i in range(1, 4):
-        (temp_db_repo / f"batch{i}.json").write_text(f'{{"batch": {i}}}')
-        subprocess.run(
-            ["git", "add", "."], cwd=temp_db_repo, check=True, capture_output=True
-        )
-        subprocess.run(
-            [
-                "git",
-                "commit",
-                "-m",
-                f"Migration: 000-test-migration (Batch {i}/3)\n\nBatch commit",
-            ],
-            cwd=temp_db_repo,
-            check=True,
-            capture_output=True,
-        )
+    """Test that migration logs are read correctly."""
+    # Create a migration log (no longer using batch commits)
+    log_dir = temp_db_repo / "v2" / "migration-logs" / "000-test-migration"
+    log_dir.mkdir(parents=True, exist_ok=True)
 
-    manager = MigrationManager(temp_migrations_dir, temp_db_repo)
+    import json
+
+    metadata = {
+        "migration_name": "000-test-migration",
+        "status": "completed",
+        "executed_at": "2024-11-09T10:00:00",
+    }
+    (log_dir / "metadata.json").write_text(json.dumps(metadata))
+
+    manager = MigrationManager(temp_migrations_dir, temp_db_repo / "v2")
 
     applied = await manager.get_applied_migrations()
 
-    # Should only have one entry despite 3 commits
+    # Should have one entry
     assert len(applied) == 1
     assert "000-test-migration" in applied
 
@@ -190,19 +181,20 @@ async def test_get_applied_migrations_with_batch_commits(
 @pytest.mark.asyncio
 async def test_get_pending_migrations(temp_migrations_dir, temp_db_repo):
     """Test getting pending migrations."""
-    # Apply one migration
-    (temp_db_repo / "test.json").write_text('{"test": true}')
-    subprocess.run(
-        ["git", "add", "."], cwd=temp_db_repo, check=True, capture_output=True
-    )
-    subprocess.run(
-        ["git", "commit", "-m", "Migration: 000-test-migration\n\nApplied"],
-        cwd=temp_db_repo,
-        check=True,
-        capture_output=True,
-    )
+    # Apply one migration by creating a log
+    log_dir = temp_db_repo / "v2" / "migration-logs" / "000-test-migration"
+    log_dir.mkdir(parents=True, exist_ok=True)
 
-    manager = MigrationManager(temp_migrations_dir, temp_db_repo)
+    import json
+
+    metadata = {
+        "migration_name": "000-test-migration",
+        "status": "completed",
+        "executed_at": "2024-11-09T10:00:00",
+    }
+    (log_dir / "metadata.json").write_text(json.dumps(metadata))
+
+    manager = MigrationManager(temp_migrations_dir, temp_db_repo / "v2")
 
     pending = await manager.get_pending_migrations()
 
@@ -214,19 +206,20 @@ async def test_get_pending_migrations(temp_migrations_dir, temp_db_repo):
 @pytest.mark.asyncio
 async def test_is_migration_applied(temp_migrations_dir, temp_db_repo):
     """Test checking if a specific migration is applied."""
-    # Apply migration 000
-    (temp_db_repo / "test.json").write_text('{"test": true}')
-    subprocess.run(
-        ["git", "add", "."], cwd=temp_db_repo, check=True, capture_output=True
-    )
-    subprocess.run(
-        ["git", "commit", "-m", "Migration: 000-test-migration\n\nApplied"],
-        cwd=temp_db_repo,
-        check=True,
-        capture_output=True,
-    )
+    # Apply migration 000 by creating a log
+    log_dir = temp_db_repo / "v2" / "migration-logs" / "000-test-migration"
+    log_dir.mkdir(parents=True, exist_ok=True)
 
-    manager = MigrationManager(temp_migrations_dir, temp_db_repo)
+    import json
+
+    metadata = {
+        "migration_name": "000-test-migration",
+        "status": "completed",
+        "executed_at": "2024-11-09T10:00:00",
+    }
+    (log_dir / "metadata.json").write_text(json.dumps(metadata))
+
+    manager = MigrationManager(temp_migrations_dir, temp_db_repo / "v2")
     migrations = await manager.discover_migrations()
 
     # Check migration 000 (should be applied)
@@ -241,23 +234,24 @@ async def test_is_migration_applied(temp_migrations_dir, temp_db_repo):
 @pytest.mark.asyncio
 async def test_cache_clearing(temp_migrations_dir, temp_db_repo):
     """Test that cache clearing works correctly."""
-    manager = MigrationManager(temp_migrations_dir, temp_db_repo)
+    manager = MigrationManager(temp_migrations_dir, temp_db_repo / "v2")
 
-    # First call - should query Git
+    # First call - should check migration logs
     applied1 = await manager.get_applied_migrations()
     assert applied1 == []
 
-    # Add a migration commit
-    (temp_db_repo / "test.json").write_text('{"test": true}')
-    subprocess.run(
-        ["git", "add", "."], cwd=temp_db_repo, check=True, capture_output=True
-    )
-    subprocess.run(
-        ["git", "commit", "-m", "Migration: 000-test-migration\n\nApplied"],
-        cwd=temp_db_repo,
-        check=True,
-        capture_output=True,
-    )
+    # Add a migration log
+    log_dir = temp_db_repo / "v2" / "migration-logs" / "000-test-migration"
+    log_dir.mkdir(parents=True, exist_ok=True)
+
+    import json
+
+    metadata = {
+        "migration_name": "000-test-migration",
+        "status": "completed",
+        "executed_at": "2024-11-09T10:00:00",
+    }
+    (log_dir / "metadata.json").write_text(json.dumps(metadata))
 
     # Second call without clearing cache - should return cached empty list
     applied2 = await manager.get_applied_migrations()
@@ -273,7 +267,7 @@ async def test_cache_clearing(temp_migrations_dir, temp_db_repo):
 @pytest.mark.asyncio
 async def test_get_migration_by_name(temp_migrations_dir, temp_db_repo):
     """Test getting a migration by its full name."""
-    manager = MigrationManager(temp_migrations_dir, temp_db_repo)
+    manager = MigrationManager(temp_migrations_dir, temp_db_repo / "v2")
 
     migration = await manager.get_migration_by_name("000-test-migration")
 

@@ -24,9 +24,9 @@ The Open Database Updates feature introduces a migration-based system for managi
 
 - **Migration**: A versioned folder containing a Python script and supporting files that applies specific data changes
 - **Linear Model**: Migrations execute in sequential order based on numeric prefixes
-- **Determinism**: Once executed, migrations create persisted snapshots that prevent re-execution
+- **Determinism**: Once executed, migrations create logs that prevent re-execution
 - **Two-Repository**: Application code and data are managed in separate Git repositories
-- **Git-Based Tracking**: Migration history is tracked through Git commits rather than a separate database
+- **Log-Based Tracking**: Migration history is tracked through log directories in the database
 
 ### Design Goals
 
@@ -160,30 +160,25 @@ nes-db/
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │         4. Execute migration locally                         │
-│            nes migrate run 005-add-ministers                │
+│            nes migration run 005-add-ministers               │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │         5. Migration modifies Database Repo                  │
-│            Creates/updates files in nes-db/v2/               │
+│            Creates files in nes-db/v2/                       │
+│            Creates migration log in migration-logs/          │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│         6. Commit to Database Repo (persisted snapshot)      │
-│            git commit -m "Migration: 005-add-ministers"      │
+│         6. Maintainer reviews and commits changes            │
+│            cd nes-db && git add . && git commit && git push  │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│         7. Push to Database Repo remote                      │
-│            git push origin main                              │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│         8. Update submodule in Service API Repo              │
+│         7. Update submodule in Service API Repo              │
 │            git add nes-db && git commit && git push          │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -290,7 +285,7 @@ mv migrations/005-add-parties migrations/006-add-parties
 
 ---
 
-## Determinism Through Persisted Snapshots
+## Determinism Through Migration Logs
 
 A key design principle is that migrations are deterministic: running a migration multiple times produces the same result (no-op after first execution).
 
@@ -302,108 +297,134 @@ Without determinism:
 - Difficult to recover from failures
 - Unclear which migrations have been applied
 
-### The Solution: Persisted Snapshots
+### The Solution: Migration Logs
 
-When a migration executes, the resulting data snapshot is persisted in the Database Repository through a Git commit. This commit serves as proof that the migration was applied.
+When a migration executes, a detailed log is stored in the database directory. This log serves as proof that the migration was applied and provides a complete audit trail.
 
-**Key Concept**: The persisted snapshot IS the migration tracking mechanism. No separate tracking database is needed.
+**Key Concept**: Migration logs in `nes-db/v2/migration-logs/` track which migrations have been applied. Each migration creates a folder with metadata, git diff, and execution logs.
 
 ### How It Works
 
 ```python
 class MigrationRunner:
-    async def run_migration(self, migration: Migration, force: bool = False):
-        """Execute a migration and persist the snapshot."""
+    async def run_migration(self, migration: Migration):
+        """Execute a migration and store logs."""
         
-        # 1. Check if migration already applied
-        if await self.is_migration_applied(migration) and not force:
+        # 1. Check for uncommitted changes (clean state requirement)
+        if self._get_git_diff():
+            raise RuntimeError("Database has uncommitted changes")
+        
+        # 2. Check if migration already applied
+        if await self._is_migration_logged(migration):
             print(f"Migration {migration.full_name} already applied, skipping")
             return MigrationResult(status=MigrationStatus.SKIPPED)
         
-        # 2. Execute migration script
+        # 3. Execute migration script
         context = self.create_context(migration)
         await migration.script.migrate(context)
         
-        # 3. Commit changes to Database Repository (persist snapshot)
-        await self.commit_and_push(migration, result)
+        # 4. Capture git diff of changes
+        git_diff = self._get_git_diff()
         
-        # 4. Now the migration is "applied" (snapshot exists)
+        # 5. Store migration log
+        await self._store_migration_log(migration, result, git_diff)
+        
+        # 6. Now the migration is "applied" (log exists)
         return result
     
-    async def is_migration_applied(self, migration: Migration) -> bool:
-        """Check if migration has been applied by looking for persisted snapshot."""
+    async def _is_migration_logged(self, migration: Migration) -> bool:
+        """Check if migration has been applied by looking for migration log."""
         
-        # Query Git log in Database Repository
-        result = subprocess.run(
-            ["git", "log", "--grep=^Migration:", "--format=%s"],
-            cwd=self.db_repo_path,
-            capture_output=True,
-            text=True
-        )
-        
-        # Parse migration names from commit messages
-        applied = []
-        for line in result.stdout.split('\n'):
-            if line.startswith('Migration: '):
-                migration_name = line.replace('Migration: ', '').strip()
-                applied.append(migration_name)
-        
-        # Check if this migration's snapshot exists
-        return migration.full_name in applied
+        # Check for metadata.json in migration log directory
+        log_dir = self.manager.db_path / "migration-logs" / migration.full_name
+        metadata_file = log_dir / "metadata.json"
+        return metadata_file.exists()
 ```
 
-### Git Commit as Snapshot
+### Migration Log Structure
 
-Each migration execution creates a Git commit in the Database Repository:
+Each migration execution creates a log directory in the Database Repository:
 
 ```
-commit abc123def456...
-Author: Migration System <migrations@nepalentityservice.org>
-Date: 2024-03-15 10:30:00 +0000
-
-    Migration: 005-add-cabinet-ministers
-    
-    Import current cabinet ministers from official records
-    
-    Author: contributor@example.com
-    Date: 2024-03-15
-    Entities created: 25
-    Relationships created: 25
-    Duration: 12.3s
+nes-db/v2/migration-logs/005-add-cabinet-ministers/
+├── metadata.json      # Migration metadata and statistics
+├── changes.diff       # Git diff of all changes made
+└── logs.txt          # Execution logs
 ```
 
-**This commit represents**:
-1. **Persisted Snapshot**: The actual entity/relationship files created
-2. **Tracking Record**: Proof that migration 005 was applied
-3. **Audit Trail**: Who, what, when, and how many changes
-4. **Rollback Point**: Can revert this commit to undo the migration
+**metadata.json**:
+```json
+{
+  "migration_name": "005-add-cabinet-ministers",
+  "author": "contributor@example.com",
+  "date": "2024-03-15",
+  "description": "Import current cabinet ministers",
+  "executed_at": "2024-03-15T10:30:00",
+  "duration_seconds": 12.3,
+  "status": "completed",
+  "changes": {
+    "entities_created": 25,
+    "relationships_created": 25,
+    "versions_created": 50,
+    "summary": "Created 25 entities, 25 relationships, and 50 versions",
+    "has_diff": true
+  }
+}
+```
+
+**This log represents**:
+1. **Tracking Record**: Proof that migration 005 was applied
+2. **Audit Trail**: Who, what, when, and how many changes
+3. **Change Details**: Complete git diff of all file changes
+4. **Execution History**: Full logs from migration execution
+
+### Clean State Requirement
+
+Before running any migration, the system verifies that the database has no uncommitted changes:
+
+```python
+# Check for uncommitted changes
+git_diff = self._get_git_diff()
+if git_diff:
+    raise RuntimeError(
+        "Cannot run migration: Database has uncommitted changes. "
+        "Please commit or stash changes before running migrations."
+    )
+```
+
+**Why This Matters**:
+- Ensures migration changes are isolated and trackable
+- Prevents mixing migration changes with manual edits
+- Makes git diff in migration logs accurate
+- Allows clean rollback if migration fails
 
 ### Benefits
 
 **Determinism**:
-- Running `nes migrate run --all` multiple times is safe
+- Running `nes migration run --all` multiple times is safe
 - First run executes pending migrations
-- Subsequent runs skip already-applied migrations (detect persisted snapshots)
+- Subsequent runs skip already-applied migrations (detect logs)
 
 **Idempotency**:
 - Migrations can be written to be idempotent (check before create)
-- System-level idempotency through snapshot detection
+- System-level idempotency through log detection
 - No duplicate entities from accidental re-execution
 
 **Data Integrity**:
 - Prevents corruption from re-running migrations
 - Clear separation between applied and pending migrations
-- Snapshot and tracking are always in sync (they're the same thing)
+- Clean state requirement ensures isolated changes
 
-**Distribution**:
-- Multiple maintainers see the same applied migrations
-- Pulling Database Repository updates the local view
-- No central tracking database needed
+**Audit Trail**:
+- Complete git diff of all changes in changes.diff
+- Detailed statistics (entities, relationships, versions created)
+- Execution logs for debugging
+- Metadata with author, date, duration
 
-**Rollback**:
-- Standard Git operations work: `git revert <commit-sha>`
-- Reverting a commit removes the persisted snapshot
-- Migration becomes "unapplied" and can be re-executed
+**Transparency**:
+- Migration logs are human-readable JSON
+- Git diff shows exactly what files changed
+- No hidden state or tracking database
 
 ### Comparison to Traditional Tracking
 
@@ -420,18 +441,26 @@ migrations_applied:
 - Rollback requires updating both data and tracking table
 - Not distributed (each environment has own tracking)
 
-**Our Approach** (persisted snapshots):
+**Our Approach** (migration logs):
 ```
-Git commits in Database Repository:
-  - commit abc123: "Migration: 000-initial-locations" (snapshot)
-  - commit def456: "Migration: 001-political-parties" (snapshot)
+Migration logs in Database Repository:
+  nes-db/v2/migration-logs/
+    000-initial-locations/
+      metadata.json
+      changes.diff
+      logs.txt
+    001-political-parties/
+      metadata.json
+      changes.diff
+      logs.txt
 ```
 
 **Benefits**:
-- Snapshot and tracking are the same thing (always in sync)
+- Logs stored alongside data (always in sync)
 - No separate tracking database needed
-- Rollback is just `git revert` (removes snapshot)
+- Complete audit trail with git diffs
 - Distributed via Git (pull to see applied migrations)
+- Human-readable JSON format
 
 ---
 
@@ -442,10 +471,9 @@ Git commits in Database Repository:
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    CLI Interface                             │
-│  nes migrate list                                          │
-│  nes migrate pending                                       │
-│  nes migrate run [name]                                    │
-│  nes migrate create <name>                                 │
+│  nes migration list [--pending] [--json]                   │
+│  nes migration run [name] [--all]                          │
+│  nes migration create <name>                               │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -537,21 +565,20 @@ class MigrationManager:
 class MigrationRunner:
     async def run_migration(
         self,
-        migration: Migration,
-        dry_run: bool = False,
-        force: bool = False
+        migration: Migration
     ) -> MigrationResult
     
     async def run_migrations(
         self,
         migrations: List[Migration],
-        dry_run: bool = False
+        stop_on_failure: bool = True
     ) -> List[MigrationResult]
     
-    async def commit_and_push(
+    async def _store_migration_log(
         self,
         migration: Migration,
-        result: MigrationResult
+        result: MigrationResult,
+        git_diff: Optional[str]
     ) -> None
 ```
 
@@ -594,56 +621,59 @@ class MigrationContext:
 ### Migration Execution Flow
 
 ```
-1. User runs: nes migrate run 005-add-ministers
+1. User runs: nes migration run 005-add-ministers
                               │
                               ▼
 2. CLI calls Migration Manager
    - Discover migration 005
-   - Check if already applied (query Git log in nes-db/)
+   - Check if already applied (check for migration log)
                               │
                               ▼
-3. If not applied, CLI calls Migration Runner
+3. Migration Runner checks clean state
+   - Verify no uncommitted changes in nes-db/
+   - Fail if dirty state detected
+                              │
+                              ▼
+4. If not applied and clean, Migration Runner executes
    - Load migrate.py script
    - Create Migration Context
+   - Count entities/relationships/versions before
                               │
                               ▼
-4. Migration Runner executes migrate(context)
+5. Migration Runner executes migrate(context)
    - Script reads data files
    - Script calls context.publication.create_entity(...)
    - Script calls context.publication.create_relationship(...)
                               │
                               ▼
-5. Publication Service writes to Database Repository
+6. Publication Service writes to Database Repository
    - Creates entity JSON files in nes-db/v2/entity/
    - Creates relationship JSON files in nes-db/v2/relationship/
    - Creates version JSON files in nes-db/v2/version/
                               │
                               ▼
-6. Migration Runner commits changes (persist snapshot)
-   - Stage changed files: git add nes-db/v2/
-   - Create commit with metadata
-   - Commit message: "Migration: 005-add-ministers\n\n..."
+7. Migration Runner captures changes
+   - Count entities/relationships/versions after
+   - Capture git diff of all changes
                               │
                               ▼
-7. Migration Runner pushes to remote
-   - Push to Database Repository: git push origin main
-   - Snapshot is now persisted and visible to all
-                              │
-                              ▼
-8. Service API Repository updated
-   - Update submodule reference: git add nes-db
-   - Commit and push to Service API Repository
+8. Migration Runner stores migration log
+   - Create nes-db/v2/migration-logs/005-add-ministers/
+   - Write metadata.json (stats, author, date)
+   - Write changes.diff (git diff output)
+   - Write logs.txt (execution logs)
                               │
                               ▼
 9. Migration is now "applied"
-   - Persisted snapshot exists in Database Repository
-   - Re-running will skip (detect snapshot)
+   - Migration log exists in nes-db/v2/migration-logs/
+   - Re-running will skip (detect log)
+   - User commits and pushes changes manually
 ```
 
 ### Read Flow (Checking Applied Migrations)
 
 ```
-1. User runs: nes migrate pending
+1. User runs: nes migration list --pending
                               │
                               ▼
 2. Migration Manager discovers all migrations
@@ -652,10 +682,10 @@ class MigrationContext:
    - Sort by prefix
                               │
                               ▼
-3. Migration Manager queries applied migrations
-   - Run: git log --grep="^Migration:" --format=%s
-   - In: nes-db/ (Database Repository)
-   - Parse commit messages to extract migration names
+3. Migration Manager checks applied migrations
+   - Scan: nes-db/v2/migration-logs/
+   - Check for metadata.json in each migration folder
+   - Build list of applied migration names
                               │
                               ▼
 4. Migration Manager compares
@@ -673,87 +703,75 @@ class MigrationContext:
 
 ## Git Integration
 
-### Commit Message Format
+### Manual Git Workflow
 
-Each migration execution creates a structured commit message:
+After running migrations, changes must be manually committed and pushed:
 
-```
-Migration: {prefix}-{name}
+```bash
+# 1. Run migration
+nes migration run 005-add-cabinet-ministers
 
-{description}
+# 2. Review changes
+cd nes-db
+git status
+git diff
 
-Author: {author_email}
-Date: {date}
-Entities created: {count}
-Entities updated: {count}
-Relationships created: {count}
-Relationships updated: {count}
-Duration: {seconds}s
-```
+# 3. Review migration log
+cat v2/migration-logs/005-add-cabinet-ministers/metadata.json
+cat v2/migration-logs/005-add-cabinet-ministers/changes.diff
 
-**Example**:
-```
-Migration: 005-add-cabinet-ministers
+# 4. Commit changes
+git add .
+git commit -m "Apply migration: 005-add-cabinet-ministers
 
-Import current cabinet ministers from official government records.
-Adds person entities and HOLDS_POSITION relationships.
+Created 25 entities, 25 relationships, and 50 versions
+See migration log for details"
 
-Author: contributor@example.com
-Date: 2024-03-15
-Entities created: 25
-Relationships created: 25
-Duration: 12.3s
+# 5. Push to remote
+git push origin main
 ```
 
-### Batch Commits
-
-For migrations that create many files (10,000+), commits are batched:
-
-```python
-BATCH_COMMIT_THRESHOLD = 1000  # Batch if more than 1000 files
-BATCH_SIZE = 1000  # Files per batch
-
-# Example: Migration creates 5,000 files
-# Results in 5 commits:
-#   - Migration: 005-large-import (Batch 1/5) - 1000 files
-#   - Migration: 005-large-import (Batch 2/5) - 1000 files
-#   - Migration: 005-large-import (Batch 3/5) - 1000 files
-#   - Migration: 005-large-import (Batch 4/5) - 1000 files
-#   - Migration: 005-large-import (Batch 5/5) - 1000 files
-```
-
-**Benefits**:
-- Avoids huge commits that slow down Git
-- Provides progress visibility
-- Allows partial recovery if push fails
+**Why Manual Commits?**:
+- Gives maintainers control over when changes are pushed
+- Allows review of changes before committing
+- Enables batching multiple migrations into one commit
+- Provides flexibility in commit messages
 
 ### Querying Migration History
 
 ```bash
-# See all migrations applied
-cd nes-db
-git log --grep="Migration:" --oneline
+# See all applied migrations
+ls nes-db/v2/migration-logs/
 
 # See details of specific migration
-git log --grep="Migration: 005-add-cabinet-ministers"
+cat nes-db/v2/migration-logs/005-add-cabinet-ministers/metadata.json
 
 # See what files changed
-git show <commit-sha> --stat
+cat nes-db/v2/migration-logs/005-add-cabinet-ministers/changes.diff
 
-# See full diff
-git show <commit-sha>
+# See execution logs
+cat nes-db/v2/migration-logs/005-add-cabinet-ministers/logs.txt
 ```
 
 ### Rollback
 
+To rollback a migration:
+
 ```bash
-# Revert specific migration
+# 1. Delete the migration log
+rm -rf nes-db/v2/migration-logs/005-add-cabinet-ministers/
+
+# 2. Revert the data changes
 cd nes-db
 git revert <commit-sha>
+
+# 3. Commit the rollback
+git add .
+git commit -m "Rollback migration: 005-add-cabinet-ministers"
 git push origin main
 
-# This removes the persisted snapshot
-# Migration becomes "unapplied" and can be re-executed
+# 4. Migration can now be re-executed
+nes migration run 005-add-cabinet-ministers
 ```
 
 ---
@@ -853,19 +871,19 @@ class MigrationManager:
 - Timestamp-based: Conflicts when multiple contributors work simultaneously
 - Dependency graph: Overkill for data migrations
 
-### Why Persisted Snapshots for Tracking?
+### Why Migration Logs for Tracking?
 
-**Decision**: Use Git commits as migration tracking mechanism
+**Decision**: Use log directories in database for migration tracking
 
 **Rationale**:
 - **Simplicity**: No separate tracking database needed
-- **Sync**: Tracking and data are always in sync (they're the same thing)
-- **Distribution**: Git provides distributed tracking
-- **Rollback**: Standard Git operations work
+- **Transparency**: Human-readable JSON files
+- **Audit Trail**: Complete git diff and execution logs
+- **Flexibility**: Manual git commits give maintainers control
 
 **Alternatives Considered**:
+- Git commits as tracking: Too automatic, less control
 - Separate tracking table: Can get out of sync with data
-- Tracking file in repo: Still needs Git commits for data
 - External database: Adds complexity and sync issues
 
 ### Why Thin Migration Context?

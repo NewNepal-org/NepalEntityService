@@ -113,7 +113,7 @@ If the persistence workflow fails:
    - Git push timeout (large number of files)
    - Database Repository access issues
    - Migration script runtime errors
-4. Migrations can be executed manually using `nes migrate run --all`
+4. Migrations can be executed manually using `nes migration run --all`
 
 ### Manual Execution
 
@@ -121,13 +121,13 @@ To manually execute migrations:
 
 ```bash
 # Check pending migrations
-nes migrate pending
+nes migration list --pending
 
 # Execute specific migration
-nes migrate run <migration-name>
+nes migration run <migration-name>
 
 # Execute all pending migrations
-nes migrate run --all --auto-commit
+nes migration run --all
 ```
 
 ## Monitoring

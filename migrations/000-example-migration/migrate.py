@@ -5,13 +5,15 @@ Author: system@nepalentity.org
 Date: 2024-11-08
 """
 
+from nes.services.migration.context import MigrationContext
+
 # Migration metadata (used for Git commit message)
 AUTHOR = "system@nepalentity.org"
 DATE = "2024-11-08"
 DESCRIPTION = "Create initial example entity - BP Koirala"
 
 
-async def migrate(context):
+async def migrate(context: MigrationContext):
     """
     Create the first entity in the database - BP Koirala.
 

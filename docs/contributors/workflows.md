@@ -132,7 +132,7 @@ graph LR
    - Include data files (CSV, JSON, etc.) if needed
 
 3. **Contributor: Test Migration**
-   - Run: `nes migrate run NNN-name --dry-run`
+   - Run: `nes migration run NNN-name`
    - Verify entities/relationships are created correctly
    - Check data quality and completeness
 
