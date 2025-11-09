@@ -31,22 +31,22 @@ class MigrationManager:
     - Providing migration metadata for display and execution
     """
 
-    def __init__(self, migrations_dir: Path, db_repo_path: Path):
+    def __init__(self, migrations_dir: Path, db_path: Path):
         """
         Initialize the Migration Manager.
 
         Args:
             migrations_dir: Path to the migrations directory (e.g., ./migrations/)
-            db_repo_path: Path to the Database Repository (e.g., ./nes-db/)
+            db_path: Path to the database directory (e.g., ./nes-db/v2/)
         """
         self.migrations_dir = Path(migrations_dir)
-        self.db_repo_path = Path(db_repo_path)
+        self.db_path = Path(db_path)
         self._applied_cache: Optional[List[str]] = None
 
         logger.info(
             f"MigrationManager initialized: "
             f"migrations_dir={self.migrations_dir}, "
-            f"db_repo_path={self.db_repo_path}"
+            f"db_path={self.db_path}"
         )
 
     async def discover_migrations(self) -> List[Migration]:
@@ -234,29 +234,31 @@ class MigrationManager:
             )
             return self._applied_cache
 
-        logger.info(f"Checking migration logs in {self.db_repo_path}/v2/migration-logs")
+        logger.info(f"Checking migration logs in {self.db_path}/migration-logs")
 
-        # Check if database repository exists
-        if not self.db_repo_path.exists():
-            logger.warning(f"Database repository does not exist: {self.db_repo_path}")
+        # Check if database path exists
+        if not self.db_path.exists():
+            logger.warning(f"Database path does not exist: {self.db_path}")
             self._applied_cache = []
             return self._applied_cache
 
         # Check migration logs directory
-        migration_logs_dir = self.db_repo_path / "v2" / "migration-logs"
+        migration_logs_dir = self.db_path / "migration-logs"
         if not migration_logs_dir.exists():
-            logger.info(f"Migration logs directory does not exist: {migration_logs_dir}")
+            logger.info(
+                f"Migration logs directory does not exist: {migration_logs_dir}"
+            )
             self._applied_cache = []
             return self._applied_cache
 
         try:
             applied = []
-            
+
             # Scan migration logs directory for migration folders
             for log_folder in migration_logs_dir.iterdir():
                 if not log_folder.is_dir():
                     continue
-                
+
                 # Check if metadata.json exists (indicates completed migration)
                 metadata_file = log_folder / "metadata.json"
                 if metadata_file.exists():

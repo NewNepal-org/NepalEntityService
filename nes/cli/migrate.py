@@ -49,13 +49,7 @@ def migration():
     type=click.Path(exists=True, file_okay=False, dir_okay=True),
     help="Path to migrations directory",
 )
-@click.option(
-    "--db-repo",
-    default="nes-db",
-    type=click.Path(exists=True, file_okay=False, dir_okay=True),
-    help="Path to database repository",
-)
-def list(pending: bool, output_json: bool, migrations_dir: str, db_repo: str):
+def list(pending: bool, output_json: bool, migrations_dir: str):
     """List migrations with their status.
 
     Shows all discovered migrations in the migrations/ directory along with
@@ -74,21 +68,26 @@ def list(pending: bool, output_json: bool, migrations_dir: str, db_repo: str):
 
     async def do_list():
         import json
-        
+
+        # Get database path from config
+        db_path = Config.get_db_path()
+
         # Initialize migration manager
-        manager = MigrationManager(
-            migrations_dir=Path(migrations_dir), db_repo_path=Path(db_repo)
-        )
+        manager = MigrationManager(migrations_dir=Path(migrations_dir), db_path=db_path)
 
         # Get migrations based on filter
         if pending:
             migrations = await manager.get_pending_migrations()
-            
+
             if not migrations:
                 if output_json:
-                    click.echo(json.dumps({"migrations": [], "summary": {"pending": 0}}))
+                    click.echo(
+                        json.dumps({"migrations": [], "summary": {"pending": 0}})
+                    )
                 else:
-                    click.echo("\n✓ No pending migrations. All migrations have been applied.\n")
+                    click.echo(
+                        "\n✓ No pending migrations. All migrations have been applied.\n"
+                    )
                 return
         else:
             # Discover all migrations
@@ -96,7 +95,14 @@ def list(pending: bool, output_json: bool, migrations_dir: str, db_repo: str):
 
             if not migrations:
                 if output_json:
-                    click.echo(json.dumps({"migrations": [], "summary": {"total": 0, "applied": 0, "pending": 0}}))
+                    click.echo(
+                        json.dumps(
+                            {
+                                "migrations": [],
+                                "summary": {"total": 0, "applied": 0, "pending": 0},
+                            }
+                        )
+                    )
                 else:
                     click.echo("No migrations found.")
                 return
@@ -109,15 +115,21 @@ def list(pending: bool, output_json: bool, migrations_dir: str, db_repo: str):
             migrations_data = []
             for migration in migrations:
                 is_applied = migration.full_name in applied
-                migrations_data.append({
-                    "name": migration.full_name,
-                    "prefix": migration.prefix,
-                    "status": "applied" if is_applied else "pending",
-                    "author": migration.author,
-                    "date": migration.date.strftime("%Y-%m-%d") if migration.date else None,
-                    "description": migration.description,
-                })
-            
+                migrations_data.append(
+                    {
+                        "name": migration.full_name,
+                        "prefix": migration.prefix,
+                        "status": "applied" if is_applied else "pending",
+                        "author": migration.author,
+                        "date": (
+                            migration.date.strftime("%Y-%m-%d")
+                            if migration.date
+                            else None
+                        ),
+                        "description": migration.description,
+                    }
+                )
+
             # Build summary
             if pending:
                 summary = {"pending": len(migrations)}
@@ -128,12 +140,12 @@ def list(pending: bool, output_json: bool, migrations_dir: str, db_repo: str):
                     "applied": applied_count,
                     "pending": len(migrations) - applied_count,
                 }
-            
+
             output = {
                 "migrations": migrations_data,
                 "summary": summary,
             }
-            
+
             click.echo(json.dumps(output, indent=2))
             return
 
@@ -172,7 +184,9 @@ def list(pending: bool, output_json: bool, migrations_dir: str, db_repo: str):
         # Summary
         if pending:
             click.echo(f"\nPending: {len(migrations)} migration(s)")
-            click.echo(f"\nRun 'nes migration run --all --apply' to execute all pending migrations.")
+            click.echo(
+                f"\nRun 'nes migration run --all' to execute all pending migrations."
+            )
         else:
             total = len(migrations)
             applied_count = len([m for m in migrations if m.full_name in applied])
@@ -180,7 +194,7 @@ def list(pending: bool, output_json: bool, migrations_dir: str, db_repo: str):
             click.echo(
                 f"\nTotal: {total} migrations ({applied_count} applied, {pending_count} pending)"
             )
-        
+
         click.echo()
 
     # Run async function
@@ -191,52 +205,25 @@ def list(pending: bool, output_json: bool, migrations_dir: str, db_repo: str):
 @click.argument("migration_name", required=False)
 @click.option("--all", "run_all", is_flag=True, help="Run all pending migrations")
 @click.option(
-    "--apply",
-    is_flag=True,
-    help="Apply changes (default is dry-run mode)",
-)
-@click.option(
-    "--force", is_flag=True, help="Force re-execution of already-applied migrations"
-)
-@click.option(
     "--migrations-dir",
     default="migrations",
     type=click.Path(exists=True, file_okay=False, dir_okay=True),
     help="Path to migrations directory",
 )
-@click.option(
-    "--db-repo",
-    default="nes-db",
-    type=click.Path(exists=True, file_okay=False, dir_okay=True),
-    help="Path to database repository",
-)
-@click.option(
-    "--db-path",
-    default="nes-db/v2",
-    type=click.Path(exists=True, file_okay=False, dir_okay=True),
-    help="Path to database directory",
-)
 def run(
     migration_name: Optional[str],
     run_all: bool,
-    apply: bool,
-    force: bool,
     migrations_dir: str,
-    db_repo: str,
-    db_path: str,
 ):
-    """Run one or more migrations (defaults to dry-run mode).
+    """Run one or more migrations.
 
     Execute a specific migration by name, or run all pending migrations
-    with the --all flag. By default, runs in dry-run mode. Use --apply
-    to actually apply changes and store migration logs.
+    with the --all flag. Migrations that have already been applied will
+    be skipped automatically.
 
     Examples:
         nes migration run 000-initial-locations
-        nes migration run 000-initial-locations --apply
         nes migration run --all
-        nes migration run --all --apply
-        nes migration run 000-initial-locations --force --apply
     """
     # Validate arguments
     if not migration_name and not run_all:
@@ -254,14 +241,14 @@ def run(
             "Error: Cannot specify both a migration name and --all flag.", err=True
         )
         raise click.Abort()
-    
-    # Determine dry-run mode (default is True unless --apply is specified)
-    dry_run = not apply
 
     async def do_run():
+        # Get database path from config
+        db_path = Config.get_db_path()
+
         # Initialize database and services
         click.echo("Initializing database and services...")
-        Config.initialize_database(base_path=db_path)
+        Config.initialize_database(base_path=str(db_path))
         db = Config.get_database()
         publication_service = Config.get_publication_service()
         search_service = Config.get_search_service()
@@ -280,9 +267,7 @@ def run(
             scraping_service = None
 
         # Initialize migration manager and runner
-        manager = MigrationManager(
-            migrations_dir=Path(migrations_dir), db_repo_path=Path(db_repo)
-        )
+        manager = MigrationManager(migrations_dir=Path(migrations_dir), db_path=db_path)
 
         runner = MigrationRunner(
             publication_service=publication_service,
@@ -305,21 +290,15 @@ def run(
                 click.echo(f"  - {migration.full_name}")
             click.echo()
 
-            if dry_run:
-                click.echo("Running in DRY RUN mode (changes will not be applied)\n")
-            else:
-                click.echo("Running in APPLY mode (changes will be persisted)\n")
-                # Confirm before running
-                click.confirm(
-                    "Do you want to proceed with running these migrations?", abort=True
-                )
+            # Confirm before running
+            click.confirm(
+                "Do you want to proceed with running these migrations?", abort=True
+            )
 
             # Run all migrations
             click.echo("\nExecuting migrations...\n")
             results = await runner.run_migrations(
                 migrations=migrations,
-                dry_run=dry_run,
-                auto_commit=not dry_run,
                 stop_on_failure=True,
             )
 
@@ -336,6 +315,7 @@ def run(
                     click.echo(
                         f"  Relationships created: {result.relationships_created}"
                     )
+                    click.echo(f"  Versions created: {result.versions_created}")
                 elif result.status == MigrationStatus.SKIPPED:
                     click.echo(
                         f"⊘ {result.migration.full_name} (skipped - already applied)"
@@ -372,31 +352,16 @@ def run(
             # Check if already applied
             is_applied = await manager.is_migration_applied(migration)
 
-            if is_applied and not force:
+            if is_applied:
                 click.echo(
                     f"\nMigration '{migration_name}' has already been applied.\n"
-                    f"Use --force to re-execute it.\n"
                 )
                 return
 
-            if force and is_applied:
-                click.echo(
-                    f"\nWARNING: Force re-executing already-applied migration "
-                    f"'{migration_name}'\n"
-                )
-
-            if dry_run:
-                click.echo(f"\nRunning migration '{migration_name}' in DRY RUN mode (use --apply to persist changes)\n")
-            else:
-                click.echo(f"\nRunning migration '{migration_name}' in APPLY mode...\n")
+            click.echo(f"\nRunning migration '{migration_name}'...\n")
 
             # Run migration
-            result = await runner.run_migration(
-                migration=migration,
-                dry_run=dry_run,
-                auto_commit=not dry_run,
-                force=force,
-            )
+            result = await runner.run_migration(migration=migration)
 
             # Display result
             click.echo(f"\n{'='*80}")
@@ -406,6 +371,7 @@ def run(
                 click.echo(f"\nDuration: {result.duration_seconds:.1f}s")
                 click.echo(f"Entities created: {result.entities_created}")
                 click.echo(f"Relationships created: {result.relationships_created}")
+                click.echo(f"Versions created: {result.versions_created}")
 
                 if result.logs:
                     click.echo(f"\nLogs:")
@@ -462,10 +428,13 @@ def create(name: str, migrations_dir: str, author: str):
         # Create migrations directory if it doesn't exist
         migrations_path.mkdir(parents=True, exist_ok=True)
 
+        # Get database path from config
+        db_path = Config.get_db_path()
+
         # Initialize migration manager to discover existing migrations
         manager = MigrationManager(
             migrations_dir=migrations_path,
-            db_repo_path=Path("nes-db"),  # Not used for discovery
+            db_path=db_path,
         )
 
         # Discover existing migrations to determine next prefix
@@ -494,75 +463,27 @@ def create(name: str, migrations_dir: str, author: str):
         # Get current date
         current_date = datetime.now().strftime("%Y-%m-%d")
 
-        # Create migrate.py from template
-        migrate_template = f'''"""
-Migration: {migration_name}
-Description: [TODO: Describe what this migration does]
-Author: {author}
-Date: {current_date}
-"""
+        # Load template file
+        template_path = (
+            Path(__file__).parent.parent
+            / "services"
+            / "migration"
+            / "templates"
+            / "migrate.py.template"
+        )
 
-# Migration metadata (used for Git commit message)
-AUTHOR = "{author}"
-DATE = "{current_date}"
-DESCRIPTION = "[TODO: Describe what this migration does]"
+        if not template_path.exists():
+            click.echo(f"Error: Template file not found: {template_path}", err=True)
+            raise click.Abort()
 
+        with open(template_path, "r", encoding="utf-8") as f:
+            migrate_template = f.read()
 
-async def migrate(context):
-    """
-    Main migration function.
-    
-    Args:
-        context: MigrationContext with access to services and data
-        
-    Available context attributes:
-        - context.publication: PublicationService for creating/updating entities
-        - context.search: SearchService for querying entities
-        - context.scraping: ScrapingService for data extraction (if available)
-        - context.db: EntityDatabase for direct read access
-        - context.migration_dir: Path to this migration folder
-        
-    Available context methods:
-        - context.read_csv(filename) -> List[Dict]
-        - context.read_json(filename) -> Any
-        - context.read_excel(filename, sheet_name=None) -> List[Dict]
-        - context.log(message) -> None
-    
-    Example usage:
-        # Read data from CSV
-        data = context.read_csv("data.csv")
-        
-        # Create author for this migration
-        author_id = "migration-{migration_name}"
-        
-        # Process each row
-        for row in data:
-            entity_data = {{...}}
-            await context.publication.create_entity(
-                entity_data=entity_data,
-                author_id=author_id,
-                change_description="Description of change"
-            )
-        
-        context.log("Migration completed")
-    """
-    # TODO: Implement your migration logic here
-    
-    context.log("Migration started")
-    
-    # Example: Read data from CSV
-    # data = context.read_csv("data.csv")
-    
-    # Example: Create author for this migration
-    # author_id = "migration-{migration_name}"
-    
-    # Example: Process each row
-    # for row in data:
-    #     entity_data = {{...}}
-    #     await context.publication.create_entity(entity_data, author_id, "Description")
-    
-    context.log("Migration completed")
-'''
+        # Replace template variables
+        migrate_template = migrate_template.replace("{prefix}", f"{next_prefix:03d}")
+        migrate_template = migrate_template.replace("{name}", name)
+        migrate_template = migrate_template.replace("{date}", current_date)
+        migrate_template = migrate_template.replace("[TODO: Your email]", author)
 
         migrate_path = migration_folder / "migrate.py"
         with open(migrate_path, "w", encoding="utf-8") as f:
@@ -570,43 +491,28 @@ async def migrate(context):
 
         click.echo(f"  Created: {migrate_path.relative_to(migrations_path.parent)}")
 
-        # Create README.md from template
-        readme_template = f"""# Migration: {migration_name}
+        # Load README template
+        readme_template_path = (
+            Path(__file__).parent.parent
+            / "services"
+            / "migration"
+            / "templates"
+            / "README.md.template"
+        )
 
-## Purpose
+        if not readme_template_path.exists():
+            click.echo(
+                f"Error: README template file not found: {readme_template_path}",
+                err=True,
+            )
+            raise click.Abort()
 
-[TODO: Describe the purpose of this migration]
+        with open(readme_template_path, "r", encoding="utf-8") as f:
+            readme_template = f.read()
 
-## Data Sources
-
-[TODO: List the data sources used in this migration]
-
-- Source 1: Description and URL
-- Source 2: Description and URL
-
-## Changes
-
-[TODO: Describe what changes this migration makes to the database]
-
-- Creates X entities of type Y
-- Updates Z entities with new attributes
-- Creates relationships between A and B
-
-## Dependencies
-
-[TODO: List any dependencies on other migrations or external data]
-
-- Depends on migration: XXX-migration-name
-- Requires external data: description
-
-## Notes
-
-[TODO: Add any additional notes about this migration]
-
-- This migration is deterministic and can be safely re-run
-- Expected execution time: X minutes
-- Special considerations: ...
-"""
+        # Replace template variables
+        readme_template = readme_template.replace("{prefix}", f"{next_prefix:03d}")
+        readme_template = readme_template.replace("{name}", name)
 
         readme_path = migration_folder / "README.md"
         with open(readme_path, "w", encoding="utf-8") as f:
@@ -626,10 +532,7 @@ async def migrate(context):
         click.echo(
             f"  3. Add any data files (CSV, JSON, Excel) to the migration folder"
         )
-        click.echo(
-            f"  4. Test your migration with: nes migration run {migration_name}"
-        )
-        click.echo(f"  5. Apply your migration with: nes migration run {migration_name} --apply")
+        click.echo(f"  4. Run your migration with: nes migration run {migration_name}")
         click.echo()
 
     # Run async function

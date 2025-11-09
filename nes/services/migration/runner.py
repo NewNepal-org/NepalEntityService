@@ -13,11 +13,12 @@ This module provides the MigrationRunner class which handles:
 import importlib.util
 import inspect
 import logging
+import subprocess
 import sys
 import time
 import traceback
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 
 from nes.database.entity_database import EntityDatabase
 from nes.services.migration.context import MigrationContext
@@ -67,6 +68,16 @@ class MigrationRunner:
         self.scraping = scraping_service
         self.db = db
         self.manager = migration_manager
+
+        # Check if database directory is a git repository
+        db_repo_path = self.manager.db_path.parent
+        git_dir = db_repo_path / ".git"
+        if not git_dir.exists():
+            logger.warning(
+                f"Database directory is not a git repository: {db_repo_path}. "
+                "Migration change tracking will not include git diffs. "
+                "Expected nes-db to be a git submodule."
+            )
 
         logger.info("MigrationRunner initialized")
 
@@ -231,9 +242,6 @@ class MigrationRunner:
     async def run_migration(
         self,
         migration: Migration,
-        dry_run: bool = True,
-        auto_commit: bool = True,
-        force: bool = False,
     ) -> MigrationResult:
         """
         Execute a migration script with determinism check.
@@ -241,17 +249,13 @@ class MigrationRunner:
         This method:
         - Checks if migration already applied before execution
         - Skips execution if migration log exists (returns SKIPPED status)
-        - Supports force flag to allow re-execution
         - Executes the migration script with proper context
         - Tracks execution time and statistics
-        - Stores migration logs when not in dry-run mode
+        - Stores migration logs after successful execution
         - Handles all exceptions gracefully
 
         Args:
             migration: Migration to execute
-            dry_run: If True, don't persist changes or logs (default: True)
-            auto_commit: If True, store migration logs after execution (default: True)
-            force: If True, allow re-execution of already-applied migrations (default: False)
 
         Returns:
             MigrationResult with execution details
@@ -271,31 +275,32 @@ class MigrationRunner:
             status=MigrationStatus.RUNNING,
         )
 
-        # Check if migration already applied (determinism check via migration logs)
-        if not force:
-            is_applied = await self._is_migration_logged(migration)
-            if is_applied:
-                logger.info(
-                    f"Migration {migration.full_name} already applied "
-                    "(migration log exists), skipping"
-                )
-                result.status = MigrationStatus.SKIPPED
-                result.logs.append(
-                    f"Migration {migration.full_name} already applied, skipping"
-                )
-                return result
+        # Check for uncommitted changes before running migration
+        existing_diff = self._get_git_diff()
+        if existing_diff:
+            error_msg = (
+                f"Cannot run migration {migration.full_name}: "
+                "Database has uncommitted changes. "
+                "Please commit or stash changes before running migrations."
+            )
+            logger.error(error_msg)
+            result.status = MigrationStatus.FAILED
+            result.error = RuntimeError(error_msg)
+            result.logs.append(error_msg)
+            return result
 
-        # If force flag is set and migration was applied, log warning
-        if force:
-            is_applied = await self._is_migration_logged(migration)
-            if is_applied:
-                logger.warning(
-                    f"Force flag set: re-executing already-applied migration "
-                    f"{migration.full_name}"
-                )
-                result.logs.append(
-                    f"WARNING: Force re-execution of already-applied migration"
-                )
+        # Check if migration already applied (determinism check via migration logs)
+        is_applied = await self._is_migration_logged(migration)
+        if is_applied:
+            logger.info(
+                f"Migration {migration.full_name} already applied "
+                "(migration log exists), skipping"
+            )
+            result.status = MigrationStatus.SKIPPED
+            result.logs.append(
+                f"Migration {migration.full_name} already applied, skipping"
+            )
+            return result
 
         # Load migration script
         try:
@@ -314,6 +319,7 @@ class MigrationRunner:
         # Track statistics before execution
         entities_before = await self._count_entities()
         relationships_before = await self._count_relationships()
+        versions_before = self._count_version_files()
 
         # Execute migration
         start_time = time.time()
@@ -331,9 +337,11 @@ class MigrationRunner:
             # Track statistics after execution
             entities_after = await self._count_entities()
             relationships_after = await self._count_relationships()
+            versions_after = self._count_version_files()
 
             result.entities_created = entities_after - entities_before
             result.relationships_created = relationships_after - relationships_before
+            result.versions_created = versions_after - versions_before
 
             # Capture logs from context (extend, don't replace)
             result.logs.extend(context.logs)
@@ -348,21 +356,19 @@ class MigrationRunner:
                 f"{result.relationships_created} relationships)"
             )
 
-            # Store migration logs if auto_commit is enabled and not dry-run
-            if auto_commit and not dry_run:
-                try:
-                    await self._store_migration_log(migration, result)
-                    logger.info(
-                        f"Migration log stored for {migration.full_name}"
-                    )
-                except Exception as log_error:
-                    logger.error(f"Failed to store migration log: {log_error}")
-                    # Mark migration as failed if log storage fails
-                    result.status = MigrationStatus.FAILED
-                    result.error = log_error
-                    result.logs.append(
-                        f"ERROR: Failed to store migration log: {log_error}"
-                    )
+            # Capture git diff of changes
+            git_diff = self._get_git_diff()
+
+            # Store migration logs
+            try:
+                await self._store_migration_log(migration, result, git_diff)
+                logger.info(f"Migration log stored for {migration.full_name}")
+            except Exception as log_error:
+                logger.error(f"Failed to store migration log: {log_error}")
+                # Mark migration as failed if log storage fails
+                result.status = MigrationStatus.FAILED
+                result.error = log_error
+                result.logs.append(f"ERROR: Failed to store migration log: {log_error}")
 
         except Exception as e:
             # Calculate execution time even on failure
@@ -420,6 +426,28 @@ class MigrationRunner:
             logger.warning(f"Failed to count relationships: {e}")
             return 0
 
+    def _count_version_files(self) -> int:
+        """
+        Count total number of version files in the database.
+
+        Version files are stored in the version/ directory (note: singular)
+        in nested subdirectories with .json extension.
+
+        Returns:
+            Total version file count
+        """
+        try:
+            version_dir = self.manager.db_path / "version"
+            if not version_dir.exists():
+                return 0
+
+            # Count all .json files recursively in version directory (including nested folders)
+            version_files = list(version_dir.rglob("*.json"))
+            return len(version_files)
+        except Exception as e:
+            logger.warning(f"Failed to count version files: {e}")
+            return 0
+
     def _get_migration_log_dir(self, migration: Migration) -> Path:
         """
         Get the directory path for storing migration logs.
@@ -430,8 +458,120 @@ class MigrationRunner:
         Returns:
             Path to migration log directory
         """
-        log_base = self.manager.db_repo_path / "v2" / "migration-logs"
+        log_base = self.manager.db_path / "migration-logs"
         return log_base / migration.full_name
+
+    def _check_clean_state(self) -> bool:
+        """
+        Check if the database directory has a clean git state (no uncommitted changes).
+
+        Returns:
+            True if clean (no uncommitted changes), False otherwise
+        """
+        diff = self._get_git_diff()
+        return diff is None or len(diff) == 0
+
+    def _get_git_diff(self) -> Optional[str]:
+        """
+        Get git diff of changes in the database directory.
+
+        This captures all uncommitted changes in the database directory (nes-db)
+        including both modified tracked files and new untracked files.
+
+        The nes-db directory is expected to be a git submodule.
+
+        Returns:
+            Git diff as string, or None if no changes or error occurred
+        """
+        db_path = self.manager.db_path
+        db_repo_path = db_path.parent  # nes-db directory
+
+        try:
+            # Check if it's a git repository (nes-db should be a submodule)
+            git_dir = db_repo_path / ".git"
+            if not git_dir.exists():
+                logger.warning(
+                    f"Database directory is not a git repository: {db_repo_path}. "
+                    "Expected nes-db to be a git submodule."
+                )
+                return None
+
+            diff_parts = []
+
+            # Get diff of tracked files (staged and unstaged changes)
+            result = subprocess.run(
+                ["git", "diff", "HEAD"],
+                cwd=db_repo_path,
+                capture_output=True,
+                text=True,
+                timeout=30,
+            )
+
+            if result.returncode != 0:
+                logger.error(f"Git diff failed: {result.stderr}")
+                return None
+
+            if result.stdout.strip():
+                diff_parts.append(result.stdout.strip())
+
+            # Get diff of untracked files (new files created by migration)
+            # Use --no-index to diff against /dev/null for new files
+            untracked_result = subprocess.run(
+                ["git", "ls-files", "--others", "--exclude-standard"],
+                cwd=db_repo_path,
+                capture_output=True,
+                text=True,
+                timeout=30,
+            )
+
+            if untracked_result.returncode == 0 and untracked_result.stdout.strip():
+                untracked_files = untracked_result.stdout.strip().split("\n")
+                logger.info(f"Found {len(untracked_files)} untracked files")
+
+                # Generate diff for each untracked file
+                for file_path in untracked_files:
+                    file_full_path = db_repo_path / file_path
+                    if file_full_path.exists() and file_full_path.is_file():
+                        try:
+                            # Create a diff showing the file as new
+                            with open(file_full_path, "r", encoding="utf-8") as f:
+                                content = f.read()
+
+                            # Format as a git diff for a new file
+                            file_diff = f"diff --git a/{file_path} b/{file_path}\n"
+                            file_diff += "new file mode 100644\n"
+                            file_diff += "index 0000000..0000000\n"
+                            file_diff += "--- /dev/null\n"
+                            file_diff += f"+++ b/{file_path}\n"
+                            file_diff += (
+                                "@@ -0,0 +1," + str(len(content.splitlines())) + " @@\n"
+                            )
+                            for line in content.splitlines():
+                                file_diff += f"+{line}\n"
+
+                            diff_parts.append(file_diff)
+                        except Exception as e:
+                            logger.warning(
+                                f"Failed to read untracked file {file_path}: {e}"
+                            )
+
+            # Combine all diffs
+            if not diff_parts:
+                logger.info("No uncommitted changes detected in database")
+                return None
+
+            combined_diff = "\n".join(diff_parts)
+            logger.info(
+                f"Captured git diff: {len(combined_diff)} characters ({len(diff_parts)} parts)"
+            )
+            return combined_diff
+
+        except subprocess.TimeoutExpired:
+            logger.error("Git diff timed out after 30 seconds")
+            return None
+        except Exception as e:
+            logger.error(f"Failed to get git diff: {e}")
+            return None
 
     async def _is_migration_logged(self, migration: Migration) -> bool:
         """
@@ -448,20 +588,24 @@ class MigrationRunner:
         return metadata_file.exists()
 
     async def _store_migration_log(
-        self, migration: Migration, result: MigrationResult
+        self,
+        migration: Migration,
+        result: MigrationResult,
+        git_diff: Optional[str] = None,
     ) -> None:
         """
         Store migration log with metadata and changes.
 
         Creates a folder structure:
-        nes-db/v2/migration-logs/{migration-name}/
-            metadata.json - Migration metadata and statistics
-            changes.json - List of changes made during migration
+        {db_path}/migration-logs/{migration-name}/
+            metadata.json - Migration metadata, statistics, and changes summary
+            changes.diff - Git diff of all changes (if available)
             logs.txt - Execution logs
 
         Args:
             migration: Migration that was executed
             result: Result of migration execution
+            git_diff: Optional git diff of changes made
 
         Raises:
             IOError: If log storage fails
@@ -470,13 +614,13 @@ class MigrationRunner:
         from datetime import datetime
 
         log_dir = self._get_migration_log_dir(migration)
-        
+
         # Create log directory
         log_dir.mkdir(parents=True, exist_ok=True)
-        
+
         logger.info(f"Storing migration log in {log_dir}")
 
-        # Store metadata
+        # Store metadata with changes summary
         metadata = {
             "migration_name": migration.full_name,
             "author": migration.author,
@@ -484,9 +628,14 @@ class MigrationRunner:
             "description": migration.description,
             "executed_at": datetime.now().isoformat(),
             "duration_seconds": result.duration_seconds,
-            "entities_created": result.entities_created,
-            "relationships_created": result.relationships_created,
             "status": result.status.value,
+            "changes": {
+                "entities_created": result.entities_created,
+                "relationships_created": result.relationships_created,
+                "versions_created": result.versions_created,
+                "summary": f"Created {result.entities_created} entities, {result.relationships_created} relationships, and {result.versions_created} versions",
+                "has_diff": git_diff is not None and len(git_diff) > 0,
+            },
         }
 
         metadata_file = log_dir / "metadata.json"
@@ -495,18 +644,12 @@ class MigrationRunner:
 
         logger.debug(f"Stored metadata: {metadata_file}")
 
-        # Store changes (placeholder for now - could be enhanced to track actual changes)
-        changes = {
-            "entities_created": result.entities_created,
-            "relationships_created": result.relationships_created,
-            "summary": f"Created {result.entities_created} entities and {result.relationships_created} relationships",
-        }
-
-        changes_file = log_dir / "changes.json"
-        with open(changes_file, "w", encoding="utf-8") as f:
-            json.dump(changes, f, indent=2)
-
-        logger.debug(f"Stored changes: {changes_file}")
+        # Store diff as separate file if it exists
+        if git_diff:
+            diff_file = log_dir / "changes.diff"
+            with open(diff_file, "w", encoding="utf-8") as f:
+                f.write(git_diff)
+            logger.debug(f"Stored diff: {diff_file}")
 
         # Store execution logs
         logs_file = log_dir / "logs.txt"
@@ -526,8 +669,6 @@ class MigrationRunner:
     async def run_migrations(
         self,
         migrations: List[Migration],
-        dry_run: bool = False,
-        auto_commit: bool = True,
         stop_on_failure: bool = True,
     ) -> List[MigrationResult]:
         """
@@ -541,8 +682,6 @@ class MigrationRunner:
 
         Args:
             migrations: List of migrations to execute (in order)
-            dry_run: If True, don't commit changes (default: False)
-            auto_commit: If True, commit and push changes after each migration (default: True)
             stop_on_failure: If True, stop on first failure; if False, continue (default: True)
 
         Returns:
@@ -565,12 +704,7 @@ class MigrationRunner:
             )
 
             # Execute migration
-            result = await self.run_migration(
-                migration=migration,
-                dry_run=dry_run,
-                auto_commit=auto_commit,
-                force=False,  # Never force in batch mode
-            )
+            result = await self.run_migration(migration=migration)
 
             results.append(result)
 
@@ -609,5 +743,3 @@ class MigrationRunner:
         )
 
         return results
-
-
