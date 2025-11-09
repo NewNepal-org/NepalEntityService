@@ -903,7 +903,7 @@ class MigrationManager:
 
 - **Contributor Guide**: See `docs/migration-contributor-guide.md` for creating migrations
 - **Maintainer Guide**: See `docs/migration-maintainer-guide.md` for executing migrations
-- **API Reference**: See `docs/api-reference.md` for complete API documentation
+- **API Reference**: See [OpenAPI documentation](/docs) for complete API documentation
 - **Data Models**: See `docs/data-models.md` for entity schemas
 
 ---

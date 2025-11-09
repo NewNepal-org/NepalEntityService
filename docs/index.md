@@ -2,6 +2,57 @@
 
 Welcome to the **Nepal Entity Service** (NES) documentation. NES is a comprehensive Python package designed to manage Nepali public entities including persons, organizations, and locations with full versioning and relationship tracking.
 
+## Documentation Index
+
+### For API Consumers
+Start here if you want to use the public Nepal Entity Service API:
+
+- **[API Consumer Guide](/api-guide)** - Using the public API at https://nes.newnepal.org/api
+- **[OpenAPI Documentation](https://nes.newnepal.org/docs)** - Interactive API reference
+- **[Data Models](/data-models)** - Understanding entity and relationship schemas
+- **[Examples](/examples)** - Common usage patterns and code examples
+
+### For Contributors
+Start here if you want to contribute to the project or run your own instance:
+
+- **[Contributor Guide](/contributor-guide)** - Setup, development workflow, and contributing
+- **[Database Setup](/database-setup)** - Git submodule and database configuration
+- **[Usage Examples](/usage-examples)** - Code examples, notebooks, and learning paths
+- **[Service Design](/specs/nepal-entity-service/design)** - System architecture and design
+
+### Data Maintenance & Migrations
+For maintainers who manage data and migrations:
+
+- **[Data Maintainer Guide](/data-maintainer-guide)** - Local data maintenance with Publication Service
+- **[Migration Contributor Guide](/migration-contributor-guide)** - Creating and submitting data migrations
+- **[Migration Maintainer Guide](/migration-maintainer-guide)** - Reviewing and executing migrations
+- **[Migration Architecture](/migration-architecture)** - Migration system design and workflow
+
+### Specifications
+Technical specifications and design documents:
+
+#### Nepal Entity Service
+- [Requirements](/specs/nepal-entity-service/requirements)
+- [Design](/specs/nepal-entity-service/design)
+- [Tasks](/specs/nepal-entity-service/tasks)
+
+#### Open Database Updates
+- [Requirements](/specs/open-database-updates/requirements)
+- [Design](/specs/open-database-updates/design)
+- [Tasks](/specs/open-database-updates/tasks)
+
+### All Documentation Files
+- [api-guide.md](/api-guide) - API consumer guide
+- [contributor-guide.md](/contributor-guide) - Contributor setup and workflow
+- [data-maintainer-guide.md](/data-maintainer-guide) - Data maintenance guide
+- [data-models.md](/data-models) - Entity schemas
+- [database-setup.md](/database-setup) - Database configuration
+- [examples.md](/examples) - Usage examples
+- [migration-architecture.md](/migration-architecture) - Migration system design
+- [migration-contributor-guide.md](/migration-contributor-guide) - Creating migrations
+- [migration-maintainer-guide.md](/migration-maintainer-guide) - Executing migrations
+- [usage-examples.md](/usage-examples) - Code examples and notebooks
+
 ## What is Nepal Entity Service?
 
 The Nepal Entity Service provides a robust foundation for civic technology applications by offering:
@@ -12,15 +63,6 @@ The Nepal Entity Service provides a robust foundation for civic technology appli
 - **Multilingual Support**: Native support for Nepali (Devanagari) and English
 - **RESTful API**: Public read-only API for accessing entity data
 - **Data Maintainer Interface**: Pythonic interface for local data maintenance
-
-## Quick Links
-
-- [Getting Started](/getting-started) - Installation and quick start guide
-- [Architecture](/architecture) - System architecture and design
-- [API Reference](/api-reference) - Complete API endpoint documentation
-- [Data Models](/data-models) - Entity, Relationship, and Version schemas
-- [Examples](/examples) - Usage examples and code snippets
-- [OpenAPI Schema](/docs) - Interactive API documentation
 
 ## Key Features
 
@@ -64,7 +106,7 @@ GET /api/schemas               # Discover entity types
 GET /api/health                # Health check
 ```
 
-All API endpoints are documented in the [API Reference](/api-reference) and available interactively at [/docs](/docs).
+All API endpoints are documented in the interactive [OpenAPI documentation](/docs).
 
 ## Use Cases
 
@@ -90,4 +132,4 @@ This project is open source and welcomes contributions. For more information abo
 
 ---
 
-**Need Help?** Check out our [Examples](/examples) page for common usage patterns, or explore the [API Reference](/api-reference) for detailed endpoint documentation.
+**Need Help?** Check out our [Examples](/examples) page for common usage patterns, or explore the [OpenAPI documentation](/docs) for detailed endpoint documentation.

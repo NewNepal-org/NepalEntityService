@@ -884,7 +884,7 @@ async def migrate(context):
 
 - **Maintainer Guide**: See `docs/migration-maintainer-guide.md` for the review process
 - **Architecture**: See `docs/migration-architecture.md` for system design
-- **API Reference**: See `docs/api-reference.md` for complete API documentation
+- **API Reference**: See [OpenAPI documentation](/docs) for complete API documentation
 - **Examples**: See `examples/` directory for more code examples
 
 ---
