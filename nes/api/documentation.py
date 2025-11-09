@@ -16,7 +16,7 @@ from fastapi.responses import HTMLResponse
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 DOCS_DIR = PROJECT_ROOT / "docs"
 SPECS_DIR = PROJECT_ROOT / ".kiro" / "specs"
-TEMPLATE_PATH = Path(__file__).parent / "templates" / "documentation.html"
+TEMPLATE_PATH = DOCS_DIR / "templates" / "documentation.html"
 
 
 def load_template() -> str:
@@ -143,8 +143,9 @@ def render_404_page() -> str:
         <p>The documentation page you're looking for doesn't exist.</p>
         <div>
             <a href="/">Home</a>
-            <a href="/getting-started">Getting Started</a>
-            <a href="/api-reference">API Reference</a>
+            <a href="/consumers/getting-started">Getting Started</a>
+            <a href="/consumers/api-guide">API Guide</a>
+            <a href="/docs">OpenAPI Docs</a>
         </div>
     </div>
     """

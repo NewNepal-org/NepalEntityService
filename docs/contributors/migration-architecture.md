@@ -901,10 +901,10 @@ class MigrationManager:
 
 ## Additional Resources
 
-- **Contributor Guide**: See `docs/migration-contributor-guide.md` for creating migrations
-- **Maintainer Guide**: See `docs/migration-maintainer-guide.md` for executing migrations
+- **Contributor Guide**: See [Migration Contributor Guide](/contributors/migration-contributor-guide) for creating migrations
+- **Maintainer Guide**: See [Migration Maintainer Guide](/contributors/migration-maintainer-guide) for executing migrations
 - **API Reference**: See [OpenAPI documentation](/docs) for complete API documentation
-- **Data Models**: See `docs/data-models.md` for entity schemas
+- **Data Models**: See [Data Models](/consumers/data-models) for entity schemas
 
 ---
 

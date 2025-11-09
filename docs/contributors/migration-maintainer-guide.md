@@ -701,10 +701,10 @@ Use this checklist when executing migrations:
 
 ## Additional Resources
 
-- **Contributor Guide**: See `docs/migration-contributor-guide.md` for contributor workflow
-- **Architecture**: See `docs/migration-architecture.md` for system design
+- **Contributor Guide**: See [Migration Contributor Guide](/contributors/migration-contributor-guide) for contributor workflow
+- **Architecture**: See [Migration Architecture](/contributors/migration-architecture) for system design
 - **API Reference**: See [OpenAPI documentation](/docs) for complete API documentation
-- **Data Maintainer Guide**: See `docs/data-maintainer-guide.md` for Publication Service usage
+- **Data Maintainer Guide**: See [Data Maintainer Guide](/contributors/data-maintainer-guide) for Publication Service usage
 
 ---
 

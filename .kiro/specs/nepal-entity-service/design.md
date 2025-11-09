@@ -4,7 +4,7 @@
 
 The Nepal Entity Service is a comprehensive system designed to manage Nepali public entities with a focus on transparency, accountability, and data integrity. The system provides a robust foundation for civic technology applications by offering structured entity management, versioning, relationship tracking, and automated data collection capabilities.
 
-The architecture follows a modular design with optional components, allowing users to install only the functionality they need. The core system provides entity models and utilities, while optional modules add API services and scraping capabilities.
+The architecture follows a service-oriented design with optional components, allowing users to install only the functionality they need. The core system provides entity models and utilities, while optional packages add API services and scraping capabilities.
 
 ## Architecture
 
@@ -22,24 +22,28 @@ graph TB
         API[FastAPI Service]
     end
     
-    subgraph "Data Management layer"
+    subgraph "Data Management Layer"
         PUB[Publication Service]
         SRCH[Search Service]
+        MIG[Migration Service]
 
-        subgraph "Modules"
-            ENT[Entity Module]
-            REL[Relationship Module]
-            VER[Version Module]
-            ACT[Author Module]
+        subgraph "Core Models"
+            ENT[Entity Models]
+            REL[Relationship Model]
+            VER[Version Model]
+            AUTH[Author Model]
         end
 
         PUB --> ENT
         PUB --> REL
         PUB --> VER
-        PUB --> ACT
+        PUB --> AUTH
     
         SRCH --> ENT
         SRCH --> REL
+        
+        MIG --> PUB
+        MIG --> SRCH
     end
 
     SCRP[Scraping Service]
@@ -72,6 +76,7 @@ graph TB
     CLI --> SCRP
     NOTEBOOK --> PUB
     NOTEBOOK --> SRCH
+    CLI --> MIG
     
     WEB --> API
     CLI --> SRCH
@@ -102,51 +107,52 @@ graph TB
 The system is organized into several key components:
 
 1. **Core Models**: Pydantic-based data models for entities, relationships, and versions
-2. **Data Management Layer**: Publication and Search services with shared modules
-   - **Publication Service**: Entity lifecycle management with Entity, Relationship, Version, and Author modules
+2. **Data Management Layer**: Publication, Search, and Migration services using core models
+   - **Publication Service**: Entity lifecycle management using Entity, Relationship, Version, and Author models
    - **Search Service**: Entity and relationship search with filtering and pagination
+   - **Migration Service**: Database update orchestration through versioned migration scripts
 3. **Scraping Service**: External data extraction with GenAI/LLM components
    - **Web Scraper**: Multi-source data extraction
    - **Translation Service**: Nepali/English translation
    - **Data Normalization Service**: LLM-powered data structuring
 4. **Database Layer**: Abstract database interface with file-based implementation  
 5. **API Layer**: FastAPI-based REST service for data retrieval with hosted documentation
-6. **Client Applications**: Web apps, CLI tools, and Jupyter notebooks with direct Publication Service access
-7. **Data Maintainer Interface**: Pythonic interface for local data maintenance
+6. **Client Applications**: Web apps, CLI tools, and Jupyter notebooks with direct service access
+7. **Data Maintainer Interface**: Pythonic interface for local data maintenance through services
 
 ## Components and Interfaces
 
 ### Publication Service
 
-The **Publication Service** is the central orchestration layer that manages the complete lifecycle of entities, relationships, and their versions. Rather than having separate services for each concern, the Publication Service provides a unified interface with specialized internal modules.
+The **Publication Service** is the central orchestration layer that manages the complete lifecycle of entities, relationships, and their versions. Rather than having separate services for each concern, the Publication Service provides a unified interface using core Pydantic models.
 
 #### Architecture Philosophy
 
-The Publication Service follows a modular monolith pattern:
+The Publication Service follows a service-oriented pattern:
 - **Single Entry Point**: All entity operations flow through the Publication Service
-- **Internal Modules**: Entity, Relationship, and Version modules handle specialized logic
+- **Core Models**: Entity, Relationship, Version, and Author Pydantic models define data structures
 - **Coordinated Operations**: Cross-cutting concerns (validation, versioning, attribution) are handled consistently
-- **Transaction Boundaries**: The service manages atomic operations across multiple modules
+- **Transaction Boundaries**: The service manages atomic operations across multiple model types
 
 #### Core Responsibilities
 
 1. **Entity Lifecycle Management**
-   - Entity creation, updates, and retrieval through the Entity Module
+   - Entity creation, updates, and retrieval using Entity models (Person, Organization, Location)
    - Automatic version creation on all modifications
-   - Validation and constraint enforcement
+   - Validation and constraint enforcement through Pydantic
    - Attribution tracking for all changes
 
 2. **Relationship Management**
-   - Relationship creation and modification through the Relationship Module
+   - Relationship creation and modification using the Relationship model
    - Bidirectional relationship consistency
    - Temporal relationship tracking
    - Relationship versioning
 
 3. **Version Control**
-   - Automatic snapshot creation through the Version Module
+   - Automatic snapshot creation using the Version model
    - Historical state retrieval
    - Change tracking and audit trails
-   - Author attribution
+   - Author attribution using the Author model
 
 4. **Cross-Cutting Concerns**
    - Unified validation across all operations
@@ -154,34 +160,36 @@ The Publication Service follows a modular monolith pattern:
    - Transaction management
    - Event publishing for external integrations
 
-#### Module Structure
+#### Model Structure
 
-The Publication Service uses shared modules within the Data Management Layer:
+The Publication Service uses core Pydantic models within the Data Management Layer:
 
-**Entity Module**
-- Entity CRUD operations
-- Name and identifier management
-- Entity-specific validation
+**Entity Models** (`nes/core/models/entity.py`, `person.py`, `organization.py`, `location.py`)
+- Base `Entity` class with common fields
+- `Person` model for person entities
+- `Organization` model (with `PoliticalParty` and `GovernmentBody` subclasses)
+- `Location` model for location entities
+- Name and identifier management through nested models
+- Pydantic validation for data integrity
 - Used by both Publication and Search services
 
-**Relationship Module**
-- Relationship CRUD operations
+**Relationship Model** (`nes/core/models/relationship.py`)
+- `Relationship` class for entity connections
 - Relationship type validation
-- Temporal relationship handling
-- Bidirectional consistency checks
+- Temporal relationship handling (start_date, end_date)
+- Bidirectional consistency through service logic
 - Used by both Publication and Search services
 
-**Version Module**
-- Snapshot creation and storage
-- Version retrieval and comparison
-- Change description management
-- Attribution tracking
+**Version Model** (`nes/core/models/version.py`)
+- `Version` class for change tracking
+- Snapshot storage of entity/relationship state
+- Change description and attribution
+- Version number sequencing
 - Used exclusively by Publication Service
 
-**Author Module**
-- Author management and tracking
-- Attribution metadata
-- Author validation
+**Author Model** (`nes/core/models/version.py`)
+- `Author` class for change attribution
+- Author metadata and identification
 - Used by Publication Service for change tracking
 
 #### Service Interface Example
@@ -193,14 +201,14 @@ from nes.core.models import Entity, Relationship
 # Initialize the publication service
 pub_service = PublicationService(database=db)
 
-# Entity operations (uses Entity Module internally)
+# Entity operations (returns Entity model instance)
 entity = pub_service.create_entity(
     entity_data=entity_dict,
     author_id="author:system:csv-importer",
     change_description="Initial import"
 )
 
-# Relationship operations (uses Relationship Module internally)
+# Relationship operations (returns Relationship model instance)
 relationship = pub_service.create_relationship(
     source_id="entity:person/ram-chandra-poudel",
     target_id="entity:organization/political_party/nepali-congress",
@@ -208,16 +216,16 @@ relationship = pub_service.create_relationship(
     author_id="author:system:csv-importer"
 )
 
-# Version operations (uses Version Module internally)
+# Version operations (returns list of Version model instances)
 versions = pub_service.get_entity_versions(
     entity_id="entity:person/ram-chandra-poudel"
 )
 
-# Coordinated operations across modules
-pub_service.update_entity_with_relationships(
-    entity=updated_entity,
-    new_relationships=[rel1, rel2],
-    author_id="author:system:csv-importer"
+# Update operations with automatic versioning
+updated_entity = pub_service.update_entity(
+    entity=entity,
+    author_id="author:system:csv-importer",
+    change_description="Updated attributes"
 )
 ```
 
@@ -311,6 +319,157 @@ page_2 = search_service.search_entities(query="politician", limit=20, offset=20)
 - Limit: Maximum number of results to return
 - Offset: Number of results to skip
 - Total count: Total matching results for pagination UI
+
+### Migration Service
+
+The **Migration Service** orchestrates database updates through versioned migration scripts, enabling transparent, reproducible, and community-driven data maintenance.
+
+#### Architecture Philosophy
+
+The Migration Service follows a deterministic execution pattern:
+- **Versioned Scripts**: Sequential migration folders with Python scripts
+- **Idempotent Execution**: Migrations can be safely re-run without side effects
+- **Git-Based Tracking**: Migration history tracked through Git commits
+- **Service Orchestration**: Uses Publication and Search services for data operations
+
+#### Core Responsibilities
+
+1. **Migration Discovery**
+   - Scan `migrations/` directory for migration folders
+   - Parse migration metadata (prefix, name, description)
+   - Validate migration structure (migrate.py, README.md)
+
+2. **Execution Management**
+   - Determine pending migrations by querying Git history
+   - Execute migrations in sequential order
+   - Provide migration context with service access
+   - Track execution time and statistics
+
+3. **Git Integration**
+   - Commit changes to Database Repository after execution
+   - Create structured commit messages with metadata
+   - Push commits to remote repository
+   - Update submodule references
+
+4. **Migration Context**
+   - Provide access to Publication Service for data writes
+   - Provide access to Search Service for data queries
+   - Provide access to Scraping Service for data extraction
+   - Provide file reading helpers (CSV, JSON, Excel)
+   - Provide logging mechanism
+
+#### Service Interface Example
+
+```python
+from nes.services.migration import MigrationService, MigrationManager
+
+# Initialize migration service
+migration_service = MigrationService(
+    migrations_dir="migrations",
+    db_repo_path="nes-db"
+)
+
+# List all migrations
+migrations = await migration_service.list_migrations()
+for migration in migrations:
+    print(f"{migration.prefix:03d}-{migration.name}")
+
+# Get pending migrations
+pending = await migration_service.get_pending_migrations()
+print(f"Pending: {len(pending)} migrations")
+
+# Execute specific migration
+result = await migration_service.run_migration(
+    migration_name="005-add-ministers",
+    dry_run=False
+)
+print(f"Status: {result.status}")
+print(f"Entities created: {result.entities_created}")
+
+# Execute all pending migrations
+results = await migration_service.run_all_pending()
+for result in results:
+    print(f"{result.migration_name}: {result.status}")
+```
+
+#### Migration Script Structure
+
+Each migration script has access to a context object:
+
+```python
+# migrations/005-add-ministers/migrate.py
+"""
+Migration: 005-add-ministers
+Description: Import current cabinet ministers
+Author: contributor@example.com
+Date: 2024-03-15
+"""
+
+AUTHOR = "contributor@example.com"
+DATE = "2024-03-15"
+DESCRIPTION = "Import current cabinet ministers from official records"
+
+async def migrate(context):
+    """
+    Main migration function.
+    
+    Args:
+        context: MigrationContext with service access
+    """
+    # Read data files
+    ministers = context.read_csv("ministers.csv")
+    
+    # Use Publication Service
+    for row in ministers:
+        entity = await context.publication.create_entity(
+            entity_data={
+                "slug": row["slug"],
+                "type": "person",
+                "sub_type": "politician",
+                "names": [{"kind": "PRIMARY", "en": {"full": row["name"]}}]
+            },
+            author_id="author:migration:005-add-ministers",
+            change_description="Import minister"
+        )
+        
+        # Use Search Service to find related entities
+        party = await context.search.find_entity_by_name(
+            name=row["party"],
+            entity_type="organization"
+        )
+        
+        # Create relationships
+        if party:
+            await context.publication.create_relationship(
+                source_entity_id=entity.id,
+                target_entity_id=party.id,
+                relationship_type="MEMBER_OF",
+                author_id="author:migration:005-add-ministers",
+                change_description="Add party membership"
+            )
+    
+    context.log(f"Imported {len(ministers)} ministers")
+```
+
+#### Migration Workflow
+
+1. **Contributor creates migration** in `migrations/NNN-name/` folder
+2. **Contributor submits PR** with migration code (no database changes)
+3. **GitHub Actions run tests** on migration code
+4. **Maintainer reviews and merges** PR to main branch
+5. **GitHub Actions auto-execute** migration on merge
+6. **Migration Service runs** the migration script
+7. **Changes committed** to Database Repository with metadata
+8. **Submodule updated** in Service API Repository
+
+#### Determinism Through Git
+
+The Migration Service uses Git commits as the tracking mechanism:
+- Each migration execution creates a commit in the Database Repository
+- Commit message includes migration name and metadata
+- Re-running migrations checks Git log for existing commits
+- If commit exists, migration is skipped (already applied)
+- This ensures idempotent execution without a separate tracking database
 
 ### Core Models
 
@@ -818,12 +977,12 @@ versions = pub_service.get_entity_versions(
 #### Interface Characteristics
 
 - **No Authentication**: Operates directly on local file system without authentication checks
-- **Publication Service Layer**: Uses PublicationService for coordinated operations across modules
-- **Automatic Versioning**: All updates automatically create version snapshots through Version Module
+- **Publication Service Layer**: Uses PublicationService for coordinated operations across model types
+- **Automatic Versioning**: All updates automatically create version snapshots using the Version model
 - **Author Attribution**: Requires author_id for change tracking but no user authentication
 - **Validation**: Full Pydantic validation on all operations coordinated by Publication Service
 - **Transaction Safety**: Atomic operations managed by Publication Service
-- **Module Coordination**: Entity, Relationship, and Version modules work together seamlessly
+- **Model Coordination**: Entity, Relationship, and Version models work together seamlessly through the service
 
 ## Error Handling
 
@@ -951,3 +1110,511 @@ The system prioritizes read-time latency reduction over write-time performance, 
 - **Attribution Privacy**: Optional anonymous contributions
 - **Data Retention**: Clear policies for data lifecycle management
 - **Access Control**: Future authentication and authorization framework
+
+
+## Migration System
+
+### Overview
+
+The Open Database Updates feature introduces a migration-based system for managing data evolution in the Nepal Entity Service. This system enables community contributions through versioned migration folders that contain executable Python scripts and supporting data files. The design follows database migration patterns (similar to Flyway, Alembic, or Django migrations) but applies them to data changes rather than schema changes.
+
+### Two-Repository Architecture
+
+The system operates across two GitHub repositories:
+
+1. **Service API Repository** (https://github.com/NewNepal-org/NepalEntityService)
+   - Contains application code (Python packages, API, CLI)
+   - Contains migration scripts in `migrations/` directory
+   - Lightweight repository (~10MB)
+   - Contributors submit PRs here with new migrations
+   - Maintainers review and merge migration PRs here
+
+2. **Database Repository** (https://github.com/NewNepal-org/NepalEntityService-database)
+   - Contains actual entity/relationship JSON files (100k-1M files)
+   - Managed as Git submodule at `nes-db/` in Service API Repository
+   - Large repository (~1GB+)
+   - Modified by migration execution (not by direct PRs)
+   - Tracks migration history through Git commits
+
+**Workflow**:
+1. Contributor creates migration folder in Service API Repository
+2. Contributor submits PR to Service API Repository
+3. Maintainer reviews migration code and merges PR
+4. Maintainer executes migration locally using `nes migrate run`
+5. Migration modifies files in Database Repository (nes-db/ submodule)
+6. Migration system commits changes to Database Repository with metadata
+7. Migration system pushes commits to Database Repository remote
+8. Migration system updates submodule reference in Service API Repository
+
+**Design Rationale**:
+- **Separation of Concerns**: Application code and data are managed independently
+- **Performance**: Service API repo remains lightweight for fast clones
+- **Scalability**: Database repo can grow to millions of files without affecting service development
+- **Review Process**: Migration code is reviewed separately from data changes
+- **Audit Trail**: Git history in Database repo provides complete data evolution history
+- **Flexibility**: Database repo can use different Git strategies (shallow clones, sparse checkout) without affecting service repo
+
+### Migration Components
+
+#### 1. Migration Manager
+
+**Responsibility**: Discover and validate migrations.
+
+**Key Methods**:
+```python
+class MigrationManager:
+    def __init__(self, migrations_dir: Path, db_repo_path: Path):
+        """Initialize with migrations directory and database repo path."""
+        
+    async def discover_migrations(self) -> List[Migration]:
+        """Scan migrations directory and return sorted list of migrations."""
+        
+    async def get_applied_migrations(self) -> List[str]:
+        """Get list of applied migration names by checking persisted snapshots."""
+        
+    async def get_pending_migrations(self) -> List[Migration]:
+        """Get migrations that haven't been applied yet."""
+        
+    async def is_migration_applied(self, migration: Migration) -> bool:
+        """Check if a specific migration has been applied."""
+        
+    async def validate_migration(self, migration: Migration) -> ValidationResult:
+        """Validate migration structure and script syntax."""
+```
+
+#### 2. Migration Runner
+
+**Responsibility**: Execute migration scripts and manage Git operations.
+
+**Key Methods**:
+```python
+class MigrationRunner:
+    def __init__(
+        self, 
+        publication_service: PublicationService,
+        search_service: SearchService,
+        scraping_service: ScrapingService,
+        db: EntityDatabase,
+        db_repo_path: Path
+    ):
+        """Initialize with services and database repo path."""
+        
+    async def run_migration(
+        self, 
+        migration: Migration,
+        dry_run: bool = False,
+        auto_commit: bool = True,
+        force: bool = False
+    ) -> MigrationResult:
+        """
+        Execute a migration script and optionally commit changes.
+        
+        Args:
+            migration: Migration to execute
+            dry_run: If True, don't commit changes
+            auto_commit: If True, commit and push changes after execution
+            force: If True, allow re-execution of already-applied migrations
+        
+        Returns:
+            MigrationResult with execution details
+            
+        Raises:
+            MigrationAlreadyAppliedException: If migration was already applied and force=False
+        """
+        
+    async def run_migrations(
+        self,
+        migrations: List[Migration],
+        dry_run: bool = False,
+        auto_commit: bool = True
+    ) -> List[MigrationResult]:
+        """Execute multiple migrations in order, skipping already-applied ones."""
+        
+    def create_context(self, migration: Migration) -> MigrationContext:
+        """Create execution context for migration script."""
+        
+    async def commit_and_push(
+        self,
+        migration: Migration,
+        result: MigrationResult
+    ) -> None:
+        """
+        Commit database changes and push to remote.
+        
+        This persists the data snapshot in the Database Repository,
+        making the migration deterministic on subsequent runs.
+        """
+```
+
+#### 3. Migration Context
+
+**Responsibility**: Provide minimal context and utilities for migration scripts.
+
+**Key Methods**:
+```python
+class MigrationContext:
+    """Thin context object passed to migration scripts."""
+    
+    def __init__(
+        self,
+        publication_service: PublicationService,
+        search_service: SearchService,
+        scraping_service: ScrapingService,
+        db: EntityDatabase,
+        migration_dir: Path
+    ):
+        """Initialize with services and migration directory."""
+        self.publication = publication_service
+        self.search = search_service
+        self.scraping = scraping_service
+        self.db = db
+        self._migration_dir = migration_dir
+        self._logs = []
+    
+    @property
+    def migration_dir(self) -> Path:
+        """Path to the migration folder."""
+        return self._migration_dir
+    
+    # File reading helpers
+    def read_csv(self, filename: str) -> List[Dict[str, Any]]:
+        """Read CSV file from migration folder."""
+        
+    def read_json(self, filename: str) -> Any:
+        """Read JSON file from migration folder."""
+        
+    def read_excel(
+        self,
+        filename: str,
+        sheet_name: str = None
+    ) -> List[Dict[str, Any]]:
+        """Read Excel file from migration folder."""
+    
+    # Logging
+    def log(self, message: str) -> None:
+        """Log a message during migration execution."""
+```
+
+**Migration Script Usage**:
+```python
+async def migrate(context):
+    """Migration scripts use services directly."""
+    # Read data
+    ministers = context.read_csv("ministers.csv")
+    
+    # Use publication service directly
+    author_id = "author:migration:005-add-ministers"
+    
+    for row in ministers:
+        entity = Entity(...)
+        
+        # Direct service call (no wrapper)
+        await context.publication.create_entity(
+            entity=entity,
+            author_id=author_id,
+            change_description="Import minister"
+        )
+    
+    # Use search service directly
+    existing = await context.search.find_entity_by_name("Ram Sharma")
+    
+    # Use scraping service directly
+    normalized = await context.scraping.normalize_name("राम शर्मा")
+    
+    context.log(f"Imported {len(ministers)} ministers")
+```
+
+### Migration Models
+
+```python
+@dataclass
+class Migration:
+    """Represents a migration folder."""
+    prefix: int  # Numeric prefix (000, 001, etc.)
+    name: str  # Descriptive name
+    folder_path: Path  # Full path to migration folder
+    script_path: Path  # Path to migrate.py or run.py
+    readme_path: Optional[Path]  # Path to README.md if exists
+    author: Optional[str]  # Author from migration metadata
+    date: Optional[datetime]  # Date from migration metadata
+    
+    @property
+    def full_name(self) -> str:
+        """Returns formatted name like '000-initial-locations'."""
+        return f"{self.prefix:03d}-{self.name}"
+    
+@dataclass
+class MigrationResult:
+    """Result of migration execution."""
+    migration: Migration
+    status: MigrationStatus
+    duration_seconds: float
+    entities_created: int
+    entities_updated: int
+    relationships_created: int
+    error: Optional[Exception]
+    logs: List[str]
+    git_commit_sha: Optional[str]  # SHA of commit in database repo
+
+class MigrationStatus(str, Enum):
+    """Status of a migration."""
+    RUNNING = "running"
+    COMPLETED = "completed"
+    FAILED = "failed"
+    SKIPPED = "skipped"
+```
+
+### Migration Folder Structure
+
+**Standard Structure**:
+```
+migrations/
+├── 000-initial-locations/
+│   ├── migrate.py          # Main migration script (required)
+│   ├── README.md           # Documentation (required)
+│   ├── locations.csv       # Data file (optional)
+│   └── sources.txt         # Source references (optional)
+├── 001-political-parties/
+│   ├── migrate.py
+│   ├── README.md
+│   ├── parties.json
+│   └── logos/              # Subdirectory for assets (optional)
+│       ├── party1.png
+│       └── party2.png
+└── 002-update-names/
+    ├── migrate.py
+    ├── README.md
+    └── corrections.xlsx
+```
+
+### Migration History via Git
+
+Instead of maintaining a separate migration history table, we rely on Git history in the Database Repository:
+
+**Git Commit Message Format**:
+```
+Migration: 000-initial-locations
+
+Imported initial location data for Nepal's administrative divisions.
+
+Author: contributor@example.com
+Date: 2024-01-20
+Entities created: 753
+Relationships created: 0
+Duration: 45.2s
+```
+
+**Determining Applied Migrations**:
+
+The Migration Manager determines which migrations have been applied by checking persisted snapshots in the Database Repository:
+
+```python
+async def get_applied_migrations(self) -> List[str]:
+    """
+    Get list of applied migration names by checking persisted snapshots.
+    
+    This queries the Database Repository's Git log to find all commits
+    that represent persisted data snapshots from applied migrations.
+    """
+    # Query git log in database repo for migration commits
+    result = subprocess.run(
+        ["git", "log", "--grep=^Migration:", "--format=%s"],
+        cwd=self.db_repo_path,
+        capture_output=True,
+        text=True
+    )
+    
+    # Parse migration names from commit messages
+    applied = []
+    for line in result.stdout.split('\n'):
+        if line.startswith('Migration: '):
+            migration_name = line.replace('Migration: ', '').strip()
+            if ' (Batch ' in migration_name:
+                migration_name = migration_name.split(' (Batch ')[0]
+            if migration_name not in applied:
+                applied.append(migration_name)
+    
+    return applied
+```
+
+### Linear Migration Model
+
+**Design Principle**: Migrations are applied in strict sequential order with no forking or merging.
+
+**Characteristics**:
+
+1. **Numeric Prefixes**: Migrations numbered sequentially (000, 001, 002, ...)
+2. **Single Branch**: All migrations applied to main branch only
+3. **No Parallel Execution**: One migration at a time
+4. **No Rollback**: Migrations are forward-only; corrections done via new migrations
+5. **Deterministic Order**: Same sequence on all environments
+
+**Migration Sequence**:
+```
+000-initial-locations  →  001-political-parties  →  002-update-names  →  003-add-ministers
+     (applied)                 (applied)                (applied)            (pending)
+```
+
+### Migration Determinism and Idempotency
+
+**Problem**: Migration scripts may contain non-deterministic operations (e.g., GenAI calls, timestamps, random IDs). Running the same migration twice could create duplicate entities or inconsistent data.
+
+**Solution**: The Migration System ensures determinism by persisting the data snapshot after each migration execution and preventing re-execution:
+
+```python
+async def run_migration(
+    self,
+    migration: Migration,
+    dry_run: bool = False,
+    auto_commit: bool = True,
+    force: bool = False
+) -> MigrationResult:
+    """Execute migration with determinism guarantee."""
+    
+    # Check if migration already applied
+    if not force and await self.is_migration_applied(migration):
+        return MigrationResult(
+            migration=migration,
+            status=MigrationStatus.SKIPPED,
+            message="Migration already applied"
+        )
+    
+    # Execute migration
+    result = await self._execute_migration(migration)
+    
+    # Persist data snapshot (commit to Database Repository)
+    if not dry_run and auto_commit and result.status == MigrationStatus.COMPLETED:
+        await self.commit_and_push(migration, result)
+        # Now migration is marked as applied in Git history
+    
+    return result
+```
+
+**Guarantees**:
+
+1. **Single Execution**: Each migration executes at most once (unless forced)
+2. **Persisted State**: The resulting data snapshot is committed to Git
+3. **Idempotent Commands**: Running `nes migrate run --all` multiple times is safe
+4. **No Duplicates**: Entities created by a migration won't be duplicated on re-run
+5. **Consistent Results**: The data snapshot in Git represents the canonical result
+
+### CLI Commands
+
+```bash
+# List all migrations and their status (applied/pending)
+nes migrate list
+
+# Show migration history (applied migrations from Git log)
+nes migrate history
+
+# Show pending migrations (not yet applied)
+nes migrate pending
+
+# Validate a specific migration
+nes migrate validate <migration_name>
+
+# Run a specific migration
+nes migrate run <migration_name>
+
+# Run all pending migrations
+nes migrate run --all
+
+# Run migration in dry-run mode (no changes applied)
+nes migrate run <migration_name> --dry-run
+
+# Create a new migration folder from template
+nes migrate create <descriptive-name>
+```
+
+### Batch Commits for Large Migrations
+
+When migrations create or modify large numbers of files (e.g., 10,000+ entities), committing all changes in a single Git commit can cause performance issues. The Migration Runner implements batch commits:
+
+```python
+class MigrationRunner:
+    BATCH_COMMIT_THRESHOLD = 1000  # Commit in batches if more than 1000 files changed
+    BATCH_SIZE = 1000  # Files per batch commit
+    
+    async def commit_and_push(
+        self,
+        migration: Migration,
+        result: MigrationResult,
+        auto_commit: bool = True
+    ) -> None:
+        """Commit changes in batches to avoid huge commits."""
+        if not auto_commit:
+            return
+        
+        # Get list of changed files
+        changed_files = self._get_changed_files()
+        
+        if len(changed_files) < self.BATCH_COMMIT_THRESHOLD:
+            self._commit_all(migration, result, changed_files)
+            self._push()
+            return
+        
+        # Commit in batches
+        for i in range(0, len(changed_files), self.BATCH_SIZE):
+            batch = changed_files[i:i+self.BATCH_SIZE]
+            batch_num = i // self.BATCH_SIZE + 1
+            total_batches = (len(changed_files) + self.BATCH_SIZE - 1) // self.BATCH_SIZE
+            
+            self._commit_batch(migration, result, batch, batch_num, total_batches)
+        
+        # Push all commits at once
+        self._push()
+```
+
+### CI/CD Integration
+
+The migration system uses two GitHub Actions workflows:
+
+#### 1. Migration Preview Workflow (on PR)
+
+**Trigger**: Pull request created or updated
+
+**Purpose**: Execute migration and generate statistics for review
+
+**Actions**:
+- Detect new migrations in PR
+- Execute migrations in isolated environment
+- Generate statistics (entities/relationships created)
+- Post comment on PR with statistics and logs link
+
+#### 2. Migration Persistence Workflow (on merge or schedule)
+
+**Trigger**: 
+- PR merged to main branch
+- Scheduled daily at 2 AM UTC
+
+**Purpose**: Persist approved migrations to Database Repository
+
+**Actions**:
+- Check for pending migrations
+- Execute pending migrations
+- Commit changes to Database Repository
+- Push to remote Database Repository
+- Update submodule reference in Service API Repository
+
+### Contributor Workflow
+
+**Step-by-Step Process**:
+
+1. **Fork and Clone Service API Repository**
+2. **Create Migration Folder** using `nes migrate create <name>`
+3. **Add Data Files** (CSV, Excel, JSON) to migration folder
+4. **Implement Migration Script** in `migrate.py`
+5. **Document Migration** in `README.md`
+6. **Test Locally** (optional) using `nes migrate validate`
+7. **Submit Pull Request** to Service API Repository
+
+**What Contributors Need**:
+- Fork of Service API Repository
+- Python environment with nes package installed
+- Data files to import
+- Basic understanding of Entity data model
+
+**What Contributors Don't Need**:
+- Access to Database Repository
+- Ability to execute migrations (maintainers do this)
+- Large disk space for database files

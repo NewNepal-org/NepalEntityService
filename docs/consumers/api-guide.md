@@ -222,7 +222,7 @@ fetch('https://nes.newnepal.org/api/entities')
 
 ## Data Models
 
-For detailed information about entity and relationship schemas, see the [Data Models](/data-models) documentation.
+For detailed information about entity and relationship schemas, see the [Data Models](/consumers/data-models) documentation.
 
 ## Use Cases
 
@@ -237,12 +237,12 @@ The Nepal Entity Service API is designed for:
 ## Next Steps
 
 - Explore the [Interactive OpenAPI Documentation](https://nes.newnepal.org/docs)
-- Review [Data Models](/data-models) to understand entity schemas
-- Check out [Examples](/examples) for common usage patterns
+- Review [Data Models](/consumers/data-models) to understand entity schemas
+- Check out [Examples](/consumers/examples) for common usage patterns
 - Learn about the [Service Design](/specs/nepal-entity-service/design)
 
 ## Need Help?
 
-- Check the [Examples](/examples) page for common patterns
+- Check the [Examples](/consumers/examples) page for common patterns
 - Review the [OpenAPI documentation](https://nes.newnepal.org/docs) for detailed endpoint reference
 - Visit our [GitHub repository](https://github.com/NewNepal-org/NepalEntityService) for issues and discussions

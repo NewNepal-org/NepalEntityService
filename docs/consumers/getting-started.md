@@ -8,7 +8,9 @@ This guide will help you get started with the Nepal Entity Service API. Whether 
 
 The easiest way to use Nepal Entity Service is through the public API. No installation required - just make HTTP requests to the API endpoints.
 
-**Base URL**: `https://nes.newnepal.org/api` (or your deployment URL)
+**Base URL**: `https://nes.newnepal.org/api`
+
+> **Note:** If you're running your own instance locally, replace `https://nes.newnepal.org/api` with `http://localhost:8195/api` in all examples below.
 
 ### Installing the Python Package
 
@@ -52,7 +54,7 @@ Let's make your first API call to search for entities:
 ### Using cURL
 
 ```bash
-curl "http://localhost:8195/api/entities?query=poudel"
+curl "https://nes.newnepal.org/api/entities?query=poudel"
 ```
 
 ### Using Python
@@ -61,7 +63,7 @@ curl "http://localhost:8195/api/entities?query=poudel"
 import requests
 
 response = requests.get(
-    "http://localhost:8195/api/entities",
+    "https://nes.newnepal.org/api/entities",
     params={"query": "poudel"}
 )
 
@@ -75,7 +77,7 @@ for entity in data['entities']:
 ### Using JavaScript
 
 ```javascript
-fetch('http://localhost:8195/api/entities?query=poudel')
+fetch('https://nes.newnepal.org/api/entities?query=poudel')
   .then(response => response.json())
   .then(data => {
     console.log(`Found ${data.total} entities`);
@@ -93,10 +95,10 @@ Search for entities by name (supports both English and Nepali):
 
 ```bash
 # Search by English name
-curl "http://localhost:8195/api/entities?query=ram+chandra+poudel"
+curl "https://nes.newnepal.org/api/entities?query=ram+chandra+poudel"
 
 # Search by Nepali name
-curl "http://localhost:8195/api/entities?query=राम+चन्द्र+पौडेल"
+curl "https://nes.newnepal.org/api/entities?query=राम+चन्द्र+पौडेल"
 ```
 
 ### Filter by Entity Type
@@ -105,10 +107,10 @@ Filter entities by type (person, organization, location):
 
 ```bash
 # Get all persons
-curl "http://localhost:8195/api/entities?entity_type=person"
+curl "https://nes.newnepal.org/api/entities?entity_type=person"
 
 # Get all political parties
-curl "http://localhost:8195/api/entities?entity_type=organization&sub_type=political_party"
+curl "https://nes.newnepal.org/api/entities?entity_type=organization&sub_type=political_party"
 ```
 
 ### Get a Specific Entity
@@ -116,7 +118,7 @@ curl "http://localhost:8195/api/entities?entity_type=organization&sub_type=polit
 Retrieve a specific entity by its ID:
 
 ```bash
-curl "http://localhost:8195/api/entities/entity:person/ram-chandra-poudel"
+curl "https://nes.newnepal.org/api/entities/entity:person/ram-chandra-poudel"
 ```
 
 ### Query Relationships
@@ -125,10 +127,10 @@ Find relationships for an entity:
 
 ```bash
 # Get all relationships for an entity
-curl "http://localhost:8195/api/entities/entity:person/ram-chandra-poudel/relationships"
+curl "https://nes.newnepal.org/api/entities/entity:person/ram-chandra-poudel/relationships"
 
 # Filter by relationship type
-curl "http://localhost:8195/api/entities/entity:person/ram-chandra-poudel/relationships?relationship_type=MEMBER_OF"
+curl "https://nes.newnepal.org/api/entities/entity:person/ram-chandra-poudel/relationships?relationship_type=MEMBER_OF"
 ```
 
 ### Get Version History
@@ -136,7 +138,7 @@ curl "http://localhost:8195/api/entities/entity:person/ram-chandra-poudel/relati
 Retrieve the version history for an entity:
 
 ```bash
-curl "http://localhost:8195/api/entities/entity:person/ram-chandra-poudel/versions"
+curl "https://nes.newnepal.org/api/entities/entity:person/ram-chandra-poudel/versions"
 ```
 
 ## Pagination
@@ -145,10 +147,10 @@ All list endpoints support pagination using `limit` and `offset` parameters:
 
 ```bash
 # Get first 10 results
-curl "http://localhost:8195/api/entities?limit=10&offset=0"
+curl "https://nes.newnepal.org/api/entities?limit=10&offset=0"
 
 # Get next 10 results
-curl "http://localhost:8195/api/entities?limit=10&offset=10"
+curl "https://nes.newnepal.org/api/entities?limit=10&offset=10"
 ```
 
 ## Response Format
@@ -190,7 +192,7 @@ The API supports CORS (Cross-Origin Resource Sharing), allowing you to make requ
 
 ```javascript
 // Works from any origin
-fetch('http://localhost:8195/api/entities')
+fetch('https://nes.newnepal.org/api/entities')
   .then(response => response.json())
   .then(data => console.log(data));
 ```
@@ -200,12 +202,12 @@ fetch('http://localhost:8195/api/entities')
 Now that you've made your first API calls, explore:
 
 - [API Reference](/docs) - Interactive OpenAPI documentation
-- [Data Models](/data-models) - Understanding entity and relationship schemas
-- [Examples](/examples) - More complex usage examples
-- [Architecture](/architecture) - Learn about the system design
+- [Data Models](/consumers/data-models) - Understanding entity and relationship schemas
+- [Examples](/consumers/examples) - More complex usage examples
+- [Service Design](/specs/nepal-entity-service/design) - Learn about the system design
 
 ## Need Help?
 
-- Check the [Examples](/examples) page for common patterns
+- Check the [Examples](/consumers/examples) page for common patterns
 - Review the [API Reference](/docs) for detailed documentation
 - Visit the [OpenAPI documentation](/docs) for interactive API exploration

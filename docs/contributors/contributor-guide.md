@@ -37,7 +37,7 @@ poetry install --extras all
 
 ### 3. Set Up the Database
 
-The database is managed as a Git submodule. See the [Database Setup](/database-setup) guide for detailed configuration.
+The database is managed as a Git submodule. See the [Database Setup](/contributors/database-setup) guide for detailed configuration.
 
 ```bash
 # Verify the database submodule
@@ -100,9 +100,9 @@ poetry run nes migrate list
 ```
 
 For detailed migration information, see:
-- [Migration Contributor Guide](/migration-contributor-guide) - Creating migrations
-- [Migration Maintainer Guide](/migration-maintainer-guide) - Reviewing and executing migrations
-- [Migration Architecture](/migration-architecture) - System design
+- [Migration Contributor Guide](/contributors/migration-contributor-guide) - Creating migrations
+- [Migration Maintainer Guide](/contributors/migration-maintainer-guide) - Reviewing and executing migrations
+- [Migration Architecture](/contributors/migration-architecture) - System design
 
 ## Development Workflow
 
@@ -183,7 +183,7 @@ updated = await pub_service.update_entity(
 )
 ```
 
-For detailed data maintenance, see the [Data Maintainer Guide](/data-maintainer-guide).
+For detailed data maintenance, see the [Data Maintainer Guide](/contributors/data-maintainer-guide).
 
 ## Scraping Service
 
@@ -257,7 +257,7 @@ async def migrate(pub_service: PublicationService, dry_run: bool = False):
 
 ### 4. Submit Pull Request
 
-See the [Migration Contributor Guide](/migration-contributor-guide) for the complete workflow.
+See the [Migration Contributor Guide](/contributors/migration-contributor-guide) for the complete workflow.
 
 ## Contributing Guidelines
 
@@ -335,20 +335,20 @@ docker run -p 8195:8195 \
 ## Resources
 
 ### Documentation
-- [API Consumer Guide](/api-guide) - Using the public API
-- [Data Models](/data-models) - Entity and relationship schemas
+- [API Consumer Guide](/consumers/api-guide) - Using the public API
+- [Data Models](/consumers/data-models) - Entity and relationship schemas
 - [Service Design](/specs/nepal-entity-service/design) - Architecture details
-- [Database Setup](/database-setup) - Git submodule configuration
-- [Usage Examples](/usage-examples) - Code examples and notebooks
+- [Database Setup](/contributors/database-setup) - Git submodule configuration
+- [Usage Examples](/contributors/usage-examples) - Code examples and notebooks
 
 ### Migration Guides
-- [Migration Contributor Guide](/migration-contributor-guide) - Creating migrations
-- [Migration Maintainer Guide](/migration-maintainer-guide) - Reviewing migrations
-- [Migration Architecture](/migration-architecture) - System design
+- [Migration Contributor Guide](/contributors/migration-contributor-guide) - Creating migrations
+- [Migration Maintainer Guide](/contributors/migration-maintainer-guide) - Reviewing migrations
+- [Migration Architecture](/contributors/migration-architecture) - System design
 
 ### Data Maintenance
-- [Data Maintainer Guide](/data-maintainer-guide) - Local data maintenance
-- [Examples](/examples) - Common usage patterns
+- [Data Maintainer Guide](/contributors/data-maintainer-guide) - Local data maintenance
+- [Examples](/consumers/examples) - Common usage patterns
 
 ## Getting Help
 

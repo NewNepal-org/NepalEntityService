@@ -384,7 +384,7 @@
   - [x] 6.2 Implement API foundation (Green)
     - Create `nes/api/` directory with `__init__.py`
     - Create `nes/api/app.py` with FastAPI application
-    - Create `nes/api/routes/` for endpoint modules
+    - Create `nes/api/routes/` for endpoint route files
     - Create `nes/api/responses.py` for response models
     - Set up CORS, error handling, and middleware
     - Configure API to use nes services
@@ -738,3 +738,259 @@
     - Update all documentation
     - Run full test suite to verify rename
     - _Requirements: Final rename_
+
+
+## Phase 10: Migration System Implementation
+
+- [ ] 13. Set up migration infrastructure and core models
+  - Create migration service package structure
+  - Define Migration and MigrationResult data models
+  - Implement migration folder naming conventions and validation
+  - _Requirements: 11.1, 11.2, 12.1, 12.2, 12.4_
+
+- [x] 13.1 Create migration service package
+  - Create `nes/services/migration/` directory
+  - Add `__init__.py` with package exports
+  - _Requirements: 11.1_
+
+- [x] 13.2 Define migration data models
+  - Create `nes/services/migration/models.py`
+  - Implement `Migration` dataclass with prefix, name, folder_path, script_path, metadata
+  - Implement `MigrationResult` dataclass with status, duration, statistics, error
+  - Implement `MigrationStatus` enum (RUNNING, COMPLETED, FAILED, SKIPPED)
+  - _Requirements: 11.1, 11.2, 12.4_
+
+- [x] 13.3 Implement migration folder validation
+  - Create `nes/services/migration/validation.py`
+  - Implement function to validate migration folder structure (has migrate.py, README.md)
+  - Implement function to validate migration naming convention (NNN-descriptive-name)
+  - Implement function to validate migration metadata (AUTHOR, DATE, DESCRIPTION)
+  - _Requirements: 12.1, 12.2, 12.4, 15.2_
+
+- [ ] 14. Implement Migration Manager for discovery and tracking
+  - Implement migration discovery from migrations/ directory
+  - Implement checking for persisted snapshots in Database Repository
+  - Implement pending migrations detection
+  - _Requirements: 11.1, 11.2, 11.4, 11.8, 16.8_
+
+- [x] 14.1 Implement migration discovery
+  - Create `nes/services/migration/manager.py`
+  - Implement `MigrationManager` class with `discover_migrations()` method
+  - Scan migrations/ directory for folders matching NNN-* pattern
+  - Sort migrations by numeric prefix
+  - Load migration metadata from script files
+  - _Requirements: 11.1, 11.2, 15.1_
+
+- [x] 14.2 Implement persisted snapshot checking
+  - Implement `get_applied_migrations()` method in MigrationManager
+  - Query Git log in Database Repository for migration commits
+  - Parse commit messages to extract migration names
+  - Cache results to avoid repeated Git queries
+  - _Requirements: 11.4, 16.7, 16.8_
+
+- [x] 14.3 Implement pending migrations detection
+  - Implement `get_pending_migrations()` method in MigrationManager
+  - Compare discovered migrations with applied migrations
+  - Return migrations that haven't been applied yet
+  - Implement `is_migration_applied()` method for single migration check
+  - _Requirements: 11.2, 16.8_
+
+- [x] 15. Implement Migration Context for script execution
+  - Create thin context with service access
+  - Implement file reading helpers (CSV, JSON, Excel)
+  - Implement logging mechanism
+  - _Requirements: 12.5, 12.6, 13.6_
+
+- [x] 15.1 Create Migration Context class
+  - Create `nes/services/migration/context.py`
+  - Implement `MigrationContext` class with service references
+  - Provide direct access to publication, search, scraping, and db services
+  - Provide migration_dir property
+  - _Requirements: 13.1, 13.2, 13.3, 13.4, 14.1, 14.2, 14.3_
+
+- [x] 15.2 Implement file reading helpers
+  - Implement `read_csv()` method with CSV parsing
+  - Implement `read_json()` method with JSON parsing
+  - Implement `read_excel()` method with Excel parsing
+  - Handle file not found errors gracefully
+  - _Requirements: 12.5, 12.6, 13.6_
+
+- [x] 15.3 Implement logging mechanism
+  - Implement `log()` method for migration progress logging
+  - Store logs in context for later retrieval
+  - Print logs to console during execution
+  - _Requirements: 16.6_
+
+- [x] 16. Implement Migration Runner for execution
+  - Implement migration script loading and execution
+  - Implement deterministic execution (check before run)
+  - Implement error handling and logging
+  - _Requirements: 11.2, 13.1, 13.2, 13.3, 13.4, 13.5, 16.1, 16.5, 16.6, 16.7, 16.8_
+
+- [x] 16.1 Create Migration Runner class
+  - Create `nes/services/migration/runner.py`
+  - Implement `MigrationRunner` class with service dependencies
+  - Implement `create_context()` method to build MigrationContext
+  - _Requirements: 13.1, 13.2, 13.3, 13.4, 13.5_
+
+- [x] 16.2 Implement migration script loading
+  - Implement `_load_script()` method to dynamically import migrate.py
+  - Validate script has `migrate()` function
+  - Validate script has required metadata (AUTHOR, DATE, DESCRIPTION)
+  - Handle syntax errors gracefully
+  - _Requirements: 11.7, 12.4, 16.6_
+
+- [x] 16.3 Implement deterministic execution
+  - Implement `run_migration()` method with determinism check
+  - Check if migration already applied before execution
+  - Skip execution if persisted snapshot exists (return SKIPPED status)
+  - Support force flag to allow re-execution
+  - _Requirements: 16.1, 16.7, 16.8_
+
+- [x] 16.4 Implement migration execution
+  - Execute migration script's `migrate()` function with context
+  - Track execution time
+  - Capture logs from context
+  - Handle all exceptions and create MigrationResult
+  - _Requirements: 13.1, 13.2, 13.3, 13.4, 13.5, 16.5, 16.6_
+
+- [x] 16.5 Implement batch migration execution
+  - Implement `run_migrations()` method for multiple migrations
+  - Execute migrations in sequential order
+  - Skip already-applied migrations
+  - Stop on first failure or continue based on flag
+  - _Requirements: 11.2, 16.2_
+
+- [x] 17. Implement Git integration for persistence
+  - Implement commit creation with migration metadata
+  - Implement batch commits for large migrations
+  - Implement push to remote Database Repository
+  - _Requirements: 11.3, 11.5, 16.3, 16.4, 16.7, 17.1, 17.2, 17.3, 17.4, 17.5, 18.1, 18.2, 18.5_
+
+- [x] 17.1 Implement commit creation
+  - Implement `commit_and_push()` method in MigrationRunner
+  - Format commit message with migration metadata
+  - Stage changed files in Database Repository
+  - Create Git commit with formatted message
+  - _Requirements: 11.3, 11.5, 16.3, 17.1, 17.2, 17.3, 17.5_
+
+- [x] 17.2 Implement batch commits
+  - Detect when migration creates more than 1000 files
+  - Split commits into batches of 1000 files each
+  - Create multiple commits with batch metadata
+  - _Requirements: 18.1, 18.2_
+
+- [x] 17.3 Implement push to remote
+  - Push commits to remote Database Repository
+  - Handle push failures gracefully
+  - Use appropriate timeout for large pushes
+  - _Requirements: 16.4, 18.5_
+
+- [x] 17.4 Implement Git configuration
+  - Configure Git settings for large repositories
+  - Set core.preloadindex, core.fscache, gc.auto
+  - _Requirements: 18.4_
+
+- [x] 18. Implement CLI commands
+  - Implement `nes migrate list` command
+  - Implement `nes migrate pending` command
+  - Implement `nes migrate run` command
+  - Implement `nes migrate create` command
+  - _Requirements: 11.6, 15.3, 15.4, 16.1, 16.2_
+
+- [x] 18.1 Implement migrate list command
+  - Create `nes/cli/migrate.py` with Click command group
+  - Implement `list` command to show all migrations with status
+  - Display migration metadata (author, date, description)
+  - Show applied vs pending status
+  - _Requirements: 11.6_
+
+- [x] 18.2 Implement migrate pending command
+  - Implement `pending` command to show only pending migrations
+  - Display migration metadata
+  - Show count of pending migrations
+  - _Requirements: 11.6_
+
+- [x] 18.3 Implement migrate run command
+  - Implement `run` command to execute specific migration
+  - Support `--all` flag to run all pending migrations
+  - Support `--dry-run` flag to skip persistence
+  - Support `--force` flag to allow re-execution
+  - Display progress and results
+  - _Requirements: 16.1, 16.2_
+
+- [x] 18.4 Implement migrate create command
+  - Implement `create` command to generate migration folder from template
+  - Determine next available prefix number
+  - Create migration folder with NNN-descriptive-name format
+  - Copy template migrate.py with pre-filled metadata
+  - Copy template README.md
+  - _Requirements: 15.3, 15.4_
+
+- [x] 19. Create migration templates
+  - Create template migrate.py with documentation
+  - Create template README.md with structure
+  - _Requirements: 12.3, 15.3, 15.4_
+
+- [x] 19.1 Create migrate.py template
+  - Create `nes/services/migration/templates/migrate.py.template`
+  - Include metadata placeholders (AUTHOR, DATE, DESCRIPTION)
+  - Include comprehensive documentation of context methods
+  - Include example code patterns
+  - _Requirements: 12.3, 15.3_
+
+- [x] 19.2 Create README.md template
+  - Create `nes/services/migration/templates/README.md.template`
+  - Include sections for Purpose, Data Sources, Changes, Dependencies, Notes
+  - _Requirements: 12.3, 15.3_
+
+- [x] 20. Implement CI/CD workflows
+  - Create GitHub Actions workflow for migration preview
+  - Create GitHub Actions workflow for migration persistence
+  - _Requirements: 16.2, 16.3, 16.4, 17.4_
+
+- [x] 20.1 Create migration preview workflow
+  - Create `.github/workflows/migration-preview.yml`
+  - Trigger on pull request to migrations/ directory
+  - Execute migrations in isolated environment
+  - Generate statistics (entities/relationships created)
+  - Post comment on PR with statistics and logs link
+  - _Requirements: 16.2, 16.3, 17.4_
+
+- [x] 20.2 Create migration persistence workflow
+  - Create `.github/workflows/migration-persistence.yml`
+  - Trigger on PR merge to main branch
+  - Trigger on schedule (daily at 2 AM UTC)
+  - Check for pending migrations
+  - Execute pending migrations
+  - Commit to Database Repository
+  - Push to remote
+  - Update submodule reference in Service API Repository
+  - _Requirements: 16.2, 16.3, 16.4, 17.4_
+
+- [x] 21. Add documentation
+  - Write contributor guide for creating migrations
+  - Write maintainer guide for reviewing and executing migrations
+  - Document migration system architecture
+  - _Requirements: 15.3_
+
+- [x] 21.1 Write contributor documentation
+  - Create `docs/migration-contributor-guide.md`
+  - Document step-by-step process for creating migrations
+  - Include examples of common migration patterns
+  - Document how to test migrations locally
+  - _Requirements: 15.3_
+
+- [x] 21.2 Write maintainer documentation
+  - Create `docs/migration-maintainer-guide.md`
+  - Document PR review process
+  - Document how to execute migrations
+  - Document troubleshooting common issues
+  - _Requirements: 15.3_
+
+- [x] 21.3 Write architecture documentation
+  - Create `docs/migration-architecture.md`
+  - Document two-repository architecture
+  - Document linear migration model
+  - Document determinism through persisted snapshots
+  - _Requirements: 11.3, 11.8_

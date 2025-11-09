@@ -19,6 +19,7 @@ ENV/
 *.swp
 *.swo
 .kiro/
+!.kiro/specs/
 
 # Testing
 .pytest_cache/

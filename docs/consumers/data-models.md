@@ -525,5 +525,5 @@ All changes should include descriptions:
 ## Next Steps
 
 - [API Reference](/docs) - Interactive OpenAPI documentation
-- [Examples](/examples) - See real-world usage examples
-- [Getting Started](/getting-started) - Start using the API
+- [Examples](/consumers/examples) - See real-world usage examples
+- [Getting Started](/consumers/getting-started) - Start using the API

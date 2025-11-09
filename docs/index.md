@@ -1,57 +1,78 @@
 # Nepal Entity Service Documentation
 
-Welcome to the **Nepal Entity Service** (NES) documentation. NES is a comprehensive Python package designed to manage Nepali public entities including persons, organizations, and locations with full versioning and relationship tracking.
+Welcome to the **Nepal Entity Service** (NES) documentation. NES is an **open source, open data** project that provides a comprehensive platform for managing Nepali public entities including persons, organizations, and locations with full versioning and relationship tracking.
+
+## Open Source • Open Data • Open API
+
+Nepal Entity Service is built on three core principles:
+
+- **🔓 Open Source**: The entire codebase is open source and available on [GitHub](https://github.com/NewNepal-org/NepalEntityService). Anyone can contribute, review, or run their own instance.
+
+- **📊 Open Data**: All entity data is publicly accessible and maintained through transparent, community-driven migrations. Every change is tracked, reviewed, and versioned with complete audit trails. Learn more about [database update workflows](/contributors/workflows).
+
+- **🌐 Open API**: A free, public REST API at [https://nes.newnepal.org/api](https://nes.newnepal.org/api) provides read access to all entity data without authentication. Build applications, conduct research, or integrate with your projects freely.
 
 ## Documentation Index
 
 ### For API Consumers
 Start here if you want to use the public Nepal Entity Service API:
 
-- **[API Consumer Guide](/api-guide)** - Using the public API at https://nes.newnepal.org/api
+- **[Getting Started](/consumers/getting-started)** - Quick start guide for using the API
+- **[API Consumer Guide](/consumers/api-guide)** - Using the public API at https://nes.newnepal.org/api
 - **[OpenAPI Documentation](https://nes.newnepal.org/docs)** - Interactive API reference
-- **[Data Models](/data-models)** - Understanding entity and relationship schemas
-- **[Examples](/examples)** - Common usage patterns and code examples
+- **[Data Models](/consumers/data-models)** - Understanding entity and relationship schemas
+- **[Examples](/consumers/examples)** - Common usage patterns and code examples
 
 ### For Contributors
 Start here if you want to contribute to the project or run your own instance:
 
-- **[Contributor Guide](/contributor-guide)** - Setup, development workflow, and contributing
-- **[Database Setup](/database-setup)** - Git submodule and database configuration
-- **[Usage Examples](/usage-examples)** - Code examples, notebooks, and learning paths
-- **[Service Design](/specs/nepal-entity-service/design)** - System architecture and design
+- **[Contributor Guide](/contributors/contributor-guide)** - Setup, development workflow, and contributing
+- **[Database Setup](/contributors/database-setup)** - Git submodule and database configuration
+- **[Usage Examples](/contributors/usage-examples)** - Code examples, notebooks, and learning paths
 
-### Data Maintenance & Migrations
-For maintainers who manage data and migrations:
+#### Data Maintenance & Migrations
+For contributors who manage data and migrations:
 
-- **[Data Maintainer Guide](/data-maintainer-guide)** - Local data maintenance with Publication Service
-- **[Migration Contributor Guide](/migration-contributor-guide)** - Creating and submitting data migrations
-- **[Migration Maintainer Guide](/migration-maintainer-guide)** - Reviewing and executing migrations
-- **[Migration Architecture](/migration-architecture)** - Migration system design and workflow
+- **[Database Workflows](/contributors/workflows)** - Overview of different maintenance and update workflows
+- **[Data Maintainer Guide](/contributors/data-maintainer-guide)** - Local data maintenance with Publication Service
+- **[Migration Contributor Guide](/contributors/migration-contributor-guide)** - Creating and submitting data migrations
+- **[Migration Maintainer Guide](/contributors/migration-maintainer-guide)** - Reviewing and executing migrations
+- **[Migration Architecture](/contributors/migration-architecture)** - Migration system design and workflow
 
-### Specifications
+#### Service Guides
+Detailed guides for using the core services:
+
+- **[Publication Service Guide](/contributors/publication-service-guide)** - Creating and updating entities and relationships
+- **[Search Service Guide](/contributors/search-service-guide)** - Querying entities and relationships
+- **[Scraping Service Guide](/contributors/scraping-service-guide)** - Extracting and normalizing data from external sources
+
+#### Specifications
 Technical specifications and design documents:
 
-#### Nepal Entity Service
 - [Requirements](/specs/nepal-entity-service/requirements)
 - [Design](/specs/nepal-entity-service/design)
 - [Tasks](/specs/nepal-entity-service/tasks)
 
-#### Open Database Updates
-- [Requirements](/specs/open-database-updates/requirements)
-- [Design](/specs/open-database-updates/design)
-- [Tasks](/specs/open-database-updates/tasks)
-
 ### All Documentation Files
-- [api-guide.md](/api-guide) - API consumer guide
-- [contributor-guide.md](/contributor-guide) - Contributor setup and workflow
-- [data-maintainer-guide.md](/data-maintainer-guide) - Data maintenance guide
-- [data-models.md](/data-models) - Entity schemas
-- [database-setup.md](/database-setup) - Database configuration
-- [examples.md](/examples) - Usage examples
-- [migration-architecture.md](/migration-architecture) - Migration system design
-- [migration-contributor-guide.md](/migration-contributor-guide) - Creating migrations
-- [migration-maintainer-guide.md](/migration-maintainer-guide) - Executing migrations
-- [usage-examples.md](/usage-examples) - Code examples and notebooks
+
+#### Consumer Documentation
+- [getting-started](/consumers/getting-started) - Quick start guide
+- [api-guide](/consumers/api-guide) - API consumer guide
+- [data-models](/consumers/data-models) - Entity schemas
+- [examples](/consumers/examples) - Usage examples
+
+#### Contributor Documentation
+- [contributor-guide](/contributors/contributor-guide) - Contributor setup and workflow
+- [database-setup](/contributors/database-setup) - Database configuration
+- [usage-examples](/contributors/usage-examples) - Code examples and notebooks
+- [workflows](/contributors/workflows) - Database maintenance and update workflows
+- [data-maintainer-guide](/contributors/data-maintainer-guide) - Data maintenance guide
+- [migration-architecture](/contributors/migration-architecture) - Migration system design
+- [migration-contributor-guide](/contributors/migration-contributor-guide) - Creating migrations
+- [migration-maintainer-guide](/contributors/migration-maintainer-guide) - Executing migrations
+- [publication-service-guide](/contributors/publication-service-guide) - Publication Service API and usage
+- [search-service-guide](/contributors/search-service-guide) - Search Service API and usage
+- [scraping-service-guide](/contributors/scraping-service-guide) - Scraping Service API and usage
 
 ## What is Nepal Entity Service?
 
@@ -120,16 +141,33 @@ The Nepal Entity Service is designed for:
 
 ## Getting Started
 
-Ready to start using the Nepal Entity Service? Check out the [Getting Started](/getting-started) guide for installation instructions and your first API calls.
+Ready to start using the Nepal Entity Service? Check out the [Getting Started](/consumers/getting-started) guide for installation instructions and your first API calls.
 
 ## Project Status
 
-Nepal Entity Service v2 is currently in active development. The API is read-only and designed for public access without authentication. Data maintenance is performed through a local Pythonic interface by trusted maintainers.
+Nepal Entity Service v2 is currently in active development as an open source, open data initiative.
+
+### Open Access
+- **Public API**: Free, read-only access at https://nes.newnepal.org/api
+- **No Authentication Required**: Access all entity data without API keys or registration
+- **Community Maintained**: Data updates through transparent migration workflow
+
+### Open Contributions
+- **Code Contributions**: Submit pull requests for features, fixes, or improvements
+- **Data Contributions**: Propose data updates through the migration system
+- **Community Review**: All changes are reviewed by maintainers before merging
 
 ## License and Contributing
 
-This project is open source and welcomes contributions. For more information about contributing, please see our GitHub repository.
+This project is **open source** under [LICENSE] and welcomes contributions from everyone:
+
+- **Developers**: Contribute code, fix bugs, add features
+- **Data Contributors**: Submit migrations to add or update entity data
+- **Researchers**: Use the data and API for academic research
+- **Civic Technologists**: Build transparency and accountability applications
+
+For more information about contributing, see our [Contributor Guide](/contributors/contributor-guide) or visit our [GitHub repository](https://github.com/NewNepal-org/NepalEntityService).
 
 ---
 
-**Need Help?** Check out our [Examples](/examples) page for common usage patterns, or explore the [OpenAPI documentation](/docs) for detailed endpoint documentation.
+**Need Help?** Check out our [Examples](/consumers/examples) page for common usage patterns, or explore the [OpenAPI documentation](/docs) for detailed endpoint documentation.
