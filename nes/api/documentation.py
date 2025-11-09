@@ -80,8 +80,11 @@ def render_markdown_file(page_name: str) -> str:
         docs_resolved = str(DOCS_DIR.resolve())
         specs_resolved = str(SPECS_DIR.resolve())
         file_resolved = str(file_path)
-        
-        if not (file_resolved.startswith(docs_resolved) or file_resolved.startswith(specs_resolved)):
+
+        if not (
+            file_resolved.startswith(docs_resolved)
+            or file_resolved.startswith(specs_resolved)
+        ):
             raise HTTPException(status_code=404, detail="Page not found")
     except Exception:
         raise HTTPException(status_code=404, detail="Page not found")
