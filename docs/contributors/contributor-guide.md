@@ -93,13 +93,13 @@ poetry run nes server start --host 0.0.0.0 --port 8080
 
 ```bash
 # Run a migration
-poetry run nes migrate run <migration-name>
-
-# Run migration in dry-run mode (preview changes)
-poetry run nes migrate run <migration-name> --dry-run
+poetry run nes migration run <migration-name>
 
 # List available migrations
-poetry run nes migrate list
+poetry run nes migration list
+
+# List pending migrations
+poetry run nes migration list --pending
 ```
 
 For detailed migration information, see:

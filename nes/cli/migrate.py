@@ -4,7 +4,7 @@ CLI commands for managing database migrations.
 This module provides commands for:
 - Creating new migration folders from templates
 - Listing all migrations with their status (including pending)
-- Running migrations (defaults to dry-run mode)
+- Running migrations and storing execution logs
 """
 
 import asyncio

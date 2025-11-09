@@ -170,8 +170,8 @@ git checkout pr-123
 # Update database submodule
 git submodule update
 
-# Run migration in dry-run mode
-nes migrate run NNN-migration-name --dry-run
+# Run migration
+nes migration run NNN-migration-name
 
 # Review output for errors or warnings
 ```
@@ -223,7 +223,7 @@ git push origin main
 
 ```bash
 # See all pending migrations
-nes migrate pending
+nes migration list --pending
 
 # Output:
 # Pending migrations:
@@ -235,7 +235,7 @@ nes migrate pending
 
 ```bash
 # Run specific migration
-nes migrate run 005-add-cabinet-ministers
+nes migration run 005-add-cabinet-ministers
 
 # Output:
 # Running migration: 005-add-cabinet-ministers
@@ -258,7 +258,7 @@ nes migrate run 005-add-cabinet-ministers
 
 ```bash
 # Run all pending migrations in order
-nes migrate run --all
+nes migration run --all
 
 # Output:
 # Running 2 pending migrations...
@@ -428,7 +428,7 @@ Migration already applied, skipping
 
 **Solution**:
 - This is expected behavior (ensures determinism)
-- To force re-execution (for testing): `nes migrate run --force NNN-name`
+- To re-run, delete the migration log first: `rm -rf nes-db/v2/migration-logs/NNN-name/`
 - For production, create a new migration instead
 
 ### Issue 4: Large Commit Performance
@@ -676,10 +676,11 @@ Use this checklist when executing migrations:
 
 ## Execution
 
-- [ ] Run `nes migrate pending` to see pending migrations
-- [ ] Run `nes migrate run <name>` or `--all`
+- [ ] Run `nes migration list --pending` to see pending migrations
+- [ ] Run `nes migration run <name>` or `--all`
 - [ ] Monitor output for errors
-- [ ] Verify entities/relationships created
+- [ ] Verify entities/relationships/versions created
+- [ ] Review migration log in `nes-db/v2/migration-logs/`
 
 ## Post-Execution
 

@@ -103,8 +103,7 @@ The `context` object passed to your migration provides:
 
 6. **Test locally** (if you have the database setup):
    ```bash
-   nes migrate validate 001-your-migration-name
-   nes migrate run 001-your-migration-name --dry-run
+   nes migration run 001-your-migration-name
    ```
 
 7. **Submit a pull request** with your migration folder
