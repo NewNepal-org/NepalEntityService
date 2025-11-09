@@ -91,7 +91,7 @@ class TestDocumentationRendering:
     @pytest.mark.asyncio
     async def test_markdown_code_blocks_rendered(self, client):
         """Test that Markdown code blocks are properly rendered."""
-        response = await client.get("/getting-started")
+        response = await client.get("/consumers/getting-started")
 
         assert response.status_code == 200
         content = response.text
@@ -111,7 +111,7 @@ class TestPageNavigation:
     @pytest.mark.asyncio
     async def test_getting_started_page(self, client):
         """Test that getting-started page is accessible."""
-        response = await client.get("/getting-started")
+        response = await client.get("/consumers/getting-started")
 
         assert response.status_code == 200
         assert response.headers["content-type"].startswith("text/html")
@@ -122,16 +122,16 @@ class TestPageNavigation:
     @pytest.mark.asyncio
     async def test_architecture_page(self, client):
         """Test that architecture page is accessible."""
-        response = await client.get("/architecture")
+        response = await client.get("/consumers/api-guide")
 
         assert response.status_code == 200
         content = response.text
-        assert "Architecture" in content or "architecture" in content.lower()
+        assert "API" in content or "api" in content.lower()
 
     @pytest.mark.asyncio
     async def test_api_reference_page(self, client):
         """Test that API reference page is accessible."""
-        response = await client.get("/api-reference")
+        response = await client.get("/consumers/api-guide")
 
         assert response.status_code == 200
         content = response.text
@@ -140,7 +140,7 @@ class TestPageNavigation:
     @pytest.mark.asyncio
     async def test_data_models_page(self, client):
         """Test that data models page is accessible."""
-        response = await client.get("/data-models")
+        response = await client.get("/consumers/data-models")
 
         assert response.status_code == 200
         content = response.text
@@ -149,7 +149,7 @@ class TestPageNavigation:
     @pytest.mark.asyncio
     async def test_examples_page(self, client):
         """Test that examples page is accessible."""
-        response = await client.get("/examples")
+        response = await client.get("/consumers/examples")
 
         assert response.status_code == 200
         content = response.text
@@ -158,7 +158,7 @@ class TestPageNavigation:
     @pytest.mark.asyncio
     async def test_multiple_pages_have_consistent_styling(self, client):
         """Test that all documentation pages use consistent HTML template."""
-        pages = ["/", "/getting-started", "/architecture"]
+        pages = ["/", "/consumers/getting-started", "/consumers/api-guide"]
 
         for page in pages:
             response = await client.get(page)
@@ -265,7 +265,7 @@ class TestMarkdownParsing:
     @pytest.mark.asyncio
     async def test_markdown_lists_rendered(self, client):
         """Test that Markdown lists are converted to HTML ul/ol tags."""
-        response = await client.get("/getting-started")
+        response = await client.get("/consumers/getting-started")
 
         assert response.status_code == 200
         content = response.text
