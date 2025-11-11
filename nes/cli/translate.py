@@ -6,12 +6,14 @@ Provides command-line translation between English and Nepali, supporting:
 - Automatic language detection
 
 Environment Variables:
-    AWS_REGION: AWS region for Bedrock (default: us-east-1)
-    AWS_BEDROCK_MODEL_ID: Model ID to use (default: global.anthropic.claude-sonnet-4-5-20250929-v1:0)
+    NES_LLM_REGION: Region/location (AWS: us-east-1, Google: us-central1)
+    NES_LLM_MODEL_ID: Model ID to use (provider-specific defaults)
+    NES_PROJECT_ID: Google Cloud project ID (required for google provider)
     AWS_PROFILE: AWS profile name (automatically picked up by boto3)
     AWS_ACCESS_KEY_ID: AWS access key (automatically picked up by boto3)
     AWS_SECRET_ACCESS_KEY: AWS secret key (automatically picked up by boto3)
     AWS_SESSION_TOKEN: AWS session token (automatically picked up by boto3)
+    GOOGLE_APPLICATION_CREDENTIALS: Path to Google service account key file
 """
 
 import asyncio
@@ -20,13 +22,14 @@ import sys
 import click
 
 
-def get_translation_service(provider_name, model_id, region_name):
+def get_translation_service(provider_name, model_id=None, region_name=None, **kwargs):
     """Get or create translation service instance.
 
     Args:
-        provider_name: Name of the LLM provider (currently only "aws" is supported)
+        provider_name: Name of the LLM provider ("aws" or "google")
         model_id: Model ID to use (None to use provider default)
-        region_name: AWS region (None to use provider default)
+        region_name: Region/location (None to use provider default)
+        **kwargs: Provider-specific arguments (e.g., project_id for Google)
 
     Returns:
         Translator instance configured with LLM provider
@@ -39,27 +42,41 @@ def get_translation_service(provider_name, model_id, region_name):
     if provider_name == "aws":
         from nes.services.scraping.providers import AWSBedrockProvider
 
-        # Set AWS-specific defaults
-        # For AWS: default model is Claude Sonnet 4.5, default region is us-east-1
         aws_model_id = model_id or "global.anthropic.claude-sonnet-4-5-20250929-v1:0"
         aws_region = region_name or "us-east-1"
 
-        # AWS_PROFILE is automatically picked up by boto3
         provider = AWSBedrockProvider(
             region_name=aws_region,
             model_id=aws_model_id,
         )
+    elif provider_name == "google":
+        from nes.services.scraping.providers import GoogleVertexAIProvider
+
+        project_id = kwargs.get("project_id")
+        if not project_id:
+            raise ValueError(
+                "Google provider requires NES_PROJECT_ID environment variable or --project-id option"
+            )
+
+        google_model_id = model_id or "gemini-2.5-pro"
+        google_location = region_name or "us-central1"
+
+        provider = GoogleVertexAIProvider(
+            project_id=project_id,
+            location=google_location,
+            model_id=google_model_id,
+        )
     else:
         raise ValueError(
             f"Unsupported provider: {provider_name}. "
-            f"Currently only 'aws' is supported."
+            f"Supported providers: 'aws', 'google'"
         )
 
     service = ScrapingService(llm_provider=provider)
     return service.translator
 
 
-@click.command()
+@click.command(name="translate")
 @click.argument("text", required=False)
 @click.option(
     "--from",
@@ -76,26 +93,35 @@ def get_translation_service(provider_name, model_id, region_name):
 )
 @click.option(
     "--provider",
-    type=click.Choice(["aws"], case_sensitive=False),
+    type=click.Choice(["aws", "google"], case_sensitive=False),
     default="aws",
     help="LLM provider to use",
 )
 @click.option(
     "--model",
     "model_id",
-    envvar="AWS_BEDROCK_MODEL_ID",
+    envvar="NES_LLM_MODEL_ID",
     show_envvar=True,
-    help="Model ID to use (for AWS: defaults to Claude Sonnet 4.5)",
+    help="Model ID to use (provider-specific defaults)",
 )
 @click.option(
     "--region",
     "region_name",
-    envvar="AWS_REGION",
+    envvar="NES_LLM_REGION",
     show_envvar=True,
-    help="AWS region (for AWS: defaults to us-east-1)",
+    help="Region/location (AWS: us-east-1, Google: us-central1)",
 )
-def translate(text, source_lang, target_lang, provider, model_id, region_name):
-    """Translate text between English and Nepali using AWS Bedrock.
+@click.option(
+    "--project-id",
+    "project_id",
+    envvar="NES_PROJECT_ID",
+    show_envvar=True,
+    help="Google Cloud project ID (required for google provider)",
+)
+def translate(
+    text, source_lang, target_lang, provider, model_id, region_name, project_id
+):
+    """Translate text between English and Nepali using LLM providers.
 
     Supports translation from:
 
@@ -109,19 +135,29 @@ def translate(text, source_lang, target_lang, provider, model_id, region_name):
 
     Configuration via environment variables:
 
-    - AWS_REGION: AWS region (default: us-east-1)
+    General:
 
-    - AWS_BEDROCK_MODEL_ID: Model ID (default: claude-sonnet-4-5)
+    - NES_LLM_REGION: Region/location (AWS: us-east-1, Google: us-central1)
+
+    - NES_LLM_MODEL_ID: Model ID (provider-specific defaults)
+
+    - NES_PROJECT_ID: Google Cloud project ID (required for google)
+
+    AWS Provider:
 
     - AWS_PROFILE: AWS profile name
 
     - AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY: AWS credentials
 
+    Google Provider:
+
+    - GOOGLE_APPLICATION_CREDENTIALS: Path to service account key
+
     \b
     Examples:
         nes translate --to ne "Ram Chandra Poudel"
         nes translate --to en "राम चन्द्र पौडेल"
-        nes translate --to en "Ma bhat khanchu."
+        nes translate --provider google --to ne "Harka Sampang"
         nes translate --from en --to ne "Ram Chandra Poudel"
         nes translate --region us-west-2 --to ne "Hello"
         echo "Ram Chandra Poudel" | nes translate --to ne
@@ -149,8 +185,15 @@ def translate(text, source_lang, target_lang, provider, model_id, region_name):
 
     # Get translation service
     try:
+        kwargs = {}
+        if provider == "google":
+            kwargs["project_id"] = project_id
+
         translator = get_translation_service(
-            provider_name=provider, model_id=model_id, region_name=region_name
+            provider_name=provider,
+            model_id=model_id,
+            region_name=region_name,
+            **kwargs,
         )
     except Exception as e:
         click.echo(f"Error: Failed to initialize translation service: {e}", err=True)

@@ -25,7 +25,7 @@ LLM Integration:
 """
 
 import logging
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 from nes.core.utils.devanagari import contains_devanagari
 
@@ -199,6 +199,90 @@ class Translator:
             )
 
         return result
+
+    async def bulk_translate(
+        self,
+        texts: List[str],
+        target_lang: str,
+        source_lang: Optional[str] = None,
+    ) -> Dict[str, str]:
+        """Translate multiple texts in bulk for efficiency.
+
+        Args:
+            texts: List of texts to translate
+            target_lang: Target language code ("en" or "ne")
+            source_lang: Source language code (optional, auto-detected if not provided)
+
+        Returns:
+            Dictionary mapping original text to translated text
+
+        Examples:
+            >>> translator = Translator()
+            >>> texts = ["राम चन्द्र पौडेल", "नेपाली कांग्रेस"]
+            >>> translations = await translator.bulk_translate(
+            ...     texts=texts,
+            ...     source_lang="ne",
+            ...     target_lang="en"
+            ... )
+            >>> print(translations["राम चन्द्र पौडेल"])
+            'Ram Chandra Poudel'
+        """
+        if not texts:
+            return {}
+
+        # Auto-detect source language from first text if not provided
+        detected_lang = source_lang
+        if not source_lang:
+            detected_lang = self.language_detector.detect(texts[0])
+
+        # If source and target are the same, return identity mapping
+        if detected_lang == target_lang:
+            return {text: text for text in texts}
+
+        # Build bulk translation prompt
+        numbered_texts = "\n".join([f"{i+1}. {text}" for i, text in enumerate(texts)])
+
+        lang_names = {
+            "en": "English",
+            "ne": "Nepali",
+        }
+
+        source_name = lang_names.get(detected_lang, detected_lang)
+        target_name = lang_names.get(target_lang, target_lang)
+
+        prompt = f"""Translate the following {len(texts)} texts from {source_name} to {target_name}.
+Provide ONLY the translations in the same numbered format, without any explanations or additional text.
+
+Texts to translate:
+{numbered_texts}
+
+Translations:"""
+
+        result = await self.llm_provider.generate_text(
+            prompt=prompt,
+            system_prompt=f"You are a professional translator specializing in {source_name} to {target_name} translation.",
+            temperature=0.3,
+        )
+
+        # Parse the numbered results
+        translations = {}
+        lines = result.strip().split("\n")
+
+        for i, line in enumerate(lines):
+            if i >= len(texts):
+                break
+
+            # Remove numbering (e.g., "1. ", "1) ", etc.)
+            cleaned = line.strip()
+            for prefix in [f"{i+1}. ", f"{i+1}) ", f"{i+1}:", f"{i+1} "]:
+                if cleaned.startswith(prefix):
+                    cleaned = cleaned[len(prefix) :].strip()
+                    break
+
+            if cleaned:
+                translations[texts[i]] = cleaned
+
+        return translations
 
     async def transliterate_text(
         self,
