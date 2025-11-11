@@ -107,8 +107,7 @@ class ScrapingService:
         # Initialize components with dependency injection support
         self.web_scraper = web_scraper or WebScraper()
         self.translator = translator or Translator(
-            llm_provider=self.provider.provider_name,
-            llm_config={},
+            llm_provider=self.provider,
         )
         self.normalizer = normalizer or DataNormalizer(
             llm_provider=self.provider.provider_name,
@@ -629,33 +628,15 @@ class ScrapingService:
     async def _search_government(self, query: str) -> List[Dict[str, Any]]:
         """Search government sources for results.
 
-        Mock implementation - real version would use government APIs.
+        TODO: Implement actual government API integration.
         """
-        # Mock government search
-        if "Nonexistent" not in query and "12345" not in query:
-            return [
-                {
-                    "source": "government",
-                    "title": f"{query} - Government Records",
-                    "url": f"https://example.gov.np/records/{query}",
-                    "summary": f"Government records for {query}",
-                }
-            ]
+        logger.warning("Government search not yet implemented")
         return []
 
     async def _search_news(self, query: str) -> List[Dict[str, Any]]:
         """Search news sources for results.
 
-        Mock implementation - real version would use news APIs.
+        TODO: Implement actual news API integration.
         """
-        # Mock news search
-        if "Nonexistent" not in query and "12345" not in query:
-            return [
-                {
-                    "source": "news",
-                    "title": f"{query} - News Coverage",
-                    "url": f"https://example.com/news/{query}",
-                    "snippet": f"News articles about {query}",
-                }
-            ]
+        logger.warning("News search not yet implemented")
         return []

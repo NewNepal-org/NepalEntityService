@@ -20,7 +20,7 @@ Performance Considerations:
 
 Best Practices:
     - Always set a descriptive User-Agent
-    - Respect robots.txt (not implemented in mock version)
+    - Respect robots.txt
     - Use appropriate rate limits (default: 1 req/sec, 30 req/min)
     - Handle errors gracefully without blocking other operations
 """
@@ -267,8 +267,10 @@ class WebScraper:
             # Import wikipedia library (optional dependency)
             import wikipedia
         except ImportError:
-            # Fallback to mock implementation if library not available
-            return await self._fetch_wikipedia_page_mock(page_title, language)
+            logger.error(
+                "wikipedia library not installed. Install with: pip install wikipedia"
+            )
+            return None
 
         # Set language
         wikipedia.set_lang(language)
@@ -313,52 +315,18 @@ class WebScraper:
                     }
                 return None
             except wikipedia.exceptions.PageError:
-                # Page doesn't exist - raise to trigger fallback to mock
-                raise
+                # Page doesn't exist
+                return None
             except Exception as e:
                 # Other errors
+                logger.error(f"Error fetching Wikipedia page: {e}")
                 raise e
 
         try:
             return await self.retry_handler.execute_with_retry(fetch)
-        except Exception:
-            # All retries failed, fall back to mock for testing
-            return await self._fetch_wikipedia_page_mock(page_title, language)
-
-    async def _fetch_wikipedia_page_mock(
-        self,
-        page_title: str,
-        language: str = "en",
-    ) -> Optional[Dict[str, Any]]:
-        """Mock Wikipedia page fetching when library not available.
-
-        Args:
-            page_title: The Wikipedia page title
-            language: Language code
-
-        Returns:
-            Mock page data or None
-        """
-        # Handle nonexistent pages
-        if "Nonexistent" in page_title and "12345" in page_title:
+        except Exception as e:
+            logger.error(f"Failed to fetch Wikipedia page after retries: {e}")
             return None
-
-        # Build URL
-        base_url = f"https://{language}.wikipedia.org/wiki/"
-        url = f"{base_url}{page_title}"
-
-        # Mock content
-        content = f"Mock Wikipedia content for {page_title} in {language}"
-
-        return {
-            "content": content,
-            "url": url,
-            "title": page_title.replace("_", " "),
-            "summary": f"Mock summary for {page_title}",
-            "categories": ["Politicians", "Nepali people"],
-            "links": ["Nepali Congress", "Nepal", "Politics"],
-            "images": [],
-        }
 
     async def search_wikipedia(
         self,
@@ -379,8 +347,10 @@ class WebScraper:
         try:
             import wikipedia
         except ImportError:
-            # Fallback to mock
-            return await self._search_wikipedia_mock(query, language, max_results)
+            logger.error(
+                "wikipedia library not installed. Install with: pip install wikipedia"
+            )
+            return []
 
         # Set language
         wikipedia.set_lang(language)
@@ -422,41 +392,14 @@ class WebScraper:
 
                 return search_results
             except Exception as e:
+                logger.error(f"Error searching Wikipedia: {e}")
                 raise e
 
         try:
             return await self.retry_handler.execute_with_retry(search)
-        except Exception:
+        except Exception as e:
+            logger.error(f"Failed to search Wikipedia after retries: {e}")
             return []
-
-    async def _search_wikipedia_mock(
-        self,
-        query: str,
-        language: str = "en",
-        max_results: int = 10,
-    ) -> List[Dict[str, Any]]:
-        """Mock Wikipedia search when library not available.
-
-        Args:
-            query: Search query
-            language: Language code
-            max_results: Maximum number of results
-
-        Returns:
-            Mock search results
-        """
-        # Handle queries with no results
-        if "Nonexistent" in query or "12345" in query:
-            return []
-
-        # Mock results
-        return [
-            {
-                "title": query,
-                "summary": f"Mock summary for {query}",
-                "url": f"https://{language}.wikipedia.org/wiki/{query.replace(' ', '_')}",
-            }
-        ]
 
     async def fetch_government_page(
         self,
@@ -480,11 +423,12 @@ class WebScraper:
         # Apply rate limiting
         await self.rate_limiter.acquire(domain)
 
-        # Mock implementation
+        # TODO: Implement actual government page scraping
         # Real implementation would use BeautifulSoup or similar
+        logger.warning("Government page scraping not yet implemented")
         return {
             "url": url,
-            "content": f"Mock government page content from {url}",
+            "content": "",
             "title": "Government Page",
             "source": "government",
         }
@@ -511,11 +455,12 @@ class WebScraper:
         # Apply rate limiting
         await self.rate_limiter.acquire(domain)
 
-        # Mock implementation
+        # TODO: Implement actual news page scraping
         # Real implementation would use newspaper3k or similar
+        logger.warning("News page scraping not yet implemented")
         return {
             "url": url,
-            "content": f"Mock news article content from {url}",
+            "content": "",
             "title": "News Article",
             "source": "news",
         }
@@ -537,12 +482,13 @@ class WebScraper:
         Returns:
             Dictionary of extracted content
         """
-        # Mock implementation
+        # TODO: Implement actual HTML content extraction
         # Real implementation would use BeautifulSoup
+        logger.warning("HTML content extraction not yet implemented")
         extracted = {}
 
         if selectors:
             for field, selector in selectors.items():
-                extracted[field] = f"Mock extracted content for {field}"
+                extracted[field] = ""
 
         return extracted

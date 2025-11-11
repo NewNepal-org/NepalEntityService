@@ -63,38 +63,24 @@ class AWSBedrockProvider(BaseLLMProvider):
 
     # Supported model families and their configurations
     SUPPORTED_MODELS = {
-        "anthropic.claude-3-sonnet-20240229-v1:0": {
+        "global.anthropic.claude-sonnet-4-5-20250929-v1:0": {
             "family": "claude",
-            "max_tokens": 4096,
-            "supports_streaming": True,
-        },
-        "anthropic.claude-3-haiku-20240307-v1:0": {
-            "family": "claude",
-            "max_tokens": 4096,
-            "supports_streaming": True,
-        },
-        "anthropic.claude-3-opus-20240229-v1:0": {
-            "family": "claude",
-            "max_tokens": 4096,
-            "supports_streaming": True,
-        },
-        "amazon.titan-text-express-v1": {
-            "family": "titan",
-            "max_tokens": 8192,
-            "supports_streaming": False,
+            "max_tokens": 200_000,
         },
     }
 
     def __init__(
         self,
         region_name: str = "us-east-1",
-        model_id: str = "anthropic.claude-3-sonnet-20240229-v1:0",
+        model_id: str = "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
         max_tokens: int = 2048,
         temperature: float = 0.7,
         top_p: float = 0.9,
         aws_access_key_id: Optional[str] = None,
         aws_secret_access_key: Optional[str] = None,
         aws_session_token: Optional[str] = None,
+        profile_name: Optional[str] = None,
+        enable_cache: bool = True,
     ):
         """Initialize the AWS Bedrock provider.
 
@@ -109,6 +95,8 @@ class AWSBedrockProvider(BaseLLMProvider):
             aws_access_key_id: AWS access key (optional, uses default credentials if not provided)
             aws_secret_access_key: AWS secret key (optional)
             aws_session_token: AWS session token (optional)
+            profile_name: AWS profile name from ~/.aws/credentials (optional)
+            enable_cache: Enable response caching (default: True)
 
         Raises:
             ValueError: If model_id is not supported
@@ -127,7 +115,17 @@ class AWSBedrockProvider(BaseLLMProvider):
 
             >>> # Use specific model
             >>> provider = AWSBedrockProvider(
-            ...     model_id="anthropic.claude-3-opus-20240229-v1:0"
+            ...     model_id="global.anthropic.claude-sonnet-4-5-20250929-v1:0"
+            ... )
+
+            >>> # Use AWS profile
+            >>> provider = AWSBedrockProvider(
+            ...     profile_name="my-aws-profile"
+            ... )
+
+            >>> # Disable caching
+            >>> provider = AWSBedrockProvider(
+            ...     enable_cache=False
             ... )
         """
         try:
@@ -151,6 +149,7 @@ class AWSBedrockProvider(BaseLLMProvider):
             model_id=model_id,
             max_tokens=max_tokens,
             temperature=temperature,
+            enable_cache=enable_cache,
         )
 
         self.region_name = region_name
@@ -162,6 +161,8 @@ class AWSBedrockProvider(BaseLLMProvider):
 
         # Initialize boto3 client
         session_kwargs = {"region_name": region_name}
+        if profile_name:
+            session_kwargs["profile_name"] = profile_name
         if aws_access_key_id:
             session_kwargs["aws_access_key_id"] = aws_access_key_id
         if aws_secret_access_key:
@@ -181,14 +182,14 @@ class AWSBedrockProvider(BaseLLMProvider):
             f"model={model_id}, family={self.model_family}"
         )
 
-    async def generate_text(
+    async def _generate_text_impl(
         self,
         prompt: str,
         system_prompt: Optional[str] = None,
         max_tokens: Optional[int] = None,
         temperature: Optional[float] = None,
     ) -> str:
-        """Generate text using the LLM.
+        """Generate text using the LLM (implementation).
 
         Args:
             prompt: The input prompt
@@ -201,14 +202,6 @@ class AWSBedrockProvider(BaseLLMProvider):
 
         Raises:
             Exception: If API call fails
-
-        Examples:
-            >>> provider = AWSBedrockProvider()
-            >>> text = await provider.generate_text(
-            ...     prompt="Translate to English: राम चन्द्र पौडेल"
-            ... )
-            >>> print(text)
-            'Ram Chandra Poudel'
         """
         try:
             # Use provided values or defaults
@@ -263,13 +256,13 @@ class AWSBedrockProvider(BaseLLMProvider):
             logger.error(f"Error generating text with Bedrock: {e}", exc_info=True)
             raise
 
-    async def extract_structured_data(
+    async def _extract_structured_data_impl(
         self,
         text: str,
         schema: Dict[str, Any],
         instructions: str,
     ) -> Dict[str, Any]:
-        """Extract structured data from text using the LLM.
+        """Extract structured data from text using the LLM (implementation).
 
         Args:
             text: The text to extract data from
@@ -278,22 +271,6 @@ class AWSBedrockProvider(BaseLLMProvider):
 
         Returns:
             Extracted structured data as a dictionary
-
-        Examples:
-            >>> schema = {
-            ...     "type": "object",
-            ...     "properties": {
-            ...         "name": {"type": "string"},
-            ...         "position": {"type": "string"}
-            ...     }
-            ... }
-            >>> data = await provider.extract_structured_data(
-            ...     text="Ram Chandra Poudel is the President of Nepal.",
-            ...     schema=schema,
-            ...     instructions="Extract person name and position"
-            ... )
-            >>> print(data["name"])
-            'Ram Chandra Poudel'
         """
         # Build extraction prompt
         prompt = f"""{instructions}
@@ -334,55 +311,6 @@ Extract the information and return ONLY valid JSON matching the schema above.
             # Return empty dict on parse failure
             return {}
 
-    async def translate(
-        self,
-        text: str,
-        source_lang: str,
-        target_lang: str,
-    ) -> str:
-        """Translate text between languages.
-
-        Args:
-            text: Text to translate
-            source_lang: Source language code
-            target_lang: Target language code
-
-        Returns:
-            Translated text
-
-        Examples:
-            >>> translation = await provider.translate(
-            ...     text="राम चन्द्र पौडेल",
-            ...     source_lang="ne",
-            ...     target_lang="en"
-            ... )
-            >>> print(translation)
-            'Ram Chandra Poudel'
-        """
-        lang_names = {
-            "en": "English",
-            "ne": "Nepali",
-        }
-
-        source_name = lang_names.get(source_lang, source_lang)
-        target_name = lang_names.get(target_lang, target_lang)
-
-        prompt = f"""Translate the following text from {source_name} to {target_name}.
-Provide ONLY the translation, without any explanations or additional text.
-
-Text to translate:
-{text}
-
-Translation:"""
-
-        translation = await self.generate_text(
-            prompt=prompt,
-            system_prompt=f"You are a professional translator specializing in {source_name} to {target_name} translation.",
-            temperature=0.3,
-        )
-
-        return translation.strip()
-
     def _build_claude_request(
         self,
         prompt: str,
@@ -395,7 +323,6 @@ Translation:"""
             "anthropic_version": "bedrock-2023-05-31",
             "max_tokens": max_tokens,
             "temperature": temperature,
-            "top_p": self.top_p,
             "messages": [
                 {
                     "role": "user",

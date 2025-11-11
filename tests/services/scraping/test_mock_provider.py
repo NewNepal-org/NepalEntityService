@@ -113,47 +113,6 @@ class TestMockProviderStructuredExtraction:
         assert "name" in result
 
 
-class TestMockProviderTranslation:
-    """Test translation capabilities."""
-
-    @pytest.mark.asyncio
-    async def test_translate_nepali_to_english(self):
-        """Test translating Nepali to English."""
-        from nes.services.scraping.providers import MockLLMProvider
-
-        provider = MockLLMProvider()
-        result = await provider.translate(
-            text="राम चन्द्र पौडेल", source_lang="ne", target_lang="en"
-        )
-
-        assert result == "Ram Chandra Poudel"
-
-    @pytest.mark.asyncio
-    async def test_translate_english_to_nepali(self):
-        """Test translating English to Nepali."""
-        from nes.services.scraping.providers import MockLLMProvider
-
-        provider = MockLLMProvider()
-        result = await provider.translate(
-            text="Ram Chandra Poudel", source_lang="en", target_lang="ne"
-        )
-
-        assert result == "राम चन्द्र पौडेल"
-
-    @pytest.mark.asyncio
-    async def test_translate_unknown_text(self):
-        """Test translating unknown text."""
-        from nes.services.scraping.providers import MockLLMProvider
-
-        provider = MockLLMProvider()
-        result = await provider.translate(
-            text="Unknown text", source_lang="en", target_lang="ne"
-        )
-
-        assert result is not None
-        assert isinstance(result, str)
-
-
 class TestMockProviderTokenTracking:
     """Test token usage tracking."""
 

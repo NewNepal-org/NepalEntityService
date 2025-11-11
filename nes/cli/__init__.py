@@ -21,6 +21,11 @@ from nes.cli.migrate import migration  # noqa: E402
 
 cli.add_command(migration)
 
+# Import and register translate command
+from nes.cli.translate import translate  # noqa: E402
+
+cli.add_command(translate)
+
 
 # Server command group
 @cli.group()

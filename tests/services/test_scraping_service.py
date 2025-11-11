@@ -15,6 +15,7 @@ Core Components:
 
 from datetime import date
 from typing import Any, Dict, List, Optional
+from unittest.mock import Mock, patch
 
 import pytest
 
@@ -67,16 +68,28 @@ class TestScrapingServiceWikipediaExtraction:
 
         service = create_test_service()
 
-        # Extract from Wikipedia page
-        result = await service.extract_from_wikipedia(
-            page_title="Ram_Chandra_Poudel", language="en"
-        )
+        # Mock Wikipedia page
+        mock_page = Mock()
+        mock_page.content = "Ram Chandra Poudel is a Nepali politician."
+        mock_page.url = "https://en.wikipedia.org/wiki/Ram_Chandra_Poudel"
+        mock_page.title = "Ram Chandra Poudel"
+        mock_page.summary = "Ram Chandra Poudel is a Nepali politician."
+        mock_page.categories = ["Nepali politicians"]
+        mock_page.links = ["Nepal", "Politics"]
+        mock_page.images = []
 
-        assert result is not None
-        assert "content" in result
-        assert "url" in result
-        assert "title" in result
-        assert result["language"] == "en"
+        with patch("wikipedia.page", return_value=mock_page):
+            with patch("wikipedia.set_lang"):
+                # Extract from Wikipedia page
+                result = await service.extract_from_wikipedia(
+                    page_title="Ram_Chandra_Poudel", language="en"
+                )
+
+                assert result is not None
+                assert "content" in result
+                assert "url" in result
+                assert "title" in result
+                assert result["language"] == "en"
 
     @pytest.mark.asyncio
     async def test_extract_from_wikipedia_nepali(self):
@@ -85,43 +98,83 @@ class TestScrapingServiceWikipediaExtraction:
 
         service = create_test_service()
 
-        # Extract from Nepali Wikipedia
-        result = await service.extract_from_wikipedia(
-            page_title="राम_चन्द्र_पौडेल", language="ne"
-        )
+        # Mock Nepali Wikipedia page
+        mock_page = Mock()
+        mock_page.content = "राम चन्द्र पौडेल नेपाली राजनीतिज्ञ हुन्।"
+        mock_page.url = "https://ne.wikipedia.org/wiki/राम_चन्द्र_पौडेल"
+        mock_page.title = "राम चन्द्र पौडेल"
+        mock_page.summary = "राम चन्द्र पौडेल नेपाली राजनीतिज्ञ हुन्।"
+        mock_page.categories = ["नेपाली राजनीतिज्ञ"]
+        mock_page.links = ["नेपाल"]
+        mock_page.images = []
 
-        assert result is not None
-        assert "content" in result
-        assert result["language"] == "ne"
+        with patch("wikipedia.page", return_value=mock_page):
+            with patch("wikipedia.set_lang"):
+                # Extract from Nepali Wikipedia
+                result = await service.extract_from_wikipedia(
+                    page_title="राम_चन्द्र_पौडेल", language="ne"
+                )
+
+                assert result is not None
+                assert "content" in result
+                assert result["language"] == "ne"
 
     @pytest.mark.asyncio
     async def test_extract_from_wikipedia_handles_disambiguation(self):
         """Test that Wikipedia extraction handles disambiguation pages."""
+        import wikipedia
+
         from nes.services.scraping import ScrapingService
 
         service = create_test_service()
 
-        # Try to extract from disambiguation page
-        result = await service.extract_from_wikipedia(
-            page_title="Ram_Poudel", language="en"  # Might be disambiguation
+        # Mock disambiguation error with fallback page
+        mock_page = Mock()
+        mock_page.content = "Nepal is a country in South Asia."
+        mock_page.url = "https://en.wikipedia.org/wiki/Nepal"
+        mock_page.title = "Nepal"
+        mock_page.summary = "Nepal is a country in South Asia."
+        mock_page.categories = ["Countries"]
+        mock_page.links = ["Asia"]
+        mock_page.images = []
+
+        disambiguation_error = wikipedia.exceptions.DisambiguationError(
+            "Ram_Poudel", ["Ram Chandra Poudel", "Ram Prasad Poudel"]
         )
 
-        # Should either return data or raise specific error
-        assert result is not None or result is None
+        with patch("wikipedia.page") as mock_wiki_page:
+            # First call raises disambiguation, second call returns page
+            mock_wiki_page.side_effect = [disambiguation_error, mock_page]
+            with patch("wikipedia.set_lang"):
+                # Try to extract from disambiguation page
+                result = await service.extract_from_wikipedia(
+                    page_title="Ram_Poudel", language="en"  # Might be disambiguation
+                )
+
+                # Should either return data or raise specific error
+                assert result is not None or result is None
 
     @pytest.mark.asyncio
     async def test_extract_from_wikipedia_handles_missing_page(self):
         """Test that Wikipedia extraction handles missing pages gracefully."""
+        import wikipedia
+
         from nes.services.scraping import ScrapingService
 
         service = create_test_service()
 
-        # Try to extract from nonexistent page
-        result = await service.extract_from_wikipedia(
-            page_title="Nonexistent_Page_12345", language="en"
-        )
+        # Mock page not found error
+        with patch("wikipedia.page") as mock_wiki_page:
+            mock_wiki_page.side_effect = wikipedia.exceptions.PageError(
+                "Page not found"
+            )
+            with patch("wikipedia.set_lang"):
+                # Try to extract from nonexistent page
+                result = await service.extract_from_wikipedia(
+                    page_title="Nonexistent_Page_12345", language="en"
+                )
 
-        assert result is None
+                assert result is None
 
     @pytest.mark.asyncio
     async def test_extract_from_wikipedia_includes_metadata(self):
@@ -130,14 +183,26 @@ class TestScrapingServiceWikipediaExtraction:
 
         service = create_test_service()
 
-        result = await service.extract_from_wikipedia(
-            page_title="Ram_Chandra_Poudel", language="en"
-        )
+        # Mock Wikipedia page
+        mock_page = Mock()
+        mock_page.content = "Ram Chandra Poudel is a Nepali politician."
+        mock_page.url = "https://en.wikipedia.org/wiki/Ram_Chandra_Poudel"
+        mock_page.title = "Ram Chandra Poudel"
+        mock_page.summary = "Ram Chandra Poudel is a Nepali politician."
+        mock_page.categories = ["Nepali politicians"]
+        mock_page.links = ["Nepal", "Politics"]
+        mock_page.images = []
 
-        assert result is not None
-        assert "metadata" in result
-        assert "source" in result["metadata"]
-        assert result["metadata"]["source"] == "wikipedia"
+        with patch("wikipedia.page", return_value=mock_page):
+            with patch("wikipedia.set_lang"):
+                result = await service.extract_from_wikipedia(
+                    page_title="Ram_Chandra_Poudel", language="en"
+                )
+
+                assert result is not None
+                assert "metadata" in result
+                assert "source" in result["metadata"]
+                assert result["metadata"]["source"] == "wikipedia"
 
 
 class TestScrapingServiceDataNormalization:
@@ -412,19 +477,30 @@ class TestScrapingServiceExternalSourceSearch:
 
         service = create_test_service()
 
-        results = await service.search_external_sources(
-            query="Ram Chandra Poudel", sources=["wikipedia"]
-        )
+        # Mock Wikipedia search
+        mock_page = Mock()
+        mock_page.url = "https://en.wikipedia.org/wiki/Ram_Chandra_Poudel"
 
-        assert results is not None
-        assert isinstance(results, list)
-        assert len(results) > 0
+        with patch("wikipedia.search", return_value=["Ram Chandra Poudel"]):
+            with patch(
+                "wikipedia.summary",
+                return_value="Ram Chandra Poudel is a Nepali politician.",
+            ):
+                with patch("wikipedia.page", return_value=mock_page):
+                    with patch("wikipedia.set_lang"):
+                        results = await service.search_external_sources(
+                            query="Ram Chandra Poudel", sources=["wikipedia"]
+                        )
 
-        # Each result should have basic info
-        for result in results:
-            assert "source" in result
-            assert "title" in result
-            assert "url" in result
+                        assert results is not None
+                        assert isinstance(results, list)
+                        assert len(results) > 0
+
+                        # Each result should have basic info
+                        for result in results:
+                            assert "source" in result
+                            assert "title" in result
+                            assert "url" in result
 
     @pytest.mark.asyncio
     async def test_search_external_sources_multiple_sources(self):
@@ -433,14 +509,26 @@ class TestScrapingServiceExternalSourceSearch:
 
         service = create_test_service()
 
-        results = await service.search_external_sources(
-            query="Ram Chandra Poudel", sources=["wikipedia", "government"]
-        )
+        # Mock Wikipedia search
+        mock_page = Mock()
+        mock_page.url = "https://en.wikipedia.org/wiki/Ram_Chandra_Poudel"
 
-        assert results is not None
-        # Should have results from multiple sources
-        sources = set(r["source"] for r in results)
-        assert len(sources) > 0
+        with patch("wikipedia.search", return_value=["Ram Chandra Poudel"]):
+            with patch(
+                "wikipedia.summary",
+                return_value="Ram Chandra Poudel is a Nepali politician.",
+            ):
+                with patch("wikipedia.page", return_value=mock_page):
+                    with patch("wikipedia.set_lang"):
+                        results = await service.search_external_sources(
+                            query="Ram Chandra Poudel",
+                            sources=["wikipedia", "government"],
+                        )
+
+                        assert results is not None
+                        # Should have results from multiple sources
+                        sources = set(r["source"] for r in results)
+                        assert len(sources) > 0
 
     @pytest.mark.asyncio
     async def test_search_external_sources_includes_summary(self):
@@ -449,14 +537,25 @@ class TestScrapingServiceExternalSourceSearch:
 
         service = create_test_service()
 
-        results = await service.search_external_sources(
-            query="Ram Chandra Poudel", sources=["wikipedia"]
-        )
+        # Mock Wikipedia search
+        mock_page = Mock()
+        mock_page.url = "https://en.wikipedia.org/wiki/Ram_Chandra_Poudel"
 
-        assert len(results) > 0
-        # Should include summary or snippet
-        for result in results:
-            assert "summary" in result or "snippet" in result
+        with patch("wikipedia.search", return_value=["Ram Chandra Poudel"]):
+            with patch(
+                "wikipedia.summary",
+                return_value="Ram Chandra Poudel is a Nepali politician.",
+            ):
+                with patch("wikipedia.page", return_value=mock_page):
+                    with patch("wikipedia.set_lang"):
+                        results = await service.search_external_sources(
+                            query="Ram Chandra Poudel", sources=["wikipedia"]
+                        )
+
+                        assert len(results) > 0
+                        # Should include summary or snippet
+                        for result in results:
+                            assert "summary" in result or "snippet" in result
 
     @pytest.mark.asyncio
     async def test_search_external_sources_handles_no_results(self):
@@ -465,11 +564,14 @@ class TestScrapingServiceExternalSourceSearch:
 
         service = create_test_service()
 
-        results = await service.search_external_sources(
-            query="NonexistentPerson12345XYZ", sources=["wikipedia"]
-        )
+        # Mock Wikipedia search with no results
+        with patch("wikipedia.search", return_value=[]):
+            with patch("wikipedia.set_lang"):
+                results = await service.search_external_sources(
+                    query="NonexistentPerson12345XYZ", sources=["wikipedia"]
+                )
 
-        assert results is not None
-        assert isinstance(results, list)
-        # Empty list is acceptable for no results
-        assert len(results) == 0
+                assert results is not None
+                assert isinstance(results, list)
+                # Empty list is acceptable for no results
+                assert len(results) == 0

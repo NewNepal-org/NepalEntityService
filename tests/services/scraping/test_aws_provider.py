@@ -29,7 +29,9 @@ class TestAWSBedrockProviderInitialization:
 
             assert provider is not None
             assert provider.region_name == "us-east-1"
-            assert provider.model_id == "anthropic.claude-3-sonnet-20240229-v1:0"
+            assert (
+                provider.model_id == "global.anthropic.claude-sonnet-4-5-20250929-v1:0"
+            )
             assert provider.model_family == "claude"
 
     def test_provider_initialization_custom_region(self):
@@ -53,10 +55,12 @@ class TestAWSBedrockProviderInitialization:
             from nes.services.scraping.providers import AWSBedrockProvider
 
             provider = AWSBedrockProvider(
-                model_id="anthropic.claude-3-haiku-20240307-v1:0"
+                model_id="global.anthropic.claude-sonnet-4-5-20250929-v1:0"
             )
 
-            assert provider.model_id == "anthropic.claude-3-haiku-20240307-v1:0"
+            assert (
+                provider.model_id == "global.anthropic.claude-sonnet-4-5-20250929-v1:0"
+            )
             assert provider.model_family == "claude"
 
     def test_provider_initialization_invalid_model(self):
@@ -146,19 +150,18 @@ class TestAWSBedrockProviderTextGeneration:
             assert result == "Response with system context"
 
     @pytest.mark.asyncio
-    async def test_generate_text_titan(self):
-        """Test text generation with Titan model."""
+    async def test_generate_text_custom_params(self):
+        """Test text generation with custom parameters."""
         with patch("boto3.Session") as mock_session:
             mock_client = Mock()
             mock_session.return_value.client.return_value = mock_client
 
-            # Mock Titan response format
             mock_response = {
                 "body": Mock(
                     read=lambda: json.dumps(
                         {
-                            "results": [{"outputText": "Titan generated text"}],
-                            "usage": {},
+                            "content": [{"text": "Custom params response"}],
+                            "usage": {"input_tokens": 20, "output_tokens": 10},
                         }
                     ).encode()
                 )
@@ -167,10 +170,12 @@ class TestAWSBedrockProviderTextGeneration:
 
             from nes.services.scraping.providers import AWSBedrockProvider
 
-            provider = AWSBedrockProvider(model_id="amazon.titan-text-express-v1")
-            result = await provider.generate_text(prompt="Test prompt")
+            provider = AWSBedrockProvider()
+            result = await provider.generate_text(
+                prompt="Test prompt", max_tokens=1000, temperature=0.5
+            )
 
-            assert result == "Titan generated text"
+            assert result == "Custom params response"
 
 
 class TestAWSBedrockProviderStructuredExtraction:
@@ -248,66 +253,6 @@ class TestAWSBedrockProviderStructuredExtraction:
 
             assert result["name"] == "Test Person"
             assert result["role"] == "Politician"
-
-
-class TestAWSBedrockProviderTranslation:
-    """Test translation capabilities."""
-
-    @pytest.mark.asyncio
-    async def test_translate_nepali_to_english(self):
-        """Test translating Nepali to English."""
-        with patch("boto3.Session") as mock_session:
-            mock_client = Mock()
-            mock_session.return_value.client.return_value = mock_client
-
-            mock_response = {
-                "body": Mock(
-                    read=lambda: json.dumps(
-                        {
-                            "content": [{"text": "Ram Chandra Poudel"}],
-                            "usage": {"input_tokens": 10, "output_tokens": 5},
-                        }
-                    ).encode()
-                )
-            }
-            mock_client.invoke_model.return_value = mock_response
-
-            from nes.services.scraping.providers import AWSBedrockProvider
-
-            provider = AWSBedrockProvider()
-            result = await provider.translate(
-                text="राम चन्द्र पौडेल", source_lang="ne", target_lang="en"
-            )
-
-            assert result == "Ram Chandra Poudel"
-
-    @pytest.mark.asyncio
-    async def test_translate_english_to_nepali(self):
-        """Test translating English to Nepali."""
-        with patch("boto3.Session") as mock_session:
-            mock_client = Mock()
-            mock_session.return_value.client.return_value = mock_client
-
-            mock_response = {
-                "body": Mock(
-                    read=lambda: json.dumps(
-                        {
-                            "content": [{"text": "राम चन्द्र पौडेल"}],
-                            "usage": {"input_tokens": 10, "output_tokens": 5},
-                        }
-                    ).encode()
-                )
-            }
-            mock_client.invoke_model.return_value = mock_response
-
-            from nes.services.scraping.providers import AWSBedrockProvider
-
-            provider = AWSBedrockProvider()
-            result = await provider.translate(
-                text="Ram Chandra Poudel", source_lang="en", target_lang="ne"
-            )
-
-            assert result == "राम चन्द्र पौडेल"
 
 
 class TestAWSBedrockProviderTokenTracking:
