@@ -20,12 +20,14 @@ from nes.core.models import (
     NameParts,
     PartySymbol,
 )
+from nes.core.models.base import NameKind
 from nes.core.models.entity import EntitySubType, EntityType
 from nes.core.models.version import Author
 from nes.core.utils.devanagari import transliterate_to_roman
 from nes.core.utils.phone_number import normalize_nepali_phone_number
 from nes.core.utils.slug_helper import text_to_slug
 from nes.services.migration.context import MigrationContext
+from nes.services.scraping.normalization import NameExtractor
 
 # Migration metadata
 AUTHOR = "Damodar Dahal"
@@ -37,6 +39,46 @@ CHANGE_DESCRIPTION = "Initial sourcing"
 # NOTE:
 # Address field stores bilingual text in description.
 # Future migration may parse and link to proper location entities.
+
+
+name_extractor = NameExtractor()
+
+PARTY_ADDITIONAL_NAME_MAP = {
+    "जनता समाजवादी पार्टी, नेपाल": "जनता समाजवादी पार्टी, नेपाल",
+    "खम्बुवान राष्ट्रिय मोर्चा नेपाल": "खम्बुवान राष्ट्रिय मोर्चा, नेपाल",
+    "सचेत नेपाली पार्टी": "सचेत नेपाली पार्टी",
+    "पुनर्जागरण पार्टी नेपाल": "पुनर्जागरण पार्टी, नेपाल",
+    "मंगोल नेशनल अर्गनाइजेसन": "मंगोल नेशनल अर्गनाइजेशन",
+    "नेपाल सद्भावना पार्टी": "राष्ट्रिय सदभावना पार्टी",
+    "नेपाल कम्युनिष्ट पार्टी (एकिकृत समाजबादी)": "नेपाल कम्युनिष्ट पार्टी (एकीकृत समाजवादी)",
+    "तराइ-मधेश लोकतान्त्रिक पार्टी": "तराई-मधेश लोकतान्त्रिक पार्टी",
+    "लोकतान्त्रिक समाजवादी पार्टी, नेपाल": "लोकतान्त्रिक समाजवादी पार्टी नेपाल",
+    "जनता प्रगतिशिल पार्टी, नेपाल": "जनता प्रगतिशील पार्टी, नेपाल",
+    "नेपाल कम्युनिष्ट पार्टी (एमाले)": "नेपाल कम्युनिष्ट पार्टी (एकीकृत मार्क्सवादी लेनिनवादी)",
+    "राष्ट्रिय मुक्ति आन्दोलन नेपाल": "राष्ट्रिय मुक्ति आन्दोलन, नेपाल",
+    "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी लेनिनवादी)": "नेपाल कम्युनिष्ट पार्टी (मार्क्सवादी-लेनिनवादी)",
+    "साझा पार्टी नेपाल": "साझा पार्टी, नेपाल",
+    "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च": "संघीय लोकतान्त्रिक राष्ट्रिय मत",
+    "जनसमाजवादी पार्टी नेपाल": "जनसमाजवादी पार्टी, नेपाल",
+    "किरात खम्बुवान साझा पार्टी": "राष्ट्रिय साझा पार्टी",  # Name change (https://khabarhub.com/2024/03/614376/)
+    "आमूल परिवर्तन मसिहा पार्टी नेपाल": "आमूल परिवर्तन रिपब्लिकन पार्टी नेपाल",  # Name change (https://khabarhub.com/2024/03/614376/)
+    "तामाङसालिङ लोकतान्त्रिक पार्टी": "जनप्रिय लोकतान्त्रिक पार्टी",  # Name change (https://khabarhub.com/2024/03/614376/)
+    "पिछडावर्ग निषाद दलित जनजाती पार्टी": "विकासशील जनता पार्टी",  # Both are located in Morang
+    "एकीकृत शक्ति नेपाल": "नागरिक शक्ति, नेपाल",  # Both led by देवप्रकाश त्रिपाठी
+    "नेपाल सुशासन पार्टी": "राष्ट्रिय मातृभूमि पार्टी",  # United with Nepal Aama Party: https://kendrabindu.com/politics/127308/
+    "नेपाल आमा पार्टी": "राष्ट्रिय मातृभूमि पार्टी",  # United with Nepal Sushasan Party
+    "नेपाल दलित पार्टी": "नेपाल मानवतावादी पार्टी",  # both led by मेघ बहादुर कामी
+    "नेपाल समाजवादी पार्टी": "नेपाल कम्युनिष्ट पार्टी (माओवादी केन्द्र)",  # फणीन्द्र देवकोटा is a member of Maobadi
+    "संघीय लोकतान्त्रिक राष्ट्रिय मञ्च(थरुहट)": "संघीय नेपाल पार्टी",  # same election symbol "gagri"
+    "सामाजिक एकता पार्टी": "संयुक्त नागरिक पार्टी",  # Both have guitar election symbol.
+    "इतिहासिक प्रजातान्त्रिक जनता पार्टी नेपाल": "इतिहासिक जनता पार्टी",  # Both have tractor election symbol.
+}
+
+# Reverse map: corrected name -> original name
+PARTY_ADDITIONAL_NAME_MAP_REVERSE = {
+    name_extractor.standardize_name(v): name_extractor.standardize_name(k)
+    for k, v in PARTY_ADDITIONAL_NAME_MAP.items()
+}
 
 
 def convert_nepali_date(date_str: str) -> date:
@@ -148,16 +190,28 @@ async def migrate(context: MigrationContext) -> None:
                 if phone
             ]
 
+        name_ne = name_extractor.standardize_name(name_ne)
+        # Build names (primary + additional if found in reverse map)
+        names = [
+            Name(
+                kind=NameKind.PRIMARY,
+                en=NameParts(full=name_extractor.standardize_name(translated["name"])),
+                ne=NameParts(full=name_ne),
+            ).model_dump()
+        ]
+        if name_ne in PARTY_ADDITIONAL_NAME_MAP_REVERSE:
+            original_name = PARTY_ADDITIONAL_NAME_MAP_REVERSE[name_ne]
+            names.append(
+                Name(
+                    kind=NameKind.ALTERNATE,
+                    ne=NameParts(full=original_name),
+                ).model_dump()
+            )
+
         # Create entity
         party_data = dict(
             slug=text_to_slug(translated["name"]),
-            names=[
-                Name(
-                    kind="PRIMARY",
-                    en=NameParts(full=translated["name"]),
-                    ne=NameParts(full=name_ne),
-                ).model_dump()
-            ],
+            names=names,
             attributions=[
                 Attribution(
                     title=LangText(
