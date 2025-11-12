@@ -12,13 +12,6 @@ if [[ "$1" == "--check" ]]; then
     CHECK_ONLY=true
 fi
 
-if [[ "$CHECK_ONLY" == true ]]; then
-    echo "🔍 Checking code formatting..."
-else
-    echo "🔧 Installing/updating formatting tools..."
-    poetry install --no-interaction
-fi
-
 echo ""
 if [[ "$CHECK_ONLY" == true ]]; then
     echo "🎨 Checking black formatting..."

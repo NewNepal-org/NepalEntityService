@@ -1,5 +1,6 @@
 """CLI tools for Nepal Entity Service v2."""
 
+import os
 import sys
 
 import click
@@ -13,6 +14,13 @@ def cli():
     This CLI provides tools for searching entities, managing data, running the API server,
     scraping external sources, and generating analytics reports.
     """
+
+    # Load .env file at CLI initialization, except while running tests.
+    if "PYTEST_CURRENT_TEST" not in os.environ:
+        from dotenv import load_dotenv
+
+        load_dotenv()
+
     pass
 
 
@@ -20,6 +28,11 @@ def cli():
 from nes.cli.migrate import migration  # noqa: E402
 
 cli.add_command(migration)
+
+# Import and register translate command
+from nes.cli.translate import translate  # noqa: E402
+
+cli.add_command(translate)
 
 
 # Server command group

@@ -119,7 +119,7 @@ class MigrationContext:
         print(f"[Migration] {message}")
         logger.info(f"Migration log: {message}")
 
-    def read_csv(self, filename: str) -> List[Dict[str, Any]]:
+    def read_csv(self, filename: str, **kwargs) -> List[Dict[str, Any]]:
         """
         Read CSV file from migration folder.
 
@@ -152,7 +152,7 @@ class MigrationContext:
 
         try:
             with open(file_path, "r", encoding="utf-8") as f:
-                reader = csv.DictReader(f)
+                reader = csv.DictReader(f, **kwargs)
                 data = list(reader)
 
             logger.debug(f"Read {len(data)} rows from {filename}")

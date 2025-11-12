@@ -42,14 +42,21 @@ class PublicationService:
         logger.info("PublicationService initialized")
 
     async def create_entity(
-        self, entity_data: Dict[str, Any], author_id: str, change_description: str
+        self,
+        entity_type: EntityType,
+        entity_data: Dict[str, Any],
+        author_id: str,
+        change_description: str = "Initial entity creation",
+        entity_subtype: Optional[EntitySubType] = None,
     ) -> Entity:
         """Create a new entity with automatic versioning.
 
         Args:
+            entity_type: Type of the entity
             entity_data: Dictionary containing entity data
             author_id: ID of the author creating the entity
             change_description: Description of this change
+            entity_subtype: Optional subtype of the entity
 
         Returns:
             Created entity with version 1
@@ -60,8 +67,6 @@ class PublicationService:
         # Validate required fields
         if "slug" not in entity_data:
             raise ValueError("Entity must have a 'slug' field")
-        if "type" not in entity_data:
-            raise ValueError("Entity must have a 'type' field")
         if "names" not in entity_data or not entity_data["names"]:
             raise ValueError("Entity must have at least one name")
 
@@ -77,13 +82,13 @@ class PublicationService:
         author = await self._get_or_create_author(author_id)
 
         # Build entity ID to check for duplicates
-        entity_type = entity_data["type"]
-        entity_subtype = entity_data.get("sub_type")
         slug = entity_data["slug"]
 
         from nes.core.identifiers import build_entity_id
 
-        entity_id = build_entity_id(entity_type, entity_subtype, slug)
+        entity_id = build_entity_id(
+            entity_type.value, entity_subtype.value if entity_subtype else None, slug
+        )
 
         # Check if entity already exists
         existing = await self.database.get_entity(entity_id)
@@ -102,7 +107,10 @@ class PublicationService:
             created_at=datetime.now(UTC),
         )
 
-        # Add version summary and created_at to entity data
+        # Add type, subtype, version summary and created_at to entity data
+        entity_data["type"] = entity_type.value
+        if entity_subtype:
+            entity_data["sub_type"] = entity_subtype.value
         entity_data["version_summary"] = version_summary
         entity_data["created_at"] = datetime.now(UTC)
 
@@ -541,7 +549,7 @@ class PublicationService:
         """Create multiple entities in batch.
 
         Args:
-            entities_data: List of entity data dictionaries
+            entities_data: List of entity data dictionaries (must include 'type' and optionally 'sub_type')
             author_id: ID of the author creating the entities
             change_description: Description of this batch operation
 
@@ -553,10 +561,18 @@ class PublicationService:
         """
         entities = []
         for entity_data in entities_data:
+            entity_type = EntityType(entity_data.get("type"))
+            entity_subtype = (
+                EntitySubType(entity_data.get("sub_type"))
+                if entity_data.get("sub_type")
+                else None
+            )
             entity = await self.create_entity(
+                entity_type=entity_type,
                 entity_data=entity_data,
                 author_id=author_id,
                 change_description=change_description,
+                entity_subtype=entity_subtype,
             )
             entities.append(entity)
 

@@ -91,14 +91,14 @@ class MockLLMProvider(BaseLLMProvider):
             },
         }
 
-    async def generate_text(
+    async def _generate_text_impl(
         self,
         prompt: str,
         system_prompt: Optional[str] = None,
         max_tokens: Optional[int] = None,
         temperature: Optional[float] = None,
     ) -> str:
-        """Generate text using mock responses.
+        """Generate text using mock responses (implementation).
 
         Uses pattern matching to provide appropriate mock responses based
         on the prompt content.
@@ -133,13 +133,13 @@ class MockLLMProvider(BaseLLMProvider):
         # Default response
         return f"Mock response for: {prompt[:50]}..."
 
-    async def extract_structured_data(
+    async def _extract_structured_data_impl(
         self,
         text: str,
         schema: Dict[str, Any],
         instructions: str,
     ) -> Dict[str, Any]:
-        """Extract structured data using mock extraction.
+        """Extract structured data using mock extraction (implementation).
 
         Uses pattern matching to extract common entity information.
 
@@ -181,43 +181,6 @@ class MockLLMProvider(BaseLLMProvider):
             "position": "Unknown",
         }
 
-    async def translate(
-        self,
-        text: str,
-        source_lang: str,
-        target_lang: str,
-    ) -> str:
-        """Translate text using mock translations.
-
-        Uses a lookup table for common translations.
-
-        Args:
-            text: Text to translate
-            source_lang: Source language code
-            target_lang: Target language code
-
-        Returns:
-            Mock translated text
-
-        Examples:
-            >>> provider = MockLLMProvider()
-            >>> translation = await provider.translate(
-            ...     text="राम चन्द्र पौडेल",
-            ...     source_lang="ne",
-            ...     target_lang="en"
-            ... )
-            >>> print(translation)
-            'Ram Chandra Poudel'
-        """
-        logger.debug(f"Mock translate called: {source_lang} -> {target_lang}")
-
-        # Check translation templates
-        if text in self.response_templates["translations"]:
-            return self.response_templates["translations"][text]
-
-        # Default: return text with language indicator
-        return f"[{target_lang}] {text}"
-
     def _handle_translation(self, prompt: str) -> str:
         """Handle translation requests in prompts.
 
@@ -227,12 +190,26 @@ class MockLLMProvider(BaseLLMProvider):
         Returns:
             Translated text
         """
-        # Extract text after "translate:" or similar
-        text_to_translate = prompt.split(":")[-1].strip()
+        # Extract text between "Text to translate:" and "Translation:"
+        if "Text to translate:" in prompt:
+            parts = prompt.split("Text to translate:")
+            if len(parts) > 1:
+                text_part = parts[1].split("Translation:")[0].strip()
+                text_to_translate = text_part.strip()
+            else:
+                text_to_translate = prompt.split(":")[-1].strip()
+        else:
+            # Fallback: extract text after last colon
+            text_to_translate = prompt.split(":")[-1].strip()
 
         # Check if it's in our templates
         if text_to_translate in self.response_templates["translations"]:
             return self.response_templates["translations"][text_to_translate]
+
+        # Check for partial matches in templates
+        for key, value in self.response_templates["translations"].items():
+            if key in text_to_translate or text_to_translate in key:
+                return value
 
         # Default translation
         return f"Translated: {text_to_translate}"

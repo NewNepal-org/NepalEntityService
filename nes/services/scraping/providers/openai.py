@@ -70,7 +70,7 @@ class OpenAIProvider(BaseLLMProvider):
             f"OpenAIProvider initialized: model={model_id}, max_tokens={max_tokens}, temperature={temperature}, top_p={top_p}"
         )
 
-    async def generate_text(
+    async def _generate_text_impl(
         self,
         prompt: str,
         system_prompt: Optional[str] = None,
@@ -108,7 +108,7 @@ class OpenAIProvider(BaseLLMProvider):
 
         return text
 
-    async def extract_structured_data(
+    async def _extract_structured_data_impl(
         self,
         text: str,
         schema: Dict[str, Any],

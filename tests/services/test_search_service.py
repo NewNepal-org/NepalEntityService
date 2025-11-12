@@ -64,6 +64,7 @@ class TestSearchServiceEntityTextSearch:
 
         # Create test entities
         await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "ram-poudel",
                 "type": "person",
@@ -73,6 +74,7 @@ class TestSearchServiceEntityTextSearch:
             "Test",
         )
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "sher-deuba",
                 "type": "person",
@@ -100,6 +102,7 @@ class TestSearchServiceEntityTextSearch:
 
         # Create entity
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "test-person",
                 "type": "person",
@@ -130,6 +133,7 @@ class TestSearchServiceEntityTextSearch:
 
         # Create entity
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "test-person",
                 "type": "person",
@@ -161,6 +165,7 @@ class TestSearchServiceMultilingualSearch:
 
         # Create entity with Nepali name
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "ram-poudel",
                 "type": "person",
@@ -194,6 +199,7 @@ class TestSearchServiceMultilingualSearch:
 
         # Create entity with both English and Nepali names
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "test-person",
                 "type": "person",
@@ -233,6 +239,7 @@ class TestSearchServiceTypeFiltering:
 
         # Create entities of different types
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "person-1",
                 "type": "person",
@@ -242,6 +249,7 @@ class TestSearchServiceTypeFiltering:
             "Test",
         )
         await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "org-1",
                 "type": "organization",
@@ -250,6 +258,7 @@ class TestSearchServiceTypeFiltering:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
 
         # Search with type filter
@@ -270,6 +279,7 @@ class TestSearchServiceTypeFiltering:
 
         # Create organizations with different subtypes
         await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "party-1",
                 "type": "organization",
@@ -278,8 +288,10 @@ class TestSearchServiceTypeFiltering:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
         await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "gov-1",
                 "type": "organization",
@@ -288,6 +300,7 @@ class TestSearchServiceTypeFiltering:
             },
             "author:test",
             "Test",
+            EntitySubType.GOVERNMENT_BODY,
         )
 
         # Search with subtype filter
@@ -310,6 +323,7 @@ class TestSearchServiceTypeFiltering:
 
         # Create entities
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "ram-person",
                 "type": "person",
@@ -319,6 +333,7 @@ class TestSearchServiceTypeFiltering:
             "Test",
         )
         await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "ram-org",
                 "type": "organization",
@@ -327,6 +342,7 @@ class TestSearchServiceTypeFiltering:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
 
         # Search with type filter and query
@@ -353,6 +369,7 @@ class TestSearchServiceAttributeFiltering:
 
         # Create entities with different attributes
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "person-1",
                 "type": "person",
@@ -363,6 +380,7 @@ class TestSearchServiceAttributeFiltering:
             "Test",
         )
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "person-2",
                 "type": "person",
@@ -393,6 +411,7 @@ class TestSearchServiceAttributeFiltering:
 
         # Create entities with different attribute combinations
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "person-1",
                 "type": "person",
@@ -403,6 +422,7 @@ class TestSearchServiceAttributeFiltering:
             "Test",
         )
         await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "person-2",
                 "type": "person",
@@ -438,6 +458,7 @@ class TestSearchServicePagination:
         # Create multiple entities
         for i in range(5):
             await pub_service.create_entity(
+                EntityType.PERSON,
                 {
                     "slug": f"person-{i}",
                     "type": "person",
@@ -465,6 +486,7 @@ class TestSearchServicePagination:
         # Create multiple entities
         for i in range(5):
             await pub_service.create_entity(
+                EntityType.PERSON,
                 {
                     "slug": f"person-{i}",
                     "type": "person",
@@ -497,6 +519,7 @@ class TestSearchServicePagination:
         # Create multiple entities with "test" in name
         for i in range(5):
             await pub_service.create_entity(
+                EntityType.PERSON,
                 {
                     "slug": f"test-{i}",
                     "type": "person",
@@ -527,6 +550,7 @@ class TestSearchServiceRelationshipSearch:
 
         # Create entities
         person = await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "person-1",
                 "type": "person",
@@ -536,6 +560,7 @@ class TestSearchServiceRelationshipSearch:
             "Test",
         )
         org = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "org-1",
                 "type": "organization",
@@ -544,6 +569,7 @@ class TestSearchServiceRelationshipSearch:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
 
         # Create relationships of different types
@@ -574,6 +600,7 @@ class TestSearchServiceRelationshipSearch:
 
         # Create entities
         person1 = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "person-1",
                 "type": "person",
@@ -583,6 +610,7 @@ class TestSearchServiceRelationshipSearch:
             "Test",
         )
         person2 = await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "person-2",
                 "type": "person",
@@ -592,6 +620,7 @@ class TestSearchServiceRelationshipSearch:
             "Test",
         )
         org = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "org-1",
                 "type": "organization",
@@ -600,6 +629,7 @@ class TestSearchServiceRelationshipSearch:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
 
         # Create relationships
@@ -628,6 +658,7 @@ class TestSearchServiceRelationshipSearch:
 
         # Create entities
         person = await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "person-1",
                 "type": "person",
@@ -637,6 +668,7 @@ class TestSearchServiceRelationshipSearch:
             "Test",
         )
         org1 = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "org-1",
                 "type": "organization",
@@ -645,8 +677,10 @@ class TestSearchServiceRelationshipSearch:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
         org2 = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "org-2",
                 "type": "organization",
@@ -655,6 +689,7 @@ class TestSearchServiceRelationshipSearch:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
 
         # Create relationships
@@ -687,6 +722,7 @@ class TestSearchServiceTemporalFiltering:
 
         # Create entities
         person = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "person-1",
                 "type": "person",
@@ -696,6 +732,7 @@ class TestSearchServiceTemporalFiltering:
             "Test",
         )
         org = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "org-1",
                 "type": "organization",
@@ -704,6 +741,7 @@ class TestSearchServiceTemporalFiltering:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
 
         # Create relationships with different date ranges
@@ -745,6 +783,7 @@ class TestSearchServiceTemporalFiltering:
 
         # Create entities
         person = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "person-1",
                 "type": "person",
@@ -754,6 +793,7 @@ class TestSearchServiceTemporalFiltering:
             "Test",
         )
         org = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "org-1",
                 "type": "organization",
@@ -762,6 +802,7 @@ class TestSearchServiceTemporalFiltering:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
 
         # Create relationships - one ended, one active
@@ -808,6 +849,7 @@ class TestSearchServiceVersionRetrieval:
 
         # Create and update entity
         entity = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "test-person",
                 "type": "person",
@@ -843,6 +885,7 @@ class TestSearchServiceVersionRetrieval:
 
         # Create entities and relationship
         person = await pub_service.create_entity(
+            EntityType.PERSON,
             {
                 "slug": "person-1",
                 "type": "person",
@@ -852,6 +895,7 @@ class TestSearchServiceVersionRetrieval:
             "Test",
         )
         org = await pub_service.create_entity(
+            EntityType.ORGANIZATION,
             {
                 "slug": "org-1",
                 "type": "organization",
@@ -860,6 +904,7 @@ class TestSearchServiceVersionRetrieval:
             },
             "author:test",
             "Test",
+            EntitySubType.POLITICAL_PARTY,
         )
 
         relationship = await pub_service.create_relationship(

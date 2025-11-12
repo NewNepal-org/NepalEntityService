@@ -1,14 +1,14 @@
 """
 Migration: {prefix}-{name}
 Description: [TODO: Describe what this migration does]
-Author: [TODO: Your email]
+Author: [TODO: Your name]
 Date: {date}
 """
 
 from nes.services.migration.context import MigrationContext
 
-# Migration metadata (used for Git commit message)
-AUTHOR = "[TODO: Your email]"
+# Migration metadata
+AUTHOR = "[TODO: Your name]"
 DATE = "{date}"
 DESCRIPTION = "[TODO: Describe what this migration does]"
 

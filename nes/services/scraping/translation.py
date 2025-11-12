@@ -7,30 +7,27 @@ This module provides translation utilities for converting text between Nepali
 - Transliteration handling (Devanagari ↔ Roman)
 - Automatic language detection
 
-The component supports multiple translation backends including LLM-based
-translation and external translation APIs.
-
 Architecture:
-    - LanguageDetector: Identifies Nepali vs English based on character ranges
-    - Transliterator: Converts between Devanagari and Roman scripts
-    - Translator: Main translation service with caching and fallback
+    - LanguageDetector: Fast script detection using Unicode ranges
+    - Translator: LLM-powered translation and transliteration service
+    - BaseLLMProvider: Handles all LLM operations with automatic caching
 
 Performance Optimizations:
-    - Translation caching for common phrases
-    - Character-range based language detection (fast)
-    - Fallback to transliteration when translation unavailable
-    - Efficient Unicode range checks for Devanagari
+    - Automatic caching at the LLM provider level
+    - Fast character-range based language detection (no LLM call)
+    - Efficient Unicode range checks for Devanagari script detection
 
-Cultural Context:
-    - Proper handling of Nepali names and titles
+LLM Integration:
+    - All translation and transliteration done via LLM generate_text()
+    - Context-aware, high-quality results
+    - Proper handling of Nepali names, titles, and cultural context
     - Support for mixed-script text (common in Nepal)
-    - Phonetic transliteration for proper nouns
-    - Context-aware translation for political terms
 """
 
 import logging
-import re
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
+
+from nes.core.utils.devanagari import contains_devanagari
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -41,14 +38,7 @@ class LanguageDetector:
 
     Uses character range analysis to detect Devanagari script (Nepali)
     versus Latin script (English).
-
-    Attributes:
-        devanagari_range: Unicode range for Devanagari script (0x0900-0x097F)
     """
-
-    def __init__(self):
-        """Initialize the language detector."""
-        self.devanagari_range = (0x0900, 0x097F)
 
     def detect(self, text: str) -> str:
         """Detect the language of the given text.
@@ -73,11 +63,7 @@ class LanguageDetector:
             return "en"  # Default to English for empty text
 
         # Count Devanagari characters
-        devanagari_count = sum(
-            1
-            for c in text
-            if self.devanagari_range[0] <= ord(c) <= self.devanagari_range[1]
-        )
+        devanagari_count = sum(1 for c in text if contains_devanagari(c))
 
         # Count Latin characters (basic ASCII letters)
         latin_count = sum(1 for c in text if c.isalpha() and ord(c) < 128)
@@ -97,9 +83,7 @@ class LanguageDetector:
         Returns:
             True if text contains any Devanagari characters
         """
-        return any(
-            self.devanagari_range[0] <= ord(c) <= self.devanagari_range[1] for c in text
-        )
+        return contains_devanagari(text)
 
     def is_latin(self, text: str) -> bool:
         """Check if text contains Latin characters.
@@ -113,189 +97,36 @@ class LanguageDetector:
         return any(c.isalpha() and ord(c) < 128 for c in text)
 
 
-class Transliterator:
-    """Transliterator for converting between Devanagari and Latin scripts.
-
-    Provides phonetic transliteration between Nepali (Devanagari) and
-    romanized (Latin) representations.
-
-    Attributes:
-        devanagari_to_latin: Mapping from Devanagari to Latin characters
-        latin_to_devanagari: Mapping from Latin to Devanagari characters
-    """
-
-    def __init__(self):
-        """Initialize the transliterator with character mappings."""
-        # Basic Devanagari to Latin mapping (simplified)
-        # Real implementation would use a comprehensive mapping
-        self.devanagari_to_latin = {
-            # Vowels
-            "अ": "a",
-            "आ": "aa",
-            "इ": "i",
-            "ई": "ii",
-            "उ": "u",
-            "ऊ": "uu",
-            "ऋ": "ri",
-            "ए": "e",
-            "ऐ": "ai",
-            "ओ": "o",
-            "औ": "au",
-            # Consonants
-            "क": "ka",
-            "ख": "kha",
-            "ग": "ga",
-            "घ": "gha",
-            "ङ": "nga",
-            "च": "cha",
-            "छ": "chha",
-            "ज": "ja",
-            "झ": "jha",
-            "ञ": "nya",
-            "ट": "ta",
-            "ठ": "tha",
-            "ड": "da",
-            "ढ": "dha",
-            "ण": "na",
-            "त": "ta",
-            "थ": "tha",
-            "द": "da",
-            "ध": "dha",
-            "न": "na",
-            "प": "pa",
-            "फ": "pha",
-            "ब": "ba",
-            "भ": "bha",
-            "म": "ma",
-            "य": "ya",
-            "र": "ra",
-            "ल": "la",
-            "व": "wa",
-            "श": "sha",
-            "ष": "sha",
-            "स": "sa",
-            "ह": "ha",
-            # Vowel signs (matras)
-            "ा": "aa",
-            "ि": "i",
-            "ी": "ii",
-            "ु": "u",
-            "ू": "uu",
-            "ृ": "ri",
-            "े": "e",
-            "ै": "ai",
-            "ो": "o",
-            "ौ": "au",
-            # Special characters
-            "्": "",
-            "़": "",
-            "ं": "n",
-            "ः": "h",
-            "ँ": "n",
-        }
-
-        # Build reverse mapping for Latin to Devanagari
-        # This is simplified - real implementation would handle ambiguities
-        self.latin_to_devanagari = {}
-        for dev, lat in self.devanagari_to_latin.items():
-            if lat and lat not in self.latin_to_devanagari:
-                self.latin_to_devanagari[lat] = dev
-
-    def devanagari_to_roman(self, text: str) -> str:
-        """Transliterate Devanagari text to Roman script.
-
-        Args:
-            text: Devanagari text to transliterate
-
-        Returns:
-            Romanized text
-
-        Examples:
-            >>> trans = Transliterator()
-            >>> trans.devanagari_to_roman("राम")
-            'raam'
-        """
-        result = []
-
-        for char in text:
-            if char in self.devanagari_to_latin:
-                result.append(self.devanagari_to_latin[char])
-            else:
-                # Keep non-Devanagari characters as-is
-                result.append(char)
-
-        return "".join(result)
-
-    def roman_to_devanagari(self, text: str) -> str:
-        """Transliterate Roman text to Devanagari script.
-
-        Args:
-            text: Roman text to transliterate
-
-        Returns:
-            Devanagari text
-
-        Examples:
-            >>> trans = Transliterator()
-            >>> trans.roman_to_devanagari("raam")
-            'राम'
-        """
-        # This is a simplified implementation
-        # Real implementation would use proper phonetic rules
-        result = []
-        i = 0
-        text_lower = text.lower()
-
-        while i < len(text_lower):
-            # Try to match longest possible sequence
-            matched = False
-            for length in range(min(4, len(text_lower) - i), 0, -1):
-                substr = text_lower[i : i + length]
-                if substr in self.latin_to_devanagari:
-                    result.append(self.latin_to_devanagari[substr])
-                    i += length
-                    matched = True
-                    break
-
-            if not matched:
-                # Keep non-transliteratable characters as-is
-                result.append(text[i])
-                i += 1
-
-        return "".join(result)
-
-
 class Translator:
     """Translator for converting text between Nepali and English.
 
-    Provides translation capabilities using LLM or external translation APIs.
+    Provides translation capabilities using LLM providers.
     Supports both translation and transliteration.
 
     Attributes:
-        llm_provider: The LLM provider to use for translation
-        llm_config: Configuration for the LLM provider
+        llm_provider: The LLM provider instance to use for translation
         language_detector: Language detector instance
-        transliterator: Transliterator instance
     """
 
     def __init__(
         self,
-        llm_provider: str = "mock",
-        llm_config: Optional[Dict[str, Any]] = None,
+        llm_provider: "BaseLLMProvider",
     ):
         """Initialize the translator.
 
         Args:
-            llm_provider: The LLM provider to use (default: "mock")
-            llm_config: Configuration dictionary for the LLM provider
+            llm_provider: The LLM provider instance to use (required)
         """
-        self.llm_provider = llm_provider
-        self.llm_config = llm_config or {}
-        self.language_detector = LanguageDetector()
-        self.transliterator = Transliterator()
+        from .providers.base import BaseLLMProvider
 
-        # Translation cache for common phrases
-        self._translation_cache: Dict[Tuple[str, str, str], str] = {}
+        if not isinstance(llm_provider, BaseLLMProvider):
+            raise TypeError(
+                f"llm_provider must be an instance of BaseLLMProvider, "
+                f"got {type(llm_provider).__name__}"
+            )
+
+        self.llm_provider = llm_provider
+        self.language_detector = LanguageDetector()
 
     async def translate(
         self,
@@ -336,46 +167,15 @@ class Translator:
         if not source_lang:
             detected_lang = self.language_detector.detect(text)
 
-        # Check cache
-        cache_key = (text, detected_lang, target_lang)
-        if cache_key in self._translation_cache:
-            cached_translation = self._translation_cache[cache_key]
-            result = {
-                "translated_text": cached_translation,
-                "source_language": detected_lang,
-                "target_language": target_lang,
-            }
-            if not source_lang:
-                result["detected_language"] = detected_lang
-
-            # Add transliteration if applicable
-            if detected_lang == "ne" and target_lang == "en":
-                result["transliteration"] = self.transliterator.devanagari_to_roman(
-                    text
-                )
-            elif detected_lang == "en" and target_lang == "ne":
-                result["transliteration"] = self.transliterator.roman_to_devanagari(
-                    text
-                )
-
-            return result
-
         # Perform translation
         if detected_lang == target_lang:
             # Same language, no translation needed
             translated = text
-        elif detected_lang == "ne" and target_lang == "en":
-            # Nepali to English
-            translated = await self._translate_nepali_to_english(text)
-        elif detected_lang == "en" and target_lang == "ne":
-            # English to Nepali
-            translated = await self._translate_english_to_nepali(text)
         else:
-            # Unsupported language pair
-            translated = text
-
-        # Cache the translation
-        self._translation_cache[cache_key] = translated
+            # Use LLM provider's generate_text for translation (caching handled at provider level)
+            translated = await self._translate_text(
+                text=text, source_lang=detected_lang, target_lang=target_lang
+            )
 
         # Build result
         result = {
@@ -388,123 +188,24 @@ class Translator:
         if not source_lang:
             result["detected_language"] = detected_lang
 
-        # Add transliteration if applicable
+        # Add transliteration if applicable (using LLM)
         if detected_lang == "ne" and target_lang == "en":
-            result["transliteration"] = self.transliterator.devanagari_to_roman(text)
+            result["transliteration"] = await self.transliterate_text(
+                text, direction="to_roman"
+            )
         elif detected_lang == "en" and target_lang == "ne":
-            result["transliteration"] = self.transliterator.roman_to_devanagari(text)
+            result["transliteration"] = await self.transliterate_text(
+                text, direction="to_devanagari"
+            )
 
         return result
 
-    async def _translate_nepali_to_english(self, text: str) -> str:
-        """Translate Nepali text to English.
-
-        Uses LLM or translation API for translation. Falls back to
-        transliteration for names.
-
-        Args:
-            text: Nepali text to translate
-
-        Returns:
-            English translation
-        """
-        if self.llm_provider == "mock":
-            # Mock translation for testing
-            return self._mock_translate_nepali_to_english(text)
-
-        # Real implementation would use LLM or translation API
-        # For now, use mock implementation
-        return self._mock_translate_nepali_to_english(text)
-
-    async def _translate_english_to_nepali(self, text: str) -> str:
-        """Translate English text to Nepali.
-
-        Uses LLM or translation API for translation. Falls back to
-        transliteration for names.
-
-        Args:
-            text: English text to translate
-
-        Returns:
-            Nepali translation
-        """
-        if self.llm_provider == "mock":
-            # Mock translation for testing
-            return self._mock_translate_english_to_nepali(text)
-
-        # Real implementation would use LLM or translation API
-        # For now, use mock implementation
-        return self._mock_translate_english_to_nepali(text)
-
-    def _mock_translate_nepali_to_english(self, text: str) -> str:
-        """Mock Nepali to English translation for testing.
-
-        Args:
-            text: Nepali text
-
-        Returns:
-            Mock English translation
-        """
-        # Common Nepali phrases and names
-        translations = {
-            "राम चन्द्र पौडेल": "Ram Chandra Poudel",
-            "नेपाली कांग्रेस": "Nepali Congress",
-            "नेता": "leader",
-            "हुन्": "is",
-            "का": "of",
-            "राम चन्द्र पौडेल नेपाली कांग्रेसका नेता हुन्।": "Ram Chandra Poudel is a leader of Nepali Congress.",
-        }
-
-        # Check for exact match
-        if text in translations:
-            return translations[text]
-
-        # Fall back to transliteration for unknown text
-        return self.transliterator.devanagari_to_roman(text).title()
-
-    def _mock_translate_english_to_nepali(self, text: str) -> str:
-        """Mock English to Nepali translation for testing.
-
-        Args:
-            text: English text
-
-        Returns:
-            Mock Nepali translation
-        """
-        # Common English phrases and names
-        translations = {
-            "Ram Chandra Poudel": "राम चन्द्र पौडेल",
-            "Nepali Congress": "नेपाली कांग्रेस",
-            "leader": "नेता",
-            "is": "हुन्",
-            "of": "का",
-            "Ram Chandra Poudel is a leader of Nepali Congress.": "राम चन्द्र पौडेल नेपाली कांग्रेसका नेता हुन्।",
-        }
-
-        # Check for exact match
-        if text in translations:
-            return translations[text]
-
-        # Fall back to transliteration for unknown text
-        return self.transliterator.roman_to_devanagari(text.lower())
-
-    def detect_language(self, text: str) -> str:
-        """Detect the language of the given text.
-
-        Args:
-            text: The text to analyze
-
-        Returns:
-            Language code: "ne" for Nepali, "en" for English
-        """
-        return self.language_detector.detect(text)
-
-    def transliterate(
+    async def transliterate_text(
         self,
         text: str,
         direction: str = "auto",
     ) -> str:
-        """Transliterate text between Devanagari and Roman scripts.
+        """Transliterate text between Devanagari and Roman scripts using LLM.
 
         Args:
             text: The text to transliterate
@@ -518,14 +219,88 @@ class Translator:
         """
         if direction == "auto":
             # Auto-detect direction
-            if self.language_detector.is_devanagari(text):
+            if contains_devanagari(text):
                 direction = "to_roman"
             else:
                 direction = "to_devanagari"
 
+        # Use LLM generate_text for transliteration
         if direction == "to_roman":
-            return self.transliterator.devanagari_to_roman(text)
+            prompt = f"""Transliterate the following Nepali text from Devanagari script to Roman script.
+Provide ONLY the transliteration, without any explanations.
+
+Text: {text}
+
+Transliteration:"""
+            result = await self.llm_provider.generate_text(
+                prompt=prompt,
+                system_prompt="You are a transliteration expert for Nepali language.",
+                temperature=0.3,
+            )
+            return result.strip()
         elif direction == "to_devanagari":
-            return self.transliterator.roman_to_devanagari(text)
+            prompt = f"""Transliterate the following text from Roman script to Devanagari (Nepali) script.
+Provide ONLY the transliteration, without any explanations.
+
+Text: {text}
+
+Transliteration:"""
+            result = await self.llm_provider.generate_text(
+                prompt=prompt,
+                system_prompt="You are a transliteration expert for Nepali language.",
+                temperature=0.3,
+            )
+            return result.strip()
         else:
             return text
+
+    async def _translate_text(
+        self,
+        text: str,
+        source_lang: str,
+        target_lang: str,
+    ) -> str:
+        """Translate text between languages using LLM.
+
+        Args:
+            text: Text to translate
+            source_lang: Source language code
+            target_lang: Target language code
+
+        Returns:
+            Translated text
+        """
+        lang_names = {
+            "en": "English",
+            "ne": "Nepali",
+        }
+
+        source_name = lang_names.get(source_lang, source_lang)
+        target_name = lang_names.get(target_lang, target_lang)
+
+        prompt = f"""Translate the following text from {source_name} to {target_name}.
+Provide ONLY the translation, without any explanations or additional text.
+
+Text to translate:
+{text}
+
+Translation:"""
+
+        translation = await self.llm_provider.generate_text(
+            prompt=prompt,
+            system_prompt=f"You are a professional translator specializing in {source_name} to {target_name} translation.",
+            temperature=0.3,
+        )
+
+        return translation.strip()
+
+    def detect_language(self, text: str) -> str:
+        """Detect the language of the given text.
+
+        Args:
+            text: The text to analyze
+
+        Returns:
+            Language code: "ne" for Nepali, "en" for English
+        """
+        return self.language_detector.detect(text)

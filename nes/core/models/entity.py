@@ -41,6 +41,9 @@ class ExternalIdentifier(BaseModel):
     """A normalized external identifier reference."""
 
     scheme: IdentifierScheme = Field(..., description="Type of external identifier")
+    name: Optional[LangText] = Field(
+        None, description="Name of the external identifier"
+    )
     value: str = Field(..., min_length=1, description="Identifier value")
     url: Optional[AnyUrl] = Field(None, description="URL to the external resource")
 

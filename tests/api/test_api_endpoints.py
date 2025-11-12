@@ -41,10 +41,12 @@ async def test_database(tmp_path):
 
     # Create some test entities
     # Politicians (Person entities don't have subtypes)
+    from nes.core.models.entity import EntitySubType, EntityType
+
     ram_poudel = get_politician_entity("ram-chandra-poudel")
-    # Remove sub_type as Person doesn't support it
     ram_poudel.pop("sub_type", None)
     await pub_service.create_entity(
+        entity_type=EntityType.PERSON,
         entity_data=ram_poudel,
         author_id="author:test-setup",
         change_description="Test data setup",
@@ -53,6 +55,7 @@ async def test_database(tmp_path):
     sher_deuba = get_politician_entity("sher-bahadur-deuba")
     sher_deuba.pop("sub_type", None)
     await pub_service.create_entity(
+        entity_type=EntityType.PERSON,
         entity_data=sher_deuba,
         author_id="author:test-setup",
         change_description="Test data setup",
@@ -61,6 +64,7 @@ async def test_database(tmp_path):
     kp_oli = get_politician_entity("khadga-prasad-oli")
     kp_oli.pop("sub_type", None)
     await pub_service.create_entity(
+        entity_type=EntityType.PERSON,
         entity_data=kp_oli,
         author_id="author:test-setup",
         change_description="Test data setup",
@@ -69,16 +73,20 @@ async def test_database(tmp_path):
     # Political parties
     nepali_congress = get_party_entity("nepali-congress")
     await pub_service.create_entity(
+        entity_type=EntityType.ORGANIZATION,
         entity_data=nepali_congress,
         author_id="author:test-setup",
         change_description="Test data setup",
+        entity_subtype=EntitySubType.POLITICAL_PARTY,
     )
 
     cpn_uml = get_party_entity("cpn-uml")
     await pub_service.create_entity(
+        entity_type=EntityType.ORGANIZATION,
         entity_data=cpn_uml,
         author_id="author:test-setup",
         change_description="Test data setup",
+        entity_subtype=EntitySubType.POLITICAL_PARTY,
     )
 
     # Create relationships

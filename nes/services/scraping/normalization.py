@@ -700,13 +700,13 @@ class DataNormalizer:
 
     def __init__(
         self,
-        llm_provider: str = "mock",
+        llm_provider: Optional[str] = None,
         llm_config: Optional[Dict[str, Any]] = None,
     ):
         """Initialize the data normalizer.
 
         Args:
-            llm_provider: The LLM provider to use (default: "mock")
+            llm_provider: The LLM provider to use (optional, for future LLM-based extraction)
             llm_config: Configuration dictionary for the LLM provider
         """
         self.llm_provider = llm_provider

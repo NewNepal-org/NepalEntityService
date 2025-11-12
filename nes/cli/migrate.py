@@ -407,7 +407,7 @@ def run(
     type=click.Path(file_okay=False, dir_okay=True),
     help="Path to migrations directory",
 )
-@click.option("--author", prompt="Author email", help="Author email address")
+@click.option("--author", prompt="Author name", help="Author name address")
 def create(name: str, migrations_dir: str, author: str):
     """Create a new migration folder from template.
 
@@ -483,7 +483,7 @@ def create(name: str, migrations_dir: str, author: str):
         migrate_template = migrate_template.replace("{prefix}", f"{next_prefix:03d}")
         migrate_template = migrate_template.replace("{name}", name)
         migrate_template = migrate_template.replace("{date}", current_date)
-        migrate_template = migrate_template.replace("[TODO: Your email]", author)
+        migrate_template = migrate_template.replace("[TODO: Your name]", author)
 
         migrate_path = migration_folder / "migrate.py"
         with open(migrate_path, "w", encoding="utf-8") as f:

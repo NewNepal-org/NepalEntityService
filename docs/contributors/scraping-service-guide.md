@@ -352,14 +352,19 @@ cat data.json | nes scrape normalize --source wikipedia
 
 ```bash
 # Translate Nepali to English
-nes scrape translate "राम चन्द्र पौडेल" --target en
+nes translate --to en "राम चन्द्र पौडेल"
 
 # Translate English to Nepali
-nes scrape translate "Ram Chandra Poudel" --target ne
+nes translate --to ne "Ram Chandra Poudel"
 
 # With explicit source language
-nes scrape translate "राम चन्द्र पौडेल" --source ne --target en
+nes translate --from ne --to en "राम चन्द्र पौडेल"
+
+# Use different AWS region
+nes translate --region us-west-2 --to ne "Hello"
 ```
+
+For detailed CLI usage, see the [Translation Guide](../consumers/translation-guide.md).
 
 ### Search External Sources
 
