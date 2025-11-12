@@ -1,18 +1,3 @@
-"""Anthropic LLM Provider for the Scraping Service.
-
-This module integrates directly with Anthropic's API for Claude family models
-(Claude 3 Haiku, Sonnet, Opus, etc.) for text generation, extraction, and normalization.
-
-Features:
-    - Native Anthropic client with async support
-    - Token usage tracking
-    - Structured output parsing
-    - Error handling and fallback
-    - Compatible interface with BaseLLMProvider
-"""
-
-import asyncio
-import json
 import logging
 import os
 from typing import Any, Dict, Optional
@@ -23,12 +8,17 @@ logger = logging.getLogger(__name__)
 
 
 class AnthropicProvider(BaseLLMProvider):
-    """Anthropic Claude model provider."""
+    """Anthropic Claude model provider.
+
+    Environment variables:
+    - ANTHROPIC_API_KEY (required): The API key for Anthropic or compatible endpoint.
+    - ANTHROPIC_BASE_URL (optional): Custom API endpoint base URL (for self-hosted or proxy setups).
+    - ANTHROPIC_MODEL_ID (optional): Overrides the default model_id (e.g., 'claude-3-5-haiku').
+    """
 
     def __init__(
         self,
         model_id: str = "claude‑sonnet‑4‑5‑20250929",
-        # model_id: str = "kimi-k2-turbo-preview",
         max_tokens: int = 2048,
         temperature: float = 0.7,
         enable_cache: bool = True,

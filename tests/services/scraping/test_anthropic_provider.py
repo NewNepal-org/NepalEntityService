@@ -6,6 +6,7 @@ text generation, structured extraction, and translation tasks.
 
 import json
 import sys
+from types import SimpleNamespace
 from unittest.mock import AsyncMock, MagicMock, Mock, patch
 
 import pytest
@@ -31,15 +32,15 @@ class TestAnthropicProviderInitialization:
 
         provider = AnthropicProvider()
         assert provider is not None
-        assert provider.model_id == "claude-3-5-sonnet-20240620"
+        assert provider.model_id == "claude‑sonnet‑4‑5‑20250929"
         assert provider.model_family == "claude"
 
     def test_provider_initialization_invalid_model(self):
-        """Test invalid model raises ValueError."""
+        """Test invalid model does not raise error but assigns model_id."""
         from nes.services.scraping.providers import AnthropicProvider
 
-        with pytest.raises(ValueError, match="Unsupported model"):
-            AnthropicProvider(model_id="invalid-model-id")
+        provider = AnthropicProvider(model_id="invalid-model-id")
+        assert provider.model_id == "invalid-model-id"
 
 
 class TestAnthropicProviderTextGeneration:
@@ -110,12 +111,14 @@ class TestAnthropicProviderStructuredExtraction:
         from nes.services.scraping.providers import AnthropicProvider
 
         json_response = {"name": "Pushpa Kamal Dahal", "position": "Prime Minister"}
-        mock_response = Mock()
+        mock_response = AsyncMock()
         mock_response.content = [
-            Mock(type="output_text", text=json.dumps(json_response))
+            SimpleNamespace(
+                type="tool_use", name="structured_extraction", input=json_response
+            )
         ]
         mock_response.usage = Mock(input_tokens=20, output_tokens=10)
-        mock_async_client.messages.create.return_value = mock_response
+        mock_async_client.messages.create = AsyncMock(return_value=mock_response)
 
         provider = AnthropicProvider()
         schema = {

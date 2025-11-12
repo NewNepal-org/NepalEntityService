@@ -16,6 +16,8 @@ Environment Variables:
     GOOGLE_APPLICATION_CREDENTIALS: Path to Google service account key file
     OPENAI_API_KEY: OpenAI API key (required for openai provider)
     OPENAI_BASE_URL: Custom OpenAI API endpoint (optional)
+    ANTHROPIC_API_KEY: Anthropic API key (required for Anthropic provider)
+    ANTHROPIC_BASE_URL: Optional custom Anthropic API endpoint
 """
 
 import asyncio
@@ -76,10 +78,16 @@ def get_translation_service(provider_name, model_id=None, region_name=None, **kw
         provider = OpenAIProvider(
             model_id=openai_model_id,
         )
+    elif provider_name == "anthropic":
+        from nes.services.scraping.providers import AnthropicProvider
+
+        anthropic_model_id = model_id or "claude-sonnet-4-5-20250929"
+
+        provider = AnthropicProvider(model_id=anthropic_model_id)
     else:
         raise ValueError(
             f"Unsupported provider: {provider_name}. "
-            f"Supported providers: 'aws', 'google', 'openai'"
+            f"Supported providers: 'aws', 'google', 'openai', 'anthropic'"
         )
 
     service = ScrapingService(llm_provider=provider)
@@ -103,7 +111,7 @@ def get_translation_service(provider_name, model_id=None, region_name=None, **kw
 )
 @click.option(
     "--provider",
-    type=click.Choice(["aws", "google", "openai"], case_sensitive=False),
+    type=click.Choice(["aws", "google", "openai", "anthropic"], case_sensitive=False),
     default="aws",
     help="LLM provider to use",
 )
