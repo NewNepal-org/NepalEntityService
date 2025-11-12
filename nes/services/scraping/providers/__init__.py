@@ -41,6 +41,7 @@ Usage:
     >>> response = await provider.generate_text(prompt="Translate: राम चन्द्र पौडेल")
 """
 
+from .anthropic import AnthropicProvider
 from .aws import AWSBedrockProvider
 from .base import BaseLLMProvider
 from .google import GoogleVertexAIProvider
@@ -52,5 +53,6 @@ __all__ = [
     "MockLLMProvider",
     "AWSBedrockProvider",
     "OpenAIProvider",
+    "AnthropicProvider",
     "GoogleVertexAIProvider",
 ]
