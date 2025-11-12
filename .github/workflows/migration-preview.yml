@@ -41,7 +41,7 @@ jobs:
         continue-on-error: true
         run: |
           export NES_DB_PATH=./nes-db
-          nes migration run --all 2>&1 | tee migration_output.txt
+          echo y | nes migration run --all 2>&1 | tee migration_output.txt
           echo "exit_code=$?" >> $GITHUB_OUTPUT
       
       - name: Post results

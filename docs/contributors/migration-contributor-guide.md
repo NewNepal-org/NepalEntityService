@@ -174,7 +174,7 @@ Author: contributor@example.com
 Date: 2024-03-15
 """
 
-# Migration metadata (used for Git commit messages)
+# Migration metadata
 AUTHOR = "contributor@example.com"
 DATE = "2024-03-15"
 DESCRIPTION = "Import current cabinet ministers from official records"

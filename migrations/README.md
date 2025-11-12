@@ -33,7 +33,7 @@ Author: your-email@example.com
 Date: YYYY-MM-DD
 """
 
-# Migration metadata (used for Git commit message)
+# Migration metadata
 AUTHOR = "your-email@example.com"
 DATE = "YYYY-MM-DD"
 DESCRIPTION = "Brief description of what this migration does"

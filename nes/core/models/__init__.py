@@ -22,7 +22,13 @@ from .entity import (
     IdentifierScheme,
 )
 from .location import ADMINISTRATIVE_LEVELS, Location, LocationType
-from .organization import GovernmentBody, GovernmentType, Organization, PoliticalParty
+from .organization import (
+    GovernmentBody,
+    GovernmentType,
+    Organization,
+    PartySymbol,
+    PoliticalParty,
+)
 from .person import (
     Candidacy,
     Education,
@@ -68,6 +74,7 @@ __all__ = [
     # Organization models
     "Organization",
     "PoliticalParty",
+    "PartySymbol",
     "GovernmentBody",
     "GovernmentType",
     # Location models

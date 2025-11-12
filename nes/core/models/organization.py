@@ -1,10 +1,12 @@
 """Organization-specific models for nes."""
 
+from datetime import date
 from enum import Enum
 from typing import Literal, Optional
 
-from pydantic import Field
+from pydantic import BaseModel, ConfigDict, Field
 
+from .base import Address, LangText
 from .entity import Entity, EntitySubType
 
 
@@ -26,13 +28,33 @@ class Organization(Entity):
     )
 
 
+class PartySymbol(BaseModel):
+    """Political party symbol."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    name: LangText = Field(..., description="Symbol name")
+
+
 class PoliticalParty(Organization):
-    """Political party organization."""
+    """Political party organization.
+
+    Note: party_chief is a temporary field for storing party leadership as text.
+    Use relationships to properly link party members and leadership roles.
+    """
 
     sub_type: Literal[EntitySubType.POLITICAL_PARTY] = Field(
         default=EntitySubType.POLITICAL_PARTY,
         description="Organization subtype, always political_party",
     )
+    address: Optional[Address] = Field(None, description="Party headquarters address")
+    party_chief: Optional[LangText] = Field(
+        None, description="Party chief or main official"
+    )
+    registration_date: Optional[date] = Field(
+        None, description="Party registration date"
+    )
+    symbol: Optional[PartySymbol] = Field(None, description="Party electoral symbol")
 
 
 class GovernmentBody(Organization):
