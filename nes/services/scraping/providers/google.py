@@ -145,7 +145,7 @@ class GoogleVertexAIProvider(BaseLLMProvider):
             await asyncio.sleep(self._min_request_interval - time_since_last)
         self._last_request_time = time.time()
 
-    async def _retry_with_backoff(self, func, *args, max_retries: int = 5, **kwargs):
+    async def _retry_with_backoff(self, func, *args, max_retries: int = 10, **kwargs):
         """Retry function with exponential backoff on rate limit errors.
 
         Args:

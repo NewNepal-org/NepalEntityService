@@ -37,7 +37,6 @@ from .person import (
     Person,
     PersonDetails,
     Position,
-    Symbol,
 )
 from .relationship import Relationship, RelationshipType
 from .version import Author, Version, VersionSummary, VersionType
