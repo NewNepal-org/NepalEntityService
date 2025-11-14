@@ -43,6 +43,12 @@ jobs:
           export NES_DB_PATH=./nes-db
           echo y | nes migration run --all 2>&1 | tee migration_output.txt
           echo "exit_code=$?" >> $GITHUB_OUTPUT
+
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v4
+        with:
+          name: migration-logs
+          path: nes-db/v2/migration-logs
       
       - name: Post results
         if: always()

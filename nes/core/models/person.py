@@ -4,7 +4,7 @@ from datetime import date
 from enum import Enum
 from typing import List, Literal, Optional
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import AnyUrl, BaseModel, ConfigDict, Field, field_validator
 
 from .base import Address, LangText
 from .entity import Entity
@@ -16,6 +16,28 @@ class Gender(str, Enum):
     MALE = "male"
     FEMALE = "female"
     OTHER = "other"
+
+
+class ElectionType(str, Enum):
+    """Election type enumeration."""
+
+    FEDERAL = "federal"
+    PROVINCIAL = "provincial"
+    LOCAL = "local"  # Municipal, etc. for mayor/deputy mayor
+    WARD = "ward"
+
+
+class ElectionPosition(str, Enum):
+    """Election position enumeration."""
+
+    FEDERAL_PARLIAMENT = "federal_parliament"
+    PROVINCIAL_ASSEMBLY = "provincial_assembly"
+    MAYOR = "mayor"
+    DEPUTY_MAYOR = "deputy_mayor"
+    WARD_CHAIRPERSON = "ward_chairperson"
+    WARD_MEMBER = "ward_member"
+    DALIT_FEMALE_MEMBER = "dalit_female_member"
+    FEMALE_MEMBER = "female_member"
 
 
 class Education(BaseModel):
@@ -58,8 +80,11 @@ class PersonDetails(BaseModel):
     birth_date: Optional[str] = Field(  # "2012", "2012-01", "2012-01-01"
         None, description="Birth date (may be partial, e.g., year only)"
     )
-    gender: Optional[Gender] = Field(None, description="Gender")
     birth_place: Optional[Address] = Field(None, description="Place of birth")
+    citizenship_place: Optional[Address] = Field(
+        None, description="Citizenship place, usually district"
+    )
+    gender: Optional[Gender] = Field(None, description="Gender")
     address: Optional[Address] = Field(None, description="Current address")
     father_name: Optional[LangText] = Field(None, description="Father's name")
     mother_name: Optional[LangText] = Field(None, description="Mother's name")
@@ -73,13 +98,16 @@ class PersonDetails(BaseModel):
     )
 
 
-class Symbol(BaseModel):
-    """Election symbol."""
+class ElectionSymbol(BaseModel):
+    """Election symbol information."""
 
     model_config = ConfigDict(extra="forbid")
 
-    name: LangText = Field(..., description="Symbol name")
-    id: str = Field(..., description="Symbol identifier")
+    symbol_name: LangText = Field(..., description="Symbol name")
+    nec_id: Optional[int] = Field(
+        ..., description="Nepal Election Commission symbol ID"
+    )
+    url: Optional[AnyUrl] = Field(None, description="URL to symbol image")
 
 
 class Candidacy(BaseModel):
@@ -87,16 +115,28 @@ class Candidacy(BaseModel):
 
     model_config = ConfigDict(extra="forbid")
 
-    candidate_id: str = Field(..., description="Candidate entity ID")
     election_year: int = Field(..., description="Election year")
-    symbol: Symbol = Field(..., description="Election symbol")
-    serial_no: str = Field(..., description="Serial number")
+    election_type: ElectionType = Field(
+        ..., description="Election type: federal, provincial, local"
+    )
+    constituency_id: str = Field(
+        ...,
+        description="The full constituency mapping where the election took place. For federal/provincial elections, it will be an election constituency. For local elections, it will be the local area (village/municipality/etc). For ward elections, it will be the ward ID.",
+    )
+    pa_subdivision: Optional[str] = Field(
+        None, description="Provincial Assembly Election Subdivision (A or B)."
+    )
+    position: Optional[ElectionPosition] = Field(
+        None, description="Position contested in the election."
+    )
+
+    candidate_id: int = Field(..., description="Nepal Election Commission candidate ID")
     party_id: Optional[str] = Field(None, description="Party entity ID")
-    remarks: Optional[LangText] = Field(None, description="Additional remarks")
     votes_received: Optional[int] = Field(None, description="Number of votes received")
     elected: Optional[bool] = Field(None, description="Whether candidate was elected")
+    symbol: Optional[ElectionSymbol] = Field(None, description="Election symbol used")
 
-    @field_validator("candidate_id", "party_id")
+    @field_validator("party_id", "constituency_id")
     @classmethod
     def validate_entity_ids(cls, v: Optional[str]) -> Optional[str]:
         from nes.core.identifiers.validators import is_valid_entity_id

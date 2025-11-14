@@ -96,7 +96,7 @@ async def migrate(context: MigrationContext) -> None:
 
         if not district:
             context.log(f"WARNING: District not found: {district_name_ne}")
-            continue
+            raise
 
         del district_map[district.slug]
 

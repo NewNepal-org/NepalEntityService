@@ -15,12 +15,13 @@ from nes.core.models.base import (
 from nes.core.models.person import (
     Candidacy,
     Education,
+    ElectionSymbol,
+    ElectionType,
     ElectoralDetails,
     Gender,
     Person,
     PersonDetails,
     Position,
-    Symbol,
 )
 from nes.core.models.version import Author, VersionSummary, VersionType
 
@@ -183,17 +184,18 @@ def test_person_with_electoral_details():
         electoral_details=ElectoralDetails(
             candidacies=[
                 Candidacy(
-                    candidate_id="entity:person/harka-sampang",
+                    candidate_id=12345,
                     election_year=2022,
-                    symbol=Symbol(
-                        name=LangText(
+                    election_type=ElectionType.FEDERAL,
+                    constituency_id="entity:location/constituency/kathmandu-1",
+                    symbol=ElectionSymbol(
+                        symbol_name=LangText(
                             en=LangTextValue(
                                 value="Hammer", provenance=ProvenanceMethod.HUMAN
                             )
                         ),
-                        id="hammer",
+                        nec_id=1,
                     ),
-                    serial_no="1",
                     party_id="entity:organization/political_party/shram-sanskriti-party",
                     votes_received=5000,
                     elected=False,
@@ -215,7 +217,7 @@ def test_person_with_electoral_details():
     assert len(person.electoral_details.candidacies) == 1
     candidacy = person.electoral_details.candidacies[0]
     assert candidacy.election_year == 2022
-    assert candidacy.symbol.name.en.value == "Hammer"
+    assert candidacy.symbol.symbol_name.en.value == "Hammer"
     assert candidacy.votes_received == 5000
     assert candidacy.elected is False
 
@@ -247,30 +249,32 @@ def test_candidacy_validates_entity_ids():
 
     # Valid entity IDs should work
     candidacy = Candidacy(
-        candidate_id="entity:person/harka-sampang",
+        candidate_id=12345,
         election_year=2022,
-        symbol=Symbol(
-            name=LangText(
+        election_type=ElectionType.FEDERAL,
+        constituency_id="entity:location/constituency/kathmandu-1",
+        symbol=ElectionSymbol(
+            symbol_name=LangText(
                 en=LangTextValue(value="Hammer", provenance=ProvenanceMethod.HUMAN)
             ),
-            id="hammer",
+            nec_id=2,
         ),
-        serial_no="1",
         party_id="entity:organization/political_party/shram-sanskriti-party",
     )
 
-    assert candidacy.candidate_id == "entity:person/harka-sampang"
+    assert candidacy.candidate_id == 12345
 
     # Invalid entity ID should fail
     with pytest.raises(ValidationError):
         Candidacy(
-            candidate_id="invalid-id",
+            candidate_id=12345,
             election_year=2022,
-            symbol=Symbol(
-                name=LangText(
+            election_type=ElectionType.FEDERAL,
+            constituency_id="invalid-id",
+            symbol=ElectionSymbol(
+                symbol_name=LangText(
                     en=LangTextValue(value="Hammer", provenance=ProvenanceMethod.HUMAN)
                 ),
-                id="hammer",
+                nec_id=2,
             ),
-            serial_no="1",
         )

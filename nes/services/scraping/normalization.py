@@ -149,7 +149,7 @@ class NameExtractor:
             full_name: The full name string
 
         Returns:
-            Dictionary with 'full' and optionally 'first', 'middle', 'last'
+            Dictionary with 'full' and optionally 'given', 'middle', 'family'
         """
         name_parts = full_name.strip().split()
 

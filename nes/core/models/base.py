@@ -178,7 +178,15 @@ class Address(BaseModel):
     location_id: Optional[str] = Field(
         None, description="Location identifier"
     )  # eg: "entity:location/district/dang"
-    description: Optional[str] = Field(None, description="Address description")
+
+    description2: Optional[LangText] = Field(
+        None, description="Address description (v2)"
+    )
+    description: Optional[str] = Field(
+        None,
+        description="Address description (deprecated, use description2)",
+        deprecated=True,
+    )
 
     @field_validator("location_id")
     @classmethod
