@@ -300,6 +300,10 @@ class CandidateMigration:
         tags = self._build_tags(raw, electoral_details.candidacies[0])
 
         slug = text_to_slug(translated["name"])
+        # Special case: For candidate ID 333804, named BP koirala, include candidate ID in slug
+        # This is needed because it collides with the BP from 000-example-migration.
+        if candidate_id == 333804:
+            slug = f"{slug}-{candidate_id}"
 
         return dict(
             slug=slug,
@@ -476,7 +480,7 @@ class CandidateMigration:
             scheme="other",
             name=LangText(
                 en=LangTextValue(value="nec_candidate_id", provenance="human"),
-                ne=LangTextValue(value="निर्वाचन आयोग दर्ता नं०]", provenance="human"),
+                ne=LangTextValue(value="निर्वाचन आयोग दर्ता नं०", provenance="human"),
             ),
             value=str(candidate_id),
         )
