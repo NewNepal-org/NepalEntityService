@@ -19,24 +19,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: true
+          submodules: recursive
           token: ${{ secrets.DATABASE_REPO_TOKEN || github.token }}
-      
-      - name: Configure Git
-        run: |
-          git config --global user.name "Migration Bot"
-          git config --global user.email "bot@nepalentity.org"
-          
-          # Configure Git for large repositories
-          git config --global core.preloadindex true
-          git config --global core.fscache true
-          git config --global gc.auto 256
-          git config --global pack.threads 4
       
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
           cache: 'pip'
       
       - name: Install dependencies
@@ -44,112 +33,88 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .
       
-      - name: Check for pending migrations
-        id: pending
+      - name: Show pending migrations
         run: |
-          # Get list of pending migrations
-          PENDING=$(nes migrate pending --format=json 2>/dev/null || echo "[]")
-          
-          # Count pending migrations
-          COUNT=$(echo "$PENDING" | python3 -c "import sys, json; print(len(json.load(sys.stdin)))" 2>/dev/null || echo "0")
-          
-          echo "pending_count=$COUNT" >> $GITHUB_OUTPUT
-          echo "pending_migrations=$PENDING" >> $GITHUB_OUTPUT
-          
-          if [ "$COUNT" -gt 0 ]; then
-            echo "Found $COUNT pending migration(s)"
-            echo "has_pending=true" >> $GITHUB_OUTPUT
-          else
-            echo "No pending migrations found"
-            echo "has_pending=false" >> $GITHUB_OUTPUT
-          fi
+          export NES_DB_PATH=./nes-db
+          nes migration list --pending
       
-      - name: Execute pending migrations
-        if: steps.pending.outputs.has_pending == 'true'
-        id: execute
+      - name: Run migrations
+        id: run
         run: |
-          echo "Executing ${{ steps.pending.outputs.pending_count }} pending migration(s)..."
-          
-          # Execute all pending migrations with auto-commit
-          # This will:
-          # 1. Execute each migration script
-          # 2. Create/modify files in nes-db/ submodule
-          # 3. Commit changes to Database Repository
-          # 4. Track execution statistics
-          
-          if nes migrate run --all --auto-commit 2>&1 | tee migration_output.txt; then
-            echo "success=true" >> $GITHUB_OUTPUT
-            
-            # Extract summary statistics
-            echo "summary<<EOF" >> $GITHUB_OUTPUT
-            echo "## Migration Execution Summary" >> $GITHUB_OUTPUT
-            echo "" >> $GITHUB_OUTPUT
-            grep -E "(Migration:|Entities created:|Entities updated:|Relationships created:|Duration:)" migration_output.txt >> $GITHUB_OUTPUT || echo "No statistics available" >> $GITHUB_OUTPUT
-            echo "EOF" >> $GITHUB_OUTPUT
-          else
-            echo "success=false" >> $GITHUB_OUTPUT
-            echo "Migration execution failed. See logs for details."
-            exit 1
-          fi
+          export NES_DB_PATH=./nes-db
+          echo y | nes migration run --all 2>&1 | tee migration_output.txt
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
       
       - name: Push to Database Repository
-        if: steps.pending.outputs.has_pending == 'true' && steps.execute.outputs.success == 'true'
+        if: steps.run.outputs.exit_code == '0'
         run: |
           cd nes-db/
           
-          # Check if there are commits to push
-          if git log origin/main..HEAD --oneline | grep -q .; then
-            echo "Pushing commits to Database Repository..."
-            
-            # Push with timeout for large pushes
-            timeout 600 git push origin main || {
-              echo "Push failed or timed out"
-              exit 1
-            }
-            
-            echo "✓ Successfully pushed to Database Repository"
-          else
-            echo "No new commits to push"
+          # Check if there are any changes
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
           fi
+          
+          # Configure fake user for autocommit
+          git config user.name "Migration Bot"
+          git config user.email "migration-bot@newnepal.org"
+          
+          # Create autocommit branch with datetime
+          DATETIME=$(date -u +"%Y%m%d-%H%M%S")
+          BRANCH="autocommit-${DATETIME}"
+          
+          git checkout -b "$BRANCH"
+          git add -A
+          git commit -m "Auto-commit migration changes - $DATETIME"
+          
+          # Push the branch
+          timeout 600 git push origin "$BRANCH" || {
+            echo "Push failed or timed out"
+            exit 1
+          }
+          
+          echo "✓ Successfully pushed to branch $BRANCH in Database Repository"
       
-      - name: Update submodule reference
-        if: steps.pending.outputs.has_pending == 'true' && steps.execute.outputs.success == 'true'
+      - name: Update submodule reference and file PR
+        if: steps.run.outputs.exit_code == '0'
         run: |
           # Check if submodule reference changed
           if git diff --quiet nes-db/; then
             echo "Submodule reference unchanged"
-          else
-            echo "Updating submodule reference in Service API Repository..."
-            
-            git add nes-db/
-            git commit -m "Update database submodule after migration execution
-
-            Executed ${{ steps.pending.outputs.pending_count }} migration(s)
-            
-            ${{ steps.execute.outputs.summary }}"
-            
-            git push origin main
-            
-            echo "✓ Successfully updated submodule reference"
+            exit 0
           fi
+          
+          # Configure git
+          git config user.name "Migration Bot"
+          git config user.email "migration-bot@nepalentity.org"
+          
+          # Create branch for PR
+          DATETIME=$(date -u +"%Y%m%d-%H%M%S")
+          BRANCH="update-submodule-${DATETIME}"
+          
+          git checkout -b "$BRANCH"
+          git add nes-db/
+          git commit -m "Update database submodule after migration execution"
+          git push origin "$BRANCH"
+          
+          # Create PR using GitHub CLI
+          gh pr create \
+            --title "Update database submodule - $DATETIME" \
+            --body "Automated update of nes-db submodule after migration execution." \
+            --base main \
+            --head "$BRANCH"
+          
+          echo "✓ Created PR for submodule update"
       
       - name: Create summary
-        if: steps.pending.outputs.has_pending == 'true'
+        if: steps.run.outputs.exit_code == '0'
         run: |
           echo "## Migration Persistence Complete" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Executed ${{ steps.pending.outputs.pending_count }} migration(s)" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.execute.outputs.summary }}" >> $GITHUB_STEP_SUMMARY
-      
-      - name: No pending migrations
-        if: steps.pending.outputs.has_pending == 'false'
-        run: |
-          echo "No pending migrations to execute" >> $GITHUB_STEP_SUMMARY
-          echo "All migrations are up to date" >> $GITHUB_STEP_SUMMARY
+          echo "Migration execution completed successfully" >> $GITHUB_STEP_SUMMARY
       
       - name: Notify on failure
-        if: failure() && steps.pending.outputs.has_pending == 'true'
+        if: failure()
         uses: actions/github-script@v7
         with:
           script: |
@@ -165,7 +130,7 @@ jobs:
               **Trigger**: ${context.eventName}
               **Time**: ${new Date().toISOString()}
               
-              Please investigate and resolve the issue. Pending migrations may need to be executed manually.
+              Please investigate and resolve the issue.
               
               cc @maintainers`,
               labels: ['migration', 'urgent']
