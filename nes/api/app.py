@@ -30,7 +30,29 @@ async def lifespan(app: FastAPI):
     logger.info("Starting Nepal Entity Service API v2")
 
     # Initialize database
-    config.Config.initialize_database(base_path="./nes-db/v2")
+    db = config.Config.initialize_database(base_path="./nes-db/v2")
+
+    # Warm cache for InMemoryCachedReadDatabase by triggering a sample query
+    import sys
+    import time
+
+    from nes.database.in_memory_cached_read_database import InMemoryCachedReadDatabase
+
+    if isinstance(db, InMemoryCachedReadDatabase):
+        logger.info("Warming in-memory cache...")
+        start_time = time.time()
+        try:
+            # Trigger cache warming with a sample entity lookup
+            await db.get_entity("entity:person/bishweshwar-prasad-koirala")
+            elapsed_time = time.time() - start_time
+            logger.info(
+                f"In-memory cache warmed successfully in {elapsed_time:.2f} seconds"
+            )
+        except Exception as e:
+            elapsed_time = time.time() - start_time
+            logger.warning(
+                f"Cache warming completed with note in {elapsed_time:.2f} seconds: {e}"
+            )
 
     yield
 

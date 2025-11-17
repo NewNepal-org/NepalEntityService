@@ -5,16 +5,11 @@ organized in a directory structure. The default database path is 'nes-db/v2'.
 
 Features:
 - JSON-based storage with human-readable format
-- Optional in-memory caching with TTL
 - Batch operations for improved performance
-- Index support for faster queries
 - Comprehensive error handling
 
 Performance Characteristics:
-- Read-optimized with caching support
 - Concurrent read operations via asyncio
-- Lazy cache warming on first access
-- Index-based queries when enabled
 """
 
 import asyncio
@@ -75,24 +70,11 @@ class FileDatabase(EntityDatabase):
                 {slug}.json
     """
 
-    def __init__(
-        self,
-        base_path: str = "nes-db/v2",
-        enable_cache: bool = False,
-        cache_ttl_seconds: int = 300,
-        warm_cache_on_startup: bool = False,
-        warm_cache_filter: Optional[Dict[str, Any]] = None,
-        enable_indexes: bool = False,
-    ):
+    def __init__(self, base_path: str = "nes-db/v2"):
         """Initialize FileDatabase with the specified base path.
 
         Args:
             base_path: Root directory for database storage (default: nes-db/v2)
-            enable_cache: Enable in-memory caching (default: False)
-            cache_ttl_seconds: Cache entry TTL in seconds (default: 300)
-            warm_cache_on_startup: Warm cache on initialization (default: False)
-            warm_cache_filter: Filter for cache warming (default: None)
-            enable_indexes: Enable index file usage for improved query performance (default: False)
 
         Raises:
             OSError: If base_path cannot be created
@@ -104,310 +86,7 @@ class FileDatabase(EntityDatabase):
             logger.error(f"Failed to create database directory at {base_path}: {e}")
             raise
 
-        # Cache configuration
-        self._enable_cache = enable_cache
-        self._cache_ttl_seconds = cache_ttl_seconds
-
-        # Cache storage: {key: (value, expiry_timestamp)}
-        self._cache: Dict[str, tuple[Any, float]] = {}
-
-        # Cache statistics
-        self._cache_hits = 0
-        self._cache_misses = 0
-
-        # Access tracking for cache warming
-        self._access_counts: Dict[str, int] = {}
-
-        # Store warm cache configuration for lazy initialization
-        self._warm_cache_on_startup = warm_cache_on_startup
-        self._warm_cache_filter = warm_cache_filter
-        self._cache_warmed = False
-
-        # Index configuration
-        self._enable_indexes = enable_indexes
-        self._indexes_path = self.base_path / "_indexes"
-        if self._enable_indexes:
-            try:
-                self._indexes_path.mkdir(exist_ok=True, parents=True)
-            except OSError as e:
-                logger.warning(
-                    f"Failed to create indexes directory: {e}. Indexes will be disabled."
-                )
-                self._enable_indexes = False
-
-        logger.info(
-            f"FileDatabase initialized at {base_path} "
-            f"(cache={'enabled' if enable_cache else 'disabled'}, "
-            f"indexes={'enabled' if self._enable_indexes else 'disabled'})"
-        )
-
-    async def _ensure_cache_warmed(self):
-        """Ensure cache is warmed on first access if configured."""
-        if (
-            not self._warm_cache_on_startup
-            or self._cache_warmed
-            or not self._enable_cache
-        ):
-            return
-
-        self._cache_warmed = True
-
-        if not self._warm_cache_filter:
-            return
-
-        # Extract attribute filters from the filter dict
-        attr_filters = {}
-        for key, value in self._warm_cache_filter.items():
-            if key.startswith("attributes."):
-                attr_key = key.replace("attributes.", "")
-                attr_filters[attr_key] = value
-
-        # Load entities matching the filter
-        entities = await self.list_entities(
-            limit=100, attr_filters=attr_filters if attr_filters else None
-        )
-
-        # Warm cache with these entities
-        entity_ids = [entity.id for entity in entities]
-        await self.warm_cache(entity_ids=entity_ids)
-
-    # ========================================================================
-    # Cache Management Methods
-    # ========================================================================
-
-    def _get_from_cache(self, key: str) -> Optional[Any]:
-        """Get a value from cache if it exists and hasn't expired.
-
-        This method implements a read-through cache with automatic TTL refresh
-        on access. Cache hits refresh the TTL to keep frequently accessed items
-        in cache longer.
-
-        Args:
-            key: Cache key (typically an entity or relationship ID)
-
-        Returns:
-            Cached value or None if not found or expired
-        """
-        if not self._enable_cache:
-            return None
-
-        if key not in self._cache:
-            self._cache_misses += 1
-            return None
-
-        value, expiry = self._cache[key]
-        current_time = time.time()
-
-        # Check if entry has expired
-        if current_time >= expiry:
-            # Remove expired entry
-            del self._cache[key]
-            self._cache_misses += 1
-            logger.debug(f"Cache expired for key: {key}")
-            return None
-
-        # Cache hit - refresh TTL to keep hot items in cache
-        self._cache[key] = (value, current_time + self._cache_ttl_seconds)
-        self._cache_hits += 1
-
-        # Track access for cache warming
-        self._access_counts[key] = self._access_counts.get(key, 0) + 1
-
-        return value
-
-    def _put_in_cache(self, key: str, value: Any):
-        """Put a value in cache with TTL.
-
-        Args:
-            key: Cache key (typically an entity or relationship ID)
-            value: Value to cache (Entity, Relationship, etc.)
-        """
-        if not self._enable_cache:
-            return
-
-        expiry = time.time() + self._cache_ttl_seconds
-        self._cache[key] = (value, expiry)
-        logger.debug(f"Cached key: {key}")
-
-    def _invalidate_cache(self, key: str):
-        """Invalidate a cache entry.
-
-        This should be called whenever an entity or relationship is updated
-        or deleted to ensure cache consistency.
-
-        Args:
-            key: Cache key to invalidate
-        """
-        if not self._enable_cache:
-            return
-
-        if key in self._cache:
-            del self._cache[key]
-            logger.debug(f"Invalidated cache for key: {key}")
-
-    def clear_cache(self):
-        """Clear all cache entries.
-
-        This removes all cached entities and relationships but does not
-        reset cache statistics. Use this when you need to force a full
-        cache refresh.
-        """
-        self._cache.clear()
-        logger.debug("Cache cleared")
-
-    def clear_cache_stats(self):
-        """Clear cache statistics.
-
-        Resets hit/miss counters to zero. This does not affect cached
-        entries themselves.
-        """
-        self._cache_hits = 0
-        self._cache_misses = 0
-        logger.debug("Cache statistics cleared")
-
-    def get_cache_stats(self) -> Dict[str, Union[int, float]]:
-        """Get cache statistics.
-
-        Returns:
-            Dictionary with cache statistics:
-            - hits: Number of cache hits
-            - misses: Number of cache misses
-            - hit_rate: Cache hit rate (0.0 to 1.0)
-            - size: Current cache size
-        """
-        total_accesses = self._cache_hits + self._cache_misses
-        hit_rate = self._cache_hits / total_accesses if total_accesses > 0 else 0.0
-
-        return {
-            "hits": self._cache_hits,
-            "misses": self._cache_misses,
-            "hit_rate": hit_rate,
-            "size": len(self._cache),
-        }
-
-    def cleanup_expired_cache_entries(self):
-        """Remove expired entries from cache.
-
-        This method scans the cache and removes all entries that have
-        exceeded their TTL. It's useful for periodic cleanup to free
-        memory, though expired entries are also removed lazily on access.
-
-        Returns:
-            Number of entries removed
-        """
-        if not self._enable_cache:
-            return 0
-
-        current_time = time.time()
-        expired_keys = [
-            key
-            for key, (value, expiry) in self._cache.items()
-            if current_time >= expiry
-        ]
-
-        for key in expired_keys:
-            del self._cache[key]
-
-        if expired_keys:
-            logger.debug(f"Cleaned up {len(expired_keys)} expired cache entries")
-
-        return len(expired_keys)
-
-    async def warm_cache(
-        self,
-        entity_ids: Optional[List[str]] = None,
-        entity_type: Optional[str] = None,
-    ):
-        """Warm cache with specified entities.
-
-        Pre-loads entities into the cache to improve subsequent access times.
-        This is useful for warming the cache with frequently accessed entities
-        at application startup or after cache clearing.
-
-        Args:
-            entity_ids: List of entity IDs to warm (optional)
-            entity_type: Entity type to warm all entities of (optional)
-
-        Note:
-            Only one of entity_ids or entity_type should be specified.
-            If both are provided, entity_ids takes precedence.
-        """
-        if not self._enable_cache:
-            logger.debug("Cache warming skipped - caching is disabled")
-            return
-
-        if entity_ids:
-            # Warm cache with specific entity IDs
-            for entity_id in entity_ids:
-                entity = await self._get_entity_from_disk(entity_id)
-                if entity:
-                    self._put_in_cache(entity_id, entity)
-
-        elif entity_type:
-            # Warm cache with all entities of a specific type
-            entities = await self.list_entities(entity_type=entity_type, limit=1000)
-            for entity in entities:
-                self._put_in_cache(entity.id, entity)
-
-    async def warm_cache_most_accessed(self, limit: int = 10):
-        """Warm cache with most frequently accessed entities.
-
-        Args:
-            limit: Number of most accessed entities to warm
-        """
-        if not self._enable_cache:
-            return
-
-        # Sort entities by access count
-        sorted_entities = sorted(
-            self._access_counts.items(), key=lambda x: x[1], reverse=True
-        )
-
-        # Get top N entity IDs
-        top_entity_ids = [entity_id for entity_id, count in sorted_entities[:limit]]
-
-        # Warm cache with these entities
-        await self.warm_cache(entity_ids=top_entity_ids)
-
-    async def _get_entity_from_disk(self, entity_id: str) -> Optional[Entity]:
-        """Get entity directly from disk without cache.
-
-        Args:
-            entity_id: Entity ID
-
-        Returns:
-            Entity or None if not found
-        """
-        file_path = self._id_to_path(entity_id)
-
-        if not file_path.exists():
-            return None
-
-        with open(file_path, "r") as f:
-            data = json.load(f)
-
-        return self._entity_from_dict(data)
-
-    async def _get_relationship_from_disk(
-        self, relationship_id: str
-    ) -> Optional[Relationship]:
-        """Get relationship directly from disk without cache.
-
-        Args:
-            relationship_id: Relationship ID
-
-        Returns:
-            Relationship or None if not found
-        """
-        file_path = self._id_to_path(relationship_id)
-
-        if not file_path.exists():
-            return None
-
-        with open(file_path, "r") as f:
-            data = json.load(f)
-
-        return Relationship.model_validate(data)
+        logger.info(f"FileDatabase initialized at {base_path}")
 
     async def batch_get_entities(self, entity_ids: List[str]) -> List[Optional[Entity]]:
         """Batch retrieve multiple entities by their IDs.
@@ -425,171 +104,25 @@ class FileDatabase(EntityDatabase):
         if not entity_ids:
             return []
 
-        # Ensure cache is warmed on first access
-        await self._ensure_cache_warmed()
+        async def load_entity(entity_id: str) -> Optional[Entity]:
+            """Load a single entity from disk."""
+            file_path = self._id_to_path(entity_id)
 
-        results = []
-        entities_to_load = []
-        entity_indices = []
+            if not file_path.exists():
+                return None
 
-        # First pass: check cache for all entities
-        for i, entity_id in enumerate(entity_ids):
-            cached_entity = self._get_from_cache(entity_id)
-            if cached_entity is not None:
-                results.append(cached_entity)
-            else:
-                # Mark this position for loading from disk
-                results.append(None)
-                entities_to_load.append(entity_id)
-                entity_indices.append(i)
+            try:
+                with open(file_path, "r") as f:
+                    data = json.load(f)
 
-        # Second pass: batch load uncached entities from disk
-        if entities_to_load:
-            # Use concurrent file reads for better performance
+                return self._entity_from_dict(data)
+            except (json.JSONDecodeError, ValueError, KeyError):
+                return None
 
-            async def load_entity(entity_id: str) -> Optional[Entity]:
-                """Load a single entity from disk."""
-                file_path = self._id_to_path(entity_id)
-
-                if not file_path.exists():
-                    return None
-
-                try:
-                    with open(file_path, "r") as f:
-                        data = json.load(f)
-
-                    entity = self._entity_from_dict(data)
-
-                    # Put in cache
-                    self._put_in_cache(entity_id, entity)
-
-                    return entity
-                except (json.JSONDecodeError, ValueError, KeyError):
-                    return None
-
-            # Load all entities concurrently
-            loaded_entities = await asyncio.gather(
-                *[load_entity(entity_id) for entity_id in entities_to_load]
-            )
-
-            # Fill in the results at the correct positions
-            for idx, entity in zip(entity_indices, loaded_entities):
-                results[idx] = entity
-
-        return results
-
-    def _update_type_index(self, entity: Entity):
-        """Update the type index with an entity.
-
-        Args:
-            entity: Entity to add to the index
-        """
-        if not self._enable_indexes:
-            return
-
-        index_path = self._indexes_path / "by_type.json"
-
-        # Load existing index
-        if index_path.exists():
-            with open(index_path, "r") as f:
-                type_index = json.load(f)
-        else:
-            type_index = {}
-
-        # Add entity to type index
-        entity_type = entity.type
-        if entity_type not in type_index:
-            type_index[entity_type] = []
-
-        # Remove existing entry if present (for updates)
-        type_index[entity_type] = [
-            eid for eid in type_index[entity_type] if eid != entity.id
-        ]
-
-        # Add new entry
-        type_index[entity_type].append(entity.id)
-
-        # Save index
-        with open(index_path, "w") as f:
-            json.dump(type_index, f, indent=2, ensure_ascii=False)
-
-    def _remove_from_type_index(self, entity_id: str, entity_type: str):
-        """Remove an entity from the type index.
-
-        Args:
-            entity_id: Entity ID to remove
-            entity_type: Entity type
-        """
-        if not self._enable_indexes:
-            return
-
-        index_path = self._indexes_path / "by_type.json"
-
-        if not index_path.exists():
-            return
-
-        # Load existing index
-        with open(index_path, "r") as f:
-            type_index = json.load(f)
-
-        # Remove entity from type index
-        if entity_type in type_index:
-            type_index[entity_type] = [
-                eid for eid in type_index[entity_type] if eid != entity_id
-            ]
-
-        # Save index
-        with open(index_path, "w") as f:
-            json.dump(type_index, f, indent=2, ensure_ascii=False)
-
-    async def rebuild_indexes(self):
-        """Rebuild all indexes from scratch.
-
-        This method scans all entities in the database and rebuilds
-        the index files. Useful for recovering from index corruption
-        or after bulk data imports.
-        """
-        if not self._enable_indexes:
-            return
-
-        # Clear existing indexes
-        if self._indexes_path.exists():
-            import shutil
-
-            shutil.rmtree(self._indexes_path)
-        self._indexes_path.mkdir(exist_ok=True, parents=True)
-
-        # Build type index
-        type_index = {}
-
-        # Scan all entities
-        entity_path = self.base_path / "entity"
-        if entity_path.exists():
-            for file_path in entity_path.rglob("*.json"):
-                try:
-                    with open(file_path, "r") as f:
-                        data = json.load(f)
-
-                    # Check if this is an entity (has 'type' field)
-                    if "type" not in data:
-                        continue
-
-                    entity = self._entity_from_dict(data)
-
-                    # Add to type index
-                    entity_type = entity.type
-                    if entity_type not in type_index:
-                        type_index[entity_type] = []
-                    type_index[entity_type].append(entity.id)
-
-                except (json.JSONDecodeError, ValueError, KeyError):
-                    # Skip invalid files
-                    continue
-
-        # Save type index
-        index_path = self._indexes_path / "by_type.json"
-        with open(index_path, "w") as f:
-            json.dump(type_index, f, indent=2, ensure_ascii=False)
+        # Load all entities concurrently
+        return await asyncio.gather(
+            *[load_entity(entity_id) for entity_id in entity_ids]
+        )
 
     # ========================================================================
     # File System Helper Methods
@@ -642,7 +175,7 @@ class FileDatabase(EntityDatabase):
     async def put_entity(self, entity: Entity) -> Entity:
         """Store an entity in the database.
 
-        Writes the entity to a JSON file, updates indexes, and invalidates cache.
+        Writes the entity to a JSON file.
         Computed fields are automatically removed before serialization.
 
         Args:
@@ -662,14 +195,8 @@ class FileDatabase(EntityDatabase):
             # Serialize entity and remove computed fields
             data = self._serialize_entity(entity)
 
-            # Write to file with atomic operation (write to temp, then rename)
+            # Write to file
             self._write_json_file(file_path, data)
-
-            # Invalidate cache for this entity
-            self._invalidate_cache(entity.id)
-
-            # Update indexes
-            self._update_type_index(entity)
 
             logger.debug(f"Stored entity: {entity.id}")
             return entity
@@ -724,9 +251,6 @@ class FileDatabase(EntityDatabase):
     async def get_entity(self, entity_id: str) -> Optional[Entity]:
         """Retrieve an entity by its ID.
 
-        Uses cache if enabled, otherwise reads from disk. Cache is automatically
-        warmed on first access if configured.
-
         Args:
             entity_id: The unique identifier of the entity
 
@@ -738,29 +262,13 @@ class FileDatabase(EntityDatabase):
             json.JSONDecodeError: If JSON file is malformed
         """
         try:
-            # Ensure cache is warmed on first access
-            await self._ensure_cache_warmed()
-
-            # Try to get from cache first
-            cached_entity = self._get_from_cache(entity_id)
-            if cached_entity is not None:
-                return cached_entity
-
-            # Cache miss - load from disk
-            entity = await self._load_entity_from_disk(entity_id)
-
-            # Put in cache if found
-            if entity:
-                self._put_in_cache(entity_id, entity)
-
-            return entity
-
+            return await self._load_entity_from_disk(entity_id)
         except Exception as e:
             logger.error(f"Failed to get entity {entity_id}: {e}")
             raise
 
     async def _load_entity_from_disk(self, entity_id: str) -> Optional[Entity]:
-        """Load an entity from disk without cache.
+        """Load an entity from disk.
 
         Args:
             entity_id: Entity ID to load
@@ -793,8 +301,6 @@ class FileDatabase(EntityDatabase):
     async def delete_entity(self, entity_id: str) -> bool:
         """Delete an entity from the database.
 
-        Removes the entity file, invalidates cache, and updates indexes.
-
         Args:
             entity_id: The unique identifier of the entity to delete
 
@@ -810,25 +316,7 @@ class FileDatabase(EntityDatabase):
             if not file_path.exists():
                 return False
 
-            # Get entity type before deletion for index update
-            entity_type = None
-            if self._enable_indexes:
-                try:
-                    with open(file_path, "r", encoding="utf-8") as f:
-                        data = json.load(f)
-                    entity_type = data.get("type")
-                except (json.JSONDecodeError, ValueError, KeyError) as e:
-                    logger.warning(f"Could not read entity type before deletion: {e}")
-
-            # Delete the file
             file_path.unlink()
-
-            # Invalidate cache for this entity
-            self._invalidate_cache(entity_id)
-
-            # Update indexes
-            if entity_type:
-                self._remove_from_type_index(entity_id, entity_type)
 
             logger.debug(f"Deleted entity: {entity_id}")
             return True
@@ -1184,9 +672,6 @@ class FileDatabase(EntityDatabase):
             # Write to file
             self._write_json_file(file_path, data)
 
-            # Invalidate cache for this relationship
-            self._invalidate_cache(relationship.id)
-
             logger.debug(f"Stored relationship: {relationship.id}")
             return relationship
 
@@ -1212,8 +697,6 @@ class FileDatabase(EntityDatabase):
     async def get_relationship(self, relationship_id: str) -> Optional[Relationship]:
         """Retrieve a relationship by its ID.
 
-        Uses cache if enabled, otherwise reads from disk.
-
         Args:
             relationship_id: The unique identifier of the relationship
 
@@ -1225,20 +708,7 @@ class FileDatabase(EntityDatabase):
             json.JSONDecodeError: If JSON file is malformed
         """
         try:
-            # Try to get from cache first
-            cached_relationship = self._get_from_cache(relationship_id)
-            if cached_relationship is not None:
-                return cached_relationship
-
-            # Cache miss - load from disk
-            relationship = await self._load_relationship_from_disk(relationship_id)
-
-            # Put in cache if found
-            if relationship:
-                self._put_in_cache(relationship_id, relationship)
-
-            return relationship
-
+            return await self._load_relationship_from_disk(relationship_id)
         except Exception as e:
             logger.error(f"Failed to get relationship {relationship_id}: {e}")
             raise
@@ -1246,7 +716,7 @@ class FileDatabase(EntityDatabase):
     async def _load_relationship_from_disk(
         self, relationship_id: str
     ) -> Optional[Relationship]:
-        """Load a relationship from disk without cache.
+        """Load a relationship from disk.
 
         Args:
             relationship_id: Relationship ID to load
@@ -1295,9 +765,6 @@ class FileDatabase(EntityDatabase):
                 return False
 
             file_path.unlink()
-
-            # Invalidate cache for this relationship
-            self._invalidate_cache(relationship_id)
 
             logger.debug(f"Deleted relationship: {relationship_id}")
             return True

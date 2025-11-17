@@ -3,8 +3,6 @@ name: Migration Persistence
 on:
   push:
     branches: [main]
-    paths:
-      - 'migrations/**'
   schedule:
     # Run daily at 2 AM UTC to process any pending migrations
     - cron: '0 2 * * *'
