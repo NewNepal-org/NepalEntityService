@@ -10,6 +10,28 @@ Nepal Entity Service is built on three core principles:
 
 - **🌐 Open API**: A free, public REST API at [https://nes.newnepal.org/api](https://nes.newnepal.org/api) provides read access to all entity data without authentication. Build applications, conduct research, or integrate with your projects freely.
 
+## Entities hosted
+
+### Currently offering
+
+1. Location data
+    1. 7 Provinces
+    1. 77 Districts
+    1. 165 constituencies
+    1. 460 Rural municipalities (VDCs)
+    1. 11 Sub-metropolitician cities
+    1. 6 Municipalities
+    1. 6,743 wards
+2. Political Parties
+    1. 124 registered political parties (Official NEC data from Kartik 2082)
+3. Politicians
+    1. 7,744 party candidates from 2079 B.S. national and provincial elections.
+
+### Near future plans
+1. Incorporate newly registered political parties
+1. Incorporate government bodies of all levels
+1. Incorporate current government leaders, and Nepali bureaucrats
+
 ## Documentation Index
 
 ### For API Consumers
