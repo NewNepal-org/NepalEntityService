@@ -49,7 +49,10 @@ class TestDatabaseURLConfiguration:
 
         monkeypatch.setenv("NES_DB_URL", "postgres://localhost/db")
 
-        with pytest.raises(ValueError, match="NES_DB_URL must use 'file://' protocol"):
+        with pytest.raises(
+            ValueError,
+            match="NES_DB_URL must use 'file://' or 'file\\+memcached://' protocol",
+        ):
             Config.get_db_path()
 
     def test_nes_db_url_http_protocol_raises_error(self, monkeypatch):
@@ -58,7 +61,10 @@ class TestDatabaseURLConfiguration:
 
         monkeypatch.setenv("NES_DB_URL", "http://example.com/db")
 
-        with pytest.raises(ValueError, match="NES_DB_URL must use 'file://' protocol"):
+        with pytest.raises(
+            ValueError,
+            match="NES_DB_URL must use 'file://' or 'file\\+memcached://' protocol",
+        ):
             Config.get_db_path()
 
     def test_override_path_takes_highest_precedence(self, monkeypatch):
@@ -117,6 +123,59 @@ class TestDatabaseURLConfiguration:
         # Clean up
         Config.cleanup()
 
+    def test_file_memcached_protocol_creates_cached_database(
+        self, tmp_path, monkeypatch
+    ):
+        """Test that file+memcached:// protocol creates InMemoryCachedReadDatabase."""
+        from nes.config import Config
+        from nes.database.in_memory_cached_read_database import (
+            InMemoryCachedReadDatabase,
+        )
+
+        test_db_path = tmp_path / "test-db" / "v2"
+        test_db_path.mkdir(parents=True)
+        monkeypatch.setenv("NES_DB_URL", f"file+memcached://{test_db_path}")
+
+        # Initialize database
+        db = Config.initialize_database(base_path=str(test_db_path))
+
+        # Verify it's an InMemoryCachedReadDatabase
+        assert db is not None
+        assert isinstance(db, InMemoryCachedReadDatabase)
+
+        # Clean up
+        Config.cleanup()
+
+    def test_file_memcached_protocol_path_extraction(self, monkeypatch):
+        """Test that file+memcached:// protocol extracts path correctly."""
+        from nes.config import Config
+
+        monkeypatch.setenv("NES_DB_URL", "file+memcached:///app/nes-db/v2")
+
+        path = Config.get_db_path()
+
+        assert path == Path("/app/nes-db/v2")
+
+    def test_get_db_protocol_returns_file_by_default(self, monkeypatch):
+        """Test that get_db_protocol returns 'file' when no NES_DB_URL is set."""
+        from nes.config import Config
+
+        monkeypatch.delenv("NES_DB_URL", raising=False)
+
+        protocol = Config.get_db_protocol()
+
+        assert protocol == "file"
+
+    def test_get_db_protocol_returns_file_memcached(self, monkeypatch):
+        """Test that get_db_protocol returns 'file+memcached' when set."""
+        from nes.config import Config
+
+        monkeypatch.setenv("NES_DB_URL", "file+memcached:///app/nes-db/v2")
+
+        protocol = Config.get_db_protocol()
+
+        assert protocol == "file+memcached"
+
 
 class TestDatabaseURLErrorMessages:
     """Test error messages for NES_DB_URL configuration."""
@@ -132,7 +191,8 @@ class TestDatabaseURLErrorMessages:
 
         error_message = str(exc_info.value)
         assert "file://" in error_message
-        assert "Example:" in error_message
+        assert "file+memcached://" in error_message
+        assert "Examples:" in error_message
 
     def test_error_message_shows_invalid_protocol(self, monkeypatch):
         """Test that error message shows the invalid protocol used."""

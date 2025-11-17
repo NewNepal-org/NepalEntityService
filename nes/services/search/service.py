@@ -94,6 +94,22 @@ class SearchService:
             offset=offset,
         )
 
+    async def get_entity(self, entity_id: str) -> Optional[Entity]:
+        """Get a specific entity by its ID.
+
+        Args:
+            entity_id: The unique entity identifier
+
+        Returns:
+            The entity if found, None otherwise
+
+        Examples:
+            >>> entity = await service.get_entity("entity:person/ram-chandra-poudel")
+            >>> if entity:
+            ...     print(f"Found: {entity.names.english}")
+        """
+        return await self.database.get_entity(entity_id)
+
     async def search_relationships(
         self,
         relationship_type: Optional[str] = None,

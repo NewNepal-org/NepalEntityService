@@ -16,7 +16,7 @@ COPY docs/ ./docs/
 COPY .kiro/ ./.kiro/
 
 # Set default NES_DB_URL for container
-ENV NES_DB_URL=file:///app/nes-db/v2
+ENV NES_DB_URL=file+memcached:///app/nes-db/v2
 
 EXPOSE 8195
 

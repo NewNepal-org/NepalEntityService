@@ -144,15 +144,7 @@ async def get_entity(
         404: If entity is not found
     """
     try:
-        # Search for the specific entity
-        entities = await search_service.search_entities(limit=1000)
-
-        # Find the entity with matching ID
-        entity = None
-        for e in entities:
-            if e.id == entity_id:
-                entity = e
-                break
+        entity = await search_service.get_entity(entity_id)
 
         if not entity:
             raise HTTPException(

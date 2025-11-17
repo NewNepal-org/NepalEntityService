@@ -8,30 +8,68 @@ The Nepal Entity Service uses a file-based database stored in the `nes-db` direc
 
 ### Environment Variables
 
-The database path is configured via the `NES_DB_URL` environment variable using the `file://` protocol:
+The database path is configured via the `NES_DB_URL` environment variable. Two protocols are supported:
+
+#### `file://` - Standard File Database
+
+Standard read-write file-based database:
 
 ```bash
 # .env file
 NES_DB_URL=file:///absolute/path/to/nes-db/v2
 ```
 
-**Important:** The path must be absolute (starting from filesystem root `/`).
+#### `file+memcached://` - In-Memory Cached Read-Only Database
+
+For read-only workloads with high performance requirements, use the in-memory cached database. This loads all entities and relationships into memory at startup:
+
+```bash
+# .env file
+NES_DB_URL=file+memcached:///absolute/path/to/nes-db/v2
+```
+
+**Benefits:**
+- ⚡ Extremely fast read operations (no disk I/O)
+- 🔒 Read-only safety (prevents accidental writes)
+- 📦 Full dataset cached in memory
+
+**Use Cases:**
+- Production read-only API servers
+- Search and query services
+- High-traffic public endpoints
+
+**Important:** 
+- The path must be absolute (starting from filesystem root `/`)
+- Write operations will raise `ValueError` with in-memory cached database
+- Memory usage scales with database size
 
 #### Examples
 
 **Local Development (macOS/Linux):**
 ```bash
+# Standard file database
 NES_DB_URL=file:///Users/username/projects/NepalEntityService/nes-db/v2
+
+# In-memory cached (read-only)
+NES_DB_URL=file+memcached:///Users/username/projects/NepalEntityService/nes-db/v2
 ```
 
 **Local Development (Windows):**
 ```bash
+# Standard file database
 NES_DB_URL=file:///C:/Users/username/projects/NepalEntityService/nes-db/v2
+
+# In-memory cached (read-only)
+NES_DB_URL=file+memcached:///C:/Users/username/projects/NepalEntityService/nes-db/v2
 ```
 
 **Docker Container:**
 ```bash
+# Standard file database
 NES_DB_URL=file:///app/nes-db/v2
+
+# In-memory cached (read-only) - recommended for production
+NES_DB_URL=file+memcached:///app/nes-db/v2
 ```
 
 ## Git Submodule Setup
@@ -144,23 +182,29 @@ chmod -R 755 nes-db/v2
 
 ### Invalid NES_DB_URL
 
-The `NES_DB_URL` must use the `file://` protocol. If you see an error like:
+The `NES_DB_URL` must use the `file://` or `file+memcached://` protocol. If you see an error like:
 
 ```
-ValueError: NES_DB_URL must use 'file://' protocol
+ValueError: NES_DB_URL must use 'file://' or 'file+memcached://' protocol
 ```
 
-Check that your URL starts with `file://` and uses an absolute path:
+Check that your URL starts with a supported protocol and uses an absolute path:
 
 ```bash
-# ✅ Correct
+# ✅ Correct - standard file database
 NES_DB_URL=file:///Users/username/projects/NepalEntityService/nes-db/v2
 
-# ❌ Wrong - missing file:// protocol
+# ✅ Correct - in-memory cached database
+NES_DB_URL=file+memcached:///Users/username/projects/NepalEntityService/nes-db/v2
+
+# ❌ Wrong - missing protocol
 NES_DB_URL=/Users/username/projects/NepalEntityService/nes-db/v2
 
 # ❌ Wrong - relative path
 NES_DB_URL=file://nes-db/v2
+
+# ❌ Wrong - unsupported protocol
+NES_DB_URL=postgres://localhost/nes-db
 ```
 
 ## Development Workflow
