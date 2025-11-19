@@ -19,10 +19,12 @@ from .normalization import (
 )
 from .service import ScrapingService
 from .web_scraper import RateLimiter, RetryHandler, WebScraper
+from .wikipedia_scraper import WikipediaScraper
 
 __all__ = [
     "ScrapingService",
     "WebScraper",
+    "WikipediaScraper",
     "RateLimiter",
     "RetryHandler",
     "DataNormalizer",

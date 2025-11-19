@@ -210,14 +210,14 @@ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json
 ### Using the Scraper
 
 ```python
-from nes.scraping import WikipediaScraper, EntityNormalizer
+from nes.services.scraping import WikipediaScraper, DataNormalizer
 
 # Scrape Wikipedia
 scraper = WikipediaScraper()
 raw_data = await scraper.scrape_politician("Ram Chandra Poudel")
 
 # Normalize to NES format
-normalizer = EntityNormalizer()
+normalizer = DataNormalizer()
 entity_data = await normalizer.normalize(raw_data)
 ```
 

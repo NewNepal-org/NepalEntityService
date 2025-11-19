@@ -56,8 +56,8 @@ def create_entity(name: str):
 def scrape_data():
     # Only import if scraping functionality is actually used
     try:
-        from nes.scraping.scraper import Scraper
-        return Scraper().fetch()
+        from nes.services.scraping import WikipediaScraper
+        return WikipediaScraper().scrape_politician("Name")
     except ImportError:
         raise RuntimeError("Scraping dependencies not installed. Install with: pip install nepal-entity-service[scraping]")
 ```
