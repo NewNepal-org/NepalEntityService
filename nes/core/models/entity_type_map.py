@@ -18,6 +18,7 @@ ENTITY_TYPE_MAP = {
         None,  # Organization without specific subtype
         EntitySubType.POLITICAL_PARTY,  # Nepali political parties
         EntitySubType.GOVERNMENT_BODY,  # Government ministries, departments, constitutional bodies
+        EntitySubType.HOSPITAL,  # Hospitals and health facilities
         EntitySubType.NGO,  # Non-governmental organizations
         EntitySubType.INTERNATIONAL_ORG,  # International organizations in Nepal
     },

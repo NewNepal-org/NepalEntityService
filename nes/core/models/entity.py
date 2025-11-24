@@ -83,6 +83,7 @@ class EntitySubType(str, Enum):
     GOVERNMENT_BODY = "government_body"  # सरकारी निकाय
     NGO = "ngo"  # गैर सरकारी संस्था
     INTERNATIONAL_ORG = "international_org"  # अन्तर्राष्ट्रिय संस्था
+    HOSPITAL = "hospital"  # अस्पताल
 
     # Location subtypes - Nepal's administrative hierarchy
     PROVINCE = "province"  # प्रदेश (7 provinces)
