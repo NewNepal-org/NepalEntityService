@@ -20,6 +20,12 @@ class GovernmentType(str, Enum):
     UNKNOWN = "unknown"
 
 
+class OwnershipType(str, Enum):
+    PRIVATE = "Private"
+    PUBLIC = "Public"
+    GOVERNMENT = "Government"
+
+
 class Organization(Entity):
     """Organization entity."""
 
@@ -78,6 +84,5 @@ class Hospital(Organization):
     )
     beds: Optional[int] = Field(None, description="Number of beds")
     services: Optional[List[str]] = Field(None, description="List of services provided")
-    ownership: Optional[str] = Field(None, description="Ownership type (Public/Private/Government)")
+    ownership: Optional[OwnershipType] = Field(None, description="Ownership type (Public/Private/Government)")
     address: Optional[Address] = Field(None, description="Hospital address")
-
