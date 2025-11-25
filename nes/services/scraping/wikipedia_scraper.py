@@ -124,9 +124,7 @@ class WikipediaScraper:
                         result["metadata"]["disambiguation"] = True
 
             except Exception as e:
-                logger.warning(
-                    f"Failed to fetch {lang} Wikipedia page for {name}: {e}"
-                )
+                logger.warning(f"Failed to fetch {lang} Wikipedia page for {name}: {e}")
                 continue
 
         # If no pages found, try searching
@@ -310,4 +308,3 @@ class WikipediaScraper:
             sections.append(current_section)
 
         return sections
-
