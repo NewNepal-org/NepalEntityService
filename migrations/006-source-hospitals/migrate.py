@@ -66,6 +66,24 @@ async def migrate(context: MigrationContext) -> None:
     linked_count = 0
     relationships_count = 0
 
+    import_date = datetime.now(timezone.utc).date()
+    attribution_details = f"Imported from Nepal Health Facility Registry (https://nhfr.mohp.gov.np/) on {import_date}"
+    attributions = [
+        Attribution(
+            title=LangText(
+                en=LangTextValue(value="Nepal Health Facility Registry", provenance="human"),
+                ne=LangTextValue(value="नेपाल स्वास्थ्य सुविधा रजिस्ट्री", provenance="human"),
+            ),
+            details=LangText(
+                en=LangTextValue(value=attribution_details, provenance="human"),
+                ne=LangTextValue(
+                    value=f"नेपाल स्वास्थ्य सुविधा रजिस्ट्री (https://nhfr.mohp.gov.np/) बाट {import_date} मा आयात गरिएको",
+                    provenance="human"
+                ),
+            ),
+        )
+    ]
+
     # Hospital data keys
     # 'id', 'hf_code', 'hf_name', 
     # 'type', 'healthFacilityType', 'services',
@@ -229,23 +247,7 @@ async def migrate(context: MigrationContext) -> None:
                     )
                 )
 
-            # Build attributions
-            attribution_details = f"Imported from Nepal Health Facility Registry (https://nhfr.mohp.gov.np/) on {datetime.now(timezone.utc).date()}"
-            attributions = [
-                Attribution(
-                    title=LangText(
-                        en=LangTextValue(value="Nepal Health Facility Registry", provenance="human"),
-                        ne=LangTextValue(value="नेपाल स्वास्थ्य सुविधा रजिस्ट्री", provenance="human"),
-                    ),
-                    details=LangText(
-                        en=LangTextValue(value=attribution_details, provenance="human"),
-                        ne=LangTextValue(
-                            value=f"नेपाल स्वास्थ्य सुविधा रजिस्ट्री (https://nhfr.mohp.gov.np/) बाट {datetime.now(timezone.utc).date()} मा आयात गरिएको",
-                            provenance="human"
-                        ),
-                    ),
-                )
-            ]
+            
 
             # Build address with location linking
             # Try to match each location component to location entities
@@ -499,4 +501,3 @@ def _normalize_ownership(ownership: str) -> str:
         return "Private"
     else:
         return "Unknown"
-
