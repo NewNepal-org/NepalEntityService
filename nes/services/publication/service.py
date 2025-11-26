@@ -16,7 +16,12 @@ from typing import Any, Dict, List, Optional
 from nes.core.models.base import Name, NameKind
 from nes.core.models.entity import Entity, EntitySubType, EntityType
 from nes.core.models.location import Location
-from nes.core.models.organization import GovernmentBody, Hospital, Organization, PoliticalParty
+from nes.core.models.organization import (
+    GovernmentBody,
+    Hospital,
+    Organization,
+    PoliticalParty,
+)
 from nes.core.models.person import Person
 from nes.core.models.relationship import Relationship, RelationshipType
 from nes.core.models.version import Author, Version, VersionSummary, VersionType
@@ -636,8 +641,7 @@ class PublicationService:
             ):
                 return GovernmentBody.model_validate(entity_data)
             elif (
-                entity_subtype == "hospital"
-                or entity_subtype == EntitySubType.HOSPITAL
+                entity_subtype == "hospital" or entity_subtype == EntitySubType.HOSPITAL
             ):
                 return Hospital.model_validate(entity_data)
             else:

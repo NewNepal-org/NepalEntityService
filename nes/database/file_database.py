@@ -23,7 +23,12 @@ from typing import Any, Dict, List, Optional, Union
 from nes.core.models.entity import Entity, EntitySubType, EntityType
 from nes.core.models.entity_type_map import ENTITY_TYPE_MAP
 from nes.core.models.location import Location
-from nes.core.models.organization import GovernmentBody, Hospital, Organization, PoliticalParty
+from nes.core.models.organization import (
+    GovernmentBody,
+    Hospital,
+    Organization,
+    PoliticalParty,
+)
 from nes.core.models.person import Person
 from nes.core.models.relationship import Relationship
 from nes.core.models.version import Author, Version
