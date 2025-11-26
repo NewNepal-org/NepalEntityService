@@ -215,7 +215,7 @@ async def migrate(context: MigrationContext) -> None:
 
     try:
         for hospital_data in hospitals:
-            context.log(f"Hospital data keys: {hospital_data.keys()}")
+            # context.log(f"Hospital data keys: {hospital_data.keys()}")
             # Extract basic information from NHFR data format
             name_en = (hospital_data.get("hf_name") or "").strip()
             if not name_en:
@@ -626,7 +626,7 @@ async def migrate(context: MigrationContext) -> None:
         context.log(f"Created {relationships_count} LOCATED_IN relationships")
 
         entities = await context.db.list_entities(
-            limit=1000, entity_type="organization", sub_type="hospital"
+            limit=15_000, entity_type="organization", sub_type="hospital"
         )
         context.log(f"Verified: {len(entities)} hospital entities in database")
 

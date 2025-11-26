@@ -26,6 +26,8 @@ Nepal Entity Service is built on three core principles:
     1. 124 registered political parties (Official NEC data from Kartik 2082)
 3. Politicians
     1. 7,744 party candidates from 2079 B.S. national and provincial elections.
+4. Health Facilities
+    1. 11,399 hospitals and health facilities from Nepal Health Facility Registry (NHFR)
 
 ### Near future plans
 1. Incorporate newly registered political parties
