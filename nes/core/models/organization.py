@@ -84,5 +84,7 @@ class Hospital(Organization):
     )
     beds: Optional[int] = Field(None, description="Number of beds")
     services: Optional[List[str]] = Field(None, description="List of services provided")
-    ownership: Optional[OwnershipType] = Field(None, description="Ownership type (Public/Private/Government)")
+    ownership: Optional[OwnershipType] = Field(
+        None, description="Ownership type (Public/Private/Government)"
+    )
     address: Optional[Address] = Field(None, description="Hospital address")

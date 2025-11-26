@@ -137,7 +137,9 @@ async def fetch_all(
                 logger.info(f"Reached max_pages limit ({max_pages})")
                 break
 
-            records = await fetch_page(client, page=page, page_size=page_size, filters=filters)
+            records = await fetch_page(
+                client, page=page, page_size=page_size, filters=filters
+            )
 
             if not records:
                 logger.info(f"No more records found at page {page}")
@@ -166,7 +168,9 @@ async def fetch_all(
 
             # If we got fewer records than page_size, we've reached the end
             if len(records) < page_size:
-                logger.info(f"Got fewer records than page_size ({len(records)} < {page_size}), reached end")
+                logger.info(
+                    f"Got fewer records than page_size ({len(records)} < {page_size}), reached end"
+                )
                 break
 
             # Note: The NHFR API typically returns all results in a single response
@@ -196,7 +200,7 @@ async def main():
     parser.add_argument(
         "--filters",
         type=str,
-        help="JSON string of filters to apply (e.g., '{\"authority\": 1, \"province\": 1}')",
+        help='JSON string of filters to apply (e.g., \'{"authority": 1, "province": 1}\')',
     )
     parser.add_argument(
         "--page-size",
@@ -267,7 +271,7 @@ async def main():
 
         logger.info(f"Saving {len(records)} records to {output_path}...")
         logger.info("Output will be a clean JSON array (no pagination metadata)")
-        
+
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(records, f, indent=2, ensure_ascii=False)
 
@@ -287,7 +291,9 @@ async def main():
             provinces = {}
             districts = {}
             for record in records:
-                hf_type = record.get("healthFacilityType", {}).get("type_name", "Unknown")
+                hf_type = record.get("healthFacilityType", {}).get(
+                    "type_name", "Unknown"
+                )
                 types[hf_type] = types.get(hf_type, 0) + 1
 
                 province = record.get("provinces", {}).get("nameen", "Unknown")
@@ -303,7 +309,9 @@ async def main():
             logger.info(f"  Districts: {len(districts)} different districts")
             logger.info("")
             logger.info("Top 5 types:")
-            for hf_type, count in sorted(types.items(), key=lambda x: x[1], reverse=True)[:5]:
+            for hf_type, count in sorted(
+                types.items(), key=lambda x: x[1], reverse=True
+            )[:5]:
                 logger.info(f"  {hf_type}: {count}")
 
     except KeyboardInterrupt:
@@ -315,4 +323,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-
