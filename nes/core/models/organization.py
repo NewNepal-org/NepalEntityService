@@ -2,7 +2,7 @@
 
 from datetime import date
 from enum import Enum
-from typing import Literal, Optional
+from typing import List, Literal, Optional
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -18,6 +18,12 @@ class GovernmentType(str, Enum):
     LOCAL = "local"
     OTHER = "other"
     UNKNOWN = "unknown"
+
+
+class OwnershipType(str, Enum):
+    PRIVATE = "Private"
+    PUBLIC = "Public"
+    GOVERNMENT = "Government"
 
 
 class Organization(Entity):
@@ -67,3 +73,18 @@ class GovernmentBody(Organization):
     government_type: Optional[GovernmentType] = Field(
         None, description="Type of government (federal, provincial, local)"
     )
+
+
+class Hospital(Organization):
+    """Hospital organization."""
+
+    sub_type: Literal[EntitySubType.HOSPITAL] = Field(
+        default=EntitySubType.HOSPITAL,
+        description="Organization subtype, always hospital",
+    )
+    beds: Optional[int] = Field(None, description="Number of beds")
+    services: Optional[List[str]] = Field(None, description="List of services provided")
+    ownership: Optional[OwnershipType] = Field(
+        None, description="Ownership type (Public/Private/Government)"
+    )
+    address: Optional[Address] = Field(None, description="Hospital address")
