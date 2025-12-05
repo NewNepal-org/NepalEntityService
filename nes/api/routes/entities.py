@@ -26,8 +26,11 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/entities", tags=["entities"])
 
 
-@router.get("", response_model=EntityListResponse)
+@router.get("", response_model=EntityListResponse, response_model_exclude_none=True)
 async def list_entities(
+    ids: Optional[str] = Query(
+        None, description="Comma-separated entity IDs for batch lookup (max 25)"
+    ),
     query: Optional[str] = Query(
         None, description="Text query to search in entity names"
     ),
@@ -44,19 +47,38 @@ async def list_entities(
 ):
     """List or search entities with optional filtering and pagination.
 
-    This endpoint supports:
-    - Text search across entity names (Nepali and English)
-    - Filtering by entity type and subtype
-    - Attribute-based filtering with AND logic
-    - Pagination with limit and offset
+    Supports two modes:
+    1. Batch lookup: Provide 'ids' parameter to fetch specific entities (max 25)
+    2. Search/filter: Provide 'query', 'entity_type', etc. to search entities
+
+    The 'ids' parameter cannot be combined with any other parameters.
 
     Examples:
+    - /api/entities?ids=entity:person/ram-chandra-poudel,entity:person/kp-sharma-oli - Batch lookup
     - /api/entities - List all entities
     - /api/entities?query=poudel - Search for "poudel"
     - /api/entities?entity_type=person - List all persons
     - /api/entities?entity_type=organization&sub_type=political_party - List political parties
     - /api/entities?attributes={"party":"nepali-congress"} - Filter by attributes
     """
+    # Validate mutually exclusive parameters
+    other_params = [query, entity_type, sub_type, attributes, limit != 100, offset != 0]
+
+    if ids is not None and any(other_params):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail={
+                "error": {
+                    "code": "INVALID_REQUEST",
+                    "message": "The 'ids' parameter cannot be combined with other parameters",
+                }
+            },
+        )
+
+    # Batch lookup mode
+    if ids is not None:
+        return await _batch_lookup_entities(ids=ids, search_service=search_service)
+
     # Validate entity_type if provided
     if entity_type and entity_type not in ["person", "organization", "location"]:
         raise HTTPException(
@@ -278,6 +300,99 @@ async def get_entity_relationships(
                 "error": {
                     "code": "RELATIONSHIP_ERROR",
                     "message": "An error occurred while retrieving relationships",
+                }
+            },
+        )
+
+
+# ============================================================================
+# Helper Functions
+# ============================================================================
+
+
+async def _batch_lookup_entities(
+    ids: str,
+    search_service: SearchService,
+) -> EntityListResponse:
+    """Handle batch entity lookup by IDs.
+
+    Args:
+        ids: Comma-separated entity IDs
+        search_service: Search service instance
+
+    Returns:
+        EntityListResponse with batch lookup results
+
+    Raises:
+        HTTPException: If validation fails or batch size exceeded
+    """
+    # Validate ids parameter is not empty or whitespace
+    if not ids or not ids.strip():
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail={
+                "error": {
+                    "code": "INVALID_REQUEST",
+                    "message": "At least one entity ID is required",
+                }
+            },
+        )
+
+    # Parse comma-separated entity IDs
+    entity_ids = [eid.strip() for eid in ids.split(",") if eid.strip()]
+
+    # Validate entity IDs are not empty after parsing
+    if not entity_ids:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail={
+                "error": {
+                    "code": "INVALID_REQUEST",
+                    "message": "At least one entity ID is required",
+                }
+            },
+        )
+
+    # Validate batch size
+    MAX_BATCH_SIZE = 25
+    if len(entity_ids) > MAX_BATCH_SIZE:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail={
+                "error": {
+                    "code": "BATCH_SIZE_EXCEEDED",
+                    "message": f"Maximum batch size is {MAX_BATCH_SIZE}. Requested: {len(entity_ids)}",
+                }
+            },
+        )
+
+    try:
+        # Fetch entities in batch
+        result = await search_service.get_entities_batch(entity_ids)
+
+        # Build response
+        entity_dicts = [entity.model_dump(mode="json") for entity in result.entities]
+
+        response_data = {
+            "entities": entity_dicts,
+            "total": len(entity_dicts),
+            "requested": len(entity_ids),
+        }
+
+        # Include not_found field only if there are missing entities
+        if result.not_found:
+            response_data["not_found"] = result.not_found
+
+        return EntityListResponse(**response_data)
+
+    except Exception as e:
+        logger.error(f"Error in batch entity lookup: {e}", exc_info=True)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail={
+                "error": {
+                    "code": "BATCH_LOOKUP_ERROR",
+                    "message": "An error occurred during batch entity lookup",
                 }
             },
         )

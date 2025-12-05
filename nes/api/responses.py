@@ -31,10 +31,23 @@ class ErrorResponse(BaseModel):
 class EntityListResponse(BaseModel):
     """Response model for entity list/search endpoints."""
 
+    model_config = {"exclude_none": True}
+
     entities: List[Dict[str, Any]] = Field(..., description="List of entities")
     total: int = Field(..., description="Total number of matching entities")
-    limit: int = Field(..., description="Maximum number of results returned")
-    offset: int = Field(..., description="Number of results skipped")
+    limit: Optional[int] = Field(
+        default=None,
+        description="Maximum number of results returned (search mode only)",
+    )
+    offset: Optional[int] = Field(
+        default=None, description="Number of results skipped (search mode only)"
+    )
+    requested: Optional[int] = Field(
+        default=None, description="Number of entities requested (batch mode only)"
+    )
+    not_found: Optional[List[str]] = Field(
+        default=None, description="Entity IDs not found (batch mode only)"
+    )
 
 
 class RelationshipListResponse(BaseModel):

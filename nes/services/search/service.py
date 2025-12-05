@@ -12,6 +12,8 @@ This service is separate from the Publication Service and focuses on
 read operations only. It uses the database layer directly for efficient queries.
 """
 
+import asyncio
+from dataclasses import dataclass
 from datetime import date
 from typing import Dict, List, Optional, Union
 
@@ -19,6 +21,19 @@ from nes.core.models.entity import Entity
 from nes.core.models.relationship import Relationship
 from nes.core.models.version import Version
 from nes.database.entity_database import EntityDatabase
+
+
+@dataclass
+class BatchLookupResult:
+    """Result of batch entity lookup operation.
+
+    Attributes:
+        entities: List of entities that were found
+        not_found: List of entity IDs that were not found
+    """
+
+    entities: List[Entity]
+    not_found: List[str]
 
 
 class SearchService:
@@ -109,6 +124,45 @@ class SearchService:
             ...     print(f"Found: {entity.names.english}")
         """
         return await self.database.get_entity(entity_id)
+
+    async def get_entities_batch(self, entity_ids: List[str]) -> BatchLookupResult:
+        """Fetch multiple entities by their IDs in a single operation.
+
+        This method fetches entities concurrently for improved performance.
+        Entities that don't exist are tracked in the not_found list.
+
+        Args:
+            entity_ids: List of entity IDs to fetch
+
+        Returns:
+            BatchLookupResult with found entities and list of not found IDs
+
+        Examples:
+            >>> result = await service.get_entities_batch([
+            ...     "entity:person/ram-chandra-poudel",
+            ...     "entity:person/sher-bahadur-deuba",
+            ...     "entity:person/nonexistent"
+            ... ])
+            >>> print(f"Found {len(result.entities)} entities")
+            >>> print(f"Not found: {result.not_found}")
+        """
+        entities = []
+        not_found = []
+
+        # Fetch entities concurrently
+        tasks = [self.database.get_entity(entity_id) for entity_id in entity_ids]
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+
+        for entity_id, result in zip(entity_ids, results):
+            if isinstance(result, Exception):
+                # Log error but don't fail the entire batch
+                not_found.append(entity_id)
+            elif result is None:
+                not_found.append(entity_id)
+            else:
+                entities.append(result)
+
+        return BatchLookupResult(entities=entities, not_found=not_found)
 
     async def search_relationships(
         self,
