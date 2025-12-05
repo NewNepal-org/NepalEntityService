@@ -18,6 +18,6 @@ COPY .kiro/ ./.kiro/
 # Set default NES_DB_URL for container
 ENV NES_DB_URL=file+memcached:///app/nes-db/v2
 
-EXPOSE 8195
+EXPOSE 8080
 
 CMD ["nes-api"]

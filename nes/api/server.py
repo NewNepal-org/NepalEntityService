@@ -7,7 +7,7 @@ def api():
     """Run the production API server."""
     import uvicorn
 
-    uvicorn.run("nes.api.app:app", host="0.0.0.0", port=PORT, log_level="info")
+    uvicorn.run("nes.api.app:app", host="0.0.0.0", port=8080, log_level="info")
 
 
 def dev():
