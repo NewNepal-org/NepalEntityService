@@ -34,6 +34,10 @@ ENTITY_TYPE_MAP = {
         EntitySubType.WARD,  # Wards within municipalities (वडा)
         EntitySubType.CONSTITUENCY,  # Electoral constituencies (निर्वाचन क्षेत्र)
     },
+    EntityType.PROJECT: {
+        None,  # Project without specific subtype
+        EntitySubType.DEVELOPMENT_PROJECT,  # Development projects (विकास परियोजना)
+    },
 }
 
 

@@ -23,6 +23,7 @@ from nes.core.models.organization import (
     PoliticalParty,
 )
 from nes.core.models.person import Person
+from nes.core.models.project import Project
 from nes.core.models.relationship import Relationship, RelationshipType
 from nes.core.models.version import Author, Version, VersionSummary, VersionType
 from nes.database.entity_database import EntityDatabase
@@ -281,6 +282,9 @@ class PublicationService:
             "CHILD_OF",
             "SUPERVISES",
             "LOCATED_IN",
+            "FUNDED_BY",
+            "IMPLEMENTED_BY",
+            "EXECUTED_BY",
         ]
         if relationship_type not in valid_types:
             raise ValueError(
@@ -648,5 +652,7 @@ class PublicationService:
                 return Organization.model_validate(entity_data)
         elif entity_type == "location" or entity_type == EntityType.LOCATION:
             return Location.model_validate(entity_data)
+        elif entity_type == "project" or entity_type == EntityType.PROJECT:
+            return Project.model_validate(entity_data)
         else:
             raise ValueError(f"Unknown entity type: {entity_type}")

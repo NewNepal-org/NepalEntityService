@@ -30,6 +30,7 @@ from nes.core.models.organization import (
     PoliticalParty,
 )
 from nes.core.models.person import Person
+from nes.core.models.project import Project
 from nes.core.models.relationship import Relationship
 from nes.core.models.version import Author, Version
 
@@ -649,6 +650,8 @@ class FileDatabase(EntityDatabase):
                 return Organization.model_validate(data)
         elif entity_type == EntityType.LOCATION:
             return Location.model_validate(data)
+        elif entity_type == EntityType.PROJECT:
+            return Project.model_validate(data)
         else:
             raise ValueError(f"Unknown entity type: {entity_type}")
 
