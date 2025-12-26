@@ -28,8 +28,8 @@ async def migrate(context: MigrationContext) -> None:
     # Author ID for this migration
     author_id = "author:migration:007-redact-family-info"
 
-    # Get all person entities from the database
-    persons = context.db.list_entities(entity_type="person")
+    # Get all person entities from the database (with high limit for 7000+ persons)
+    persons = await context.search.search_entities(entity_type="person", limit=10_000)
     context.log(f"Found {len(persons)} person entities")
 
     # Track statistics
