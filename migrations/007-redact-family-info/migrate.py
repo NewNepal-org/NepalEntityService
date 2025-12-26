@@ -26,7 +26,7 @@ async def migrate(context: MigrationContext) -> None:
     context.log("Starting migration: Redact family information")
 
     # Author ID for this migration
-    author_id = "author:migration:007-redact-family-info"
+    author_id = "author:damodar-dahal"
 
     # Get all person entities from the database (with high limit for 7000+ persons)
     persons = await context.search.search_entities(entity_type="person", limit=10_000)
