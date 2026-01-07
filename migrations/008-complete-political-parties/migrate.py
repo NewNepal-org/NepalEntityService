@@ -151,7 +151,6 @@ async def migrate(context: MigrationContext) -> None:
         # Build address
         address = None
         if translated.get("address"):
-            address_text = f"{translated['address']} / {raw_row.get('दलको मुख्य कार्यालय (ठेगाना)', '')}"
             address = Address(
                 description2=LangText(
                     en=LangTextValue(
@@ -243,8 +242,6 @@ async def migrate(context: MigrationContext) -> None:
 
     # STAGE 2: Check for slug collisions
     context.log("Stage 2: Checking for slug collisions...")
-    slugs_to_check = [party["data"]["slug"] for party in parties_to_create]
-
     # Check against existing entities
     existing_entities = await context.db.list_entities(
         limit=1000, entity_type="organization", sub_type="political_party"
