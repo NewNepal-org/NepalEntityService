@@ -1,0 +1,193 @@
+{
+  "श्रम संस्कृति पार्टी": {
+    "name": "Shram Sanskriti Party",
+    "address": "Kathmandu Metropolitan City Ward No. 4, Kathmandu",
+    "contact": [],
+    "main_person": "Harkaraj Rai",
+    "symbol_name": "Soil in the palm"
+  },
+  "गतिशील लोकतान्त्रिक पार्टी": {
+    "name": "Gatishil Loktantrik Party",
+    "address": "Kathmandu Metropolitan City-29, Kalikamarg, Kalikasthan, Kathmandu",
+    "contact": [],
+    "main_person": "Dinesh Raj Pramai",
+    "symbol_name": "Deepjyoti"
+  },
+  "नागरिक उन्मुक्ति पार्टी, नेपाल": {
+    "name": "Nagarik Unmukti Party, Nepal",
+    "address": "Sinamangal, Kathmandu",
+    "contact": [],
+    "main_person": "Kabir Sop",
+    "symbol_name": "Chakiya (Grindstone)"
+  },
+  "नेपाली कम्युनिष्ट पार्टी": {
+    "name": "Nepali Communist Party",
+    "address": "Kathmandu Metropolitan City-32, Parisdanda Koteshwar, Kathmandu",
+    "contact": [],
+    "main_person": "Coordinator: Pushpa Kamal Dahal",
+    "symbol_name": "Five-pointed star"
+  },
+  "राष्ट्रिय परिवर्तन पार्टी": {
+    "name": "Rastriya Parivartan Party",
+    "address": "Kathmandu Metropolitan City-3, Basundhara, Kathmandu",
+    "contact": [],
+    "main_person": "President: Rajesh Pratel",
+    "symbol_name": "Flute"
+  },
+  "राष्ट्रिय जनमत पार्टी": {
+    "name": "Rastriya Janamat Party",
+    "address": "Nepalgunj Sub-Metropolitan City-9, Banke",
+    "contact": [],
+    "main_person": "Chairperson: Riyaz Ahmad Shesh",
+    "symbol_name": "Bulldozer"
+  },
+  "नेपाल कम्युनिस्ट पार्टी (माओबादी)": {
+    "name": "Nepal Communist Party (Maoist)",
+    "address": "Shivaraj Municipality-9, Anchalpur, Kapilbastu",
+    "contact": [],
+    "main_person": "General Secretary: Netra Bikram Chand",
+    "symbol_name": "Rose flower with two leaves inside a circle"
+  },
+  "राष्ट्र निर्माण दल नेपाल": {
+    "name": "Rastra Nirman Party Nepal",
+    "address": "Kathmandu Metropolitan City-29, Maitidevi, Kathmandu",
+    "contact": [
+      "Afroj Mansur"
+    ],
+    "main_person": "President: Akbar Khan",
+    "symbol_name": "Water bottle inside a circle"
+  },
+  "राष्ट्रिय उर्जाशील पार्टी, नेपाल": {
+    "name": "Rastriya Urjashil Party, Nepal",
+    "address": "Katahari Rural Municipality-2, Morang",
+    "contact": [],
+    "main_person": "President: Yogendra Mandal",
+    "symbol_name": "Hand Pump (Tubewell)"
+  },
+  "पिपुल फर्स्ट पार्टी": {
+    "name": "Pipul First Party",
+    "address": "Suryabinayak Municipality-4, Bhaktapur",
+    "contact": [],
+    "main_person": "Coordinator: Prashant Singh",
+    "symbol_name": "Shape of a hand with two fingers open and three fingers closed"
+  },
+  "उज्यालो नेपाल पार्टी": {
+    "name": "Ujyalo Nepal Party",
+    "address": "Kathmandu Metropolitan City-6, Bauddha, Kathmandu",
+    "contact": [],
+    "main_person": "Chairperson: Anup Kumar Upadhyaya",
+    "symbol_name": "Burning electric bulb"
+  },
+  "स्वाभिमान पार्टी": {
+    "name": "Swabhiman Party",
+    "address": "Janakpur Sub-Metropolitan City-14, Dhanusha",
+    "contact": [],
+    "main_person": "President: Satyawan Kumar Singh",
+    "symbol_name": "Figure of a woman carrying crops"
+  },
+  "हाम्रो पार्टी नेपाल": {
+    "name": "Hamro Party Nepal",
+    "address": "Tokha Municipality-7, Kathmandu",
+    "contact": [],
+    "main_person": "Chairman: Khagendra Sunar",
+    "symbol_name": "Like shape with raised thumb inside a circle"
+  },
+  "नागरिक सर्वोच्चता पार्टी नेपाल": {
+    "name": "Nagarik Sarwochhata Party Nepal",
+    "address": "Suryabinayak Municipality-4, Bhaktapur",
+    "contact": [],
+    "main_person": "President: Ratna Prasad Shrestha",
+    "symbol_name": "A fist holding ripe paddy with straw"
+  },
+  "जनादेश पार्टी नेपाल": {
+    "name": "Janadesh Party Nepal",
+    "address": "Lalitpur Metropolitan City-10, Kopundol, Lalitpur",
+    "contact": [],
+    "main_person": "Coordinator: Raman Kumar Karna",
+    "symbol_name": "Handheld microphone held by one hand"
+  },
+  "सार्वभौम नागरिक पार्टी": {
+    "name": "Sarvabhaum Nagarik Party",
+    "address": "Kathmandu Metropolitan City-31, Kathmandu",
+    "contact": [],
+    "main_person": "Chairman: Ganesh Kumar Mandal",
+    "symbol_name": "A 24-spoke wheel inside a dark blue circle"
+  },
+  "नागरिक सेवा पार्टी": {
+    "name": "Nagarik Sewa Party",
+    "address": "Nagarjun Municipality-10, Kathmandu",
+    "contact": [],
+    "main_person": "President: Shriya KC",
+    "symbol_name": "Scooter"
+  },
+  "जय मातृभूमि पार्टी": {
+    "name": "Jai Matribhumi Party",
+    "address": "Kathmandu Metropolitan City-9, Battisputali, Kathmandu",
+    "contact": [],
+    "main_person": "President: Sureshkumar Karki",
+    "symbol_name": "Mother holding a baby in her lap"
+  },
+  "प्रगतिशील नागरिक पार्टी": {
+    "name": "Pragatisheel Nagarik Party",
+    "address": "Kathmandu Metropolitan City-10, Naya Baneshwor, Kathmandu",
+    "contact": [],
+    "main_person": "President: Sabin Sigdel",
+    "symbol_name": "A plant with three leaves sprouting from the soil"
+  },
+  "सर्वोदय पार्टी": {
+    "name": "Sarvodaya Party",
+    "address": "Suryabinayak Municipality-3, Bhaktapur",
+    "contact": [],
+    "main_person": "President: Deepak Kumar Sah",
+    "symbol_name": "Ear of Corn"
+  },
+  "समुन्नत नेपाल पार्टी": {
+    "name": "Samunnat Nepal Party",
+    "address": "Kathmandu Metropolitan City-10, Kathmandu",
+    "contact": [],
+    "main_person": "President: Sarvendra Dhanan",
+    "symbol_name": "Man and woman shaking hands (equality)"
+  },
+  "नागरिक बचाउ दल, नेपाल": {
+    "name": "Nagarik Bachau Party, Nepal",
+    "address": "Madhyapur Thimi Municipality-6, Nekosera, Bhaktapur",
+    "contact": [],
+    "main_person": "Chairman: Madhav Prasad Khatiwada",
+    "symbol_name": "Rabbit"
+  },
+  "नेपाल जनसेवा पार्टी": {
+    "name": "Nepal Janasewa Party",
+    "address": "Kathmandu Metropolitan City-23, Raniwari, Kathmandu",
+    "contact": [],
+    "main_person": "Chairperson: Prakash Khadka",
+    "symbol_name": "White and black colored shoes"
+  },
+  "समावेशी समाजवादी पार्टी": {
+    "name": "Samaveshi Samajwadi Party",
+    "address": "Kathmandu Metropolitan City-29, Anamnagar, Kathmandu",
+    "contact": [],
+    "main_person": "Chairperson: Numa Limbu",
+    "symbol_name": "Shrivatsa symbol of prosperity"
+  },
+  "आवाज पार्टी": {
+    "name": "Aawaj Party",
+    "address": "Kathmandu Metropolitan City-6, Bauddha, Kathmandu",
+    "contact": [],
+    "main_person": "President: Sundar Ram Bohara",
+    "symbol_name": "Ear listening to a voice"
+  },
+  "जनता लोकतान्त्रिक पार्टी, नेपाल": {
+    "name": "Janata Loktantrik Party, Nepal",
+    "address": "Kathmandu Metropolitan City-14, Balkhu, Kathmandu",
+    "contact": [],
+    "main_person": "Chairperson: Ashok Kumar Yadav",
+    "symbol_name": "Buffalo"
+  },
+  "जन अधिकार पार्टी": {
+    "name": "Jan Adhikar Party",
+    "address": "Kathmandu Metropolitan City-4, Bishalnagar, Kathmandu",
+    "contact": [],
+    "main_person": "Coordinator: Sharad Singh Yadav",
+    "symbol_name": "Boat"
+  }
+}
