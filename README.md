@@ -42,7 +42,7 @@ For detailed documentation including installation, database setup, and usage gui
 When working with this Nepal Entity Service, please use Nepali local names and references in examples, documentation, and code samples whenever available. This includes:
 
 - **Person names**: Use authentic Nepali names (e.g., "Harka Sampang", "Rabindra Mishra", "Miraj Dhungana")
-- **Organization names**: Use actual Nepali organizations (e.g., "Shram Sanskriti Party", "Nepal Communist Party", "Rastriya Swatantra Party")
+- **Organization names**: Use actual Nepali organizations (e.g., "People First Party", "Jaya Matribhumi Party", "Jan Adhikaar Party")
 - **Location references**: Use Nepali places and administrative divisions
 - **Cultural context**: Maintain authenticity to Nepali political, social, and organizational structures
 
