@@ -29,7 +29,9 @@ from nes.services.scraping.normalization import NameExtractor
 # Migration metadata
 AUTHOR = "Damodar Dahal"
 DATE = "2026-01-07"
-DESCRIPTION = "Complete the political party database by importing remaining parties (204-230)"
+DESCRIPTION = (
+    "Complete the political party database by importing remaining parties (204-230)"
+)
 CHANGE_DESCRIPTION = "Import additional political parties"
 
 name_extractor = NameExtractor()
@@ -53,17 +55,23 @@ reg_no_external_identifier = LangText(
 )
 
 
-async def update_national_independent_party_name(context: MigrationContext, author_id: str) -> None:
+async def update_national_independent_party_name(
+    context: MigrationContext, author_id: str
+) -> None:
     """
     Update National Independent Party to use Rastriya Swatantra Party as primary name.
     """
     context.log("Updating National Independent Party name...")
-    
+
     # Get the National Independent Party entity directly
-    national_independent_party = await context.db.get_entity("entity:organization/political_party/national-independent-party")
-    
-    assert national_independent_party is not None, "National Independent Party entity not found"
-    
+    national_independent_party = await context.db.get_entity(
+        "entity:organization/political_party/national-independent-party"
+    )
+
+    assert (
+        national_independent_party is not None
+    ), "National Independent Party entity not found"
+
     # Update the names to make Rastriya Swatantra Party primary
     updated_names = [
         Name(
@@ -75,16 +83,16 @@ async def update_national_independent_party_name(context: MigrationContext, auth
             kind=NameKind.ALTERNATE,
             en=NameParts(full="National Independent Party"),
             ne=None,
-        ).model_dump()
+        ).model_dump(),
     ]
-    
+
     # Update the entity's names
     national_independent_party.names = updated_names
-    
+
     await context.publication.update_entity(
         entity=national_independent_party,
         author_id=author_id,
-        change_description="Update primary name to Rastriya Swatantra Party, move National Independent Party to alternate"
+        change_description="Update primary name to Rastriya Swatantra Party, move National Independent Party to alternate",
     )
     context.log("✓ Updated National Independent Party names")
 
@@ -96,7 +104,9 @@ async def migrate(context: MigrationContext) -> None:
 
     Data source: parties-list.csv containing parties with registration numbers 204-230
     """
-    context.log("Migration started: Importing additional political parties and updating existing party names")
+    context.log(
+        "Migration started: Importing additional political parties and updating existing party names"
+    )
 
     # Get existing author (should already exist)
     author_id = "author:damodar-dahal"
@@ -119,7 +129,7 @@ async def migrate(context: MigrationContext) -> None:
     # STAGE 1: Build all party data
     context.log("Stage 1: Building party data structures...")
     parties_to_create = []
-    
+
     for name_ne, translated in party_data.items():
         raw_row = raw_lookup.get(name_ne)
         if not raw_row:
@@ -144,8 +154,13 @@ async def migrate(context: MigrationContext) -> None:
             address_text = f"{translated['address']} / {raw_row.get('दलको मुख्य कार्यालय (ठेगाना)', '')}"
             address = Address(
                 description2=LangText(
-                    en=LangTextValue(value=translated['address'], provenance="translation_service"),
-                    ne=LangTextValue(value=raw_row.get('दलको मुख्य कार्यालय (ठेगाना)', ''), provenance="imported")
+                    en=LangTextValue(
+                        value=translated["address"], provenance="translation_service"
+                    ),
+                    ne=LangTextValue(
+                        value=raw_row.get("दलको मुख्य कार्यालय (ठेगाना)", ""),
+                        provenance="imported",
+                    ),
                 )
             )
 
@@ -156,9 +171,7 @@ async def migrate(context: MigrationContext) -> None:
                 en=LangTextValue(
                     value=translated["main_person"], provenance="translation_service"
                 ),
-                ne=LangTextValue(
-                    value=raw_row.get("प्रमुख", ""), provenance="imported"
-                ),
+                ne=LangTextValue(value=raw_row.get("प्रमुख", ""), provenance="imported"),
             )
 
         # Build registration_date
@@ -222,59 +235,59 @@ async def migrate(context: MigrationContext) -> None:
             symbol=symbol.model_dump() if symbol else None,
         )
 
-        parties_to_create.append({
-            'data': party_data_dict,
-            'name_ne': name_ne,
-            'name_en': translated["name"]
-        })
+        parties_to_create.append(
+            {"data": party_data_dict, "name_ne": name_ne, "name_en": translated["name"]}
+        )
 
     context.log(f"Stage 1 complete: Prepared {len(parties_to_create)} parties")
 
     # STAGE 2: Check for slug collisions
     context.log("Stage 2: Checking for slug collisions...")
-    slugs_to_check = [party['data']['slug'] for party in parties_to_create]
-    
+    slugs_to_check = [party["data"]["slug"] for party in parties_to_create]
+
     # Check against existing entities
     existing_entities = await context.db.list_entities(
         limit=1000, entity_type="organization", sub_type="political_party"
     )
     existing_slugs = {entity.slug for entity in existing_entities}
-    
+
     # Check for collisions
     collisions = []
     slug_counts = {}
-    
+
     for party in parties_to_create:
-        slug = party['data']['slug']
-        
+        slug = party["data"]["slug"]
+
         # Check against existing entities
         if slug in existing_slugs:
             collisions.append(f"Slug '{slug}' already exists in database")
-        
+
         # Check for duplicates within this migration
         if slug in slug_counts:
             slug_counts[slug] += 1
             collisions.append(f"Duplicate slug '{slug}' in migration data")
         else:
             slug_counts[slug] = 1
-    
+
     if collisions:
         context.log("SLUG COLLISIONS DETECTED:")
         for collision in collisions:
             context.log(f"  - {collision}")
         raise ValueError(f"Found {len(collisions)} slug collisions. Migration aborted.")
-    
-    context.log(f"Stage 2 complete: No slug collisions found for {len(parties_to_create)} parties")
+
+    context.log(
+        f"Stage 2 complete: No slug collisions found for {len(parties_to_create)} parties"
+    )
 
     # STAGE 3: Commit entities to database
     context.log("Stage 3: Creating entities in database...")
     created_count = 0
-    
+
     for party in parties_to_create:
         party_entity = await context.publication.create_entity(
             entity_type=EntityType.ORGANIZATION,
             entity_subtype=EntitySubType.POLITICAL_PARTY,
-            entity_data=party['data'],
+            entity_data=party["data"],
             author_id=author_id,
             change_description=CHANGE_DESCRIPTION,
         )
@@ -287,6 +300,8 @@ async def migrate(context: MigrationContext) -> None:
     entities = await context.db.list_entities(
         limit=1000, entity_type="organization", sub_type="political_party"
     )
-    context.log(f"Final verification: {len(entities)} total political_party entities in database")
+    context.log(
+        f"Final verification: {len(entities)} total political_party entities in database"
+    )
 
     context.log("Migration completed successfully")
